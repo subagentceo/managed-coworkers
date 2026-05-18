@@ -162,6 +162,38 @@ const checks: Check[] = [
       }
     },
   },
+  {
+    name: "cache: REDIS_URL connects and round-trips via src/lib/cache.ts",
+    fn: async () => {
+      // Tests src/lib/cache.ts end-to-end against the live mc-redis.
+      // We write a probe file (tsx -e + top-level await doesn't work under
+      // tsconfig module=commonjs — fixing that is LOOP-6).
+      const url = env.REDIS_URL;
+      if (!url) throw new Error("REDIS_URL missing from .docker/.env");
+      const probePath = resolve(REPO_ROOT, "scripts/smoke/.cache-probe.ts");
+      const probe = `import { cacheGet, cacheSetEx, cacheClose } from "../../src/lib/cache.ts";
+async function main() {
+  await cacheSetEx("smoke:cache:probe", "ok-" + Date.now(), 15);
+  const got = await cacheGet("smoke:cache:probe");
+  await cacheClose();
+  process.stdout.write(got ?? "null");
+}
+main();
+`;
+      const { writeFileSync, unlinkSync } = await import("node:fs");
+      writeFileSync(probePath, probe);
+      try {
+        const out = execFileSync("node_modules/.bin/tsx", [probePath], {
+          encoding: "utf8",
+          cwd: REPO_ROOT,
+          env: { ...process.env, REDIS_URL: url },
+        }).trim();
+        if (!out.startsWith("ok-")) throw new Error(`cache round-trip failed; got '${out}'`);
+      } finally {
+        try { unlinkSync(probePath); } catch { /* ignore */ }
+      }
+    },
+  },
 ];
 
 let passed = 0;
