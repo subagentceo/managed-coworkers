@@ -1,0 +1,309 @@
+{
+  "https://redis.io/docs/latest/apis/index.html.md": {
+    "sha256": "2eb94c4dd6e871ee414190a52aa1b5c9ec914870aa025848305df1f1be1fb500",
+    "etag": "\"b00ef2b4bfa149ffd150e0454483a613\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:12 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/": {
+    "sha256": "a5ac339966592812fda4a1fdf101693950b9f93df54089adc4efc1221111b3c8",
+    "lastModified": "Mon, 18 May 2026 12:51:54 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/auth/index.html.md": {
+    "sha256": "78d95d738f0834511af1a5318804130aac6601be2ad03a05fb3aee2964208991",
+    "etag": "\"7ad27d230bb607c51fadcc3c16912f7c\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:12 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/del/index.html.md": {
+    "sha256": "5f4b974358c39a14a26f58674e9e30e0c713737e4efa43769702ce1f1d32e418",
+    "etag": "\"8dafcc49da8369242623cb35bee8bab4\"",
+    "lastModified": "Wed, 29 Apr 2026 15:59:59 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/expire/index.html.md": {
+    "sha256": "1fd113e688aefffdffa999bebcfd922792dfc0d712a176652f523d3c22a08f5d",
+    "etag": "\"162b3692f5ccc282b8bd64e45596cd12\"",
+    "lastModified": "Wed, 29 Apr 2026 15:59:59 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/get/index.html.md": {
+    "sha256": "53fe31f602ceaf17963b436a7f62eed3449d097b02e1f85b00342b57c41a5113",
+    "etag": "\"649983739cb91ddfda9adfb8f2717087\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:01 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/hset/index.html.md": {
+    "sha256": "fdb359acf765131cbecd5391c24b796eaaa5222cc4a7c00ad3b1ab073a0e47a3",
+    "etag": "\"615da98cb800c47ca5e770064177e1e2\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:02 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/set/index.html.md": {
+    "sha256": "b279dfca792cefe8777d0fa34004a80b580a0b192cb539278dc3bfbb16946c94",
+    "etag": "\"cf4f005fa18190fef2dd173b39a2e88c\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:06 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/commands/ttl/index.html.md": {
+    "sha256": "5fe1e3332b0d48263ce3a59de6721e268de94bbd5d1b0c1c67f6024cab4dd44d",
+    "etag": "\"b9623146840bb29c826e05e69ffce673\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:07 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/ai/index.html.md": {
+    "sha256": "25ab56c9df6c62529ae65ef5b7c07256197fcc4c6abbf26e9029fb00f954eda0",
+    "etag": "\"29a6a6e0cb83bac1ee657e10f601d0b7\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:10 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/clients/dotnet/index.html.md": {
+    "sha256": "9708cd0cf6ef3f6fc0cb2b1a44b7902e4148e287240e065aae09f1e1c723bc05",
+    "etag": "\"69a30cd38d2b7b068a89644f83f25395\"",
+    "lastModified": "Thu, 14 May 2026 14:13:37 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/clients/go/index.html.md": {
+    "sha256": "43d1fcf0e9860e4a636f76381a3cc0f10329aa478baeb8aea25d446c523bc32d",
+    "etag": "\"d325c36d21dd647eccddcc2a049ab777\"",
+    "lastModified": "Thu, 14 May 2026 14:13:37 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/clients/index.html.md": {
+    "sha256": "750b416289ea6c234e0524d36a2f112339dc75cc450aaae20b799bf7fc44e75d",
+    "etag": "\"14bd303b15dde36d9e6dbb6f4240e318\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:20 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/clients/jedis/index.html.md": {
+    "sha256": "04dfe182a048437104b725aa3ee7f5b5bc2d78aef456d2a80f8ad7388a533dc4",
+    "etag": "\"9923fbc16c0b913135b6fc98a89beae8\"",
+    "lastModified": "Thu, 14 May 2026 14:13:37 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/clients/nodejs/index.html.md": {
+    "sha256": "35422f3294b6869da37cfb35a5998f4b9c8ae66dd78511516ac6fa86c3a132b5",
+    "etag": "\"4e7abab21d03e03d8500da896954251e\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:42 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/clients/redis-py/index.html.md": {
+    "sha256": "f4fc040ef9cb8b8914edabbc9f25bc736c49110f029b9d0cf5fff3a538e2d61a",
+    "etag": "\"5ae911dd942ae47c5b306976c4f773db\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:42 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/data-types/index.html.md": {
+    "sha256": "983098b44ef6f589d5ef9918b786db79dbfd51d96e8002dd0fe22e8d96f031f6",
+    "etag": "\"a1be9978a34e4be11987a716c623d798\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:43 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/data-types/streams/index.html.md": {
+    "sha256": "fea093dfa3595ce7774acc8a9d6e4ff2ba3274d16af2c971aa8351bc543e1bdc",
+    "etag": "\"81d7ff837a70a944c197a7eff4704047\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:23 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/get-started/index.html.md": {
+    "sha256": "b64f51faaf61f656342649da410718878e1fc1490110fa287d50be20911c6c13",
+    "etag": "\"54798ac25b774075200ecebc46555d4d\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:45 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/index.html.md": {
+    "sha256": "bcc5fe3540345cabf9af6dd3472e1c34b07022fc4ca1808ffac5baba8a1b862c",
+    "etag": "\"119faf3093758e06de676be16c039e48\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:24 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/reference/eviction/index.html.md": {
+    "sha256": "759200d4379269e480fb059a5d0f4292724b6e6c50748931518b1d35c29a0e43",
+    "etag": "\"ecff60569128eed769058ba875e40b57\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:46 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/tools/cli/index.html.md": {
+    "sha256": "4153be721aba79a0dcb6e7d8a616fdaaebe836af0d73727f1ea15bd21e80d03e",
+    "etag": "\"9afc9f21e81e4ac0777787e55932b32c\"",
+    "lastModified": "Tue, 28 Apr 2026 18:26:16 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/tools/insight/release-notes/index.html.md": {
+    "sha256": "b205c907728582bf103fd3a14da91740d1066b9f56419e275707c911f0d44235",
+    "etag": "\"67d5cb93129eae90190a9df8b6ebce7e\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:46 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/develop/tools/redis-for-vscode/index.html.md": {
+    "sha256": "19b0c8a1545686a2a248e5b0d3ea0cdb5682706270780eea2689d3c4894ad238",
+    "etag": "\"4ed518e097d8ac888d36caec4bebbec3\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:48 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/index.html.md": {
+    "sha256": "3d0c2f5cfdae308a8ba5c815e4fe4688031f67eade194a6a6badcd9fb59138a7",
+    "etag": "\"94066f33ebeddde28f73969e4f66efbb\"",
+    "lastModified": "Mon, 20 Apr 2026 13:52:59 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/kubernetes/index.html.md": {
+    "sha256": "733a99c0c4982f269984c719fb9e440a34bbe72495c73caa789fccb7f49466f8",
+    "etag": "\"580a5cb80edfef1dc8f40422feda665b\"",
+    "lastModified": "Fri, 24 Apr 2026 20:32:05 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/index.html.md": {
+    "sha256": "8a4ad7d9e45213a19368bba2c350c64fd07ef1f60a4e505f8b5de7b7107e4b41",
+    "etag": "\"c6a1b16d7632c862415235968dee2d10\"",
+    "lastModified": "Tue, 12 May 2026 10:25:30 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/oss_and_stack/management/config/index.html.md": {
+    "sha256": "cfed570617c925d8031a19846d34ccb536322fe1b729d6cbf76d8096b709604c",
+    "etag": "\"8d0d5da78adcc3e924c8756eb07bbf56\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:09 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/index.html.md": {
+    "sha256": "500f62a3472a311fe9ba0c2ed7f0b0a621d7d1c5abb35cd0dc3691c6f2a9905a",
+    "etag": "\"0ca6b32cdcfdcd5957a1d0432938a030\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:09 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/index.html.md": {
+    "sha256": "46bb394bc185d19a55ba5302602ccfa70a6fc0997f3d54154b4573bdb5a994d6",
+    "etag": "\"88cf4fcb381fff76a3a38160d3cb4cb7\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:09 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rc/cloud-integrations/vercel/index.html.md": {
+    "sha256": "9c8215e03bfe0fb8f6dd69e36b2e2a070480c7c1952aeb53717ca693bf166660",
+    "etag": "\"355dbf1fa0b85128051b29f62b37b901\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:17 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rc/databases/back-up-data/index.html.md": {
+    "sha256": "eca9ac86383d8e8835796ee592ea56cc635068a5f6eff0aac35ef43d1f03d446",
+    "etag": "\"2268eb98c0d191b9d40dae53b2bac4e5\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:18 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rc/index.html.md": {
+    "sha256": "e569eb37000d7927903f32cda49f832b5901b8771f65d2f4d661d915f78c9ee3",
+    "etag": "\"b1e91f1a0e8267ad90d276d7a25e67d6\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:19 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rc/rc-quickstart/index.html.md": {
+    "sha256": "cd40ebcb13302b9ec27e09c301683e86334dd02f4df0e05bcd8b9fe644907859",
+    "etag": "\"8297bb5bfe05f026989e354a81ccef55\"",
+    "lastModified": "Wed, 29 Apr 2026 16:00:46 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/redisinsight/install/index.html.md": {
+    "sha256": "7e879ba7525d9a84b0aefce070ac7501c23a0fd256797702e9aa661b02f81f8e",
+    "etag": "\"3146983b3766ade7cade5d19212e2599\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:21 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/databases/connect/index.html.md": {
+    "sha256": "f3c8bfe823af342a05fc047b45436b3342229deac7270587d6b7a2db08252dc8",
+    "etag": "\"8ce3b28423ef7cbc013989761a687f1c\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:37 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/databases/connect/test-client-connectivity/index.html.md": {
+    "sha256": "8dcdda7ff0731fa5fa1358a94d289e141839682616b59443d7d3695450d5b4fc",
+    "etag": "\"74613d366da79da9c38ecabc26864a6c\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:37 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/index.html.md": {
+    "sha256": "b001e89de622942cc1e977f603c60c3dcb85c991101126f51cf55fb564fecdd8",
+    "etag": "\"c177f4324a04d5d672c24bba471941b9\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:39 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/installing-upgrading/install/plan-deployment/hardware-requirements/index.html.md": {
+    "sha256": "2e00ddbc5534809352186ed8175f3a543661a19020ff3af14dd7c3b984456502",
+    "etag": "\"81ef610a8272e37e24328c4d1abb4d80\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:39 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/installing-upgrading/product-lifecycle/index.html.md": {
+    "sha256": "01acdb694343c678245a1ff36151cef9fb3dabeda6feaee92b45647f2ca88094",
+    "etag": "\"9d9b9227e4d45d3011cff7f9f556552a\"",
+    "lastModified": "Mon, 18 May 2026 12:52:47 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/networking/port-configurations/index.html.md": {
+    "sha256": "07276d1b2ba3cb8440c050cbde3d66b585410191d76b0104518aa82098ef3cb0",
+    "etag": "\"ef3043bf1b60158d1e9c40308be7136b\"",
+    "lastModified": "Tue, 28 Apr 2026 18:26:59 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/references/cli-utilities/redis-cli/index.html.md": {
+    "sha256": "6e26d5c55d62fc09d353785ea98a7bbc5f136a55b37cf6c7d765c59aebd1b1c8",
+    "etag": "\"3903769a20360f26463f3eda365b6c05\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:41 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/references/rest-api/index.html.md": {
+    "sha256": "17452d1cb22d7e4bf8a910594439b9e5252671fb8c75567dfcfeb6eae44291d8",
+    "etag": "\"73ff1b4d8ddbcf4f8cd065c5f614fc27\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:43 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  },
+  "https://redis.io/docs/latest/operate/rs/release-notes/index.html.md": {
+    "sha256": "15512761e3405b01372a5d9998d9ae35d87d2108bab6167da4aaedfce2e97393",
+    "etag": "\"4d8de5ae7cdee52bd1d1af58cc513862\"",
+    "lastModified": "Mon, 20 Apr 2026 13:53:50 GMT",
+    "fetchedAt": "2026-05-18T23:34:57.803Z",
+    "lastStatus": 200
+  }
+}

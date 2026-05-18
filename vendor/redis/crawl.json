@@ -1,0 +1,20 @@
+{
+  "name": "redis",
+  "homepage": "https://redis.io",
+  "llms_txt_candidates": [
+    "https://redis.io/llms.txt"
+  ],
+  "transform": "html-extract",
+  "html_extract": {
+    "selector": "main, article, .docs-content"
+  },
+  "allow_prefixes": [
+    "https://redis.io/docs/latest/develop/",
+    "https://redis.io/docs/latest/operate/",
+    "https://redis.io/docs/latest/commands/",
+    "https://redis.io/docs/latest/apis/"
+  ],
+  "deny_prefixes": [],
+  "page_cap": 150,
+  "llms_txt": "https://redis.io/llms.txt"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "alloydb-omni",
+  "homepage": "https://cloud.google.com/alloydb/omni",
+  "llms_txt_candidates": [
+    "https://cloud.google.com/llms.txt"
+  ],
+  "transform": "html-extract",
+  "html_extract": {
+    "selector": "main, article, .devsite-article-body"
+  },
+  "allow_prefixes": [
+    "https://cloud.google.com/alloydb/omni/",
+    "https://cloud.google.com/alloydb/docs/ai/",
+    "https://cloud.google.com/alloydb/docs/reference/",
+    "https://cloud.google.com/alloydb/docs/columnar-engine/"
+  ],
+  "html_index_sources": [
+    {
+      "url": "https://cloud.google.com/alloydb/omni/current/docs",
+      "link_regex": "href=\"(/alloydb/omni/current/docs/[^\"#?]+)\""
+    },
+    {
+      "url": "https://cloud.google.com/alloydb/docs/ai",
+      "link_regex": "href=\"(/alloydb/docs/ai/[^\"#?]+)\""
+    },
+    {
+      "url": "https://cloud.google.com/alloydb/docs/reference",
+      "link_regex": "href=\"(/alloydb/docs/reference/[^\"#?]+)\""
+    }
+  ],
+  "deny_prefixes": [],
+  "page_cap": 150
+}

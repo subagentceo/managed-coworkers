@@ -1,0 +1,81 @@
+# managed-coworkers data plane: AlloyDB Omni + Redis 7
+#
+# Repo-scoped containers with `mc-` prefix to avoid colliding with the
+# operator's existing alloydb-omni-local (port 5435) and agentdatamodels-redis
+# setups. Both services use named volumes (not bind mounts) because Docker
+# Desktop on macOS has known fsync performance issues with bind mounts that
+# AlloyDB Omni in particular suffers from.
+#
+# References:
+#   vendor/alloydb-omni/cloud.google.com/alloydb/omni/current/docs/  (60 docs)
+#   vendor/redis/redis.io/docs/latest/                               (44 docs)
+#   vendor/anthropics/code.claude.com/docs/en/claude-code-on-the-web.md
+#     (Anthropic's web sandbox ships Postgres 16 + Redis 7 vanilla; we
+#     match Redis 7 vanilla and superset Postgres with AlloyDB Omni PG17)
+
+name: managed-coworkers
+
+services:
+  alloydb:
+    # AlloyDB Omni: Google's local PostgreSQL 17 with columnar engine,
+    # pgvector (vendor 0.8.1.google-1), alloydb_scann, google_ml_integration.
+    image: google/alloydbomni:latest
+    container_name: mc-alloydb
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${ALLOYDB_PASSWORD}
+      POSTGRES_DB: coworkers
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"
+    volumes:
+      - mc_alloydb_data:/var/lib/postgresql/data
+      - ./alloydb/init:/docker-entrypoint-initdb.d:ro
+      - ./alloydb/postgresql.conf.d:/etc/postgresql/conf.d:ro
+    command:
+      - postgres
+      - -c
+      - config_file=/etc/postgresql/conf.d/postgresql.conf
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d coworkers"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - mc_data
+
+  redis:
+    # Vanilla Redis 7 — matches Anthropic web sandbox posture. If we later
+    # need RediSearch/RedisJSON, swap to redis/redis-stack-server:7.4-v0.
+    image: redis:7.4.2-alpine
+    container_name: mc-redis
+    restart: unless-stopped
+    command:
+      - redis-server
+      - /usr/local/etc/redis/redis.conf
+      - --requirepass
+      - ${REDIS_PASSWORD}
+    ports:
+      - "6380:6379"
+    volumes:
+      - mc_redis_data:/data
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - mc_data
+
+volumes:
+  mc_alloydb_data:
+    name: mc_alloydb_data
+  mc_redis_data:
+    name: mc_redis_data
+
+networks:
+  mc_data:
+    name: mc_data
+    driver: bridge
