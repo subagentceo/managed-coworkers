@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F4-top-takeaways-from-the-mrc-data-science-summit%2F&title=4%20top%20takeaways%20from%20the%20MRC%20Data%20Science%20Summit)
 -   [](https://twitter.com/intent/tweet?text=4%20top%20takeaways%20from%20the%20MRC%20Data%20Science%20Summit&url=https%3A%2F%2Fsift.com%2Fblog%2F4-top-takeaways-from-the-mrc-data-science-summit%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F4-top-takeaways-from-the-mrc-data-science-summit%2F&picture=&title=4%20top%20takeaways%20from%20the%20MRC%20Data%20Science%20Summit)
--   [](/cdn-cgi/l/email-protection#bd82cec8dfd7d8dec98089988f8dc9d2cd988f8dc9dcd6d8dccadcc4ce988f8ddbcfd2d0988f8dc9d5d8988f8df0effe988f8df9dcc9dc988f8deeded4d8d3ded8988f8deec8d0d0d4c99b9e8d8e8586dfd2d9c480d5c9c9cdce988efc988ffb988ffbced4dbc993ded2d0988ffbdfd1d2da988ffb8990c9d2cd90c9dcd6d8dccadcc4ce90dbcfd2d090c9d5d890d0cfde90d9dcc9dc90ceded4d8d3ded890cec8d0d0d4c9988ffb)
+-   [](/cdn-cgi/l/email-protection#76490503141c1315024b4253444602190653444602171d131701170f055344461004191b534446021e135344463b24355344463217021753444625151f1318151353444625031b1b1f02505546454e4d1419120f4b1e02020605534537534430534430051f10025815191b534430141a1911534430425b0219065b02171d131701170f055b1004191b5b021e135b1b04155b121702175b05151f131815135b05031b1b1f02534430)
 
 -   [Company](https://sift.com/blog/category/company/)
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
@@ -87,9 +87,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F4-top-takeaways-from-the-mrc-data-science-summit%2F&title=4%20top%20takeaways%20from%20the%20MRC%20Data%20Science%20Summit)
 -   [](https://twitter.com/intent/tweet?text=4%20top%20takeaways%20from%20the%20MRC%20Data%20Science%20Summit&url=https%3A%2F%2Fsift.com%2Fblog%2F4-top-takeaways-from-the-mrc-data-science-summit%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F4-top-takeaways-from-the-mrc-data-science-summit%2F&picture=&title=4%20top%20takeaways%20from%20the%20MRC%20Data%20Science%20Summit)
--   [](/cdn-cgi/l/email-protection#cef1bdbbaca4abadbaf3faebfcfebaa1beebfcfebaafa5abafb9afb7bdebfcfea8bca1a3ebfcfebaa6abebfcfe839c8debfcfe8aafbaafebfcfe9dada7aba0adabebfcfe9dbba3a3a7bae8edfefdf6f5aca1aab7f3a6bababebdebfd8febfc88ebfc88bda7a8bae0ada1a3ebfc88aca2a1a9ebfc88fae3baa1bee3baafa5abafb9afb7bde3a8bca1a3e3baa6abe3a3bcade3aaafbaafe3bdada7aba0adabe3bdbba3a3a7baebfc88)
+-   [](/cdn-cgi/l/email-protection#9ba4e8eef9f1fef8efa6afbea9abeff4ebbea9abeffaf0fefaecfae2e8bea9abfde9f4f6bea9abeff3febea9abd6c9d8bea9abdffaeffabea9abc8f8f2fef5f8febea9abc8eef6f6f2efbdb8aba8a3a0f9f4ffe2a6f3efefebe8bea8dabea9ddbea9dde8f2fdefb5f8f4f6bea9ddf9f7f4fcbea9ddafb6eff4ebb6effaf0fefaecfae2e8b6fde9f4f6b6eff3feb6f6e9f8b6fffaeffab6e8f8f2fef5f8feb6e8eef6f6f2efbea9dd)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -122,22 +138,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

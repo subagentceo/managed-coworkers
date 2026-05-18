@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-deep-dive-into-covid-passport-fraud%2F&title=A%20Deep%20Dive%20into%20COVID%20Passport%20Fraud)
 -   [](https://twitter.com/intent/tweet?text=A%20Deep%20Dive%20into%20COVID%20Passport%20Fraud&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-deep-dive-into-covid-passport-fraud%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fa-deep-dive-into-covid-passport-fraud%2F&picture=&title=A%20Deep%20Dive%20into%20COVID%20Passport%20Fraud)
--   [](/cdn-cgi/l/email-protection#16296563747c7375622b5733242652737366332426527f60733324267f7862793324265559405f5233242646776565667964623324265064776372303526252e2d7479726f2b7e62626665332557332450332450657f70623875797b332450747a7971332450773b727373663b727f60733b7f7862793b7579607f723b66776565667964623b7064776372332450)
+-   [](/cdn-cgi/l/email-protection#d9e6aaacbbb3bcbaade498fcebe99dbcbca9fcebe99db0afbcfcebe9b0b7adb6fcebe99a968f909dfcebe989b8aaaaa9b6abadfcebe99fabb8acbdfffae9eae1e2bbb6bda0e4b1adada9aafcea98fceb9ffceb9faab0bfadf7bab6b4fceb9fbbb5b6befceb9fb8f4bdbcbca9f4bdb0afbcf4b0b7adb6f4bab6afb0bdf4a9b8aaaaa9b6abadf4bfabb8acbdfceb9f)
 
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
 -   [Fraud](https://sift.com/blog/category/fraud/)
@@ -87,9 +87,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-deep-dive-into-covid-passport-fraud%2F&title=A%20Deep%20Dive%20into%20COVID%20Passport%20Fraud)
 -   [](https://twitter.com/intent/tweet?text=A%20Deep%20Dive%20into%20COVID%20Passport%20Fraud&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-deep-dive-into-covid-passport-fraud%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fa-deep-dive-into-covid-passport-fraud%2F&picture=&title=A%20Deep%20Dive%20into%20COVID%20Passport%20Fraud)
--   [](/cdn-cgi/l/email-protection#152a6660777f707661285430272551707065302725517c63703027257c7b617a302725565a435c5130272545746666657a67613027255367746071333625262d2e777a716c287d61616566302654302753302753667c73613b767a7830275377797a7230275374387170706538717c6370387c7b617a38767a637c713865746666657a6761387367746071302753)
+-   [](/cdn-cgi/l/email-protection#16296563747c7375622b5733242652737366332426527f60733324267f7862793324265559405f5233242646776565667964623324265064776372303526252e2d7479726f2b7e62626665332557332450332450657f70623875797b332450747a7971332450773b727373663b727f60733b7f7862793b7579607f723b66776565667964623b7064776372332450)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -122,22 +138,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

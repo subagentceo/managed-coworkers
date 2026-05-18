@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F11-benefits-of-preventing-fraud-and-scams%2F&title=11%20Benefits%20of%20Preventing%20Fraud%20and%20Scams)
 -   [](https://twitter.com/intent/tweet?text=11%20Benefits%20of%20Preventing%20Fraud%20and%20Scams&url=https%3A%2F%2Fsift.com%2Fblog%2F11-benefits-of-preventing-fraud-and-scams%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F11-benefits-of-preventing-fraud-and-scams%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F03%2FSift_Blog_1454x1044_13.jpg&title=11%20Benefits%20of%20Preventing%20Fraud%20and%20Scams)
--   [](/cdn-cgi/l/email-protection#caf5b9bfa8a0afa9bef7fbfbeff8fa88afa4afaca3beb9eff8faa5aceff8fa9ab8afbcafa4bea3a4adeff8fa8cb8abbfaeeff8faaba4aeeff8fa99a9aba7b9ece9faf9f2f1a8a5aeb3f7a2bebebab9eff98beff88ceff88cb9a3acbee4a9a5a7eff88ca8a6a5adeff88cfbfbe7a8afa4afaca3beb9e7a5ace7bab8afbcafa4bea3a4ade7acb8abbfaee7aba4aee7b9a9aba7b9eff88c)
+-   [](/cdn-cgi/l/email-protection#0e317d7b6c646b6d7a333f3f2b3c3e4c6b606b68677a7d2b3c3e61682b3c3e5e7c6b786b607a6760692b3c3e487c6f7b6a2b3c3e6f606a2b3c3e5d6d6f637d282d3e3d36356c616a7733667a7a7e7d2b3d4f2b3c482b3c487d67687a206d61632b3c486c6261692b3c483f3f236c6b606b68677a7d236168237e7c6b786b607a67606923687c6f7b6a236f606a237d6d6f637d2b3c48)
 
 -   [Fraud](https://sift.com/blog/category/fraud/)
 
@@ -78,9 +78,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F11-benefits-of-preventing-fraud-and-scams%2F&title=11%20Benefits%20of%20Preventing%20Fraud%20and%20Scams)
 -   [](https://twitter.com/intent/tweet?text=11%20Benefits%20of%20Preventing%20Fraud%20and%20Scams&url=https%3A%2F%2Fsift.com%2Fblog%2F11-benefits-of-preventing-fraud-and-scams%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F11-benefits-of-preventing-fraud-and-scams%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F03%2FSift_Blog_1454x1044_13.jpg&title=11%20Benefits%20of%20Preventing%20Fraud%20and%20Scams)
--   [](/cdn-cgi/l/email-protection#d2eda1a7b0b8b7b1a6efe3e3f7e0e290b7bcb7b4bba6a1f7e0e2bdb4f7e0e282a0b7a4b7bca6bbbcb5f7e0e294a0b3a7b6f7e0e2b3bcb6f7e0e281b1b3bfa1f4f1e2e1eae9b0bdb6abefbaa6a6a2a1f7e193f7e094f7e094a1bbb4a6fcb1bdbff7e094b0bebdb5f7e094e3e3ffb0b7bcb7b4bba6a1ffbdb4ffa2a0b7a4b7bca6bbbcb5ffb4a0b3a7b6ffb3bcb6ffa1b1b3bfa1f7e094)
+-   [](/cdn-cgi/l/email-protection#6f501c1a0d050a0c1b525e5e4a5d5f2d0a010a09061b1c4a5d5f00094a5d5f3f1d0a190a011b0601084a5d5f291d0e1a0b4a5d5f0e010b4a5d5f3c0c0e021c494c5f5c57540d000b1652071b1b1f1c4a5c2e4a5d294a5d291c06091b410c00024a5d290d0300084a5d295e5e420d0a010a09061b1c420009421f1d0a190a011b06010842091d0e1a0b420e010b421c0c0e021c4a5d29)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -113,22 +129,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

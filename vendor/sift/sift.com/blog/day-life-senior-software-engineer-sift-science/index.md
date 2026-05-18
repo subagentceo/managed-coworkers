@@ -27,7 +27,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-senior-software-engineer-sift-science%2F&title=A%20Day%20in%20the%20Life%20of%20a%20Senior%20Software%20Engineer%20at%20Sift%20Science)
 -   [](https://twitter.com/intent/tweet?text=A%20Day%20in%20the%20Life%20of%20a%20Senior%20Software%20Engineer%20at%20Sift%20Science&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-senior-software-engineer-sift-science%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-senior-software-engineer-sift-science%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FImage-uploaded-from-iOS-6.jpg&title=A%20Day%20in%20the%20Life%20of%20a%20Senior%20Software%20Engineer%20at%20Sift%20Science)
--   [](/cdn-cgi/l/email-protection#cbf4b8bea9a1aea8bff68aeef9fb8faab2eef9fba2a5eef9fbbfa3aeeef9fb87a2adaeeef9fba4adeef9fbaaeef9fb98aea5a2a4b9eef9fb98a4adbfbcaab9aeeef9fb8ea5aca2a5aeaeb9eef9fbaabfeef9fb98a2adbfeef9fb98a8a2aea5a8aeede8fbf8f3f0a9a4afb2f6a3bfbfbbb8eef88aeef98deef98db8a2adbfe5a8a4a6eef98da9a7a4aceef98dafaab2e6a7a2adaee6b8aea5a2a4b9e6b8a4adbfbcaab9aee6aea5aca2a5aeaeb9e6b8a2adbfe6b8a8a2aea5a8aeeef98d)
+-   [](/cdn-cgi/l/email-protection#e9d69a9c8b838c8a9dd4a8ccdbd9ad8890ccdbd98087ccdbd99d818cccdbd9a5808f8cccdbd9868fccdbd988ccdbd9ba8c8780869bccdbd9ba868f9d9e889b8cccdbd9ac878e80878c8c9bccdbd9889dccdbd9ba808f9dccdbd9ba8a808c878a8ccfcad9dad1d28b868d90d4819d9d999accdaa8ccdbafccdbaf9a808f9dc78a8684ccdbaf8b85868eccdbaf8d8890c485808f8cc49a8c8780869bc49a868f9d9e889b8cc48c878e80878c8c9bc49a808f9dc49a8a808c878a8cccdbaf)
 
 -   [Company](https://sift.com/blog/category/company/)
 
@@ -90,9 +90,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-senior-software-engineer-sift-science%2F&title=A%20Day%20in%20the%20Life%20of%20a%20Senior%20Software%20Engineer%20at%20Sift%20Science)
 -   [](https://twitter.com/intent/tweet?text=A%20Day%20in%20the%20Life%20of%20a%20Senior%20Software%20Engineer%20at%20Sift%20Science&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-senior-software-engineer-sift-science%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-senior-software-engineer-sift-science%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FImage-uploaded-from-iOS-6.jpg&title=A%20Day%20in%20the%20Life%20of%20a%20Senior%20Software%20Engineer%20at%20Sift%20Science)
--   [](/cdn-cgi/l/email-protection#88b7fbfdeae2edebfcb5c9adbab8cce9f1adbab8e1e6adbab8fce0edadbab8c4e1eeedadbab8e7eeadbab8e9adbab8dbede6e1e7faadbab8dbe7eefcffe9faedadbab8cde6efe1e6ededfaadbab8e9fcadbab8dbe1eefcadbab8dbebe1ede6ebedaeabb8bbb0b3eae7ecf1b5e0fcfcf8fbadbbc9adbaceadbacefbe1eefca6ebe7e5adbaceeae4e7efadbaceece9f1a5e4e1eeeda5fbede6e1e7faa5fbe7eefcffe9faeda5ede6efe1e6ededfaa5fbe1eefca5fbebe1ede6ebedadbace)
+-   [](/cdn-cgi/l/email-protection#e0df9395828a858394dda1c5d2d0a48199c5d2d0898ec5d2d0948885c5d2d0ac898685c5d2d08f86c5d2d081c5d2d0b3858e898f92c5d2d0b38f869497819285c5d2d0a58e87898e858592c5d2d08194c5d2d0b3898694c5d2d0b38389858e8385c6c3d0d3d8db828f8499dd8894949093c5d3a1c5d2a6c5d2a693898694ce838f8dc5d2a6828c8f87c5d2a6848199cd8c898685cd93858e898f92cd938f869497819285cd858e87898e858592cd93898694cd938389858e8385c5d2a6)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -125,22 +141,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

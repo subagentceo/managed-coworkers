@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-trends-and-insights%2F&title=Account%20takeover%20data%2C%20trends%2C%20and%20insights)
 -   [](https://twitter.com/intent/tweet?text=Account%20takeover%20data%2C%20trends%2C%20and%20insights&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-trends-and-insights%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-trends-and-insights%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FQ3-2022-Digital-Trust-Safety-Index_BLOG_PPThumbnail-cover-Image-1454x1044-1.jpg&title=Account%20takeover%20data%2C%20trends%2C%20and%20insights)
--   [](/cdn-cgi/l/email-protection#a39cd0d6c1c9c6c0d79ee2c0c0ccd6cdd7869193d7c2c8c6ccd5c6d1869193c7c2d7c28691e0869193d7d1c6cdc7d08691e0869193c2cdc7869193cacdd0cac4cbd7d0858093909b98c1ccc7da9ecbd7d7d3d08690e28691e58691e5d0cac5d78dc0ccce8691e5c1cfccc48691e5c2c0c0ccd6cdd78ed7c2c8c6ccd5c6d18ec7c2d7c28ed7d1c6cdc7d08ec2cdc78ecacdd0cac4cbd7d08691e5)
+-   [](/cdn-cgi/l/email-protection#f4cb8781969e919780c9b597979b819a80d1c6c480959f919b829186d1c6c490958095d1c6b7d1c6c48086919a9087d1c6b7d1c6c4959a90d1c6c49d9a879d939c8087d2d7c4c7cccf969b908dc99c80808487d1c7b5d1c6b2d1c6b2879d9280da979b99d1c6b296989b93d1c6b29597979b819a80d980959f919b829186d990958095d98086919a9087d9959a90d99d9a879d939c8087d1c6b2)
 
 -   [Account Takeover](https://sift.com/blog/category/ato/)
 -   [Data & Insights](https://sift.com/blog/category/data-insights/)
@@ -65,9 +65,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-trends-and-insights%2F&title=Account%20takeover%20data%2C%20trends%2C%20and%20insights)
 -   [](https://twitter.com/intent/tweet?text=Account%20takeover%20data%2C%20trends%2C%20and%20insights&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-trends-and-insights%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-trends-and-insights%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FQ3-2022-Digital-Trust-Safety-Index_BLOG_PPThumbnail-cover-Image-1454x1044-1.jpg&title=Account%20takeover%20data%2C%20trends%2C%20and%20insights)
--   [](/cdn-cgi/l/email-protection#ab94d8dec9c1cec8df96eac8c8c4dec5df8e999bdfcac0cec4ddced98e999bcfcadfca8e99e88e999bdfd9cec5cfd88e99e88e999bcac5cf8e999bc2c5d8c2ccc3dfd88d889b989390c9c4cfd296c3dfdfdbd88e98ea8e99ed8e99edd8c2cddf85c8c4c68e99edc9c7c4cc8e99edcac8c8c4dec5df86dfcac0cec4ddced986cfcadfca86dfd9cec5cfd886cac5cf86c2c5d8c2ccc3dfd88e99ed)
+-   [](/cdn-cgi/l/email-protection#a49bd7d1c6cec1c7d099e5c7c7cbd1cad0819694d0c5cfc1cbd2c1d6819694c0c5d0c58196e7819694d0d6c1cac0d78196e7819694c5cac0819694cdcad7cdc3ccd0d7828794979c9fc6cbc0dd99ccd0d0d4d78197e58196e28196e2d7cdc2d08ac7cbc98196e2c6c8cbc38196e2c5c7c7cbd1cad089d0c5cfc1cbd2c1d689c0c5d0c589d0d6c1cac0d789c5cac089cdcad7cdc3ccd0d78196e2)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -100,22 +116,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

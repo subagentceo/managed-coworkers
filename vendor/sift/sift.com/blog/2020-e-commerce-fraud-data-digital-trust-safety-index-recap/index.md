@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F2020-e-commerce-fraud-data-digital-trust-safety-index-recap%2F&title=2020%20E-commerce%20Fraud%20Data%3A%20Digital%20Trust%20%26%20Safety%20Index%20recap)
 -   [](https://twitter.com/intent/tweet?text=2020%20E-commerce%20Fraud%20Data%3A%20Digital%20Trust%20%26%20Safety%20Index%20recap&url=https%3A%2F%2Fsift.com%2Fblog%2F2020-e-commerce-fraud-data-digital-trust-safety-index-recap%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F2020-e-commerce-fraud-data-digital-trust-safety-index-recap%2F&picture=&title=2020%20E-commerce%20Fraud%20Data%3A%20Digital%20Trust%20%26%20Safety%20Index%20recap)
--   [](/cdn-cgi/l/email-protection#734c000611191610074e41434143564143365e101c1e1e16011016564143350112061756414337120712564032564143371a141a07121f564143270106000756414356414556414320121516070a5641433a1d17160b5641430116101203555043404b48111c170a4e1b07070300564032564135564135001a15075d101c1e564135111f1c14564135414341435e165e101c1e1e160110165e15011206175e171207125e171a141a07121f5e07010600075e00121516070a5e1a1d17160b5e0116101203564135)
+-   [](/cdn-cgi/l/email-protection#a798d4d2c5cdc2c4d39a95979597829597e28ac4c8cacac2d5c4c2829597e1d5c6d2c3829597e3c6d3c68294e6829597e3cec0ced3c6cb829597f3d5d2d4d3829597829591829597f4c6c1c2d3de829597eec9c3c2df829597d5c2c4c6d7818497949f9cc5c8c3de9acfd3d3d7d48294e68295e18295e1d4cec1d389c4c8ca8295e1c5cbc8c08295e1959795978ac28ac4c8cacac2d5c4c28ac1d5c6d2c38ac3c6d3c68ac3cec0ced3c6cb8ad3d5d2d4d38ad4c6c1c2d3de8acec9c3c2df8ad5c2c4c6d78295e1)
 
 -   [Account Takeover](https://sift.com/blog/category/ato/)
 -   [Content Fraud](https://sift.com/blog/category/content-fraud/)
@@ -107,9 +107,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F2020-e-commerce-fraud-data-digital-trust-safety-index-recap%2F&title=2020%20E-commerce%20Fraud%20Data%3A%20Digital%20Trust%20%26%20Safety%20Index%20recap)
 -   [](https://twitter.com/intent/tweet?text=2020%20E-commerce%20Fraud%20Data%3A%20Digital%20Trust%20%26%20Safety%20Index%20recap&url=https%3A%2F%2Fsift.com%2Fblog%2F2020-e-commerce-fraud-data-digital-trust-safety-index-recap%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F2020-e-commerce-fraud-data-digital-trust-safety-index-recap%2F&picture=&title=2020%20E-commerce%20Fraud%20Data%3A%20Digital%20Trust%20%26%20Safety%20Index%20recap)
--   [](/cdn-cgi/l/email-protection#4c733f392e26292f38717e7c7e7c697e7c09612f232121293e2f29697e7c0a3e2d3928697e7c082d382d697f0d697e7c08252b25382d20697e7c183e393f38697e7c697e7a697e7c1f2d2a293835697e7c0522282934697e7c3e292f2d3c6a6f7c7f74772e232835712438383c3f697f0d697e0a697e0a3f252a38622f2321697e0a2e20232b697e0a7e7c7e7c6129612f232121293e2f29612a3e2d392861282d382d6128252b25382d2061383e393f38613f2d2a293835612522282934613e292f2d3c697e0a)
+-   [](/cdn-cgi/l/email-protection#cff0bcbaada5aaacbbf2fdfffdffeafdff8ae2aca0a2a2aabdacaaeafdff89bdaebaabeafdff8baebbaeeafc8eeafdff8ba6a8a6bbaea3eafdff9bbdbabcbbeafdffeafdf9eafdff9caea9aabbb6eafdff86a1abaab7eafdffbdaaacaebfe9ecfffcf7f4ada0abb6f2a7bbbbbfbceafc8eeafd89eafd89bca6a9bbe1aca0a2eafd89ada3a0a8eafd89fdfffdffe2aae2aca0a2a2aabdacaae2a9bdaebaabe2abaebbaee2aba6a8a6bbaea3e2bbbdbabcbbe2bcaea9aabbb6e2a6a1abaab7e2bdaaacaebfeafd89)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -142,22 +158,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

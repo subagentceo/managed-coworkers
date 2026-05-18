@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fgartner-fraud-detection-guide-5-key-takeaways%2F&title=2019%20Gartner%20Market%20Guide%20for%20Online%20Fraud%20Detection%20%E2%80%93%205%20key%20takeaways%20for%20fraud%20fighters)
 -   [](https://twitter.com/intent/tweet?text=2019%20Gartner%20Market%20Guide%20for%20Online%20Fraud%20Detection%20%E2%80%93%205%20key%20takeaways%20for%20fraud%20fighters&url=https%3A%2F%2Fsift.com%2Fblog%2Fgartner-fraud-detection-guide-5-key-takeaways%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fgartner-fraud-detection-guide-5-key-takeaways%2F&picture=&title=2019%20Gartner%20Market%20Guide%20for%20Online%20Fraud%20Detection%20%E2%80%93%205%20key%20takeaways%20for%20fraud%20fighters)
--   [](/cdn-cgi/l/email-protection#546b2721363e313720696664656d716664133526203a31267166641935263f312071666413213d3031716664323b267166641b3a383d3a3171666412263521307166641031203137203d3b3a716664711166716c64716d67716664617166643f312d71666420353f313523352d27716664323b267166643226352130716664323d333c20312627727764676c6f363b302d693c20202427716715716612716612273d32207a373b3971661236383b33716612333526203a3126793226352130793031203137203d3b3a7933213d30317961793f312d7920353f313523352d27716612)
+-   [](/cdn-cgi/l/email-protection#98a7ebedfaf2fdfbeca5aaa8a9a1bdaaa8dff9eaecf6fdeabdaaa8d5f9eaf3fdecbdaaa8dfedf1fcfdbdaaa8fef7eabdaaa8d7f6f4f1f6fdbdaaa8deeaf9edfcbdaaa8dcfdecfdfbecf1f7f6bdaaa8bdddaabda0a8bda1abbdaaa8adbdaaa8f3fde1bdaaa8ecf9f3fdf9eff9e1ebbdaaa8fef7eabdaaa8feeaf9edfcbdaaa8fef1fff0ecfdeaebbebba8aba0a3faf7fce1a5f0ecece8ebbdabd9bdaadebdaadeebf1feecb6fbf7f5bdaadefaf4f7ffbdaadefff9eaecf6fdeab5feeaf9edfcb5fcfdecfdfbecf1f7f6b5ffedf1fcfdb5adb5f3fde1b5ecf9f3fdf9eff9e1ebbdaade)
 
 -   [Account Takeover](https://sift.com/blog/category/ato/)
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
@@ -106,9 +106,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fgartner-fraud-detection-guide-5-key-takeaways%2F&title=2019%20Gartner%20Market%20Guide%20for%20Online%20Fraud%20Detection%20%E2%80%93%205%20key%20takeaways%20for%20fraud%20fighters)
 -   [](https://twitter.com/intent/tweet?text=2019%20Gartner%20Market%20Guide%20for%20Online%20Fraud%20Detection%20%E2%80%93%205%20key%20takeaways%20for%20fraud%20fighters&url=https%3A%2F%2Fsift.com%2Fblog%2Fgartner-fraud-detection-guide-5-key-takeaways%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fgartner-fraud-detection-guide-5-key-takeaways%2F&picture=&title=2019%20Gartner%20Market%20Guide%20for%20Online%20Fraud%20Detection%20%E2%80%93%205%20key%20takeaways%20for%20fraud%20fighters)
--   [](/cdn-cgi/l/email-protection#82bdf1f7e0e8e7e1f6bfb0b2b3bba7b0b2c5e3f0f6ece7f0a7b0b2cfe3f0e9e7f6a7b0b2c5f7ebe6e7a7b0b2e4edf0a7b0b2cdeceeebece7a7b0b2c4f0e3f7e6a7b0b2c6e7f6e7e1f6ebedeca7b0b2a7c7b0a7bab2a7bbb1a7b0b2b7a7b0b2e9e7fba7b0b2f6e3e9e7e3f5e3fbf1a7b0b2e4edf0a7b0b2e4f0e3f7e6a7b0b2e4ebe5eaf6e7f0f1a4a1b2b1bab9e0ede6fbbfeaf6f6f2f1a7b1c3a7b0c4a7b0c4f1ebe4f6ace1edefa7b0c4e0eeede5a7b0c4e5e3f0f6ece7f0afe4f0e3f7e6afe6e7f6e7e1f6ebedecafe5f7ebe6e7afb7afe9e7fbaff6e3e9e7e3f5e3fbf1a7b0c4)
+-   [](/cdn-cgi/l/email-protection#516e2224333b3432256c63616068746361163023253f34237463611c30233a34257463611624383534746361373e237463611e3f3d383f347463611723302435746361153425343225383e3f746361741463746961746862746361647463613a342874636125303a343026302822746361373e237463613723302435746361373836392534232277726162696a333e35286c3925252122746210746317746317223837257f323e3c746317333d3e36746317363023253f34237c37233024357c353425343225383e3f7c36243835347c647c3a34287c25303a343026302822746317)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -141,22 +157,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

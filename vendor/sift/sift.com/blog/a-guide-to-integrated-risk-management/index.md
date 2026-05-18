@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-guide-to-integrated-risk-management%2F&title=A%20Guide%20to%20Integrated%20Risk%20Management)
 -   [](https://twitter.com/intent/tweet?text=A%20Guide%20to%20Integrated%20Risk%20Management&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-guide-to-integrated-risk-management%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fa-guide-to-integrated-risk-management%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F06%2FSEO-Images_A-Guide-to-Integrated-Risk-Management_1445x1044.jpg&title=A%20Guide%20to%20Integrated%20Risk%20Management)
--   [](/cdn-cgi/l/email-protection#053a7670676f606671384420373542706c6160203735716a2037354c6b7160627764716061203735576c766e20373548646b64626068606b71232635363d3e676a617c386d71717576203644203743203743766c63712b666a6820374367696a62203743642862706c616028716a286c6b716062776471606128776c766e2868646b64626068606b71203743)
+-   [](/cdn-cgi/l/email-protection#447b3731262e212730790561767403312d2021617674302b6176740d2a3021233625302120617674162d372f61767409252a25232129212a30626774777c7f262b203d792c30303437617705617602617602372d22306a272b2961760226282b23617602256923312d202169302b692d2a302123362530212069362d372f6929252a25232129212a30617602)
 
 -   [Fraud](https://sift.com/blog/category/fraud/)
 
@@ -121,9 +121,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-guide-to-integrated-risk-management%2F&title=A%20Guide%20to%20Integrated%20Risk%20Management)
 -   [](https://twitter.com/intent/tweet?text=A%20Guide%20to%20Integrated%20Risk%20Management&url=https%3A%2F%2Fsift.com%2Fblog%2Fa-guide-to-integrated-risk-management%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fa-guide-to-integrated-risk-management%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F06%2FSEO-Images_A-Guide-to-Integrated-Risk-Management_1445x1044.jpg&title=A%20Guide%20to%20Integrated%20Risk%20Management)
--   [](/cdn-cgi/l/email-protection#d8e7abadbab2bdbbace599fdeae89fadb1bcbdfdeae8acb7fdeae891b6acbdbfaab9acbdbcfdeae88ab1abb3fdeae895b9b6b9bfbdb5bdb6acfefbe8ebe0e3bab7bca1e5b0acaca8abfdeb99fdea9efdea9eabb1beacf6bbb7b5fdea9ebab4b7bffdea9eb9f5bfadb1bcbdf5acb7f5b1b6acbdbfaab9acbdbcf5aab1abb3f5b5b9b6b9bfbdb5bdb6acfdea9e)
+-   [](/cdn-cgi/l/email-protection#112e6264737b7472652c503423215664787574342321657e342321587f65747663706574753423214378627a3423215c707f7076747c747f6537322122292a737e75682c7965656162342250342357342357627877653f727e7c342357737d7e76342357703c76647875743c657e3c787f65747663706574753c6378627a3c7c707f7076747c747f65342357)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -156,22 +172,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

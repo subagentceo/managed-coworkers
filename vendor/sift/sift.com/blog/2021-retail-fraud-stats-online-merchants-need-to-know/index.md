@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F2021-retail-fraud-stats-online-merchants-need-to-know%2F&title=2021%20Retail%20Fraud%20Stats%20Online%20Merchants%20Need%20to%20Know)
 -   [](https://twitter.com/intent/tweet?text=2021%20Retail%20Fraud%20Stats%20Online%20Merchants%20Need%20to%20Know&url=https%3A%2F%2Fsift.com%2Fblog%2F2021-retail-fraud-stats-online-merchants-need-to-know%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F2021-retail-fraud-stats-online-merchants-need-to-know%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2F2021_q3_retail_data_blog_header.jpeg&title=2021%20Retail%20Fraud%20Stats%20Online%20Merchants%20Need%20to%20Know)
--   [](/cdn-cgi/l/email-protection#7b44080e19111e180f46494b494a5e494b291e0f1a12175e494b3d091a0e1f5e494b280f1a0f085e494b34151712151e5e494b361e0918131a150f085e494b351e1e1f5e494b0f145e494b3015140c5d584b48434019141f0246130f0f0b085e483a5e493d5e493d08121d0f551814165e493d1917141c5e493d494b494a56091e0f1a1217561d091a0e1f56080f1a0f085614151712151e56161e0918131a150f0856151e1e1f560f14561015140c5e493d)
+-   [](/cdn-cgi/l/email-protection#ad92ded8cfc7c8ced9909f9d9f9c889f9dffc8d9ccc4c1889f9debdfccd8c9889f9dfed9ccd9de889f9de2c3c1c4c3c8889f9de0c8dfcec5ccc3d9de889f9de3c8c8c9889f9dd9c2889f9de6c3c2da8b8e9d9e9596cfc2c9d490c5d9d9ddde889eec889feb889febdec4cbd983cec2c0889febcfc1c2ca889feb9f9d9f9c80dfc8d9ccc4c180cbdfccd8c980ded9ccd9de80c2c3c1c4c3c880c0c8dfcec5ccc3d9de80c3c8c8c980d9c280c6c3c2da889feb)
 
 -   [Account Takeover](https://sift.com/blog/category/ato/)
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
@@ -82,9 +82,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F2021-retail-fraud-stats-online-merchants-need-to-know%2F&title=2021%20Retail%20Fraud%20Stats%20Online%20Merchants%20Need%20to%20Know)
 -   [](https://twitter.com/intent/tweet?text=2021%20Retail%20Fraud%20Stats%20Online%20Merchants%20Need%20to%20Know&url=https%3A%2F%2Fsift.com%2Fblog%2F2021-retail-fraud-stats-online-merchants-need-to-know%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F2021-retail-fraud-stats-online-merchants-need-to-know%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2F2021_q3_retail_data_blog_header.jpeg&title=2021%20Retail%20Fraud%20Stats%20Online%20Merchants%20Need%20to%20Know)
--   [](/cdn-cgi/l/email-protection#47783432252d2224337a75777576627577152233262e2b6275770135263223627577143326333462757708292b2e29226275770a2235242f262933346275770922222362757733286275770c292830616477747f7c2528233e7a2f33333734627406627501627501342e21336924282a627501252b2820627501757775766a352233262e2b6a21352632236a34332633346a28292b2e29226a2a2235242f262933346a292222236a33286a2c292830627501)
+-   [](/cdn-cgi/l/email-protection#1d226e687f77787e69202f2d2f2c382f2d4f78697c7471382f2d5b6f7c6879382f2d4e697c696e382f2d527371747378382f2d50786f7e757c73696e382f2d53787879382f2d6972382f2d5673726a3b3e2d2e25267f727964207569696d6e382e5c382f5b382f5b6e747b69337e7270382f5b7f71727a382f5b2f2d2f2c306f78697c7471307b6f7c6879306e697c696e307273717473783070786f7e757c73696e3073787879306972307673726a382f5b)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -117,22 +133,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

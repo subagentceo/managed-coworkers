@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F3-themes-from-the-mag-sift-merchant-meet-up-agents-passkeys-and-identity-trust%2F&title=3%20Themes%20from%20the%20MAG-Sift%20Merchant%20Meet-Up%3A%20Agents%2C%20Passkeys%2C%20and%20Identity%20Trust)
 -   [](https://twitter.com/intent/tweet?text=3%20Themes%20from%20the%20MAG-Sift%20Merchant%20Meet-Up%3A%20Agents%2C%20Passkeys%2C%20and%20Identity%20Trust&url=https%3A%2F%2Fsift.com%2Fblog%2F3-themes-from-the-mag-sift-merchant-meet-up-agents-passkeys-and-identity-trust%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F3-themes-from-the-mag-sift-merchant-meet-up-agents-passkeys-and-identity-trust%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F10%2FIMG_6189-scaled.jpg&title=3%20Themes%20from%20the%20MAG-Sift%20Merchant%20Meet-Up%3A%20Agents%2C%20Passkeys%2C%20and%20Identity%20Trust)
--   [](/cdn-cgi/l/email-protection#023d717760686761763f31273032566a676f677127303264706d6f273032766a672730324f43452f516b64762730324f6770616a636c762730324f6767762f57722731432730324365676c76712730412730325263717169677b71273041273032636c662730324b66676c766b767b2730325670777176242132313a39606d667b3f6a76767271273143273044273044716b64762c616d6f273044606e6d65273044312f766a676f67712f64706d6f2f766a672f6f63652f716b64762f6f6770616a636c762f6f6767762f77722f6365676c76712f7263717169677b712f636c662f6b66676c766b767b2f7670777176273044)
+-   [](/cdn-cgi/l/email-protection#516e2224333b3432256c627463610539343c342274636137233e3c7463612539347463611c10167c023837257463611c34233239303f257463611c3434257c04217462107463611036343f2522746312746361013022223a342822746312746361303f357463611835343f25382528746361052324222577726162696a333e35286c3925252122746210746317746317223837257f323e3c746317333d3e36746317627c2539343c34227c37233e3c7c2539347c3c30367c223837257c3c34233239303f257c3c3434257c24217c3036343f25227c213022223a3428227c303f357c3835343f253825287c2523242225746317)
 
 -   [Company](https://sift.com/blog/category/company/)
 
@@ -96,9 +96,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F3-themes-from-the-mag-sift-merchant-meet-up-agents-passkeys-and-identity-trust%2F&title=3%20Themes%20from%20the%20MAG-Sift%20Merchant%20Meet-Up%3A%20Agents%2C%20Passkeys%2C%20and%20Identity%20Trust)
 -   [](https://twitter.com/intent/tweet?text=3%20Themes%20from%20the%20MAG-Sift%20Merchant%20Meet-Up%3A%20Agents%2C%20Passkeys%2C%20and%20Identity%20Trust&url=https%3A%2F%2Fsift.com%2Fblog%2F3-themes-from-the-mag-sift-merchant-meet-up-agents-passkeys-and-identity-trust%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F3-themes-from-the-mag-sift-merchant-meet-up-agents-passkeys-and-identity-trust%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F10%2FIMG_6189-scaled.jpg&title=3%20Themes%20from%20the%20MAG-Sift%20Merchant%20Meet-Up%3A%20Agents%2C%20Passkeys%2C%20and%20Identity%20Trust)
--   [](/cdn-cgi/l/email-protection#7f400c0a1d151a1c0b424c5a4d4f2b171a121a0c5a4d4f190d10125a4d4f0b171a5a4d4f323e38522c16190b5a4d4f321a0d1c171e110b5a4d4f321a1a0b522a0f5a4c3e5a4d4f3e181a110b0c5a4d3c5a4d4f2f1e0c0c141a060c5a4d3c5a4d4f1e111b5a4d4f361b1a110b160b065a4d4f2b0d0a0c0b595c4f4c47441d101b0642170b0b0f0c5a4c3e5a4d395a4d390c16190b511c10125a4d391d1310185a4d394c520b171a121a0c52190d1012520b171a52121e18520c16190b52121a0d1c171e110b52121a1a0b520a0f521e181a110b0c520f1e0c0c141a060c521e111b52161b1a110b160b06520b0d0a0c0b5a4d39)
+-   [](/cdn-cgi/l/email-protection#1e216d6b7c747b7d6a232d3b2c2e4a767b737b6d3b2c2e786c71733b2c2e6a767b3b2c2e535f59334d77786a3b2c2e537b6c7d767f706a3b2c2e537b7b6a334b6e3b2d5f3b2c2e5f797b706a6d3b2c5d3b2c2e4e7f6d6d757b676d3b2c5d3b2c2e7f707a3b2c2e577a7b706a776a673b2c2e4a6c6b6d6a383d2e2d26257c717a6723766a6a6e6d3b2d5f3b2c583b2c586d77786a307d71733b2c587c7271793b2c582d336a767b737b6d33786c7173336a767b33737f79336d77786a33737b6c7d767f706a33737b7b6a336b6e337f797b706a6d336e7f6d6d757b676d337f707a33777a7b706a776a67336a6c6b6d6a3b2c58)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -131,22 +147,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

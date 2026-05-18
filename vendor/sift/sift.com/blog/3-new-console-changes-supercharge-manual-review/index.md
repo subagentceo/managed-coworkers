@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F3-new-console-changes-supercharge-manual-review%2F&title=3%20New%20Console%20Changes%20to%20Supercharge%20Manual%20Review)
 -   [](https://twitter.com/intent/tweet?text=3%20New%20Console%20Changes%20to%20Supercharge%20Manual%20Review&url=https%3A%2F%2Fsift.com%2Fblog%2F3-new-console-changes-supercharge-manual-review%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F3-new-console-changes-supercharge-manual-review%2F&picture=&title=3%20New%20Console%20Changes%20to%20Supercharge%20Manual%20Review)
--   [](/cdn-cgi/l/email-protection#1a25696f78707f796e27293f282a547f6d3f282a5975746975767f3f282a59727b747d7f693f282a6e753f282a496f6a7f6879727b687d7f3f282a577b746f7b763f282a487f6c737f6d3c392a29222178757e6327726e6e6a693f295b3f285c3f285c69737c6e347975773f285c7876757d3f285c2937747f6d377975746975767f3779727b747d7f6937696f6a7f6879727b687d7f37777b746f7b7637687f6c737f6d3f285c)
+-   [](/cdn-cgi/l/email-protection#102f6365727a7573642d233522205e7567352220537f7e637f7c753522205378717e777563352220647f35222043656075627378716277753522205d717e65717c35222042756679756736332023282b727f74692d7864646063352351352256352256637976643e737f7d352256727c7f77352256233d7e75673d737f7e637f7c753d7378717e7775633d63656075627378716277753d7d717e65717c3d627566797567352256)
 
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
 -   [Product News](https://sift.com/blog/category/product-news/)
@@ -70,16 +70,32 @@ We’ve made a number of other changes to the Console to help analysts work more
 
 We’ve made searching quicker with Lists that now auto-save as soon as you add or modify any criteria. No need to worry about losing the users you were investigating as you explore fraud patterns.
 
-We are proud to have helped customers significantly reduce manual review and are always investing in new ways to make analysts’ lives easier. If you have questions or feedback, reach out to us at [\[email protected\]](/cdn-cgi/l/email-protection#f685838686998482b6859f908285959f93989593d895999b).
+We are proud to have helped customers significantly reduce manual review and are always investing in new ways to make analysts’ lives easier. If you have questions or feedback, reach out to us at [\[email protected\]](/cdn-cgi/l/email-protection#ec9f999c9c839e98ac9f858a989f8f8589828f89c28f8381).
 
 Share post on:
 
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F3-new-console-changes-supercharge-manual-review%2F&title=3%20New%20Console%20Changes%20to%20Supercharge%20Manual%20Review)
 -   [](https://twitter.com/intent/tweet?text=3%20New%20Console%20Changes%20to%20Supercharge%20Manual%20Review&url=https%3A%2F%2Fsift.com%2Fblog%2F3-new-console-changes-supercharge-manual-review%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F3-new-console-changes-supercharge-manual-review%2F&picture=&title=3%20New%20Console%20Changes%20to%20Supercharge%20Manual%20Review)
--   [](/cdn-cgi/l/email-protection#6e511d1b0c040b0d1a535d4b5c5e200b194b5c5e2d01001d01020b4b5c5e2d060f00090b1d4b5c5e1a014b5c5e3d1b1e0b1c0d060f1c090b4b5c5e230f001b0f024b5c5e3c0b18070b19484d5e5d56550c010a1753061a1a1e1d4b5d2f4b5c284b5c281d07081a400d01034b5c280c0201094b5c285d43000b19430d01001d01020b430d060f00090b1d431d1b1e0b1c0d060f1c090b43030f001b0f02431c0b18070b194b5c28)
+-   [](/cdn-cgi/l/email-protection#f1ce8284939b949285ccc2d4c3c1bf9486d4c3c1b29e9f829e9d94d4c3c1b299909f969482d4c3c1859ed4c3c1a284819483929990839694d4c3c1bc909f84909dd4c3c1a39487989486d7d2c1c2c9ca939e9588cc9985858182d4c2b0d4c3b7d4c3b782989785df929e9cd4c3b7939d9e96d4c3b7c2dc9f9486dc929e9f829e9d94dc9299909f969482dc8284819483929990839694dc9c909f84909ddc839487989486d4c3b7)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -112,22 +128,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

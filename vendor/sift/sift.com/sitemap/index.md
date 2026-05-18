@@ -517,6 +517,7 @@
 -   [What are AI Scams and How Do You Stop Them?](https://sift.com/blog/what-are-ai-scams/)
 -   [What are the most scammed states?](https://sift.com/blog/fraud-united-states-rankings/)
 -   [What Does Social Say?](https://sift.com/blog/what-does-social-say/)
+-   [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
 -   [What happened in the world of fraud?](https://sift.com/blog/fraud-roundup-2017-ato-data-breach-mobile/)
 -   [What is a Rules Engine and How to Use One with AI](https://sift.com/blog/humans-in-the-loop-ai-first-fraud-decisioning-vs-weighted-rules/)
 -   [What is a Transaction Dispute?](https://sift.com/blog/what-is-a-transaction-dispute/)

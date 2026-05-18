@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F3-common-ato-attacks-and-how-to-stop-them%2F&title=3%20common%20ATO%20attacks%E2%80%94and%20how%20to%20stop%20them)
 -   [](https://twitter.com/intent/tweet?text=3%20common%20ATO%20attacks%E2%80%94and%20how%20to%20stop%20them&url=https%3A%2F%2Fsift.com%2Fblog%2F3-common-ato-attacks-and-how-to-stop-them%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F3-common-ato-attacks-and-how-to-stop-them%2F&picture=&title=3%20common%20ATO%20attacks%E2%80%94and%20how%20to%20stop%20them)
--   [](/cdn-cgi/l/email-protection#91aee2e4f3fbf4f2e5aca2b4a3a1f2fefcfcfeffb4a3a1d0c5deb4a3a1f0e5e5f0f2fae2b4d4a3b4a9a1b4a8a5f0fff5b4a3a1f9fee6b4a3a1e5feb4a3a1e2e5fee1b4a3a1e5f9f4fcb7b2a1a2a9aaf3fef5e8acf9e5e5e1e2b4a2d0b4a3d7b4a3d7e2f8f7e5bff2fefcb4a3d7f3fdfef6b4a3d7a2bcf2fefcfcfeffbcf0e5febcf0e5e5f0f2fae2bcf0fff5bcf9fee6bce5febce2e5fee1bce5f9f4fcb4a3d7)
+-   [](/cdn-cgi/l/email-protection#f6c98583949c939582cbc5d3c4c695999b9b9998d3c4c6b7a2b9d3c4c697828297959d85d3b3c4d3cec6d3cfc2979892d3c4c69e9981d3c4c68299d3c4c685829986d3c4c6829e939bd0d5c6c5cecd9499928fcb9e82828685d3c5b7d3c4b0d3c4b0859f9082d895999bd3c4b0949a9991d3c4b0c5db95999b9b9998db978299db97828297959d85db979892db9e9981db8299db85829986db829e939bd3c4b0)
 
 -   [Account Takeover](https://sift.com/blog/category/ato/)
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
@@ -87,9 +87,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F3-common-ato-attacks-and-how-to-stop-them%2F&title=3%20common%20ATO%20attacks%E2%80%94and%20how%20to%20stop%20them)
 -   [](https://twitter.com/intent/tweet?text=3%20common%20ATO%20attacks%E2%80%94and%20how%20to%20stop%20them&url=https%3A%2F%2Fsift.com%2Fblog%2F3-common-ato-attacks-and-how-to-stop-them%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F3-common-ato-attacks-and-how-to-stop-them%2F&picture=&title=3%20common%20ATO%20attacks%E2%80%94and%20how%20to%20stop%20them)
--   [](/cdn-cgi/l/email-protection#89b6fafcebe3eceafdb4baacbbb9eae6e4e4e6e7acbbb9c8ddc6acbbb9e8fdfde8eae2faacccbbacb1b9acb0bde8e7edacbbb9e1e6feacbbb9fde6acbbb9fafde6f9acbbb9fde1ece4afaab9bab1b2ebe6edf0b4e1fdfdf9faacbac8acbbcfacbbcffae0effda7eae6e4acbbcfebe5e6eeacbbcfbaa4eae6e4e4e6e7a4e8fde6a4e8fdfde8eae2faa4e8e7eda4e1e6fea4fde6a4fafde6f9a4fde1ece4acbbcf)
+-   [](/cdn-cgi/l/email-protection#c5fab6b0a7afa0a6b1f8f6e0f7f5a6aaa8a8aaabe0f7f584918ae0f7f5a4b1b1a4a6aeb6e080f7e0fdf5e0fcf1a4aba1e0f7f5adaab2e0f7f5b1aae0f7f5b6b1aab5e0f7f5b1ada0a8e3e6f5f6fdfea7aaa1bcf8adb1b1b5b6e0f684e0f783e0f783b6aca3b1eba6aaa8e0f783a7a9aaa2e0f783f6e8a6aaa8a8aaabe8a4b1aae8a4b1b1a4a6aeb6e8a4aba1e8adaab2e8b1aae8b6b1aab5e8b1ada0a8e0f783)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -122,22 +138,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

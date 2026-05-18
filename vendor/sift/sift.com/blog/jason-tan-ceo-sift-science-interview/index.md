@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fjason-tan-ceo-sift-science-interview%2F&title=12%20Questions%20for%20Jason%20Tan%2C%20CEO%20of%20Sift%20Science)
 -   [](https://twitter.com/intent/tweet?text=12%20Questions%20for%20Jason%20Tan%2C%20CEO%20of%20Sift%20Science&url=https%3A%2F%2Fsift.com%2Fblog%2Fjason-tan-ceo-sift-science-interview%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fjason-tan-ceo-sift-science-interview%2F&picture=&title=12%20Questions%20for%20Jason%20Tan%2C%20CEO%20of%20Sift%20Science)
--   [](/cdn-cgi/l/email-protection#f5ca8680979f909681c8c4c7d0c7c5a4809086819c9a9b86d0c7c5939a87d0c7c5bf94869a9bd0c7c5a1949bd0c7b6d0c7c5b6b0bad0c7c59a93d0c7c5a69c9381d0c7c5a6969c909b9690d3d6c5c6cdce979a918cc89d81818586d0c6b4d0c7b3d0c7b3869c9381db969a98d0c7b397999a92d0c7b39f94869a9bd881949bd896909ad8869c9381d886969c909b9690d89c9b819087839c9082d0c7b3)
+-   [](/cdn-cgi/l/email-protection#c5fab6b0a7afa0a6b1f8f4f7e0f7f594b0a0b6b1acaaabb6e0f7f5a3aab7e0f7f58fa4b6aaabe0f7f591a4abe0f786e0f7f586808ae0f7f5aaa3e0f7f596aca3b1e0f7f596a6aca0aba6a0e3e6f5f6fdfea7aaa1bcf8adb1b1b5b6e0f684e0f783e0f783b6aca3b1eba6aaa8e0f783a7a9aaa2e0f783afa4b6aaabe8b1a4abe8a6a0aae8b6aca3b1e8b6a6aca0aba6a0e8acabb1a0b7b3aca0b2e0f783)
 
 -   [Company](https://sift.com/blog/category/company/)
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
@@ -113,9 +113,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fjason-tan-ceo-sift-science-interview%2F&title=12%20Questions%20for%20Jason%20Tan%2C%20CEO%20of%20Sift%20Science)
 -   [](https://twitter.com/intent/tweet?text=12%20Questions%20for%20Jason%20Tan%2C%20CEO%20of%20Sift%20Science&url=https%3A%2F%2Fsift.com%2Fblog%2Fjason-tan-ceo-sift-science-interview%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fjason-tan-ceo-sift-science-interview%2F&picture=&title=12%20Questions%20for%20Jason%20Tan%2C%20CEO%20of%20Sift%20Science)
--   [](/cdn-cgi/l/email-protection#427d313720282721367f737067707213372731362b2d2c31677072242d306770720823312d2c67707216232c67700167707201070d6770722d24677072112b243667707211212b272c2127646172717a79202d263b7f2a36363231677103677004677004312b24366c212d2f677004202e2d256770042823312d2c6f36232c6f21272d6f312b24366f31212b272c21276f2b2c362730342b2735677004)
+-   [](/cdn-cgi/l/email-protection#724d010710181711064f434057404223071701061b1d1c01574042141d005740423813011d1c57404226131c57403157404231373d5740421d14574042211b140657404221111b171c1117545142414a49101d160b4f1a06060201574133574034574034011b14065c111d1f574034101e1d155740341813011d1c5f06131c5f11171d5f011b14065f01111b171c11175f1b1c061700041b1705574034)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -148,22 +164,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

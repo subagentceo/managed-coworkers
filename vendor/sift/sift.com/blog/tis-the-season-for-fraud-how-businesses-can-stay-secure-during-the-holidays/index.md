@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Ftis-the-season-for-fraud-how-businesses-can-stay-secure-during-the-holidays%2F&title=%E2%80%98Tis%20the%20season%20for%20fraud%3A%20How%20businesses%20can%20stay%20secure%20during%20the%20holidays)
 -   [](https://twitter.com/intent/tweet?text=%E2%80%98Tis%20the%20season%20for%20fraud%3A%20How%20businesses%20can%20stay%20secure%20during%20the%20holidays&url=https%3A%2F%2Fsift.com%2Fblog%2Ftis-the-season-for-fraud-how-businesses-can-stay-secure-during-the-holidays%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Ftis-the-season-for-fraud-how-businesses-can-stay-secure-during-the-holidays%2F&picture=&title=%E2%80%98Tis%20the%20season%20for%20fraud%3A%20How%20businesses%20can%20stay%20secure%20during%20the%20holidays)
--   [](/cdn-cgi/l/email-protection#7a45090f18101f190e475f3f485f424a5f43422e13095f484a0e121f5f484a091f1b0915145f484a1c15085f484a1c081b0f1e5f493b5f484a32150d5f484a180f0913141f09091f095f484a191b145f484a090e1b035f484a091f190f081f5f484a1e0f0813141d5f484a0e121f5f484a121516131e1b03095c594a49424118151e0347120e0e0a095f493b5f483c5f483c09131c0e541915175f483c1816151d5f483c0e1309570e121f57091f1b091514571c1508571c081b0f1e5712150d57180f0913141f09091f0957191b1457090e1b0357091f190f081f571e0f0813141d570e121f57121516131e1b03095f483c)
+-   [](/cdn-cgi/l/email-protection#546b2721363e31372069711166716c64716d6c003d27716664203c31716664273135273b3a716664323b2671666432263521307167157166641c3b237166643621273d3a312727312771666437353a7166642720352d7166642731372126317166643021263d3a33716664203c317166643c3b383d30352d27727764676c6f363b302d693c20202427716715716612716612273d32207a373b3971661236383b33716612203d2779203c3179273135273b3a79323b26793226352130793c3b23793621273d3a31272731277937353a792720352d79273137212631793021263d3a3379203c31793c3b383d30352d27716612)
 
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
 -   [Fraud](https://sift.com/blog/category/fraud/)
@@ -107,9 +107,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Ftis-the-season-for-fraud-how-businesses-can-stay-secure-during-the-holidays%2F&title=%E2%80%98Tis%20the%20season%20for%20fraud%3A%20How%20businesses%20can%20stay%20secure%20during%20the%20holidays)
 -   [](https://twitter.com/intent/tweet?text=%E2%80%98Tis%20the%20season%20for%20fraud%3A%20How%20businesses%20can%20stay%20secure%20during%20the%20holidays&url=https%3A%2F%2Fsift.com%2Fblog%2Ftis-the-season-for-fraud-how-businesses-can-stay-secure-during-the-holidays%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Ftis-the-season-for-fraud-how-businesses-can-stay-secure-during-the-holidays%2F&picture=&title=%E2%80%98Tis%20the%20season%20for%20fraud%3A%20How%20businesses%20can%20stay%20secure%20during%20the%20holidays)
--   [](/cdn-cgi/l/email-protection#9aa5e9eff8f0fff9eea7bfdfa8bfa2aabfa3a2cef3e9bfa8aaeef2ffbfa8aae9fffbe9f5f4bfa8aafcf5e8bfa8aafce8fbeffebfa9dbbfa8aad2f5edbfa8aaf8efe9f3f4ffe9e9ffe9bfa8aaf9fbf4bfa8aae9eefbe3bfa8aae9fff9efe8ffbfa8aafeefe8f3f4fdbfa8aaeef2ffbfa8aaf2f5f6f3fefbe3e9bcb9aaa9a2a1f8f5fee3a7f2eeeeeae9bfa9dbbfa8dcbfa8dce9f3fceeb4f9f5f7bfa8dcf8f6f5fdbfa8dceef3e9b7eef2ffb7e9fffbe9f5f4b7fcf5e8b7fce8fbeffeb7f2f5edb7f8efe9f3f4ffe9e9ffe9b7f9fbf4b7e9eefbe3b7e9fff9efe8ffb7feefe8f3f4fdb7eef2ffb7f2f5f6f3fefbe3e9bfa8dc)
+-   [](/cdn-cgi/l/email-protection#635c101601090600175e462651465b53465a5b370a10465153170b06465153100602100c0d465153050c1146515305110216074650224651532b0c144651530116100a0d061010061046515300020d4651531017021a4651531006001611064651530716110a0d04465153170b064651530b0c0f0a07021a10454053505b58010c071a5e0b17171310465022465125465125100a05174d000c0e465125010f0c04465125170a104e170b064e100602100c0d4e050c114e05110216074e0b0c144e0116100a0d06101006104e00020d4e1017021a4e1006001611064e0716110a0d044e170b064e0b0c0f0a07021a10465125)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -142,22 +158,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

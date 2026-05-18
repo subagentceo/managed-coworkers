@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F2024-in-review-innovations-partnerships-and-industry-recognition-at-sift%2F&title=2024%20in%20Review%3A%20Innovations%2C%20Partnerships%2C%20and%20Industry%20Recognition%20at%20Sift)
 -   [](https://twitter.com/intent/tweet?text=2024%20in%20Review%3A%20Innovations%2C%20Partnerships%2C%20and%20Industry%20Recognition%20at%20Sift&url=https%3A%2F%2Fsift.com%2Fblog%2F2024-in-review-innovations-partnerships-and-industry-recognition-at-sift%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F2024-in-review-innovations-partnerships-and-industry-recognition-at-sift%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F02%2FQuarterly_Roundup.jpg&title=2024%20in%20Review%3A%20Innovations%2C%20Partnerships%2C%20and%20Industry%20Recognition%20at%20Sift)
--   [](/cdn-cgi/l/email-protection#28175b5d4a424d4b5c151a181a1c0d1a1841460d1a187a4d5e414d5f0d1b690d1a18614646475e495c4147465b0d1a6b0d1a1878495a5c464d5a5b4041585b0d1a6b0d1a1849464c0d1a1861464c5d5b5c5a510d1a187a4d4b474f46415c4147460d1a18495c0d1a187b414e5c0e0b181b10134a474c5115405c5c585b0d1b690d1a6e0d1a6e5b414e5c064b47450d1a6e4a44474f0d1a6e1a181a1c054146055a4d5e414d5f05414646475e495c4147465b0558495a5c464d5a5b4041585b0549464c0541464c5d5b5c5a51055a4d4b474f46415c41474605495c055b414e5c0d1a6e)
+-   [](/cdn-cgi/l/email-protection#38074b4d5a525d5b4c050a080a0c1d0a0851561d0a086a5d4e515d4f1d0b791d0a08715656574e594c5157564b1d0a7b1d0a0868594a4c565d4a4b5051484b1d0a7b1d0a0859565c1d0a0871565c4d4b4c4a411d0a086a5d5b575f56514c5157561d0a08594c1d0a086b515e4c1e1b080b00035a575c4105504c4c484b1d0b791d0a7e1d0a7e4b515e4c165b57551d0a7e5a54575f1d0a7e0a080a0c155156154a5d4e515d4f15515656574e594c5157564b1548594a4c565d4a4b5051484b1559565c1551565c4d4b4c4a41154a5d5b575f56514c51575615594c154b515e4c1d0a7e)
 
 -   [Company](https://sift.com/blog/category/company/)
 
@@ -103,9 +103,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F2024-in-review-innovations-partnerships-and-industry-recognition-at-sift%2F&title=2024%20in%20Review%3A%20Innovations%2C%20Partnerships%2C%20and%20Industry%20Recognition%20at%20Sift)
 -   [](https://twitter.com/intent/tweet?text=2024%20in%20Review%3A%20Innovations%2C%20Partnerships%2C%20and%20Industry%20Recognition%20at%20Sift&url=https%3A%2F%2Fsift.com%2Fblog%2F2024-in-review-innovations-partnerships-and-industry-recognition-at-sift%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F2024-in-review-innovations-partnerships-and-industry-recognition-at-sift%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F02%2FQuarterly_Roundup.jpg&title=2024%20in%20Review%3A%20Innovations%2C%20Partnerships%2C%20and%20Industry%20Recognition%20at%20Sift)
--   [](/cdn-cgi/l/email-protection#81bef2f4e3ebe4e2f5bcb3b1b3b5a4b3b1e8efa4b3b1d3e4f7e8e4f6a4b2c0a4b3b1c8efefeef7e0f5e8eeeff2a4b3c2a4b3b1d1e0f3f5efe4f3f2e9e8f1f2a4b3c2a4b3b1e0efe5a4b3b1c8efe5f4f2f5f3f8a4b3b1d3e4e2eee6efe8f5e8eeefa4b3b1e0f5a4b3b1d2e8e7f5a7a2b1b2b9bae3eee5f8bce9f5f5f1f2a4b2c0a4b3c7a4b3c7f2e8e7f5afe2eeeca4b3c7e3edeee6a4b3c7b3b1b3b5ace8efacf3e4f7e8e4f6ace8efefeef7e0f5e8eeeff2acf1e0f3f5efe4f3f2e9e8f1f2ace0efe5ace8efe5f4f2f5f3f8acf3e4e2eee6efe8f5e8eeeface0f5acf2e8e7f5a4b3c7)
+-   [](/cdn-cgi/l/email-protection#b58ac6c0d7dfd0d6c18887858781908785dcdb908785e7d0c3dcd0c29086f4908785fcdbdbdac3d4c1dcdadbc69087f6908785e5d4c7c1dbd0c7c6dddcc5c69087f6908785d4dbd1908785fcdbd1c0c6c1c7cc908785e7d0d6dad2dbdcc1dcdadb908785d4c1908785e6dcd3c1939685868d8ed7dad1cc88ddc1c1c5c69086f49087f39087f3c6dcd3c19bd6dad89087f3d7d9dad29087f38785878198dcdb98c7d0c3dcd0c298dcdbdbdac3d4c1dcdadbc698c5d4c7c1dbd0c7c6dddcc5c698d4dbd198dcdbd1c0c6c1c7cc98c7d0d6dad2dbdcc1dcdadb98d4c198c6dcd3c19087f3)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -138,22 +154,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 
