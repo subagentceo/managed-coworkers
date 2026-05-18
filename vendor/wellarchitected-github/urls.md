@@ -1,7 +1,7 @@
 ---
 vendor: wellarchitected-github
 llms_txt: 
-last_crawled: 2026-05-16T23:27:44.701Z
+last_crawled: 2026-05-18T23:11:27.266Z
 count: 72
 transform: html-extract
 ---
