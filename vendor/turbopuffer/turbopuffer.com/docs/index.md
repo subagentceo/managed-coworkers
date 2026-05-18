@@ -28,6 +28,11 @@ cheaper to run.
 Storing data in cache and object storage costs less than traditional replicated
 disk systems, even for frequently accessed data.
 
+Using object storage as the sole source of truth enables operations like
+[branching](/docs/branching) — a copy-on-write clone of any namespace, created
+in constant time regardless of size, with fully independent reads and writes
+afterward.
+
 turbopuffer is focused on first-stage retrieval to efficiently narrow millions
 of documents down to tens or hundreds. While it may have fewer features than
 traditional search engines, this streamlined approach enables higher quality,

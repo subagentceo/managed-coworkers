@@ -1,8 +1,8 @@
 ---
 vendor: turbopuffer
 llms_txt: https://turbopuffer.com/llms.txt
-last_crawled: 2026-05-15T03:29:23.649Z
-count: 36
+last_crawled: 2026-05-18T22:23:53.467Z
+count: 37
 transform: verbatim
 ---
 
@@ -14,6 +14,7 @@ transform: verbatim
 | https://turbopuffer.com/docs/audit-logs.md | `vendor/turbopuffer/turbopuffer.com/docs/audit-logs.md` |
 | https://turbopuffer.com/docs/auth.md | `vendor/turbopuffer/turbopuffer.com/docs/auth.md` |
 | https://turbopuffer.com/docs/backups.md | `vendor/turbopuffer/turbopuffer.com/docs/backups.md` |
+| https://turbopuffer.com/docs/branching.md | `vendor/turbopuffer/turbopuffer.com/docs/branching.md` |
 | https://turbopuffer.com/docs/byoc.md | `vendor/turbopuffer/turbopuffer.com/docs/byoc.md` |
 | https://turbopuffer.com/docs/byoc/configuration.md | `vendor/turbopuffer/turbopuffer.com/docs/byoc/configuration.md` |
 | https://turbopuffer.com/docs/byoc/control-plane.md | `vendor/turbopuffer/turbopuffer.com/docs/byoc/control-plane.md` |

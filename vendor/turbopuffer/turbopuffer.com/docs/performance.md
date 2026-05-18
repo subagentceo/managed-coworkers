@@ -42,6 +42,10 @@ training ([voyage-4 series][voyage-4], [voyage-context-3][voyage-context-3],
 matches `f32` precision ([benchmarks][voyage-benchmarks]), so you can pass `int8`
 values directly as JSON integers to an `f16` namespace for `f16` speed with no
 precision loss.
+* **Use [branching](/docs/branching) to duplicate namespaces.** If you're
+creating copies of namespaces for testing, backups, or code repositories,
+branching creates a copy-on-write clone in constant time regardless of
+namespace size.
 * **Batch writes.** If you're writing a lot of documents, consider batching
 them into fewer writes. This will improve performance and [leverages batch
 discounts up to 50%][pricing]. Each individual write batch request can be a

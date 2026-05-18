@@ -17,6 +17,12 @@ together for high-recall filtered vector searches. See the
 [native filtering blog post](/blog/native-filtering) for details on how
 attribute indexes enable high-recall filtered queries.
 
+## Branch
+
+A branch is an instant, copy-on-write clone of a namespace. Both namespaces are
+fully independent after creation — writes to one are never visible in the other.
+See the [branching guide](/docs/branching) for details and examples.
+
 ## Cache Hierarchy
 
 turbopuffer uses a multi-tier cache hierarchy: object storage (source of truth),

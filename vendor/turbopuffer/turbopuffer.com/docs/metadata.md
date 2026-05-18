@@ -114,6 +114,15 @@ Contains the following fields:
 
 Example: `{ "replicas": 2, "status": { "ready_replicas": 1, "utilization": 0.73 } }`
 
+---
+
+**branching** object
+
+The state of [branching](/docs/branching) for the namespace. Only present for
+branched namespaces. Contains the following fields:
+
+- `parent` (string): The namespace this was branched from.
+
 ## Example
 
 <!-- multilang -->
