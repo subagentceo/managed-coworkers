@@ -89,11 +89,11 @@ On the turbopuffer side, there is no additional cost to using CMEK on top of you
 
 Your cloud provider will charge you based on the number of encryption operations and the number of keys.
 
-## Who is doing the encryption? 
+## Who is doing the encryption?
 
-Encryption of the data at rest is handled entirely by the cloud object store. 
+Encryption of the data at rest is handled entirely by the cloud object store.
 
-* AWS S3 - data is stored with [Server-Side Encryption using AWS KMS-managed keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html) 
+* AWS S3 - data is stored with [Server-Side Encryption using AWS KMS-managed keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html)
 * Google Cloud Storage - data is stored with GCS's [CMEK](https://cloud.google.com/storage/docs/encryption/customer-managed-keys).
 
 ## How quickly does key revocation take effect?
@@ -125,5 +125,11 @@ If you need to migrate all data to a new key version, you have two options:
 2. Use [`copy_from_namespace`](/docs/write#param-copy_from_namespace) with a different `encryption` parameter to copy the namespace with a new CMEK key
 
 The second option is faster and more cost-effective, with up to a 75% write discount. It also works for upgrading an namespace from default to CMEK encryption, or for downgrading from CMEK to default encryption by setting [`encryption`](/docs/write#param-encryption) to `{"mode": "default"}`.
+
+## How is a branched namespace encrypted?
+
+A branch inherits the encryption configuration of its source namespace. To
+re-encrypt with a different CMEK key, use
+[`copy_from_namespace`](/docs/write#param-copy_from_namespace) instead.
 
 **Should you find this limiting, [contact us](/contact)**

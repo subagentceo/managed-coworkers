@@ -13,9 +13,13 @@
 - ⏱️ Late interaction support
 - 🗂️ [~Multiple vector columns~](#march-2026)
 - 🪆 Nested attributes
-- 🌿 Namespace branching
+- 🌿 [~Namespace branching~](#may-2026)
 
 ## Changelog
+
+### May 2026
+
+- 🌿 [Namespace branching](/docs/branching): instant copy-on-write namespace cloning [opt-in, beta]
 
 ### April 2026
 

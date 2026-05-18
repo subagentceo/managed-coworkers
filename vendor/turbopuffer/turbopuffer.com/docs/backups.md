@@ -19,6 +19,10 @@ disaster recovery, and accidental deletion protection. We don't currently offer 
 customers have rebuilt from their primary data source when needed, but
 cross-region copies are now often a better option.
 
+[Branching](/docs/branching) provides constant-time namespace snapshots, but
+shares underlying storage with the source namespace. Use `copy_from_namespace`
+for full data isolation.
+
 Copies are performed entirely server-side, so there's no data transfer through
 your infrastructure. They're billed at up to a 75% write discount and create fully
 writable namespaces you can use however you like. Cross-region copies also bill

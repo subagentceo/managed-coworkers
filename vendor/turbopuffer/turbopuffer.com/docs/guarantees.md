@@ -10,6 +10,7 @@ however staleness of about 100ms can be observed during (rare) scaling/failover 
 
 * **Atomic Conditional Writes.**  [Conditional writes](/docs/write#conditional-writes) evaluate their condition atomically with writing.
 * **Atomic Batches.**  All writes in an upsert are applied simultaneously.
+* **Branch isolation.** Branched namespaces are point-in-time snapshots that are fully independent after creation. Writes to one namespace are never visible in the other. Deleting either namespace does not affect the other.
 * **Any node can serve queries for any namespace.** HA does not come as a cost/reliability trade-off. Our HA is the number of query nodes we run.
 * **Object storage is the only stateful dependency.** This means there is no separate consensus plane that needs to be maintained and scaled independently, simplifying the system's operations and thus reliability. All concurrency control is delegated to object storage.
 * **Compute-Compute Separation.** Query nodes handle queries and writes to object storage and the write-through cache. All expensive computation happens on separate, auto-scaled indexing nodes.

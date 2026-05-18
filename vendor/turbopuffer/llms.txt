@@ -20,6 +20,7 @@
 - [Backups](https://turbopuffer.com/docs/backups.md): Back up namespaces across turbopuffer regions
 - [Performance](https://turbopuffer.com/docs/performance.md): Learn how to improve the performance of your application
 - [Pinning](https://turbopuffer.com/docs/pinning.md): Reserved compute and disk for predictable cost and performance at sustained high QPS
+- [Branching](https://turbopuffer.com/docs/branching.md): Instantly clone namespaces with copy-on-write branching
 
 ## Guides
 

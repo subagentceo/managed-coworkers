@@ -3,13 +3,15 @@
 In your tests and development environment we suggest hitting production
 turbopuffer for the best end to end testing. Since creating a namespace in
 turbopuffer is virtually free, you can create a namespace for each test with a
-random name, and simply delete it after the test. We recommend each developer
-has their own namespace for their dev namespaces.
+random name, and simply delete it after the test.
 
-In addition, to separate test and production, consider creating a separate
-organization in the dashboard. You can use
-[copy_from_namespace](/docs/backups) to copy production data into your test
-org for realistic development environments.
+For tests against real data, or to give each developer their own copy, use
+[branching](/docs/branching) to instantly clone a production namespace. Delete
+the branch when done — the source namespace is unaffected.
+
+To separate test and production infrastructure, consider creating a separate
+organization in the dashboard. For cross-region or cross-org copies, use
+[`copy_from_namespace`](/docs/backups).
 
 <!-- multilang -->
 ```python

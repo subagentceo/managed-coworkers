@@ -29,6 +29,7 @@ turbopuffer supports the following types of writes:
 - [Patch by filter](#param-patch_by_filter): patches documents that match a filter.
 - [Delete by filter](#param-delete_by_filter): deletes documents that match a filter.
 - [Copy from namespace](#param-copy_from_namespace): copies all documents from another namespace.
+- [Branch from namespace](#param-branch_from_namespace): instantly creates a copy-on-write clone of a namespace.
 
 ## Request
 
@@ -243,7 +244,7 @@ succeeded will be included.
 ---
 
 **distance_metric** cosine_distance | euclidean_squared
-required unless copy_from_namespace is set or the namespace has no vector columns
+required unless copy_from_namespace or branch_from_namespace is set or the namespace has no vector columns
 
 The function used to calculate vector similarity. Possible values are `cosine_distance` or `euclidean_squared`.
 
@@ -263,9 +264,11 @@ you are copying into must be empty. The initial request currently cannot make
 schema changes or contain documents.
 
 Copying is billed at up to a 75% write discount (a 50% copy discount that stacks
-with the up to 50% discount for batched writes). This is a faster, cheaper alternative to
-re-upserting documents for backups and namespaces that share documents. See the
-[cross-region backups guide](/docs/backups) for an example.
+with the up to 50% discount for batched writes). This is a faster, cheaper
+alternative to re-upserting documents for backups and namespaces that share
+documents. See the [cross-region backups guide](/docs/backups) for an example.
+For same-region use cases, consider [`branch_from_namespace`](/docs/branching)
+which completes instantly regardless of namespace size.
 
 For copies from another region, the logical size copied is also billed as
 returned bytes. Same-region copies do not bill returned bytes.
@@ -297,6 +300,22 @@ destination encryption key available in the destination region.
   "source_region": "aws-us-east-1"
 }
 ```
+
+---
+
+**branch_from_namespace** string
+
+Creates an instant copy-on-write clone of the source namespace. The destination
+namespace must be empty.
+
+After branching, both namespaces are fully independent — reads, writes, queries,
+and deletes on one namespace do not affect the other.
+
+Branching is billed at a flat rate of $0.032 (pricing may change before GA). See
+the [branching guide](/docs/branching) for details, examples, and guidance on
+when to use branching vs `copy_from_namespace`.
+
+**Example:** `"source-namespace"`
 
 ---
 
