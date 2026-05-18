@@ -1,8 +1,8 @@
 ---
 vendor: stripe
 llms_txt: https://docs.stripe.com/llms.txt
-last_crawled: 2026-05-15T03:29:21.463Z
-count: 60
+last_crawled: 2026-05-18T22:24:17.836Z
+count: 50
 transform: append-md-and-accept
 ---
 
@@ -34,17 +34,9 @@ transform: append-md-and-accept
 | https://docs.stripe.com/payments/cards/overview.md | `vendor/stripe/docs.stripe.com/payments/cards/overview.md` |
 | https://docs.stripe.com/payments/cartes-bancaires.md | `vendor/stripe/docs.stripe.com/payments/cartes-bancaires.md` |
 | https://docs.stripe.com/payments/checkout.md | `vendor/stripe/docs.stripe.com/payments/checkout.md` |
-| https://docs.stripe.com/payments/checkout/cross-sells.md | `vendor/stripe/docs.stripe.com/payments/checkout/cross-sells.md` |
-| https://docs.stripe.com/payments/checkout/custom-components.md | `vendor/stripe/docs.stripe.com/payments/checkout/custom-components.md` |
-| https://docs.stripe.com/payments/checkout/custom-domains.md | `vendor/stripe/docs.stripe.com/payments/checkout/custom-domains.md` |
 | https://docs.stripe.com/payments/checkout/custom-success-page.md | `vendor/stripe/docs.stripe.com/payments/checkout/custom-success-page.md` |
 | https://docs.stripe.com/payments/checkout/customization.md | `vendor/stripe/docs.stripe.com/payments/checkout/customization.md` |
-| https://docs.stripe.com/payments/checkout/discounts.md | `vendor/stripe/docs.stripe.com/payments/checkout/discounts.md` |
 | https://docs.stripe.com/payments/checkout/how-checkout-works.md | `vendor/stripe/docs.stripe.com/payments/checkout/how-checkout-works.md` |
-| https://docs.stripe.com/payments/checkout/limit-subscriptions.md | `vendor/stripe/docs.stripe.com/payments/checkout/limit-subscriptions.md` |
-| https://docs.stripe.com/payments/checkout/payment-methods.md | `vendor/stripe/docs.stripe.com/payments/checkout/payment-methods.md` |
-| https://docs.stripe.com/payments/checkout/taxes.md | `vendor/stripe/docs.stripe.com/payments/checkout/taxes.md` |
-| https://docs.stripe.com/payments/during-payment/charge-shipping.md | `vendor/stripe/docs.stripe.com/payments/during-payment/charge-shipping.md` |
 | https://docs.stripe.com/payments/eftpos-australia.md | `vendor/stripe/docs.stripe.com/payments/eftpos-australia.md` |
 | https://docs.stripe.com/payments/klarna.md | `vendor/stripe/docs.stripe.com/payments/klarna.md` |
 | https://docs.stripe.com/payments/local-markets.md | `vendor/stripe/docs.stripe.com/payments/local-markets.md` |
@@ -55,11 +47,9 @@ transform: append-md-and-accept
 | https://docs.stripe.com/payments/real-time.md | `vendor/stripe/docs.stripe.com/payments/real-time.md` |
 | https://docs.stripe.com/payments/setup-intents.md | `vendor/stripe/docs.stripe.com/payments/setup-intents.md` |
 | https://docs.stripe.com/payments/stablecoin-payments.md | `vendor/stripe/docs.stripe.com/payments/stablecoin-payments.md` |
-| https://docs.stripe.com/payments/subscriptions.md | `vendor/stripe/docs.stripe.com/payments/subscriptions.md` |
 | https://docs.stripe.com/payments/vouchers.md | `vendor/stripe/docs.stripe.com/payments/vouchers.md` |
 | https://docs.stripe.com/payments/wallets.md | `vendor/stripe/docs.stripe.com/payments/wallets.md` |
 | https://docs.stripe.com/payouts.md | `vendor/stripe/docs.stripe.com/payouts.md` |
-| https://docs.stripe.com/products-prices/overview.md | `vendor/stripe/docs.stripe.com/products-prices/overview.md` |
 | https://docs.stripe.com/projects.md | `vendor/stripe/docs.stripe.com/projects.md` |
 | https://docs.stripe.com/refunds.md | `vendor/stripe/docs.stripe.com/refunds.md` |
 | https://docs.stripe.com/sdks.md | `vendor/stripe/docs.stripe.com/sdks.md` |

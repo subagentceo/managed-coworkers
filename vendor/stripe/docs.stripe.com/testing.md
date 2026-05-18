@@ -364,6 +364,14 @@ Most integrations don’t use tokens anymore, but we make test tokens such as [t
 | Thailand (TH)                                                                                                                                                                                                                        | `tok_th_credit`     | Visa (credit) |
 | Thailand (TH)                                                                                                                                                                                                                        | `tok_th_debit`      | Visa (debit)  |
 
+### Simulate customer location with email 
+
+When testing [Checkout Sessions](https://docs.stripe.com/payments/checkout.md), [Payment Links](https://docs.stripe.com/payment-links.md), or [pricing tables](https://docs.stripe.com/payments/checkout/pricing-table.md), you can simulate a customer’s geographic location by using a location-formatted email address. Add a `+location_XX` suffix to the local part of any email address, where `XX` is a valid two-letter [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code.
+
+For example, to simulate a customer located in the United States, pass `test+location_US@example.com` as the `customer_email` parameter when creating a Checkout Session and as the `prefilled_email` [URL parameter](https://docs.stripe.com/payment-links/customize.md#customize-checkout-with-url-parameters) when creating a Payment Link.
+
+When you visit the resulting Checkout Session URL, you see the same currency and payment methods that a customer in the specified country would see. Learn more about [testing with location-formatted emails](https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing.md#testing).
+
 ## Simulate an HSA or FSA card payment 
 
 Below are test card numbers for simulating transactions using a health savings account (HSA) and a flexible spending account (FSA). These accounts are commonly used for medical expenses, and testing with them ensures proper handling of healthcare-related transactions within your application.
