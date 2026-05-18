@@ -60,6 +60,17 @@ If you see code that wants `ANTHROPIC_API_KEY`, it's a bug or a leak. Fix it; do
   - **Ecosystem & subprocessors:** cloudflare, neon, stripe, twilio, workos, elevenlabs, aws, gcp, sentry, intercom, brave-search, sift, arkose-labs, modelcontextprotocol, openfeature, opentelemetry, parallel-web, turbopuffer, spotify-confidence, nimble, iterable, osv-scanner
 - **2 MCP servers**: `src/mcp/bridge-server.ts` (the knowledge bridge) and `src/mcp/npm-registry/server.ts` (npm-research lane)
 
+## Vendor GUIDANCE.md convention
+
+When a vendor's `llms.txt` contains hard prohibitions, deprecation directives, or other load-bearing prose that DOES NOT appear in the per-page markdown (because it lives in the llms.txt header, not in any linked doc), surface it as `vendor/{name}/GUIDANCE.md`.
+
+Currently established for:
+- `vendor/stripe/GUIDANCE.md` — Stripe is 15 years old; their llms.txt explicitly prohibits the Sources API, deprecates Charges/Tokens, and steers LLMs toward Checkout Sessions + Setup Intent. Without GUIDANCE.md, agents pattern-match deprecated patterns from training data and the per-page mirror reinforces them.
+
+The `vendor_list` MCP tool reports `guidance: "vendor/{name}/GUIDANCE.md"` for vendors that have one. `vendor_fetch` includes `guidance: { path, must_read: true }` in its response when fetching from a vendor with a GUIDANCE.md, so agents see the directive at lookup time.
+
+**When in doubt, read the vendor's GUIDANCE.md BEFORE recommending an API from that vendor in generated code.**
+
 ## Citation discipline
 
 Every test file MUST have an `@cite` header pointing at `vendor/`, `seeds/`, or `rubrics/`. Enforced by `scripts/lib/citation-guard.ts` in the verify chain.
