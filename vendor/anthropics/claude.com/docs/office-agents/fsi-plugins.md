@@ -12,7 +12,7 @@ equity research, investment banking, private equity, and wealth
 management. The plugins also work in Claude Code.
 
 The plugins live in a
-[public GitHub repository](https://github.com/anthropics/financial-services-plugins)
+[public GitHub repository](https://github.com/anthropics/financial-services)
 that you can add as a marketplace in Cowork.
 
 ## What's included
@@ -47,7 +47,7 @@ Cowork.
   <Step title="Add the marketplace">
     Select "Personal", click the "+" button, then select "Add
     marketplace from GitHub". Enter the repository URL:
-    `https://github.com/anthropics/financial-services-plugins`
+    `https://github.com/anthropics/financial-services`
   </Step>
 </Steps>
 

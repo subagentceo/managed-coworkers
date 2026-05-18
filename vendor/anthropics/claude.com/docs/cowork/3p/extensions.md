@@ -60,8 +60,8 @@ The grids below highlight commonly used servers from the directory. Most require
     Google Workspace is not currently supported in Cowork on 3P, but will be available soon. We will update our docs when it becomes available.
   </Card>
 
-  <Card title="Microsoft 365" icon="microsoft">
-    The Anthropic M365 Connectors are not currently supported in Cowork on 3P, but will be available soon. We will update our docs when they become available.
+  <Card title="Microsoft 365" icon="microsoft" href="/cowork/3p/connectors-m365">
+    Outlook, OneDrive, SharePoint, and Teams. Requires registering an app in your Entra tenant and an Anthropic allowlist step — see the [setup guide](/cowork/3p/connectors-m365).
   </Card>
 </Columns>
 
@@ -212,9 +212,9 @@ See the [plugins reference](https://code.claude.com/docs/en/plugins) for the ful
   Symlinks inside a plugin are followed as long as the target resolves to a path inside the plugin directory. Symlinks that point outside the plugin (for example, `skills/foo/SKILL.md → /etc/hosts`) are skipped. A symlinked top-level plugin directory (for example, `org-plugins/my-plugin → /opt/shared/my-plugin`) is also followed.
 </Note>
 
-<Warning>
-  MCP servers declared in a plugin's `.mcp.json` do **not** inherit the per-tool policy locks (`toolPolicy`) that `managedMcpServers` supports. If you need to lock specific tools to `allow` or `blocked`, deploy that server via `managedMcpServers` instead of bundling it in a plugin.
-</Warning>
+<Note>
+  MCP servers declared in a plugin's `.mcp.json` don't carry a `toolPolicy` field in the plugin file itself. To lock tools on a plugin-delivered server, set [`orgPluginSettings`](/cowork/3p/configuration#orgpluginsettings) in managed configuration, keyed on the server's `name`.
+</Note>
 
 ### Auto-installing organization plugins
 
@@ -263,7 +263,6 @@ Admins can restrict or disable each user-extension surface independently via man
 | ------------------------------------- | --------------------------------------------------------------------------- |
 | `isLocalDevMcpEnabled`                | Users cannot add their own local MCP servers from **Settings → Developer**. |
 | `isDesktopExtensionEnabled`           | Users cannot install local `.mcpb` desktop extensions.                      |
-| `isDesktopExtensionDirectoryEnabled`  | The Anthropic extension directory is hidden from the Connectors UI.         |
 | `isDesktopExtensionSignatureRequired` | (When `true`) Unsigned `.mcpb` extensions are rejected.                     |
 
-Setting the first three to `false` restricts MCP servers and connectors to those delivered through `managedMcpServers` and `org-plugins/`. Users can still add their own skills and plugins regardless of these settings. See the [Locked down profile](/cowork/3p/configuration#recommended-security-profiles) for a complete example.
+Setting the first two to `false` restricts MCP servers and connectors to those delivered through `managedMcpServers` and `org-plugins/`. Users can still add their own skills and plugins regardless of these settings. See the [Locked down profile](/cowork/3p/configuration#recommended-security-profiles) for a complete example.

@@ -124,7 +124,7 @@ With AWS set up and devices prepared, open the in-app configuration window (**De
 | AWS SSO role name    | *leave empty*        | `BedrockInference`                       | *leave empty*          |
 | Bedrock service tier | *optional*           | *optional*                               | *optional*             |
 
-Under **Identity & models**, add at least one **Model list** entry using the Bedrock inference-profile ID, for example `us.anthropic.claude-sonnet-4-20250514-v1:0`.
+Under **Identity & models**, add a **Model list** entry using the Bedrock inference-profile ID (required for profile or SSO auth; optional for bearer-token auth, which auto-discovers), for example `us.anthropic.claude-sonnet-4-20250514-v1:0`.
 
 Then click **Export** to produce a `.mobileconfig` (macOS) or `.reg` (Windows) file for your MDM. See [Installation and setup](/cowork/3p/installation) for the export and deployment workflow.
 
@@ -145,7 +145,7 @@ The full set of Bedrock keys is below. Set `inferenceProvider` to `bedrock`, sup
 | Bedrock base URL<br />`inferenceBedrockBaseUrl`         | No                    | Override the public regional endpoint, for example with a PrivateLink VPC interface endpoint. Must be `https://`.                                                                                                                                                                |
 | Bedrock service tier<br />`inferenceBedrockServiceTier` | No                    | One of `flex` or `priority`. Sent as the `X-Amzn-Bedrock-Service-Tier` header on every inference request. Leave unset for the default on-demand tier. Tier availability varies by model and region; reserved capacity uses a provisioned-throughput ARN as the model ID instead. |
 
-You must also set `inferenceModels` to a list of Bedrock inference-profile IDs, for example `us.anthropic.claude-sonnet-4-20250514-v1:0`. See the [Configuration reference](/cowork/3p/configuration#models).
+Set `inferenceModels` to a list of Bedrock inference-profile IDs, for example `us.anthropic.claude-sonnet-4-20250514-v1:0`. When using a bearer token, Cowork auto-discovers available Claude models from your account if this is unset; for profile or SSO authentication, the list is required. Application-inference-profile ARNs and provisioned-throughput ARNs are also accepted; pair them with a [`labelOverride`](/cowork/3p/configuration#setting-a-display-label) so the picker shows a readable name instead of the raw ARN. See the [Configuration reference](/cowork/3p/configuration#models).
 
 ## What users experience
 

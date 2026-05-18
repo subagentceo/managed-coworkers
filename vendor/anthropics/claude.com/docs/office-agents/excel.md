@@ -12,7 +12,7 @@ relationships, debug errors, and build or populate models, all without
 leaving Excel.
 
 <Note>
-  Claude for Excel is currently in beta and available to Pro, Max, Team,
+  Claude for Excel is generally available to Pro, Max, Team,
   and Enterprise plans.
 </Note>
 
@@ -214,7 +214,7 @@ audit logs or the Compliance API.
 
 ## Current limitations
 
-As a beta feature, Claude for Excel is not recommended for:
+Claude for Excel is not recommended for:
 
 * Final client deliverables without human review.
 * Audit-critical calculations without verification.

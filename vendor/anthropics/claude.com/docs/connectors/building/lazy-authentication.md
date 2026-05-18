@@ -20,12 +20,12 @@ It must fail the **HTTP request** with `401 Unauthorized` and a [`WWW-Authentica
 
 ```http theme={null}
 HTTP/1.1 401 Unauthorized
-WWW-Authenticate: Bearer error="invalid_token", resource_metadata="https://example.com/.well-known/oauth-protected-resource/mcp"
+WWW-Authenticate: Bearer error="invalid_token", resource_metadata="https://example.com/.well-known/oauth-protected-resource/mcp", scope="orders:read"
 
 {"error":"invalid_token","error_description":"Authentication required for this tool"}
 ```
 
-The body is advisory; the `401` status and `WWW-Authenticate` header carry the protocol signal.
+The body is advisory; the `401` status and `WWW-Authenticate` header carry the protocol signal. The optional `scope` parameter tells Claude which scopes to request during authorization — include the minimum your protected tools need. If you omit it, Claude requests the scopes your protected resource metadata advertises in `scopes_supported` (plus `offline_access` if your authorization server metadata lists it), which can produce an over-broad consent prompt.
 
 It must **not** return a successful HTTP response wrapping a tool error:
 
@@ -70,7 +70,8 @@ function callsProtectedTool(body: unknown): boolean {
 const WWW_AUTHENTICATE =
   `Bearer error="invalid_token", ` +
   `error_description="Authentication required for this tool", ` +
-  `resource_metadata="${BASE_URL}/.well-known/oauth-protected-resource/mcp"`;
+  `resource_metadata="${BASE_URL}/.well-known/oauth-protected-resource/mcp", ` +
+  `scope="orders:read"`;
 
 async function handleMcpPost(req: Request, res: Response): Promise<void> {
   const token = extractBearer(req);
@@ -166,7 +167,7 @@ function authorizationServerMetadata() {
 With CIMD the `client_id` is itself an HTTPS URL that dereferences to the client's OAuth registration metadata. There is no per-client database and no `POST /register` round-trip: at `/authorize`, the server fetches the `client_id` URL, verifies the document is self-referential (its `client_id` field equals the URL it was served from), and checks the requested `redirect_uri` against the document's `redirect_uris`. Because the document is self-asserted, the consent screen must display the **host of the `client_id` URL** (not the `client_name` field) as the relying party, and the listed `redirect_uris` should be required to be same-origin with the `client_id` URL.
 
 <Note>
-  Claude attempts CIMD when the authorization-server metadata includes `client_id_metadata_document_supported: true`. Also include `"none"` in `token_endpoint_auth_methods_supported`: a URL-identified client is public by definition, so the token endpoint must accept [PKCE](https://datatracker.ietf.org/doc/html/rfc7636)-only requests without a client secret. If `client_id_metadata_document_supported` is absent, Claude falls back to looking for a `registration_endpoint`.
+  Claude selects CIMD only when the authorization-server metadata advertises **both** `client_id_metadata_document_supported: true` **and** `"none"` in `token_endpoint_auth_methods_supported`. The second is required because Claude's CIMD client authenticates as a public client (`token_endpoint_auth_method: "none"`), so the token endpoint must accept [PKCE](https://datatracker.ietf.org/doc/html/rfc7636)-only requests without a client secret. If either property is missing, Claude falls back to looking for a `registration_endpoint`.
 </Note>
 
 For native clients, compare loopback IP `redirect_uri` values (`http://127.0.0.1/…`, `http://[::1]/…`) with the **port ignored**, per [RFC 8252 section 7.3](https://datatracker.ietf.org/doc/html/rfc8252#section-7.3) — native apps bind an ephemeral port at runtime. RFC 8252 section 8.3 discourages `http://localhost/…`, but Claude Code declares it in its CIMD and binds an ephemeral port at runtime, so apply the same port-agnostic match to `localhost` for compatibility. The sample's `redirectUriAllowed()` helper shows the comparison.
