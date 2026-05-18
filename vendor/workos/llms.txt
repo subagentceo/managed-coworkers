@@ -75,6 +75,7 @@ This documentation site provides guides, references, and examples for implementi
 
 ## Sdks
 
+- [rust](https://workos.com/docs/sdks/rust)
 - [ruby](https://workos.com/docs/sdks/ruby)
 - [python](https://workos.com/docs/sdks/python)
 - [php](https://workos.com/docs/sdks/php)
@@ -359,6 +360,7 @@ This documentation site provides guides, references, and examples for implementi
 - [vault - key - decrypt-data](https://workos.com/docs/reference/vault/key/decrypt-data)
 - [vault - key - decrypt-data-key](https://workos.com/docs/reference/vault/key/decrypt-data-key)
 - [vault - key - encrypt-data](https://workos.com/docs/reference/vault/key/encrypt-data)
+- [vault - key - rekey-data-key](https://workos.com/docs/reference/vault/key/rekey-data-key)
 - [vault - object](https://workos.com/docs/reference/vault/object)
 - [vault - object - create](https://workos.com/docs/reference/vault/object/create)
 - [vault - object - delete](https://workos.com/docs/reference/vault/object/delete)
@@ -624,6 +626,7 @@ This documentation site provides guides, references, and examples for implementi
 - [AI Installer & CLI](https://workos.com/docs/authkit/cli-installer): Integrate AuthKit with one command, manage resources, provision environments, and equip your coding agents — all from the WorkOS CLI.
 - [CLI Auth](https://workos.com/docs/authkit/cli-auth): Quickly add authentication to your command-line application.
 - [Branding](https://workos.com/docs/authkit/branding): Customize AuthKit to fit natively with your app’s unique design.
+- [Applications](https://workos.com/docs/authkit/applications): Manage authentication across every surface your product runs on with a shared identity layer.
 - [API Keys](https://workos.com/docs/authkit/api-keys): Provide secure, self-service API key management to your customers.
 - [Actions](https://workos.com/docs/authkit/actions): Customize authentication flows with your own logic.
 - [Standalone Connect](https://workos.com/docs/authkit/connect/standalone): Integrate Connect's OAuth API with your existing authentication stack.
