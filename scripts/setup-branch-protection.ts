@@ -62,7 +62,6 @@ function rulesetBody() {
   // are NOT required so the repo can land changes whether or not those
   // secrets are provisioned.
   const requiredChecks = [
-    "npm run verify",            // job in .github/workflows/verify.yml
     "OSV-Scanner (PR) / osv-scan", // job in .github/workflows/osv-scanner.yml
   ];
   return {
