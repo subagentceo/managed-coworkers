@@ -88,7 +88,7 @@ export class ManagedAgentsClient {
   /**
    * Send a message to an agent session
    */
-  async sendMessage(sessionId: string, message: string): Promise<{ role: string; content: string }> {
+  async sendMessage(sessionId: string, message: string): Promise<{ role: 'assistant'; content: string }> {
     const response = await this.anthropicClient.messages.create({
       model: 'claude-3-5-sonnet-20241022',
       max_tokens: 1024,

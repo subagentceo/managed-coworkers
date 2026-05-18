@@ -27,9 +27,9 @@ const TEST_DIRS = [
 ];
 
 function listTests(dir: string): string[] {
-  let entries: ReturnType<typeof readdirSync>;
+  let entries;
   try {
-    entries = readdirSync(dir, { withFileTypes: true });
+    entries = readdirSync(dir, { withFileTypes: true, encoding: "utf8" });
   } catch {
     return [];
   }
