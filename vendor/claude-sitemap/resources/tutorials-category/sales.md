@@ -800,6 +800,38 @@ Product
 
 Features
 
+![Using Claude Cowork for sales: research any account before the first call](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a0b7301c567070bec13098a_Screenshot%202026-05-18%20at%2012.31.52%E2%80%AFPM.png)
+
+Using Claude Cowork for sales: research any account before the first call
+
+Sales
+
+Author
+
+Sales
+
+Author
+
+Claude Cowork
+
+Author
+
+Cowork
+
+Connectors
+
+Skills
+
+Read use case
+
+[Read use case](/resources/tutorials/using-claude-cowork-for-sales-account-research)Read use case
+
+[Using Claude Cowork for sales: research any account before the first call](/resources/tutorials/using-claude-cowork-for-sales-account-research)Using Claude Cowork for sales: research any account before the first call
+
+[Text Link](/resources/tutorials/using-claude-cowork-for-sales-account-research)
+
+Sales
+
 ![Using Claude Design for presentations and slide decks](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69e1cbe330a0642ef57ca30c_Screenshot%202026-04-16%20at%2010.57.47%E2%80%AFPM.png)
 
 Using Claude Design for presentations and slide decks

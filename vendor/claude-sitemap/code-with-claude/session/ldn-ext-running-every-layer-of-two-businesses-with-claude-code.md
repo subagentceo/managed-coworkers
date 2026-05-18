@@ -14,7 +14,7 @@ Date
 
 Time
 
-3:35PM – 4:05PM
+15:35 – 16:05
 
 Speaker(s)
 
@@ -56,7 +56,7 @@ Stages
 
 Check-in and breakfast
 
-9:30AM – 9:45AM
+09:30 – 09:45
 
 [Community general session](/code-with-claude/session/ldn-ext-community-general-session)
 
@@ -66,7 +66,7 @@ Boris Cherny
 
 morning sessions
 
-10:00AM – 10:30AM
+10:00 – 10:30
 
 [Teaching agents to learn from your team](/code-with-claude/session/ldn-ext-teaching-agents-to-learn-from-your-team)
 
@@ -84,7 +84,7 @@ Builder stage
 
 Philip Kyeyune Kazibwe
 
-10:00AM – 10:45AM
+10:00 – 10:45
 
 [How we Claude Code](/code-with-claude/session/ldn-ext-how-we-claude-code)
 
@@ -94,9 +94,9 @@ Workshops
 
 Arnaud Doko
 
-10:45AM – 11:15AM
+10:45 – 11:15
 
-[Personality goes a long way: 3 horrible mistakes building a helpful AI notepad](/code-with-claude/session/ldn-ext-personality-goes-a-long-way-3-horrible-mistakes-building-a-helpful-ai-notepad)
+[Personality goes a long way: Thinking like a writer to make better agents](/code-with-claude/session/ldn-ext-thinking-like-a-writer-to-make-better-agents)
 
 Founder stage
 
@@ -112,7 +112,7 @@ Builder stage
 
 Jacob Langvad Nilsson
 
-11:00AM – 11:45AM
+11:00 – 11:45
 
 [Ship your first Managed Agent](/code-with-claude/session/ldn-ext-ship-your-first-managed-agent)
 
@@ -122,7 +122,7 @@ Workshops
 
 Isabella He
 
-11:30AM – 12:00PM
+11:30 – 12:00
 
 [Building the best agentic analytics harness: Powered by Claude, built with Claude Code](/code-with-claude/session/ldn-ext-building-the-best-agentic-analytics-harness-powered-by-claude-built-with-claude-code)
 
@@ -140,7 +140,7 @@ Builder stage
 
 Dillon Hong
 
-12:00PM – 12:45PM
+12:00 – 12:45
 
 [Agents that remember](/code-with-claude/session/ldn-ext-agents-that-remember)
 
@@ -156,7 +156,7 @@ Lunch
 
 afternoon sessions
 
-1:00PM – 1:45PM
+13:00 – 13:45
 
 [Evals for taste: Hill-climbing a slide-generation agent](/code-with-claude/session/ldn-ext-evals-for-taste-hill-climbing-a-slide-generation-agent)
 
@@ -166,7 +166,7 @@ Workshops
 
 Jiri De Jonghe
 
-1:20PM – 1:50PM
+13:20 – 13:50
 
 [I built an entire music tech company with Claude](/code-with-claude/session/ldn-ext-i-built-an-entire-music-tech-company-with-claude)
 
@@ -184,7 +184,7 @@ Builder stage
 
 Olivier Legris
 
-2:00PM – 2:45PM
+14:00 – 14:45
 
 [Tool, skill, or subagent? Decomposing an agent that outgrew its prompt](/code-with-claude/session/ldn-ext-tool-skill-or-subagent-decomposing-an-agent-that-outgrew-its-prompt)
 
@@ -194,7 +194,7 @@ Workshops
 
 Will Steuk
 
-2:05PM – 2:35PM
+14:05 – 14:35
 
 [How Metaview built self-improving prompts for application review](/code-with-claude/session/ldn-ext-how-metaview-built-self-improving-prompts-for-application-review)
 
@@ -212,7 +212,7 @@ Builder stage
 
 James Brady
 
-2:50PM – 3:20PM
+14:50 – 15:20
 
 [Fighting financial crime with Claude Cowork](/code-with-claude/session/ldn-ext-fighting-financial-crime-with-claude-cowork)
 
@@ -230,7 +230,7 @@ Builder stage
 
 Michael Whelehan
 
-3:00PM – 3:45PM
+15:00 – 15:45
 
 [Agent Battle: Mine the most diamonds in 45 minutes](/code-with-claude/session/ldn-ext-agent-battle-mine-the-most-diamonds-in-45-minutes)
 
@@ -240,7 +240,7 @@ Workshops
 
 Ben Lehrburger
 
-3:35PM – 4:05PM
+15:35 – 16:05
 
 [Running every layer of two businesses with Claude Code](/code-with-claude/session/ldn-ext-running-every-layer-of-two-businesses-with-claude-code)
 

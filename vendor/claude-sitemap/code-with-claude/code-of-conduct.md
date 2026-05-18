@@ -82,7 +82,7 @@ Certain sessions will be designated as confidential or no-recording. These sessi
 
 ### Contact
 
-For questions about this Code of Conduct or to report a concern, contact us at [\[email protected\]](/cdn-cgi/l/email-protection#91f2fef5f4e6f8e5f9f2fdf0e4f5f4d1e3f4f6e2e7f2bff2fefc).
+For questions about this Code of Conduct or to report a concern, contact us at [\[email protected\]](/cdn-cgi/l/email-protection#187b777c7d6f716c707b74796d7c7d586a7d7f6b6e7b367b7775).
 
 This Code of Conduct forms part of the Code with Claude Terms & Conditions. Capitalized terms not defined herein have the meanings given to them in the Terms & Conditions.
 

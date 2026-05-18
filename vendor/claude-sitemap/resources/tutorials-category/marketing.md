@@ -800,6 +800,40 @@ Product
 
 Features
 
+![Using Claude Cowork for marketing ops: run a weekly review that preps itself](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a0b69b56deb3e7a96d01504_Screenshot%202026-05-18%20at%2012.31.38%E2%80%AFPM.png)
+
+Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Marketing
+
+Author
+
+Marketing
+
+Author
+
+Claude Cowork
+
+Author
+
+Cowork
+
+Connectors
+
+Skills
+
+Read use case
+
+[Read use case](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Read use case
+
+[Using Claude Cowork for marketing ops: run a weekly review that preps itself](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+[Text Link](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)
+
+Marketing
+
+Professional
+
 ![Using Claude Design for prototypes and UX](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69e1ccae7da2cf317805f09b_Screenshot%202026-04-16%20at%2011.01.12%E2%80%AFPM.png)
 
 Using Claude Design for prototypes and UX

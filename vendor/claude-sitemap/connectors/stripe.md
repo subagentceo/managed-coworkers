@@ -3,7 +3,7 @@ Defines a set of tools that Claude can use to interact with the Stripe API and s
 You can use the Stripe connector to:  
   
 Create and manage customers:  
-"Create a new customer with email [\[email protected\]](/cdn-cgi/l/email-protection#bfd5d0d7d1ffdac7ded2cfd3da91dcd0d2) and name John Smith"
+"Create a new customer with email [\[email protected\]](/cdn-cgi/l/email-protection#402a2f282e002538212d302c256e232f2d) and name John Smith"
 
 Process payments:  
 "Create a payment intent for $50 USD and attach it to customer cus\_123456"

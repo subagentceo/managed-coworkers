@@ -24,21 +24,17 @@ Claude in Slack gives you AI assistance right where your team collaborates. This
 
 6. Access previous conversations by clicking the clock icon.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1755150661/a1a13c73bda421f6ee906650cfc9/22907223-e523-4a93-a6d2-3199a8368991?expires=1778914800&amp;signature=e7fd5628e3582df636ee917b30113925f61a9efb59157fc02092285fae76c9e5&amp;req=dSciE8h7nYdZWPMW1HO4zXK25RlH6TUWVfOC%2FRy97LVAEqXysL%2BiVWql0ero%0AnusHZF9jhlBeRjseR2Y%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1755150661/a1a13c73bda421f6ee906650cfc9/22907223-e523-4a93-a6d2-3199a8368991?expires=1779278400&amp;signature=07d4c3f1e435a97aafb0202073c42686ebec20c51c2059ac4b14f02d09e01066&amp;req=dSciE8h7nYdZWPMW3nq%2BgSbBB%2FwNJY1BrbPVjIWXpK%2BJLzPK6c4kdsr5nyRk%0Ate2S0Pk984kJmazwDKLYhdpO95E%3D%0A)
 
 ## Mention @Claude in a thread or channel
 
 1. Mention @Claude in any thread or channel where you want Claude's help.
 
-2. Claude will draft a response based on the recent conversation context.
+2. Claude will reply directly in the thread based on the recent conversation context.
 
-3. You'll see the draft privately first.
+3. The response will be visible to anyone with access to that thread or channel.
 
-4. Review, edit, or regenerate the response before deciding to share it.
-
-5. Click "Post to thread" to share Claude's response with your team.
-
-This gives you control to review what Claude shares before it becomes visible to others.
+If Claude posts something you didn't intend to share, you can delete its message from the thread.
 
 ### What context from the thread or channel is included when using @Claude?
 
@@ -131,8 +127,8 @@ The following features are not available when using Claude in Slack:
 ## Using integrations across multiple Slack workspaces
 
 If you use Claude across more than one Slack workspace, it's important to understand that your integrations (like the Slack connector) are tied to your **Claude account**, not to a specific Slack workspace.
-
-**To avoid unexpected results:**
+​
+​**To avoid unexpected results:**
 
 - Disconnect the Slack connector from your Claude account before using Claude in a different workspace (**Settings > Connectors > Slack > Disconnect**), then reconnect it when needed.
 
@@ -206,7 +202,7 @@ Get instant answers during team discussions. Ask Claude about industry trends, t
 
 ## Channel restrictions
 
-Claude works in direct messages and threads where you explicitly mention @Claude. You control when Claude participates in conversations and can review all responses before sharing them with your team.
+Claude works in direct messages and threads where you explicitly mention @Claude, and you control when Claude participates in conversations.
 
 ---
 

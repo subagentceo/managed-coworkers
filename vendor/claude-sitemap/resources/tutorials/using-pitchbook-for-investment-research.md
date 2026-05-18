@@ -96,6 +96,6 @@ Discover unexpected connections between companies, investors, and professionals 
 
 ## Contact
 
-If you are having trouble completing the PitchBook Premium integration, you can contact [\[email protected\]](/cdn-cgi/l/email-protection#72010702021d000632021b06111a101d1d195c111d1f) for help.
+If you are having trouble completing the PitchBook Premium integration, you can contact [\[email protected\]](/cdn-cgi/l/email-protection#7e0d0b0e0e110c0a3e0e170a1d161c111115501d1113) for help.
 
 ‍

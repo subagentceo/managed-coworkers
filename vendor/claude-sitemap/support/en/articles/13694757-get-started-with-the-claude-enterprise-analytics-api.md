@@ -28,7 +28,7 @@ Follow these steps:
 
 4. Use the key with the `x-api-key` header in your requests.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2053687376/dac20c85f3d3fcab64c98fee0d1c/c0af2448-7bfb-4d10-b474-025cb4f04f59?expires=1778914800&amp;signature=03d069630f994e1551c8e8f875158834681131e783f5b65af30c1ec794cb4bde&amp;req=diAiFc92moJYX%2FMW1HO4zUxhx6VM26%2BH2G8yJDINvfRAQFTBd8GiBte94egu%0AYRzzTIceaNooTmduLfI%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2053687376/dac20c85f3d3fcab64c98fee0d1c/c0af2448-7bfb-4d10-b474-025cb4f04f59?expires=1779145200&amp;signature=b78a3e9b3a635508af07eadf06ac8dd3bd6303b48206a62eb7495cd8a88cd1c1&amp;req=diAiFc92moJYX%2FMW1HO4zUxhx6RE3q6N2G8yJDINvfQGW%2B9izCzxJ6EawhRc%0A5SF6D3t%2BVHQSzYWxrDY%3D%0A)
 
 For full authentication details, endpoint references, and code examples, refer to our **[Claude Enterprise Analytics API reference guide](https://support.claude.com/en/articles/13703965-claude-enterprise-analytics-api-reference-guide)**.
 

@@ -44,7 +44,7 @@ The Claude Code Usage page displays the following metrics for your organization:
 
 - **Lines accepted over time**: Daily breakdown of accepted code lines.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1717579277/46c512f4b3ed05c359cecd78ed5c/e0ce2c19-39e2-411f-9a1f-cb1d46439a42?expires=1778914800&amp;signature=f8d28212fe3910e76d5f8eafacc4d76b0ad8de8c99fc00301289c027a189f010&amp;req=dScmEcx5lINYXvMW1HO4zfiEMK5Zjn3GCX9h5MbdDjMRRfFWbSBbVnvxJuU%2B%0AVgxGOLZffmkWUcynBmY%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1717579277/46c512f4b3ed05c359cecd78ed5c/e0ce2c19-39e2-411f-9a1f-cb1d46439a42?expires=1779145200&amp;signature=1251192fdc639b42207567f8ec4c47b841e62259b8d4ec42477666c944c4abaf&amp;req=dScmEcx5lINYXvMW1HO4zfiEMK9Ri3zMCX9h5MbdDjM9eZ185q1UD8Yrzvqb%0AxMilx8y2VGcoC5Tb3nY%3D%0A)
 
 ### User-level metrics
 

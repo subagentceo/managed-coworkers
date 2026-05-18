@@ -12,7 +12,7 @@ Date
 
 Time
 
-9:00AM – 10:00AM
+09:00 – 10:00
 
 Speaker(s)
 
@@ -42,7 +42,7 @@ Anthropic
 
 Lisa Crofoot
 
-Research Product Manager Leader,
+Research Product Management Lead,
 
 Anthropic
 
@@ -78,7 +78,7 @@ Session track
 
 Check-in and breakfast
 
-9:00AM – 10:00AM
+09:00 – 10:00
 
 [Opening keynote](/code-with-claude/session/ldn-opening-keynote)
 
@@ -94,9 +94,7 @@ Morning break
 
 morning sessions
 
-No items found.
-
-10:30AM – 11:00AM
+10:30 – 11:00
 
 [What's new in Claude Code](/code-with-claude/session/ldn-whats-new-in-claude-code)
 
@@ -118,6 +116,8 @@ Claude Platform
 
 Ravi Trivedi
 
+10:30 – 11:15
+
 [Picking the right model](/code-with-claude/session/ldn-picking-the-right-model)
 
 (Workshop)
@@ -128,7 +128,7 @@ Research
 
 Lucas Smedley
 
-11:15AM – 11:45AM
+11:15 – 11:45
 
 [Coding is no longer the constraint: Scaling devex to teams and agents at Spotify](/code-with-claude/session/ldn-coding-is-no-longer-the-constraint-scaling-devex-to-teams-and-agents-at-spotify)
 
@@ -150,7 +150,7 @@ Research
 
 Dan Cary
 
-11:30AM – 12:00PM
+11:30 – 12:15
 
 [Beyond the basics with Claude Code](/code-with-claude/session/ldn-beyond-the-basics-with-claude-code)
 
@@ -162,7 +162,7 @@ Claude Code
 
 Daisy Hollman
 
-12:00PM – 12:30PM
+12:00 – 12:30
 
 [How to get to production faster with Claude Managed Agents](/code-with-claude/session/ldn-how-to-get-to-production-faster-with-claude-managed-agents)
 
@@ -194,9 +194,9 @@ Lunch
 
 afternoon sessions
 
-12:30PM – 1:00PM
+12:30 – 13:15
 
-[Rearchitecting workflows with the Claude Code team](/code-with-claude/session/ldn-rearchitecting-workflows-with-the-claude-code-team)
+[Stop babysitting your agents](/code-with-claude/session/ldn-stop-babysitting-your-agents)
 
 (Workshop)
 
@@ -206,11 +206,9 @@ Claude Code
 
 Sid Bidasaria
 
-No items found.
+13:30 – 14:15
 
-1:30PM – 2:15PM
-
-[From code to orchestration: Building with Claude in Amazon Bedrock](/code-with-claude/session/ldn-from-code-to-orchestration-building-with-claude-in-amazon-bedrock)
+[AI with Claude on AWS: From code to orchestration](/code-with-claude/session/ldn-ai-with-claude-on-aws-from-code-to-orchestration)
 
 (Workshop)
 
@@ -220,7 +218,7 @@ Claude Platform
 
 Antonio Rodriguez
 
-1:50PM – 2:20PM
+13:50 – 14:20
 
 [How Lovable vibecodes production software at scale](/code-with-claude/session/ldn-how-lovable-vibecodes-production-software-at-scale)
 
@@ -240,9 +238,9 @@ Research
 
 ·
 
-Lisa Crofoot
+Alexander Bricken
 
-2:30PM – 3:15PM
+14:30 – 15:15
 
 [Build a production-ready agent with Claude Managed Agents](/code-with-claude/session/ldn-build-a-production-ready-agent-with-claude-managed-agents)
 
@@ -252,7 +250,7 @@ Lisa Crofoot
 
 Michael Cohen
 
-2:35PM – 3:05PM
+14:35 – 15:05
 
 [Building AI-native at enterprise scale: monday.com, Doctolib, and Delivery Hero](/code-with-claude/session/ldn-building-ai-native-at-enterprise-scale-monday-com-doctolib-and-delivery-hero)
 
@@ -268,6 +266,8 @@ Alex Kaluzny
 
 Rodrigue Schäfer
 
+Rebecca Harbeck
+
 [Running an AI-native engineering org](/code-with-claude/session/ldn-running-an-ai-native-engineering-org)
 
 (Breakout stage)
@@ -278,7 +278,7 @@ Claude Code
 
 Fiona Fung
 
-3:20PM – 3:50PM
+15:20 – 15:50
 
 [The capability curve](/code-with-claude/session/ldn-the-capability-curve)
 
@@ -290,7 +290,7 @@ Research
 
 Jeremy Hadfield
 
-[Trading signals that trade themselves: Running Claude Code inside a regulated investment firm](/code-with-claude/session/ldn-trading-signals-that-trade-themselves-running-claude-code-inside-a-regulated-investment-firm)
+[Building signals that trade themselves](/code-with-claude/session/ldn-building-signals-that-trade-themselves)
 
 (Breakout stage)
 
@@ -300,7 +300,7 @@ Claude Code
 
 Tushara Fernando
 
-3:30PM – 4:15PM
+15:30 – 16:15
 
 [Build AI agents using Claude in Microsoft Foundry](/code-with-claude/session/ldn-build-ai-agents-using-claude-in-microsoft-foundry)
 
@@ -310,11 +310,9 @@ Claude Platform
 
 ·
 
-Liam Hampton
-
 Marlene Mhangami
 
-4:05PM – 4:35PM
+16:05 – 16:35
 
 [What legal agents inherit from coding agents: Lessons from Legora](/code-with-claude/session/ldn-what-legal-agents-inherit-from-coding-agents-lessons-from-legora)
 
@@ -336,9 +334,7 @@ Claude Platform
 
 Ivan Nardini
 
-Schneider Larbi
-
-4:30PM – 5:15PM
+16:30 – 17:15
 
 [Build a proactive agent workflow with Claude Code](/code-with-claude/session/ldn-build-a-proactive-agent-workflow-with-claude-code)
 
@@ -350,7 +346,7 @@ Claude Code
 
 Maya Nielan
 
-4:50PM – 5:20PM
+16:50 – 17:20
 
 [Getting more out of the Claude Platform](/code-with-claude/session/ldn-getting-more-out-of-the-claude-platform)
 
@@ -362,6 +358,8 @@ Claude Platform
 
 Punit Shah
 
+16:50 – 17:35
+
 [The prompting playbook](/code-with-claude/session/ldn-the-prompting-playbook)
 
 (Breakout stage)
@@ -371,8 +369,6 @@ Research
 ·
 
 Margot van Laar
-
-No items found.
 
 Evening
 

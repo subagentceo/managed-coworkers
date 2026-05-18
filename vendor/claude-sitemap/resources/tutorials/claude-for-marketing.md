@@ -651,6 +651,14 @@ Explore several examples of how Claude can be used by marketing teams.
 
 ## Related tutorials
 
+[Using Claude Cowork for marketing ops: run a weekly review that preps itself](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Tutorial
+
+[Tutorial](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Tutorial
+
 [Using Claude Design for prototypes and UX](/resources/tutorials/using-claude-design-for-prototypes-and-ux)Using Claude Design for prototypes and UX
 
 Using Claude Design for prototypes and UX
