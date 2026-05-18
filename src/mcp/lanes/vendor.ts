@@ -22,6 +22,7 @@ import { spawn } from "node:child_process";
 import { fetchText, jsonResult } from "../bridge-utils.js";
 import { loadVendorManifests, vendorRoot } from "../../lib/vendor-manifests.js";
 import { urlFor, vendorMirror } from "../../lib/vendor-mirror.js";
+import { cacheGet, cacheSetEx } from "../../lib/cache.js";
 
 interface VendorListEntry {
   name: string;
@@ -84,6 +85,17 @@ export function registerVendor(server: McpServer): void {
     "Fetch a vendor doc by URL. Returns local mirror body when available (source:'mirror'); otherwise falls back to live HTTP (source:'http'). The URL must be in some vendor's allowlist (see vendor_list).",
     { url: z.string().url() },
     async ({ url }) => {
+      // Redis cache check: skip filesystem if we already fetched this URL
+      // in the last hour. cacheGet returns null on miss / no redis / error.
+      const cacheKey = `vf:${url}`;
+      const cached = await cacheGet(cacheKey);
+      if (cached) {
+        try {
+          return jsonResult({ ...JSON.parse(cached), cache: "hit" });
+        } catch {
+          // Corrupt cache value — fall through and re-populate.
+        }
+      }
       const mirror = vendorMirror(url);
       if (mirror) {
         // Surface vendor-level GUIDANCE.md as a sibling field if present.
@@ -93,14 +105,17 @@ export function registerVendor(server: McpServer): void {
         const guidance = existsSync(guidancePath)
           ? { path: `vendor/${mirror.vendor}/GUIDANCE.md`, must_read: true }
           : undefined;
-        return jsonResult({
+        const payload = {
           source: "mirror",
           vendor: mirror.vendor,
           url: mirror.url,
           relPath: mirror.relPath,
           content: mirror.body,
           ...(guidance && { guidance }),
-        });
+        };
+        // Best-effort cache populate (1h TTL). No-op if redis unavailable.
+        await cacheSetEx(cacheKey, JSON.stringify(payload), 3600);
+        return jsonResult({ ...payload, cache: "miss" });
       }
       // Allowlist enforcement: only fall back to HTTP for URLs that AT
       // LEAST one vendor's allowlist contains. Otherwise reject.
