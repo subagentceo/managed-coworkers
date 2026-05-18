@@ -10,7 +10,7 @@ Feb 10, 2025
 
 In the coming years, AI systems will have a major impact on the ways people work. For that reason, we're launching the [Anthropic Economic Index](/economic-futures), an initiative aimed at understanding AI's effects on labor markets and the economy over time.
 
-The Index’s [initial report](http://arxiv.org/abs/2503.04761) provides first-of-its-kind data and analysis based on millions of anonymized conversations on [Claude.ai](http://claude.ai/redirect/website.v1.1457497c-df2f-450a-a84b-f78d6a4d2d60), revealing the clearest picture yet of how AI is being incorporated into real-world tasks across the modern economy.
+The Index’s [initial report](http://arxiv.org/abs/2503.04761) provides first-of-its-kind data and analysis based on millions of anonymized conversations on [Claude.ai](http://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099), revealing the clearest picture yet of how AI is being incorporated into real-world tasks across the modern economy.
 
 We're also [open sourcing the dataset](https://huggingface.co/datasets/Anthropic/EconomicIndex/) used for this analysis, so researchers can build on and extend our findings. Developing policy responses to address the coming transformation in the labor market and its effects on employment and productivity will take a range of perspectives. To that end, we are also inviting economists, policy experts, and other researchers to [provide input](https://docs.google.com/forms/d/e/1FAIpQLSfDEdY-mT5lcXPaDSv-0Ci1rSXGlbIJierxkUbNB7_07-kddw/viewform?usp=dialog) on the Index.
 
@@ -38,7 +38,7 @@ Certain tasks lend themselves better to being automated or augmented by a new te
 
 ### **Using Clio to match AI use to tasks**
 
-This research was made possible by Claude insights and observations, or "[Clio](https://www.anthropic.com/research/clio)", an automated analysis tool that allows us to analyze conversations with Claude while preserving user privacy1. We used Clio on a dataset of approximately one million conversations with Claude (specifically, Free and Pro conversations on [Claude.ai](http://claude.ai/redirect/website.v1.1457497c-df2f-450a-a84b-f78d6a4d2d60)), and used it to organize the conversations by occupational task.
+This research was made possible by Claude insights and observations, or "[Clio](https://www.anthropic.com/research/clio)", an automated analysis tool that allows us to analyze conversations with Claude while preserving user privacy1. We used Clio on a dataset of approximately one million conversations with Claude (specifically, Free and Pro conversations on [Claude.ai](http://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099)), and used it to organize the conversations by occupational task.
 
 We chose tasks according to the classification made by the U.S. Department of Labor, which maintains a database of around 20,000 specific work-related tasks called the Occupational Information Network, or [O\*NET](https://www.onetonline.org/). Clio matched each conversation with the O\*NET task that best represented the role of the AI in the conversation (the process is summarized in the figure below). We then followed the O\*NET scheme for grouping the tasks into the occupations they best represented, and the occupations into a small set of overall categories: _education and library,_ _business and financial,_ and so on.
 
@@ -84,7 +84,7 @@ Our study provides a unique glimpse into how AI is changing the labor market. Bu
 
 -   We can’t know for certain whether someone using Claude for a task was completing a task for work. Someone asking Claude for writing or editing advice _could_ be doing so at work, but they could also be doing so for the novel they’re writing as a hobby.
 -   Relatedly, we don’t know _how_ the users were using the responses from Claude. Were they, for instance, copy-pasting code snippets? Were they fact-checking responses or accepting them uncritically? Some of what appears in our data to be automation could, in fact, be augmentation: for example, a user might ask Claude to write a full memo for them (which would appear as automation), but then edit it themselves afterwards (which would be augmentation).
--   We also only analyze data from [Claude.ai](http://claude.ai/redirect/website.v1.1457497c-df2f-450a-a84b-f78d6a4d2d60) Free and Pro plans, rather than API, Team, or Enterprise users. While Claude.ai data contains some non-work conversations, we used a language model to filter this data to only contain conversations relevant to an occupational task, which helps to mitigate this concern.
+-   We also only analyze data from [Claude.ai](http://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099) Free and Pro plans, rather than API, Team, or Enterprise users. While Claude.ai data contains some non-work conversations, we used a language model to filter this data to only contain conversations relevant to an occupational task, which helps to mitigate this concern.
 -   The sheer number of different tasks means it is possible that Clio classified some conversations incorrectly (please see the full paper, in particular Appendix B, for details on how we validated the analysis);
 -   Claude can’t generate images (except indirectly via code), and so some creative uses won’t be referenced in the data;
 -   Given that Claude is advertised for use as a state-of-the-art coding model, we might expect coding to be overrepresented as a use case. For that reason, we don’t argue that the uses in our dataset are a representative sample of AI use in general.
@@ -123,6 +123,12 @@ If you’re interested in working at Anthropic to research the effects of AI on 
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -132,9 +138,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

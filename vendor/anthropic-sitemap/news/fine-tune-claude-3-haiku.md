@@ -101,6 +101,18 @@ No items found.
 
 Explore more product news and best practices for teams building with Claude.
 
+![](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22e13864f88ea55c2d8_b5c98d26c46edc43193e7f7e28a00633a538bb9c-1000x1000.svg)
+
+May 12, 2026
+
+### Code w/ Claude SF 2026 recap: Building on the AI exponential
+
+Product announcements
+
+[Code w/ Claude SF 2026 recap: Building on the AI exponential](#) Code w/ Claude SF 2026 recap: Building on the AI exponential
+
+[Code w/ Claude SF 2026 recap: Building on the AI exponential](/blog/code-w-claude-sf-2026-sf) Code w/ Claude SF 2026 recap: Building on the AI exponential
+
 ![](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a025cf25f0694905405e054_Object-Scale.svg)
 
 May 12, 2026
@@ -136,18 +148,6 @@ Product announcements
 [Agent view in Claude Code](#)Agent view in Claude Code
 
 [Agent view in Claude Code](/blog/agent-view-in-claude-code)Agent view in Claude Code
-
-![](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229a7aa26ac1b6e96c2_a62b6eb169818f14c35b7a192af269e283f8fa93-1000x1000.svg)
-
-May 7, 2026
-
-### Collaborate with Claude across Excel, PowerPoint, Word and Outlook
-
-Product announcements
-
-[Collaborate with Claude across Excel, PowerPoint, Word and Outlook](#) Collaborate with Claude across Excel, PowerPoint, Word and Outlook
-
-[Collaborate with Claude across Excel, PowerPoint, Word and Outlook](/blog/collaborate-with-claude-across-excel-powerpoint-word-and-outlook) Collaborate with Claude across Excel, PowerPoint, Word and Outlook
 
 ## Transform how your organization operates with Claude
 

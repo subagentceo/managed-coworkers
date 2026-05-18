@@ -48,6 +48,12 @@ As we scale our partnership over the coming years—and as we ratchet up our wor
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -59,9 +65,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
 
 [Read more](/news/claude-for-small-business)
-
-### Higher usage limits for Claude and a compute deal with SpaceX
-
-We’ve raised Claude's usage limits and agreed a new compute partnership with SpaceX that will substantially increase our capacity in the near term.
-
-[Read more](/news/higher-limits-spacex)

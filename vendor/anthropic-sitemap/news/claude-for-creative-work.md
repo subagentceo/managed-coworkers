@@ -14,14 +14,14 @@ Today, we’re releasing a set of connectors—tools that let Claude work alongs
 
 Connectors allow Claude to access other platforms and tools directly. We are adding several new connectors that are designed to make it easier to use Claude for creative work:
 
--   **[Ableton](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/ant.dir.gh.ableton.ableton-knowledge)** grounds Claude’s answers in official product documentation for Live and Push.
--   **[Adobe for creativity](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/adobe-creativity)** enables users to bring images, videos, and designs to life, drawing from 50+ tools across Creative Cloud apps including Photoshop, Premiere, Express, and more.
--   [**Affinity by Canva**](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/ant.dir.gh.canva.affinity) automates repetitive production tasks across pro creative workflows - such as batch image adjustments, layer renaming, and file export - and generates custom features directly in the app.
--   **[Autodesk Fusion](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/ant.dir.gh.autodesk.fusion-mcp)** allows designers and engineers with a Fusion subscription to create and modify 3D models through conversations with Claude.
--   **[Blender](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/ant.dir.gh.blender.blender-mcp)** offers a natural-language interface to its Python API, allowing users to explore and understand complex setups and making it easier to access Blender’s documentation.
--   **[Resolume Arena](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/ant.dir.gh.resolume.resolume-arena) and [Resolume Wire](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/ant.dir.gh.resolume.resolume-wire)** let VJs and live visual artists control Arena, Avenue, and Wire in real time through natural language for live performance and AV production.
--   **[SketchUp](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/sketchup)** turns a conversation with Claude into a starting point for 3D modeling—describe a room, a piece of furniture, or a site concept, then open it in SketchUp to refine**.**
--   **[Splice](https://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a/directory/connectors/splice)** gives music producers the ability to search its catalog of royalty-free samples from within Claude.
+-   **[Ableton](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/ant.dir.gh.ableton.ableton-knowledge)** grounds Claude’s answers in official product documentation for Live and Push.
+-   **[Adobe for creativity](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/adobe-creativity)** enables users to bring images, videos, and designs to life, drawing from 50+ tools across Creative Cloud apps including Photoshop, Premiere, Express, and more.
+-   [**Affinity by Canva**](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/ant.dir.gh.canva.affinity) automates repetitive production tasks across pro creative workflows - such as batch image adjustments, layer renaming, and file export - and generates custom features directly in the app.
+-   **[Autodesk Fusion](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/ant.dir.gh.autodesk.fusion-mcp)** allows designers and engineers with a Fusion subscription to create and modify 3D models through conversations with Claude.
+-   **[Blender](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/ant.dir.gh.blender.blender-mcp)** offers a natural-language interface to its Python API, allowing users to explore and understand complex setups and making it easier to access Blender’s documentation.
+-   **[Resolume Arena](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/ant.dir.gh.resolume.resolume-arena) and [Resolume Wire](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/ant.dir.gh.resolume.resolume-wire)** let VJs and live visual artists control Arena, Avenue, and Wire in real time through natural language for live performance and AV production.
+-   **[SketchUp](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/sketchup)** turns a conversation with Claude into a starting point for 3D modeling—describe a room, a piece of furniture, or a site concept, then open it in SketchUp to refine**.**
+-   **[Splice](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/directory/connectors/splice)** gives music producers the ability to search its catalog of royalty-free samples from within Claude.
 
 ## **Using Claude for creative work**
 
@@ -51,6 +51,12 @@ _Updated May 1, 2026: Blender has elected to receive Anthropic's contribution as
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -60,9 +66,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)
