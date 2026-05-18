@@ -1,6 +1,6 @@
 # Tools for getting started with the Brave Search API
 
-[![Tools for getting started with the Brave Search API OG image](/avante_6229777347894050959_hu00b63022e8df9a7db7abd469564d951e_0_1200x630_fill_box_center_3.png)
+[![Tools for getting started with the Brave Search API OG image](/avante_1019500475879150296_hu5eddbc874f5b761f978e8dc7944f481b_0_1200x630_fill_box_center_3.png)
 
 ## Avante
 
@@ -8,7 +8,7 @@ Avante.nvim is a Neovim plugin designed to emulate the behaviour of the Cursor A
 
 
 
-](https://github.com/yetone/avante.nvim)[![Tools for getting started with the Brave Search API OG image](/socialPreview_10651128504889551007_hu1b30988e2748cf8cad6041f430cf650a_0_1200x630_fill_box_center_3.png)
+](https://github.com/yetone/avante.nvim)[![](images/default-image-1.png)
 
 ## AWS Marketplace
 
@@ -16,7 +16,7 @@ AWS Marketplace is a digital catalog of software and services that can be deploy
 
 
 
-](https://aws.amazon.com/marketplace/seller-profile?id=seller-mmvimitjqzsyu)[![](images/default-image-1.png)
+](https://aws.amazon.com/marketplace/seller-profile?id=seller-mmvimitjqzsyu)[![](images/default-image-2.png)
 
 ## Blaxel
 
@@ -48,7 +48,7 @@ CrewAI is an independent Python framework for building autonomous AI agents.
 
 
 
-](https://docs.crewai.com/tools/search-research/bravesearchtool)[![](images/default-image-2.png)
+](https://docs.crewai.com/tools/search-research/bravesearchtool)[![](images/default-image-3.png)
 
 ## Cursor
 
@@ -56,7 +56,7 @@ Cursor is an AI code editor used by millions of engineers. It is powered by a se
 
 
 
-](https://docs.cursor.com/context/model-context-protocol)[![](images/default-image-3.png)
+](https://docs.cursor.com/context/model-context-protocol)[![](images/default-image-1.png)
 
 ## DeerFlow
 
@@ -72,7 +72,7 @@ Dify is an open-source LLM app development platform.
 
 
 
-](https://dify.ai/)[![](images/default-image-1.png)
+](https://dify.ai/)[![](images/default-image-2.png)
 
 ## Docker Hub
 
@@ -80,7 +80,7 @@ Docker Hub is a container registry built for developers and open source contribu
 
 
 
-](https://hub.docker.com/r/mcp/brave-search)[![Tools for getting started with the Brave Search API OG image](/opengraph-image_8821287434040726226_huef7ce6581a331bd584eb07a67f5bcc26_0_1200x630_fill_box_center_3.png)
+](https://hub.docker.com/r/mcp/brave-search)[![](images/default-image-3.png)
 
 ## Flowise
 
@@ -96,7 +96,7 @@ Kiro provides a Web Search MCP server for accessing Brave Search API results.
 
 
 
-](https://kiro.dev/docs/mcp/servers/#web-search-server)[![](images/default-image-2.png)
+](https://kiro.dev/docs/mcp/servers/#web-search-server)[![](images/default-image-1.png)
 
 ## LangChain
 
@@ -112,7 +112,7 @@ LlamaIndex is a leading data framework for building LLM applications.
 
 
 
-](https://www.llamaindex.ai/)[![](images/default-image-3.png)
+](https://www.llamaindex.ai/)[![](images/default-image-2.png)
 
 ## MCP.so
 
@@ -128,7 +128,7 @@ Microsoft Power Platform is a collection of low-code development tools that allo
 
 
 
-](https://learn.microsoft.com/en-us/connectors/bravesearch/)[![](images/default-image-1.png)
+](https://learn.microsoft.com/en-us/connectors/bravesearch/)[![](images/default-image-3.png)
 
 ## MindMac
 
@@ -136,7 +136,7 @@ MindMac is an AI chat-app designed for macOS that allows users to access various
 
 
 
-](https://mindmac.app/)[![](images/default-image-2.png)
+](https://mindmac.app/)[![](images/default-image-1.png)
 
 ## Postman
 
@@ -144,7 +144,7 @@ Postman is an API platform for developers to design, build, test, and collaborat
 
 
 
-](https://www.postman.com/getmcp/public-mcp-servers/collection/681e7f04440b3593597a1681)[![](images/default-image-3.png)
+](https://www.postman.com/getmcp/public-mcp-servers/collection/681e7f04440b3593597a1681)[![](images/default-image-2.png)
 
 ## PulseMCP
 
@@ -152,7 +152,7 @@ PulseMCP is a place to discover servers, clients, and use cases in the MCP ecosy
 
 
 
-](https://www.pulsemcp.com/servers/modelcontextprotocol-brave-search)[![](images/default-image-1.png)
+](https://www.pulsemcp.com/servers/modelcontextprotocol-brave-search)[![](images/default-image-3.png)
 
 ## Quivr
 
@@ -168,7 +168,7 @@ Windsurf (formerly Codeium) is the world's most advanced AI coding assistant for
 
 
 
-](https://windsurf.com/)[![Tools for getting started with the Brave Search API OG image](/og_12136750238892125501_hu601dc0a085b1f189fdbe91b89decdf85_0_1200x630_fill_box_center_3.png)
+](https://windsurf.com/)[![Tools for getting started with the Brave Search API OG image](/og_12136750238892125501_hu194b25ffdeb54723f5e71f762e314c24_0_1200x630_fill_box_center_3.png)
 
 ## Zed
 
