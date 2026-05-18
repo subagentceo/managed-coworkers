@@ -319,3 +319,148 @@ const App = ({fetchClientSecret}) => {
 }
 ```
 
+
+# Embedded form
+
+> This is a Embedded form for when payment-ui is checkout-form. View the full page at https://docs.stripe.com/payments/checkout/custom-success-page?payment-ui=checkout-form.
+
+> If you want to use the embedded form integration, see [Build an integration with an embedded form](https://docs.stripe.com/checkout/form/quickstart.md).
+
+If you have a Checkout integration that uses the embedded form, you can customize how and whether Stripe redirects your customers after they complete payment. You can have Stripe always redirect customers, only redirect for some payment methods, or completely disable redirects.
+
+To set up redirects, specify the return page in the `return_url` [parameter](https://docs.stripe.com/api/checkout/sessions/create.md#create_checkout_session-return_url).
+
+Alternatively, you can:
+
+- [Only redirect customers if the payment method requires it](https://docs.stripe.com/payments/checkout/custom-success-page.md#redirect-if-required) (for example, a bank authorization page for a debit-based method).
+- Not use a return page and [disable redirect-based payment methods](https://docs.stripe.com/payments/checkout/custom-success-page.md#disable-redirects).
+
+> #### Webhooks are required for fulfillment
+> 
+> You can’t rely on triggering fulfillment only from your checkout landing page, because your customers aren’t guaranteed to visit that page. For example, someone can pay successfully and then lose their connection to the internet before your landing page loads.
+> 
+> [Set up a webhook event handler](https://docs.stripe.com/checkout/fulfillment.md?payment-ui=checkout-form#create-payment-event-handler) so Stripe can send payment events directly to your server, bypassing the client entirely. Webhooks provide the most reliable way to confirm when you get paid. If webhook event delivery fails, Stripe [retries multiple times](https://docs.stripe.com/webhooks.md#automatic-retries).
+
+## Redirect customers to a return page 
+
+When you create the [Checkout Session](https://docs.stripe.com/api/checkout/sessions.md), you specify the URL of the return page in the `return_url` [parameter](https://docs.stripe.com/api/checkout/sessions/create.md#create_checkout_session-return_url). Include the `{CHECKOUT_SESSION_ID}` template variable in the URL. When Checkout redirects a customer, it replaces the variable with the actual Checkout Session ID. When rendering your return page, retrieve the Checkout Session status using the Checkout Session ID in the URL.
+
+#### Accounts v2
+
+```javascript
+app.get('/session_status', async (req, res) => {
+  const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+  const customer_account = await client.v2.core.accounts.retrieve(session.customer_account);
+
+  res.send({
+    status: session.status,
+    payment_status: session.payment_status,
+    customer_account_email: customer_account.contact_email
+  });
+});
+```
+
+#### Customers v1
+
+```javascript
+app.get('/session_status', async (req, res) => {
+  const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+  const customer = await stripe.customers.retrieve(session.customer);
+
+  res.send({
+    status: session.status,
+    payment_status: session.payment_status,
+    customer_email: customer.email
+  });
+});
+```
+
+Handle the result according to the session status as follows:
+
+- `complete`: The payment succeeded. Use the information from the Checkout Session to render a success page.
+- `open`: The payment failed or was canceled. Remount Checkout so that your customer can try again.
+
+```javascript
+const session = await fetch(`/session_status?session_id=${session_id}`)
+if (session.status == 'open') {
+  // Remount Checkout
+else if (session.status == 'complete') {
+  // Show success page
+  // Optionally use session.payment_status or session.customer_email
+  // to customize the success page
+}
+```
+
+## Redirect-based payment methods 
+
+During payment, some payment methods redirect the customer to an intermediate page, such as a bank authorization page. When they complete that page, Stripe redirects them to your return page.
+
+### Only redirect for redirect-based payment methods 
+
+If you don’t want to redirect customers after payments that don’t require a redirect, set [redirect_on_completion](https://docs.stripe.com/api/checkout/sessions/object.md#checkout_session_object-redirect_on_completion) to `if_required`. That redirects only customers who check out with redirect-based payment methods.
+
+For card payments, Checkout renders a default success state instead of redirecting. To use your own success state, handle the result of the `confirm` call and render a custom success state.
+
+#### HTML + JS
+
+```javascript
+checkoutForm.on('confirm', async (event) => {
+  const result = await checkout.confirm();
+  if (result.type === 'success') {
+    const details = await retrievePurchaseDetails();
+    showPurchaseSummary(details);
+  }
+});
+```
+
+#### React
+
+```jsx
+const checkoutState = useCheckoutElements();
+
+const onConfirm = async (event) => {
+  const result = await checkoutState.checkout.confirm();
+  if (result.type === 'success') {
+    const details = await retrievePurchaseDetails();
+    showPurchaseSummary(details);
+  }
+};
+```
+
+### Disable redirect-based payment methods 
+
+If you don’t want to create a return page, create your Checkout Session with [redirect_on_completion](https://docs.stripe.com/api/checkout/sessions/object.md#checkout_session_object-redirect_on_completion) set to `never`.
+
+This disables redirect-based payment methods:
+
+- If you use [Dynamic payment methods](https://docs.stripe.com/payments/payment-methods/dynamic-payment-methods.md), you can still manage payment methods from the Dashboard, but payment methods that require redirects aren’t eligible.
+- If you manually specify payment methods with [payment_method_types](https://docs.stripe.com/api/checkout/sessions/object.md#checkout_session_object-payment_method_types), you can’t include any redirect-based payment methods.
+
+Setting `redirect_on_completion: never` removes the `return_url` requirement. For these sessions, Checkout renders a default success state instead of redirecting. To use your own success state, handle the result of the `confirm` call and render a custom success state.
+
+#### HTML + JS
+
+```javascript
+checkoutForm.on('confirm', async (event) => {
+  const result = await checkout.confirm();
+  if (result.type === 'success') {
+    const details = await retrievePurchaseDetails();
+    showPurchaseSummary(details);
+  }
+});
+```
+
+#### React
+
+```jsx
+const checkoutState = useCheckoutElements();
+
+const onConfirm = async (event) => {
+  const result = await checkoutState.checkout.confirm();
+  if (result.type === 'success') {
+    const details = await retrievePurchaseDetails();
+    showPurchaseSummary(details);
+  }
+};
+```
+
