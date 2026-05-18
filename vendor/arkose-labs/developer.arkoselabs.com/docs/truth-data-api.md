@@ -117,7 +117,7 @@ For the optional fields that accept string enums, Arkose improves our analysis b
 
     <tr>
       <td>
-        `session_create_time`
+        `session_create_timestamp`
       </td>
 
       <td>
@@ -135,7 +135,7 @@ For the optional fields that accept string enums, Arkose improves our analysis b
 
     <tr>
       <td>
-        `decision_time`
+        `decision_timestamp`
       </td>
 
       <td>
