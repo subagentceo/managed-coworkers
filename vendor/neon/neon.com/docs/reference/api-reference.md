@@ -5,7 +5,7 @@
 
 # Neon API
 
-Copy this prompt into your AI coding assistant (Cursor, Copilot, etc.) to get help creating your first API key and making your first successful API call (using curl, the TypeScript SDK, or the Python SDK). [View prompt](https://neon.com/prompts/neon-api-prompt.md)
+Copy into your AI assistant to get an API key and make your first API call. [View prompt](https://neon.com/prompts/neon-api-prompt.md)
 
 The Neon API allows you to manage your Neon projects programmatically. You can create and manage projects, branches, databases, roles, compute endpoints, and more. Everything you can do in the Neon Console, you can do with the API.
 

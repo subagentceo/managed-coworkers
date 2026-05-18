@@ -244,6 +244,7 @@ This covers the basics. For more connection options and detailed guidance:
 - [Framework guides](https://neon.com/docs/get-started/frameworks): Step-by-step guides for Next.js, Remix, Django, Rails, and more
 - [Language guides](https://neon.com/docs/get-started/languages): Connection examples for JavaScript, Python, Go, Rust, and other languages
 - [Serverless driver](https://neon.com/docs/serverless/serverless-driver): Connect from serverless and edge environments using HTTP or WebSockets
+- [Set up Neon Auth](https://neon.com/docs/auth/overview): Managed authentication that branches with your database
 
 ---
 

@@ -147,7 +147,7 @@ Managed authentication built on Better Auth that branches with your database.
 - [Password reset](https://neon.com/docs/auth/guides/password-reset.md): Allow users to reset forgotten passwords
 - [Phone Number](https://neon.com/docs/auth/guides/plugins/phone-number.md): Sign in existing users with phone OTP codes delivered via your SMS provider
 - [Plugins](https://neon.com/docs/auth/guides/plugins.md): Supported Better Auth plugins in Neon Auth
-- [Set up OAuth](https://neon.com/docs/auth/guides/setup-oauth.md): Add Google or GitHub sign-in to your application
+- [Set up OAuth](https://neon.com/docs/auth/guides/setup-oauth.md): Add Google, GitHub, or Vercel sign-in to your application
 - [User management](https://neon.com/docs/auth/guides/user-management.md): Update profiles, change passwords, and manage account settings
 - [Webhooks](https://neon.com/docs/auth/guides/webhooks.md): Handle authentication events with custom server logic
 

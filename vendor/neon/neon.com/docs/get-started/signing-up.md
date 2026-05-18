@@ -353,6 +353,10 @@ Make sure that your development team is always working from the latest schema an
 - **Working with sensitive data?** Neon supports [schema-only branching](https://neon.com/docs/guides/branching-schema-only) to create branches with just the database structure, without copying production data.
 - **Need automatic cleanup?** Set branches to automatically [expire and be deleted](https://neon.com/docs/guides/branch-expiration) after a specified time period, perfect for temporary test branches or time-limited preview environments.
 
+## What's next
+
+Building an app with users? [Set up Neon Auth](https://neon.com/docs/auth/overview) for managed sign-up, sessions, and OAuth. Identity lives in Postgres and branches with your data, so you can test full login flows on preview branches without touching production.
+
 ---
 
 ## Related docs (Start with Neon)

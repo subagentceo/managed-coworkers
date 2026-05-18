@@ -130,9 +130,7 @@ dev/alice             dev/new-onboarding
 
 Whenever you create a pull request, you can create a Neon branch for your preview deployment. This allows you to test your code changes and SQL migrations against production-like data.
 
-**Tip:**
-
-We recommend following this naming convention to identify these branches easily:
+We recommend following this naming convention to identify preview branches easily:
 
 ```bash
 preview/pr-<pull_request_number>-<git_branch_name>
@@ -143,6 +141,10 @@ Example:
 ```bash
 preview/pr-123-feat/new-login-screen
 ```
+
+**Tip: Using Neon Auth?**
+
+[Neon Auth](https://neon.com/docs/auth/overview) is provisioned on preview branches when enabled on production. Each preview gets isolated users, sessions, and auth configuration that branches with the database. Vercel integrations set `NEON_AUTH_BASE_URL` and `VITE_NEON_AUTH_URL` automatically. See [Branching authentication](https://neon.com/docs/auth/branching-authentication) and [Neon-managed Vercel integration](https://neon.com/docs/guides/neon-managed-vercel-integration).
 
 You can also automate branch creation for every preview. These example applications show how to create Neon branches with GitHub Actions for every preview environment.
 
