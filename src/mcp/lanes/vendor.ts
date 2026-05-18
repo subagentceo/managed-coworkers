@@ -176,14 +176,14 @@ export function registerVendor(server: McpServer): void {
 
   server.tool(
     "vendor_refresh",
-    "Refresh a vendor's local mirror by re-crawling its declared sources (llms.txt + html_index + sitemap_xml per vendor/<name>/crawl.json). Returns a structured summary of pages fetched/unchanged/failed. Programmatic-tool-calling shape: the per-URL fetch loop runs inside this one tool_use; only the summary enters context.",
+    "Refresh a vendor's local mirror by re-crawling its declared sources (llms.txt + html_index + sitemap_xml per vendor/<name>/crawl.json). Returns the full CrawlResult as structured JSON — vendor, pagesFetched, pagesSkipped, pagesUnchanged, preflight304/200, failures[]. The per-URL fetch loop runs inside this one tool_use; only the structured result enters context.",
     {
       vendor: z.string().min(1),
       dry_run: z.boolean().default(false),
     },
     async ({ vendor, dry_run }) => {
       const repoRoot = resolve(vendorRoot(), "..");
-      const args = ["scripts/crawl-vendors.ts", "--vendor", vendor];
+      const args = ["scripts/crawl-vendors.ts", "--vendor", vendor, "--json"];
       if (dry_run) args.push("--dry-run");
       return new Promise((resolveFn) => {
         const child = spawn("node_modules/.bin/tsx", args, { cwd: repoRoot });
@@ -192,14 +192,25 @@ export function registerVendor(server: McpServer): void {
         child.stdout.on("data", (d: Buffer) => { stdout += d.toString(); });
         child.stderr.on("data", (d: Buffer) => { stderr += d.toString(); });
         child.on("close", (code: number) => {
-          const summaryLine = stdout.split("\n").reverse().find((l) => l.includes(vendor) && (l.includes("ok") || l.includes("FAIL")));
-          resolveFn(jsonResult({
-            vendor,
-            exit_code: code,
-            summary: summaryLine?.trim() ?? "no summary line",
-            stdout_tail: stdout.split("\n").slice(-15).join("\n"),
-            stderr_tail: stderr.split("\n").slice(-5).join("\n"),
-          }));
+          // Stdout is one JSON line in --json mode. Logs go to stderr.
+          try {
+            const parsed = JSON.parse(stdout.trim());
+            const result = parsed.results?.[0];
+            resolveFn(jsonResult({
+              vendor,
+              exit_code: code,
+              result: result ?? null,
+              ok: result ? result.failures.length === 0 : false,
+            }));
+          } catch (err) {
+            resolveFn(jsonResult({
+              vendor,
+              exit_code: code,
+              error: "failed to parse crawler JSON output",
+              stdout_tail: stdout.split("\n").slice(-5).join("\n"),
+              stderr_tail: stderr.split("\n").slice(-10).join("\n"),
+            }));
+          }
         });
       });
     }

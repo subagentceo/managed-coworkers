@@ -755,8 +755,8 @@ function renderUrlsIndex(
 // ──────────────────────────────────────────────────────────────────────
 // CLI
 
-function parseArgs(argv: string[]): { vendor?: string; all: boolean; dryRun: boolean } {
-  const out = { vendor: undefined as string | undefined, all: true, dryRun: false };
+function parseArgs(argv: string[]): { vendor?: string; all: boolean; dryRun: boolean; json: boolean } {
+  const out = { vendor: undefined as string | undefined, all: true, dryRun: false, json: false };
   for (let i = 0; i < argv.length; i += 1) {
     const a = argv[i];
     if (a === "--vendor" || a === "-v") {
@@ -765,8 +765,10 @@ function parseArgs(argv: string[]): { vendor?: string; all: boolean; dryRun: boo
       i += 1;
     } else if (a === "--dry-run") {
       out.dryRun = true;
+    } else if (a === "--json") {
+      out.json = true;
     } else if (a === "--help" || a === "-h") {
-      console.log("usage: crawl-vendors [--vendor <name>] [--dry-run]");
+      console.log("usage: crawl-vendors [--vendor <name>] [--dry-run] [--json]");
       process.exit(0);
     } else if (!out.vendor && !a.startsWith("-")) {
       // Allow positional vendor arg via `crawl:vendor -- stripe`.
@@ -778,11 +780,21 @@ function parseArgs(argv: string[]): { vendor?: string; all: boolean; dryRun: boo
 }
 
 async function main(): Promise<void> {
-  const { vendor, all, dryRun } = parseArgs(process.argv.slice(2));
+  const { vendor, all, dryRun, json } = parseArgs(process.argv.slice(2));
   const targets = all ? listVendorConfigs() : [vendor!];
   if (targets.length === 0) {
-    console.error("no vendor configs found under vendor/*/crawl.json");
+    if (json) {
+      console.log(JSON.stringify({ error: "no vendor configs found", results: [] }));
+    } else {
+      console.error("no vendor configs found under vendor/*/crawl.json");
+    }
     process.exit(1);
+  }
+  // In --json mode, suppress per-page progress logs by routing them to stderr.
+  // Callers (the MCP vendor_refresh tool) get a clean stdout = JSON.
+  const origLog = console.log;
+  if (json) {
+    console.log = (...args: unknown[]) => console.error(...(args as Parameters<typeof console.error>));
   }
   const results: CrawlResult[] = [];
   for (const v of targets) {
@@ -801,6 +813,12 @@ async function main(): Promise<void> {
         failures: [{ url: "<crawl>", reason: (err as Error).message }],
       });
     }
+  }
+  if (json) {
+    // Restore stdout and emit one JSON line.
+    console.log = origLog;
+    console.log(JSON.stringify({ results }));
+    return;
   }
   console.log("\n=== summary ===");
   for (const r of results) {

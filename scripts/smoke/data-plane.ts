@@ -141,6 +141,27 @@ const checks: Check[] = [
       }
     },
   },
+  {
+    name: "crawler --json contract: clean JSON on stdout for vendor_refresh",
+    fn: () => {
+      // The MCP vendor_refresh tool relies on --json producing exactly one
+      // JSON line on stdout. Validate against the smallest vendor.
+      const out = execFileSync(
+        "node_modules/.bin/tsx",
+        ["scripts/crawl-vendors.ts", "--vendor", "arkose-labs", "--json", "--dry-run"],
+        { encoding: "utf8", cwd: REPO_ROOT },
+      ).trim();
+      let parsed: { results?: Array<{ vendor: string }> };
+      try {
+        parsed = JSON.parse(out);
+      } catch {
+        throw new Error(`stdout was not valid JSON (got ${out.length} chars)`);
+      }
+      if (!parsed.results || parsed.results[0]?.vendor !== "arkose-labs") {
+        throw new Error("JSON shape mismatch — expected results[0].vendor='arkose-labs'");
+      }
+    },
+  },
 ];
 
 let passed = 0;
