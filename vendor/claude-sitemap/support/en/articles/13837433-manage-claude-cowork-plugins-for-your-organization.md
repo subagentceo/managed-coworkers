@@ -80,7 +80,7 @@ Your personal GitHub token is verified to confirm you have access, then Cowork u
 
 An initial sync runs automatically when you connect a repository. After that, organization owners can opt-in to continued automatic updates per marketplace by going to **Organization settings > Plugins** (under **Libraries**), clicking the menu button in the upper right corner of the marketplace, then toggling "Sync automatically" on:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2193200015/a239033a9ab19fbd39f1a0d9edce/CleanShot+2026-03-23+at+11_41_31%402x.png?expires=1778914800&amp;signature=c7d762ccf791ebdbbbea5ec9e8480440b9cde304587b6a67be452937cc866321&amp;req=diEuFct%2BnYFeXPMW1HO4zUYv6dXwwHscRDH%2FtUo5ov7lILqBELY5I98kGWwf%0AqAbOAzGTJwmBYjGrbMs%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2193200015/a239033a9ab19fbd39f1a0d9edce/CleanShot+2026-03-23+at+11_41_31%402x.png?expires=1779145200&amp;signature=50266aacf308328c9c91422e93a373dd9d536602fc516e2384572bbeb7ee0543&amp;req=diEuFct%2BnYFeXPMW1HO4zUYv6dT4xXoWRDH%2FtUo5ov6xeoPV0VUUTnd95%2Fsk%0ANmfnvL84ZiyENXgo0hI%3D%0A)
 
 The GitHub marketplace will then be auto-synced whenever a PR is merged to that repo. You can also trigger syncs manually by clicking “Update” on the marketplace.
 

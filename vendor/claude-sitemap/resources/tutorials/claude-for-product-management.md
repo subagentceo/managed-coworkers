@@ -651,6 +651,22 @@ Explore several examples of how Claude can be used by product management teams.
 
 ## Related tutorials
 
+[Using Claude Cowork for legal: answer fast questions on past decisions](/resources/tutorials/using-claude-cowork-for-legal-question-briefing)Using Claude Cowork for legal: answer fast questions on past decisions
+
+Using Claude Cowork for legal: answer fast questions on past decisions
+
+Tutorial
+
+[Tutorial](/resources/tutorials/using-claude-cowork-for-legal-question-briefing)Tutorial
+
+[Using Claude Cowork for marketing ops: run a weekly review that preps itself](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Tutorial
+
+[Tutorial](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Tutorial
+
 [Delegating your first task in Claude Cowork](/resources/tutorials/delegating-your-first-task-in-claude-cowork)Delegating your first task in Claude Cowork
 
 Delegating your first task in Claude Cowork
@@ -666,22 +682,6 @@ Getting started with Claude Security
 Tutorial
 
 [Tutorial](/resources/tutorials/getting-started-with-claude-security)Tutorial
-
-[Get started in Claude Cowork in three steps](/resources/tutorials/get-started-in-claude-cowork-in-three-steps)Get started in Claude Cowork in three steps
-
-Get started in Claude Cowork in three steps
-
-Tutorial
-
-[Tutorial](/resources/tutorials/get-started-in-claude-cowork-in-three-steps)Tutorial
-
-[Using the Blender Connector in Claude](/resources/tutorials/using-the-blender-connector-in-claude)Using the Blender Connector in Claude
-
-Using the Blender Connector in Claude
-
-Tutorial
-
-[Tutorial](/resources/tutorials/using-the-blender-connector-in-claude)Tutorial
 
 [Homepage](https://claude.com)Homepage
 

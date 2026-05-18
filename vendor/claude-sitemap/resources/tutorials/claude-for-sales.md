@@ -651,6 +651,14 @@ Explore several examples of how Claude can be used by sales teams to improve wor
 
 ## Related tutorials
 
+[Using Claude Cowork for sales: research any account before the first call](/resources/tutorials/using-claude-cowork-for-sales-account-research)Using Claude Cowork for sales: research any account before the first call
+
+Using Claude Cowork for sales: research any account before the first call
+
+Tutorial
+
+[Tutorial](/resources/tutorials/using-claude-cowork-for-sales-account-research)Tutorial
+
 [Using Claude Design for presentations and slide decks](/resources/tutorials/using-claude-design-for-presentations-and-slide-decks)Using Claude Design for presentations and slide decks
 
 Using Claude Design for presentations and slide decks

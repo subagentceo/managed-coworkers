@@ -40,13 +40,13 @@ To enable extra usage on your paid Claude plan:
 
 6. Click “Adjust limit” to control costs with a monthly spending cap. You can also select “Set to unlimited” if you prefer no spending restrictions:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1805820732/369dc2e95e2ea7131c75b92d52e2/ce39ab8c-ab3b-4936-986b-bc965919158e?expires=1779019200&amp;signature=e0606ebf61c0488b018b2feb891ddc7fb36e84a9abe04acae0ba2ea9c5df1696&amp;req=dSgnE8F8nYZcW%2FMW3nq%2BgS5kqvdmKoGNCZ0G6%2Fxc00Njo2XJmdEwXdFHm4Bd%0AFVLbCHLYkQC0GnihUXp1PCQnBpw%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1805820732/369dc2e95e2ea7131c75b92d52e2/ce39ab8c-ab3b-4936-986b-bc965919158e?expires=1779145200&amp;signature=065ff1bb05648e4260348772ed5748b3f9aaf144c189a8082c7e2c191675eab3&amp;req=dSgnE8F8nYZcW%2FMW1HO4zV7kvnis8b5GxdoHGhDYlicgXaucQdB43l03PoHQ%0AMOk9%0A)
 
 7. You’ll then need to prepay to cover usage beyond your plan limits. Click “Add funds,” enter the amount you want to purchase in the modal, then click “Purchase.”
 
 8. You can also enable auto-reload to automatically make a purchase when your balance falls below a threshold you set:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1805819785/5e203c38e6ba3f76bfd1dab0d5ce/fe062e7c-18cb-48cc-a7e2-754ac6e6c4be?expires=1779019200&amp;signature=c38630f4a763fb09d18e7e3b871f441df2edf2a0163b16a50b8c5f9eecf6c99b&amp;req=dSgnE8F%2FlIZXXPMW3nq%2BgZ83oo%2BB5ctuDHv0xflyUDl3LYTbz0KlbDTVYWds%0A%2FXdWexkkskP%2F4GbL061GzmL%2FWnc%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1805819785/5e203c38e6ba3f76bfd1dab0d5ce/fe062e7c-18cb-48cc-a7e2-754ac6e6c4be?expires=1779145200&amp;signature=02988db88b8de5a776efb16caffd71d1c4be9b1d90a19191f7bf9145cff8ec7c&amp;req=dSgnE8F%2FlIZXXPMW1HO4zYj2DhuYofU6opE7m38YdfcJZA3%2BhiJufKlGbKIx%0ATKbf90ScsKHZuSVwpME%3D%0A)
 
 **Note:** There is a daily redemption limit of $2000.
 

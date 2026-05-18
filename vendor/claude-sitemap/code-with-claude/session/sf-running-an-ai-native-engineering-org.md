@@ -20,7 +20,7 @@ Speaker(s)
 
 Fiona Fung
 
-Manager of the Claude Code team,
+Manager of the Claude Code and Cowork Team,
 
 Anthropic
 

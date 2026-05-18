@@ -3,7 +3,7 @@ Access Square's commerce platform to view transaction data, manage customer prof
 You can use the Square connector to:  
   
 Create invoices:  
-"Create an invoice charging Jane Smith ([\[email protected\]](/cdn-cgi/l/email-protection#690308070c290c11080419050c470a0604)) for 2 hours at $250/hr for 'Consulting on the Square MCP Server'"
+"Create an invoice charging Jane Smith ([\[email protected\]](/cdn-cgi/l/email-protection#4f252e212a0f2a372e223f232a612c2022)) for 2 hours at $250/hr for 'Consulting on the Square MCP Server'"
 
 Update business hours:  
 "Update my business hours to be 9am - 5pm Monday through Friday, 10am - 2pm on Saturday, and closed on Sunday"

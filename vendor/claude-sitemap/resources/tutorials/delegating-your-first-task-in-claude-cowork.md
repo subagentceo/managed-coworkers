@@ -649,6 +649,22 @@ Claude Cowork lets you hand off complete tasks to Claude — working directly wi
 
 ## Related tutorials
 
+[Using Claude Cowork for legal: answer fast questions on past decisions](/resources/tutorials/using-claude-cowork-for-legal-question-briefing)Using Claude Cowork for legal: answer fast questions on past decisions
+
+Using Claude Cowork for legal: answer fast questions on past decisions
+
+Tutorial
+
+[Tutorial](/resources/tutorials/using-claude-cowork-for-legal-question-briefing)Tutorial
+
+[Using Claude Cowork for marketing ops: run a weekly review that preps itself](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Tutorial
+
+[Tutorial](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Tutorial
+
 [Getting started with Claude Security](/resources/tutorials/getting-started-with-claude-security)Getting started with Claude Security
 
 Getting started with Claude Security
@@ -664,22 +680,6 @@ Get started in Claude Cowork in three steps
 Tutorial
 
 [Tutorial](/resources/tutorials/get-started-in-claude-cowork-in-three-steps)Tutorial
-
-[Using the Blender Connector in Claude](/resources/tutorials/using-the-blender-connector-in-claude)Using the Blender Connector in Claude
-
-Using the Blender Connector in Claude
-
-Tutorial
-
-[Tutorial](/resources/tutorials/using-the-blender-connector-in-claude)Tutorial
-
-[Customize Claude Cowork](/resources/tutorials/customize-claude-cowork)Customize Claude Cowork
-
-Customize Claude Cowork
-
-Tutorial
-
-[Tutorial](/resources/tutorials/customize-claude-cowork)Tutorial
 
 [Homepage](https://claude.com)Homepage
 

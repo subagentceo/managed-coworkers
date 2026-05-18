@@ -3,7 +3,7 @@ Connect ActiveCampaign to Claude for autonomous marketing at your fingertips. Ge
 You can use the ActiveCampaign connector to:
 
 Update contact information:  
-"Update ActiveCampaign contact [\[email protected\]](/cdn-cgi/l/email-protection#42212a23302e2b276c20302d352c02273a232f322e276c212d2f) to change their phone number to 312-555-0123"
+"Update ActiveCampaign contact [\[email protected\]](/cdn-cgi/l/email-protection#cdaea5acbfa1a4a8e3afbfa2baa38da8b5aca0bda1a8e3aea2a0) to change their phone number to 312-555-0123"
 
 Review campaign performance:  
 "List all my ActiveCampaign campaigns and their performance metrics from this month"

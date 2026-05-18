@@ -1,8 +1,8 @@
 ---
 vendor: claude-sitemap
 llms_txt: https://www.claude.com/llms.txt
-last_crawled: 2026-05-16T06:31:30.583Z
-count: 1576
+last_crawled: 2026-05-18T22:35:39.891Z
+count: 1584
 transform: html-extract
 ---
 
@@ -57,6 +57,7 @@ transform: html-extract
 | https://claude.com/blog/claude-powered-artifacts | `vendor/claude-sitemap/blog/claude-powered-artifacts.md` |
 | https://claude.com/blog/claude-security-public-beta | `vendor/claude-sitemap/blog/claude-security-public-beta.md` |
 | https://claude.com/blog/claude-team-updates | `vendor/claude-sitemap/blog/claude-team-updates.md` |
+| https://claude.com/blog/code-w-claude-sf-2026-sf | `vendor/claude-sitemap/blog/code-w-claude-sf-2026-sf.md` |
 | https://claude.com/blog/code-with-claude-san-francisco-london-tokyo | `vendor/claude-sitemap/blog/code-with-claude-san-francisco-london-tokyo.md` |
 | https://claude.com/blog/common-workflow-patterns-for-ai-agents-and-when-to-use-them | `vendor/claude-sitemap/blog/common-workflow-patterns-for-ai-agents-and-when-to-use-them.md` |
 | https://claude.com/blog/complete-guide-to-building-skills-for-claude | `vendor/claude-sitemap/blog/complete-guide-to-building-skills-for-claude.md` |
@@ -70,6 +71,7 @@ transform: html-extract
 | https://claude.com/blog/cowork-plugins-finance | `vendor/claude-sitemap/blog/cowork-plugins-finance.md` |
 | https://claude.com/blog/create-files | `vendor/claude-sitemap/blog/create-files.md` |
 | https://claude.com/blog/deploying-claude-across-financial-services | `vendor/claude-sitemap/blog/deploying-claude-across-financial-services.md` |
+| https://claude.com/blog/deploying-claude-across-the-legal-industry | `vendor/claude-sitemap/blog/deploying-claude-across-the-legal-industry.md` |
 | https://claude.com/blog/dispatch-and-computer-use | `vendor/claude-sitemap/blog/dispatch-and-computer-use.md` |
 | https://claude.com/blog/driving-ai-transformation-with-claude | `vendor/claude-sitemap/blog/driving-ai-transformation-with-claude.md` |
 | https://claude.com/blog/eight-trends-defining-how-software-gets-built-in-2026 | `vendor/claude-sitemap/blog/eight-trends-defining-how-software-gets-built-in-2026.md` |
@@ -107,7 +109,6 @@ transform: html-extract
 | https://claude.com/blog/message-batches-api | `vendor/claude-sitemap/blog/message-batches-api.md` |
 | https://claude.com/blog/multi-agent-coordination-patterns | `vendor/claude-sitemap/blog/multi-agent-coordination-patterns.md` |
 | https://claude.com/blog/new-guide-deploying-claude-across-the-enterprise-with-claude-cowork | `vendor/claude-sitemap/blog/new-guide-deploying-claude-across-the-enterprise-with-claude-cowork.md` |
-| https://claude.com/blog/new-in-claude-managed-agents | `vendor/claude-sitemap/blog/new-in-claude-managed-agents.md` |
 | https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development | `vendor/claude-sitemap/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development.md` |
 | https://claude.com/blog/optimize-code-performance-quickly | `vendor/claude-sitemap/blog/optimize-code-performance-quickly.md` |
 | https://claude.com/blog/organization-skills-and-directory | `vendor/claude-sitemap/blog/organization-skills-and-directory.md` |
@@ -147,11 +148,13 @@ transform: html-extract
 | https://claude.com/code-with-claude/san-francisco | `vendor/claude-sitemap/code-with-claude/san-francisco.md` |
 | https://claude.com/code-with-claude/san-francisco-extended | `vendor/claude-sitemap/code-with-claude/san-francisco-extended.md` |
 | https://claude.com/code-with-claude/session/a-conversation-with-dario-amodei-daniela-amodei | `vendor/claude-sitemap/code-with-claude/session/a-conversation-with-dario-amodei-daniela-amodei.md` |
+| https://claude.com/code-with-claude/session/ldn-ai-with-claude-on-aws-from-code-to-orchestration | `vendor/claude-sitemap/code-with-claude/session/ldn-ai-with-claude-on-aws-from-code-to-orchestration.md` |
 | https://claude.com/code-with-claude/session/ldn-beyond-the-basics-with-claude-code | `vendor/claude-sitemap/code-with-claude/session/ldn-beyond-the-basics-with-claude-code.md` |
 | https://claude.com/code-with-claude/session/ldn-build-a-proactive-agent-workflow-with-claude-code | `vendor/claude-sitemap/code-with-claude/session/ldn-build-a-proactive-agent-workflow-with-claude-code.md` |
 | https://claude.com/code-with-claude/session/ldn-build-a-production-ready-agent-with-claude-managed-agents | `vendor/claude-sitemap/code-with-claude/session/ldn-build-a-production-ready-agent-with-claude-managed-agents.md` |
 | https://claude.com/code-with-claude/session/ldn-build-ai-agents-using-claude-in-microsoft-foundry | `vendor/claude-sitemap/code-with-claude/session/ldn-build-ai-agents-using-claude-in-microsoft-foundry.md` |
 | https://claude.com/code-with-claude/session/ldn-building-ai-native-at-enterprise-scale-monday-com-doctolib-and-delivery-hero | `vendor/claude-sitemap/code-with-claude/session/ldn-building-ai-native-at-enterprise-scale-monday-com-doctolib-and-delivery-hero.md` |
+| https://claude.com/code-with-claude/session/ldn-building-signals-that-trade-themselves | `vendor/claude-sitemap/code-with-claude/session/ldn-building-signals-that-trade-themselves.md` |
 | https://claude.com/code-with-claude/session/ldn-building-with-claude-on-google-cloud | `vendor/claude-sitemap/code-with-claude/session/ldn-building-with-claude-on-google-cloud.md` |
 | https://claude.com/code-with-claude/session/ldn-coding-is-no-longer-the-constraint-scaling-devex-to-teams-and-agents-at-spotify | `vendor/claude-sitemap/code-with-claude/session/ldn-coding-is-no-longer-the-constraint-scaling-devex-to-teams-and-agents-at-spotify.md` |
 | https://claude.com/code-with-claude/session/ldn-designing-with-claude-from-prompt-to-production | `vendor/claude-sitemap/code-with-claude/session/ldn-designing-with-claude-from-prompt-to-production.md` |
@@ -169,14 +172,13 @@ transform: html-extract
 | https://claude.com/code-with-claude/session/ldn-ext-how-we-claude-code | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-how-we-claude-code.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-i-built-an-entire-music-tech-company-with-claude | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-i-built-an-entire-music-tech-company-with-claude.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-making-agentic-workflows-trustworthy-and-verifiable-with-a-custom-dsl | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-making-agentic-workflows-trustworthy-and-verifiable-with-a-custom-dsl.md` |
-| https://claude.com/code-with-claude/session/ldn-ext-personality-goes-a-long-way-3-horrible-mistakes-building-a-helpful-ai-notepad | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-personality-goes-a-long-way-3-horrible-mistakes-building-a-helpful-ai-notepad.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-running-every-layer-of-two-businesses-with-claude-code | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-running-every-layer-of-two-businesses-with-claude-code.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-ship-your-first-managed-agent | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-ship-your-first-managed-agent.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-teaching-agents-to-learn-from-your-team | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-teaching-agents-to-learn-from-your-team.md` |
+| https://claude.com/code-with-claude/session/ldn-ext-thinking-like-a-writer-to-make-better-agents | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-thinking-like-a-writer-to-make-better-agents.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-tool-skill-or-subagent-decomposing-an-agent-that-outgrew-its-prompt | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-tool-skill-or-subagent-decomposing-an-agent-that-outgrew-its-prompt.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-when-code-is-a-commodity-what-actually-matters-in-product-development | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-when-code-is-a-commodity-what-actually-matters-in-product-development.md` |
 | https://claude.com/code-with-claude/session/ldn-ext-where-code-meets-court-ai-at-the-legal-technical-frontier | `vendor/claude-sitemap/code-with-claude/session/ldn-ext-where-code-meets-court-ai-at-the-legal-technical-frontier.md` |
-| https://claude.com/code-with-claude/session/ldn-from-code-to-orchestration-building-with-claude-in-amazon-bedrock | `vendor/claude-sitemap/code-with-claude/session/ldn-from-code-to-orchestration-building-with-claude-in-amazon-bedrock.md` |
 | https://claude.com/code-with-claude/session/ldn-from-one-person-to-80-scaling-a-hypergrowth-engineering-org-with-claude-code | `vendor/claude-sitemap/code-with-claude/session/ldn-from-one-person-to-80-scaling-a-hypergrowth-engineering-org-with-claude-code.md` |
 | https://claude.com/code-with-claude/session/ldn-getting-more-out-of-the-claude-platform | `vendor/claude-sitemap/code-with-claude/session/ldn-getting-more-out-of-the-claude-platform.md` |
 | https://claude.com/code-with-claude/session/ldn-how-lovable-vibecodes-production-software-at-scale | `vendor/claude-sitemap/code-with-claude/session/ldn-how-lovable-vibecodes-production-software-at-scale.md` |
@@ -184,12 +186,11 @@ transform: html-extract
 | https://claude.com/code-with-claude/session/ldn-memory-and-dreaming-for-self-learning-agents | `vendor/claude-sitemap/code-with-claude/session/ldn-memory-and-dreaming-for-self-learning-agents.md` |
 | https://claude.com/code-with-claude/session/ldn-opening-keynote | `vendor/claude-sitemap/code-with-claude/session/ldn-opening-keynote.md` |
 | https://claude.com/code-with-claude/session/ldn-picking-the-right-model | `vendor/claude-sitemap/code-with-claude/session/ldn-picking-the-right-model.md` |
-| https://claude.com/code-with-claude/session/ldn-rearchitecting-workflows-with-the-claude-code-team | `vendor/claude-sitemap/code-with-claude/session/ldn-rearchitecting-workflows-with-the-claude-code-team.md` |
 | https://claude.com/code-with-claude/session/ldn-running-an-ai-native-engineering-org | `vendor/claude-sitemap/code-with-claude/session/ldn-running-an-ai-native-engineering-org.md` |
+| https://claude.com/code-with-claude/session/ldn-stop-babysitting-your-agents | `vendor/claude-sitemap/code-with-claude/session/ldn-stop-babysitting-your-agents.md` |
 | https://claude.com/code-with-claude/session/ldn-the-capability-curve | `vendor/claude-sitemap/code-with-claude/session/ldn-the-capability-curve.md` |
 | https://claude.com/code-with-claude/session/ldn-the-prompting-playbook | `vendor/claude-sitemap/code-with-claude/session/ldn-the-prompting-playbook.md` |
 | https://claude.com/code-with-claude/session/ldn-the-thinking-lever | `vendor/claude-sitemap/code-with-claude/session/ldn-the-thinking-lever.md` |
-| https://claude.com/code-with-claude/session/ldn-trading-signals-that-trade-themselves-running-claude-code-inside-a-regulated-investment-firm | `vendor/claude-sitemap/code-with-claude/session/ldn-trading-signals-that-trade-themselves-running-claude-code-inside-a-regulated-investment-firm.md` |
 | https://claude.com/code-with-claude/session/ldn-what-legal-agents-inherit-from-coding-agents-lessons-from-legora | `vendor/claude-sitemap/code-with-claude/session/ldn-what-legal-agents-inherit-from-coding-agents-lessons-from-legora.md` |
 | https://claude.com/code-with-claude/session/ldn-whats-new-in-claude-code | `vendor/claude-sitemap/code-with-claude/session/ldn-whats-new-in-claude-code.md` |
 | https://claude.com/code-with-claude/session/sf-architecting-for-model-step-changes-a-fireside-with-vercels-guillermo-rauch | `vendor/claude-sitemap/code-with-claude/session/sf-architecting-for-model-step-changes-a-fireside-with-vercels-guillermo-rauch.md` |
@@ -670,6 +671,7 @@ transform: html-extract
 | https://claude.com/customers/lovable | `vendor/claude-sitemap/customers/lovable.md` |
 | https://claude.com/customers/lyft | `vendor/claude-sitemap/customers/lyft.md` |
 | https://claude.com/customers/magicschool | `vendor/claude-sitemap/customers/magicschool.md` |
+| https://claude.com/customers/magicschool-qa | `vendor/claude-sitemap/customers/magicschool-qa.md` |
 | https://claude.com/customers/matillion | `vendor/claude-sitemap/customers/matillion.md` |
 | https://claude.com/customers/medgate | `vendor/claude-sitemap/customers/medgate.md` |
 | https://claude.com/customers/micro1 | `vendor/claude-sitemap/customers/micro1.md` |
@@ -810,6 +812,7 @@ transform: html-extract
 | https://claude.com/plugins/box | `vendor/claude-sitemap/plugins/box.md` |
 | https://claude.com/plugins/brand-voice | `vendor/claude-sitemap/plugins/brand-voice.md` |
 | https://claude.com/plugins/brightdata-plugin | `vendor/claude-sitemap/plugins/brightdata-plugin.md` |
+| https://claude.com/plugins/carta-cap-table | `vendor/claude-sitemap/plugins/carta-cap-table.md` |
 | https://claude.com/plugins/cds-mcp | `vendor/claude-sitemap/plugins/cds-mcp.md` |
 | https://claude.com/plugins/chrome-devtools-mcp | `vendor/claude-sitemap/plugins/chrome-devtools-mcp.md` |
 | https://claude.com/plugins/circleback | `vendor/claude-sitemap/plugins/circleback.md` |
@@ -948,6 +951,7 @@ transform: html-extract
 | https://claude.com/plugins/sap-cds-mcp | `vendor/claude-sitemap/plugins/sap-cds-mcp.md` |
 | https://claude.com/plugins/sap-fiori-mcp-server | `vendor/claude-sitemap/plugins/sap-fiori-mcp-server.md` |
 | https://claude.com/plugins/sap-mdk-server | `vendor/claude-sitemap/plugins/sap-mdk-server.md` |
+| https://claude.com/plugins/save-to-spotify | `vendor/claude-sitemap/plugins/save-to-spotify.md` |
 | https://claude.com/plugins/searchfit-seo | `vendor/claude-sitemap/plugins/searchfit-seo.md` |
 | https://claude.com/plugins/security-guidance | `vendor/claude-sitemap/plugins/security-guidance.md` |
 | https://claude.com/plugins/semgrep | `vendor/claude-sitemap/plugins/semgrep.md` |
@@ -960,6 +964,7 @@ transform: html-extract
 | https://claude.com/plugins/small-business | `vendor/claude-sitemap/plugins/small-business.md` |
 | https://claude.com/plugins/snowflake-cortex-code | `vendor/claude-sitemap/plugins/snowflake-cortex-code.md` |
 | https://claude.com/plugins/sonarqube | `vendor/claude-sitemap/plugins/sonarqube.md` |
+| https://claude.com/plugins/sonarqube-agent-plugins | `vendor/claude-sitemap/plugins/sonarqube-agent-plugins.md` |
 | https://claude.com/plugins/sonatype-guide | `vendor/claude-sitemap/plugins/sonatype-guide.md` |
 | https://claude.com/plugins/sourcegraph | `vendor/claude-sitemap/plugins/sourcegraph.md` |
 | https://claude.com/plugins/sp-global | `vendor/claude-sitemap/plugins/sp-global.md` |
@@ -1075,6 +1080,9 @@ transform: html-extract
 | https://claude.com/resources/tutorials/using-aiera-for-earnings-intelligence-and-market-analysis | `vendor/claude-sitemap/resources/tutorials/using-aiera-for-earnings-intelligence-and-market-analysis.md` |
 | https://claude.com/resources/tutorials/using-chronograph-for-portfolio-monitoring | `vendor/claude-sitemap/resources/tutorials/using-chronograph-for-portfolio-monitoring.md` |
 | https://claude.com/resources/tutorials/using-claude-code-remote-control | `vendor/claude-sitemap/resources/tutorials/using-claude-code-remote-control.md` |
+| https://claude.com/resources/tutorials/using-claude-cowork-for-legal-question-briefing | `vendor/claude-sitemap/resources/tutorials/using-claude-cowork-for-legal-question-briefing.md` |
+| https://claude.com/resources/tutorials/using-claude-cowork-for-marketing-ops-review | `vendor/claude-sitemap/resources/tutorials/using-claude-cowork-for-marketing-ops-review.md` |
+| https://claude.com/resources/tutorials/using-claude-cowork-for-sales-account-research | `vendor/claude-sitemap/resources/tutorials/using-claude-cowork-for-sales-account-research.md` |
 | https://claude.com/resources/tutorials/using-claude-design-for-presentations-and-slide-decks | `vendor/claude-sitemap/resources/tutorials/using-claude-design-for-presentations-and-slide-decks.md` |
 | https://claude.com/resources/tutorials/using-claude-design-for-prototypes-and-ux | `vendor/claude-sitemap/resources/tutorials/using-claude-design-for-prototypes-and-ux.md` |
 | https://claude.com/resources/tutorials/using-claude-for-your-small-business | `vendor/claude-sitemap/resources/tutorials/using-claude-for-your-small-business.md` |

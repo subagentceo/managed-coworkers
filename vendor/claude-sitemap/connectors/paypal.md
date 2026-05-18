@@ -16,4 +16,4 @@ Create subscription plans:
 "Create a PayPal subscription plan for product '{product\_name}' with billing cycle '{billing\_cycle}', price '{price} {currency}'. Set trial period cycle to '{trial\_period}'"
 
 Set up subscriptions:  
-"Create a PayPal subscription for the 'Premium Membership' plan and subscribe [\[email protected\]](/cdn-cgi/l/email-protection#31524442455e5c544371545c50585d1f525e5c)"
+"Create a PayPal subscription for the 'Premium Membership' plan and subscribe [\[email protected\]](/cdn-cgi/l/email-protection#6a091f191e05070f182a0f070b030644090507)"

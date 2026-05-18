@@ -800,6 +800,72 @@ Product
 
 Features
 
+![Using Claude Cowork for legal: answer fast questions on past decisions](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a0b73ac70283129b3e0a054_Screenshot%202026-05-18%20at%2012.30.28%E2%80%AFPM.png)
+
+Using Claude Cowork for legal: answer fast questions on past decisions
+
+Professional
+
+Author
+
+Professional
+
+Author
+
+Claude Cowork
+
+Author
+
+Cowork
+
+Skills
+
+Connectors
+
+Read use case
+
+[Read use case](/resources/tutorials/using-claude-cowork-for-legal-question-briefing)Read use case
+
+[Using Claude Cowork for legal: answer fast questions on past decisions](/resources/tutorials/using-claude-cowork-for-legal-question-briefing)Using Claude Cowork for legal: answer fast questions on past decisions
+
+[Text Link](/resources/tutorials/using-claude-cowork-for-legal-question-briefing)
+
+Professional
+
+![Using Claude Cowork for marketing ops: run a weekly review that preps itself](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a0b69b56deb3e7a96d01504_Screenshot%202026-05-18%20at%2012.31.38%E2%80%AFPM.png)
+
+Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+Marketing
+
+Author
+
+Marketing
+
+Author
+
+Claude Cowork
+
+Author
+
+Cowork
+
+Connectors
+
+Skills
+
+Read use case
+
+[Read use case](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Read use case
+
+[Using Claude Cowork for marketing ops: run a weekly review that preps itself](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)Using Claude Cowork for marketing ops: run a weekly review that preps itself
+
+[Text Link](/resources/tutorials/using-claude-cowork-for-marketing-ops-review)
+
+Marketing
+
+Professional
+
 ![Delegating your first task in Claude Cowork](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69fe11c6fe52ab7f12ecf5b2_Screenshot%202026-05-08%20at%209.39.28%E2%80%AFAM.png)
 
 Delegating your first task in Claude Cowork
@@ -1191,62 +1257,6 @@ Read use case
 [Choosing the right Claude model: Haiku, Sonnet, and Opus](/resources/tutorials/choosing-the-right-claude-model)Choosing the right Claude model: Haiku, Sonnet, and Opus
 
 [Text Link](/resources/tutorials/choosing-the-right-claude-model)
-
-Professional
-
-![Get the most from Claude Opus 4.6](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6984d9b695bb3caaa22b43bc_Screenshot%202026-02-05%20at%209.55.57%E2%80%AFAM.png)
-
-Get the most from Claude Opus 4.6
-
-Professional
-
-Author
-
-Professional
-
-Author
-
-Claude.ai
-
-Author
-
-Extended Thinking
-
-Read use case
-
-[Read use case](/resources/tutorials/get-the-most-from-claude-opus-4-6)Read use case
-
-[Get the most from Claude Opus 4.6](/resources/tutorials/get-the-most-from-claude-opus-4-6)Get the most from Claude Opus 4.6
-
-[Text Link](/resources/tutorials/get-the-most-from-claude-opus-4-6)
-
-Professional
-
-![Simplify your browsing experience with Claude in Chrome](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/694468b240d1326e2bf8b9e3_Screenshot%202025-12-18%20at%2012.48.42%E2%80%AFPM.png)
-
-Simplify your browsing experience with Claude in Chrome
-
-Professional
-
-Author
-
-Professional
-
-Author
-
-Claude in Chrome
-
-Author
-
-No items found.
-
-Read use case
-
-[Read use case](/resources/tutorials/simplify-your-browsing-experience-with-claude-for-chrome)Read use case
-
-[Simplify your browsing experience with Claude in Chrome](/resources/tutorials/simplify-your-browsing-experience-with-claude-for-chrome)Simplify your browsing experience with Claude in Chrome
-
-[Text Link](/resources/tutorials/simplify-your-browsing-experience-with-claude-for-chrome)
 
 Professional
 
