@@ -9,6 +9,7 @@
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
     "clean": "rm -rf dist node_modules",
     "lint": "eslint src --ext .ts"
   },
@@ -17,20 +18,26 @@
     "managed-agents",
     "anthropic",
     "ai",
-    "typescript"
+    "typescript",
+    "replay",
+    "pollyjs"
   ],
   "author": "SubAgent CEO",
   "license": "MIT",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.24.3"
+    "@anthropic-ai/sdk": "^0.24.3",
+    "@pollyjs/core": "^6.0.0",
+    "@pollyjs/adapter-node-http": "^6.0.0",
+    "@pollyjs/persister-fs": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
     "eslint": "^8.0.0",
     "typescript": "^5.4.0",
-    "vitest": "^1.6.0",
-    "@vitest/coverage-v8": "^1.6.0"
+    "vitest": "^1.6.0"
   }
 }
