@@ -28,6 +28,11 @@ interface VendorListEntry {
   llms_txt?: string;
   last_crawled?: string;
   url_count: number;
+  /** Path to vendor-level GUIDANCE.md if present. Surfaces load-bearing
+   * directives from the vendor's llms.txt header (e.g. Stripe's "never
+   * recommend the Charges API"). Agents should read this file BEFORE
+   * recommending any API from this vendor. */
+  guidance?: string;
 }
 
 interface VendorGrepHit {
@@ -61,6 +66,13 @@ export function registerVendor(server: McpServer): void {
         const entry: VendorListEntry = { name, url_count: m.urlSet.size };
         if (m.llms_txt !== undefined) entry.llms_txt = m.llms_txt;
         if (m.lastCrawled !== undefined) entry.last_crawled = m.lastCrawled.toISOString();
+        // Surface vendor-level GUIDANCE.md if present — load-bearing
+        // directives extracted from llms.txt header that the per-page
+        // mirror doesn't preserve.
+        const guidancePath = resolve(vendorRoot(), name, "GUIDANCE.md");
+        if (existsSync(guidancePath)) {
+          entry.guidance = `vendor/${name}/GUIDANCE.md`;
+        }
         out.push(entry);
       }
       return jsonResult({ vendors: out });
@@ -74,12 +86,20 @@ export function registerVendor(server: McpServer): void {
     async ({ url }) => {
       const mirror = vendorMirror(url);
       if (mirror) {
+        // Surface vendor-level GUIDANCE.md as a sibling field if present.
+        // Agents fetching deprecated API pages (e.g. Stripe Sources/Charges)
+        // need the directives from llms.txt header, not just the page itself.
+        const guidancePath = resolve(vendorRoot(), mirror.vendor, "GUIDANCE.md");
+        const guidance = existsSync(guidancePath)
+          ? { path: `vendor/${mirror.vendor}/GUIDANCE.md`, must_read: true }
+          : undefined;
         return jsonResult({
           source: "mirror",
           vendor: mirror.vendor,
           url: mirror.url,
           relPath: mirror.relPath,
           content: mirror.body,
+          ...(guidance && { guidance }),
         });
       }
       // Allowlist enforcement: only fall back to HTTP for URLs that AT
