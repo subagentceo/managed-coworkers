@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/mcp.json",
+  "mcpServers": {
+    "knowledge-bridge": {
+      "type": "stdio",
+      "command": "tsx",
+      "args": ["src/mcp/bridge-server.ts"]
+    },
+    "alloydb": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@zeddotdev/postgres-context-server"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL:-postgres://postgres@localhost:5433/coworkers}"
+      }
+    },
+    "redis": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-redis", "${REDIS_URL:-redis://localhost:6380}"]
+    }
+  }
+}

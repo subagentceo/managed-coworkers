@@ -1,0 +1,362 @@
+{
+  "https://cloud.google.com/alloydb/docs/ai/accelerate-ai-queries": {
+    "sha256": "a810bed765acb1acbdcabbe320baff1381efda1da6c3f716e2d43f82c5957a1d",
+    "lastModified": "Sun, 17 May 2026 00:41:41 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/accelerate-queries-optimized-functions": {
+    "sha256": "1d4eb6452d56a02fbf37737c593c7388d7161d96d9d7ea30e1c1e194f1c4f6dc",
+    "lastModified": "Sat, 16 May 2026 19:31:39 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/accelerate-with-ce": {
+    "sha256": "60ae3b85f769c3ed121058157af1cdb630082fd1bd9ba313921e535c7b03e744",
+    "lastModified": "Sat, 16 May 2026 19:23:24 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/activate-adaptive-filtering": {
+    "sha256": "b275bba27526526747eb57dfcb86423ef9edcf458bd08964e6f71ec9bca5a454",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/adaptive-filtering": {
+    "sha256": "aac1b8c41628b1dec4da697cde00b32e91976250ea6f7f71af65b7a65c1445d9",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/ai-query-engine-landing": {
+    "sha256": "34a98a822ba54e952dc723dc6d12223c8a9305f988ee4dc5e4697ffb45a966f7",
+    "lastModified": "Sat, 16 May 2026 19:19:11 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/alloydb-ai-use-cases": {
+    "sha256": "3a4733fbb3342a892f094eb846703c3d8aa8ffd9d99ad759b7c1b67a123389b4",
+    "lastModified": "Sat, 16 May 2026 19:31:22 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/analyze-sentiment": {
+    "sha256": "f438b928377758409b3489b685a4d47b78a7fab9bb704b384f8f40bde7b4686d",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/best-practices-tuning-scann": {
+    "sha256": "3e0ef44ec002fb50baafee317f608f9149e9ad30cfe014c4f9d0ad3a24d071e7",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/build-context-gemini-cli": {
+    "sha256": "9ad104ee09ee4f7e0bcb22f0e751b95985af94c282e476a0991020ca149bbed7",
+    "lastModified": "Sat, 16 May 2026 19:22:56 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/build-etl-pipeline-alloydb-dataflow": {
+    "sha256": "cc6b987dc232a7b343fec33fd4b235397db990d3c140101c3e1b52c2d4d48df7",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/build-llm-powered-applications-using-llamaindex": {
+    "sha256": "45e56bca3fe741868aa3d9a6c248ff19d65f773eb68ae0852f65e0045d7f1b10",
+    "lastModified": "Sat, 16 May 2026 19:35:37 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/choose-index-strategy": {
+    "sha256": "041888953ebc7aadf1309c0a5a8fa5ead144d3a23ad905636e19efbaaf867659",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/configure-vertex-ai": {
+    "sha256": "344bd28047d9810738d1bfe8d18ff3ceb54f2f6a66f986a486fbc2707d66da67",
+    "lastModified": "Sat, 16 May 2026 19:23:13 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/context-sets-overview": {
+    "sha256": "54a7898266554177dd8a561eefcec528ff4ffae09713b918a87dbbd3ec28182d",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/conversational-analytics": {
+    "sha256": "ca772c84ed527c9d20eec53b301b4b9e834f204ce4b50f7251ee930930f338f3",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/create-hnsw-index": {
+    "sha256": "07757ea99e32f341ef998603d2af802afb3fcd71ba383a87c7644489fed0a61c",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/create-ivf-index": {
+    "sha256": "7927b8a3cb71405e8467f0b641f7882991d0e6378afec56a55bd8ba93ee5a638",
+    "lastModified": "Tue, 21 Apr 2026 08:00:33 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/create-ivfflat-index": {
+    "sha256": "4bad9508eab2c1209a33239fec308cdef9a920b2d85901a788252e4ffce8aee5",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/create-rum-index": {
+    "sha256": "b666d94dba2319479998ebe87eeae06d2f2ec7415f2fb10721232a75118a2152",
+    "lastModified": "Sat, 16 May 2026 19:35:16 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/create-scann-index": {
+    "sha256": "8449bb62cebcfbb1bc9424f269059c315aaf0821ca2ec44033784b50eae8d744",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/data-agent-overview": {
+    "sha256": "b0ba75e9b2e80f17bd49b031b5fef75150169549f1092be65c033e283e76c502",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/evaluate-semantic-queries-ai-operators": {
+    "sha256": "f5ef25cf641db038bd4ab9eb45484159288a2f758260c3c210b321cd2ec7235b",
+    "lastModified": "Thu, 15 Jan 2026 03:06:45 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/filtered-vector-search-overview": {
+    "sha256": "7433021e8e8bceeae8b0d775bfc6cff1fdb9ae2ee05b962268ea531bf2aa1cee",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/full-text-search-overview": {
+    "sha256": "77fbb4bfb2ff8ed759b6186ad7f8d8a9bcd1dccdb820affccb78050dc02780b8",
+    "lastModified": "Sat, 16 May 2026 19:35:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/generate-manage-auto-embeddings-for-tables": {
+    "sha256": "91cd82b6bd33e2b72e72c589014d2560b7f9392c5f7d4705472b3e3fa8ae7a27",
+    "lastModified": "Thu, 15 Jan 2026 07:53:16 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/generate-multimodal-embeddings": {
+    "sha256": "4ddce1a67246e460a4d63611e7f095198a6a47c8f645083a63c812b5ceb45a23",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/generate-sql-queries-natural-language": {
+    "sha256": "5df06cb9293a0f9b99098c61db74a563a7c91943e4a905a822340114c56b9f3a",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/inspect-data-agent": {
+    "sha256": "aa8fecb0b3e8d2fcfa9543b33c355c5c421049a6710dac9d8698dc4c82e8138c",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/integrate-applications-data-agent": {
+    "sha256": "8888e5b9098a025afbaeddeea63f9c600ef945a2287801ce2ce26cbd777f0a20",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/invoke-predictions": {
+    "sha256": "b99c2aa18f690dd8a7e2ce4b5b508e984d60260ffa4e9d827f7b593ea5358ebd",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/langchain": {
+    "sha256": "8311b3022639ee8a35465a42eaf3574f0873c46f4a52fda54e45d1bc9ad71813",
+    "lastModified": "Tue, 10 Mar 2026 20:31:54 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/maintain-vector-indexes": {
+    "sha256": "431b801295dd157ec9dbfe208fcde4fdb503b03c313512f9977cd007cb5d295c",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/manage-data-agents": {
+    "sha256": "9080fd863d147a34d9d9b9cb9f513bce1b6cfbf8d49705d5c446b40f2b627200",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/measure-vector-query-recall": {
+    "sha256": "5142ef82c6670a8f1089ee2a5a7256d12c5cb1f501873733c4984ce435980b1d",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/migrate-data-from-langchain-vector-stores-to-alloydb": {
+    "sha256": "86a02282defc20657a1fce0b1a91810d5a22293f8c2318ec57ceb1786e4ead89",
+    "lastModified": "Sat, 16 May 2026 00:38:49 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/model-endpoint-console": {
+    "sha256": "cd13af8d4d6ad89d40f994553d7d839576c73abfaa6a265683c22aa81274833f",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/model-endpoint-overview": {
+    "sha256": "3fcc66b3037de5eb6922b1cfcdf09a45e38f8e04c4f5dbc8d4fa924bdfd70d0b",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/natural-language-landing": {
+    "sha256": "4fc2dbc44d2f27f433180795cc92aa36bffb23eb16d0381bbcf350750ee656b8",
+    "lastModified": "Sat, 16 May 2026 16:12:49 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/perform-time-series-forecasting": {
+    "sha256": "449093bb6411e01ad882d248b1da7afb0516ec5bd01bd3fba3bf4f8d78142d76",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/perform-vector-search": {
+    "sha256": "c5c26b9ecf17076874cb0abf07947614705d68e4bd941925ef853f38ac94a14b",
+    "lastModified": "Sat, 16 May 2026 00:05:35 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/rank-rerank-search-results-rag": {
+    "sha256": "8dd7ed90bd6dd9d2985010a6e150c384d089a2a3d55fbec80ea2bb209eb0baa3",
+    "lastModified": "Sat, 16 May 2026 00:05:35 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/register-model-endpoint": {
+    "sha256": "1f26abe8df12cbabe18ae369926fa4a756f82a9e1ebe522fa01e9e3ce409e932",
+    "lastModified": "Sat, 16 May 2026 16:26:22 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/run-hybrid-vector-similarity-search": {
+    "sha256": "1bd95cc1bbfc7820157c85551b90bba521d94024a47ad4c3d829105c83a98df0",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/run-vector-similarity-search": {
+    "sha256": "6e0967d65bf4d760a789411899631bce33d4fb2ba96947fc7c99e59dddf86537",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/scann-vector-query-perf-overview": {
+    "sha256": "cbd45d6fd5a20597302d5b633827ce5d35f16592fd88395d2cc4d0c4418ad467",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/secure-agent-interactions-mcp": {
+    "sha256": "d5633ce356c900ebd953b0fb0a058178e16017a93bf2fa5f453e5813c2844c64",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/secure-app-data-parameterized-secure-views": {
+    "sha256": "f08345c44b6b8b283055ca4df2b6de2f70ee4f51af51f37b18046adace69825b",
+    "lastModified": "Sat, 16 May 2026 00:05:35 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/store-embeddings": {
+    "sha256": "3eb21052c2eb49aea3d60fde325e04d280f6ba600356c10e625537bbd85e8eb0",
+    "lastModified": "Wed, 14 Jan 2026 23:18:06 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/summarize-content": {
+    "sha256": "6a37e5c3a007374622010ec4765904eafb831f594a69888bd54c44f8a059a78f",
+    "lastModified": "Sat, 16 May 2026 16:23:01 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/tune-indexes": {
+    "sha256": "c24fa763df97a79ce55288de9e787c3e6bdfa3720f04f6240f016621f959b956",
+    "lastModified": "Thu, 16 Apr 2026 16:38:38 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/use-alloydb-mcp": {
+    "sha256": "6eb15db6dcaf1fa4173df138eaae23e04990f4c286b1568e5bb171ec3af27038",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/use-database-insights-mcp": {
+    "sha256": "a6bc245209a763f519ef01b1a9d4aeb5a3bc9298d51c3d604ed5b59576330306",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/use-natural-language-generate-sql-queries": {
+    "sha256": "8d696b936c47f58d7c3fca09ee4a063a3a5213eeeaed182130581f142fc33640",
+    "lastModified": "Sat, 16 May 2026 00:05:35 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/use-vector-assist": {
+    "sha256": "8d4cb9daa3a58b7717cc8fe33649af46ad2da17aa84dc6df65f187e0362943fc",
+    "lastModified": "Sat, 16 May 2026 16:18:27 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/vector-assist-overview": {
+    "sha256": "be091e8f98d6865f837e8d896f1c11e78a47ed96f661e4b0d6a4822246eca273",
+    "lastModified": "Sat, 16 May 2026 16:21:50 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/vector-search-landing": {
+    "sha256": "805740c8bf8270cf6fc2661365cc78eb7c739f7e42b91c29c248b65298e0141d",
+    "lastModified": "Thu, 15 Jan 2026 02:13:45 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/what-is-alloydb-ai": {
+    "sha256": "1c278f67085e95148154c9f7bd3d6e69b3c232d7a586678734dff0b232f79dfa",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/docs/ai/work-with-embeddings": {
+    "sha256": "e1c8f867e6a196ba05d38c74502c66ba697f27c210b820cb562cf3e4786a29f2",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  },
+  "https://cloud.google.com/alloydb/omni/current/docs/release-notes": {
+    "sha256": "534a591ae530f963e94838f0834b66ed6a37943ff0a15db86f68c8e80606f551",
+    "lastModified": "Fri, 15 May 2026 21:27:20 GMT",
+    "fetchedAt": "2026-05-18T23:35:15.305Z",
+    "lastStatus": 200
+  }
+}
