@@ -134,6 +134,7 @@ When helping a developer set up or use Sentry, follow these guidelines:
 - [Replays](https://docs.sentry.io/api/replays.md)
 - [SCIM](https://docs.sentry.io/api/scim.md)
 - [Seer](https://docs.sentry.io/api/seer.md)
+- [Snapshots](https://docs.sentry.io/api/snapshots.md)
 - [Spike Protection Notifications](https://docs.sentry.io/api/spike-protection.md)
 - [Teams](https://docs.sentry.io/api/teams.md)
 - [Users](https://docs.sentry.io/api/users.md)
