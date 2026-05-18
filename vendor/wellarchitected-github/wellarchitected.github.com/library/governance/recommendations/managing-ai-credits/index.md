@@ -14,7 +14,7 @@ May 13, 2026
 
 |
 
-Updated May 15, 2026
+Updated May 18, 2026
 
 ## Scenario overview[](#scenario-overview)
 
@@ -42,9 +42,11 @@ User-level budgets (ULBs) are recommended as the only hard enforcement caps, whi
 
 Design distinct governance approaches for each spending phase. A billing cycle has two phases: the included AI credits phase (where usage draws from the pre-paid pool) and the additional spend phase (where usage incurs additional charges after the pool is exhausted). While it is useful to think about these phases separately, current controls do not fully isolate governance between them.
 
-For the included AI credits phase, the primary goal is fair access to a shared pool. Without guardrails, a small number of heavy users can exhaust the shared pool before others benefit. User-level budgets (ULBs) serve as the primary mechanism to moderate this behavior and promote more balanced consumption. For the additional spend phase (post-pool spend), the goal shifts to controlling financial exposure. Enterprise and cost center budgets help cap the additional cost your organization is willing to incur.
+For the included AI credits phase, the primary goal is fair access to a shared pool. Without guardrails, a small number of heavy users can exhaust the shared pool before others benefit. User-level budgets (ULBs) help moderate this behavior and promote more balanced consumption.
 
-With UBB, the controls overlap rather than operate independently by phase. ULBs apply across both included credits and additional spend, while enterprise and cost center budgets apply only after the included credits are exhausted. As a result, ULBs serve a dual role: ensuring fair consumption of the shared pool while also acting as a guardrail on overall usage. Enterprise and cost center budgets remain the primary controls for managing additional spend exposure.
+For the additional spend phase (post-pool spend), the goal shifts to controlling financial exposure. Enterprise and cost center budgets help cap the additional cost your organization is willing to incur.
+
+With UBB, the controls overlap rather than operate independently by phase. ULBs span both included credits and additional spend, while enterprise-level and cost center budgets take effect only after the included credits are exhausted. As a result, ULBs serve a dual role: ensuring fair consumption of the shared pool while also acting as a guardrail on overall usage. Enterprise-level and cost center budgets remain the primary controls for managing additional spend exposure.
 
 Maintaining this distinction keeps your governance approach coherent. It clarifies the different goals at each phase — fair consumption during the included AI credits phase and cost control during the additional spend phase.
 
@@ -166,7 +168,7 @@ Example scenario 2:
 
 #### Enable self-serve usage monitoring[](#enable-self-serve-usage-monitoring)
 
-Provide users and cost owners with a way to check their own consumption so they can self-govern usage before hitting their ULB and cost center budgets. For example, users can [view usage in their IDE](https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/monitor-premium-requests#viewing-usage-in-your-ide).
+Provide users and cost owners with a way to check their own consumption so they can self-govern usage before hitting their ULB and cost center budgets. For example, users can [view usage in their IDE](https://docs.github.com/copilot/how-tos/manage-and-track-spending/monitor-premium-requests#viewing-usage-in-your-ide) - see [supported versions](https://docs.github.com/copilot/how-tos/manage-and-track-spending/prepare-for-your-move-to-usage-based-billing#update-your-ide-client-and-extension).
 
 ### Step 3: Set the enterprise-level additional spend budget[](#step-3-set-the-enterprise-level-additional-spend-budget)
 
@@ -200,7 +202,7 @@ For Copilot AI credits in a GHEC enterprise, cost center budgets must be attache
 
 A user can only belong to **one cost center**. However, **multiple budgets** still apply simultaneously (ULB, cost center budget, and enterprise-level budget).
 
-When creating a cost center, you need to choose either **organization** or **user-based** scope. See [Management methods](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/billing/premium-request-management).
+When creating a cost center, you need to choose either **organization** or **user-based** scope. See [Management methods](https://docs.github.com/enterprise-cloud@latest/copilot/concepts/billing/premium-request-management).
 
 Recommend **user-based cost centers** when your organizational structure does not map cleanly to budget ownership, or when users frequently span multiple organizations. User-based cost centers give you direct control over exactly which users fall under each budget without requiring changes to org membership or Copilot license assignment. For enterprises with clean org-to-team mapping and SCIM provisioning, organization-based cost centers reduce ongoing maintenance.
 
@@ -250,7 +252,7 @@ User-level budgets (ULBs) define the _individual spending authority_ for each us
 
 ### Step 6: Build a cost attribution and reporting pipeline[](#step-6-build-a-cost-attribution-and-reporting-pipeline)
 
-GitHub provides a downloadable CSV usage report. This data includes `aic_quantity` (AI credits consumed) and `aic_gross_amount` (estimated USD cost). Build a reporting pipeline that maps usage to users and cost centers, and surface insights to inform budget adjustments and model guidance. See [Prepare for usage based billing](https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/prepare-for-usage-based-billing).
+GitHub provides a downloadable CSV usage report. This data includes `aic_quantity` (AI credits consumed) and `aic_gross_amount` (estimated USD cost). Build a reporting pipeline that maps usage to users and cost centers, and surface insights to inform budget adjustments and model guidance. See [Prepare for usage based billing](https://docs.github.com/copilot/how-tos/manage-and-track-spending/prepare-for-usage-based-billing).
 
 #### Cost attribution approaches[](#cost-attribution-approaches)
 
@@ -262,7 +264,7 @@ GitHub provides a downloadable CSV usage report. This data includes `aic_quantit
 Token costs vary dramatically by model, and context window size drives consumption further. Provide users with guidance on:
 
 -   **Responsible context usage:** Minimize unnecessary context in instructions to reduce token consumption.
--   **Model selection by task complexity:** Match model tier to the task. See [models comparison](https://docs.github.com/en/copilot/reference/ai-models/model-comparison) and [models pricing](https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing).
+-   **Model selection by task complexity:** Match model tier to the task. See [models comparison](https://docs.github.com/copilot/reference/ai-models/model-comparison) and [models pricing](https://docs.github.com/copilot/reference/copilot-billing/models-and-pricing).
 
 ### Step 8: Establish the operating model[](#step-8-establish-the-operating-model)
 
@@ -407,7 +409,7 @@ For organizations with 100+ seats, use cost centers mapped to organizations with
 
 ### Scaling budget management for large enterprises[](#scaling-budget-management-for-large-enterprises)
 
-For enterprises with thousands of users, managing custom ULBs through the UI is impractical. Use the [GitHub REST API](https://docs.github.com/en/enterprise-cloud@latest/rest/billing/budgets?apiVersion=2026-03-10) to:
+For enterprises with thousands of users, managing custom ULBs through the UI is impractical. Use the [GitHub REST API](https://docs.github.com/enterprise-cloud@latest/rest/billing/budgets?apiVersion=2026-03-10) to:
 
 -   Bulk-create custom ULB overrides.
 -   Programmatically map users to cost centers.
@@ -443,14 +445,15 @@ For more details about GitHub’s features and services, check out [GitHub Docum
 
 -   [Understanding Copilot budgeting](https://support.github.com/product-guides/github-copilot/get-started/understanding-copilot-budgeting)
 -   [FinOps Framework](https://learn.microsoft.com/en-us/cloud-computing/finops/framework/finops-framework)
--   [Usage management methods in enterprise](https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/billing/premium-request-management)
--   [Monitoring your GitHub Copilot usage and entitlements](https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/monitor-premium-requests)
--   [Prepare for usage-based billing](https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/prepare-for-usage-based-billing)
--   [Viewing your usage of metered products and licenses](https://docs.github.com/en/billing/how-tos/products/view-productlicense-use)
--   [Models comparison](https://docs.github.com/en/copilot/reference/ai-models/model-comparison)
--   [Models and pricing for GitHub Copilot](https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing)
--   [GitHub REST API: Billing budgets](https://docs.github.com/en/enterprise-cloud@latest/rest/billing/budgets?apiVersion=2026-03-10)
+-   [Usage management methods in enterprise](https://docs.github.com/enterprise-cloud@latest/copilot/concepts/billing/premium-request-management)
+-   [Monitoring your GitHub Copilot usage and entitlements](https://docs.github.com/copilot/how-tos/manage-and-track-spending/monitor-premium-requests)
+-   [Update your IDE, client, and extension](https://docs.github.com/copilot/how-tos/manage-and-track-spending/prepare-for-your-move-to-usage-based-billing#update-your-ide-client-and-extension)
+-   [Prepare for usage-based billing](https://docs.github.com/copilot/how-tos/manage-and-track-spending/prepare-for-usage-based-billing)
+-   [Viewing your usage of metered products and licenses](https://docs.github.com/billing/how-tos/products/view-productlicense-use)
+-   [Models comparison](https://docs.github.com/copilot/reference/ai-models/model-comparison)
+-   [Models and pricing for GitHub Copilot](https://docs.github.com/copilot/reference/copilot-billing/models-and-pricing)
+-   [GitHub REST API: Billing budgets](https://docs.github.com/enterprise-cloud@latest/rest/billing/budgets?apiVersion=2026-03-10)
 
-Last updated on May 15, 2026
+Last updated on May 18, 2026
 
 [Essentials of governance and administration with GitHub Enterprise](/library/governance/recommendations/governance-administration-essentials/ "Essentials of governance and administration with GitHub Enterprise")
