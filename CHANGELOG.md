@@ -4,6 +4,17 @@ All notable changes to this project are tracked here. This file is maintained
 automatically by [release-please](https://github.com/googleapis/release-please)
 from [Conventional Commits](https://www.conventionalcommits.org/) on `main`.
 
+## [0.1.1](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.1.0...knowledge-engineering-v0.1.1) (2026-05-18)
+
+
+### Chores
+
+* **ci:** canonicalize claude-* workflows + trim auto-rebase (ORM5) ([#9](https://github.com/subagentceo/managed-coworkers/issues/9)) ([55eff86](https://github.com/subagentceo/managed-coworkers/commit/55eff862cfc4fd758a51de6c8d54079c9e7dafa0))
+* **ci:** canonicalize release-please.yml + strip Neon from cf-preview (ORM4) ([#7](https://github.com/subagentceo/managed-coworkers/issues/7)) ([58be3a7](https://github.com/subagentceo/managed-coworkers/commit/58be3a73f79352a02ef3df4f514717600dab4129))
+* **ci:** remove dead CodeQL + Dependabot + Neon surfaces (ORM1) ([#3](https://github.com/subagentceo/managed-coworkers/issues/3)) ([f79d98c](https://github.com/subagentceo/managed-coworkers/commit/f79d98c3b221fbc83afc067bdb09d99f6ffdadff))
+* **ci:** remove verify.yml — chain references deleted files (ORM3) ([#6](https://github.com/subagentceo/managed-coworkers/issues/6)) ([b64da4a](https://github.com/subagentceo/managed-coworkers/commit/b64da4af27dc49ec0a57c1b536b81dbacab281a7))
+* remove plugins/ directory and dependent CI surfaces (ORM2) ([#5](https://github.com/subagentceo/managed-coworkers/issues/5)) ([d8c3a0f](https://github.com/subagentceo/managed-coworkers/commit/d8c3a0fa3680f39aa2e8c145b078336ed23b4fb9))
+
 ## [0.1.0] - 2026-05-09
 
 ### Features

@@ -1,6 +1,6 @@
 {
   "name": "managed-coworkers",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Claude Managed Agents TypeScript SDK implementation with comprehensive test coverage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
