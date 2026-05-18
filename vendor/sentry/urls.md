@@ -1,8 +1,8 @@
 ---
 vendor: sentry
 llms_txt: https://docs.sentry.io/llms.txt
-last_crawled: 2026-05-16T05:32:09.745Z
-count: 117
+last_crawled: 2026-05-18T22:26:05.337Z
+count: 118
 transform: append-md-and-accept
 ---
 
@@ -37,6 +37,7 @@ transform: append-md-and-accept
 | https://docs.sentry.io/api/requests.md | `vendor/sentry/docs.sentry.io/api/requests.md` |
 | https://docs.sentry.io/api/scim.md | `vendor/sentry/docs.sentry.io/api/scim.md` |
 | https://docs.sentry.io/api/seer.md | `vendor/sentry/docs.sentry.io/api/seer.md` |
+| https://docs.sentry.io/api/snapshots.md | `vendor/sentry/docs.sentry.io/api/snapshots.md` |
 | https://docs.sentry.io/api/spike-protection.md | `vendor/sentry/docs.sentry.io/api/spike-protection.md` |
 | https://docs.sentry.io/api/teams.md | `vendor/sentry/docs.sentry.io/api/teams.md` |
 | https://docs.sentry.io/api/users.md | `vendor/sentry/docs.sentry.io/api/users.md` |
