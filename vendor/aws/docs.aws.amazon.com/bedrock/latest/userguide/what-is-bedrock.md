@@ -104,7 +104,7 @@ Bedrock supports [100\+ foundation models](models.md) from industry-leading prov
 
 |  |  |  |  |  |  | 
 | --- |--- |--- |--- |--- |--- |
-| ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/nova2pro.png)**Nova 2** | ![Orange rounded square icon with white radial loading spinner design.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/claude.png)**Claude Opus 4.6** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/deepseek.png)**Deepseek 3.2** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/kimik2.5.png)**Kimi K2.5** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/minimax2.1.png)**MiniMax M2.1** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png)**GPT-OSS-20B** | 
+| ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/nova2pro.png)**Amazon Nova** | ![Orange rounded square icon with white radial loading spinner design.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/claude.png)**Claude** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/deepseek.png)**DeepSeek** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/kimik2.5.png)**Kimi** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/what-is/minimax2.1.png)**MiniMax** | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png)**OpenAI** | 
 
 ## What's new?
 <a name="whats-new"></a>
