@@ -48,20 +48,19 @@ function isTestFile(filePath: string): boolean {
 }
 
 function* walk(dir: string): Generator<string> {
-  let entries: ReturnType<typeof readdirSync>;
   try {
-    entries = readdirSync(dir, { withFileTypes: true });
+    const entries = readdirSync(dir, { withFileTypes: true, encoding: "utf8" });
+    for (const entry of entries) {
+      if (entry.name === "node_modules" || entry.name.startsWith(".")) continue;
+      const full = resolve(dir, entry.name);
+      if (entry.isDirectory()) {
+        yield* walk(full);
+      } else if (entry.isFile() && isTestFile(full)) {
+        yield full;
+      }
+    }
   } catch {
     return;
-  }
-  for (const entry of entries) {
-    if (entry.name === "node_modules" || entry.name.startsWith(".")) continue;
-    const full = resolve(dir, entry.name);
-    if (entry.isDirectory()) {
-      yield* walk(full);
-    } else if (entry.isFile() && isTestFile(full)) {
-      yield full;
-    }
   }
 }
 
