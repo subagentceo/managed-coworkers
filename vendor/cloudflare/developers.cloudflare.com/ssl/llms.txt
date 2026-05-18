@@ -116,7 +116,7 @@ Encrypt your web traffic to prevent data theft and other tampering
 ## Post-quantum cryptography (PQC)
 
 - [Post-quantum cryptography (PQC)](https://developers.cloudflare.com/ssl/post-quantum-cryptography/index.md): Get an overview of how Cloudflare is deploying post-quantum cryptography to protect you against harvest now, decrypt later.
-- [Post-quantum cryptography in Cloudflare One](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-and-zero-trust/index.md): Use post-quantum cryptography with Cloudflare One Client and Cloudflare Tunnel.
+- [Post-quantum cryptography in Cloudflare One](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-and-zero-trust/index.md): Use post-quantum cryptography with Cloudflare One on-ramps and off-ramps.
 - [PQC in Cloudflare products](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-cloudflare-products/index.md): Track which Cloudflare products support post-quantum key agreement and post-quantum signatures.
 - [PQC support](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-support/index.md): Consider information about post-quantum cryptography at Cloudflare - deployed key agreements, signatures, and software support.
 - [Post-quantum between Cloudflare and origin servers](https://developers.cloudflare.com/ssl/post-quantum-cryptography/pqc-to-origin/index.md): Learn about post-quantum cryptography in connections from Cloudflare to your origin servers.

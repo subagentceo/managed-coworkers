@@ -46,6 +46,7 @@ Observe and control your AI applications
 - [Replicate](https://developers.cloudflare.com/ai-gateway/usage/providers/replicate/index.md): Route Replicate API requests through AI Gateway for observability and control.
 - [Google Vertex AI](https://developers.cloudflare.com/ai-gateway/usage/providers/vertex/index.md): Route Google Vertex AI requests through AI Gateway for observability and control.
 - [Workers AI](https://developers.cloudflare.com/ai-gateway/usage/providers/workersai/index.md): Route Workers AI requests through AI Gateway for analytics, caching, and rate limiting.
+- [REST API](https://developers.cloudflare.com/ai-gateway/usage/rest-api/index.md): Call third-party and Workers AI models through the Cloudflare API with AI Gateway features like logging, caching, and rate limiting.
 - [Universal Endpoint (Deprecated)](https://developers.cloudflare.com/ai-gateway/usage/universal/index.md): Route requests to any AI provider through a single AI Gateway endpoint with support for fallbacks and retries.
 - [WebSockets API](https://developers.cloudflare.com/ai-gateway/usage/websockets-api/index.md): Use persistent WebSocket connections through AI Gateway for real-time and non-realtime AI interactions.
 - [Non-realtime WebSockets API](https://developers.cloudflare.com/ai-gateway/usage/websockets-api/non-realtime-api/index.md): Establish persistent WebSocket connections for AI requests through AI Gateway without real-time streaming.
@@ -79,7 +80,6 @@ Observe and control your AI applications
 
 - [Tutorials](https://developers.cloudflare.com/ai-gateway/tutorials/index.md): Step-by-step AI Gateway tutorials for deploying Workers, connecting providers, and building AI applications.
 - [Create your first AI Gateway using Workers AI](https://developers.cloudflare.com/ai-gateway/tutorials/create-first-aig-workers/index.md): This tutorial guides you through creating your first AI Gateway using Workers AI on the Cloudflare dashboard.
-- [Deploy a Worker that connects to OpenAI via AI Gateway](https://developers.cloudflare.com/ai-gateway/tutorials/deploy-aig-worker/index.md): Learn how to deploy a Worker that makes calls to OpenAI through AI Gateway
 - [Use Pruna P-video through AI Gateway](https://developers.cloudflare.com/ai-gateway/tutorials/pruna-p-video/index.md): Learn how to call prunaai/p-video on Replicate through AI Gateway
 
 ## Changelog

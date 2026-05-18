@@ -21,6 +21,7 @@ Store, version, and share filesystem artifacts across Workers, APIs, and git-com
 - [Git protocol](https://developers.cloudflare.com/artifacts/api/git-protocol/index.md): Use Artifacts with standard git-over-HTTPS clients.
 - [REST API](https://developers.cloudflare.com/artifacts/api/rest-api/index.md): Manage Artifacts repos and tokens over HTTP.
 - [Workers binding](https://developers.cloudflare.com/artifacts/api/workers-binding/index.md): Call Artifacts from a Worker binding.
+- [Wrangler commands](https://developers.cloudflare.com/artifacts/api/wrangler/index.md): Manage Artifacts namespaces, repositories, and repo tokens from the command line using Wrangler.
 
 ## concepts
 
