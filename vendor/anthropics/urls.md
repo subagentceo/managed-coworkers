@@ -1,8 +1,8 @@
 ---
 vendor: anthropics
 llms_txt: https://code.claude.com/llms.txt
-last_crawled: 2026-05-15T03:28:39.981Z
-count: 1261
+last_crawled: 2026-05-18T22:19:46.376Z
+count: 1370
 transform: verbatim
 ---
 
@@ -10,10 +10,81 @@ transform: verbatim
 
 | URL | Local |
 |---|---|
+| https://claude.com/docs/connectors/building/after-publishing.md | `vendor/anthropics/claude.com/docs/connectors/building/after-publishing.md` |
+| https://claude.com/docs/connectors/building/authentication.md | `vendor/anthropics/claude.com/docs/connectors/building/authentication.md` |
+| https://claude.com/docs/connectors/building/directory-vs-custom.md | `vendor/anthropics/claude.com/docs/connectors/building/directory-vs-custom.md` |
+| https://claude.com/docs/connectors/building/index.md | `vendor/anthropics/claude.com/docs/connectors/building/index.md` |
+| https://claude.com/docs/connectors/building/lazy-authentication.md | `vendor/anthropics/claude.com/docs/connectors/building/lazy-authentication.md` |
+| https://claude.com/docs/connectors/building/mcp-apps/cross-compatibility.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp-apps/cross-compatibility.md` |
+| https://claude.com/docs/connectors/building/mcp-apps/design-guidelines.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp-apps/design-guidelines.md` |
+| https://claude.com/docs/connectors/building/mcp-apps/external-links.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp-apps/external-links.md` |
+| https://claude.com/docs/connectors/building/mcp-apps/getting-started.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp-apps/getting-started.md` |
+| https://claude.com/docs/connectors/building/mcp-apps/instance-supersession.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp-apps/instance-supersession.md` |
+| https://claude.com/docs/connectors/building/mcp-apps/transparent-theming.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp-apps/transparent-theming.md` |
+| https://claude.com/docs/connectors/building/mcp-apps/troubleshooting.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp-apps/troubleshooting.md` |
+| https://claude.com/docs/connectors/building/mcp.md | `vendor/anthropics/claude.com/docs/connectors/building/mcp.md` |
+| https://claude.com/docs/connectors/building/mcpb.md | `vendor/anthropics/claude.com/docs/connectors/building/mcpb.md` |
+| https://claude.com/docs/connectors/building/review-criteria.md | `vendor/anthropics/claude.com/docs/connectors/building/review-criteria.md` |
+| https://claude.com/docs/connectors/building/submission.md | `vendor/anthropics/claude.com/docs/connectors/building/submission.md` |
+| https://claude.com/docs/connectors/building/testing.md | `vendor/anthropics/claude.com/docs/connectors/building/testing.md` |
+| https://claude.com/docs/connectors/building/troubleshooting.md | `vendor/anthropics/claude.com/docs/connectors/building/troubleshooting.md` |
+| https://claude.com/docs/connectors/building/what-to-build.md | `vendor/anthropics/claude.com/docs/connectors/building/what-to-build.md` |
+| https://claude.com/docs/connectors/custom/desktop-extensions.md | `vendor/anthropics/claude.com/docs/connectors/custom/desktop-extensions.md` |
+| https://claude.com/docs/connectors/custom/remote-mcp.md | `vendor/anthropics/claude.com/docs/connectors/custom/remote-mcp.md` |
+| https://claude.com/docs/connectors/directory.md | `vendor/anthropics/claude.com/docs/connectors/directory.md` |
+| https://claude.com/docs/connectors/getting-started.md | `vendor/anthropics/claude.com/docs/connectors/getting-started.md` |
+| https://claude.com/docs/connectors/github/index.md | `vendor/anthropics/claude.com/docs/connectors/github/index.md` |
+| https://claude.com/docs/connectors/google/calendar.md | `vendor/anthropics/claude.com/docs/connectors/google/calendar.md` |
+| https://claude.com/docs/connectors/google/drive.md | `vendor/anthropics/claude.com/docs/connectors/google/drive.md` |
+| https://claude.com/docs/connectors/google/gmail.md | `vendor/anthropics/claude.com/docs/connectors/google/gmail.md` |
+| https://claude.com/docs/connectors/microsoft/365.md | `vendor/anthropics/claude.com/docs/connectors/microsoft/365.md` |
+| https://claude.com/docs/connectors/overview.md | `vendor/anthropics/claude.com/docs/connectors/overview.md` |
+| https://claude.com/docs/connectors/slack/index.md | `vendor/anthropics/claude.com/docs/connectors/slack/index.md` |
+| https://claude.com/docs/cowork/3p/bedrock-aws-sign-in.md | `vendor/anthropics/claude.com/docs/cowork/3p/bedrock-aws-sign-in.md` |
+| https://claude.com/docs/cowork/3p/bedrock.md | `vendor/anthropics/claude.com/docs/cowork/3p/bedrock.md` |
+| https://claude.com/docs/cowork/3p/code.md | `vendor/anthropics/claude.com/docs/cowork/3p/code.md` |
+| https://claude.com/docs/cowork/3p/configuration.md | `vendor/anthropics/claude.com/docs/cowork/3p/configuration.md` |
+| https://claude.com/docs/cowork/3p/connectors-m365.md | `vendor/anthropics/claude.com/docs/cowork/3p/connectors-m365.md` |
+| https://claude.com/docs/cowork/3p/data-storage.md | `vendor/anthropics/claude.com/docs/cowork/3p/data-storage.md` |
+| https://claude.com/docs/cowork/3p/extensions.md | `vendor/anthropics/claude.com/docs/cowork/3p/extensions.md` |
+| https://claude.com/docs/cowork/3p/feature-matrix.md | `vendor/anthropics/claude.com/docs/cowork/3p/feature-matrix.md` |
+| https://claude.com/docs/cowork/3p/foundry.md | `vendor/anthropics/claude.com/docs/cowork/3p/foundry.md` |
+| https://claude.com/docs/cowork/3p/gateway-sso.md | `vendor/anthropics/claude.com/docs/cowork/3p/gateway-sso.md` |
+| https://claude.com/docs/cowork/3p/gateway.md | `vendor/anthropics/claude.com/docs/cowork/3p/gateway.md` |
+| https://claude.com/docs/cowork/3p/installation.md | `vendor/anthropics/claude.com/docs/cowork/3p/installation.md` |
+| https://claude.com/docs/cowork/3p/legal.md | `vendor/anthropics/claude.com/docs/cowork/3p/legal.md` |
+| https://claude.com/docs/cowork/3p/local-access.md | `vendor/anthropics/claude.com/docs/cowork/3p/local-access.md` |
+| https://claude.com/docs/cowork/3p/overview.md | `vendor/anthropics/claude.com/docs/cowork/3p/overview.md` |
+| https://claude.com/docs/cowork/3p/telemetry.md | `vendor/anthropics/claude.com/docs/cowork/3p/telemetry.md` |
+| https://claude.com/docs/cowork/3p/vertex-google-sign-in.md | `vendor/anthropics/claude.com/docs/cowork/3p/vertex-google-sign-in.md` |
+| https://claude.com/docs/cowork/3p/vertex.md | `vendor/anthropics/claude.com/docs/cowork/3p/vertex.md` |
+| https://claude.com/docs/cowork/3p/web-tools.md | `vendor/anthropics/claude.com/docs/cowork/3p/web-tools.md` |
+| https://claude.com/docs/cowork/guide/dispatch.md | `vendor/anthropics/claude.com/docs/cowork/guide/dispatch.md` |
+| https://claude.com/docs/cowork/guide/plugins.md | `vendor/anthropics/claude.com/docs/cowork/guide/plugins.md` |
+| https://claude.com/docs/cowork/guide/projects.md | `vendor/anthropics/claude.com/docs/cowork/guide/projects.md` |
+| https://claude.com/docs/cowork/monitoring.md | `vendor/anthropics/claude.com/docs/cowork/monitoring.md` |
+| https://claude.com/docs/cowork/overview.md | `vendor/anthropics/claude.com/docs/cowork/overview.md` |
+| https://claude.com/docs/index.md | `vendor/anthropics/claude.com/docs/index.md` |
+| https://claude.com/docs/office-agents/connectors-and-skills.md | `vendor/anthropics/claude.com/docs/office-agents/connectors-and-skills.md` |
+| https://claude.com/docs/office-agents/dictation.md | `vendor/anthropics/claude.com/docs/office-agents/dictation.md` |
+| https://claude.com/docs/office-agents/enterprise-readiness.md | `vendor/anthropics/claude.com/docs/office-agents/enterprise-readiness.md` |
+| https://claude.com/docs/office-agents/excel.md | `vendor/anthropics/claude.com/docs/office-agents/excel.md` |
+| https://claude.com/docs/office-agents/fsi-plugins.md | `vendor/anthropics/claude.com/docs/office-agents/fsi-plugins.md` |
+| https://claude.com/docs/office-agents/outlook.md | `vendor/anthropics/claude.com/docs/office-agents/outlook.md` |
+| https://claude.com/docs/office-agents/powerpoint.md | `vendor/anthropics/claude.com/docs/office-agents/powerpoint.md` |
+| https://claude.com/docs/office-agents/third-party-platforms.md | `vendor/anthropics/claude.com/docs/office-agents/third-party-platforms.md` |
+| https://claude.com/docs/office-agents/word.md | `vendor/anthropics/claude.com/docs/office-agents/word.md` |
+| https://claude.com/docs/office-agents/work-across-apps.md | `vendor/anthropics/claude.com/docs/office-agents/work-across-apps.md` |
+| https://claude.com/docs/plugins/overview.md | `vendor/anthropics/claude.com/docs/plugins/overview.md` |
+| https://claude.com/docs/plugins/submit.md | `vendor/anthropics/claude.com/docs/plugins/submit.md` |
+| https://claude.com/docs/skills/how-to.md | `vendor/anthropics/claude.com/docs/skills/how-to.md` |
+| https://claude.com/docs/skills/overview.md | `vendor/anthropics/claude.com/docs/skills/overview.md` |
+| https://code.claude.com/docs/en/admin-setup.md | `vendor/anthropics/code.claude.com/docs/en/admin-setup.md` |
 | https://code.claude.com/docs/en/agent-sdk/agent-loop.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/agent-loop.md` |
 | https://code.claude.com/docs/en/agent-sdk/claude-code-features.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/claude-code-features.md` |
 | https://code.claude.com/docs/en/agent-sdk/cost-tracking.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/cost-tracking.md` |
 | https://code.claude.com/docs/en/agent-sdk/custom-tools.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/custom-tools.md` |
+| https://code.claude.com/docs/en/agent-sdk/file-checkpointing.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/file-checkpointing.md` |
 | https://code.claude.com/docs/en/agent-sdk/hooks.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/hooks.md` |
 | https://code.claude.com/docs/en/agent-sdk/hosting.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/hosting.md` |
 | https://code.claude.com/docs/en/agent-sdk/mcp.md | `vendor/anthropics/code.claude.com/docs/en/agent-sdk/mcp.md` |
@@ -91,17 +162,54 @@ transform: verbatim
 | https://code.claude.com/docs/en/jetbrains.md | `vendor/anthropics/code.claude.com/docs/en/jetbrains.md` |
 | https://code.claude.com/docs/en/keybindings.md | `vendor/anthropics/code.claude.com/docs/en/keybindings.md` |
 | https://code.claude.com/docs/en/legal-and-compliance.md | `vendor/anthropics/code.claude.com/docs/en/legal-and-compliance.md` |
+| https://code.claude.com/docs/en/llm-gateway.md | `vendor/anthropics/code.claude.com/docs/en/llm-gateway.md` |
+| https://code.claude.com/docs/en/mcp.md | `vendor/anthropics/code.claude.com/docs/en/mcp.md` |
+| https://code.claude.com/docs/en/memory.md | `vendor/anthropics/code.claude.com/docs/en/memory.md` |
+| https://code.claude.com/docs/en/microsoft-foundry.md | `vendor/anthropics/code.claude.com/docs/en/microsoft-foundry.md` |
 | https://code.claude.com/docs/en/model-config.md | `vendor/anthropics/code.claude.com/docs/en/model-config.md` |
+| https://code.claude.com/docs/en/monitoring-usage.md | `vendor/anthropics/code.claude.com/docs/en/monitoring-usage.md` |
 | https://code.claude.com/docs/en/network-config.md | `vendor/anthropics/code.claude.com/docs/en/network-config.md` |
+| https://code.claude.com/docs/en/output-styles.md | `vendor/anthropics/code.claude.com/docs/en/output-styles.md` |
+| https://code.claude.com/docs/en/overview.md | `vendor/anthropics/code.claude.com/docs/en/overview.md` |
+| https://code.claude.com/docs/en/permission-modes.md | `vendor/anthropics/code.claude.com/docs/en/permission-modes.md` |
 | https://code.claude.com/docs/en/permissions.md | `vendor/anthropics/code.claude.com/docs/en/permissions.md` |
+| https://code.claude.com/docs/en/platforms.md | `vendor/anthropics/code.claude.com/docs/en/platforms.md` |
 | https://code.claude.com/docs/en/plugin-dependencies.md | `vendor/anthropics/code.claude.com/docs/en/plugin-dependencies.md` |
+| https://code.claude.com/docs/en/plugin-marketplaces.md | `vendor/anthropics/code.claude.com/docs/en/plugin-marketplaces.md` |
+| https://code.claude.com/docs/en/plugins-reference.md | `vendor/anthropics/code.claude.com/docs/en/plugins-reference.md` |
 | https://code.claude.com/docs/en/plugins.md | `vendor/anthropics/code.claude.com/docs/en/plugins.md` |
+| https://code.claude.com/docs/en/quickstart.md | `vendor/anthropics/code.claude.com/docs/en/quickstart.md` |
+| https://code.claude.com/docs/en/remote-control.md | `vendor/anthropics/code.claude.com/docs/en/remote-control.md` |
+| https://code.claude.com/docs/en/routines.md | `vendor/anthropics/code.claude.com/docs/en/routines.md` |
+| https://code.claude.com/docs/en/sandboxing.md | `vendor/anthropics/code.claude.com/docs/en/sandboxing.md` |
+| https://code.claude.com/docs/en/scheduled-tasks.md | `vendor/anthropics/code.claude.com/docs/en/scheduled-tasks.md` |
+| https://code.claude.com/docs/en/security.md | `vendor/anthropics/code.claude.com/docs/en/security.md` |
 | https://code.claude.com/docs/en/server-managed-settings.md | `vendor/anthropics/code.claude.com/docs/en/server-managed-settings.md` |
+| https://code.claude.com/docs/en/settings.md | `vendor/anthropics/code.claude.com/docs/en/settings.md` |
+| https://code.claude.com/docs/en/setup.md | `vendor/anthropics/code.claude.com/docs/en/setup.md` |
+| https://code.claude.com/docs/en/skills.md | `vendor/anthropics/code.claude.com/docs/en/skills.md` |
 | https://code.claude.com/docs/en/slack.md | `vendor/anthropics/code.claude.com/docs/en/slack.md` |
+| https://code.claude.com/docs/en/statusline.md | `vendor/anthropics/code.claude.com/docs/en/statusline.md` |
+| https://code.claude.com/docs/en/sub-agents.md | `vendor/anthropics/code.claude.com/docs/en/sub-agents.md` |
+| https://code.claude.com/docs/en/terminal-config.md | `vendor/anthropics/code.claude.com/docs/en/terminal-config.md` |
 | https://code.claude.com/docs/en/third-party-integrations.md | `vendor/anthropics/code.claude.com/docs/en/third-party-integrations.md` |
+| https://code.claude.com/docs/en/tools-reference.md | `vendor/anthropics/code.claude.com/docs/en/tools-reference.md` |
+| https://code.claude.com/docs/en/troubleshoot-install.md | `vendor/anthropics/code.claude.com/docs/en/troubleshoot-install.md` |
+| https://code.claude.com/docs/en/troubleshooting.md | `vendor/anthropics/code.claude.com/docs/en/troubleshooting.md` |
 | https://code.claude.com/docs/en/ultraplan.md | `vendor/anthropics/code.claude.com/docs/en/ultraplan.md` |
+| https://code.claude.com/docs/en/ultrareview.md | `vendor/anthropics/code.claude.com/docs/en/ultrareview.md` |
 | https://code.claude.com/docs/en/voice-dictation.md | `vendor/anthropics/code.claude.com/docs/en/voice-dictation.md` |
+| https://code.claude.com/docs/en/vs-code.md | `vendor/anthropics/code.claude.com/docs/en/vs-code.md` |
+| https://code.claude.com/docs/en/web-quickstart.md | `vendor/anthropics/code.claude.com/docs/en/web-quickstart.md` |
+| https://code.claude.com/docs/en/whats-new/2026-w13.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/2026-w13.md` |
+| https://code.claude.com/docs/en/whats-new/2026-w14.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/2026-w14.md` |
+| https://code.claude.com/docs/en/whats-new/2026-w15.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/2026-w15.md` |
+| https://code.claude.com/docs/en/whats-new/2026-w16.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/2026-w16.md` |
+| https://code.claude.com/docs/en/whats-new/2026-w17.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/2026-w17.md` |
+| https://code.claude.com/docs/en/whats-new/2026-w18.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/2026-w18.md` |
 | https://code.claude.com/docs/en/whats-new/2026-w19.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/2026-w19.md` |
+| https://code.claude.com/docs/en/whats-new/index.md | `vendor/anthropics/code.claude.com/docs/en/whats-new/index.md` |
+| https://code.claude.com/docs/en/worktrees.md | `vendor/anthropics/code.claude.com/docs/en/worktrees.md` |
 | https://code.claude.com/docs/en/zero-data-retention.md | `vendor/anthropics/code.claude.com/docs/en/zero-data-retention.md` |
 | https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md | `vendor/anthropics/platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices.md` |
 | https://platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise.md | `vendor/anthropics/platform.claude.com/docs/en/agents-and-tools/agent-skills/enterprise.md` |
@@ -1196,6 +1304,7 @@ transform: verbatim
 | https://platform.claude.com/docs/en/api/typescript/models/retrieve.md | `vendor/anthropics/platform.claude.com/docs/en/api/typescript/models/retrieve.md` |
 | https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking.md | `vendor/anthropics/platform.claude.com/docs/en/build-with-claude/adaptive-thinking.md` |
 | https://platform.claude.com/docs/en/build-with-claude/batch-processing.md | `vendor/anthropics/platform.claude.com/docs/en/build-with-claude/batch-processing.md` |
+| https://platform.claude.com/docs/en/build-with-claude/cache-diagnostics.md | `vendor/anthropics/platform.claude.com/docs/en/build-with-claude/cache-diagnostics.md` |
 | https://platform.claude.com/docs/en/build-with-claude/citations.md | `vendor/anthropics/platform.claude.com/docs/en/build-with-claude/citations.md` |
 | https://platform.claude.com/docs/en/build-with-claude/claude-in-amazon-bedrock.md | `vendor/anthropics/platform.claude.com/docs/en/build-with-claude/claude-in-amazon-bedrock.md` |
 | https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry.md | `vendor/anthropics/platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry.md` |

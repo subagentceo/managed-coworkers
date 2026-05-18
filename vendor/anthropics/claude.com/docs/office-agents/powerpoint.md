@@ -12,7 +12,7 @@ everything, convert bullets into diagrams and native charts, and iterate
 on feedback while preserving template compliance.
 
 <Note>
-  Claude for PowerPoint is currently in beta and available to Pro, Max,
+  Claude for PowerPoint is generally available to Pro, Max,
   Team, and Enterprise plans.
 </Note>
 
@@ -250,7 +250,7 @@ audit logs or the Compliance API.
 
 ## Current limitations
 
-As a beta feature, Claude for PowerPoint is not recommended for:
+Claude for PowerPoint is not recommended for:
 
 * Final client deliverables without human review.
 * Presentations containing highly sensitive or regulated data without

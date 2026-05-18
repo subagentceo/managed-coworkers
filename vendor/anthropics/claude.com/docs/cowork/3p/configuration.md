@@ -35,7 +35,7 @@ All values are stored as **strings** in the OS preference store, even booleans a
 | object\[] (JSON) | JSON array of objects, as a string                                     | see [`managedMcpServers`](#managedmcpservers) |
 
 <Warning>
-  The most common configuration mistake is writing array- or object-typed keys as native plist/registry structures. Keys like `inferenceModels`, `disabledBuiltinTools`, `coworkEgressAllowedHosts`, and `otlpHeaders` must be **JSON strings**. In a `.mobileconfig`, that means a single `<string>` element containing `[...]` or `{...}`, not an `<array>` or `<dict>`.
+  The most common configuration mistake is writing array- or object-typed keys as native plist/registry structures. Keys like `inferenceModels`, `inferenceGatewayOidc`, `managedMcpServers`, `coworkEgressAllowedHosts`, and `otlpHeaders` must be **JSON strings**. In a `.mobileconfig`, that means a single `<string>` element containing `[...]` or `{...}` — not an `<array>`, not a `<dict>`, and not separate keys with dotted names like `inferenceGatewayOidc.clientId`.
 </Warning>
 
 The sections below match the sidebar of the in-app configuration window.
@@ -94,9 +94,9 @@ The sections below match the sidebar of the in-app configuration window.
 
   ### Models
 
-  | Setting                           | Type                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-  | --------------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | Model list<br />`inferenceModels` | (string \| object)\[] (JSON) | Models to expose in the picker. Use the **provider's exact model ID**: Vertex publisher IDs (`claude-sonnet-4@20250514`), Bedrock inference-profile IDs (`us.anthropic.claude-sonnet-4-...-v1:0`), or Foundry deployment names. The first entry is the default. **Required for Vertex, Bedrock, and Foundry**; gateways auto-discover available models. Entries may be plain strings or objects of the form `{"name": "<id>", "supports1m": true}` — see below. |
+  | Setting                           | Type                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+  | --------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+  | Model list<br />`inferenceModels` | (string \| object)\[] (JSON) | Models to expose in the picker. Use the **provider's exact model ID**: Vertex publisher IDs (`claude-sonnet-4@20250514`), Bedrock inference-profile IDs (`us.anthropic.claude-sonnet-4-...-v1:0`), or Foundry deployment names. The first entry is the default. **Required for Vertex and Foundry**; Bedrock auto-discovers when using a bearer token (set explicitly for profile/SSO auth); gateways auto-discover available models. Entries may be plain strings or objects of the form `{"name": "<id>", "labelOverride": "<label>", "supports1m": true}`; see below. |
 
   #### Offering a 1M-token context variant
 
@@ -115,28 +115,47 @@ The sections below match the sidebar of the in-app configuration window.
     **Gateway:** the `name` must be the exact ID your gateway's `/v1/models` endpoint returns. If you set `supports1m` on an alias (`sonnet`) but discovery returns the full ID (`claude-sonnet-4-6`), the variant won't appear.
   </Note>
 
+  #### Setting a display label
+
+  By default, Cowork derives a friendly picker label from the model ID. For IDs where that derivation falls through (Bedrock application-inference-profile ARNs, provisioned-throughput ARNs, or gateway routing aliases), set `labelOverride` to the text you want shown in the model picker:
+
+  ```json theme={null}
+  "inferenceModels": [
+    {
+      "name": "arn:aws:bedrock:us-east-1:123456789012:application-inference-profile/abc123",
+      "labelOverride": "Claude Opus (Prod)"
+    },
+    { "name": "us.anthropic.claude-sonnet-4-20250514-v1:0" }
+  ]
+  ```
+
+  `labelOverride` is display-only; the `name` value is still what Cowork sends to the provider.
+
   ## Sandbox & workspace
 
-  | Setting                                                    | Type             | Default                 | Description                                                                                                                                                                                                                                                                                                                                                        |
-  | ---------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-  | Disabled built-in tools<br />`disabledBuiltinTools`        | string\[] (JSON) | `[]`                    | Built-in tool names to remove from the agent entirely (e.g. `["WebSearch","Bash"]`). Valid names: `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `NotebookEdit`, `WebFetch`, `WebSearch`, `Task`, `TodoWrite`, `TaskCreate`, `TaskUpdate`, `TaskGet`, `TaskList`, `TaskStop`, `Skill`, `REPL`, `JavaScript`, `AskUserQuestion`, `ToolSearch`, `SendUserMessage`. |
-  | Allowed workspace folders<br />`allowedWorkspaceFolders`   | string\[] (JSON) | unrestricted            | Absolute paths users may attach as workspace folders. Leading `~` expands to the user's home. When set, any path outside this list is rejected.                                                                                                                                                                                                                    |
-  | Allowed egress hosts<br />`coworkEgressAllowedHosts`       | string\[] (JSON) | inference endpoint only | Hostnames the agent's web-fetch and shell tools may reach. Supports `*.example.com` wildcards. `["*"]` disables egress filtering. The configured inference endpoint is always allowed implicitly. When unset, only the inference endpoint is reachable; the agent's package installs and web fetches will fail.                                                    |
-  | Allow Claude Code tab<br />`isClaudeCodeForDesktopEnabled` | boolean          | `true`                  | Show the Code tab.                                                                                                                                                                                                                                                                                                                                                 |
+  | Setting                                                                 | Type             | Default                 | Description                                                                                                                                                                                                                                                                                                                                                        |
+  | ----------------------------------------------------------------------- | ---------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+  | Disabled built-in tools<br />`disabledBuiltinTools`                     | string\[] (JSON) | `[]`                    | Built-in tool names to remove from the agent entirely (e.g. `["WebSearch","Bash"]`). Valid names: `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `NotebookEdit`, `WebFetch`, `WebSearch`, `Task`, `TodoWrite`, `TaskCreate`, `TaskUpdate`, `TaskGet`, `TaskList`, `TaskStop`, `Skill`, `REPL`, `JavaScript`, `AskUserQuestion`, `ToolSearch`, `SendUserMessage`. |
+  | Allowed workspace folders<br />`allowedWorkspaceFolders`                | string\[] (JSON) | unrestricted            | Absolute paths users may attach as workspace folders. Leading `~` expands to the user's home. When set, any path outside this list is rejected.                                                                                                                                                                                                                    |
+  | Allowed egress hosts<br />`coworkEgressAllowedHosts`                    | string\[] (JSON) | inference endpoint only | Hostnames the agent's web-fetch and shell tools may reach. Supports `*.example.com` wildcards. `["*"]` disables egress filtering. The configured inference endpoint is always allowed implicitly. When unset, only the inference endpoint is reachable; the agent's package installs and web fetches will fail.                                                    |
+  | Allow Claude Code tab<br />`isClaudeCodeForDesktopEnabled`              | boolean          | `true`                  | Show the Code tab.                                                                                                                                                                                                                                                                                                                                                 |
+  | Disable claude:// deep-link handling<br />`disableDeepLinkRegistration` | boolean          | `false`                 | Stop the app registering as the `claude://` URL handler, so external apps and websites can't open Cowork via deep links.                                                                                                                                                                                                                                           |
 
   <Note>
     `coworkEgressAllowedHosts` governs the **Cowork tab's** sandbox — web fetch, shell commands, and package installs run by the Cowork agent. It does **not** restrict the Code tab, which executes on the host with the user's normal network access. To remove the Code tab, set `isClaudeCodeForDesktopEnabled` to `false`.
+
+    It also does **not** apply to [Web Search](/cowork/3p/web-tools#web-search), which runs server-side at your inference provider rather than from the sandbox.
   </Note>
 
   ## Connectors & extensions
 
-  | Setting                                                              | Type             | Default | Description                                                                                                                                       |
-  | -------------------------------------------------------------------- | ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | Managed MCP servers<br />`managedMcpServers`                         | object\[] (JSON) | `[]`    | Remote MCP servers deployed to all users. See [schema](#managedmcpservers).                                                                       |
-  | Allow user-added MCP servers<br />`isLocalDevMcpEnabled`             | boolean          | `true`  | Allow users to add their own local MCP servers from **Settings → Developer**. End users cannot add remote MCP servers regardless of this setting. |
-  | Allow desktop extensions<br />`isDesktopExtensionEnabled`            | boolean          | `true`  | Allow installing local desktop extensions (`.mcpb`).                                                                                              |
-  | Show extension directory<br />`isDesktopExtensionDirectoryEnabled`   | boolean          | `true`  | Show the Anthropic extension directory in the Connectors UI.                                                                                      |
-  | Require signed extensions<br />`isDesktopExtensionSignatureRequired` | boolean          | `false` | Reject unsigned desktop extensions.                                                                                                               |
+  | Setting                                                              | Type             | Default | Description                                                                                                                                               |
+  | -------------------------------------------------------------------- | ---------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | Managed MCP servers<br />`managedMcpServers`                         | object\[] (JSON) | `[]`    | Remote MCP servers deployed to all users. See [schema](#managedmcpservers).                                                                               |
+  | Organization plugin settings<br />`orgPluginSettings`                | object (JSON)    | `{}`    | Per-tool policy for MCP servers delivered via [organization plugins](/cowork/3p/extensions#organization-plugins-admin). See [schema](#orgpluginsettings). |
+  | Allow user-added MCP servers<br />`isLocalDevMcpEnabled`             | boolean          | `true`  | Allow users to add their own local MCP servers from **Settings → Developer**. End users cannot add remote MCP servers regardless of this setting.         |
+  | Allow desktop extensions<br />`isDesktopExtensionEnabled`            | boolean          | `true`  | Allow installing local desktop extensions (`.mcpb`).                                                                                                      |
+  | Require signed extensions<br />`isDesktopExtensionSignatureRequired` | boolean          | `false` | Reject unsigned desktop extensions.                                                                                                                       |
 
   See [MCP, plugins, skills, and hooks](/cowork/3p/extensions) for the org-plugins directory layout and the full `managedMcpServers` schema.
 
@@ -144,16 +163,19 @@ The sections below match the sidebar of the in-app configuration window.
 
   A JSON-stringified array of server objects:
 
-  | Field                 | Required | Description                                                                                                                                                                                                                                  |
-  | --------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | `name`                | Yes      | Unique display name.                                                                                                                                                                                                                         |
-  | `url`                 | Yes      | Server URL. Must be `https://`.                                                                                                                                                                                                              |
-  | `transport`           | —        | `"http"` (default) or `"sse"`.                                                                                                                                                                                                               |
-  | `headers`             | —        | Static string→string header map. Mutually exclusive with `oauth`.                                                                                                                                                                            |
-  | `headersHelper`       | —        | Absolute path to an executable that prints a JSON header object on stdout, for short-lived auth tokens. Mutually exclusive with `oauth`.                                                                                                     |
-  | `headersHelperTtlSec` | —        | Cache helper output for this many seconds.                                                                                                                                                                                                   |
-  | `oauth`               | —        | Enables a browser-based OAuth flow; tokens stored in the OS keychain. Set to `true` for dynamic client registration, or to an object that supplies a pre-registered client (see below). Mutually exclusive with `headers` / `headersHelper`. |
-  | `toolPolicy`          | —        | Map of tool name → `"allow"` / `"ask"` / `"blocked"`. Locks the per-tool approval state for that server.                                                                                                                                     |
+  | Field                 | Required         | Description                                                                                                                                                                                                                                  |
+  | --------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | `name`                | Yes              | Unique display name.                                                                                                                                                                                                                         |
+  | `url`                 | For `http`/`sse` | Server URL. Must be `https://`.                                                                                                                                                                                                              |
+  | `transport`           | —                | `"http"` (default), `"sse"`, or `"stdio"` for a local command.                                                                                                                                                                               |
+  | `headers`             | —                | Static string→string header map. Mutually exclusive with `oauth`.                                                                                                                                                                            |
+  | `headersHelper`       | —                | Absolute path to an executable that prints a JSON header object on stdout, for short-lived auth tokens. Mutually exclusive with `oauth`.                                                                                                     |
+  | `headersHelperTtlSec` | —                | Cache helper output for this many seconds. Default `300`.                                                                                                                                                                                    |
+  | `oauth`               | —                | Enables a browser-based OAuth flow; tokens stored in the OS keychain. Set to `true` for dynamic client registration, or to an object that supplies a pre-registered client (see below). Mutually exclusive with `headers` / `headersHelper`. |
+  | `toolPolicy`          | —                | Map of tool name → `"allow"` / `"ask"` / `"blocked"`. Locks the per-tool approval state for that server.                                                                                                                                     |
+  | `command`             | For `stdio`      | Absolute path to the executable to spawn.                                                                                                                                                                                                    |
+  | `args`                | —                | Command-line arguments (`stdio` only).                                                                                                                                                                                                       |
+  | `env`                 | —                | Environment variables for the spawned process (`stdio` only).                                                                                                                                                                                |
 
   When the MCP server's OAuth provider doesn't support dynamic client registration (for example, Slack or Microsoft Entra ID), set `oauth` to an object describing a client you've registered with that provider:
 
@@ -166,6 +188,20 @@ The sections below match the sidebar of the in-app configuration window.
   | `callbackHost` | —        | Loopback host: `127.0.0.1` (default) or `localhost`. Set to match the registered redirect URI exactly. |
 
   The app builds the redirect URI as `http://<callbackHost>:<callbackPort>/callback`; register that exact value with the OAuth provider.
+
+  ### `orgPluginSettings`
+
+  A JSON-stringified object that applies `toolPolicy` locks to MCP servers delivered through the [org-plugins directory](/cowork/3p/extensions#organization-plugins-admin), keyed by server name:
+
+  ```json theme={null}
+  {
+    "mcpServers": {
+      "internal-search": { "toolPolicy": { "delete_document": "blocked" } }
+    }
+  }
+  ```
+
+  If a `managedMcpServers` entry and an org-plugin server share a name, the `managedMcpServers` entry wins and its `toolPolicy` (if any) applies; the `orgPluginSettings` entry for that name is ignored.
 
   ## Telemetry & updates
 
@@ -198,6 +234,24 @@ The sections below match the sidebar of the in-app configuration window.
   | -------------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | Max tokens per window<br />`inferenceMaxTokensPerWindow` | integer | Total input + output tokens permitted per device per window. When reached, the app refuses new messages until the window resets. Enforced locally; persists across restarts. |
   | Token cap window<br />`inferenceTokenWindowHours`        | integer | Length of the tumbling window for the cap above, 1–720 hours.                                                                                                                |
+
+  ## Appearance
+
+  | Setting              | Type          | Default | Description                                                                                      |
+  | -------------------- | ------------- | ------- | ------------------------------------------------------------------------------------------------ |
+  | Banner<br />`banner` | object (JSON) | unset   | A persistent banner shown across the top of the app window after sign-in. See [schema](#banner). |
+
+  ### `banner`
+
+  A JSON-stringified object:
+
+  | Field             | Required     | Description                                                      |
+  | ----------------- | ------------ | ---------------------------------------------------------------- |
+  | `enabled`         | —            | Show the banner.                                                 |
+  | `text`            | When enabled | Banner text. Single line, up to 200 characters.                  |
+  | `backgroundColor` | —            | Six-digit hex color (`#RRGGBB`) for the banner background.       |
+  | `textColor`       | —            | Six-digit hex color (`#RRGGBB`) for the banner text.             |
+  | `linkUrl`         | —            | HTTPS URL. When set, the banner text becomes a link to this URL. |
 </div>
 
 ## Plugins & skills
@@ -225,34 +279,32 @@ The profiles below are illustrative examples rather than built-in presets, and t
   <Tab title="Restricted">
     For regulated environments that need to control what users can connect Cowork to, while keeping Anthropic supportability.
 
-    | Key                                  | Value                    |
-    | ------------------------------------ | ------------------------ |
-    | `deploymentOrganizationUuid`         | `<your-org-uuid>`        |
-    | `disableNonessentialTelemetry`       | `true`                   |
-    | `disableNonessentialServices`        | `true`                   |
-    | `isLocalDevMcpEnabled`               | `false`                  |
-    | `isDesktopExtensionEnabled`          | `false`                  |
-    | `isDesktopExtensionDirectoryEnabled` | `false`                  |
-    | `allowedWorkspaceFolders`            | `["~/Documents/Claude"]` |
-    | `coworkEgressAllowedHosts`           | `["*.your-org.com"]`     |
-    | `otlpEndpoint`                       | `<your-collector>`       |
+    | Key                            | Value                    |
+    | ------------------------------ | ------------------------ |
+    | `deploymentOrganizationUuid`   | `<your-org-uuid>`        |
+    | `disableNonessentialTelemetry` | `true`                   |
+    | `disableNonessentialServices`  | `true`                   |
+    | `isLocalDevMcpEnabled`         | `false`                  |
+    | `isDesktopExtensionEnabled`    | `false`                  |
+    | `allowedWorkspaceFolders`      | `["~/Documents/Claude"]` |
+    | `coworkEgressAllowedHosts`     | `["*.your-org.com"]`     |
+    | `otlpEndpoint`                 | `<your-collector>`       |
   </Tab>
 
   <Tab title="Locked down">
     For air-gapped or maximally restricted environments. **The only traffic leaving the device goes to your inference endpoint and OTLP collector.** With this profile, Anthropic has zero remote visibility, so your team owns log collection and update distribution.
 
-    | Key                                  | Value                      |
-    | ------------------------------------ | -------------------------- |
-    | `disableEssentialTelemetry`          | `true`                     |
-    | `disableNonessentialTelemetry`       | `true`                     |
-    | `disableNonessentialServices`        | `true`                     |
-    | `disableAutoUpdates`                 | `true`                     |
-    | `isLocalDevMcpEnabled`               | `false`                    |
-    | `isDesktopExtensionEnabled`          | `false`                    |
-    | `isDesktopExtensionDirectoryEnabled` | `false`                    |
-    | `disabledBuiltinTools`               | `["WebSearch","WebFetch"]` |
-    | `coworkEgressAllowedHosts`           | `[]`                       |
-    | `allowedWorkspaceFolders`            | `["~/Documents/Claude"]`   |
-    | `otlpEndpoint`                       | `<your-collector>`         |
+    | Key                            | Value                      |
+    | ------------------------------ | -------------------------- |
+    | `disableEssentialTelemetry`    | `true`                     |
+    | `disableNonessentialTelemetry` | `true`                     |
+    | `disableNonessentialServices`  | `true`                     |
+    | `disableAutoUpdates`           | `true`                     |
+    | `isLocalDevMcpEnabled`         | `false`                    |
+    | `isDesktopExtensionEnabled`    | `false`                    |
+    | `disabledBuiltinTools`         | `["WebSearch","WebFetch"]` |
+    | `coworkEgressAllowedHosts`     | `[]`                       |
+    | `allowedWorkspaceFolders`      | `["~/Documents/Claude"]`   |
+    | `otlpEndpoint`                 | `<your-collector>`         |
   </Tab>
 </Tabs>

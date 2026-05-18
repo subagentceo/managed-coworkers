@@ -100,33 +100,33 @@ AI Foundry.
 
 ## Deploy the add-in for your organization
 
-Use the `claude-in-office` plugin to configure and deploy the add-in
+Use the `claude-for-msft-365-install` plugin to configure and deploy the add-in
 across your organization. The plugin provisions cloud resources (for
 Bedrock or Vertex AI direct), generates the add-in manifest, and obtains
 admin consent in a single guided flow.
 
 ### Run the setup wizard
 
-[Install the plugin](https://github.com/anthropics/financial-services-plugins/tree/main/claude-in-office)
+[Install the plugin](https://github.com/anthropics/financial-services/tree/main/claude-for-msft-365-install)
 from the financial services marketplace, then run the setup wizard
 from inside Claude.
 
 Add the marketplace in your shell:
 
 ```bash theme={null}
-claude plugin marketplace add anthropics/financial-services-plugins
+claude plugin marketplace add anthropics/financial-services
 ```
 
 Install the plugin:
 
 ```bash theme={null}
-claude plugin install claude-in-office@financial-services-plugins
+claude plugin install claude-for-msft-365-install@financial-services
 ```
 
 Then, from inside Claude, run the setup wizard:
 
 ```
-/claude-in-office:setup
+/claude-for-msft-365-install:setup
 ```
 
 The wizard walks you through the path you chose:
@@ -152,12 +152,12 @@ When complete, the add-in is ready for tenant-wide deployment.
 
 The plugin exposes the following slash commands once installed.
 
-| Command                               | Function                                                                                |
-| ------------------------------------- | --------------------------------------------------------------------------------------- |
-| `/claude-in-office:setup`             | Interactive wizard: provisions cloud resources, handles admin consent, writes manifest. |
-| `/claude-in-office:manifest`          | Generates a customized add-in manifest XML.                                             |
-| `/claude-in-office:consent`           | Generates the Azure admin-consent URL for the add-in's app registration.                |
-| `/claude-in-office:update-user-attrs` | Writes per-user configuration via Microsoft Graph extension attributes.                 |
+| Command                                          | Function                                                                                |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| `/claude-for-msft-365-install:setup`             | Interactive wizard: provisions cloud resources, handles admin consent, writes manifest. |
+| `/claude-for-msft-365-install:manifest`          | Generates a customized add-in manifest XML.                                             |
+| `/claude-for-msft-365-install:consent`           | Generates the Azure admin-consent URL for the add-in's app registration.                |
+| `/claude-for-msft-365-install:update-user-attrs` | Writes per-user configuration via Microsoft Graph extension attributes.                 |
 
 ### What the wizard provisions
 
@@ -174,7 +174,7 @@ connection path you choose.
 ### Per-user configuration
 
 If values vary per user, such as different gateway tokens or AWS roles
-for different teams, run `/claude-in-office:update-user-attrs`
+for different teams, run `/claude-for-msft-365-install:update-user-attrs`
 with per-user keys after initial setup to write configuration via
 Microsoft Graph extension attributes.
 

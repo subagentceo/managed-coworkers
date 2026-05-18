@@ -13,7 +13,7 @@ work through comment threads, and fill templates in your document's
 styles.
 
 <Note>
-  Claude for Word is currently in beta and available to Pro, Max, Team,
+  Claude for Word is generally available to Pro, Max, Team,
   and Enterprise plans.
 </Note>
 
@@ -304,7 +304,7 @@ or regulated data, follow your organization's data handling policies.
 
 ## Current limitations
 
-As a beta feature, Claude for Word is not recommended for:
+Claude for Word is not recommended for:
 
 * Final client deliverables or counterparty sends without human review.
 * Litigation filings or audit-critical documents without verification.

@@ -92,11 +92,11 @@ The host(s) for your configured provider. These carry conversation content.
     | Host                                                               | Purpose                                                                    |
     | ------------------------------------------------------------------ | -------------------------------------------------------------------------- |
     | `bedrock-runtime.<region>.amazonaws.com`                           | Model inference. Replaced by the host of `inferenceBedrockBaseUrl` if set. |
-    | `bedrock.<region>.amazonaws.com`                                   | Control plane (profile auth only)                                          |
+    | `bedrock.<region>.amazonaws.com`                                   | Control plane (model discovery and profile auth)                           |
     | `sts.amazonaws.com`, `sts.<region>.amazonaws.com`                  | STS token exchange (profile auth only)                                     |
     | `portal.sso.<region>.amazonaws.com`, `oidc.<region>.amazonaws.com` | AWS SSO (profile auth only)                                                |
 
-    With `inferenceBedrockBearerToken` set, only the runtime host is required.
+    With `inferenceBedrockBearerToken` set, the runtime and control-plane hosts are required.
   </Tab>
 
   <Tab title="Foundry">

@@ -26,6 +26,10 @@ Web Search is a **server-side tool** executed by your inference provider, not by
 
 Because the search runs on the provider's infrastructure, queries and results travel over the same path as model inference and are subject to your provider's data-handling terms. No additional firewall rules are needed beyond the inference endpoint itself.
 
+<Note>
+  `coworkEgressAllowedHosts` does **not** apply to Web Search. The allowlist governs client-side egress — Web Fetch and in-sandbox shell network activity — while search executes server-side at your inference provider. URLs returned in search results are, however, automatically permitted for a follow-up Web Fetch even if they aren't in your allowlist. To disable search, add `"WebSearch"` to `disabledBuiltinTools`.
+</Note>
+
 If your provider doesn't support search, or you want to use a different search backend, deploy a search MCP server via [`managedMcpServers`](/cowork/3p/configuration#managedmcpservers) and disable the built-in tool (below).
 
 ## Web Fetch

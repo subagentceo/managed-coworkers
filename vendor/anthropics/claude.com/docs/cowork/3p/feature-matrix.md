@@ -45,7 +45,7 @@ The tables below compare the feature set of Cowork on third-party (3P) to Claude
 | Claude in Chrome                |         ✓         |       —      |
 | Computer use                    |         —         |       —      |
 
-\* The Anthropic M365 Connectors and Google Workspace are not currently supported in Cowork on 3P, but will be available soon; we will update our docs when they become available.
+\* The Anthropic Microsoft 365 connector is available in Cowork on 3P; see the [setup guide](/cowork/3p/connectors-m365). Google Workspace is not currently supported but will be available soon.
 
 \*\* Plugins distributed via the [org-plugins directory](/cowork/3p/extensions#organization-plugins-admin) appear to users as an organization marketplace. The public Anthropic plugin marketplace is not available.
 
