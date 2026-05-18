@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Ffive-factors-for-selecting-a-fraud-prevention-solution-with-insights-featuring-gartner%2F&title=5%20Factors%20for%20Selecting%20a%20Fraud%20Prevention%20Solution)
 -   [](https://twitter.com/intent/tweet?text=5%20Factors%20for%20Selecting%20a%20Fraud%20Prevention%20Solution&url=https%3A%2F%2Fsift.com%2Fblog%2Ffive-factors-for-selecting-a-fraud-prevention-solution-with-insights-featuring-gartner%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Ffive-factors-for-selecting-a-fraud-prevention-solution-with-insights-featuring-gartner%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FGartner-Webinar-Blog-Social-ImagesBlog-1920x1380-1.jpg&title=5%20Factors%20for%20Selecting%20a%20Fraud%20Prevention%20Solution)
--   [](/cdn-cgi/l/email-protection#38074b4d5a525d5b4c050d1d0a087e595b4c574a4b1d0a085e574a1d0a086b5d545d5b4c51565f1d0a08591d0a087e4a594d5c1d0a08684a5d4e5d564c5157561d0a086b57544d4c5157561e1b080b00035a575c4105504c4c484b1d0b791d0a7e1d0a7e4b515e4c165b57551d0a7e5a54575f1d0a7e5e514e5d155e595b4c574a4b155e574a154b5d545d5b4c51565f1559155e4a594d5c15484a5d4e5d564c515756154b57544d4c515756154f514c501551564b515f504c4b155e5d594c4d4a51565f155f594a4c565d4a1d0a7e)
+-   [](/cdn-cgi/l/email-protection#112e6264737b7472652c24342321577072657e6362342321777e6334232142747d747265787f7634232170342321576370647534232141637467747f65787e7f342321427e7d6465787e7f37322122292a737e75682c7965656162342250342357342357627877653f727e7c342357737d7e76342357777867743c777072657e63623c777e633c62747d747265787f763c703c77637064753c61637467747f65787e7f3c627e7d6465787e7f3c667865793c787f6278767965623c777470656463787f763c767063657f7463342357)
 
 -   [Data & Insights](https://sift.com/blog/category/data-insights/)
 -   [Fraud](https://sift.com/blog/category/fraud/)
@@ -109,9 +109,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Ffive-factors-for-selecting-a-fraud-prevention-solution-with-insights-featuring-gartner%2F&title=5%20Factors%20for%20Selecting%20a%20Fraud%20Prevention%20Solution)
 -   [](https://twitter.com/intent/tweet?text=5%20Factors%20for%20Selecting%20a%20Fraud%20Prevention%20Solution&url=https%3A%2F%2Fsift.com%2Fblog%2Ffive-factors-for-selecting-a-fraud-prevention-solution-with-insights-featuring-gartner%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Ffive-factors-for-selecting-a-fraud-prevention-solution-with-insights-featuring-gartner%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FGartner-Webinar-Blog-Social-ImagesBlog-1920x1380-1.jpg&title=5%20Factors%20for%20Selecting%20a%20Fraud%20Prevention%20Solution)
--   [](/cdn-cgi/l/email-protection#d0efa3a5b2bab5b3a4ede5f5e2e096b1b3a4bfa2a3f5e2e0b6bfa2f5e2e083b5bcb5b3a4b9beb7f5e2e0b1f5e2e096a2b1a5b4f5e2e080a2b5a6b5bea4b9bfbef5e2e083bfbca5a4b9bfbef6f3e0e3e8ebb2bfb4a9edb8a4a4a0a3f5e391f5e296f5e296a3b9b6a4feb3bfbdf5e296b2bcbfb7f5e296b6b9a6b5fdb6b1b3a4bfa2a3fdb6bfa2fda3b5bcb5b3a4b9beb7fdb1fdb6a2b1a5b4fda0a2b5a6b5bea4b9bfbefda3bfbca5a4b9bfbefda7b9a4b8fdb9bea3b9b7b8a4a3fdb6b5b1a4a5a2b9beb7fdb7b1a2a4beb5a2f5e296)
+-   [](/cdn-cgi/l/email-protection#427d313720282721367f77677072042321362d3031677072242d3067707211272e2721362b2c2567707223677072043023372667707212302734272c362b2d2c677072112d2e37362b2d2c646172717a79202d263b7f2a36363231677103677004677004312b24366c212d2f677004202e2d25677004242b34276f242321362d30316f242d306f31272e2721362b2c256f236f24302337266f32302734272c362b2d2c6f312d2e37362b2d2c6f352b362a6f2b2c312b252a36316f2427233637302b2c256f252330362c2730677004)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -144,22 +160,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Ffraudsters-machine-learning-phishing-brett-johnson%2F&title=3%20Tactics%20Fraudsters%20Have%20Learned%20from%20Fraud%20Fighters)
 -   [](https://twitter.com/intent/tweet?text=3%20Tactics%20Fraudsters%20Have%20Learned%20from%20Fraud%20Fighters&url=https%3A%2F%2Fsift.com%2Fblog%2Ffraudsters-machine-learning-phishing-brett-johnson%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Ffraudsters-machine-learning-phishing-brett-johnson%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FScreen-Shot-2018-07-23-at-2.31.23-PM.png&title=3%20Tactics%20Fraudsters%20Have%20Learned%20from%20Fraud%20Fighters)
--   [](/cdn-cgi/l/email-protection#a49bd7d1c6cec1c7d09997819694f0c5c7d0cdc7d7819694e2d6c5d1c0d7d0c1d6d7819694ecc5d2c1819694e8c1c5d6cac1c0819694c2d6cbc9819694e2d6c5d1c0819694e2cdc3ccd0c1d6d7828794979c9fc6cbc0dd99ccd0d0d4d78197e58196e28196e2d7cdc2d08ac7cbc98196e2c6c8cbc38196e2c2d6c5d1c0d7d0c1d6d789c9c5c7cccdcac189c8c1c5d6cacdcac389d4cccdd7cccdcac389c6d6c1d0d089cecbcccad7cbca8196e2)
+-   [](/cdn-cgi/l/email-protection#82bdf1f7e0e8e7e1f6bfb1a7b0b2d6e3e1f6ebe1f1a7b0b2c4f0e3f7e6f1f6e7f0f1a7b0b2cae3f4e7a7b0b2cee7e3f0ece7e6a7b0b2e4f0edefa7b0b2c4f0e3f7e6a7b0b2c4ebe5eaf6e7f0f1a4a1b2b1bab9e0ede6fbbfeaf6f6f2f1a7b1c3a7b0c4a7b0c4f1ebe4f6ace1edefa7b0c4e0eeede5a7b0c4e4f0e3f7e6f1f6e7f0f1afefe3e1eaebece7afeee7e3f0ecebece5aff2eaebf1eaebece5afe0f0e7f6f6afe8edeaecf1edeca7b0c4)
 
 -   [Fraud](https://sift.com/blog/category/fraud/)
 
@@ -86,9 +86,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Ffraudsters-machine-learning-phishing-brett-johnson%2F&title=3%20Tactics%20Fraudsters%20Have%20Learned%20from%20Fraud%20Fighters)
 -   [](https://twitter.com/intent/tweet?text=3%20Tactics%20Fraudsters%20Have%20Learned%20from%20Fraud%20Fighters&url=https%3A%2F%2Fsift.com%2Fblog%2Ffraudsters-machine-learning-phishing-brett-johnson%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Ffraudsters-machine-learning-phishing-brett-johnson%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FScreen-Shot-2018-07-23-at-2.31.23-PM.png&title=3%20Tactics%20Fraudsters%20Have%20Learned%20from%20Fraud%20Fighters)
--   [](/cdn-cgi/l/email-protection#f0cf8385929a959384cdc3d5c2c0a4919384999383d5c2c0b6829185948384958283d5c2c0b8918695d5c2c0bc9591829e9594d5c2c096829f9dd5c2c0b682918594d5c2c0b699979884958283d6d3c0c3c8cb929f9489cd9884848083d5c3b1d5c2b6d5c2b683999684de939f9dd5c2b6929c9f97d5c2b696829185948384958283dd9d919398999e95dd9c9591829e999e97dd8098998398999e97dd9282958484dd9a9f989e839f9ed5c2b6)
+-   [](/cdn-cgi/l/email-protection#dae5a9afb8b0bfb9aee7e9ffe8ea8ebbb9aeb3b9a9ffe8ea9ca8bbafbea9aebfa8a9ffe8ea92bbacbfffe8ea96bfbba8b4bfbeffe8eabca8b5b7ffe8ea9ca8bbafbeffe8ea9cb3bdb2aebfa8a9fcf9eae9e2e1b8b5bea3e7b2aeaeaaa9ffe99bffe89cffe89ca9b3bcaef4b9b5b7ffe89cb8b6b5bdffe89cbca8bbafbea9aebfa8a9f7b7bbb9b2b3b4bff7b6bfbba8b4b3b4bdf7aab2b3a9b2b3b4bdf7b8a8bfaeaef7b0b5b2b4a9b5b4ffe89c)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -121,22 +137,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

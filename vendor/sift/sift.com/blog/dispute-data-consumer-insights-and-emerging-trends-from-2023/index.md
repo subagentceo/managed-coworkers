@@ -27,7 +27,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fdispute-data-consumer-insights-and-emerging-trends-from-2023%2F&title=2023%20Dispute%20data%2C%20consumer%20insights%2C%20and%20trends)
 -   [](https://twitter.com/intent/tweet?text=2023%20Dispute%20data%2C%20consumer%20insights%2C%20and%20trends&url=https%3A%2F%2Fsift.com%2Fblog%2Fdispute-data-consumer-insights-and-emerging-trends-from-2023%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fdispute-data-consumer-insights-and-emerging-trends-from-2023%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FSift_Q4-Index-Report_OG-Card_1200x630.jpg&title=2023%20Dispute%20data%2C%20consumer%20insights%2C%20and%20trends)
--   [](/cdn-cgi/l/email-protection#053a7670676f6066713837353736203735416c767570716020373561647164203746203735666a6b76706860772037356c6b766c626d7176203746203735646b612037357177606b6176232635363d3e676a617c386d71717576203644203743203743766c63712b666a6820374367696a62203743616c7675707160286164716428666a6b7670686077286c6b766c626d717628646b612860686077626c6b62287177606b61762863776a682837353736203743)
+-   [](/cdn-cgi/l/email-protection#5a65292f38303f392e67686a68697f686a1e33292a2f2e3f7f686a3e3b2e3b7f68197f686a393534292f373f287f686a333429333d322e297f68197f686a3b343e7f686a2e283f343e297c796a69626138353e2367322e2e2a297f691b7f681c7f681c29333c2e743935377f681c3836353d7f681c3e33292a2f2e3f773e3b2e3b77393534292f373f2877333429333d322e29773b343e773f373f283d33343d772e283f343e29773c28353777686a68697f681c)
 
 -   [Chargebacks](https://sift.com/blog/category/chargebacks/)
 -   [Data & Insights](https://sift.com/blog/category/data-insights/)
@@ -75,9 +75,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fdispute-data-consumer-insights-and-emerging-trends-from-2023%2F&title=2023%20Dispute%20data%2C%20consumer%20insights%2C%20and%20trends)
 -   [](https://twitter.com/intent/tweet?text=2023%20Dispute%20data%2C%20consumer%20insights%2C%20and%20trends&url=https%3A%2F%2Fsift.com%2Fblog%2Fdispute-data-consumer-insights-and-emerging-trends-from-2023%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fdispute-data-consumer-insights-and-emerging-trends-from-2023%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FSift_Q4-Index-Report_OG-Card_1200x630.jpg&title=2023%20Dispute%20data%2C%20consumer%20insights%2C%20and%20trends)
--   [](/cdn-cgi/l/email-protection#29165a5c4b434c4a5d141b191b1a0c1b196d405a595c5d4c0c1b194d485d480c1b6a0c1b194a46475a5c444c5b0c1b1940475a404e415d5a0c1b6a0c1b1948474d0c1b195d5b4c474d5a0f0a191a11124b464d5014415d5d595a0c1a680c1b6f0c1b6f5a404f5d074a46440c1b6f4b45464e0c1b6f4d405a595c5d4c044d485d48044a46475a5c444c5b0440475a404e415d5a0448474d044c444c5b4e40474e045d5b4c474d5a044f5b4644041b191b1a0c1b6f)
+-   [](/cdn-cgi/l/email-protection#d1eea2a4b3bbb4b2a5ece3e1e3e2f4e3e195b8a2a1a4a5b4f4e3e1b5b0a5b0f4e392f4e3e1b2bebfa2a4bcb4a3f4e3e1b8bfa2b8b6b9a5a2f4e392f4e3e1b0bfb5f4e3e1a5a3b4bfb5a2f7f2e1e2e9eab3beb5a8ecb9a5a5a1a2f4e290f4e397f4e397a2b8b7a5ffb2bebcf4e397b3bdbeb6f4e397b5b8a2a1a4a5b4fcb5b0a5b0fcb2bebfa2a4bcb4a3fcb8bfa2b8b6b9a5a2fcb0bfb5fcb4bcb4a3b6b8bfb6fca5a3b4bfb5a2fcb7a3bebcfce3e1e3e2f4e397)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -110,22 +126,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

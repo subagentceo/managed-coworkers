@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fbeware-the-first-time-shoppers%2F&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%202%29%3A%20Beware%20of%20first-time%20shoppers)
 -   [](https://twitter.com/intent/tweet?text=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%202%29%3A%20Beware%20of%20first-time%20shoppers&url=https%3A%2F%2Fsift.com%2Fblog%2Fbeware-the-first-time-shoppers%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fbeware-the-first-time-shoppers%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2Fdark-computer.jpg&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%202%29%3A%20Beware%20of%20first-time%20shoppers)
--   [](/cdn-cgi/l/email-protection#3b04484e59515e584f060a0b1e090b6c5a495552555c1e090b68525c55481e090b545d1e090b5e785456565e49585e1e090b7d495a4e5f1e090b1e09036b5a494f1e090b091e09021e087a1e090b795e4c5a495e1e090b545d1e090b5d5249484f164f52565e1e090b4853544b4b5e49481d180b08030059545f4206534f4f4b481e087a1e097d1e097d48525d4f155854561e097d5957545c1e097d595e4c5a495e164f535e165d5249484f164f52565e164853544b4b5e49481e097d)
+-   [](/cdn-cgi/l/email-protection#5f602c2a3d353a3c2b626e6f7a6d6f083e2d313631387a6d6f0c3638312c7a6d6f30397a6d6f3a1c3032323a2d3c3a7a6d6f192d3e2a3b7a6d6f7a6d670f3e2d2b7a6d6f6d7a6d667a6c1e7a6d6f1d3a283e2d3a7a6d6f30397a6d6f39362d2c2b722b36323a7a6d6f2c37302f2f3a2d2c797c6f6c67643d303b2662372b2b2f2c7a6c1e7a6d197a6d192c36392b713c30327a6d193d3330387a6d193d3a283e2d3a722b373a7239362d2c2b722b36323a722c37302f2f3a2d2c7a6d19)
 
 -   [Fraud](https://sift.com/blog/category/fraud/)
 
@@ -74,9 +74,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fbeware-the-first-time-shoppers%2F&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%202%29%3A%20Beware%20of%20first-time%20shoppers)
 -   [](https://twitter.com/intent/tweet?text=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%202%29%3A%20Beware%20of%20first-time%20shoppers&url=https%3A%2F%2Fsift.com%2Fblog%2Fbeware-the-first-time-shoppers%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fbeware-the-first-time-shoppers%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2Fdark-computer.jpg&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%202%29%3A%20Beware%20of%20first-time%20shoppers)
--   [](/cdn-cgi/l/email-protection#6a55191f08000f091e575b5a4f585a3d0b180403040d4f585a39030d04194f585a050c4f585a0f290507070f18090f4f585a2c180b1f0e4f585a4f58523a0b181e4f585a584f58534f592b4f585a280f1d0b180f4f585a050c4f585a0c0318191e471e03070f4f585a1902051a1a0f18194c495a59525108050e1357021e1e1a194f592b4f582c4f582c19030c1e440905074f582c0806050d4f582c080f1d0b180f471e020f470c0318191e471e03070f471902051a1a0f18194f582c)
+-   [](/cdn-cgi/l/email-protection#47783432252d2224337a7677627577102635292e2920627577142e20293462757728216275772204282a2a22352422627577013526322362757762757f172635336275777562757e6274066275770522302635226275772821627577212e3534336a332e2a22627577342f283737223534616477747f7c2528233e7a2f33333734627406627501627501342e21336924282a627501252b28206275012522302635226a332f226a212e3534336a332e2a226a342f283737223534627501)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -109,22 +125,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

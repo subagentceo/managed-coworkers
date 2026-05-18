@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F5-e-commerce-fraud-webinars-to-watch-again-in-2021%2F&title=5%20E-commerce%20Fraud%20Webinars%20to%20Watch%20Again%20in%202021)
 -   [](https://twitter.com/intent/tweet?text=5%20E-commerce%20Fraud%20Webinars%20to%20Watch%20Again%20in%202021&url=https%3A%2F%2Fsift.com%2Fblog%2F5-e-commerce-fraud-webinars-to-watch-again-in-2021%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-e-commerce-fraud-webinars-to-watch-again-in-2021%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2Fwebinar.jpg&title=5%20E-commerce%20Fraud%20Webinars%20to%20Watch%20Again%20in%202021)
--   [](/cdn-cgi/l/email-protection#b18ec2c4d3dbd4d2c58c84948381f49cd2dedcdcd4c3d2d4948381f7c3d0c4d5948381e6d4d3d8dfd0c3c2948381c5de948381e6d0c5d2d9948381f0d6d0d8df948381d8df9483818381838097928182898ad3ded5c88cd9c5c5c1c29482f09483f79483f7c2d8d7c59fd2dedc9483f7d3ddded69483f7849cd49cd2dedcdcd4c3d2d49cd7c3d0c4d59cc6d4d3d8dfd0c3c29cc5de9cc6d0c5d2d99cd0d6d0d8df9cd8df9c838183809483f7)
+-   [](/cdn-cgi/l/email-protection#bc83cfc9ded6d9dfc88189998e8cf991dfd3d1d1d9cedfd9998e8cfaceddc9d8998e8cebd9ded5d2ddcecf998e8cc8d3998e8cebddc8dfd4998e8cfddbddd5d2998e8cd5d2998e8c8e8c8e8d9a9f8c8f8487ded3d8c581d4c8c8cccf998ffd998efa998efacfd5dac892dfd3d1998efaded0d3db998efa8991d991dfd3d1d1d9cedfd991daceddc9d891cbd9ded5d2ddcecf91c8d391cbddc8dfd491dddbddd5d291d5d2918e8c8e8d998efa)
 
 -   [Digital Trust](https://sift.com/blog/category/digital-trust/)
 -   [Fraud](https://sift.com/blog/category/fraud/)
@@ -86,9 +86,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F5-e-commerce-fraud-webinars-to-watch-again-in-2021%2F&title=5%20E-commerce%20Fraud%20Webinars%20to%20Watch%20Again%20in%202021)
 -   [](https://twitter.com/intent/tweet?text=5%20E-commerce%20Fraud%20Webinars%20to%20Watch%20Again%20in%202021&url=https%3A%2F%2Fsift.com%2Fblog%2F5-e-commerce-fraud-webinars-to-watch-again-in-2021%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-e-commerce-fraud-webinars-to-watch-again-in-2021%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2Fwebinar.jpg&title=5%20E-commerce%20Fraud%20Webinars%20to%20Watch%20Again%20in%202021)
--   [](/cdn-cgi/l/email-protection#5e612d2b3c343b3d2a636b7b6c6e1b733d3133333b2c3d3b7b6c6e182c3f2b3a7b6c6e093b3c37303f2c2d7b6c6e2a317b6c6e093f2a3d367b6c6e1f393f37307b6c6e37307b6c6e6c6e6c6f787d6e6d66653c313a2763362a2a2e2d7b6d1f7b6c187b6c182d37382a703d31337b6c183c3231397b6c186b733b733d3133333b2c3d3b73382c3f2b3a73293b3c37303f2c2d732a3173293f2a3d36733f393f3730733730736c6e6c6f7b6c18)
+-   [](/cdn-cgi/l/email-protection#d4eba7a1b6beb1b7a0e9e1f1e6e491f9b7bbb9b9b1a6b7b1f1e6e492a6b5a1b0f1e6e483b1b6bdbab5a6a7f1e6e4a0bbf1e6e483b5a0b7bcf1e6e495b3b5bdbaf1e6e4bdbaf1e6e4e6e4e6e5f2f7e4e7ecefb6bbb0ade9bca0a0a4a7f1e795f1e692f1e692a7bdb2a0fab7bbb9f1e692b6b8bbb3f1e692e1f9b1f9b7bbb9b9b1a6b7b1f9b2a6b5a1b0f9a3b1b6bdbab5a6a7f9a0bbf9a3b5a0b7bcf9b5b3b5bdbaf9bdbaf9e6e4e6e5f1e692)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -121,22 +137,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

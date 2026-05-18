@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F7-types-of-food-delivery-scams-and-how-to-stop-them%2F&title=7%20types%20of%20food%20delivery%20scams%20and%20how%20to%20stop%20them)
 -   [](https://twitter.com/intent/tweet?text=7%20types%20of%20food%20delivery%20scams%20and%20how%20to%20stop%20them&url=https%3A%2F%2Fsift.com%2Fblog%2F7-types-of-food-delivery-scams-and-how-to-stop-them%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F7-types-of-food-delivery-scams-and-how-to-stop-them%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FSift_Blog_1454x1044_4.jpg&title=7%20types%20of%20food%20delivery%20scams%20and%20how%20to%20stop%20them)
--   [](/cdn-cgi/l/email-protection#625d111700080701165f55475052161b1207114750520d04475052040d0d0647505206070e0b1407101b4750521101030f11475052030c064750520a0d15475052160d47505211160d12475052160a070f444152515a59000d061b5f0a16161211475123475024475024110b04164c010d0f475024000e0d05475024554f161b1207114f0d044f040d0d064f06070e0b1407101b4f1101030f114f030c064f0a0d154f160d4f11160d124f160a070f475024)
+-   [](/cdn-cgi/l/email-protection#bb84c8ced9d1ded8cf868c9e898bcfc2cbdec89e898bd4dd9e898bddd4d4df9e898bdfded7d2cddec9c29e898bc8d8dad6c89e898bdad5df9e898bd3d4cc9e898bcfd49e898bc8cfd4cb9e898bcfd3ded69d988b888380d9d4dfc286d3cfcfcbc89e88fa9e89fd9e89fdc8d2ddcf95d8d4d69e89fdd9d7d4dc9e89fd8c96cfc2cbdec896d4dd96ddd4d4df96dfded7d2cddec9c296c8d8dad6c896dad5df96d3d4cc96cfd496c8cfd4cb96cfd3ded69e89fd)
 
 -   [Account Takeover](https://sift.com/blog/category/ato/)
 -   [Chargebacks](https://sift.com/blog/category/chargebacks/)
@@ -154,9 +154,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F7-types-of-food-delivery-scams-and-how-to-stop-them%2F&title=7%20types%20of%20food%20delivery%20scams%20and%20how%20to%20stop%20them)
 -   [](https://twitter.com/intent/tweet?text=7%20types%20of%20food%20delivery%20scams%20and%20how%20to%20stop%20them&url=https%3A%2F%2Fsift.com%2Fblog%2F7-types-of-food-delivery-scams-and-how-to-stop-them%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F7-types-of-food-delivery-scams-and-how-to-stop-them%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FSift_Blog_1454x1044_4.jpg&title=7%20types%20of%20food%20delivery%20scams%20and%20how%20to%20stop%20them)
--   [](/cdn-cgi/l/email-protection#7b44080e19111e180f464c5e494b0f020b1e085e494b141d5e494b1d14141f5e494b1f1e17120d1e09025e494b08181a16085e494b1a151f5e494b13140c5e494b0f145e494b080f140b5e494b0f131e165d584b48434019141f0246130f0f0b085e483a5e493d5e493d08121d0f551814165e493d1917141c5e493d4c560f020b1e0856141d561d14141f561f1e17120d1e09025608181a1608561a151f5613140c560f1456080f140b560f131e165e493d)
+-   [](/cdn-cgi/l/email-protection#5d622e283f37383e29606a786f6d29242d382e786f6d323b786f6d3b323239786f6d393831342b382f24786f6d2e3e3c302e786f6d3c3339786f6d35322a786f6d2932786f6d2e29322d786f6d293538307b7e6d6e65663f323924603529292d2e786e1c786f1b786f1b2e343b29733e3230786f1b3f31323a786f1b6a7029242d382e70323b703b32323970393831342b382f24702e3e3c302e703c33397035322a702932702e29322d7029353830786f1b)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -189,22 +205,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

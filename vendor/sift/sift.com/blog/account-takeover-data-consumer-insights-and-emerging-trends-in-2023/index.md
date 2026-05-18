@@ -27,7 +27,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-consumer-insights-and-emerging-trends-in-2023%2F&title=Account%20takeover%20data%2C%20consumer%20insights%2C%20and%20emerging%20trends%20in%202023)
 -   [](https://twitter.com/intent/tweet?text=Account%20takeover%20data%2C%20consumer%20insights%2C%20and%20emerging%20trends%20in%202023&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-consumer-insights-and-emerging-trends-in-2023%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-consumer-insights-and-emerging-trends-in-2023%2F&picture=&title=Account%20takeover%20data%2C%20consumer%20insights%2C%20and%20emerging%20trends%20in%202023)
--   [](/cdn-cgi/l/email-protection#a798d4d2c5cdc2c4d39ae6c4c4c8d2c9d3829597d3c6ccc2c8d1c2d5829597c3c6d3c68295e4829597c4c8c9d4d2cac2d5829597cec9d4cec0cfd3d48295e4829597c6c9c3829597c2cac2d5c0cec9c0829597d3d5c2c9c3d4829597cec982959795979594818497949f9cc5c8c3de9acfd3d3d7d48294e68295e18295e1d4cec1d389c4c8ca8295e1c5cbc8c08295e1c6c4c4c8d2c9d38ad3c6ccc2c8d1c2d58ac3c6d3c68ac4c8c9d4d2cac2d58acec9d4cec0cfd3d48ac6c9c38ac2cac2d5c0cec9c08ad3d5c2c9c3d48acec98a959795948295e1)
+-   [](/cdn-cgi/l/email-protection#89b6fafcebe3eceafdb4c8eaeae6fce7fdacbbb9fde8e2ece6ffecfbacbbb9ede8fde8acbbcaacbbb9eae6e7fafce4ecfbacbbb9e0e7fae0eee1fdfaacbbcaacbbb9e8e7edacbbb9ece4ecfbeee0e7eeacbbb9fdfbece7edfaacbbb9e0e7acbbb9bbb9bbbaafaab9bab1b2ebe6edf0b4e1fdfdf9faacbac8acbbcfacbbcffae0effda7eae6e4acbbcfebe5e6eeacbbcfe8eaeae6fce7fda4fde8e2ece6ffecfba4ede8fde8a4eae6e7fafce4ecfba4e0e7fae0eee1fdfaa4e8e7eda4ece4ecfbeee0e7eea4fdfbece7edfaa4e0e7a4bbb9bbbaacbbcf)
 
 -   [Account Defense](https://sift.com/blog/category/account-defense/)
 -   [Account Takeover](https://sift.com/blog/category/ato/)
@@ -60,9 +60,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-consumer-insights-and-emerging-trends-in-2023%2F&title=Account%20takeover%20data%2C%20consumer%20insights%2C%20and%20emerging%20trends%20in%202023)
 -   [](https://twitter.com/intent/tweet?text=Account%20takeover%20data%2C%20consumer%20insights%2C%20and%20emerging%20trends%20in%202023&url=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-consumer-insights-and-emerging-trends-in-2023%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Faccount-takeover-data-consumer-insights-and-emerging-trends-in-2023%2F&picture=&title=Account%20takeover%20data%2C%20consumer%20insights%2C%20and%20emerging%20trends%20in%202023)
--   [](/cdn-cgi/l/email-protection#3c034f495e56595f48017d5f5f53495248190e0c485d5759534a594e190e0c585d485d190e7f190e0c5f53524f4951594e190e0c55524f555b54484f190e7f190e0c5d5258190e0c5951594e5b55525b190e0c484e5952584f190e0c5552190e0c0e0c0e0f1a1f0c0f04075e535845015448484c4f190f7d190e7a190e7a4f555a48125f5351190e7a5e50535b190e7a5d5f5f5349524811485d5759534a594e11585d485d115f53524f4951594e1155524f555b54484f115d5258115951594e5b55525b11484e5952584f115552110e0c0e0f190e7a)
+-   [](/cdn-cgi/l/email-protection#9da2eee8fff7f8fee9a0dcfefef2e8f3e9b8afade9fcf6f8f2ebf8efb8afadf9fce9fcb8afdeb8afadfef2f3eee8f0f8efb8afadf4f3eef4faf5e9eeb8afdeb8afadfcf3f9b8afadf8f0f8effaf4f3fab8afade9eff8f3f9eeb8afadf4f3b8afadafadafaebbbeadaea5a6fff2f9e4a0f5e9e9edeeb8aedcb8afdbb8afdbeef4fbe9b3fef2f0b8afdbfff1f2fab8afdbfcfefef2e8f3e9b0e9fcf6f8f2ebf8efb0f9fce9fcb0fef2f3eee8f0f8efb0f4f3eef4faf5e9eeb0fcf3f9b0f8f0f8effaf4f3fab0e9eff8f3f9eeb0f4f3b0afadafaeb8afdb)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -95,22 +111,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

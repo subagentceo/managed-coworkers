@@ -27,7 +27,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fpreventing-promo-bonus-and-multi-account-abuse-for-igaming%2F&title=A%20fortified%20approach%20to%20preventing%20promo%2C%20bonus%2C%20and%20other%20multi-account%20abuse%20for%20iGaming)
 -   [](https://twitter.com/intent/tweet?text=A%20fortified%20approach%20to%20preventing%20promo%2C%20bonus%2C%20and%20other%20multi-account%20abuse%20for%20iGaming&url=https%3A%2F%2Fsift.com%2Fblog%2Fpreventing-promo-bonus-and-multi-account-abuse-for-igaming%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fpreventing-promo-bonus-and-multi-account-abuse-for-igaming%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F01%2FVIP-Gaming_Blog_1454x1044-768x551-1.jpg&title=A%20fortified%20approach%20to%20preventing%20promo%2C%20bonus%2C%20and%20other%20multi-account%20abuse%20for%20iGaming)
--   [](/cdn-cgi/l/email-protection#7e410d0b1c141b1d0a433f5b4c4e18110c0a1718171b1a5b4c4e1f0e0e0c111f1d165b4c4e0a115b4c4e0e0c1b081b100a1710195b4c4e0e0c1113115b4c3d5b4c4e1c11100b0d5b4c3d5b4c4e1f101a5b4c4e110a161b0c5b4c4e130b120a17531f1d1d110b100a5b4c4e1f1c0b0d1b5b4c4e18110c5b4c4e17391f13171019585d4e4d46451c111a0743160a0a0e0d5b4d3f5b4c385b4c380d17180a501d11135b4c381c1211195b4c380e0c1b081b100a171019530e0c111311531c11100b0d531f101a53130b120a17531f1d1d110b100a531f1c0b0d1b5318110c5317191f131710195b4c38)
+-   [](/cdn-cgi/l/email-protection#90afe3e5f2faf5f3e4add1b5a2a0f6ffe2e4f9f6f9f5f4b5a2a0f1e0e0e2fff1f3f8b5a2a0e4ffb5a2a0e0e2f5e6f5fee4f9fef7b5a2a0e0e2fffdffb5a2d3b5a2a0f2fffee5e3b5a2d3b5a2a0f1fef4b5a2a0ffe4f8f5e2b5a2a0fde5fce4f9bdf1f3f3ffe5fee4b5a2a0f1f2e5e3f5b5a2a0f6ffe2b5a2a0f9d7f1fdf9fef7b6b3a0a3a8abf2fff4e9adf8e4e4e0e3b5a3d1b5a2d6b5a2d6e3f9f6e4bef3fffdb5a2d6f2fcfff7b5a2d6e0e2f5e6f5fee4f9fef7bde0e2fffdffbdf2fffee5e3bdf1fef4bdfde5fce4f9bdf1f3f3ffe5fee4bdf1f2e5e3f5bdf6ffe2bdf9f7f1fdf9fef7b5a2d6)
 
 -   [Account Takeover](https://sift.com/blog/category/ato/)
 
@@ -79,9 +79,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fpreventing-promo-bonus-and-multi-account-abuse-for-igaming%2F&title=A%20fortified%20approach%20to%20preventing%20promo%2C%20bonus%2C%20and%20other%20multi-account%20abuse%20for%20iGaming)
 -   [](https://twitter.com/intent/tweet?text=A%20fortified%20approach%20to%20preventing%20promo%2C%20bonus%2C%20and%20other%20multi-account%20abuse%20for%20iGaming&url=https%3A%2F%2Fsift.com%2Fblog%2Fpreventing-promo-bonus-and-multi-account-abuse-for-igaming%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fpreventing-promo-bonus-and-multi-account-abuse-for-igaming%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F01%2FVIP-Gaming_Blog_1454x1044-768x551-1.jpg&title=A%20fortified%20approach%20to%20preventing%20promo%2C%20bonus%2C%20and%20other%20multi-account%20abuse%20for%20iGaming)
--   [](/cdn-cgi/l/email-protection#18276b6d7a727d7b6c25593d2a287e776a6c717e717d7c3d2a287968686a77797b703d2a286c773d2a28686a7d6e7d766c71767f3d2a28686a7775773d2a5b3d2a287a77766d6b3d2a5b3d2a2879767c3d2a28776c707d6a3d2a28756d746c7135797b7b776d766c3d2a28797a6d6b7d3d2a287e776a3d2a28715f797571767f3e3b282b20237a777c6125706c6c686b3d2b593d2a5e3d2a5e6b717e6c367b77753d2a5e7a74777f3d2a5e686a7d6e7d766c71767f35686a777577357a77766d6b3579767c35756d746c7135797b7b776d766c35797a6d6b7d357e776a35717f797571767f3d2a5e)
+-   [](/cdn-cgi/l/email-protection#ecd39f998e86898f98d1adc9dedc8a839e98858a858988c9dedc8d9c9c9e838d8f84c9dedc9883c9dedc9c9e899a89829885828bc9dedc9c9e838183c9deafc9dedc8e8382999fc9deafc9dedc8d8288c9dedc839884899ec9dedc8199809885c18d8f8f83998298c9dedc8d8e999f89c9dedc8a839ec9dedc85ab8d8185828bcacfdcdfd4d78e838895d18498989c9fc9dfadc9deaac9deaa9f858a98c28f8381c9deaa8e80838bc9deaa9c9e899a89829885828bc19c9e838183c18e8382999fc18d8288c18199809885c18d8f8f83998298c18d8e999f89c18a839ec1858b8d8185828bc9deaa)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -114,22 +130,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

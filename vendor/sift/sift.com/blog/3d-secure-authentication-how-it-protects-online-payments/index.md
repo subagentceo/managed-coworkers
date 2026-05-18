@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Feu%2F3d-secure-authentication-how-it-protects-online-payments%2F&title=3D%20Secure%20Authentication%3A%20How%20It%20Protects%20Online%20Payments)
 -   [](https://twitter.com/intent/tweet?text=3D%20Secure%20Authentication%3A%20How%20It%20Protects%20Online%20Payments&url=https%3A%2F%2Fsift.com%2Fblog%2Feu%2F3d-secure-authentication-how-it-protects-online-payments%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Feu%2F3d-secure-authentication-how-it-protects-online-payments%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F02%2FQ4_Blog-_-How-to-Stop-Payment-Fraud.jpg&title=3D%20Secure%20Authentication%3A%20How%20It%20Protects%20Online%20Payments)
--   [](/cdn-cgi/l/email-protection#5b64282e39313e382f66681f7e696b083e382e293e7e696b1a2e2f333e352f32383a2f3234357e681a7e696b13342c7e696b122f7e696b0b29342f3e382f287e696b14353732353e7e696b0b3a22363e352f287d786b68636039343f2266332f2f2b287e681a7e691d7e691d28323d2f753834367e691d3937343c7e691d3e2e7e691d683f76283e382e293e763a2e2f333e352f32383a2f3234357633342c76322f762b29342f3e382f287634353732353e762b3a22363e352f287e691d)
+-   [](/cdn-cgi/l/email-protection#dfe0acaabdb5babcabe2ec9bfaedef8cbabcaaadbafaedef9eaaabb7bab1abb6bcbeabb6b0b1faec9efaedef97b0a8faedef96abfaedef8fadb0abbabcabacfaedef90b1b3b6b1bafaedef8fbea6b2bab1abacf9fcefece7e4bdb0bba6e2b7ababafacfaec9efaed99faed99acb6b9abf1bcb0b2faed99bdb3b0b8faed99baaafaed99ecbbf2acbabcaaadbaf2beaaabb7bab1abb6bcbeabb6b0b1f2b7b0a8f2b6abf2afadb0abbabcabacf2b0b1b3b6b1baf2afbea6b2bab1abacfaed99)
 
 -   [Payment Fraud](https://sift.com/blog/category/payment-fraud/)
 
@@ -193,9 +193,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Feu%2F3d-secure-authentication-how-it-protects-online-payments%2F&title=3D%20Secure%20Authentication%3A%20How%20It%20Protects%20Online%20Payments)
 -   [](https://twitter.com/intent/tweet?text=3D%20Secure%20Authentication%3A%20How%20It%20Protects%20Online%20Payments&url=https%3A%2F%2Fsift.com%2Fblog%2Feu%2F3d-secure-authentication-how-it-protects-online-payments%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Feu%2F3d-secure-authentication-how-it-protects-online-payments%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F02%2FQ4_Blog-_-How-to-Stop-Payment-Fraud.jpg&title=3D%20Secure%20Authentication%3A%20How%20It%20Protects%20Online%20Payments)
--   [](/cdn-cgi/l/email-protection#27185452454d4244531a14630215177442445255420215176652534f4249534e4446534e48490214660215176f48500215176e53021517775548534244535402151768494b4e494202151777465e4a42495354010417141f1c4548435e1a4f53535754021466021561021561544e41530944484a021561454b4840021561425202156114430a5442445255420a4652534f4249534e4446534e48490a4f48500a4e530a57554853424453540a48494b4e49420a57465e4a42495354021561)
+-   [](/cdn-cgi/l/email-protection#3c034f495e56595f48010f78190e0c6f595f494e59190e0c7d494854595248555f5d48555352190f7d190e0c74534b190e0c7548190e0c6c4e5348595f484f190e0c735250555259190e0c6c5d45515952484f1a1f0c0f04075e535845015448484c4f190f7d190e7a190e7a4f555a48125f5351190e7a5e50535b190e7a5949190e7a0f58114f595f494e59115d494854595248555f5d485553521154534b115548114c4e5348595f484f11535250555259114c5d45515952484f190e7a)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -228,22 +244,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

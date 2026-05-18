@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F5-trends-redefining-fraud%2F&title=5%20Trends%20Redefining%20Fraud)
 -   [](https://twitter.com/intent/tweet?text=5%20Trends%20Redefining%20Fraud&url=https%3A%2F%2Fsift.com%2Fblog%2F5-trends-redefining-fraud%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-trends-redefining-fraud%2F&picture=&title=5%20Trends%20Redefining%20Fraud)
--   [](/cdn-cgi/l/email-protection#fdc28e889f97989e89c0c8d8cfcda98f9893998ed8cfcdaf9899989b949394939ad8cfcdbb8f9c8899dbdecdcec5c69f929984c09589898d8ed8cebcd8cfbbd8cfbb8e949b89d39e9290d8cfbb9f91929ad8cfbbc8d0898f9893998ed08f9899989b949394939ad09b8f9c8899d8cfbb)
+-   [](/cdn-cgi/l/email-protection#18276b6d7a727d7b6c252d3d2a284c6a7d767c6b3d2a284a7d7c7d7e717671767f3d2a285e6a796d7c3e3b282b20237a777c6125706c6c686b3d2b593d2a5e3d2a5e6b717e6c367b77753d2a5e7a74777f3d2a5e2d356c6a7d767c6b356a7d7c7d7e717671767f357e6a796d7c3d2a5e)
 
 -   [Fraud](https://sift.com/blog/category/fraud/)
 
@@ -58,9 +58,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F5-trends-redefining-fraud%2F&title=5%20Trends%20Redefining%20Fraud)
 -   [](https://twitter.com/intent/tweet?text=5%20Trends%20Redefining%20Fraud&url=https%3A%2F%2Fsift.com%2Fblog%2F5-trends-redefining-fraud%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-trends-redefining-fraud%2F&picture=&title=5%20Trends%20Redefining%20Fraud)
--   [](/cdn-cgi/l/email-protection#fcc38f899e96999f88c1c9d9cecca88e9992988fd9ceccae9998999a959295929bd9ceccba8e9d8998dadfcccfc4c79e939885c19488888c8fd9cfbdd9cebad9ceba8f959a88d29f9391d9ceba9e90939bd9cebac9d1888e9992988fd18e9998999a959295929bd19a8e9d8998d9ceba)
+-   [](/cdn-cgi/l/email-protection#89b6fafcebe3eceafdb4bcacbbb9ddfbece7edfaacbbb9dbecedecefe0e7e0e7eeacbbb9cffbe8fcedafaab9bab1b2ebe6edf0b4e1fdfdf9faacbac8acbbcfacbbcffae0effda7eae6e4acbbcfebe5e6eeacbbcfbca4fdfbece7edfaa4fbecedecefe0e7e0e7eea4effbe8fcedacbbcf)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -93,22 +109,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

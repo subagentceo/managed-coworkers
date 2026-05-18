@@ -28,8 +28,8 @@ Share post on:
 
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F&title=5%20iGaming%20Industry%20Shifts%20Redefining%20Player%20Profitability%20and%20Risk)
 -   [](https://twitter.com/intent/tweet?text=5%20iGaming%20Industry%20Shifts%20Redefining%20Player%20Profitability%20and%20Risk&url=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F)
--   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F12%2Figaming-blog-image.png&title=5%20iGaming%20Industry%20Shifts%20Redefining%20Player%20Profitability%20and%20Risk)
--   [](/cdn-cgi/l/email-protection#7a45090f18101f190e474f5f484a133d1b1713141d5f484a33141e0f090e08035f484a2912131c0e095f484a281f1e1f1c131413141d5f484a2a161b031f085f484a2a08151c130e1b181316130e035f484a1b141e5f484a281309115c594a49424118151e0347120e0e0a095f493b5f483c5f483c09131c0e541915175f483c1816151d5f483c4f57131d1b1713141d5713141e0f090e0803570912131c0e0957081f1e1f1c131413141d570a161b031f08570a08151c130e1b181316130e03571b141e57081309115f483c)
+-   [](https://m.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F)
+-   [](/cdn-cgi/l/email-protection#80bff3f5e2eae5e3f4bdb5a5b2b0e9c7e1ede9eee7a5b2b0c9eee4f5f3f4f2f9a5b2b0d3e8e9e6f4f3a5b2b0d2e5e4e5e6e9eee9eee7a5b2b0d0ece1f9e5f2a5b2b0d0f2efe6e9f4e1e2e9ece9f4f9a5b2b0e1eee4a5b2b0d2e9f3eba6a3b0b3b8bbe2efe4f9bde8f4f4f0f3a5b3c1a5b2c6a5b2c6f3e9e6f4aee3efeda5b2c6e2ecefe7a5b2c6b5ade9e7e1ede9eee7ade9eee4f5f3f4f2f9adf3e8e9e6f4f3adf2e5e4e5e6e9eee9eee7adf0ece1f9e5f2adf0f2efe6e9f4e1e2e9ece9f4f9ade1eee4adf2e9f3eba5b2c6)
 
 -   [Fraud](https://sift.com/blog/category/fraud/)
 
@@ -101,10 +101,26 @@ Share post on:
 
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F&title=5%20iGaming%20Industry%20Shifts%20Redefining%20Player%20Profitability%20and%20Risk)
 -   [](https://twitter.com/intent/tweet?text=5%20iGaming%20Industry%20Shifts%20Redefining%20Player%20Profitability%20and%20Risk&url=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F)
--   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2025%2F12%2Figaming-blog-image.png&title=5%20iGaming%20Industry%20Shifts%20Redefining%20Player%20Profitability%20and%20Risk)
--   [](/cdn-cgi/l/email-protection#b986caccdbd3dcdacd848c9c8b89d0fed8d4d0d7de9c8b89f0d7ddcccacdcbc09c8b89ead1d0dfcdca9c8b89ebdcdddcdfd0d7d0d7de9c8b89e9d5d8c0dccb9c8b89e9cbd6dfd0cdd8dbd0d5d0cdc09c8b89d8d7dd9c8b89ebd0cad29f9a898a8182dbd6ddc084d1cdcdc9ca9c8af89c8bff9c8bffcad0dfcd97dad6d49c8bffdbd5d6de9c8bff8c94d0ded8d4d0d7de94d0d7ddcccacdcbc094cad1d0dfcdca94cbdcdddcdfd0d7d0d7de94c9d5d8c0dccb94c9cbd6dfd0cdd8dbd0d5d0cdc094d8d7dd94cbd0cad29c8bff)
+-   [](https://m.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F5-igaming-industry-shifts-redefining-player-profitability-and-risk%2F)
+-   [](/cdn-cgi/l/email-protection#615e1214030b0402155c544453510826000c080f06445351280f0514121513184453513209080715124453513304050407080f080f06445351310d0018041344535131130e0708150003080d081518445351000f054453513308120a47425152595a030e05185c0915151112445220445327445327120807154f020e0c445327030d0e06445327544c0806000c080f064c080f0514121513184c1209080715124c1304050407080f080f064c110d001804134c11130e0708150003080d0815184c000f054c1308120a445327)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -137,22 +153,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

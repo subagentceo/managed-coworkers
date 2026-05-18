@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-bdr-sift-science%2F&title=A%20Day%20in%20the%20Life%20of%20a%20Business%20Development%20Representative%20at%20Sift%20Science)
 -   [](https://twitter.com/intent/tweet?text=A%20Day%20in%20the%20Life%20of%20a%20Business%20Development%20Representative%20at%20Sift%20Science&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-bdr-sift-science%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-bdr-sift-science%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FImage-from-iOS-1-scaled.jpg&title=A%20Day%20in%20the%20Life%20of%20a%20Business%20Development%20Representative%20at%20Sift%20Science)
--   [](/cdn-cgi/l/email-protection#aa95d9dfc8c0cfc9de97eb8f989aeecbd38f989ac3c48f989adec2cf8f989ae6c3cccf8f989ac5cc8f989acb8f989ae8dfd9c3c4cfd9d98f989aeecfdccfc6c5dac7cfc4de8f989af8cfdad8cfd9cfc4decbdec3dccf8f989acbde8f989af9c3ccde8f989af9c9c3cfc4c9cf8c899a999291c8c5ced397c2dededad98f99eb8f98ec8f98ecd9c3ccde84c9c5c78f98ecc8c6c5cd8f98eccecbd387c6c3cccf87c8ced887d9c3ccde87d9c9c3cfc4c9cf8f98ec)
+-   [](/cdn-cgi/l/email-protection#0e317d7b6c646b6d7a334f2b3c3e4a6f772b3c3e67602b3c3e7a666b2b3c3e4267686b2b3c3e61682b3c3e6f2b3c3e4c7b7d67606b7d7d2b3c3e4a6b786b62617e636b607a2b3c3e5c6b7e7c6b7d6b607a6f7a67786b2b3c3e6f7a2b3c3e5d67687a2b3c3e5d6d676b606d6b282d3e3d36356c616a7733667a7a7e7d2b3d4f2b3c482b3c487d67687a206d61632b3c486c6261692b3c486a6f77236267686b236c6a7c237d67687a237d6d676b606d6b2b3c48)
 
 -   [Company](https://sift.com/blog/category/company/)
 
@@ -96,9 +96,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-bdr-sift-science%2F&title=A%20Day%20in%20the%20Life%20of%20a%20Business%20Development%20Representative%20at%20Sift%20Science)
 -   [](https://twitter.com/intent/tweet?text=A%20Day%20in%20the%20Life%20of%20a%20Business%20Development%20Representative%20at%20Sift%20Science&url=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-bdr-sift-science%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2Fday-life-bdr-sift-science%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FImage-from-iOS-1-scaled.jpg&title=A%20Day%20in%20the%20Life%20of%20a%20Business%20Development%20Representative%20at%20Sift%20Science)
--   [](/cdn-cgi/l/email-protection#e1de9294838b848295dca0c4d3d1a58098c4d3d1888fc4d3d1958984c4d3d1ad888784c4d3d18e87c4d3d180c4d3d1a39492888f849292c4d3d1a58497848d8e918c848f95c4d3d1b38491938492848f958095889784c4d3d18095c4d3d1b2888795c4d3d1b28288848f8284c7c2d1d2d9da838e8598dc8995959192c4d2a0c4d3a7c4d3a792888795cf828e8cc4d3a7838d8e86c4d3a7858098cc8d888784cc838593cc92888795cc928288848f8284c4d3a7)
+-   [](/cdn-cgi/l/email-protection#dde2aea8bfb7b8bea9e09cf8efed99bca4f8efedb4b3f8efeda9b5b8f8efed91b4bbb8f8efedb2bbf8efedbcf8efed9fa8aeb4b3b8aeaef8efed99b8abb8b1b2adb0b8b3a9f8efed8fb8adafb8aeb8b3a9bca9b4abb8f8efedbca9f8efed8eb4bba9f8efed8ebeb4b8b3beb8fbfeedeee5e6bfb2b9a4e0b5a9a9adaef8ee9cf8ef9bf8ef9baeb4bba9f3beb2b0f8ef9bbfb1b2baf8ef9bb9bca4f0b1b4bbb8f0bfb9aff0aeb4bba9f0aebeb4b8b3beb8f8ef9b)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -131,22 +147,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

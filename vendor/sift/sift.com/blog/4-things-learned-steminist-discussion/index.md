@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F4-things-learned-steminist-discussion%2F&title=4%20Things%20We%20Learned%20at%20Our%20STEMinist%20Discussion)
 -   [](https://twitter.com/intent/tweet?text=4%20Things%20We%20Learned%20at%20Our%20STEMinist%20Discussion&url=https%3A%2F%2Fsift.com%2Fblog%2F4-things-learned-steminist-discussion%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F4-things-learned-steminist-discussion%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FImage-uploaded-from-iOS-24.jpg&title=4%20Things%20We%20Learned%20at%20Our%20STEMinist%20Discussion)
--   [](/cdn-cgi/l/email-protection#f4cb8781969e919780c9c0d1c6c4a09c9d9a9387d1c6c4a391d1c6c4b89195869a9190d1c6c49580d1c6c4bb8186d1c6c4a7a0b1b99d9a9d8780d1c6c4b09d87978187879d9b9ad2d7c4c7cccf969b908dc99c80808487d1c7b5d1c6b2d1c6b2879d9280da979b99d1c6b296989b93d1c6b2c0d9809c9d9a9387d9989195869a9190d9878091999d9a9d8780d9909d87978187879d9b9ad1c6b2)
+-   [](/cdn-cgi/l/email-protection#350a4640575f5056410801100705615d5c5b52461007056250100705795054475b505110070554411007057a4047100705666170785c5b5c4641100705715c46564046465c5a5b131605060d0e575a514c085d41414546100674100773100773465c53411b565a5810077357595a521007730118415d5c5b524618595054475b505118464150585c5b5c464118515c46564046465c5a5b100773)
 
 -   [Company](https://sift.com/blog/category/company/)
 
@@ -67,16 +67,32 @@ Helpful tips: There’s no right choice! Depending on where you are in your care
 
 Helpful tips: Avoid politics in the workplace by giving credit where credit is due, being generous with your praise, and not assuming the worst of your colleagues. Don’t put yourself (or your team) before what’s best for the company; do what’s best for all of you. Approach colleagues with curiosity and respect — don’t assume someone’s intentions are necessarily political.
 
-Stay tuned for future events, and if you have ideas of what you would want to discuss and hear more about in the future, reach out to us directly at [\[email protected\]](/cdn-cgi/l/email-protection#4c21292938393c0c3f252a383f2f2529222f29622f2321)!
+Stay tuned for future events, and if you have ideas of what you would want to discuss and hear more about in the future, reach out to us directly at [\[email protected\]](/cdn-cgi/l/email-protection#96fbf3f3e2e3e6d6e5fff0e2e5f5fff3f8f5f3b8f5f9fb)!
 
 Share post on:
 
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F4-things-learned-steminist-discussion%2F&title=4%20Things%20We%20Learned%20at%20Our%20STEMinist%20Discussion)
 -   [](https://twitter.com/intent/tweet?text=4%20Things%20We%20Learned%20at%20Our%20STEMinist%20Discussion&url=https%3A%2F%2Fsift.com%2Fblog%2F4-things-learned-steminist-discussion%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F4-things-learned-steminist-discussion%2F&picture=https%3A%2F%2Fsift.com%2Fwp-content%2Fuploads%2F2024%2F02%2FImage-uploaded-from-iOS-24.jpg&title=4%20Things%20We%20Learned%20at%20Our%20STEMinist%20Discussion)
--   [](/cdn-cgi/l/email-protection#ae91dddbccc4cbcdda939a8b9c9efac6c7c0c9dd8b9c9ef9cb8b9c9ee2cbcfdcc0cbca8b9c9ecfda8b9c9ee1dbdc8b9c9efdfaebe3c7c0c7ddda8b9c9eeac7ddcddbddddc7c1c0888d9e9d9695ccc1cad793c6dadadedd8b9def8b9ce88b9ce8ddc7c8da80cdc1c38b9ce8ccc2c1c98b9ce89a83dac6c7c0c9dd83c2cbcfdcc0cbca83dddacbc3c7c0c7ddda83cac7ddcddbddddc7c1c08b9ce8)
+-   [](/cdn-cgi/l/email-protection#300f4345525a5553440d041502006458595e574315020067551502007c5551425e555415020051441502007f45421502006364757d595e59434415020074594353454343595f5e16130003080b525f54490d5844444043150371150276150276435956441e535f5d150276525c5f57150276041d4458595e57431d5c5551425e55541d4344555d595e5943441d54594353454343595f5e150276)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -109,22 +125,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 

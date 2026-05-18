@@ -29,7 +29,7 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F10-warning-signs-of-ecommerce-fraud-part-4-money-money-money%2F&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%204%29%3A%20Money%2C%20Money%2C%20MONEY%21)
 -   [](https://twitter.com/intent/tweet?text=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%204%29%3A%20Money%2C%20Money%2C%20MONEY%21&url=https%3A%2F%2Fsift.com%2Fblog%2F10-warning-signs-of-ecommerce-fraud-part-4-money-money-money%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F10-warning-signs-of-ecommerce-fraud-part-4-money-money-money%2F&picture=&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%204%29%3A%20Money%2C%20Money%2C%20MONEY%21)
--   [](/cdn-cgi/l/email-protection#0f307c7a6d656a6c7b323e3f2a3d3f586e7d616661682a3d3f5c6668617c2a3d3f60692a3d3f6a4c6062626a7d6c6a2a3d3f497d6e7a6b2a3d3f2a3d375f6e7d7b2a3d3f3b2a3d362a3c4e2a3d3f4260616a762a3d4c2a3d3f4260616a762a3d4c2a3d3f4240414a562a3d3e292c3f3c37346d606b7632677b7b7f7c2a3c4e2a3d492a3d497c66697b216c60622a3d496d6360682a3d493e3f22786e7d61666168227c6668617c226069226a6c6062626a7d6c6a22697d6e7a6b227f6e7d7b223b226260616a76226260616a76226260616a762a3d49)
+-   [](/cdn-cgi/l/email-protection#a798d4d2c5cdc2c4d39a9697829597f0c6d5c9cec9c0829597f4cec0c9d4829597c8c1829597c2e4c8cacac2d5c4c2829597e1d5c6d2c382959782959ff7c6d5d38295979382959e8294e6829597eac8c9c2de8295e4829597eac8c9c2de8295e4829597eae8e9e2fe829596818497949f9cc5c8c3de9acfd3d3d7d48294e68295e18295e1d4cec1d389c4c8ca8295e1c5cbc8c08295e196978ad0c6d5c9cec9c08ad4cec0c9d48ac8c18ac2c4c8cacac2d5c4c28ac1d5c6d2c38ad7c6d5d38a938acac8c9c2de8acac8c9c2de8acac8c9c2de8295e1)
 
 -   [Fraud](https://sift.com/blog/category/fraud/)
 
@@ -76,9 +76,25 @@ Share post on:
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsift.com%2Fblog%2F10-warning-signs-of-ecommerce-fraud-part-4-money-money-money%2F&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%204%29%3A%20Money%2C%20Money%2C%20MONEY%21)
 -   [](https://twitter.com/intent/tweet?text=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%204%29%3A%20Money%2C%20Money%2C%20MONEY%21&url=https%3A%2F%2Fsift.com%2Fblog%2F10-warning-signs-of-ecommerce-fraud-part-4-money-money-money%2F)
 -   [](https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsift.com%2Fblog%2F10-warning-signs-of-ecommerce-fraud-part-4-money-money-money%2F&picture=&title=10%20Warning%20Signs%20of%20eCommerce%20Fraud%20%28Part%204%29%3A%20Money%2C%20Money%2C%20MONEY%21)
--   [](/cdn-cgi/l/email-protection#556a2620373f3036216864657067650234273b3c3b32706765063c323b267067653a3370676530163a383830273630706765132734203170676570676d053427217067656170676c706614706765183a3b302c706716706765183a3b302c706716706765181a1b100c706764737665666d6e373a312c683d21212526706614706713706713263c33217b363a3870671337393a327067136465782234273b3c3b3278263c323b26783a337830363a3838302736307833273420317825342721786178383a3b302c78383a3b302c78383a3b302c706713)
+-   [](/cdn-cgi/l/email-protection#6b54181e09010e081f565a5b4e595b3c0a190502050c4e595b38020c05184e595b040d4e595b0e280406060e19080e4e595b2d190a1e0f4e595b4e59533b0a191f4e595b5f4e59524e582a4e595b2604050e124e59284e595b2604050e124e59284e595b2624252e324e595a4d485b58535009040f1256031f1f1b184e582a4e592d4e592d18020d1f450804064e592d0907040c4e592d5a5b461c0a190502050c4618020c051846040d460e080406060e19080e460d190a1e0f461b0a191f465f460604050e12460604050e12460604050e124e592d)
 
 ## You may also like
+
+[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+-   [Fraud](https://sift.com/blog/category/fraud/)
+
+### [What Fraud Leaders Need to Build and Scale a Modern Fraud Organization](https://sift.com/blog/what-fraud-leaders-need-to-build-and-scale-a-modern-fraud-organization/)
+
+[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
+
+May 18, 2026
+
+![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
+
+7 min read
 
 [![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/how-sift-helps-businesses-get-the-fraud-out/)
 
@@ -111,22 +127,6 @@ Apr 20, 2026
 ![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
 
 7 min read
-
-[![blog image](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E)](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
--   [Data & Insights](https://sift.com/blog/category/data-insights/)
-
-### [The Fraud Landscape Has Shifted—But Not Where You’d Expect](https://sift.com/blog/the-fraud-landscape-has-shifted-but-not-where-youd-expect/)
-
-[![dummy user](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20434'%3E%3C/svg%3E)](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-[Sift Trust and Safety Team](https://sift.com/blog/author/sift-trust-and-safety-team/)
-
-Mar 31, 2026
-
-![black-dot](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20%20'%3E%3C/svg%3E)
-
-4 min read
 
 ## Dare to grow differently.
 
