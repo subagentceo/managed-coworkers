@@ -57,12 +57,6 @@ Anthropic models include a cache write cost in addition to cached input.
 
 [^6]: Gemini 3 Flash has no long-context surcharge.
 
-### xAI
-
-| Model | Release status | Category | Input | Cached input | Output |
-| ----- | -------------- | -------- | ----: | -----------: | -----: |
-|       |                |          |       |              |        |
-
 ### Fine-tuned (GitHub)
 
 | Model | Release status | Category | Input | Cached input | Output |
