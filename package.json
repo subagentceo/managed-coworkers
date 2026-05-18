@@ -9,7 +9,8 @@
     "build": "tsc",
     "clean": "rm -rf dist node_modules",
     "crawl:vendors": "tsx scripts/crawl-vendors.ts",
-    "crawl:vendor": "tsx scripts/crawl-vendors.ts --vendor"
+    "crawl:vendor": "tsx scripts/crawl-vendors.ts --vendor",
+    "smoke:data-plane": "tsx scripts/smoke/data-plane.ts"
   },
   "author": "SubAgent CEO",
   "license": "MIT",
