@@ -25,6 +25,10 @@ Creating a branch does not increase load on the parent branch or affect it in an
 
 Each Neon project is created with a [root branch](https://neon.com/docs/reference/glossary#root-branch) called `main`. The first branch that you create is branched from the project's root branch. Subsequent branches can be branched from the root branch or from a previously created branch.
 
+**Tip: Using Neon Auth?**
+
+Users, sessions, and auth configuration in the `neon_auth` schema branch with your data, so preview and test environments get isolated authentication state. See [Neon Auth](https://neon.com/docs/auth/overview) and [Branching authentication](https://neon.com/docs/auth/branching-authentication).
+
 ## Branching workflows
 
 You can use Neon's branching feature in variety workflows.
