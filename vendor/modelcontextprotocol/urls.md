@@ -1,7 +1,7 @@
 ---
 vendor: modelcontextprotocol
 llms_txt: https://modelcontextprotocol.io/llms.txt
-last_crawled: 2026-05-15T03:29:05.025Z
+last_crawled: 2026-05-18T22:26:30.177Z
 count: 60
 transform: append-md
 ---
@@ -53,6 +53,7 @@ transform: append-md
 | https://modelcontextprotocol.io/extensions/auth/overview.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/extensions/auth/overview.md` |
 | https://modelcontextprotocol.io/extensions/client-matrix.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/extensions/client-matrix.md` |
 | https://modelcontextprotocol.io/extensions/overview.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/extensions/overview.md` |
+| https://modelcontextprotocol.io/extensions/tasks/overview.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/extensions/tasks/overview.md` |
 | https://modelcontextprotocol.io/registry/about.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/registry/about.md` |
 | https://modelcontextprotocol.io/registry/authentication.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/registry/authentication.md` |
 | https://modelcontextprotocol.io/registry/faq.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/registry/faq.md` |
@@ -69,4 +70,3 @@ transform: append-md
 | https://modelcontextprotocol.io/seps/1036-url-mode-elicitation-for-secure-out-of-band-intera.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/seps/1036-url-mode-elicitation-for-secure-out-of-band-intera.md` |
 | https://modelcontextprotocol.io/seps/1046-support-oauth-client-credentials-flow-in-authoriza.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/seps/1046-support-oauth-client-credentials-flow-in-authoriza.md` |
 | https://modelcontextprotocol.io/seps/1302-formalize-working-groups-and-interest-groups-in-mc.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/seps/1302-formalize-working-groups-and-interest-groups-in-mc.md` |
-| https://modelcontextprotocol.io/seps/1303-input-validation-errors-as-tool-execution-errors.md | `vendor/modelcontextprotocol/modelcontextprotocol.io/seps/1303-input-validation-errors-as-tool-execution-errors.md` |

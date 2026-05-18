@@ -736,6 +736,18 @@ This page showcases applications that support the Model Context Protocol (MCP). 
   * Works across a wide variety of GenAI models from top providers
 </McpClient>
 
+<McpClient name="GitHub Copilot CLI" homepage="https://github.com/features/copilot/cli/" supports="Tools, Discovery, Instructions, Sampling, Elicitation, DCR, OAuth Client Credentials, Tasks" instructions="https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-cli#add-an-mcp-server">
+  GitHub Copilot CLI runs a GitHub-native agent in your terminal that works directly with your issues and pull requests, executes across a `/fleet` of parallelized subagents, and carries you from `/plan` to merged code.
+
+  **Key features:**
+
+  * Work with issues, branches, and pull requests through GitHub's native `/mcp` server.
+  * Use `/model` and `/fleet` to execute in parallel or run multiple models at once.
+  * Start with a `/plan`, refine work in your `/IDE`, and ship a pull request on GitHub.
+  * Extend Copilot CLI with custom MCP server integrations, skills, and plugins.
+  * Runs on macOS, Linux, and Windows and inherits organization Copilot policies and governance settings.
+</McpClient>
+
 <McpClient name="GitHub Copilot coding agent" homepage="https://docs.github.com/en/copilot/concepts/about-copilot-coding-agent" supports="Tools, DCR">
   Delegate tasks to GitHub Copilot coding agent and let it work in the background while you stay focused on the highest-impact and most interesting work
 
