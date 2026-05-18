@@ -180,7 +180,7 @@ function loadConfig(vendor: string): CrawlConfig {
   return JSON.parse(readFileSync(path, "utf8")) as CrawlConfig;
 }
 
-function listVendorConfigs(): string[] {
+export function listVendorConfigs(): string[] {
   if (!existsSync(VENDOR_ROOT)) return [];
   return readdirSync(VENDOR_ROOT, { withFileTypes: true })
     .filter((e) => e.isDirectory() && existsSync(resolve(VENDOR_ROOT, e.name, "crawl.json")))

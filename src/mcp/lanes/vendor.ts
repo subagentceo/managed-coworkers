@@ -1,24 +1,24 @@
 /**
  * Bridge lane: vendor mirror.
  *
- * The 5th lane added in Phase 3. Reads from the local vendor/ mirror
- * (per Phase 2's commit) for instant offline access; falls back to
- * HTTP via bridge-utils.ts when a URL isn't yet mirrored.
- *
  * Tools:
- *   vendor_list   - list known vendors + per-vendor URL count + freshness
- *   vendor_fetch  - fetch a doc body. Local mirror first; HTTP fallback.
- *   vendor_grep   - case-insensitive line-grep across the local mirror.
+ *   vendor_list    - list known vendors + per-vendor URL count + freshness
+ *   vendor_fetch   - fetch a doc body. Local mirror first; HTTP fallback.
+ *   vendor_grep    - case-insensitive line-grep across the local mirror.
+ *   vendor_refresh - run Crawlee against {vendor}; return CrawlResult summary.
  *
- * Citations (in test files):
- *   @cite seeds/posture/session-start.xml
- *   @cite vendor/anthropics/code.claude.com/docs/en/commands.md
+ * vendor_refresh is the programmatic-tool-calling entrypoint per
+ * vendor/anthropics/anthropic-sitemap/engineering/code-execution-with-mcp.md:
+ * the whole crawl pipeline (discover → filter → preflight → crawl →
+ * transform → persist) runs inside one tool_use; the agent only sees the
+ * structured summary, not the per-page fetches.
  */
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { extname, resolve } from "node:path";
 import { z } from "zod";
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
+import { spawn } from "node:child_process";
 import { fetchText, jsonResult } from "../bridge-utils.js";
 import { loadVendorManifests, vendorRoot } from "../../lib/vendor-manifests.js";
 import { urlFor, vendorMirror } from "../../lib/vendor-mirror.js";
@@ -151,6 +151,37 @@ export function registerVendor(server: McpServer): void {
         }
       }
       return jsonResult({ pattern, hits: out });
+    }
+  );
+
+  server.tool(
+    "vendor_refresh",
+    "Refresh a vendor's local mirror by re-crawling its declared sources (llms.txt + html_index + sitemap_xml per vendor/<name>/crawl.json). Returns a structured summary of pages fetched/unchanged/failed. Programmatic-tool-calling shape: the per-URL fetch loop runs inside this one tool_use; only the summary enters context.",
+    {
+      vendor: z.string().min(1),
+      dry_run: z.boolean().default(false),
+    },
+    async ({ vendor, dry_run }) => {
+      const repoRoot = resolve(vendorRoot(), "..");
+      const args = ["scripts/crawl-vendors.ts", "--vendor", vendor];
+      if (dry_run) args.push("--dry-run");
+      return new Promise((resolveFn) => {
+        const child = spawn("node_modules/.bin/tsx", args, { cwd: repoRoot });
+        let stdout = "";
+        let stderr = "";
+        child.stdout.on("data", (d: Buffer) => { stdout += d.toString(); });
+        child.stderr.on("data", (d: Buffer) => { stderr += d.toString(); });
+        child.on("close", (code: number) => {
+          const summaryLine = stdout.split("\n").reverse().find((l) => l.includes(vendor) && (l.includes("ok") || l.includes("FAIL")));
+          resolveFn(jsonResult({
+            vendor,
+            exit_code: code,
+            summary: summaryLine?.trim() ?? "no summary line",
+            stdout_tail: stdout.split("\n").slice(-15).join("\n"),
+            stderr_tail: stderr.split("\n").slice(-5).join("\n"),
+          }));
+        });
+      });
     }
   );
 }
