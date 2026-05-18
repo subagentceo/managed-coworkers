@@ -450,6 +450,7 @@ Build, deploy, and scale serverless applications globally with low latency and m
 - [API](https://developers.cloudflare.com/workers/wrangler/api/index.md): A set of programmatic APIs that can be integrated with local Cloudflare Workers-related workflows.
 - [Bundling](https://developers.cloudflare.com/workers/wrangler/bundling/index.md): Review Wrangler's default bundling.
 - [Commands](https://developers.cloudflare.com/workers/wrangler/commands/index.md): Create, develop, and deploy your Cloudflare Workers with Wrangler commands.
+- [Artifacts](https://developers.cloudflare.com/workers/wrangler/commands/artifacts/index.md): Manage Artifacts namespaces, repositories, and repo-scoped tokens using Wrangler.
 - [Browser](https://developers.cloudflare.com/workers/wrangler/commands/browser/index.md): Wrangler commands for interacting with Cloudflare Browser Run.
 - [Certificates](https://developers.cloudflare.com/workers/wrangler/commands/certificates/index.md): Wrangler commands for managing mTLS and CA certificates, for use standalone or with Hyperdrive.
 - [Containers](https://developers.cloudflare.com/workers/wrangler/commands/containers/index.md): Wrangler commands for interacting with Cloudflare's Container Platform.

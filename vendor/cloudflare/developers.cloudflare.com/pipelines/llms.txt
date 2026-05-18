@@ -45,6 +45,7 @@ Ingest real time data streams and load into R2
 ## reference
 
 - [Legacy pipelines](https://developers.cloudflare.com/pipelines/reference/legacy-pipelines/index.md): Migration guide for pipelines created before September 2025 to the new Pipelines architecture.
+- [REST API](https://developers.cloudflare.com/api/resources/pipelines/index.md)
 - [Terraform](https://developers.cloudflare.com/pipelines/reference/terraform/index.md): Configure Pipelines and R2 Data Catalog with Terraform using the Cloudflare provider.
 - [Wrangler commands](https://developers.cloudflare.com/pipelines/reference/wrangler-commands/index.md): Wrangler CLI commands for managing Pipelines streams, sinks, and pipelines.
 

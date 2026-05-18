@@ -62,7 +62,6 @@ Style guide to follow for contributing to Cloudflare docs.
 - [TypeScript example](https://developers.cloudflare.com/style-guide/components/typescript-example/index.md): Show TypeScript and auto-transpiled JavaScript tabs.
 - [Usage](https://developers.cloudflare.com/style-guide/components/usage/index.md): Guidelines for using components in documentation.
 - [Width](https://developers.cloudflare.com/style-guide/components/width/index.md): Constrain content width for layout control.
-- [WranglerCLI](https://developers.cloudflare.com/style-guide/components/wrangler-cli/index.md): Display Wrangler CLI command documentation.
 - [WranglerCommand](https://developers.cloudflare.com/style-guide/components/wrangler-command/index.md): Display a single Wrangler command with details.
 - [WranglerConfig](https://developers.cloudflare.com/style-guide/components/wrangler-config/index.md): Display Wrangler config in TOML and JSON tabs.
 - [WranglerNamespace](https://developers.cloudflare.com/style-guide/components/wrangler-namespace/index.md): Display Wrangler command namespace documentation.
