@@ -7,7 +7,7 @@ Nov 21, 2023
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa03806b9e2428cb5ac0575110aa0918bfcf417c2-2880x1620.png&w=3840&q=75)
 
   
-Our latest model, Claude 2.1, is now available over API in our Console and is powering our [claude.ai](https://claude.ai/redirect/website.v1.69d663a0-4d88-4d44-aa08-5b9dc41b4eb0) chat experience. Claude 2.1 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and our new beta feature: tool use. We are also updating our [pricing](https://www-cdn.anthropic.com/1b1ea2c43d8dd058f6a331a8097e05ea40d626c6/model_pricing_nov2023.pdf) to improve cost efficiency for our customers across models.  
+Our latest model, Claude 2.1, is now available over API in our Console and is powering our [claude.ai](https://claude.ai/redirect/website.v1.b1e91954-cb9c-4711-8653-65844b570815) chat experience. Claude 2.1 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and our new beta feature: tool use. We are also updating our [pricing](https://www-cdn.anthropic.com/1b1ea2c43d8dd058f6a331a8097e05ea40d626c6/model_pricing_nov2023.pdf) to improve cost efficiency for our customers across models.  
   
 **200K Context Window**  
   
@@ -55,11 +55,17 @@ We’ve been working to simplify our developer Console experience for Claude API
 
 We’re also introducing [system prompts](https://docs.anthropic.com/claude/docs/how-to-use-system-prompts), which allow users to provide custom instructions to Claude in order to improve performance. System prompts set helpful context that enhances Claude’s ability to take on specified personalities and roles or structure responses in a more customizable, consistent way aligned with user needs.
 
-[Claude 2.1](https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf) is available now in our API, and is also powering our chat interface at [claude.ai](https://claude.ai/redirect/website.v1.69d663a0-4d88-4d44-aa08-5b9dc41b4eb0) for both the free and Pro tiers. Usage of the 200K token context window is reserved for Claude Pro users, who can now upload larger files than ever before. We can't wait to see the use cases these new features inspire as we work to build the safest and most technically sophisticated AI systems in the industry.
+[Claude 2.1](https://www-cdn.anthropic.com/5c49cc247484cecf107c699baf29250302e5da70/ModelCardClaudev2_with_appendix_v1.pdf) is available now in our API, and is also powering our chat interface at [claude.ai](https://claude.ai/redirect/website.v1.b1e91954-cb9c-4711-8653-65844b570815) for both the free and Pro tiers. Usage of the 200K token context window is reserved for Claude Pro users, who can now upload larger files than ever before. We can't wait to see the use cases these new features inspire as we work to build the safest and most technically sophisticated AI systems in the industry.
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/claude-2-1)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/claude-2-1)
 
 ## Related content
+
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
 
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
@@ -70,9 +76,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

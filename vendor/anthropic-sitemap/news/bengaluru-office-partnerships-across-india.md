@@ -6,7 +6,7 @@ Feb 16, 2026
 
 ![Anthropic opens Bengaluru office and announces new partnerships across India     ](https://www-cdn.anthropic.com/images/4zrzovbb/website/ffc0d7957a232518519f13c0d64896921ea215e2-1000x1000.svg)
 
-India is the second-largest market for [Claude.ai](http://claude.ai/redirect/website.v1.1457497c-df2f-450a-a84b-f78d6a4d2d60), home to a developer community doing some of the most technically intense AI work we see anywhere. [Nearly half of Claude usage](https://www.anthropic.com/research/india-brief-economic-index) in India comprises computer and mathematical tasks: building applications, modernizing systems, and shipping production software.
+India is the second-largest market for [Claude.ai](http://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099), home to a developer community doing some of the most technically intense AI work we see anywhere. [Nearly half of Claude usage](https://www.anthropic.com/research/india-brief-economic-index) in India comprises computer and mathematical tasks: building applications, modernizing systems, and shipping production software.
 
 Today, as we officially open our Bengaluru office, we’re announcing partnerships across enterprise, education, and agriculture that deepen our commitment to India across a range of sectors.
 
@@ -58,6 +58,12 @@ For information about career opportunities at our Bengaluru office, visit our [c
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -67,9 +73,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

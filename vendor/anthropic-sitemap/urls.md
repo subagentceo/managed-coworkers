@@ -1,8 +1,8 @@
 ---
 vendor: anthropic-sitemap
 llms_txt: 
-last_crawled: 2026-05-16T06:19:05.584Z
-count: 369
+last_crawled: 2026-05-18T22:31:52.447Z
+count: 370
 transform: html-extract
 ---
 
@@ -59,6 +59,7 @@ transform: html-extract
 | https://www.anthropic.com/news/anthropic-accenture-partnership | `vendor/anthropic-sitemap/news/anthropic-accenture-partnership.md` |
 | https://www.anthropic.com/news/anthropic-achieves-iso-42001-certification-for-responsible-ai | `vendor/anthropic-sitemap/news/anthropic-achieves-iso-42001-certification-for-responsible-ai.md` |
 | https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone | `vendor/anthropic-sitemap/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone.md` |
+| https://www.anthropic.com/news/anthropic-acquires-stainless | `vendor/anthropic-sitemap/news/anthropic-acquires-stainless.md` |
 | https://www.anthropic.com/news/anthropic-amazon | `vendor/anthropic-sitemap/news/anthropic-amazon.md` |
 | https://www.anthropic.com/news/anthropic-amazon-compute | `vendor/anthropic-sitemap/news/anthropic-amazon-compute.md` |
 | https://www.anthropic.com/news/anthropic-amazon-trainium | `vendor/anthropic-sitemap/news/anthropic-amazon-trainium.md` |

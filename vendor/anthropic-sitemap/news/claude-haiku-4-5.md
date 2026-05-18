@@ -12,7 +12,7 @@ What was recently at the frontier is now cheaper and faster. Five months ago, Cl
 
 ![Chart comparing frontier models on SWE-bench Verified which measures performance on real-world coding tasks](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1a27d7a85f953c5a0577dc19b507d6e1b93444d5-1920x1080.png&w=3840&q=75)
 
-Claude Haiku 4.5 even surpasses Claude Sonnet 4 at certain tasks, like using computers. These advances make applications like [Claude for Chrome](http://claude.ai/redirect/website.v1.1457497c-df2f-450a-a84b-f78d6a4d2d60/chrome) faster and more useful than ever before.
+Claude Haiku 4.5 even surpasses Claude Sonnet 4 at certain tasks, like using computers. These advances make applications like [Claude for Chrome](http://claude.ai/redirect/website.v1.b1e91954-cb9c-4711-8653-65844b570815/chrome) faster and more useful than ever before.
 
 Users who rely on AI for real-time, low-latency tasks like chat assistants, customer service agents, or pair programming will appreciate Haiku 4.5’s combination of high intelligence and remarkable speed. And users of Claude Code will find that Haiku 4.5 makes the coding experience—from multiple-agent projects to rapid prototyping—markedly more responsive.
 
@@ -116,6 +116,12 @@ All OpenAI scores reported from their [GPT-5 post](https://openai.com/index/intr
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -125,9 +131,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

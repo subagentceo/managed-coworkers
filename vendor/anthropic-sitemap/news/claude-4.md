@@ -59,7 +59,7 @@ Beyond the IDE, we're releasing an extensible Claude Code SDK, so you can build 
 
 These models are a large step toward the virtual collaborator—maintaining full context, sustaining focus on longer projects, and driving transformational impact. They come with extensive testing and evaluation to minimize risk and maximize safety, including [implementing measures](https://www.anthropic.com/news/activating-asl3-protections) for higher AI Safety Levels like ASL-3.
 
-We're excited to see what you'll create. Get started today on [Claude](https://claude.ai/redirect/website.v1.010bbeb5-7851-4e3f-8fb9-1ef471de8382), [Claude Code](https://www.anthropic.com/claude-code), or the platform of your choice.
+We're excited to see what you'll create. Get started today on [Claude](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099), [Claude Code](https://www.anthropic.com/claude-code), or the platform of your choice.
 
 _As always, your [feedback](<mailto: feedback@anthropic.com>) helps us improve._
 
@@ -103,6 +103,12 @@ This results in a score of 79.4% and 80.2% for Opus 4 and Sonnet 4 respectively.
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -112,9 +118,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

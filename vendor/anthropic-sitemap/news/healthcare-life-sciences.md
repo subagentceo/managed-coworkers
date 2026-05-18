@@ -38,7 +38,7 @@ With these model improvements and our new tools, Claude is now dramatically more
 
 #### **What’s new**
 
-[Connectors](https://claude.ai/redirect/website.v1.1457497c-df2f-450a-a84b-f78d6a4d2d60/settings/connectors) are tools that allow users to give Claude access to other platforms directly. For payers and providers, we’ve added several connectors that make healthcare information easier to find, access, and understand. These allow Claude to pull information from industry-standard systems and databases, meaning that clinicians and administrators can save significant time finding the data and generating the reports they need.
+[Connectors](https://claude.ai/redirect/website.v1.29d7fee5-1a87-4fc3-ae79-2c044728a099/settings/connectors) are tools that allow users to give Claude access to other platforms directly. For payers and providers, we’ve added several connectors that make healthcare information easier to find, access, and understand. These allow Claude to pull information from industry-standard systems and databases, meaning that clinicians and administrators can save significant time finding the data and generating the reports they need.
 
 Claude can now connect to:
 
@@ -252,6 +252,12 @@ February 7, 2026: _Edited the introductory paragraph to clarify that HIPAA-ready
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -261,9 +267,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

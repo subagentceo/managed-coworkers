@@ -77,6 +77,12 @@ PwC clients can contact their account team to discuss deployment options. Enterp
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
@@ -86,9 +92,3 @@ PwC clients can contact their account team to discuss deployment options. Enterp
 We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
 
 [Read more](/news/claude-for-small-business)
-
-### Higher usage limits for Claude and a compute deal with SpaceX
-
-We’ve raised Claude's usage limits and agreed a new compute partnership with SpaceX that will substantially increase our capacity in the near term.
-
-[Read more](/news/higher-limits-spacex)

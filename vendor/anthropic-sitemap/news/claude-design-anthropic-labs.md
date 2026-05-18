@@ -74,11 +74,17 @@ Claude Design is available for Claude Pro, Max, Team, and Enterprise subscribers
 
 For Enterprise organizations, Claude Design is off by default. Admins can enable it in [Organization settings](https://support.claude.com/en/articles/14604406-claude-design-admin-guide-for-team-and-enterprise-plans).
 
-Start designing at [claude.ai/design](http://claude.ai/redirect/website.v1.69d663a0-4d88-4d44-aa08-5b9dc41b4eb0/design).
+Start designing at [claude.ai/design](http://claude.ai/redirect/website.v1.b1e91954-cb9c-4711-8653-65844b570815/design).
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/claude-design-anthropic-labs)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/claude-design-anthropic-labs)
 
 ## Related content
+
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
 
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
@@ -89,9 +95,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

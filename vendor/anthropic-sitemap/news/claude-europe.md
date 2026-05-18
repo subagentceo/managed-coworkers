@@ -8,7 +8,7 @@ May 14, 2024
 
 We’re excited to announce that [Claude](https://www.anthropic.com/claude), Anthropic’s trusted AI assistant, is now available for people and businesses across Europe to enhance their productivity and creativity. Starting today, they will be able to use:
 
--   [Claude.ai](http://claude.ai/redirect/website.v1.99550957-7fc2-4978-9b6e-14e16577777a): the web-based version of our next-generation AI assistant
+-   [Claude.ai](http://claude.ai/redirect/website.v1.07207d65-3556-40e2-b5e9-38342b1743b4): the web-based version of our next-generation AI assistant
 -   The [Claude iOS app](https://apps.apple.com/app/claude/id6473753684): a free version of Claude that offers the same intuitive experience as mobile web
 -   The [Claude Team plan](https://www.anthropic.com/news/team-plan-and-ios): the best way for every business to provide teams with secure access to Claude's state-of-the-art AI capabilities and the [Claude 3 model family](https://www.anthropic.com/news/claude-3-family)
 
@@ -28,6 +28,12 @@ _Read this post in [French](https://cdn.sanity.io/files/4zrzovbb/website/bfbafc8
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -37,9 +43,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

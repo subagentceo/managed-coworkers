@@ -20,11 +20,11 @@ What makes this partnership distinctive is its approach. Teachers are positioned
 
 ## **What teachers are building**
 
-One teacher in Liberia, new to AI, attended the AI LCC's live trainings on AI fluency. Within weeks, he had built an [interactive climate education curriculum](https://claude.ai/redirect/website.v1.69d663a0-4d88-4d44-aa08-5b9dc41b4eb0/public/artifacts/5a020adb-ab65-4637-bcf0-79e6d20c58d2) for Liberian schools using Claude Artifacts: interactive tools like apps, games, or visualizations that Claude can build on the spot.
+One teacher in Liberia, new to AI, attended the AI LCC's live trainings on AI fluency. Within weeks, he had built an [interactive climate education curriculum](https://claude.ai/redirect/website.v1.07207d65-3556-40e2-b5e9-38342b1743b4/public/artifacts/5a020adb-ab65-4637-bcf0-79e6d20c58d2) for Liberian schools using Claude Artifacts: interactive tools like apps, games, or visualizations that Claude can build on the spot.
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8e2e99d8b3534d5e1c4dcc950b1b0e0bbcd768cd-1920x1080.png&w=3840&q=75)
 
-In Bangladesh, a teacher working with Grade 6 and 7 students—over half of whom struggled with basic numeracy—built a [gamified math learning app](https://claude.ai/redirect/website.v1.69d663a0-4d88-4d44-aa08-5b9dc41b4eb0/public/artifacts/e94bf439-b3a6-4087-87f2-dee5d8de99d8) complete with boss battles, a leaderboard, and XP rewards.
+In Bangladesh, a teacher working with Grade 6 and 7 students—over half of whom struggled with basic numeracy—built a [gamified math learning app](https://claude.ai/redirect/website.v1.07207d65-3556-40e2-b5e9-38342b1743b4/public/artifacts/e94bf439-b3a6-4087-87f2-dee5d8de99d8) complete with boss battles, a leaderboard, and XP rewards.
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8745b5fa855dfeca249bdd8b7696b5440da72ac7-1920x1080.png&w=3840&q=75)
 
@@ -62,6 +62,12 @@ For more on Anthropic's education initiatives, [see here](https://claude.com/sol
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -71,9 +77,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)

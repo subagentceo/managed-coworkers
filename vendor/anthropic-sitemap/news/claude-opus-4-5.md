@@ -261,9 +261,9 @@ We’re making our Developer Platform more composable over time. We want to give
 
 Products like Claude Code show what’s possible when the kinds of upgrades we’ve made to the Claude Developer Platform come together. Claude Code gains two upgrades with Opus 4.5. Plan Mode now builds more precise plans and executes more thoroughly—Claude asks clarifying questions upfront, then builds a user-editable plan.md file before executing.
 
-Claude Code is also now [available in our desktop app](https://claude.ai/redirect/website.v1.010bbeb5-7851-4e3f-8fb9-1ef471de8382/download), letting you run multiple local and remote sessions in parallel: perhaps one agent fixes bugs, another researches GitHub, and a third updates docs.
+Claude Code is also now [available in our desktop app](https://claude.ai/redirect/website.v1.f265c1a0-05b6-45d6-ab6c-14d96884beee/download), letting you run multiple local and remote sessions in parallel: perhaps one agent fixes bugs, another researches GitHub, and a third updates docs.
 
-For [Claude app](https://www.claude.com/product/overview) users, long conversations no longer hit a wall—Claude automatically summarizes earlier context as needed, so you can keep the chat going. [Claude for Chrome](https://claude.ai/redirect/website.v1.010bbeb5-7851-4e3f-8fb9-1ef471de8382/chrome), which lets Claude handle tasks across your browser tabs, is now available to all Max users. We announced [Claude for Excel](https://www.claude.com/claude-for-excel) in October, and as of today we've expanded beta access to all Max, Team, and Enterprise users. Each of these updates takes advantage of Claude Opus 4.5’s market-leading performance in using computers, spreadsheets, and handling long-running tasks.
+For [Claude app](https://www.claude.com/product/overview) users, long conversations no longer hit a wall—Claude automatically summarizes earlier context as needed, so you can keep the chat going. [Claude for Chrome](https://claude.ai/redirect/website.v1.f265c1a0-05b6-45d6-ab6c-14d96884beee/chrome), which lets Claude handle tasks across your browser tabs, is now available to all Max users. We announced [Claude for Excel](https://www.claude.com/claude-for-excel) in October, and as of today we've expanded beta access to all Max, Team, and Enterprise users. Each of these updates takes advantage of Claude Opus 4.5’s market-leading performance in using computers, spreadsheets, and handling long-running tasks.
 
 For Claude and Claude Code users with access to Opus 4.5, we’ve removed Opus-specific caps. For Max and Team Premium users, we’ve increased overall usage limits, meaning you’ll have roughly the same number of Opus tokens as you previously had with Sonnet. We’re updating usage limits to make sure you’re able to use Opus 4.5 for daily work. These limits are specific to Opus 4.5. As future models surpass it, we expect to update limits as needed.
 
@@ -285,6 +285,12 @@ All evals were run with a 64K thinking budget, interleaved scratchpads, 200K con
 
 ## Related content
 
+### Anthropic acquires Stainless
+
+Anthropic is acquiring Stainless, a leader in SDKs and MCP server tooling.
+
+[Read more](/news/anthropic-acquires-stainless)
+
 ### PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
 
 PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding toward a global workforce of hundreds of thousands of professionals, establish a joint Center of Excellence, and train and certify 30,000 PwC professionals on Claude.
@@ -294,9 +300,3 @@ PwC will roll out Claude Code and Cowork starting with U.S. teams and expanding 
 ### Anthropic forms $200 million partnership with the Gates Foundation
 
 [Read more](/news/gates-foundation-partnership)
-
-### Introducing Claude for Small Business
-
-We're launching Claude for Small Business, a package of connectors and ready-to-run workflows that put Claude inside the tools small businesses use every day.
-
-[Read more](/news/claude-for-small-business)
