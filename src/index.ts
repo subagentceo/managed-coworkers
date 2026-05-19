@@ -111,3 +111,11 @@ export * from './domain/tools/RemoteTriggerTool.js';
 export * from './domain/tools/PlanModeTools.js';
 export * from './domain/tools/WorktreeTools.js';
 export * from './domain/tools/McpTools.js';
+
+// Canonical surfaces (OCDM5)
+export { Surface } from './domain/surfaces/Surface.js';
+export { CliSurface } from './domain/surfaces/CliSurface.js';
+export { VsCodeSurface } from './domain/surfaces/VsCodeSurface.js';
+export { JetBrainsSurface } from './domain/surfaces/JetBrainsSurface.js';
+export { DesktopSurface } from './domain/surfaces/DesktopSurface.js';
+export { ClaudeAiSurface } from './domain/surfaces/ClaudeAiSurface.js';
