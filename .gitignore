@@ -26,3 +26,10 @@ third_party/
 # Claude Code local session settings — operator-side, may contain secrets per
 # global feedback memory. Never commit.
 .claude/settings.local.json
+
+# Pollyjs cassettes (OREPLAY0): scratch and tmp dirs are caller-local
+# and must never be committed. Real cassettes live under
+# cassettes/{legal,finance}/<cookbook>/ and ARE committed after the
+# Authorization header is redacted (see cassettes/README.md).
+cassettes/tmp/
+cassettes/scratch/
