@@ -33,3 +33,8 @@ third_party/
 # Authorization header is redacted (see cassettes/README.md).
 cassettes/tmp/
 cassettes/scratch/
+
+# OMDQ10/MD10: vendor/.mdq-index.json is built by `npm run mdq:index`,
+# the md_quality_top_offenders MCP tool reads it. Build-product, not
+# checked in.
+vendor/.mdq-index.json
