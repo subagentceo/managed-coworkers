@@ -42,10 +42,18 @@ export class ManagedAgentsClient {
   private config: ClientConfig;
 
   constructor(config: ClientConfig = {}) {
-    this.config = {
-      apiKey: config.apiKey || process.env.ANTHROPIC_API_KEY,
-      ...config,
-    };
+    // OSL1: this chassis is oauth-only. ANTHROPIC_API_KEY is never read
+    // from the environment and any caller that leaks it through config
+    // is rejected here. The legitimate auth path is OAuth-only (see
+    // src/oauth/token.ts and the Worker env-sanitizer). For replay-only
+    // managed-agents (REPLAY-1..6), config.apiKey stays undefined and
+    // the SDK never makes a real request — pollyjs serves cassettes.
+    if (process.env.ANTHROPIC_API_KEY) {
+      throw new Error(
+        "ManagedAgentsClient: ANTHROPIC_API_KEY is set in env — chassis is oauth-only (OSL1); unset it",
+      );
+    }
+    this.config = { ...config };
 
     this.anthropicClient = new Anthropic({
       apiKey: this.config.apiKey,
