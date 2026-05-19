@@ -10,7 +10,12 @@
     "clean": "rm -rf dist node_modules",
     "crawl:vendors": "tsx scripts/crawl-vendors.ts",
     "crawl:vendor": "tsx scripts/crawl-vendors.ts --vendor",
-    "smoke:data-plane": "tsx scripts/smoke/data-plane.ts"
+    "smoke:data-plane": "tsx scripts/smoke/data-plane.ts",
+    "smoke:replay": "tsx src/lib/replay-harness.test.ts && tsx src/lib/miniflare-harness.test.ts && tsx src/lib/legal-replay-agent.test.ts && tsx src/lib/finance-replay-agent.test.ts",
+    "verify:typecheck": "tsc --noEmit",
+    "verify:citations": "tsx scripts/lib/citation-guard.ts",
+    "verify:libs": "tsx scripts/lib/run-tests.ts",
+    "verify": "npm run verify:typecheck && npm run verify:citations && npm run verify:libs"
   },
   "author": "SubAgent CEO",
   "license": "MIT",
