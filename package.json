@@ -16,7 +16,6 @@
     "grade:vendor": "tsx scripts/grade-vendor.ts",
     "grade:vendor:all": "tsx scripts/grade-vendors-all.ts",
     "mdq:index": "tsx scripts/build-mdq-index.ts",
->>>>>>> origin/main
     "redact:cassette": "tsx scripts/redact-cassette.ts",
     "canary:failclosed": "tsx src/lib/cookbook-replay-failclosed.canary.ts",
     "verify:typecheck": "tsc --noEmit",
