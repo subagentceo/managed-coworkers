@@ -36,6 +36,10 @@ export interface DreamGoal {
 }
 
 /**
+ * @deprecated since=2026-05-18 reason="Rubric remnant from commit 365a298;
+ *   not in replay path. Kept until baseline scoring confirms no
+ *   consumers. Slated for deletion after MD12."
+ *
  * DreamManager - Manages long-running agent dreams
  */
 export class DreamManager {

@@ -29,6 +29,10 @@ export interface ToolExecutionResult {
 }
 
 /**
+ * @deprecated since=2026-05-18 reason="Rubric remnant from commit 365a298;
+ *   not in replay path. Kept until baseline scoring confirms no
+ *   consumers. Slated for deletion after MD12."
+ *
  * MCPConnector - Manages MCP server integration and tool execution
  */
 export class MCPConnector {
