@@ -83,3 +83,12 @@ export type {
   SessionId, TurnId, AgentId, TaskId, ToolUseId,
   CheckpointId, RoutineId, PluginId, WorktreeName, PermissionRequestId,
 } from "./domain/core/Identifier.js";
+
+// Canonical tools (OCDM2)
+export { Tool } from "./domain/tools/Tool.js";
+export { BashTool } from "./domain/tools/BashTool.js";
+export { EditTool } from "./domain/tools/EditTool.js";
+export { WriteTool } from "./domain/tools/WriteTool.js";
+export { ReadTool } from "./domain/tools/ReadTool.js";
+export { GlobTool } from "./domain/tools/GlobTool.js";
+export { GrepTool } from "./domain/tools/GrepTool.js";
