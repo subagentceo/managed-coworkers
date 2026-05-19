@@ -8,8 +8,10 @@
  */
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
+import { registerMdQualityFile } from "./file.js";
 import { registerMdQualityVendor } from "./vendor.js";
 
 export function registerMdQuality(server: McpServer): void {
+  registerMdQualityFile(server);
   registerMdQualityVendor(server);
 }
