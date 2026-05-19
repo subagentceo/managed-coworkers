@@ -42,6 +42,10 @@ export interface SecurityIncident {
 }
 
 /**
+ * @deprecated since=2026-05-18 reason="Rubric remnant from commit 365a298;
+ *   not in replay path. Kept until baseline scoring confirms no
+ *   consumers. Slated for deletion after MD12."
+ *
  * PlatformIntegration - Manages 12-department ecosystem
  */
 export class PlatformIntegration {

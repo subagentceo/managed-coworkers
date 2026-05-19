@@ -1,17 +1,22 @@
 /**
- * Bridge lane: md-quality.
+ * @cite rubrics/md-quality-v1.md
  *
- * Aggregates all md-quality MCP tools registered by this lane:
- *   md_quality_diff - score vendor markdown at two git shas (MD9).
+ * md-quality MCP lane registry (MD7+).
  *
- * Future MD-lane tools should add their register call here.
+ * Aggregates all md_quality_* tools behind a single register entrypoint
+ * so bridge-server.ts only imports one symbol per lane.
  */
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+
+import { registerMdQualityFile } from "./file.js";
+import { registerMdQualityVendor } from "./vendor.js";
 import { registerMdQualityDiff } from "./diff.js";
 
 export { mdQualityDiff, registerMdQualityDiff } from "./diff.js";
 export type { DiffOptions, DiffResult, FileDelta } from "./diff.js";
 
 export function registerMdQuality(server: McpServer): void {
+  registerMdQualityFile(server);
+  registerMdQualityVendor(server);
   registerMdQualityDiff(server);
 }
