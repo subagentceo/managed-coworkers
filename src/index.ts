@@ -54,6 +54,9 @@ export {
   replayFetch,
   type FetchReplayHandle,
 } from './lib/fetch-replay.js';
+// REPLAY-13: scrub Authorization + account-specific identifiers
+// before committing any HAR cassette to cassettes/.
+export { redactHar, redactHarFile } from './lib/cassette-redact.js';
 // Convenience aliases per package — re-export both surface entrypoints
 // so downstream callers can pick whichever feels right.
 export * as legalAgent from './lib/legal-replay-agent.js';
