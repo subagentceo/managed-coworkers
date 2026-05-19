@@ -18,7 +18,6 @@ export { EnvironmentManager, type EnvironmentConfig, type ComputeResources, type
 export { OutcomeManager, type Outcome, type OutcomeResult, type CompositeScore } from './outcomes';
 export { SkillManager, type Skill, type SkillExecution, type SkillCatalog } from './skills';
 export { DreamManager, type Dream, type DreamCheckpoint, type DreamGoal } from './dreams';
-export { PermissionManager, type PermissionPolicy, type PolicyConstraint, type AccessRequest, type Permission, type Resource } from './permissions';
 export { WebhookManager, type Webhook, type RetryPolicy, type WebhookEvent, type WebhookDelivery, type WebhookEventType } from './webhooks';
 export { MemoryManager, type MemoryEntry, type MemoryStore, type MemoryQuery, type MemorySummary } from './memory';
 
@@ -119,3 +118,7 @@ export { VsCodeSurface } from './domain/surfaces/VsCodeSurface.js';
 export { JetBrainsSurface } from './domain/surfaces/JetBrainsSurface.js';
 export { DesktopSurface } from './domain/surfaces/DesktopSurface.js';
 export { ClaudeAiSurface } from './domain/surfaces/ClaudeAiSurface.js';
+
+// Canonical permissions (OCDM4)
+export { PermissionRule } from "./domain/permissions/PermissionRule.js";
+export { PermissionPolicy } from "./domain/permissions/PermissionPolicy.js";
