@@ -1,0 +1,15 @@
+{
+  "vendor": "commonmark-spec",
+  "version": "0.31.2",
+  "source": "https://github.com/commonmark/commonmark-spec",
+  "spec_url": "https://spec.commonmark.org/0.31.2/",
+  "mirrored_at": "2026-05-18",
+  "notes": [
+    "Vendored from local clone /Users/alexzh/subagentmcp/subagentceo/commonmark/commonmark-spec/.",
+    "spec.txt contains ~1427 example blocks (markdown -> expected HTML pairs) used as fixtures by src/lib/md-quality/.",
+    "test/spec_tests.py and test/normalize.py are the upstream reference test harness.",
+    "Not crawled by scripts/crawl-vendors.ts (no llms.txt / no sitemap) -- mirrored once and pinned to spec version 0.31.2."
+  ],
+  "llms_txt_candidates": [],
+  "sitemap_xml_sources": []
+}
