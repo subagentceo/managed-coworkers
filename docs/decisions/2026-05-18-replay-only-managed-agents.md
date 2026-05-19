@@ -86,6 +86,30 @@ captured outside the repo and never committed. The cassette body
 goes under `cassettes/<domain>/<cookbook>/<request-name>.har` with
 the cookbook authority redacted from headers. Tracked as task #61.
 
+## Update 2026-05-18 — pollyjs leak found and supplemented (REPLAY-16)
+
+Empirical finding (`src/lib/cookbook-replay-failclosed.canary.ts`):
+`@pollyjs/adapter-node-http` v6.0 does NOT intercept Node 18+
+global `fetch` or `https.request` (both route through undici
+internals). A replay-only test calling these leaked past pollyjs
+and hit live Anthropic (returning 401, because no auth header).
+
+**Mitigation landed in OREPLAY16** (`src/lib/fetch-replay.ts`):
+- `createFetchReplay()` installs an `undici.MockAgent` as the global
+  dispatcher with `disableNetConnect()`.
+- Exported `replayFetch` is `undici.fetch` (which uses the global
+  dispatcher); chassis test code MUST use this, not global fetch.
+- Un-intercepted calls via `replayFetch` throw fail-closed.
+
+**Known carrier**: Node 24's built-in `globalThis.fetch` is a
+separate impl and does NOT route through undici's dispatcher.
+Therefore:
+- Any test that imports global fetch can still leak.
+- Wire `replayFetch` into the Anthropic SDK via its `fetch` config
+  option to keep the SDK on the safe path.
+- The canary remains in tree (`canary:failclosed`) as the
+  longitudinal check on pollyjs alone.
+
 ## Forbidden patterns
 
 - Reading `process.env.ANTHROPIC_API_KEY` in any `src/` file (OSL1).
