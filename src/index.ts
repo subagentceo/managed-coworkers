@@ -14,10 +14,7 @@ export { FileManager, type FileMetadata, type FileDownloadRequest, type FileUplo
 export { VaultManager, type VaultCredential, type VaultConfig, type AuthRequest } from './vaults';
 export { EnvironmentManager, type EnvironmentConfig, type ComputeResources, type NetworkConfig, type EnvironmentMetrics } from './environments';
 export { OutcomeManager, type Outcome, type OutcomeResult, type CompositeScore } from './outcomes';
-export { SkillManager, type Skill, type SkillExecution, type SkillCatalog } from './skills';
-export { DreamManager, type Dream, type DreamCheckpoint, type DreamGoal } from './dreams';
 export { WebhookManager, type Webhook, type RetryPolicy, type WebhookEvent, type WebhookDelivery, type WebhookEventType } from './webhooks';
-export { MemoryManager, type MemoryEntry, type MemoryStore, type MemoryQuery, type MemorySummary } from './memory';
 
 // Replay-only managed-agents (OREPLAY0 — see
 // docs/decisions/2026-05-18-replay-only-managed-agents.md).
