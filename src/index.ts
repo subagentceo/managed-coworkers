@@ -46,6 +46,14 @@ export {
   type CookbookReplayOptions,
   type CookbookReplay,
 } from './lib/cookbook-replay.js';
+// REPLAY-16: undici MockAgent for closing the global-fetch leak.
+// Replay-only managed-agents MUST use replayFetch, not global fetch
+// (the latter doesn't route through undici's dispatcher on Node 24).
+export {
+  createFetchReplay,
+  replayFetch,
+  type FetchReplayHandle,
+} from './lib/fetch-replay.js';
 // Convenience aliases per package — re-export both surface entrypoints
 // so downstream callers can pick whichever feels right.
 export * as legalAgent from './lib/legal-replay-agent.js';
