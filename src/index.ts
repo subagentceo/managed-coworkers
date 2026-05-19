@@ -75,3 +75,11 @@ export {
   sampleMarkdownFiles,
   type SampleOptions,
 } from './lib/md-quality/sample.js';
+
+// Canonical domain model (OCDM1+)
+export * from "./domain/enums.js";
+export { Entity } from "./domain/core/Entity.js";
+export type {
+  SessionId, TurnId, AgentId, TaskId, ToolUseId,
+  CheckpointId, RoutineId, PluginId, WorktreeName, PermissionRequestId,
+} from "./domain/core/Identifier.js";
