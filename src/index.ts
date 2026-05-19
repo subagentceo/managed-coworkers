@@ -92,3 +92,22 @@ export { WriteTool } from "./domain/tools/WriteTool.js";
 export { ReadTool } from "./domain/tools/ReadTool.js";
 export { GlobTool } from "./domain/tools/GlobTool.js";
 export { GrepTool } from "./domain/tools/GrepTool.js";
+
+// Canonical tools (OCDM3)
+export * from './domain/tools/WebFetchTool.js';
+export * from './domain/tools/WebSearchTool.js';
+export * from './domain/tools/MonitorTool.js';
+export * from './domain/tools/NotebookEditTool.js';
+export * from './domain/tools/AgentTool.js';
+export * from './domain/tools/SkillTool.js';
+export * from './domain/tools/PowerShellTool.js';
+export * from './domain/tools/LspTool.js';
+export * from './domain/tools/PushNotificationTool.js';
+export * from './domain/tools/AskUserQuestionTool.js';
+export * from './domain/tools/CronTool.js';
+export * from './domain/tools/TaskTools.js';
+export * from './domain/tools/TeamTools.js';
+export * from './domain/tools/RemoteTriggerTool.js';
+export * from './domain/tools/PlanModeTools.js';
+export * from './domain/tools/WorktreeTools.js';
+export * from './domain/tools/McpTools.js';
