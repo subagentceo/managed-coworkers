@@ -40,5 +40,13 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
+          REPO: ${{ github.repository }}
         run: |
+          # OCITE1: self-heal the label if it was deleted from the repo.
+          # gh pr edit --add-label fails the workflow when the label is
+          # missing; this auto-failed every PR before #94. Create on
+          # demand so the workflow tolerates label drift.
+          if ! gh label list --repo "$REPO" --limit 200 --json name --jq '.[].name' | grep -qx "automerge"; then
+            gh label create automerge --repo "$REPO" --color "0E8A16" --description "Auto-merge when checks pass" || true
+          fi
           gh pr edit "$PR_URL" --add-label automerge
