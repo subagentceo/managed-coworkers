@@ -1,18 +1,24 @@
 /**
- * Bridge lane: md-quality.
+ * @cite rubrics/md-quality-v1.md
  *
- * Aggregates all md-quality tool registrations so the bridge server
- * can do a single `registerMdQuality(server)` call. Each tool lives
- * in its own sibling module:
+ * md-quality MCP lane registry.
  *
- *   - top-offenders.ts → md_quality_top_offenders (MD10, OMDQ10)
- *
- * Sibling MD7/MD8/MD9 lanes will add their own registrations here.
+ * Aggregates all md_quality_* tools behind a single register entrypoint
+ * so bridge-server.ts only imports one symbol per lane.
  */
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
+import { registerMdQualityFile } from "./file.js";
+import { registerMdQualityVendor } from "./vendor.js";
+import { registerMdQualityDiff } from "./diff.js";
 import { registerMdQualityTopOffenders } from "./top-offenders.js";
 
+export { mdQualityDiff, registerMdQualityDiff } from "./diff.js";
+export type { DiffOptions, DiffResult, FileDelta } from "./diff.js";
+
 export function registerMdQuality(server: McpServer): void {
+  registerMdQualityFile(server);
+  registerMdQualityVendor(server);
+  registerMdQualityDiff(server);
   registerMdQualityTopOffenders(server);
 }

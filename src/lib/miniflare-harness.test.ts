@@ -1,5 +1,5 @@
 /**
- * @cite seeds/citations/cloudflare-flagship.md
+ * @cite vendor/cloudflare/developers.cloudflare.com/workers/testing/miniflare/index.md
  * @cite seeds/posture/session-start.xml
  *
  * Miniflare harness smoke test (MINIFLARE-1).

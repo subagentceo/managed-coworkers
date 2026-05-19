@@ -61,3 +61,17 @@ export { redactHar, redactHarFile } from './lib/cassette-redact.js';
 // so downstream callers can pick whichever feels right.
 export * as legalAgent from './lib/legal-replay-agent.js';
 export * as financeAgent from './lib/finance-replay-agent.js';
+
+// md-quality public surface (OMDQ-EXPORT). Pure scoring lib + deterministic
+// file sampler. Used by scripts/grade-vendor.ts and the md-quality MCP lane.
+export {
+  gradeMarkdown,
+  type GradeResult,
+  type AxisResult,
+  type AxisId,
+  type Violation,
+} from './lib/md-quality/index.js';
+export {
+  sampleMarkdownFiles,
+  type SampleOptions,
+} from './lib/md-quality/sample.js';
