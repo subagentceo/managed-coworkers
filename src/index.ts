@@ -8,8 +8,6 @@ export { ManagedAgentsClient, type ClientConfig, type AgentConfig, type ToolDefi
 export { SessionManager, type Message, type SessionState, type SessionEvent } from './sessions';
 export { MCPConnector, type MCPServer, type MCPToolConfig, type ToolExecutionResult } from './mcp';
 export { AgentOrchestrator, type AgentProfile, type Task, type DecomposedTask } from './orchestrator';
-export { WorkflowEngine, type WorkflowNode, type WorkflowEdge, type WorkflowDAG, type WorkflowExecution, type NodeState, type WorkflowCheckpoint, type WorkflowEvent } from './workflow';
-export { TodoManager, type TodoItem, type TodoCheckpoint, type TodoTransaction } from './todos';
 export { CostTracker, DeterministicClock, ReplayRecorder, type CostEntry, type ReplayEvent, type ExecutionRecord } from './replay';
 export { PlatformIntegration, type Department, type CrossTeamWorkflow, type DepartmentMetrics, type SecurityIncident } from './platform';
 export { FileManager, type FileMetadata, type FileDownloadRequest, type FileUploadRequest } from './files';
@@ -122,3 +120,9 @@ export { ClaudeAiSurface } from './domain/surfaces/ClaudeAiSurface.js';
 // Canonical permissions (OCDM4)
 export { PermissionRule } from "./domain/permissions/PermissionRule.js";
 export { PermissionPolicy } from "./domain/permissions/PermissionPolicy.js";
+
+// Canonical automation (OCDM6)
+export { Automation } from "./domain/automation/Automation.js";
+export { Loop } from "./domain/automation/Loop.js";
+export { CronTask } from "./domain/automation/CronTask.js";
+export { Routine } from "./domain/automation/Routine.js";
