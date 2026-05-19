@@ -5,9 +5,7 @@
  */
 
 export { ManagedAgentsClient, type ClientConfig, type AgentConfig, type ToolDefinition, type SessionConfig } from './client';
-export { SessionManager, type Message, type SessionState, type SessionEvent } from './sessions';
 export { MCPConnector, type MCPServer, type MCPToolConfig, type ToolExecutionResult } from './mcp';
-export { AgentOrchestrator, type AgentProfile, type Task, type DecomposedTask } from './orchestrator';
 export { CostTracker, DeterministicClock, ReplayRecorder, type CostEntry, type ReplayEvent, type ExecutionRecord } from './replay';
 export { PlatformIntegration, type Department, type CrossTeamWorkflow, type DepartmentMetrics, type SecurityIncident } from './platform';
 export { FileManager, type FileMetadata, type FileDownloadRequest, type FileUploadRequest } from './files';
@@ -126,3 +124,10 @@ export { Automation } from "./domain/automation/Automation.js";
 export { Loop } from "./domain/automation/Loop.js";
 export { CronTask } from "./domain/automation/CronTask.js";
 export { Routine } from "./domain/automation/Routine.js";
+
+// Canonical sessions (OCDM7)
+export { Context } from "./domain/sessions/Context.js";
+export { Turn } from "./domain/sessions/Turn.js";
+export { AgenticLoop } from "./domain/sessions/AgenticLoop.js";
+export { Session } from "./domain/sessions/Session.js";
+export { Checkpoint } from "./domain/checkpoints/Checkpoint.js";
