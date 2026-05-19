@@ -11,7 +11,7 @@
     "crawl:vendors": "tsx scripts/crawl-vendors.ts",
     "crawl:vendor": "tsx scripts/crawl-vendors.ts --vendor",
     "smoke:data-plane": "tsx scripts/smoke/data-plane.ts",
-    "smoke:replay": "tsx src/lib/replay-harness.test.ts && tsx src/lib/miniflare-harness.test.ts && tsx src/lib/replay-miniflare-combined.test.ts && tsx src/lib/legal-replay-agent.test.ts && tsx src/lib/finance-replay-agent.test.ts && tsx src/lib/cookbook-replay.test.ts && tsx src/lib/cookbook-snapshot.test.ts && tsx src/lib/fetch-replay.test.ts && tsx src/lib/cassette-redact.test.ts && tsx src/index.test.ts && tsx src/mcp/lanes/md-quality/file.test.ts && tsx src/mcp/lanes/md-quality/vendor.test.ts",
+    "smoke:replay": "tsx src/lib/replay-harness.test.ts && tsx src/lib/miniflare-harness.test.ts && tsx src/lib/replay-miniflare-combined.test.ts && tsx src/lib/legal-replay-agent.test.ts && tsx src/lib/finance-replay-agent.test.ts && tsx src/lib/cookbook-replay.test.ts && tsx src/lib/cookbook-snapshot.test.ts && tsx src/lib/fetch-replay.test.ts && tsx src/lib/cassette-redact.test.ts && tsx src/index.test.ts && tsx src/mcp/lanes/md-quality/file.test.ts && tsx src/mcp/lanes/md-quality/vendor.test.ts && tsx src/mcp/lanes/md-quality/diff.test.ts",
     "smoke:md-quality": "tsx src/lib/md-quality/axes/parseability.test.ts && tsx src/lib/md-quality/axes/headings.test.ts && tsx src/lib/md-quality/axes/fenced-code.test.ts && tsx src/lib/md-quality/axes/links.test.ts && tsx src/lib/md-quality/axes/line-discipline.test.ts && tsx src/lib/md-quality/grade-vendor.test.ts && tsx src/lib/md-quality/grade-vendor-multi.test.ts",
     "grade:vendor": "tsx scripts/grade-vendor.ts",
     "grade:vendor:all": "tsx scripts/grade-vendors-all.ts",

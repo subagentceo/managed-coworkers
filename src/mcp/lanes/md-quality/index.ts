@@ -10,8 +10,13 @@ import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 import { registerMdQualityFile } from "./file.js";
 import { registerMdQualityVendor } from "./vendor.js";
+import { registerMdQualityDiff } from "./diff.js";
+
+export { mdQualityDiff, registerMdQualityDiff } from "./diff.js";
+export type { DiffOptions, DiffResult, FileDelta } from "./diff.js";
 
 export function registerMdQuality(server: McpServer): void {
   registerMdQualityFile(server);
   registerMdQualityVendor(server);
+  registerMdQualityDiff(server);
 }
