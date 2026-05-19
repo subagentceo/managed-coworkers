@@ -222,6 +222,7 @@ const LEGACY_ALLOW = new Set([
   "docs-github",           // 2026-05-16 — docs.github.com REST/Actions/Apps/Webhooks/GraphQL/CLI/Copilot mirror via /api/article/body (OPE5); not in v2 catalog
   "alloydb-omni",          // 2026-05-18 — AlloyDB Omni docs mirror added for the from-scratch mc-stack (OLOOP-1); chassis-internal, not in v2 catalog
   "redis",                 // 2026-05-18 — Redis 7 docs mirror added for the from-scratch mc-stack (OLOOP-1); chassis-internal, not in v2 catalog
+  "commonmark-spec",       // 2026-05-18 — CommonMark v0.31.2 spec mirror used as fixtures for md-quality rubric (OMDQ0); chassis-internal, not in v2 catalog
 ]);
 
 check("every vendor/<dir>/crawl.json maps to a catalog entity (modulo legacy allow-list)", () => {
