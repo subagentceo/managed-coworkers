@@ -1,14 +1,8 @@
 /**
- * @cite seeds/citations/cloudflare-flagship.md
+ * @cite vendor/cloudflare/developers.cloudflare.com/workers/testing/miniflare/index.md
  * @cite seeds/posture/session-start.xml
  *
  * Miniflare harness (MINIFLARE-1).
- *
- * (Miniflare docs are not yet mirrored under vendor/. TODO: crawl
- *  developers.cloudflare.com/workers/testing/miniflare/ via Crawlee
- *  and re-point the cite. The chassis-level citation roots (vendor/,
- *  seeds/, rubrics/) are what citation-guard enforces; an upstream
- *  URL belongs in the body comment, not the @cite header.)
  *
  * Thin wrapper around `miniflare` that boots a workerd instance in-
  * process so tests can hit a Worker URL without `wrangler dev`.
