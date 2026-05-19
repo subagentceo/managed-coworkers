@@ -15,6 +15,7 @@ import {
   createMiniflareWorker,
   legalAgent,
   financeAgent,
+  gradeMarkdown,
 } from "./index.js";
 
 function fail(msg: string): never {
@@ -41,6 +42,17 @@ function main(): void {
   if (financeCookbooks.length < 5) fail(`finance cookbooks: ${financeCookbooks.length}`);
   console.log(
     `  ✓ index re-exports: createReplay, createCookbookReplay, createMiniflareWorker, legalAgent (${legalCookbooks.length}), financeAgent (${financeCookbooks.length})`,
+  );
+  if (typeof gradeMarkdown !== "function") fail("gradeMarkdown not exported");
+  const gradeResult = gradeMarkdown("# Title\n\nbody\n");
+  if (typeof gradeResult.score !== "number") {
+    fail(`gradeMarkdown score not number: ${typeof gradeResult.score}`);
+  }
+  if (gradeResult.score < 0 || gradeResult.score > 100) {
+    fail(`gradeMarkdown score out of range: ${gradeResult.score}`);
+  }
+  console.log(
+    `  ✓ index re-exports: gradeMarkdown (score=${gradeResult.score})`,
   );
 }
 
