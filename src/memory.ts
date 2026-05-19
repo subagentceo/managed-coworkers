@@ -42,6 +42,10 @@ export interface MemorySummary {
 }
 
 /**
+ * @deprecated since=2026-05-18 reason="Rubric remnant from commit 365a298;
+ *   not in replay path. Kept until baseline scoring confirms no
+ *   consumers. Slated for deletion after MD12."
+ *
  * MemoryManager - Manages agent memory stores
  */
 export class MemoryManager {
