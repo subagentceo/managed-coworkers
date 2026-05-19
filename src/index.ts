@@ -7,9 +7,6 @@
 export { ManagedAgentsClient, type ClientConfig, type AgentConfig, type ToolDefinition, type SessionConfig } from './client';
 export { MCPConnector, type MCPServer, type MCPToolConfig, type ToolExecutionResult } from './mcp';
 export { CostTracker, DeterministicClock, ReplayRecorder, type CostEntry, type ReplayEvent, type ExecutionRecord } from './replay';
-export { PlatformIntegration, type Department, type CrossTeamWorkflow, type DepartmentMetrics, type SecurityIncident } from './platform';
-export { OutcomeManager, type Outcome, type OutcomeResult, type CompositeScore } from './outcomes';
-export { WebhookManager, type Webhook, type RetryPolicy, type WebhookEvent, type WebhookDelivery, type WebhookEventType } from './webhooks';
 
 // Replay-only managed-agents (OREPLAY0 — see
 // docs/decisions/2026-05-18-replay-only-managed-agents.md).
