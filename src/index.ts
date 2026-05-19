@@ -131,3 +131,8 @@ export { Turn } from "./domain/sessions/Turn.js";
 export { AgenticLoop } from "./domain/sessions/AgenticLoop.js";
 export { Session } from "./domain/sessions/Session.js";
 export { Checkpoint } from "./domain/checkpoints/Checkpoint.js";
+
+// Canonical agents (OCDM8)
+export { Agent } from "./domain/agents/Agent.js";
+export { Subagent } from "./domain/agents/Subagent.js";
+export { AgentTeam } from "./domain/agents/AgentTeam.js";
