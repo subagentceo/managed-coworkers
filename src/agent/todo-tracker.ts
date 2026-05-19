@@ -1,8 +1,14 @@
 // src/agent/todo-tracker.ts
 //
 // Watches the Agent SDK message stream and renders a unified progress view
-// regardless of whether the agent emitted TodoWrite (headless) or
-// TaskCreate/TaskUpdate (interactive).
+// from Task* tool events (TaskCreate, TaskUpdate).
+//
+// Per code.claude.com/docs/en/agent-sdk/migrate-task-tools.md, as of
+// TypeScript Agent SDK 0.3.142 / Claude Code v2.1.142, sessions emit
+// the structured Task tools in both headless and interactive surfaces.
+// TodoWrite is the legacy surface; this tracker no longer listens for it.
+// To replay old session logs that still emit TodoWrite, use the legacy
+// tracker at todo-tracker-legacy.ts (snapshot of the pre-migration code).
 //
 // Source pattern: code.claude.com/docs/en/agent-sdk/todo-tracking.md
 // (always fetched as the .md variant, never the bare HTML page)
@@ -65,17 +71,6 @@ export class TodoTracker {
     });
   }
 
-  /** Replace the entire list (TodoWrite semantics). */
-  private replaceAll(todos: Todo[]): void {
-    this.todos.clear();
-    this.order = [];
-    todos.forEach((t, i) => {
-      const id = t.id ?? `todo-${i}`;
-      this.todos.set(id, { ...t, id });
-      this.order.push(id);
-    });
-  }
-
   /** Insert/update a single task (TaskCreate / TaskUpdate semantics). */
   private upsert(id: string, patch: Partial<Todo>): void {
     const existing = this.todos.get(id);
@@ -100,12 +95,6 @@ export class TodoTracker {
         if (block.type !== "tool_use") continue;
 
         switch (block.name) {
-          case "TodoWrite": {
-            const todos = (block.input as { todos: Todo[] }).todos ?? [];
-            this.replaceAll(todos);
-            await this.display();
-            break;
-          }
           case "TaskCreate": {
             const t = block.input as Todo & { id: string };
             this.upsert(t.id, t);
