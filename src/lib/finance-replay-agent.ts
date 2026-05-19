@@ -2,12 +2,12 @@
  * @cite seeds/citations/cloudflare-flagship.md
  * @cite seeds/posture/session-start.xml
  *
- * Legal replay managed-agent (REPLAY-2).
+ * Finance replay managed-agent (REPLAY-3).
  *
- * Loads cookbooks from packages/claude-for-legal/managed-agent-cookbooks/
- * via the shared cookbook-loader. The first mergeable step toward replay-
- * only managed-agents — proves the cookbook surface is parseable from
- * inside src/. Downstream PRs layer the pollyjs cassette on top.
+ * Loads cookbooks from
+ * packages/financial-services/managed-agent-cookbooks/ via the shared
+ * cookbook-loader. Mirrors legal-replay-agent.ts; downstream PRs layer
+ * the pollyjs cassette on top.
  *
  * No network, no SDK import, no env reads.
  */
@@ -26,7 +26,7 @@ const REPO_ROOT = resolve(__dirname, "..", "..");
 const COOKBOOKS_DIR = resolve(
   REPO_ROOT,
   "packages",
-  "claude-for-legal",
+  "financial-services",
   "managed-agent-cookbooks",
 );
 
