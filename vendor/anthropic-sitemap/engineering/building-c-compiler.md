@@ -1,5 +1,5 @@
-_Written by Nicholas Carlini, a researcher on our Safeguards team.  
-  
+_Written by Nicholas Carlini, a researcher on our Safeguards team.
+
 _
 
 I've been experimenting with a new approach to supervising language models that we’re calling "agent teams."
@@ -31,10 +31,10 @@ done
 
 Copy
 
-  
+
 In the agent prompt, I tell Claude what problem to solve and ask it to approach the problem by breaking it into small pieces, tracking what it’s working on, figuring out what to work on next, and to effectively keep going until it’s perfect. (On this last point, Claude has no choice. The loop runs forever—although in one instance, I did see Claude `pkill -9 bash` on accident, thus killing itself and ending the loop. Whoops!).
 
-##   
+##
 Running Claude in parallel
 
 Running multiple instances in parallel can address two weaknesses of a single-agent harness:

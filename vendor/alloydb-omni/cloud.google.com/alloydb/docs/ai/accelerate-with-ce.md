@@ -23,7 +23,7 @@ Puoi utilizzare HNSW solo con il motore columnstore per i cluster AlloyDB che es
 ## Prima di iniziare
 
 -   Imposta i flag di database `google_columnar_engine.enabled` e `google_columnar_engine.enable_index_caching` su `on` per abilitare il motore colonnare e la relativa funzionalità di memorizzazione nella cache degli indici.
-    
+
     ```
     gcloud alloydb instances update INSTANCE_ID \
         --database-flags google_columnar_engine.enabled=on,google_columnar_engine.enable_index_caching=on \
@@ -31,18 +31,18 @@ Puoi utilizzare HNSW solo con il motore columnstore per i cluster AlloyDB che es
         --cluster=CLUSTER_ID \
         --project=PROJECT_ID
     ```
-    
+
     Sostituisci quanto segue:
-    
+
     -   `INSTANCE_ID`: l'ID dell'istanza in cui vuoi attivare il motore colonnare.
     -   `REGION`: la regione in cui si trova l'istanza, ad esempio `us-central1`.
     -   `CLUSTER_ID`: l'ID del cluster in cui si trova l'istanza.
     -   `PROJECT_ID`: l'ID del progetto in cui si trova il cluster.
-    
+
     Per saperne di più sull'impostazione dei flag, consulta [Configura i flag di database](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=it).
-    
+
 -   [Crea un indice ScaNN](https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index?hl=it) o [Crea un indice HNSW](https://docs.cloud.google.com/alloydb/docs/ai/create-hnsw-index?hl=it) nel tuo database.
-    
+
 
 ## Aggiungi un indice al motore colonnare
 
@@ -51,23 +51,23 @@ Dopo aver attivato il motore colonnare, puoi aggiungere un indice esistente alla
 Per aggiungere un indice al motore colonnare:
 
 1.  Nella console Google Cloud , vai alla pagina **Cluster**.
-    
+
     [Vai a Cluster](https://console.cloud.google.com/alloydb/clusters?hl=it)
-    
+
 2.  Per visualizzare la pagina **Panoramica** del cluster, fai clic sul nome del cluster AlloyDB nella colonna **Nome risorsa**.
-    
+
 3.  Nel riquadro di navigazione, fai clic su **AlloyDB Studio**.
-    
+
 4.  Accedi ad **AlloyDB Studio** utilizzando il nome del database, il nome utente e la password.
-    
+
 5.  Nella scheda **Editor 1**, inserisci la seguente query:
-    
+
     ```
     SELECT google_columnar_engine_add_index('INDEX_NAME');
     ```
-    
+
     Sostituisci `INDEX_NAME` con il nome dell'indice vettoriale.
-    
+
     1.  Fai clic su **Esegui**.
 
 **Nota:** l'aggiunta di un indice al motore colonnare può essere un'operazione a lunga esecuzione, a seconda delle dimensioni dell'indice. Se questa operazione va in timeout in **AlloyDB Studio**, ti consigliamo di eseguire questo comando da una [`psql` sessione client](https://docs.cloud.google.com/alloydb/docs/connect-psql?hl=it).
@@ -128,52 +128,52 @@ Se modifichi una grande quantità di dati, potresti notare un aumento temporaneo
 Per gestire il ciclo di vita degli indici memorizzati nella cache:
 
 1.  Nella console Google Cloud , vai alla pagina **Cluster**.
-    
+
     [Vai a Cluster](https://console.cloud.google.com/alloydb/clusters?hl=it)
-    
+
 2.  Per visualizzare la pagina **Panoramica** del cluster, fai clic sul nome del cluster AlloyDB nella colonna **Nome risorsa**.
-    
+
 3.  Nel riquadro di navigazione, fai clic su **AlloyDB Studio**.
-    
+
 4.  Accedi ad **AlloyDB Studio** utilizzando il nome del database, il nome utente e la password.
-    
+
 5.  Nella scheda **Editor 1**, inserisci il comando SQL per l'attività selezionata:
-    
+
     -   Per aggiornare manualmente la cache, esegui questo comando:
-        
+
         ```
         SELECT google_columnar_engine_refresh_index('INDEX_NAME');
         ```
-        
+
     -   Per verificare lo stato dell'indice, esegui questo comando:
-        
+
         ```
         SELECT google_columnar_engine_verify('INDEX_NAME');
         ```
-        
+
     -   Per eliminare l'indice dalla cache, esegui questo comando:
-        
+
         ```
         SELECT google_columnar_engine_drop_index('INDEX_NAME');
         ```
-        
+
     -   Per visualizzare gli indici attivi, esegui questo comando:
-        
+
         ```
         SELECT * FROM g_columnar_indexes;
         ```
-        
+
     -   Per visualizzare gli indici partizionati, esegui questo comando:
-        
+
         ```
         SELECT * FROM g_columnar_index_partitions;
         ```
-        
-    
+
+
     Sostituisci `INDEX_NAME` con il nome dell'indice.
-    
+
 6.  Fai clic su **Esegui**.
-    
+
 
 ## Limitazioni
 

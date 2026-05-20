@@ -42,16 +42,16 @@ You can deploy the model using a one-click deployment from the Google Cloud cons
 To deploy the TimesFM model using a one-click deployment, follow these steps:
 
 1.  In the Google Cloud console, go to the **Model Garden** page:
-    
+
     [Go to Model Garden](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden)
 2.  In the **Search** field, enter `TimesFM`.
 3.  In the search results, click `TimesFM`.
 4.  In the **TimesFM** page, complete the following steps:
-    
+
 5.  Click **Deploy model**.
 6.  Select **Agent Platform**.
 7.  In the **Deploy on Agent Platform** pane, configure and deploy your model:
-    
+
     1.  To use the latest version of the TimesFM model, in the **Resource ID** drop-down, select `google/timesfm-2.0`.
     2.  To make it easier to identify the deployment later, enter the following:
         1.  In the **Model name**, a unique `MODEL_NAME`.
@@ -60,58 +60,58 @@ To deploy the TimesFM model using a one-click deployment, follow these steps:
         1.  To ensure the lowest possible latency, in the **Region** drop-down, select the same region where your AlloyDB instance is located.
         2.  For the best performance, in the **Machine spec** drop-down, select an appropriate machine specification. Note that a GPU or TPU might offer lower latency.
     4.  In the **Endpoint access** drop-down of **Availability policies**, select **Public (Shared endpoint)**.
-        
+
         This creates an endpoint in the `aiplatform` domain that works with AlloyDB.
-        
+
     5.  To deploy the model to a managed endpoint, click **Deploy**. The deployment might take about 10–15 minutes.
 8.  After the TimesFM model is deployed, a link similar to `google_timesfm-VERSION-one-click-deploy` displays in **Endpoints**.
 9.  To get the model request URL, in **Endpoints**, click the deployment link.
 10.  On the endpoint details page, click **Sample request**.
 11.  In the **Sample request** pane, find and take note of the model request URL. You use this information in [Register the TimesFM model in AlloyDB](#register-timesfm-alloydb)—for example, `https://us-central1-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/REGION/endpoints/ENDPOINT_ID:predict`.
-     
+
      Make sure the request URL has `aiplatform.googleapis.com` in it.
-     
+
 
 ### Manual deployment
 
 To manually deploy the TimesFM model using a Colaboratory notebook, follow these steps:
 
 1.  Navigate to the **Model Garden** page in the Google Cloud console:
-    
+
     [Go to Model Garden](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden)
 2.  In the **Search** field, enter `TimesFM`.
 3.  In the search results, click `TimesFM` to open the model card.
 4.  In the **TimesFM** page, click **CO Open Notebook**.
 5.  In the **Open Notebook** window, click the **Collab Enterprise** link for TimesFM 2.0.
 6.  In the **Collab Enterprise** page, complete the following steps:
-    
+
     1.  To establish a connection to the runtime environment, click **Connect**.
     2.  Optional: Complete the following steps if needed:
-        
+
         -   In the **Prerequisites** section of **Setup Google Cloud project**, set the BUCKET\_URI and REGION—for example, set the BUCKET\_URI to `gs://your-unique-bucket-name` and the REGION to `us-central1`.
-            
+
             **Note:** The bucket name must be globally unique. If you don't set a region, it's set automatically based on the Colab Enterprise environment.
-            
+
         -   In the **accelerator\_type** drop-down of **Deploy TimesFM to a Vertex AI Endpoint**, select a different accelerator type if needed.
         -   In **Step 3: Set the maximum forecast horizon**, fill out the **horizon** and **max\_context** fields—for example, set horizon to `128` and max\_context to `512`.
     3.  Deselect the `use_dedicated_endpoint` checkbox.
     4.  Execute all cells in the Notebook.
-    
+
     The output of the notebook provides the endpoint details in the following format: `projects/PROJECT_ID/locations/REGION/endpoints/ENDPOINT_ID`.
-    
+
 7.  To construct the `model_request_url` for the SQL model creation call, replace the project and endpoint identifiers with the endpoint details from the preceding step as follows:
-    
+
     CALL google\_ml.create\_model(
      model\_id \=> 'timesfm\_v2',
      model\_qualified\_name \=> 'timesfm\_v2',
      model\_type \=> 'ts\_forecasting',
      model\_provider \=> 'google',
      model\_request\_url \=> 'https://REGION\-aiplatform.googleapis.com/v1/projects/PROJECT\_ID/locations/REGION/endpoints/ENDPOINT\_ID:predict');
-    
+
     You need this `model_request_url` in `the google_ml.create_model` call when you register the TimesFM model in AlloyDB, as described in the following section.
-    
+
 8.  To confirm that the `ai.forecast` function works as expected, run the following sample query:
-    
+
     SELECT \* FROM ai.forecast(
        source\_query\=> '
          SELECT my\_timestamp, my\_data\_value FROM (
@@ -131,36 +131,36 @@ To manually deploy the TimesFM model using a Colaboratory notebook, follow these
        model\_id \=> 'timesfm\_v2',
        data\_col \=> 'my\_data\_value',
        timestamp\_col \=> 'my\_timestamp',
-    
+
        \-- The rest of the parameters are the same
        horizon \=> 7,
        conf\_level \=> 0.80
     );
-    
+
 
 ##### Register the TimesFM model in AlloyDB
 
 To register the TimesFM model in AlloyDB, follow these steps:
 
 1.  Verify that [the `google_ml_integration` extension is installed](/alloydb/docs/ai/configure-vertex-ai#verify-installed-extension) in the AlloyDB database that contains the data that you want to run predictions on.
-    
+
 2.  Confirm that you have version 1.4.5 or later of the `google_ml_integration` extension installed.
-    
+
     ```
     SELECT extversion FROM pg_extension WHERE extname = 'google_ml_integration';
     ```
-    
+
     The following is the sample output:
-    
+
     ```
     extversion
     ------------
     1.4.5
     (1 row)
     ```
-    
+
 3.  Call `google_ml.create_model` using the model request URL you took note of in [Register a forecasting model](#register-forecasting-model).
-    
+
     ```
     CALL
     google_ml.create_model(
@@ -171,20 +171,20 @@ To register the TimesFM model in AlloyDB, follow these steps:
       model_request_url => 'https://REGION-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/REGION/endpoints/ENDPOINT_ID:predict' -- Example endpoint from Model Garden
       );
     ```
-    
+
     Replace the following:
-    
+
     -   `MODEL_ID`: a unique identifier for the registered model you want to use for forecasting—for example, `vertex_timesfm`.
     -   `MODEL_QUALIFIED_NAME`: a user-defined name for the model—for example, `timesfm_v2`.
     -   `REGION`: the region where the instance is placed—for example, `us-central1`.
     -   `PROJECT_ID`: the name of the project where the model is deployed—for example, `forecast_project`.
     -   `ENDPOINT_ID`: the name of the model deployment—for example, `my-timesfm-endpoint`.
-        
+
         The `model_request_url` is provided by Agent Platform after you deploy your model. Copy the entire URL from the **Sample request** pane in the Agent Platform console. It already contains the correct project and endpoint information.
-        
-    
+
+
     **Note:** If your AlloyDB instance is in a different Google Cloud project than the Agent Platform model endpoint, make sure that the AlloyDB Service Account is granted the Vertex AI User role, which is `roles/aiplatform.user`, in the project where the Agent Platform model is hosted.
-    
+
 
 ## Generate forecasts
 
@@ -231,9 +231,9 @@ For detailed instructions on how to register different types of models, see [Reg
 ## What's next
 
 -   [Register a model endpoint with model endpoint management](/alloydb/docs/ai/register-model-endpoint).
-    
+
 -   [Query using AI powered SQL operators](/alloydb/docs/ai/evaluate-semantic-queries-ai-operators).
-    
+
 
 Send feedback
 

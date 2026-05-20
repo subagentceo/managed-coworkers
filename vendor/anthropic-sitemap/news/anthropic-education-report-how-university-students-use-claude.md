@@ -82,7 +82,7 @@ This suggests that educational approaches to AI integration would likely benefit
 
 ![Distribution of conversations across interaction styles, for each NCES subject.](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F99474f14f372a13fd858e8bceb1e6add170ee1c4-2400x2054.png&w=3840&q=75)
 
-Distribution of conversations across interaction styles for each NCES subject.  
+Distribution of conversations across interaction styles for each NCES subject.
 
 ## Cognitive tasks students delegate to AI
 

@@ -54,7 +54,7 @@ Enable the following services for your project:
 
 ### Prepare an AlloyDB for PostgreSQL cluster, instance, and database
 
-Make sure that you have access to an existing AlloyDB cluster and instance or [create a new one](/alloydb/docs/cluster-create).  
+Make sure that you have access to an existing AlloyDB cluster and instance or [create a new one](/alloydb/docs/cluster-create).
 This tutorial requires you to have a database in your AlloyDB instance. For more information, see [Create a database](/alloydb/docs/database-create).
 
 ### Required roles and permissions
@@ -87,21 +87,21 @@ To perform steps in this tutorial, sign in to [Google Cloud](https://console.clo
 In this section, you create the `flights` and `airports` database tables for this tutorial.
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using Identity and Access Management authentication.
-    
+
 5.  Click **Authenticate**. The Explorer pane displays a list of the objects in your database.
-    
+
 6.  Click **New SQL editor tab** or **New tab** to open a new tab.
-    
+
 7.  To create the `airports` table and schema, execute the following SQL statement:
-    
+
     ```
     CREATE TABLE IF NOT EXISTS airports (
       id INT PRIMARY KEY,
@@ -111,9 +111,9 @@ In this section, you create the `flights` and `airports` database tables for thi
       country TEXT
       );
     ```
-    
+
 8.  Create the `flights` table and schema:
-    
+
     ```
     CREATE TABLE IF NOT EXISTS flights (
       id INT PRIMARY KEY,
@@ -127,16 +127,16 @@ In this section, you create the `flights` and `airports` database tables for thi
       arrival_gate VARCHAR(10)
     );
     ```
-    
+
 
 ## Populate the `flights` and `airports` tables
 
 In this section, you populate the `flights` and `airports` tables using the provided SQL scripts.
 
 1.  Populate the `airports` table.
-    
+
     #### See SQL script
-    
+
     ```
     -- Insert Data into Airports
     INSERT INTO airports (id, iata, name, city, country) VALUES
@@ -205,11 +205,11 @@ In this section, you populate the `flights` and `airports` tables using the prov
     (5305, 'ASE', 'Aspen-Pitkin Co/Sardy Field', 'Aspen', 'United States'),
     (5362, 'MMH', 'Mammoth Yosemite Airport', 'Mammoth Lakes', 'United States');
     ```
-    
+
 2.  Populate the `flights` table.
-    
+
     #### See SQL script
-    
+
     ```
     -- Insert Data into Flights
     INSERT INTO flights (id, airline, flight_number, departure_airport, arrival_airport, departure_time, arrival_time, departure_gate, arrival_gate) VALUES
@@ -600,37 +600,37 @@ In this section, you populate the `flights` and `airports` tables using the prov
     (384, 'UA', 1523, 'SFO', 'EWR', '2025-01-02 23:39:00', '2025-01-03 07:43:00', 'B9', 'D15'),
     (385, 'US', 426, 'PHX', 'SFO', '2025-01-02 00:18:00', '2025-01-02 01:16:00', 'D47', 'C42');
     ```
-    
+
 3.  Run the following query to verify that the tables are populated:
-    
+
     ```
     SELECT * FROM "public"."flights" LIMIT 10;
     SELECT * FROM "public"."airports" LIMIT 10;
     ```
-    
+
 
 ## Create a context set in Studio
 
 In this section, create a context set named `flights-assistant`. This context set doesn't include any context set file uploaded to it.
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using IAM authentication.
-    
+
 5.  In the **Explorer pane**, next to **Context sets**, click **View actions**.
-    
+
 6.  Click **Create context set**.
-    
+
 7.  In **Context set name**, enter `flights-assistant`.
-    
+
 8.  Click **Create**.
-    
+
 
 ## Test QueryData in Studio
 
@@ -642,13 +642,13 @@ You also ask the `flights-assistant` agent a question such as "flight to disney 
 2.  Click **Test context set**.
 3.  In the query editor, click **Generate SQL using QueryData with: flights-assistant**.
 4.  Enter the following natural language question to generate a SQL query, and click **Generate**.
-    
+
     ```
     Find flights from SFO to JFK.
     ```
-    
+
     Review the SQL query. Notice that QueryData generates the correct SQL for this unambiguous question.
-    
+
       ```
       SELECT
         *
@@ -657,19 +657,19 @@ You also ask the `flights-assistant` agent a question such as "flight to disney 
       WHERE
         "departure_airport" = 'SFO' AND "arrival_airport" = 'JFK';
     ```
-    
+
 5.  In the **Generate SQL using QueryData with: flights-assistant** window, click **Edit**.
-    
+
 6.  Enter the following natural language question to generate a SQL query, and click **Update**.
-    
+
     ```
     Tell me flights that can help me beat nighttime traffic if traveling from New York
     ```
-    
+
     The database fails to understand the term `nighttime` traffic. This might prevent it from generating a SQL query or cause it to generate a query that ignores the term, as the following query shows.
-    
+
     **Note:** GenAI models are nondeterministic, meaning the same prompt may yield different responses across separate calls due to the probabilistic nature of the output generation.
-    
+
     ```
     -- The database schema does not contain information about traffic.
     -- Returning all flights departing from New York airports.
@@ -693,19 +693,19 @@ You also ask the `flights-assistant` agent a question such as "flight to disney 
     ORDER BY
       f.departure_time;
     ```
-    
+
 7.  In the **Generate SQL using QueryData with: flights-assistant** window, click **Edit**.
-    
+
 8.  Enter the following natural language question to generate a SQL query, and click **Update**.
-    
+
     ```
     flight to disney world
     ```
-    
+
     The context set logic generates a query to find an airport with "disney world" in its name. Since no such airport or city exists in the database, the query won't return any rows.
-    
+
     **Note:** GenAI models are nondeterministic, meaning the same prompt may yield different responses across separate calls due to the probabilistic nature of the output generation.
-    
+
     ```
     SELECT
       "flights"."id",
@@ -724,11 +724,11 @@ You also ask the `flights-assistant` agent a question such as "flight to disney 
     WHERE
       "airports"."name" ILIKE '%Disney World%';
     ```
-    
+
 
 ## Generate context for the context set
 
-In this section, you prepare the environment and create a context file that helps improve the context set's querying capabilities.  
+In this section, you prepare the environment and create a context file that helps improve the context set's querying capabilities.
 
 ### Set up your environment
 
@@ -739,59 +739,59 @@ To set up your environment, perform the following steps:
 1.  Install Gemini CLI. For more information, see [Gemini CLI quickstart](https://geminicli.com/docs/get-started/).
 2.  [Install the Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
 3.  [Set up Application Default Credentials (ADC)](https://docs.cloud.google.com/docs/authentication/set-up-adc-local-dev-environment). Run the following commands in your terminal to authenticate and select your project:
-    
+
     ```
     gcloud auth application-default login
     ```
-    
+
 4.  Install the DB Context Enrichment extension, which includes workflows for context generation.
-    
+
     ```
     gemini extensions install https://github.com/GoogleCloudPlatform/db-context-enrichment
     ```
-    
+
     **Note:** The extension requires a Gemini API key during installation to authenticate with the Gemini API, and to enable context generation. For more information about how to find your API key, see [Using Gemini API keys](https://ai.google.dev/gemini-api/docs/api-key).
-    
+
     Ensure that the version is `0.4.2` or higher. To update the DB Context Enrichment extension, run the following command:
-    
+
     ```
     gemini extensions update mcp-db-context-enrichment
     ```
-    
+
 5.  To update the DB Context Enrichment extension or to replace the `GEMINI_API_KEY`, run the following command:
-    
+
     ```
     gemini extensions config mcp-db-context-enrichment GEMINI_API_KEY
     ```
-    
+
     Replace `GEMINI_API_KEY` with your Gemini API key.
-    
+
 6.  In your terminal, start Gemini CLI.
-    
+
     ```
     gemini
     ```
-    
+
 7.  Complete the [Gemini CLI Authentication Setup](https://geminicli.com/docs/get-started/authentication/).
-    
+
 8.  Set up Database Connection. The extension requires a database connection for context generation, which is supported by the [MCP Toolbox](https://mcp-toolbox.dev/documentation/introduction/) and defined within the tools.yaml configuration file.
-    
+
     To create the `tools.yaml` configuration file in your current directory, enter a prompt such as `Help me set up the database connection` and follow the instructions provided by the skill. For more information about the `tools.yaml` file, see [MCP Toolbox documentation](https://mcp-toolbox.dev/documentation/configuration/).
-    
+
     **Note:** If this connection is not established, the extension returns error messages, such as `Error Discovering tools from mcp_toolbox`, and context generation fails to work.
-    
+
 9.  To reload the configuration after creating the `tools.yaml` file is created, run the following command in the Gemini CLI:
-    
+
     ```
     /mcp reload
     ```
-    
+
 10.  Verify that the MCP toolbox and the database enrichment extension are connected and ready to use.
-     
+
      ```
      /mcp list
      ```
-     
+
 
 ### Generate template context
 
@@ -800,19 +800,19 @@ In this section, to address the issue from the previous section where QueryData 
 To generate template context, perform the following steps:
 
 1.  Run the `/generate_targeted_templates` command and follow the workflow:
-    
+
     ```
     /generate_targeted_templates
     ```
-    
+
 2.  Provide the natural language query that you want to add to the query template in the terminal.
-    
+
     ```
     Tell me flights that can help me beat nighttime traffic if traveling from New York
     ```
-    
+
 3.  Provide a corresponding SQL query that you want to add to the query template. This query template defines the term `nighttime` as occurring between `5:00 PM` and `7:00 PM`.
-    
+
     ```
     SELECT
       f.airline,
@@ -833,13 +833,13 @@ To generate template context, perform the following steps:
     ORDER BY
       f.departure_time;
     ```
-    
+
 4.  Press **Enter**. Gemini converts your input into a specific format that refines the context set's performance across a wide range of user queries. For more information, see [Context sets overview](/alloydb/docs/ai/context-sets-overview#context-set).
-    
+
 5.  Review the generated query template. You can either save the query template as a new agent context file or append it to an existing agent context file.
-    
+
 6.  Select the option to create a new agent context file. Gemini creates a filename `INSTANCE_ID_DATABASE_ID_context_set_TIMESTAMP.json` in the same directory, with the following content:
-    
+
     ```
     {
       "templates": [
@@ -856,7 +856,7 @@ To generate template context, perform the following steps:
       ]
     }
     ```
-    
+
 
 ### Generate value search context
 
@@ -867,32 +867,32 @@ In this section, you generate value search context to help context set logic map
 To generate value search context, perform the following steps:
 
 1.  Run the `/generate_targeted_value_searches` command:
-    
+
     ```
     /generate_targeted_value_searches
     ```
-    
+
 2.  Enter `postgresql` to select AlloyDB as the database engine.
-    
+
 3.  Enter the value search configuration as follows:
-    
+
     ```
     Table: airports
     Column: city
     Concept: Airport City
     Match Function: SEMANTIC_SIMILARITY_MATCH
     ```
-    
+
 4.  Confirm if you want to generate the value search definition.
-    
+
 5.  Review the generated value search definition. You can either save the value search definition as a new context set file or append it to an existing context set file.
-    
+
 6.  Select the option to append to an existing context set file. This adds the value search definition to the context file created in the earlier section.
-    
+
 7.  Enter the database instance and database name for which the context set file was generated.
-    
+
     The existing context file is updated with the value search definition. Gemini creates a filename `INSTANCE_ID_DATABASE_ID_context_set_TIMESTAMP.json` in the same directory, with the following content:
-    
+
       ```
       {
         "templates": [
@@ -916,7 +916,7 @@ To generate value search context, perform the following steps:
       ]
       }
     ```
-    
+
 
 ## Upload context set file to the QueryData
 
@@ -925,25 +925,25 @@ In this section, you upload the context set file to QueryData, so that it improv
 To upload the context, perform the following steps:
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using Identity and Access Management authentication.
-    
+
 5.  In the **Explorer pane**, next to **Context sets**, click the **Actions** (more\_vert) icon.
-    
+
 6.  Click **Edit context set**.
-    
+
 7.  Optional: Edit **Context set description**.
-    
+
 8.  Click **Browse** in the **Upload context set file** section, and select the context set file generated earlier.
-    
+
 9.  Click **Save**.
-    
+
 
 ## Generate SQL query using QueryData
 
@@ -957,13 +957,13 @@ To generate SQL queries, perform the following steps:
 2.  Click **Test context set**.
 3.  In the query editor, click **Generate SQL using QueryData with: flights assistant**.
 4.  Enter the following natural language question to generate a SQL query, and click **Generate**.
-    
+
     ```
     Tell me flights that can help me beat nighttime traffic if traveling from New York
     ```
-    
+
     The generated SQL query looks similar to the following:
-    
+
     ```
     SELECT
       f.airline,
@@ -983,23 +983,23 @@ To generate SQL queries, perform the following steps:
     ORDER BY
       f.departure_time;
     ```
-    
+
     This is the same question you added to QueryData's context. Observe that QueryData can now accurately interpret the term `nighttime traffic`.
-    
+
     Although the context originates from one particular question, QueryData uses it to enhance SQL generation for a wide range of similar questions.
-    
+
 5.  In the **Generate SQL using QueryData with: flights-assistant** window, click **Edit**.
-    
+
 6.  Enter the following similar question to generate a SQL query, and click **Update**.
-    
+
     ```
     What are the flights that can help me avoid evening traffic if departing from Boston
     ```
-    
+
     Since the question replaces the term `nighttime traffic` with a similar term, `evening traffic`, QueryData provides a consistent answer to this question by applying the same interpretation.
-    
+
     The generated SQL query looks similar to the following:
-    
+
     ```
     -- What are the flights that can help me avoid evening traffic if departing from Boston
     SELECT
@@ -1022,17 +1022,17 @@ To generate SQL queries, perform the following steps:
     ORDER BY
       f.departure_time;
     ```
-    
+
 7.  In the **Generate SQL using QueryData with: flights-assistant** window, click **Edit**.
-    
+
 8.  Enter the following question to generate a SQL query, and click **Update**.
-    
+
     ```
     flights to disney world
     ```
-    
+
     The generated SQL query looks similar to the following:
-    
+
     ```
     SELECT
       "flights"."id",
@@ -1051,9 +1051,9 @@ To generate SQL queries, perform the following steps:
     WHERE
       "airports"."city" = 'Orlando';
     ```
-    
+
     Observe that QueryData can now accurately interpret that "disney world" relates to the city of "Orlando".
-    
+
 
 ## Integrate QueryData with your application
 
@@ -1062,17 +1062,17 @@ In this section, you create a QueryData agent for a flight-finding application. 
 **Note:** GenAI models are nondeterministic, meaning the same prompt may yield different responses across separate calls due to the probabilistic nature of the output generation.
 
 1.  Download [MCP Toolbox](https://mcp-toolbox.dev/documentation/introduction/) version 0.31.0 or later. MCP toolbox exposes the QueryData agent as a tool for applications to connect with. The MCP toolbox differs from the MCP Toolbox Gemini CLI extension you installed earlier, which generates context.
-    
+
 2.  Set up [Application Default Credentials (ADC)](https://docs.cloud.google.com/docs/authentication/set-up-adc-local-dev-environment).
-    
+
     ```
     gcloud auth application-default login
     ```
-    
+
 3.  Find the context set ID. For more information about how to find the context set ID, see [Find the context set ID](/alloydb/docs/ai/inspect-data-agent#find-context-id).
-    
+
 4.  Create the `tools.yaml` configuration to connect to the QueryData agent using the MCP toolbox. For more information, see [Gemini Data Analytics Source](https://mcp-toolbox.dev/integrations/cloudgda/source/) and Gemini Data Analytics QueryData Tool.
-    
+
     ```
     kind: source
     name: gda-api-source
@@ -1102,9 +1102,9 @@ In this section, you create a QueryData agent for a flight-finding application. 
       generateExplanation: true
       generateDisambiguationQuestion: true
     ```
-    
+
     Replace the following:
-    
+
     -   `PROJECT_ID`: Your Google Cloud project ID.
     -   `REGION_ID`: The region of your AlloyDB cluster, for example, `us-central1`.
     -   `CLUSTER_ID`: The ID of your AlloyDB cluster.
@@ -1112,88 +1112,88 @@ In this section, you create a QueryData agent for a flight-finding application. 
     -   `DATABASE_ID`: The name of the database to connect to.
     -   `CONTEXT_SET_ID`: The context set ID. For more information about how to find the context set ID, see [Find the context set ID](/alloydb/docs/ai/inspect-data-agent#find-agent-context-id).
 5.  Run the MCP Toolbox server with the `tools.yaml` file.
-    
+
     ./toolbox --config "tools.yaml"
-    
+
     **Note:** Don't close the terminal window where the MCP Toolbox server is running.
-    
+
 6.  Create an ADK application that invokes [Gemini Data Analytics QueryData tool](https://mcp-toolbox.dev/integrations/cloudgda/tools/cloud-gda-query/) using the MCP Toolbox's Python SDK. For more information about how to use the MCP Toolbox's Python SDK, see the [quickstart for Toolbox](https://mcp-toolbox.dev/documentation/getting-started/local_quickstart/) and for Python ADK, see the [quickstart for ADK](https://google.github.io/adk-docs/get-started/python/).
-    
+
     1.  Create a directory to store the application, for example `flight-assistant-app`.
     2.  Change directory to the `flight-assistant-app` directory.
-        
+
         ```
         mkdir flight-assistant-app
         ```
-        
+
     3.  Run the following commands under the `flight-assistant-app` directory to create a virtual environment and install required components.
-        
+
         ```
         python3 -m venv .venv
         ```
-        
+
     4.  Set up an ADK agent.
-        
+
         1.  Create an ADK agent.
-            
+
             ```
             adk create my_agent
             ```
-            
+
         2.  Select the `gemini-2.5-flash` model.
-            
+
         3.  Select **Google AI**, and enter your Gemini API key. For more information about how to find your API key, see [Using Gemini API keys](https://ai.google.dev/gemini-api/docs/api-key).
-            
+
     5.  Replace the contents of the `agent.py` file with the following Flight Data Assistant sample application code.
-        
+
         ```
         from typing import cast
-        
+
         from google.adk.agents.llm_agent import Agent
         from google.adk.agents.llm_agent import ToolUnion
-        
+
         from toolbox_core import ToolboxSyncClient
-        
+
         TOOLBOX_URL = "http://127.0.0.1:5000"
-        
+
         INSTRUCTION = """
         # ROLE
         You are a friendly and factual flight data assistant. Your goal is to help users find the best flights for their needs by providing accurate information with a helpful, professional tone.
         - use the Query Data Tool to answer the user's question, if the tool fails to generate a valid query, ask the user to clarify their question.
-        
+
         # OPERATIONAL CONSTRAINTS
         - TOOL LIMITATION: You only have access to the Query Data Tool. Do not claim to have capabilities beyond what this tool provides.
         - TRANSPARENCY POLICY: Maintain a seamless user experience. Never mention that you are using a tool, querying a database, or generating SQL. Frame all responses as your own direct assistance.
         - SCOPE MANAGEMENT: If a user asks for something beyond your capabilities, politely state that you cannot perform that specific task. Guide the user towards what you can help with.
-        
+
         # COMMUNICATION STYLE
         - Be concise and scannable when listing answers.
         - Maintain a helpful, professional persona.
-        
+
         =====
-        
+
         # QUERY DATA TOOL
-        
+
         Inputs:
         1. query: A natural language formulation of a database query.
-        
+
         Outputs: (all optional)
         1. disambiguation_question: Clarification questions or comments where the tool needs the users' input.
         2. generated_query: The generated query for the user query.
         3. intent_explanation: An explanation for why the tool produced `generated_query`.
         4. query_result: The result of executing `generated_query`.
         5. natural_language_answer: The natural language answer that summarizes the `query` and `query_result`.
-        
+
         Usage guidance:
         1. If `disambiguation_question` is produced, then solicit the needed inputs from the user and try the tool with a new `query` that has the needed clarification.
         2. If `natural_language_answer` is produced, use `intent_explanation` and `generated_query` to see if you need to clarify any assumptions for the user.
         3. If the tool output indicates failure or empty results, explain that clearly using the provided reasoning.
         """
-        
+
         client = ToolboxSyncClient(TOOLBOX_URL)
-        
+
         mcp_tool = client.load_tool("cloud_gda_query_tool")
-        
+
         root_agent = Agent(
             model="gemini-2.5-flash",
             name="root_agent",
@@ -1201,49 +1201,49 @@ In this section, you create a QueryData agent for a flight-finding application. 
             tools=cast(list[ToolUnion], [mcp_tool]),
         )
         ```
-        
-    
+
+
     **Note:** The instruction contains a system prompt that sets up a `flight assistant` QueryData agent. It also instructs the agent how to use the Gemini Data Analytics QueryData tool you set up in the `tools.yaml` file you created earlier in step 5.
-    
+
 7.  Run the following commands under the `flight-assistant-app` directory to start the application and access the ADK web server at `http://127.0.0.1:8000`.
-    
+
     ```
     adk web --port 8000
     ```
-    
+
 8.  Enter any text, such as `hello`, to start interacting with the agent.
-    
+
     The ADK agent answers general questions and calls the required MCP tools.
-    
+
 9.  Enter the following flight-related question.
-    
+
     ```
     How many flights depart from the west side?
     ```
-    
+
     The MCP tool is called to answer this question. However, since the term `the west` is ambiguous and doesn't specify any airports, the MCP tool returns a disambiguation question which the agent uses to construct a response.
-    
+
     ```
     I cannot determine how many flights depart from the 'west side' as the database does not contain information about which airports are considered to be on the 'west side'. However, I can help you with questions like:
-    
+
     1. How many flights depart from a specific airport?
-    
+
     2. What are the departure airports for all flights?
-    
+
     3. How many flights depart from each airport? Would you like to rephrase your question based on these options?
     ```
-    
+
 10.  Enter a question similar to that in the query template generated for the agent.
-     
+
      ```
      Help me find flights from San Francisco that avoid the evening rush hour.
      ```
-     
+
      Based on the QueryData context added earlier, the MCP tool understands that `evening traffic` occurs between 5 PM and 7 PM. The MCP tool returns the associated data for the agent to use in constructing its response.
-     
+
      ```
      Here are the flights departing from San Francisco that avoid the evening rush hour (defined as 5 PM to 7 PM):
-     
+
      * UA 1532 departing at 05:50:00
      * UA 1158 departing at 05:57:00
      * CY 922 departing at 06:38:00
@@ -1260,23 +1260,23 @@ In this section, you create a QueryData agent for a flight-finding application. 
      * OO 5427 departing at 09:06:00
      * CY 352 departing at 09:25:00
      ```
-     
+
 11.  Enter a question based on the concept type that you added in the QueryData agent context.
-     
+
      ```
      Get me flights to disney world
      ```
-     
+
      Based on the value search context added earlier, the QueryData agent understands that `disney world` relates to the city `Orlando` and returns the associated data for the QueryData agent to use in constructing its response.
-     
+
      ```
      Here are the flights heading to Orlando, which is the location of Disney World:
-     
+
      * Flight UA 1249 departs from SFO and arrives at MCO on 2025-01-02 at 18:15:00Z.
      * Flight UA 698 departs from SFO and arrives at MCO on 2025-01-02 at 22:33:00Z.
      * Flight UA 292 departs from SFO and arrives at MCO on 2025-01-03 at 06:37:00Z.
      ```
-     
+
 
 ## Iterate agent performance
 
@@ -1365,36 +1365,36 @@ The following sections describe how to delete these resources and objects.
 Before you delete the cluster, delete the context set that you created.
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using Identity and Access Management authentication.
-    
+
 5.  In the **Explorer pane**, next to your context set, click **View actions**.
-    
+
 6.  In the **Delete context set** window, enter `flight-assistant` in the confirmation box.
-    
+
 7.  Click **Confirm**.
-    
+
 
 ### Delete the cluster
 
 When you delete the cluster that you created in the [before you begin](/alloydb/docs/ai/use-natural-language-generate-sql-queries#create-and-connect-to-database) section, you also delete all of the objects you created.
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  Click **Delete cluster**.
-    
+
 4.  In **Delete cluster**, enter name of the cluster to confirm you want to delete your cluster.
-    
+
 
 ## What's next
 

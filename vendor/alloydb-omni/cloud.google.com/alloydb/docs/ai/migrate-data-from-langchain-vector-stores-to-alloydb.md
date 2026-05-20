@@ -59,20 +59,20 @@ Asegúrate de tener uno de los siguientes almacenes de vectores de bases de dato
 ### Habilita la facturación y las APIs obligatorias
 
 1.  En la consola de Google Cloud , en la página del selector de proyectos, selecciona o crea un proyecto deGoogle Cloud .
-    
+
     Nota: Si no planeas conservar los recursos que creaste durante este instructivo, crea un proyecto en lugar de seleccionar uno existente. Cuando termines, puedes borrar el proyecto si quitas todos los recursos asociados con él.
-    
+
     [Ir al selector de proyectos](https://console.cloud.google.com/projectselector2/home/dashboard?hl=es-419)
-    
+
 2.  [Asegúrate de tener habilitada la facturación para tu proyecto de Google Cloud](https://docs.cloud.google.com/billing/docs/how-to/verify-billing-enabled?hl=es-419#confirm_billing_is_enabled_on_a_project) .
-    
+
 3.  Habilita las API de Cloud necesarias para crear una conexión a AlloyDB para PostgreSQL.
-    
+
     [Habilita las APIs](https://console.cloud.google.com/apis/enableflow?apiid=alloydb.googleapis.com%2Ccompute.googleapis.com%2Cservicenetworking.googleapis.com%2Caiplatform.googleapis.com&hl=es-419)
-    
+
     1.  En el paso **Confirmar proyecto**, haz clic en **Siguiente** para confirmar el nombre del proyecto en el que realizarás cambios.
     2.  En el paso **Habilitar APIs**, haz clic en **Habilitar** para habilitar lo siguiente:
-        
+
         -   API de AlloyDB
         -   API de Compute Engine
         -   API de Service Networking
@@ -83,7 +83,7 @@ Para obtener los permisos que necesitas para completar las tareas de este instru
 
 -   Propietario (`roles/owner`) o editor (`roles/editor`)
 -   Si el usuario no es propietario ni editor, se requieren los siguientes roles de IAM y privilegios de PostgreSQL:
-    
+
     -   Cliente de instancia de AlloyDB ([`roles/alloydb.client`](https://docs.cloud.google.com/alloydb/docs/reference/iam-roles-permissions?hl=es-419#roles))
     -   Administrador de Cloud AlloyDB ([`roles/alloydb.admin`](https://docs.cloud.google.com/alloydb/docs/reference/iam-roles-permissions?hl=es-419#roles))
     -   Usuario de la red de Compute ([`roles/compute.networkUser`](https://docs.cloud.google.com/compute/docs/access/iam?hl=es-419#compute.networkUser))
@@ -101,77 +101,77 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
 ## Recupera la muestra de código
 
 1.  Clona el repositorio para copiar la muestra de código de GitHub:
-    
+
     ```
     git clone https://github.com/googleapis/langchain-google-alloydb-pg-python.git
     ```
-    
+
 2.  Navega al directorio `migrations`:
-    
+
     ```
     cd langchain-google-alloydb-pg-python/samples/migrations
     ```
-    
+
 
 ## Extrae datos de una base de datos de vectores existente
 
 **Nota:** Es posible que debas modificar los ejemplos de código de esta sección según tu caso de uso.
 
 1.  Crea un cliente.
-    
+
     ### Pinecone
-    
+
     ```
     from pinecone import Pinecone  # type: ignore
-    
+
     pinecone_client = Pinecone(api_key=pinecone_api_key)
     pinecone_index = pinecone_client.Index(pinecone_index_name)
     ```
-    
+
     ### Weaviate
-    
+
     ```
     import weaviate
-    
+
     # For a locally running weaviate instance, use `weaviate.connect_to_local()`
     weaviate_client = weaviate.connect_to_weaviate_cloud(
         cluster_url=weaviate_cluster_url,
         auth_credentials=weaviate.auth.AuthApiKey(weaviate_api_key),
     )
     ```
-    
+
     ### Croma
-    
+
     ```
     from langchain_chroma import Chroma
-    
+
     chromadb_client = Chroma(
         collection_name=chromadb_collection_name,
         embedding_function=embeddings_service,
         persist_directory=chromadb_path,
     )
     ```
-    
+
     ### Qdrant
-    
+
     ```
     from qdrant_client import QdrantClient
-    
+
     qdrant_client = QdrantClient(path=qdrant_path)
     ```
-    
+
     ### Milvus
-    
+
     ```
     milvus_client = MilvusClient(uri=milvus_uri)
     ```
-    
+
 2.  Obtener todos los datos de la base de datos
-    
+
     ### Pinecone
-    
+
     Recupera los IDs de vectores del índice de Pinecone:
-    
+
     ```
     results = pinecone_index.list_paginated(
         prefix="", namespace=pinecone_namespace, limit=pinecone_batch_size
@@ -179,7 +179,7 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
     ids = [v.id for v in results.vectors]
     if ids:  # Prevents yielding an empty list.
         yield ids
-    
+
     # Check BOTH pagination and pagination.next
     while results.pagination is not None and results.pagination.get("next") is not None:
         pagination_token = results.pagination.get("next")
@@ -189,18 +189,18 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             namespace=pinecone_namespace,
             limit=pinecone_batch_size,
         )
-    
+
         # Extract and yield the next batch of IDs
         ids = [v.id for v in results.vectors]
         if ids:  # Prevents yielding an empty list.
             yield ids
     ```
-    
+
     Luego, recupera los registros por ID del índice de Pinecone:
-    
+
     ```
     import uuid
-    
+
     # Iterate through the IDs and download their contents
     for ids_batch in id_iterator:
         all_data = pinecone_index.fetch(ids=ids_batch, namespace=pinecone_namespace)
@@ -208,7 +208,7 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
         embeddings = []
         contents = []
         metadatas = []
-    
+
         # Process each vector in the current batch
         for doc in all_data.vectors.values():
             # You might need to update this data translation logic according to one or more of your field names
@@ -231,13 +231,13 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
                 contents.append("")
             # metadata is the additional context
             metadatas.append(doc.metadata)
-    
+
         # Yield the current batch of results
         yield ids, contents, embeddings, metadatas
     ```
-    
+
     ### Weaviate
-    
+
     ```
     # Iterate through the IDs and download their contents
     weaviate_collection = weaviate_client.collections.get(weaviate_collection_name)
@@ -245,7 +245,7 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
     content: list[Any] = []
     embeddings: list[list[float]] = []
     metadatas: list[Any] = []
-    
+
     for item in weaviate_collection.iterator(include_vector=True):
         # You might need to update this data translation logic according to one or more of your field names
         # uuid is the unqiue identifier for the content
@@ -257,7 +257,7 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
         del item.properties[weaviate_text_key]  # type: ignore
         # properties is the additional context
         metadatas.append(item.properties)
-    
+
         if len(ids) >= weaviate_batch_size:
             # Yield the current batch of results
             yield ids, content, embeddings, metadatas
@@ -267,11 +267,11 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             embeddings = []
             metadatas = []
     ```
-    
+
     **Nota:** Actualiza `WEAVIATE_COLLECTION_NAME` con el nombre de la colección y `WEAVIATE_TEXT_KEY` con el nombre del campo en el esquema de Weaviate que contiene contenido de texto. Si tienes varias colecciones, ejecuta la migración para cada una de ellas.
-    
+
     ### Croma
-    
+
     ```
     # Iterate through the IDs and download their contents
     offset = 0
@@ -285,20 +285,20 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             limit=chromadb_batch_size,
             offset=offset,
         )
-    
+
         if len(docs["documents"]) == 0:
             break
-    
+
         # ids is the unqiue identifier for the content
         yield docs["ids"], docs["documents"], docs["embeddings"].tolist(), docs[
             "metadatas"
         ]
-    
+
         offset += chromadb_batch_size
     ```
-    
+
     ### Qdrant
-    
+
     ```
     # Iterate through the IDs and download their contents
     offset = None
@@ -310,12 +310,12 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             offset=offset,
             with_payload=True,
         )
-    
+
         ids: List[str] = []
         contents: List[Any] = []
         embeddings: List[List[float]] = []
         metadatas: List[Any] = []
-    
+
         for doc in docs:
             if doc.payload and doc.vector:
                 # You might need to update this data translation logic according to one or more of your field names
@@ -327,17 +327,17 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
                 embeddings.append(doc.vector)  # type: ignore
                 # metatdata is the additional context
                 metadatas.append(doc.payload["metadata"])
-    
+
         yield ids, contents, embeddings, metadatas
-    
+
         if not offset:
             break
     ```
-    
+
     **Nota:** Actualiza `QDRANT_COLLECTION_NAME` con el nombre de la colección. Si tienes varias colecciones, ejecuta la migración para cada una de ellas.
-    
+
     ### Milvus
-    
+
     ```
     # Iterate through the IDs and download their contents
     iterator = milvus_client.query_iterator(
@@ -346,7 +346,7 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
         output_fields=["pk", "text", "vector", "idv"],
         batch_size=milvus_batch_size,
     )
-    
+
     while True:
         ids = []
         content = []
@@ -372,77 +372,77 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             metadatas.append(doc)
         yield ids, content, embeddings, metadatas
     ```
-    
+
     **Nota:** Actualiza `MILVUS_COLLECTION_NAME` con el nombre de la colección. Si tienes varias colecciones, ejecuta la migración para cada una de ellas.
-    
+
 
 ## Inicializa la tabla de AlloyDB
 
 **Nota:** Es posible que debas modificar los ejemplos de código de esta sección según tu caso de uso.
 
 1.  Define el servicio de embedding.
-    
+
     La interfaz VectorStore requiere un servicio de incorporación. Este flujo de trabajo no genera embeddings nuevos, por lo que se usa la clase `FakeEmbeddings` para evitar costos.
-    
+
     ### Pinecone
-    
+
     ```
     # The VectorStore interface requires an embedding service. This workflow does not
     # generate new embeddings, therefore FakeEmbeddings class is used to avoid any costs.
     from langchain_core.embeddings import FakeEmbeddings
-    
+
     embeddings_service = FakeEmbeddings(size=vector_size)
     ```
-    
+
     ### Weaviate
-    
+
     ```
     # The VectorStore interface requires an embedding service. This workflow does not
     # generate new embeddings, therefore FakeEmbeddings class is used to avoid any costs.
     from langchain_core.embeddings import FakeEmbeddings
-    
+
     embeddings_service = FakeEmbeddings(size=vector_size)
     ```
-    
+
     ### Croma
-    
+
     ```
     # The VectorStore interface requires an embedding service. This workflow does not
     # generate new embeddings, therefore FakeEmbeddings class is used to avoid any costs.
     from langchain_core.embeddings import FakeEmbeddings
-    
+
     embeddings_service = FakeEmbeddings(size=vector_size)
     ```
-    
+
     ### Qdrant
-    
+
     ```
     # The VectorStore interface requires an embedding service. This workflow does not
     # generate new embeddings, therefore FakeEmbeddings class is used to avoid any costs.
     from langchain_core.embeddings import FakeEmbeddings
-    
+
     embeddings_service = FakeEmbeddings(size=vector_size)
     ```
-    
+
     ### Milvus
-    
+
     ```
     # The VectorStore interface requires an embedding service. This workflow does not
     # generate new embeddings, therefore FakeEmbeddings class is used to avoid any costs.
     from langchain_core.embeddings import FakeEmbeddings
-    
+
     embeddings_service = FakeEmbeddings(size=vector_size)
     ```
-    
+
 2.  Prepara la tabla de AlloyDB.
-    
+
     1.  Conéctate a AlloyDB con una conexión IP pública. Para obtener más información, consulta [Cómo especificar el tipo de dirección IP](https://github.com/GoogleCloudPlatform/alloydb-python-connector?tab=readme-ov-file#specifying-ip-address-type).
-        
+
         ### Pinecone
-        
+
         ```
         from langchain_google_alloydb_pg import AlloyDBEngine
-        
+
         alloydb_engine = await AlloyDBEngine.afrom_instance(
             project_id=project_id,
             region=region,
@@ -454,12 +454,12 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             ip_type=IPTypes.PUBLIC,  # Optionally use IPTypes.PRIVATE
         )
         ```
-        
+
         ### Weaviate
-        
+
         ```
         from langchain_google_alloydb_pg import AlloyDBEngine
-        
+
         alloydb_engine = await AlloyDBEngine.afrom_instance(
             project_id=project_id,
             region=region,
@@ -471,12 +471,12 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             ip_type=IPTypes.PUBLIC,
         )
         ```
-        
+
         ### Croma
-        
+
         ```
         from langchain_google_alloydb_pg import AlloyDBEngine
-        
+
         alloydb_engine = await AlloyDBEngine.afrom_instance(
             project_id=project_id,
             region=region,
@@ -488,12 +488,12 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             ip_type=IPTypes.PUBLIC,
         )
         ```
-        
+
         ### Qdrant
-        
+
         ```
         from langchain_google_alloydb_pg import AlloyDBEngine
-        
+
         alloydb_engine = await AlloyDBEngine.afrom_instance(
             project_id=project_id,
             region=region,
@@ -505,12 +505,12 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             ip_type=IPTypes.PUBLIC,
         )
         ```
-        
+
         ### Milvus
-        
+
         ```
         from langchain_google_alloydb_pg import AlloyDBEngine
-        
+
         alloydb_engine = await AlloyDBEngine.afrom_instance(
             project_id=project_id,
             region=region,
@@ -522,14 +522,14 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             ip_type=IPTypes.PUBLIC,
         )
         ```
-        
+
     2.  Crea una tabla en la que se copiarán los datos, si aún no existe.
-        
+
         ### Pinecone
-        
+
         ```
         from langchain_google_alloydb_pg import Column
-        
+
         await alloydb_engine.ainit_vectorstore_table(
             table_name=alloydb_table,
             vector_size=vector_size,
@@ -538,9 +538,9 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             # overwrite_existing=True,  # Drop the old table and Create a new vector store table
         )
         ```
-        
+
         ### Weaviate
-        
+
         ```
         await alloydb_engine.ainit_vectorstore_table(
             table_name=alloydb_table,
@@ -548,9 +548,9 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             # Customize the ID column types with `id_column` if not using the UUID data type
         )
         ```
-        
+
         ### Croma
-        
+
         ```
         await alloydb_engine.ainit_vectorstore_table(
             table_name=alloydb_table,
@@ -558,9 +558,9 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             # Customize the ID column types with `id_column` if not using the UUID data type
         )
         ```
-        
+
         ### Qdrant
-        
+
         ```
         await alloydb_engine.ainit_vectorstore_table(
             table_name=alloydb_table,
@@ -568,9 +568,9 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             # Customize the ID column types with `id_column` if not using the UUID data type
         )
         ```
-        
+
         ### Milvus
-        
+
         ```
         await alloydb_engine.ainit_vectorstore_table(
             table_name=alloydb_table,
@@ -578,78 +578,78 @@ Si deseas autenticarte en tu base de datos con la autenticación de IAM en lugar
             # Customize the ID column types with `id_column` if not using the UUID data type
         )
         ```
-        
+
 
 ## Inicializa un objeto de almacén de vectores
 
 Este código agrega metadatos de embedding de vector adicionales a la columna `langchain_metadata` en formato JSON. Para que el filtrado sea más eficiente, organiza estos metadatos en columnas separadas. Para obtener más información, consulta [Crea un almacén de vectores personalizado](https://github.com/googleapis/langchain-google-alloydb-pg-python/blob/main/docs/vector_store.ipynb).
 
 1.  Para inicializar un objeto de almacén de vectores, ejecuta el siguiente comando:
-    
+
     ### Pinecone
-    
+
     ```
     from langchain_google_alloydb_pg import AlloyDBVectorStore
-    
+
     vs = await AlloyDBVectorStore.create(
         engine=alloydb_engine,
         embedding_service=embeddings_service,
         table_name=alloydb_table,
     )
     ```
-    
+
     ### Weaviate
-    
+
     ```
     from langchain_google_alloydb_pg import AlloyDBVectorStore
-    
+
     vs = await AlloyDBVectorStore.create(
         engine=alloydb_engine,
         embedding_service=embeddings_service,
         table_name=alloydb_table,
     )
     ```
-    
+
     ### Croma
-    
+
     ```
     from langchain_google_alloydb_pg import AlloyDBVectorStore
-    
+
     vs = await AlloyDBVectorStore.create(
         engine=alloydb_engine,
         embedding_service=embeddings_service,
         table_name=alloydb_table,
     )
     ```
-    
+
     ### Qdrant
-    
+
     ```
     from langchain_google_alloydb_pg import AlloyDBVectorStore
-    
+
     vs = await AlloyDBVectorStore.create(
         engine=alloydb_engine,
         embedding_service=embeddings_service,
         table_name=alloydb_table,
     )
     ```
-    
+
     ### Milvus
-    
+
     ```
     from langchain_google_alloydb_pg import AlloyDBVectorStore
-    
+
     vs = await AlloyDBVectorStore.create(
         engine=alloydb_engine,
         embedding_service=embeddings_service,
         table_name=alloydb_table,
     )
     ```
-    
+
 2.  Inserta datos en la tabla de AlloyDB:
-    
+
     ### Pinecone
-    
+
     ```
     pending: set[Any] = set()
     for ids, contents, embeddings, metadatas in data_iterator:
@@ -670,9 +670,9 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     if pending:
         await asyncio.wait(pending)
     ```
-    
+
     ### Weaviate
-    
+
     ```
     pending: set[Any] = set()
     for ids, contents, embeddings, metadatas in data_iterator:
@@ -693,9 +693,9 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     if pending:
         await asyncio.wait(pending)
     ```
-    
+
     ### Croma
-    
+
     ```
     pending: set[Any] = set()
     for ids, contents, embeddings, metadatas in data_iterator:
@@ -716,9 +716,9 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     if pending:
         await asyncio.wait(pending)
     ```
-    
+
     ### Qdrant
-    
+
     ```
     pending: set[Any] = set()
     for ids, contents, embeddings, metadatas in data_iterator:
@@ -739,9 +739,9 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     if pending:
         await asyncio.wait(pending)
     ```
-    
+
     ### Milvus
-    
+
     ```
     pending: set[Any] = set()
     for ids, contents, embeddings, metadatas in data_iterator:
@@ -762,28 +762,28 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     if pending:
         await asyncio.wait(pending)
     ```
-    
+
 
 ## Ejecuta la secuencia de comandos de migración
 
 1.  [Configura el entorno de Python](https://docs.cloud.google.com/python/docs/setup?hl=es-419).
-    
+
 2.  Instala las dependencias de la muestra:
-    
+
     ```
     pip install -r requirements.txt
     ```
-    
+
 3.  Ejecuta la migración de muestra.
-    
+
     ### Pinecone
-    
+
     ```
     python migrate_pinecone_vectorstore_to_alloydb.py
     ```
-    
+
     Realiza los siguientes reemplazos antes de ejecutar la muestra:
-    
+
     -   `PINECONE_API_KEY`: Es la clave de API de Pinecone.
     -   `PINECONE_NAMESPACE`: Es el espacio de nombres de Pinecone.
     -   `PINECONE_INDEX_NAME`: Es el nombre del índice de Pinecone.
@@ -794,15 +794,15 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     -   `DB_NAME`: Es el nombre de la base de datos.
     -   `DB_USER`: Es el nombre del usuario de la base de datos.
     -   `DB_PWD`: Es la contraseña secreta de la base de datos.
-    
+
     ### Weaviate
-    
+
     ```
     python migrate_weaviate_vectorstore_to_alloydb.py
     ```
-    
+
     Realiza los siguientes reemplazos antes de ejecutar la muestra:
-    
+
     -   `WEAVIATE_API_KEY`: Es la clave de API de Weaviate.
     -   `WEAVIATE_CLUSTER_URL`: Es la URL del clúster de Weaviate.
     -   `WEAVIATE_COLLECTION_NAME`: Es el nombre de la colección de Weaviate.
@@ -813,15 +813,15 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     -   `DB_NAME`: Es el nombre de la base de datos.
     -   `DB_USER`: Es el nombre del usuario de la base de datos.
     -   `DB_PWD`: Es la contraseña secreta de la base de datos.
-    
+
     ### Croma
-    
+
     ```
     python migrate_chromadb_vectorstore_to_alloydb.py
     ```
-    
+
     Realiza los siguientes reemplazos antes de ejecutar la muestra:
-    
+
     -   `CHROMADB_PATH`: Es la ruta de acceso a la base de datos de Chroma.
     -   `CHROMADB_COLLECTION_NAME`: Es el nombre de la colección de la base de datos de Chroma.
     -   `PROJECT_ID`: Es el ID del proyecto.
@@ -831,15 +831,15 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     -   `DB_NAME`: Es el nombre de la base de datos.
     -   `DB_USER`: Es el nombre del usuario de la base de datos.
     -   `DB_PWD`: Es la contraseña secreta de la base de datos.
-    
+
     ### Qdrant
-    
+
     ```
     python migrate_qdrant_vectorstore_to_alloydb.py
     ```
-    
+
     Realiza los siguientes reemplazos antes de ejecutar la muestra:
-    
+
     -   `QDRANT_PATH`: Es la ruta de acceso a la base de datos de Qdrant.
     -   `QDRANT_COLLECTION_NAME`: Es el nombre de la colección de Qdrant.
     -   `PROJECT_ID`: Es el ID del proyecto.
@@ -849,15 +849,15 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     -   `DB_NAME`: Es el nombre de la base de datos.
     -   `DB_USER`: Es el nombre del usuario de la base de datos.
     -   `DB_PWD`: Es la contraseña secreta de la base de datos.
-    
+
     ### Milvus
-    
+
     ```
     python migrate_milvus_vectorstore_to_alloydb.py
     ```
-    
+
     Realiza los siguientes reemplazos antes de ejecutar la muestra:
-    
+
     -   `MILVUS_URI`: Es el URI de Milvus.
     -   `MILVUS_COLLECTION_NAME`: Es el nombre de la colección de Milvus.
     -   `PROJECT_ID`: Es el ID del proyecto.
@@ -867,33 +867,33 @@ Este código agrega metadatos de embedding de vector adicionales a la columna `l
     -   `DB_NAME`: Es el nombre de la base de datos.
     -   `DB_USER`: Es el nombre del usuario de la base de datos.
     -   `DB_PWD`: Es la contraseña secreta de la base de datos.
-    
-    Una migración correcta imprime registros similares a los siguientes sin errores:  
+
+    Una migración correcta imprime registros similares a los siguientes sin errores:
     `Migration completed, inserted all the batches of data to AlloyDB`
-    
+
 4.  Abre AlloyDB Studio para ver los datos migrados. Para obtener más información, consulta [Administra tus datos con AlloyDB Studio](https://docs.cloud.google.com/alloydb/docs/manage-data-using-studio?hl=es-419).
-    
+
 
 ## Realiza una limpieza
 
 Para evitar que se apliquen cargos a tu cuenta de Google Cloud por los recursos usados en este instructivo, borra el proyecto que contiene los recursos o conserva el proyecto y borra los recursos individuales.
 
 1.  En la consola de Google Cloud , ve a la página **Clústeres**.
-    
+
     [Ir a los clústeres](https://console.cloud.google.com/alloydb/clusters?hl=es-419)
-    
+
 2.  En la columna **Nombre del recurso**, haz clic en el nombre del clúster que creaste.
-    
+
 3.  Haz clic en _delete_ **Borrar clúster**.
-    
+
 4.  En **Borrar clúster**, ingresa el nombre del clúster para confirmar que deseas borrarlo.
-    
+
 5.  Haz clic en **Borrar**.
-    
+
     Si creaste una conexión privada cuando [creaste un clúster](#create-cluster-user), borra la conexión privada:
-    
+
 6.  Ve a la [página Herramientas de redes](https://console.cloud.google.com/networking/networks/details/default?hl=es-419) de la consola de Google Cloud y haz clic en **Borrar red de VPC**.
-    
+
 
 ## ¿Qué sigue?
 

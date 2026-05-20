@@ -46,11 +46,10 @@ We propose two strategic pillars that will address the full spectrum of infrastr
 
 America has the economic strength, technical prowess, and innovative spirit to meet AI's infrastructure challenges. Our recommendations offer a practical blueprint that uses existing federal authorities while cutting through regulatory barriers that have held back energy development for too long.
 
-By partnering across government, industry, and communities, we can build the foundation for decades of American leadership in AI.  
+By partnering across government, industry, and communities, we can build the foundation for decades of American leadership in AI.
 
 Read the full [report](https://www-cdn.anthropic.com/0dc382a2086f6a054eeb17e8a531bd9625b8e6e5.pdf).
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/build-ai-in-america)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/build-ai-in-america)
 

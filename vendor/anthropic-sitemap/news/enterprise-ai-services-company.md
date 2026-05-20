@@ -30,7 +30,6 @@ This company will also become a member of Anthropic’s growing Claude Partner N
 
 Our partnerships with Accenture, Deloitte, PwC, and the other consulting and systems integration firms in the Claude Partner Network are one of the ways Claude benefits the world’s largest enterprises today. These firms lead the complex transformation programs that shape how global enterprises operate, and they bring Claude expertise to their millions of practitioners across every major industry. We have been steadily expanding the Claude Partner Network since its launch, and we are continuing to invest in the programs, funding, and teams that support our partners.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/enterprise-ai-services-company)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/enterprise-ai-services-company)
 

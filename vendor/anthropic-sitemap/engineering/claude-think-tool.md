@@ -1,9 +1,9 @@
 -   Extended thinking update
-    
+
     Dec 15, 2025
-    
+
     Extended thinking capabilities have improved since its initial release, such that we recommend using that feature instead of a dedicated think tool in most cases. Extended thinking provides similar benefits—giving Claude space to reason through complex problems—with better integration and performance. See our extended thinking documentation for implementation details.
-    
+
 
 As we continue to enhance Claude's complex problem-solving abilities, we've discovered a particularly effective approach: a "think" tool that creates dedicated space for structured thinking during complex tasks.
 
@@ -145,7 +145,7 @@ Before taking any action or responding to the user after receiving tool results,
 - List the specific rules that apply to the current request
 - Check if all required information is collected
 - Verify that the planned action complies with all policies
-- Iterate over tool results for correctness 
+- Iterate over tool results for correctness
 
 Here are some examples of what to iterate over inside the think tool:
 <think_tool_example_1>

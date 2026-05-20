@@ -28,7 +28,6 @@ Starting today, customers can use Claude 3 Haiku through our [API](https://www.a
 
 \[3\] Each image is estimated at 1.6K tokens.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/claude-3-haiku)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/claude-3-haiku)
 

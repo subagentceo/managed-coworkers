@@ -53,76 +53,76 @@ The AlloyDB remote MCP server has the following limitations:
 -   The IAM permission required for `execute_sql_read_only` is `alloydb.instances.executeSqlReadOnly`, which isn't visible in the Google Cloud console. To use the API or the Google Cloud CLI, you need any of the following roles: `alloydb.viewer`, `alloydb.databaseUser`, or `alloydb.admin`.
 -   `execute_sql_read_only` is only supported for PostgreSQL versions 17 and later.
 -   Potential write operations using foreign data wrappers (FDWs) with `execute_sql_read_only`. If you configured an FDW connection from your AlloyDB instance to a remote database, and the user mapping for this FDW connection has write permissions—for example, `INSERT`, `UPDATE`, and `DELETE`—on the remote database, these permissions can be used even when you use `execute_sql_read_only`.
-    
+
     To prevent accidental writes to remote databases when you use `execute_sql_read_only`, verify that any user mappings configured for your FDW connections don't grant write permissions to users who are intended to have read-only access through this tool. Carefully review the permissions assigned to the users in your FDW user mappings.
-    
+
 
 ## Before you begin
 
 -   Sign in to your Google Cloud account. If you're new to Google Cloud, [create an account](https://console.cloud.google.com/freetrial) to evaluate how our products perform in real-world scenarios. New customers also get $300 in free credits to run, test, and deploy workloads.
 -   In the Google Cloud console, on the project selector page, select or create a Google Cloud project.
-    
+
     **Roles required to select or create a project**
-    
+
     -   **Select a project**: Selecting a project doesn't require a specific IAM role—you can select any project that you've been granted a role on.
     -   **Create a project**: To create a project, you need the Project Creator role (`roles/resourcemanager.projectCreator`), which contains the `resourcemanager.projects.create` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     **Note**: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.
-    
+
     [Go to project selector](https://console.cloud.google.com/projectselector2/home/dashboard)
-    
+
 -   If you're using an existing project for this guide, [verify that you have the permissions required to complete this guide](#required-roles). If you created a new project, then you already have the required permissions.
-    
+
 -   Enable the AlloyDB API.
-    
+
     **Roles required to enable APIs**
-    
+
     To enable APIs, you need the Service Usage Admin IAM role (`roles/serviceusage.serviceUsageAdmin`), which contains the `serviceusage.services.enable` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     [Enable the API](https://console.cloud.google.com/apis/enableflow?apiid=alloydb.googleapis.com)
-    
+
 -   [Install](/sdk/docs/install) the Google Cloud CLI.
-    
+
     **Note:** If you installed the gcloud CLI previously, make sure you have the latest version by running `gcloud components update`.
-    
+
 -   If you're using an external identity provider (IdP), you must first [sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
-    
+
 -   To [initialize](/sdk/docs/initializing) the gcloud CLI, run the following command:
-    
+
     gcloud init
-    
+
 
 -   In the Google Cloud console, on the project selector page, select or create a Google Cloud project.
-    
+
     **Roles required to select or create a project**
-    
+
     -   **Select a project**: Selecting a project doesn't require a specific IAM role—you can select any project that you've been granted a role on.
     -   **Create a project**: To create a project, you need the Project Creator role (`roles/resourcemanager.projectCreator`), which contains the `resourcemanager.projects.create` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     **Note**: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.
-    
+
     [Go to project selector](https://console.cloud.google.com/projectselector2/home/dashboard)
-    
+
 -   If you're using an existing project for this guide, [verify that you have the permissions required to complete this guide](#required-roles). If you created a new project, then you already have the required permissions.
-    
+
 -   Enable the AlloyDB API.
-    
+
     **Roles required to enable APIs**
-    
+
     To enable APIs, you need the Service Usage Admin IAM role (`roles/serviceusage.serviceUsageAdmin`), which contains the `serviceusage.services.enable` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     [Enable the API](https://console.cloud.google.com/apis/enableflow?apiid=alloydb.googleapis.com)
-    
+
 -   [Install](/sdk/docs/install) the Google Cloud CLI.
-    
+
     **Note:** If you installed the gcloud CLI previously, make sure you have the latest version by running `gcloud components update`.
-    
+
 -   If you're using an external identity provider (IdP), you must first [sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
-    
+
 -   To [initialize](/sdk/docs/initializing) the gcloud CLI, run the following command:
-    
+
     gcloud init
-    
+
 
 ### Required roles
 
@@ -244,9 +244,9 @@ Content-Type: application/json
 To execute SQL statements, follow these steps:
 
 1.  Set the `data_api_access` instance setting on the AlloyDB instance to the value `ALLOW_DATA_API_ACCESS`. When you create an instance using the `create_instance` tool, the `data_api_access` configuration is enabled automatically.
-    
+
     If the `data_api_access` configuration isn't enabled on an instance, you can enable it using the curl command to update the value of the field `dataApiAccess` to `ENABLED`:
-    
+
     curl -X PATCH \\
      -H "Authorization: Bearer $(gcloud auth print-access-token)" \\
      -H "Content-Type: application/json" \\
@@ -254,19 +254,19 @@ To execute SQL statements, follow these steps:
      -d '{
        "dataApiAccess": "ENABLED",
      }'
-    
+
     Replace the following:
-    
+
     -   `PROJECT_ID`: The ID of your Google Cloud project.
     -   `LOCATION`: The region where your AlloyDB cluster is located.
     -   `CLUSTER_ID`: The ID of your AlloyDB cluster.
     -   `INSTANCE_ID`: The ID of your AlloyDB instance.
 2.  In the Gemini CLI, enter a prompt similar to the following:
-    
+
     `Enable IAM database authentication on the AlloyDB instance INSTANCE_NAME Make sure that the SQL statements use the privileges associated with the IAM database authentication user account USER_ACCOUNT`
-    
+
     Replace the following:
-    
+
     -   `INSTANCE_NAME`: the name of the AlloyDB instance.
     -   `USER_ACCOUNT`: the IAM user account to use for [authentication](/alloydb/docs/database-users/manage-iam-auth) when executing SQL statements.
 
@@ -285,15 +285,15 @@ A sample use case might be the rapid development of web applications and the pro
 **Workflow:** the workflow for setting up a web application might look like the following:
 
 -   **Provisioning**: The agent creates a cluster that the instance can be allocated in. The agent then calls the `create_instance` tool to create a new AlloyDB instance with development environment-sized specifications. You can [enable Public IP connectivity](/alloydb/docs/connect-public-ip) on the new instance. You can also [automate Private Service Connect](/alloydb/docs/configure-private-service-connect) endpoint configuration.
-    
+
 -   **Verification**: The agent uses the `get_operation` tool to poll the status of the instance creation operation.
-    
+
 -   **Connection**: When the operation is complete, the agent uses the `get_instance` tool to retrieve the instance connection metadata.
-    
+
 -   **Schema setup**: The agent creates the database and then uses the `execute_sql` to run the `CREATE TABLE products` SQL statement.
-    
+
 -   **Data seeding**: The agent uses `execute_sql` again to insert initial seed data (DML) into the newly created table.
-    
+
 
 ### Operational and database configuration management
 
@@ -306,11 +306,11 @@ In this sample use case, you might review existing database instances to help en
 **Workflow**: the workflow for checking AlloyDB instance and database user configuration might look like the following.
 
 -   **Discovery**: The agent uses `list_instances` to retrieve a list of all AlloyDB instances in the project.
-    
+
 -   **Inspection**: For each instance identified, the agent calls `get_instance` to fetch detailed configuration metadata, such as the database version, region, and machine type, and calls `list_users` to check the database users on the instance. This metadata includes information about whether [public IP connectivity](/alloydb/docs/connect-public-ip) is enabled or if [Private Service Connect endpoints](/alloydb/docs/configure-private-service-connect) are configured.
-    
+
 -   **Reporting**: The agent summarizes the findings, highlighting any instances or users that deviate from the expected configuration.
-    
+
 
 ## Optional security and safety configurations
 
@@ -335,32 +335,32 @@ You must enable Model Armor APIs before you can use Model Armor.
 ### Console
 
 1.  Enable the Model Armor API.
-    
+
     **Roles required to enable APIs**
-    
+
     To enable APIs, you need the Service Usage Admin IAM role (`roles/serviceusage.serviceUsageAdmin`), which contains the `serviceusage.services.enable` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     [Enable the API](https://console.cloud.google.com/apis/enableflow?apiid=modelarmor.googleapis.com)
-    
+
 2.  Select the project where you want to activate Model Armor.
-    
+
 
 ### gcloud
 
 Before you begin, follow these steps using the Google Cloud CLI with the Model Armor API:
 
 1.  In the Google Cloud console, activate Cloud Shell.
-    
+
     [Activate Cloud Shell](https://console.cloud.google.com/?cloudshell=true)
-    
+
     At the bottom of the Google Cloud console, a [Cloud Shell](/shell/docs/how-cloud-shell-works) session starts and displays a command-line prompt. Cloud Shell is a shell environment with the Google Cloud CLI already installed and with values already set for your current project. It can take a few seconds for the session to initialize.
-    
+
 2.  Run the following command to set the API endpoint for the Model Armor service.
-    
+
     gcloud config set api\_endpoint\_overrides/modelarmor "https://modelarmor.LOCATION.rep.googleapis.com/"
-    
+
     Replace `LOCATION` with the region where you want to use Model Armor.
-    
+
 
 #### Configure protection for Google and Google Cloud remote MCP servers
 

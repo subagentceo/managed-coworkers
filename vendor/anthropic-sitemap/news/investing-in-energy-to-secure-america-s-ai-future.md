@@ -19,7 +19,6 @@ These investments are just the beginning. We also believe that AI will be a powe
 
 By partnering across government, industry, and communities, we can build the foundation for decades of American leadership in AI—creating jobs, strengthening our energy independence, and ensuring the transformative benefits of AI are realized in the United States. We look forward to continuing to work with the U.S. government and other industry partners towards achieving this goal.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/investing-in-energy-to-secure-america-s-ai-future)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/investing-in-energy-to-secure-america-s-ai-future)
 

@@ -67,23 +67,23 @@ Code-based graders
 
 **Weaknesses**
 
-• String match checks (exact, regex, fuzzy, etc.)  
-• Binary tests (fail-to-pass, pass-to-pass)  
-• Static analysis (lint, type, security)  
-• Outcome verification  
-• Tool calls verification (tools used, parameters)  
+• String match checks (exact, regex, fuzzy, etc.)
+• Binary tests (fail-to-pass, pass-to-pass)
+• Static analysis (lint, type, security)
+• Outcome verification
+• Tool calls verification (tools used, parameters)
 • Transcript analysis (turns taken, token usage)
 
-• Fast  
-• Cheap  
-• Objective  
-• Reproducible  
-• Easy to debug  
-• Verify specific conditions  
+• Fast
+• Cheap
+• Objective
+• Reproducible
+• Easy to debug
+• Verify specific conditions
 
-• Brittle to valid variations that don’t match expected patterns exactly  
-• Lacking in nuance  
-• Limited for evaluating some more subjective tasks  
+• Brittle to valid variations that don’t match expected patterns exactly
+• Lacking in nuance
+• Limited for evaluating some more subjective tasks
 
 Model-based graders
 
@@ -99,7 +99,6 @@ Model-based graders
 -   Reference-based evaluation
 -   Multi-judge consensus
 
-  
 
 -   Flexible
 -   Scalable
@@ -107,13 +106,11 @@ Model-based graders
 -   Handles open-ended tasks
 -   Handles freeform output
 
-  
 
 -   Non-deterministic
 -   More expensive than code
 -   Requires calibration with human graders for accuracy
 
-  
 
 Human graders
 
@@ -129,19 +126,16 @@ Human graders
 -   A/B testing
 -   Inter-annotator agreement
 
-  
 
 -   Gold standard quality
 -   Matches expert user judgment
 -   Used to calibrate model-based graders
 
-  
 
 -   Expensive
 -   Slow
 -   Often requires access to human experts at scale
 
-  
 
 For each task, scoring can be weighted (combined grader scores must hit a threshold), binary (all graders must pass), or a hybrid.
 
@@ -207,7 +201,7 @@ Note that this example showcases the full range of available graders for illustr
 
 Success for conversational agents can be multidimensional: is the ticket resolved (state check), did it finish in <10 turns (transcript constraint), and was the tone appropriate (LLM rubric)? Two benchmarks that incorporate multidimensionality are [𝜏-Bench](https://arxiv.org/abs/2406.12045) and its successor, [τ2-Bench](https://arxiv.org/abs/2506.07982). These simulate multi-turn interactions across domains like retail support and airline booking, where one model plays a user persona while the agent navigates realistic scenarios.
 
-  
+
 **Example: Theoretical evaluation for a conversational agent**
 
 Consider a support task where the agent must handle a refund for a frustrated customer.
@@ -366,8 +360,8 @@ Pros
 
 Cons
 
-**Automated evals  
-**_Running tests programmatically without real users_  
+**Automated evals
+**_Running tests programmatically without real users_
 
 -   Faster iteration
 -   Fully reproducible
@@ -379,8 +373,8 @@ Cons
 -   Requires ongoing maintenance as product and model evolves to avoid drift
 -   Can create false confidence if it doesn’t match real usage patterns
 
-**Production monitoring  
-**_Tracking metrics and errors in live systems_  
+**Production monitoring
+**_Tracking metrics and errors in live systems_
 
 -   Reveals real user behavior at scale
 -   Catches issues that synthetic evals miss
@@ -391,8 +385,8 @@ Cons
 -   Requires investment in instrumentation
 -   Lacks ground truth for grading
 
-**A/B testing  
-**_Comparing variants with real user traffic_  
+**A/B testing
+**_Comparing variants with real user traffic_
 
 -   Measures actual user outcomes (retention, task completion)
 -   Controls for confounds
@@ -402,8 +396,8 @@ Cons
 -   Only tests changes you deploy
 -   Less signal on the underlying “why” for changes in metrics without being able to thoroughly review the transcripts
 
-**User feedback  
-**_Explicit signals like thumbs-down or bug reports_  
+**User feedback
+**_Explicit signals like thumbs-down or bug reports_
 
 -   Surfaces problems you didn't anticipate
 -   Comes with real examples from actual human users
@@ -415,8 +409,8 @@ Cons
 -   Not automated
 -   Relying primarily on users to catch issues can have negative user impact
 
-**Manual transcript review  
-**_Humans reading through agent conversations_  
+**Manual transcript review
+**_Humans reading through agent conversations_
 
 -   Builds intuition for failure modes
 -   Catches subtle quality issues automated checks miss
@@ -428,8 +422,8 @@ Cons
 -   Reviewer fatigue or different reviewers can affect the signal quality
 -   Typically only gives qualitative signal rather than clear quantitative grading
 
-**Systematic human studies  
-**_Structured grading of agent outputs by trained raters_  
+**Systematic human studies
+**_Structured grading of agent outputs by trained raters_
 
 -   Gold-standard quality judgements from multiple human raters
 -   Handles subjective or ambiguous tasks
@@ -462,14 +456,14 @@ Written by Mikaela Grace, Jeremy Hadfield, Rodrigo Olivares, and Jiri De Jonghe.
 
 ## Appendix: Eval frameworks
 
-Several open-source and commercial frameworks can help teams implement agent evaluations without building infrastructure from scratch. The right choice depends on your agent type, existing stack, and whether you need offline evaluation, production observability, or both.  
-  
-[Harbor](https://harborframework.com/) is designed for running agents in containerized environments, with infrastructure for running trials at scale across cloud providers and a standardized format for defining tasks and graders. Popular benchmarks like Terminal-Bench 2.0 ship through the Harbor registry, making it easy to run established benchmarks along with custom eval suites.  
-  
-[Braintrust](https://www.braintrust.dev/) is a platform that combines offline evaluation with production observability and experiment tracking—useful for teams that need to both iterate during development and monitor quality in production. Its \`autoevals\` library includes pre-built scorers for factuality, relevance, and other common dimensions.  
-  
+Several open-source and commercial frameworks can help teams implement agent evaluations without building infrastructure from scratch. The right choice depends on your agent type, existing stack, and whether you need offline evaluation, production observability, or both.
+
+[Harbor](https://harborframework.com/) is designed for running agents in containerized environments, with infrastructure for running trials at scale across cloud providers and a standardized format for defining tasks and graders. Popular benchmarks like Terminal-Bench 2.0 ship through the Harbor registry, making it easy to run established benchmarks along with custom eval suites.
+
+[Braintrust](https://www.braintrust.dev/) is a platform that combines offline evaluation with production observability and experiment tracking—useful for teams that need to both iterate during development and monitor quality in production. Its \`autoevals\` library includes pre-built scorers for factuality, relevance, and other common dimensions.
+
 [LangSmith](https://docs.langchain.com/langsmith/evaluation) offers tracing, offline and online evaluations, and dataset management with tight integration into the LangChain ecosystem. [Langfuse](https://langfuse.com/) provides similar capabilities as a self-hosted open-source alternative for teams with data residency requirements.
 
-[Arize](https://arize.com/) offers Phoenix, an open-source platform for LLM tracing, debugging, and offline or online evaluations, and AX, a SaaS offering that extends Phoenix for scale, optimization and monitoring.  
-  
+[Arize](https://arize.com/) offers Phoenix, an open-source platform for LLM tracing, debugging, and offline or online evaluations, and AX, a SaaS offering that extends Phoenix for scale, optimization and monitoring.
+
 Many teams combine multiple tools, roll their own eval framework, or just use simple evaluation scripts as a starting point. We find that while frameworks can be a valuable way to accelerate progress and standardize, they’re only as good as the eval tasks you run through them. It’s often best to quickly pick a framework that fits your workflow, then invest your energy in the evals themselves by iterating on high-quality test cases and graders.

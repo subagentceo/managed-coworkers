@@ -21,64 +21,64 @@ This course has something for everyone, whether you're new to Claude or a season
 Course preview
 
 -   [
-    
+
     01Introduction to AI Fluency
-    
+
     ](/ai-fluency/introduction-to-ai-fluency)
 -   [
-    
+
     02The AI Fluency Framework
-    
+
     ](/ai-fluency/overview)
 -   [
-    
+
     03Deep Dive 1: What is Generative AI?
-    
+
     ](/ai-fluency/deep-dive-1-what-is-generative-ai)
 -   [
-    
+
     04Delegation
-    
+
     ](/ai-fluency/ai-fluency-delegation)
 -   [
-    
+
     05Applying Delegation
-    
+
     ](/ai-fluency/applying-delegation)
 -   [
-    
+
     06Description
-    
+
     ](/ai-fluency/description)
 -   [
-    
+
     07Deep Dive 2: Effective Prompting Techniques
-    
+
     ](/ai-fluency/deep-dive-2-effective-prompting-techniques)
 -   [
-    
+
     08Discernment
-    
+
     ](/ai-fluency/discernment)
 -   [
-    
+
     09The Description-Discernment Loop
-    
+
     ](/ai-fluency/description-discernment-loop)
 -   [
-    
+
     010Diligence
-    
+
     ](https://anthropic.skilljar.com/ai-fluency-framework-foundations/291904)
 -   [
-    
+
     11Conclusion
-    
+
     ](/ai-fluency/conclusion)
 -   [
-    
+
     12Additional Activities
-    
+
     ](/ai-fluency/additional-activities)
 
 ## Explore by topic

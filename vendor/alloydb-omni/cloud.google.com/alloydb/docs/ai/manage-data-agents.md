@@ -32,7 +32,7 @@ Enable the following services for your project:
 
 ### Prepare an AlloyDB for PostgreSQL cluster, instance, and database
 
-Make sure that you have access to an existing AlloyDB cluster and instance or [create a new one](/alloydb/docs/cluster-create).  
+Make sure that you have access to an existing AlloyDB cluster and instance or [create a new one](/alloydb/docs/cluster-create).
 This tutorial requires you to have a database in your AlloyDB instance. For more information, see [Create a database](/alloydb/docs/database-create).
 
 ### Required roles and permissions
@@ -65,25 +65,25 @@ To perform steps in this tutorial, sign in to [Google Cloud](https://console.clo
 To create a context set, perform the following steps:
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using IAM authentication.
-    
+
 5.  In the **Explorer pane**, next to **Context sets**, click **View actions**.
-    
+
 6.  Click **Create context set**.
-    
+
 7.  In **Context set name**, provide a unique context set name. The context set name is case-sensitive and can contain letters, numbers, hyphens, and underscores.
-    
+
 8.  Optional. In **Context set description**, add a description for your context set.
-    
+
 9.  Click **Create**.
-    
+
 
 **Note:** Creating the first context set in a project can take several minutes.
 
@@ -96,48 +96,48 @@ After creating a context set, follow the steps in [Build contexts using Gemini C
 To edit a context set, perform the following steps:
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using Identity and Access Management authentication.
-    
+
 5.  In the **Explorer pane**, next to **Context sets**, click **View actions**.
-    
+
 6.  Click **Edit context set**.
-    
+
 7.  Optional: Edit **Context set description**.
-    
+
 8.  Click **Browse** in the **Upload context set file** section, and select the context set file.
-    
+
 9.  Click **Save**.
-    
+
 
 ## Delete a context set
 
 To delete a context set, perform the following steps:
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using Identity and Access Management authentication.
-    
+
 5.  In the **Explorer pane**, next to **Context sets**, click **View actions**.
-    
+
 6.  Click **Delete context set**.
-    
+
 7.  In the **Delete context set** confirmation dialog, enter the name of the context set.
-    
+
 8.  Click **Confirm** to delete the context set.
-    
+
 
 **Note:** Before you delete a database, you must delete all context sets associated with that database.
 

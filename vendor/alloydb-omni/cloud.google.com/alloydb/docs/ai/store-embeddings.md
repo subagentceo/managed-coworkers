@@ -31,29 +31,29 @@ Asegúrate de que ya has creado una tabla en tu base de datos de AlloyDB.
 Para almacenar incrustaciones de vectores, siga estos pasos:
 
 1.  Crea una columna `vector[]` en tu tabla para almacenar los embeddings:
-    
+
     ```
     ALTER TABLE TABLE ADD COLUMN EMBEDDING_COLUMN vector(DIMENSIONS);
     ```
-    
+
     Haz los cambios siguientes:
-    
+
     -   `TABLE`: el nombre de la tabla
-        
+
     -   `EMBEDDING_COLUMN`: el nombre de la nueva columna de inserciones
-        
+
     -   `DIMENSIONS`: número de dimensiones que admite el modelo.
-        
+
         Por ejemplo, si usas uno de los modelos en inglés de `text-embedding`, como `text-embedding-005` con Vertex AI, especifica `768`.
-        
+
 2.  Copia los vectores en la columna de vectores. En el siguiente ejemplo se da por hecho que tus inserciones están disponibles en un archivo CSV:
-    
+
     ```
     COPY TABLE (EMBEDDING_COLUMN) FROM 'PATH_TO_VECTOR_CSV (FORMAT CSV);
     ```
-    
+
     Haz los cambios siguientes:
-    
+
     -   `PATH_TO_VECTOR_CSV`: la ruta completa de la ubicación en la que has almacenado el archivo `.CSV`.
 
 Una vez que hayas almacenado las inserciones, puedes usar la extensión `vector` o la extensión `alloydb_scann` para crear índices y mejorar el rendimiento de las consultas.

@@ -1,5 +1,5 @@
-_Written by Tristan Hume, a lead on Anthropic's performance optimization team. Tristan designed—and redesigned—the take-home test that's helped Anthropic hire dozens of performance engineers._  
-  
+_Written by Tristan Hume, a lead on Anthropic's performance optimization team. Tristan designed—and redesigned—the take-home test that's helped Anthropic hire dozens of performance engineers._
+
 
 Evaluating technical candidates becomes harder as AI capabilities improve. A take-home that distinguishes well between human skill levels today may be trivially solved by models tomorrow—rendering it useless for evaluation.
 
@@ -57,7 +57,7 @@ The task is a parallel tree traversal, deliberately not deep learning flavored, 
 
 Candidates start with a fully serial implementation and progressively exploit the machine's parallelism. The warmup is multicore parallelism, then candidates choose whether to tackle SIMD vectorization or VLIW instruction packing. The original version also included a bug that candidates needed to debug first, exercising their ability to build tooling.
 
-##   
+##
 Early results
 
 The initial take-home worked well. One person from the Twitter batch scored substantially higher than everyone else. He started in early February, two weeks after our first hires through the standard pipeline. The test proved predictive: He immediately began optimizing kernels and found a workaround for a launch-blocking compiler bug involving tensor indexing math overflowing 32 bits.
@@ -88,9 +88,9 @@ We tried it out in our internal test-time compute harness for more rigor and con
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F378256f8023fc3d48f2992b9ee9884a4658e3ab1-1681x463.png&w=3840&q=75)
 
-I had a problem. We were about to release a model where the best strategy on our take-home would be delegating to Claude Code.  
+I had a problem. We were about to release a model where the best strategy on our take-home would be delegating to Claude Code.
 
-##   
+##
 Considering the options
 
 Some colleagues suggested banning AI assistance. I didn't want to do this. Beyond the enforcement challenges, I had a sense that given people continue to play a vital role in our work, I should be able to figure out _some_ way for them to distinguish themselves in a setting _with AI—_like they'd have on the job. I didn't want to give in yet to the [idea](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) that humans only have an advantage on tasks longer than a few hours.
@@ -125,7 +125,7 @@ I'm reasonably happy with the new take-home. It might have lower variance than t
 
 I'm still sad to have given up the realism and varied depth of the original. But realism may be a luxury we no longer have. The original worked because it resembled real work. The replacement works because it simulates novel work.
 
-##   
+##
 An open challenge
 
 We're releasing the original take-home for anyone to try with unlimited time. Human experts [retain an advantage](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) over current models at sufficiently long time horizons. The fastest human solution ever submitted substantially exceeds what Claude has achieved even with extensive test-time compute.

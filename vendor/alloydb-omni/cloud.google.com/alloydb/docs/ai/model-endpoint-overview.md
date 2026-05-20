@@ -54,13 +54,13 @@ When you [register a model endpoint with the model endpoint management](/alloydb
 You can use the model endpoint ID to query models to do the following:
 
 -   Generate embeddings to translate text prompts to numerical vectors. You can store generated embeddings as vector data when the `vector` extension is enabled in the database. For more information, see [Query and index embeddings with pgvector](/alloydb/docs/ai/store-embeddings).
-    
+
 -   Generate multimodal embeddings to translate multimodal data such as text, images, and videos to embeddings. ([Preview](https://cloud.google.com/products#product-launch-stages))
-    
+
 -   Rank or score a list of items in a query based on a criteria stated using natural language. ([Preview](https://cloud.google.com/products#product-launch-stages))
-    
+
 -   Invoke predictions using SQL.
-    
+
 
 ## Key concepts
 

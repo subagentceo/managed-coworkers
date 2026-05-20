@@ -34,68 +34,68 @@ Before you use multimodal embeddings, do the following:
 1.  [Configure user access to Agent Platform models](/alloydb/docs/ai/configure-vertex-ai).
 2.  Verify that the latest version of `google_ml_integration` is installed.
     1.  To check the installed version, run the following command:
-        
+
         SELECT extversion FROM pg\_extension WHERE extname \= 'google\_ml\_integration';
-        extversion 
+        extversion
         \------------
         1.5.2
         (1 row)
-        
+
     2.  If the extension isn't installed or if the installed version is earlier than 1.5.2, update the extension.
-        
+
         CREATE EXTENSION IF NOT EXISTS google\_ml\_integration;
         ALTER EXTENSION google\_ml\_integration UPDATE;
-        
+
         If you experience issues when you run the preceding commands, or if the extension isn't updated to version 1.5.2 after you run the preceding commands, contact [Google Cloud support](https://cloud.google.com/support).
-        
+
 3.  To use the AlloyDB AI query engine functionality, set the `google_ml_integration.enable_ai_query_engine` flag to `on`.
-    
+
     ### SQL
-    
-    1.  Enable the AI query engine for the current session.  
-        
+
+    1.  Enable the AI query engine for the current session.
+
         SET google\_ml\_integration.enable\_ai\_query\_engine \= on;
-        
-    2.  Enable features for a specific database across sessions.  
-        
+
+    2.  Enable features for a specific database across sessions.
+
         ALTER DATABASE DATABASE\_NAME SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    3.  Enable the AI query engine for a specific user across sessions and databases.  
-        
+
+    3.  Enable the AI query engine for a specific user across sessions and databases.
+
         ALTER ROLE postgres SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    
+
+
     ### Console
-    
+
     To modify the value of the `google_ml_integration.enable_ai_query_engine` flag, follow the steps in [Configure an instance's database flags](/alloydb/docs/instance-configure-database-flags#console).
-    
+
     ### gcloud
-    
+
     To use the gcloud CLI, you can [install and initialize](/sdk/docs/install) the Google Cloud CLI, or you can use [Cloud Shell](/shell/docs/using-cloud-shell).
-    
+
     You can modify the value of the `google_ml_integration.enable_ai_query_engine` flag. For more information, see [Configure an instance's database flags](/alloydb/docs/instance-configure-database-flags#console).
-    
+
     gcloud alloydb instances update INSTANCE\_ID \\
       --database-flags google\_ml\_integration.enable\_ai\_query\_engine=on \\
       --region=REGION\_ID \\
       --cluster=CLUSTER\_ID \\
       --project=PROJECT\_ID
-    
+
 
 ### Access data in Cloud Storage to generate multimodal embeddings
 
 -   To generate multimodal embeddings, refer to content in Cloud Storage using a `gs://` URI.
 -   Access Cloud Storage content through your current project's Agent Platform service agent. By default, the Agent Platform service agent already has permission to access the bucket in the same project. For more information, see [IAM roles and permissions index](/iam/docs/roles-permissions/aiplatform#aiplatform.serviceAgent).
 -   To access data in a Cloud Storage bucket in another Google Cloud project, run the following gcloud CLI command to grant the [Storage Object Viewer role (`roles/storage.objectViewer`)](/storage/docs/access-control/iam-roles) to the Agent Platform service agent of your AlloyDB project.
-    
+
     ```
     gcloud projects add-iam-policy-binding <ANOTHER_PROJECT_ID> \
     --member="serviceAccount:service-<PROJECT_ID>@gcp-sa-aiplatform.iam.gserviceaccount.com" \
     --role="roles/storage.objectViewer"
     ```
-    
+
     For more information, see [Set and manage IAM policies on buckets](/storage/docs/access-control/using-iam-permissions).
-    
+
 
 To generate multimodal embeddings, select one of the following schemas.
 
@@ -138,14 +138,14 @@ SELECT
     video => 'VIDEO_URI');
 ```
 
-Replace `VIDEO_URI` with the Cloud Storage URI of the target video, for example, `gs://my-bucket/embeddings/supermarket-video.mp4`, or the base64 string of the video. These are two-dimensional arrays that can be accessed as `my_array[0][5]` like syntax. For more information, see [Arrays](https://www.postgresql.org/docs/17/arrays.html).
+Replace `VIDEO_URI` with the Cloud Storage URI of the target video, for example, `gs://my-bucket/embeddings/supermarket-video.mp4`, or the base64 string of the video. These are two-dimensional arrays that can be accessed as `my_array[0]` like syntax. For more information, see [Arrays](https://www.postgresql.org/docs/17/arrays.html).
 
 ## What's next
 
 -   [Register a model endpoint with model endpoint management](/alloydb/docs/ai/register-model-endpoint).
-    
+
 -   [Query using AI powered SQL operators](/alloydb/docs/ai/evaluate-semantic-queries-ai-operators).
-    
+
 
 Send feedback
 

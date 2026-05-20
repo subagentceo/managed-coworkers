@@ -28,7 +28,6 @@ Today’s announcement builds on our education partnerships, which help students
 
 Together, these partnerships reflect a long-term collaboration that prioritizes capacity building, responsible deployment, and local autonomy over how new technologies are introduced. By investing in skills, infrastructure, and institutions, we hope to lay the groundwork for AI to deliver lasting value in the sectors that matter most to people’s lives.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/anthropic-rwanda-mou)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/anthropic-rwanda-mou)
 

@@ -96,7 +96,6 @@ Watch the latest videos about AlloyDB AI.
 
 Explore how AlloyDB AI is used in real-world scenarios like Target's search overhaul, dive deep into vector search enhancements and new innovations. Learn about hybrid search, multimodal capabilities, AI operators, and embeddings through videos and codelabs.
 
- 
 
 #### Blogs and articles
 
@@ -113,7 +112,6 @@ Explore how AlloyDB AI is used in real-world scenarios like Target's search over
 
 Explore guides, conceptual explanations, and references to dive deep into using AlloyDB AI to build AI/ML applications. These resources cover the complete workflow guides such as creating high-performance ScaNN indexes and performing searches to ranking results, backed by technical references such as model endpoint management and monitoring vector index metrics.
 
- 
 
 #### Guides
 

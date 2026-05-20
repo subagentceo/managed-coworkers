@@ -14,9 +14,9 @@ We operate across multiple layers: developing policies, influencing model traini
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0726b0ac8266805acac21dad8a6b32a5f976a987-7200x4050.png&w=3840&q=75)
 
-_Figure 1: Safeguards’ approach to building effective protections throughout the lifecycle of our models_  
+_Figure 1: Safeguards’ approach to building effective protections throughout the lifecycle of our models_
 
-##   
+##
 **Policy development**
 
 Safeguards designs our [Usage Policy](https://www.anthropic.com/legal/aup)—the framework that defines how Claude should and shouldn’t be used. The Usage Policy informs how we address critical areas like child safety, election integrity, and cybersecurity while providing nuanced guidance for Claude’s use in industries like healthcare and finance.
@@ -28,7 +28,7 @@ Two mechanisms guide our policy development and iteration process:
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd30b0034da7215fa55cce92db8e4a21e161a968f-7200x4050.png&w=3840&q=75)
 
-_Figure 2: Banner displayed during 2024 U.S. election cycle for accurate voting information as a result of our policy vulnerability testing with the Institute for Strategic Dialogue_  
+_Figure 2: Banner displayed during 2024 U.S. election cycle for accurate voting information as a result of our policy vulnerability testing with the Institute for Strategic Dialogue_
 
 ## **Claude’s training**
 
@@ -40,14 +40,14 @@ We also work with domain specialists and experts to refine Claude’s understand
 
 Through this collaborative process, Claude develops several important skills. It learns to decline assistance with harmful illegal activities, and it recognizes attempts to generate malicious code, create fraudulent content, or plan harmful activities. It learns how to discuss sensitive topics with care, and how to distinguish between these and attempts to cause actual harm.
 
-##   
+##
 **Testing and evaluation**
 
-Before releasing a new model, we evaluate its performance and capabilities. Our evaluations include:  
+Before releasing a new model, we evaluate its performance and capabilities. Our evaluations include:
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fba37b3137323a8db3754822663a26dd0a41f2223-7200x4050.png&w=3840&q=75)
 
-_Figure 3: We test each model via safety evaluations, risk assessments, and bias evaluations prior to deployment_  
+_Figure 3: We test each model via safety evaluations, risk assessments, and bias evaluations prior to deployment_
 
 -   **Safety evaluations:** We assess Claude’s adherence to our Usage Policy on topics like child exploitation or self-harm. We test a variety of scenarios, including clear usage violations, ambiguous contexts, and extended multi-turn conversations. These evaluations leverage our models to grade Claude’s responses, with human review as an additional check for accuracy.
 -   **Risk assessments:** For high-risk domains, such as those associated with cyber harm, or chemical, biological, radiological, and nuclear weapons and high-yield explosives (CBRNE), we conduct AI capability uplift testing in partnership with government entities and private industry. We define threat models that could arise from improved capabilities and assess the performance of our safeguards against these threat models.

@@ -70,3 +70,15 @@ Bottom-3 vendors from the MD12 baseline, re-fixed via `scripts/fix-vendor.ts --l
 
 Note: pre-fix means here differ from the MD12 baseline numbers above (88.6 / 90.4 / 90.5) because MD12 used the all-vendor sweep's sample budget; the deltas above use a tight, repeatable `--sample=10 --seed=1` per task spec. The new `all-vendors-baseline.json` golden reflects the post-fix state under the all-vendor sweep.
 
+## MD14 deltas (round 2 post-fix)
+
+Round 2 targets the post-MD13 bottom-3 (excluding `iterable` as a confirmed floor case and `osv-scanner` which was already fixed in MD13). Pre/post values from `npx tsx scripts/grade-vendor.ts <name> --sample=10 --seed=1 --json`.
+
+- alloydb-omni: 93.8 → 94.9 (+1.1)
+- sentry: 92.4 → 92.4 (+0.0)
+- anthropic-sitemap: 94.2 → 94.4 (+0.2)
+
+Notes:
+- sentry: fix-vendor changed 1 file (`product/partnership-platform.md`, 86 → 94, +8) but that file was not in the `--sample=10 --seed=1` slice, so the gated sample mean is unchanged. No regression; the change is retained because the all-vendor sweep golden will reflect it.
+- alloydb-omni pre-mean (93.8) differs from the post-MD13 all-vendor sweep number (90.1) because that sweep uses a different sampling budget; the deltas above use `--sample=10 --seed=1` as required by the task spec.
+

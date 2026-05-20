@@ -32,7 +32,6 @@ We’ve accelerated mission impact across U.S. defense workflows with partners l
 
 Organizations interested in transforming their operations with Claude can [contact our public sector team](mailto:pubsec@anthropic.com) to learn more and get started.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations)
 

@@ -58,7 +58,7 @@ trending\_up セールス分析
 
 `"Who were our top 3 sales reps by revenue in Austin for the last quarter?"`
 
-\- 意思決定の高速化  
+\- 意思決定の高速化
 \- 即時のセルフサービス型セールス分析。
 
 explore プロダクトの導入
@@ -67,7 +67,7 @@ explore プロダクトの導入
 
 `"How many users on our 'Pro' plan used the new reporting feature last week?"`
 
-\- イテレーションの高速化  
+\- イテレーションの高速化
 \- 仮説を迅速に検証し、より優れたプロダクトを構築します。
 
 local\_shipping サプライ チェーン
@@ -76,7 +76,7 @@ local\_shipping サプライ チェーン
 
 `"Show me all shipments from the Reno warehouse that are delayed by more than 3 days."`
 
-\- 効率の向上  
+\- 効率の向上
 \- 運用上の問題を事前に解決します。
 
 support\_agent カスタマー サポート
@@ -85,7 +85,7 @@ support\_agent カスタマー サポート
 
 `"What is the most common complaint category for tickets created in the last 7 days?"`
 
-\- サービス向上  
+\- サービス向上
 \- お客様の懸案事項をより迅速に特定して解決します。
 
 ## 詳細

@@ -12,16 +12,16 @@ We previously [reported data](https://www.anthropic.com/news/anthropic-education
 
 We find that:
 
-**Educators use AI in and out of the classroom**  
+**Educators use AI in and out of the classroom**
 Educators’ uses range from developing course materials and writing grant proposals to academic advising and managing administrative tasks like admissions and financial planning.
 
-**Educators aren't just using chatbots; they're building their own custom tools with AI  
+**Educators aren't just using chatbots; they're building their own custom tools with AI
 **Faculty are using [Claude Artifacts](https://www.anthropic.com/news/build-artifacts) to create interactive educational materials, such as chemistry simulations, automated grading rubrics, and data visualization dashboards.
 
-**Educators tend to automate the drudgery while staying in the loop for everything else**  
+**Educators tend to automate the drudgery while staying in the loop for everything else**
 Tasks requiring significant context, creativity, or direct student interaction—like designing lessons, advising students, and writing grant proposals—are where educators are more likely to use AI as an enhancement. In contrast, routine administrative work such as financial management and record-keeping are more automation-heavy.
 
-**Some educators are automating grading; others are deeply opposed**  
+**Some educators are automating grading; others are deeply opposed**
 In our Claude.ai data, faculty used AI for grading and evaluation less frequently than other uses, but when they did, 48.9% of the time they used it in an automation-heavy way (where the AI directly performs the task). That’s despite educator concerns about automating assessment tasks, as well as our surveyed faculty rating it as the area where they felt AI was least effective.
 
 ## **Identifying educators’ use of Claude**
@@ -69,25 +69,25 @@ As one surveyed Northeastern faculty member put it: _“_What was prohibitively 
 
 Key creations built by educators
 
-**Interactive educational games:  
+**Interactive educational games:
 **web-based games including escape rooms, platform games, and simulations that teach concepts through gamification across various subjects and levels
 
-**Assessment and evaluation tools**:  
+**Assessment and evaluation tools**:
 HTML-based quizzes with automatic feedback systems, CSV data processors for analyzing student performance, and comprehensive grading rubrics
 
-**Data visualization**:  
+**Data visualization**:
 interactive displays to help students visualize everything from historical timelines to scientific concepts
 
-**Subject-specific learning tools**:  
+**Subject-specific learning tools**:
 specialized resources like chemistry stoichiometry games, genetics quizzes with automatic feedback, and computational physics models
 
-**Academic calendars and scheduling tools**:  
+**Academic calendars and scheduling tools**:
 interactive calendars that can be automatically populated, downloaded as images, or exported as PDFs for displaying class periods, exam times, professional development sessions, and institutional events
 
-**Budget planning and analysis tools:  
+**Budget planning and analysis tools:
 **budget documents for educational institutions with specific expense categories, cost allocations, and budgetary management tools
 
-**Academic documents**:  
+**Academic documents**:
 meeting minutes, emails for grade-related communications and academic integrity issues, recommendation letters for faculty awards, tenure appeals, grant applications, interview invitations, and committee appointments
 
 Key creations built by educators with the help of Claude.ai, as surfaced by our automated analysis research tool
@@ -198,7 +198,7 @@ Esin Durmus, Alex Tamkin, Miles McCain, Stuart Ritchie, Jennifer Martinez, Ryan 
 
 #### Footnotes
 
-1 The conversations took place during an 11-day period from May 22 to June 2, 2025.  
+1 The conversations took place during an 11-day period from May 22 to June 2, 2025.
 
 2 Specifically, we used the following filter, powered by Claude, to identify educator-relevant conversations: “Is this conversation likely to be with an educator (teacher, professor, or instructor) seeking help with instructional content, grading, research, or administrative duties? Make sure to not include students doing their own coursework, research papers, etc. Err on the side of conservatism and assume it's not an educator if you're not sure.”
 

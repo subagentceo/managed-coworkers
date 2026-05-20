@@ -37,25 +37,25 @@ AlloyDB AI 內容摘要功能支援多種用途，包括但不限於：
 如要在 AlloyDB 中啟用 `google_ml_integration.enable_preview_ai_functions` 旗標，請使用 `SET` 指令。這個標記可控管 AI 預覽功能 (例如 `ai.summarize`) 的存取權。
 
 1.  確認 `google_ml_integration extension` 為 1.5.7 以上版本。如要查看版本，請執行下列指令：
-    
+
     ```
     SELECT extversion FROM pg_extension WHERE extname = 'google_ml_integration';
     ```
-    
+
     如要升級至包含這些預先發布版函式的版本，請呼叫下列項目：
-    
+
     ```
     CALL google_ml.upgrade_to_preview_version();
     ```
-    
+
 2.  為目前工作階段或整個資料庫啟用旗標。如要為目前的工作階段啟用旗標，請執行下列指令：
-    
+
     ```
     SET google_ml_integration.enable_preview_ai_functions = 'on';
     ```
-    
+
     這項變更不需要重新啟動資料庫。這個旗標的預設值為 `off`。
-    
+
 
 ### 建立範例資料表
 
@@ -169,7 +169,7 @@ RETURNS REFCURSOR
 ```
 -- Create a table to store the results
 CREATE TABLE IF NOT EXISTS review_summaries (
-    review_id INT, 
+    review_id INT,
     summary_text TEXT
 );
 
@@ -180,10 +180,10 @@ DECLARE
     result_record   RECORD;
     cursor_response  REFCURSOR;
     id_array        INT[];
-    idx             INT := 1; 
+    idx             INT := 1;
 BEGIN
     -- 1. Open cursor for the input text
-    OPEN review_cursor FOR 
+    OPEN review_cursor FOR
         SELECT review AS prompt FROM movie_reviews ORDER BY id;
 
     -- 2. Call the AI summarize function

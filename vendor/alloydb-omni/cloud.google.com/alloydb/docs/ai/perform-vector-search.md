@@ -41,18 +41,18 @@ When you finish the tasks that are described in this document, you can avoid con
 ### Enable billing and required APIs
 
 1.  In the Google Cloud console, go to the **Clusters** page.
-    
+
     [Go to project selector](https://console.cloud.google.com/projectselector2/home/dashboard)
-    
+
 2.  [Make sure that billing is enabled for your Google Cloud project.](/billing/docs/how-to/verify-billing-enabled#confirm_billing_is_enabled_on_a_project)
-    
+
 3.  Enable the Cloud APIs necessary to create and connect to AlloyDB for PostgreSQL.
-    
+
     [Enable the APIs](https://console.cloud.google.com/apis/enableflow?apiid=alloydb.googleapis.com,compute.googleapis.com,servicenetworking.googleapis.com,aiplatform.googleapis.com)
-    
+
     1.  In the **Confirm project** step, click **Next** to confirm the name of the project you are going to make changes to.
     2.  In the **Enable APIs** step, click **Enable** to enable the following:
-        
+
         -   AlloyDB API
         -   Compute Engine API
         -   Service Networking API
@@ -63,35 +63,35 @@ When you finish the tasks that are described in this document, you can avoid con
 **Note:** Some regions that are available for AlloyDB aren't available for Agent Platform text embedding models. To learn which Agent Platform features are available in each Agent Platform region, see [Locations for machine learning services](/gemini-enterprise-agent-platform/machine-learning/general/locations#feature-availability).
 
 1.  In the Google Cloud console, go to the **Clusters** page.
-    
+
     [Go to Clusters](https://console.cloud.google.com/alloydb/clusters)
-    
+
 2.  Click **Create cluster**.
-    
+
 3.  In **Cluster ID**, enter `my-cluster`.
-    
+
 4.  Enter a password. Take note of this password because you use it in this tutorial.
-    
+
 5.  Select a region—for example, `us-central1 (Iowa)`.
-    
+
 6.  Select the default network.
-    
+
     If you have a private access connection, continue to the next step. Otherwise, click **Set up connection** and follow these steps:
-    
+
     1.  In **Allocate an IP range**, click **Use an automatically allocated IP range**.
     2.  Click **Continue** and then click **Create connection**.
 7.  In **Zonal availability**, select **Single zone**.
-    
+
 8.  Select the `2 vCPU,16 GB` machine type.
-    
+
 9.  In **Connectivity**, select **Enable public IP**.
-    
+
 10.  Click **Create cluster**. It might take several minutes for AlloyDB to create the cluster and display it on the primary cluster **Overview** page.
-     
+
 11.  In **Instances in your cluster**, expand the **Connectivity** pane. Take note of the **Connection URI** because you use it in this tutorial.
-     
+
      The connection URI is in the `projects/<var>PROJECT_ID</var>/locations/<var>REGION_ID</var>/clusters/my-cluster/instances/my-cluster-primary` format.
-     
+
 
 ### Grant Agent Platform user permission to AlloyDB service agent
 
@@ -102,21 +102,21 @@ For more information about how to add the permissions, see [Grant Agent Platform
 ### Connect to your database using a web browser
 
 1.  In the Google Cloud console, go to the **Clusters** page.
-    
+
     [Go to Clusters](https://console.cloud.google.com/alloydb/clusters)
-    
+
 2.  In the **Resource name** column, click the name of your cluster, `my-cluster`.
-    
+
 3.  In the navigation pane, click **AlloyDB Studio**.
-    
+
 4.  In the **Sign in to AlloyDB Studio** page, follow these steps:
-    
+
     1.  Select the `postgres` database.
     2.  Select the `postgres` user.
     3.  Enter the password you created in [Create a cluster and its primary instance](#create_an_alloydb_cluster_and_primary_instance).
     4.  Click **Authenticate**. The **Explorer** pane displays a list of the objects in the `postgres` database.
 5.  Open a new tab by clicking **\+ New SQL editor tab** or + **New tab**.
-    
+
 
 ### Install required extensions
 
@@ -130,12 +130,12 @@ Run the following query to install the `vector` and `alloydb_scann` extensions:
 ## Insert product and product inventory data and perform a basic vector search
 
 1.  Run the following statement to create a `product` table that does the following:
-    
+
     -   Stores basic product information.
     -   Includes an `embedding` vector column that computes and stores an embedding vector for a product description of each product.
-    
+
     **Note:** If you have more than 100k rows in a table, we don't recommend using the `embedding()` function to generate stored embeddings on existing data in a table. It is best suited for inline embedding generation.
-    
+
       ```
       CREATE TABLE product (
         id INT PRIMARY KEY,
@@ -146,11 +146,11 @@ Run the following query to install the `vector` and `alloydb_scann` extensions:
         embedding vector(768) GENERATED ALWAYS AS (embedding('text-embedding-005', description)) STORED
       );
     ```
-    
+
     If needed, you can use the [Logs Explorer](/logging/docs/view/logs-explorer-interface) to view logs and troubleshoot errors.
-    
+
 2.  Run the following query to create a `product_inventory` table that stores information about available inventory and corresponding prices. The `product_inventory` and `product` tables are used in this tutorial to run complex vector search queries.
-    
+
     ```
     CREATE TABLE product_inventory (
       id INT PRIMARY KEY,
@@ -159,9 +159,9 @@ Run the following query to install the `vector` and `alloydb_scann` extensions:
       price DECIMAL(10,2)
     );
     ```
-    
+
 3.  Run the following query to insert product data into the `product` table:
-    
+
     ```
     INSERT INTO product (id, name, description,category, color) VALUES
     (1, 'Stuffed Elephant', 'Soft plush elephant with floppy ears.', 'Plush Toys', 'Gray'),
@@ -189,15 +189,15 @@ Run the following query to install the `vector` and `alloydb_scann` extensions:
     (23, 'RC Monster Truck', 'Remote control monster truck with oversized tires.', 'Vehicles', 'Green'),
     (24, 'Train Track Expansion Set', 'Expansion set for wooden train tracks.', 'Vehicles', 'Multicolor');
     ```
-    
+
 4.  Optional: Run the following query to verify that the data is inserted in the `product` table:
-    
+
     ```
     SELECT * FROM product;
     ```
-    
+
 5.  Run the following query to insert inventory data into the `product_inventory` table:
-    
+
     ```
     INSERT INTO product_inventory (id, product_id, inventory, price) VALUES
     (1, 1, 9, 13.09),
@@ -225,23 +225,23 @@ Run the following query to install the `vector` and `alloydb_scann` extensions:
     (23, 23, 37, 50.20),
     (24, 24, 27, 99.27);
     ```
-    
+
 6.  Run the following vector search query that tries to find products that are similar to the word `music`. This means that even though the word `music` isn't explicitly mentioned in the product description, the result shows products that are relevant to the query:
-    
+
     ```
     SELECT * FROM product
     ORDER BY embedding <=> embedding('text-embedding-005', 'music')::vector
     LIMIT 3;
     ```
-    
+
     The result of the query is as follows: ![Basic search query result](https://docs.cloud.google.com/alloydb/images/basic-search-result.png)
-    
+
     Performing a basic vector search without creating an index uses exact nearest neighbor search (KNN), which provides efficient recall. At scale, using KNN might impact performance. For a better query performance, we recommend that you use the ScaNN index for approximate nearest neighbor (ANN) search, which provides high recall with low latencies.
-    
+
     Without creating an index, AlloyDB defaults to using exact nearest-neighbor search (KNN).
-    
+
     To learn more about using ScaNN at scale, see [Getting started with Vector Embeddings with AlloyDB AI](https://codelabs.developers.google.com/alloydb-ai-embedding#0).
-    
+
 
 ## Create an manually-tuned ScaNN index on products table
 
@@ -301,19 +301,19 @@ The columnar store offers two options to manage its content:
 To compare the execution time of a KNN vector search filtered by a `LIKE` predicate before and after you enable the columnar engine, follow these steps:
 
 1.  Enable the `vector` extension to support vector data types and operations. Run the following statements to create an example table (items) with an ID, a text description, and a 512-dimension vector embedding column.
-    
+
     ```
     CREATE EXTENSION IF NOT EXISTS vector;
-    
+
     CREATE TABLE items (
         id SERIAL PRIMARY KEY,
         description TEXT,
         embedding VECTOR(512)
     );
     ```
-    
+
 2.  Populate the data by running the following statements to insert 1 million rows into the example `items` table.
-    
+
     ```
     -- Simplified example of inserting matching (~0.1%) and non-matching data
     INSERT INTO items (description, embedding)
@@ -324,9 +324,9 @@ To compare the execution time of a KNN vector search filtered by a `LIKE` predic
         random_vector(512) -- Assumes random_vector function exists
     FROM generate_series(1, 999999) g;
     ```
-    
+
 3.  Measure the baseline performance of the vector similarity search without the columnar engine.
-    
+
     ```
     SELECT id, description, embedding <-> '[...]' AS distance
     FROM items
@@ -334,9 +334,9 @@ To compare the execution time of a KNN vector search filtered by a `LIKE` predic
     ORDER BY embedding <-> '[...]'
     LIMIT 100;
     ```
-    
+
 4.  Enable columnar engine and vector support by running the following command in the Google Cloud CLI. To use the gcloud CLI, you can [install and initialize](/sdk/docs/install) the gcloud CLI.
-    
+
     ```
     gcloud beta alloydb instances update INSTANCE_ID \
         --cluster=CLUSTER_ID \
@@ -344,21 +344,21 @@ To compare the execution time of a KNN vector search filtered by a `LIKE` predic
         --project=PROJECT_ID \
         --database-flags=google_columnar_engine.enabled=on,google_columnar_engine.enable_vector_support=on
     ```
-    
+
     Replace the following:
-    
+
     -   `INSTANCE_ID`: the ID of the instance.
     -   `CLUSTER_ID`: the ID of the cluster.
     -   `REGION_ID`: the region where the cluster is located.
     -   `PROJECT_ID`: the ID of the project where the cluster is located.
 5.  Add the `items` table to the columnar engine:
-    
+
     ```
     SELECT google_columnar_engine_add('items');
     ```
-    
+
 6.  Measure the performance of the vector similarity search using the columnar engine. You re-run the query that you previously ran to measure baseline performance.
-    
+
     ```
     SELECT id, description, embedding <-> '[...]' AS distance
     FROM items
@@ -366,9 +366,9 @@ To compare the execution time of a KNN vector search filtered by a `LIKE` predic
     ORDER BY embedding <-> '[...]'
     LIMIT 100;
     ```
-    
+
 7.  To check whether the query ran with the columnar engine, run the following command:
-    
+
     ```
     explain (analyze) SELECT id, description, embedding <-> '[...]' AS distance
     FROM items
@@ -376,24 +376,24 @@ To compare the execution time of a KNN vector search filtered by a `LIKE` predic
     ORDER BY embedding <-> '[...]'
     LIMIT 100;
     ```
-    
+
 
 ## Clean up
 
 1.  In the Google Cloud console, go to the **Clusters** page.
-    
+
     [Go to Clusters](https://console.cloud.google.com/alloydb/clusters)
-    
+
 2.  Click the name of your cluster, `my-cluster`, in the **Resource name** column.
-    
+
 3.  Click _delete_ **Delete cluster**.
-    
+
 4.  In **Delete cluster my-cluster**, enter `my-cluster` to confirm you want to delete your cluster.
-    
+
 5.  Click **Delete**.
-    
+
 6.  If you created a private connection when you [created a cluster](#create_an_alloydb_cluster_and_primary_instance), go to the Google Cloud console [Networking page](https://console.cloud.google.com/networking/networks/details/default) and click **Delete VPC network**.
-    
+
 
 ## What's next
 

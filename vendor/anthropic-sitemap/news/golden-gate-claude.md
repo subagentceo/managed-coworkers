@@ -6,7 +6,7 @@ May 23, 2024
 
 ![Golden gate bridge](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F87576d12dbd23533f00ef10a278213c41af73e8e-2880x1614.jpg&w=3840&q=75)
 
-_UPDATE: Golden Gate Claude was online for a 24-hour period as a research demo and is no longer available. If you'd like to find out more about our research on interpretability and the activation of features within Claude, please see [this post](https://www.anthropic.com/news/mapping-mind-language-model) or our [full research paper](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html)._  
+_UPDATE: Golden Gate Claude was online for a 24-hour period as a research demo and is no longer available. If you'd like to find out more about our research on interpretability and the activation of features within Claude, please see [this post](https://www.anthropic.com/news/mapping-mind-language-model) or our [full research paper](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html)._
 
 On Tuesday, we [released a major new research paper](https://www.anthropic.com/research/mapping-mind-language-model) on interpreting large language models, in which we began to map out the inner workings of our AI model, Claude 3 Sonnet. In the “mind” of Claude, we found millions of concepts that activate when the model reads relevant text or sees relevant images, which we call “features”.
 
@@ -24,7 +24,6 @@ Our goal is to let people see the impact our interpretability work can have. The
 
 [As we describe in our paper](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html), we can use these same techniques to change the strength of _safety-related_ features—like those related to dangerous computer code, criminal activity, or deception. With further research, we believe this work could help make AI models safer.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/golden-gate-claude)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/golden-gate-claude)
 

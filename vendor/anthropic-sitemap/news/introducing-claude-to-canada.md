@@ -17,7 +17,6 @@ For CA$28 + tax per month, users can subscribe to [Claude Pro](https://www.anthr
 
 We’re excited to expand our offerings to Canada—a country that has made significant contributions to the responsible development and deployment of AI—and look forward to seeing the different ways our users across Canada incorporate the Claude 3 model family into their workflows.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/introducing-claude-to-canada)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/introducing-claude-to-canada)
 

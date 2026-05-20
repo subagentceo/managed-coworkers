@@ -38,7 +38,7 @@ Before you rank search results, do the following:
 
 ### gcloud
 
-To use ranking models, you must enable the Discovery Engine API.  
+To use ranking models, you must enable the Discovery Engine API.
 Replace `PROJECT_ID` with your Google Cloud project ID and `PROJECT_NUMBER` with your corresponding project number.
 
     # Enable Discovery Engine API
@@ -82,7 +82,7 @@ A common use case for the semantic ranker is to rerank the results returned by v
     FROM initial\_ranking, reranked\_results
     WHERE initial\_ranking.ref\_number \= reranked\_results.index
     ORDER BY reranked\_results.score DESC;
-  
+
 
 For a list of available models and use cases, see [Supported models](/generative-ai-app-builder/docs/ranking#models).
 
@@ -91,53 +91,53 @@ For a list of available models and use cases, see [Supported models](/generative
 1.  [Configure user access to Agent Platform models](/alloydb/docs/ai/configure-vertex-ai).
 2.  Verify that the latest version of `google_ml_integration` is installed.
     1.  To check the installed version, run the following command:
-        
+
         SELECT extversion FROM pg\_extension WHERE extname \= 'google\_ml\_integration';
-        extversion 
+        extversion
         \------------
         1.5.2
         (1 row)
-        
+
     2.  If the extension isn't installed or if the installed version is earlier than 1.5.2, update the extension.
-        
+
         CREATE EXTENSION IF NOT EXISTS google\_ml\_integration;
         ALTER EXTENSION google\_ml\_integration UPDATE;
-        
+
         If you experience issues when you run the preceding commands, or if the extension isn't updated to version 1.5.2 after you run the preceding commands, contact [Google Cloud support](https://cloud.google.com/support).
-        
+
 3.  To use the AlloyDB AI query engine functionality, set the `google_ml_integration.enable_ai_query_engine` flag to `on`.
-    
+
     ### SQL
-    
-    1.  Enable the AI query engine for the current session.  
-        
+
+    1.  Enable the AI query engine for the current session.
+
         SET google\_ml\_integration.enable\_ai\_query\_engine \= on;
-        
-    2.  Enable features for a specific database across sessions.  
-        
+
+    2.  Enable features for a specific database across sessions.
+
         ALTER DATABASE DATABASE\_NAME SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    3.  Enable the AI query engine for a specific user across sessions and databases.  
-        
+
+    3.  Enable the AI query engine for a specific user across sessions and databases.
+
         ALTER ROLE postgres SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    
+
+
     ### Console
-    
+
     To modify the value of the `google_ml_integration.enable_ai_query_engine` flag, follow the steps in [Configure an instance's database flags](/alloydb/docs/instance-configure-database-flags#console).
-    
+
     ### gcloud
-    
+
     To use the gcloud CLI, you can [install and initialize](/sdk/docs/install) the Google Cloud CLI, or you can use [Cloud Shell](/shell/docs/using-cloud-shell).
-    
+
     You can modify the value of the `google_ml_integration.enable_ai_query_engine` flag. For more information, see [Configure an instance's database flags](/alloydb/docs/instance-configure-database-flags#console).
-    
+
     gcloud alloydb instances update INSTANCE\_ID \\
       --database-flags google\_ml\_integration.enable\_ai\_query\_engine=on \\
       --region=REGION\_ID \\
       --cluster=CLUSTER\_ID \\
       --project=PROJECT\_ID
-    
+
 
 ### Required roles
 
@@ -237,11 +237,11 @@ ORDER BY reranked_results.score DESC;
 ## What's next
 
 -   [Register a model endpoint with model endpoint management](/alloydb/docs/ai/register-model-endpoint).
-    
+
 -   [Query using AI powered SQL operators](/alloydb/docs/ai/evaluate-semantic-queries-ai-operators).
-    
+
 -   [Perform time-series forecasting](/alloydb/docs/ai/perform-time-series-forecasting)
-    
+
 
 Send feedback
 

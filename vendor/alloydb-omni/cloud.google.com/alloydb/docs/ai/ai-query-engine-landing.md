@@ -41,11 +41,11 @@ Lorsque vous intégrez un opérateur d'IA tel que `ai.if()`, `ai.rank()` ou `ai.
 Les mécanismes de requête de base de données traditionnels sont souvent rigides, ce qui oblige les développeurs à coder en dur tous les chemins d'interaction de l'utilisateur potentiels. Les fonctions AlloyDB AI modifient considérablement l'expérience utilisateur en procédant comme suit :
 
 -   Intégrer des connaissances mondiales aux données d'entreprise : vous pouvez intégrer les connaissances du monde réel des grands modèles de langage (LLM) directement dans votre base de données AlloyDB pour PostgreSQL. Voici quelques exemples d'utilisation des fonctions d'IA :
-    
+
     -   Traiter des données non structurées à l'aide de `ai.generate` : vous pouvez gérer les commentaires utilisateur bruts, bruyants ou non structurés (tels que les avis ou les journaux) à l'aide de Gemini avec SQL.
     -   Déterminer si les transactions sont frauduleuses à l'aide de `ai.if` : fournissez à la fonction une séquence d'actions utilisateur, des notes de transaction ou des résumés de chat, et demandez-lui d'évaluer un résultat binaire : `Is this fraudulent?` (Est-ce frauduleux ?)
 -   Intelligence hautes performances : utilisez les éléments suivants pour accélérer les performances et gérer l'intelligence à grande échelle avec les fonctions d'IA :
-    
+
     -   Utilisez le traitement basé sur des tableaux pour gérer jusqu'à des milliers de lignes par seconde, ce qui est 2 000 fois plus rapide que les appels ligne par ligne. Le traitement basé sur des tableaux est disponible pour toutes les fonctions d'IA. Pour en savoir plus, consultez [Effectuer des requêtes SQL intelligentes à l'aide de fonctions d'IA](https://docs.cloud.google.com/alloydb/docs/ai/evaluate-semantic-queries-ai-operators?hl=fr).
     -   Utilisez l'accélération des fonctions d'IA pour obtenir un débit nettement supérieur à celui des appels ligne par ligne. Cette fonctionnalité est disponible pour `ai.if` et `ai.rank`. Pour en savoir plus, consultez [Effectuer des requêtes SQL intelligentes à l'aide de fonctions d'IA](https://docs.cloud.google.com/alloydb/docs/ai/evaluate-semantic-queries-ai-operators?hl=fr).
     -   Utilisez `ai.if` optimisé pour éliminer les coûts d'utilisation du LLM grâce à une efficacité accrue, en atteignant 100 000 lignes par seconde (soit une amélioration de 23 000 fois par rapport aux appels ligne par ligne) et en réduisant les coûts de 6 000 fois à 1/10 de centime.
@@ -54,61 +54,61 @@ Les mécanismes de requête de base de données traditionnels sont souvent rigid
 
 Le tableau suivant décrit les cas d'utilisation des fonctions AlloyDB AI.
 
-  
+
 **Fonction**
 
-  
+
 **Description**
 
-  
+
 **Cas d'utilisation**
 
 ai.if
 
-  
+
 Filtrage cognitif intelligent basé sur le langage naturel.
 
-  
+
 Déterminez quelles transactions client semblent frauduleuses en fonction des tendances comportementales.
 
 ai.rank
 
-  
+
 Reclasse les résultats de la recherche vectorielle en fonction de nuances contextuelles profondes.
 
-  
+
 Donnez la priorité aux tissus respirants pour une recherche de `tropical wedding` (mariage tropical), même si votre base de données ne sait pas ce que signifie "tissus respirants".
 
 ai.generate
 
-  
+
 Génère du contenu ou transforme des formats de données.
 
-  
+
 Convertissez les données brutes des journaux de serveur au format JSON structuré pour faciliter l'analyse.
 
 ai.analyze\_sentiment
 
-  
+
 Classe le ton émotionnel du texte comme positif, négatif ou neutre.
 
-  
+
 Classez des milliers d'avis sur des produits pour évaluer la satisfaction globale des clients.
 
 ai.summarize
 
-  
+
 Condense les longs textes en informations essentielles.
 
-  
+
 Extrayez les décisions clés et les mesures à prendre à partir des transcriptions de conversations.
 
 ai.forecast
 
-  
+
 Permet la prévision de séries temporelles à l'aide du [modèle TimesFM](https://docs.cloud.google.com/alloydb/docs/ai/perform-time-series-forecasting?hl=fr).
 
-  
+
 Prévoyez les besoins futurs en matière d'inventaire en fonction de l'historique des données de ventes.
 
 ## En savoir plus

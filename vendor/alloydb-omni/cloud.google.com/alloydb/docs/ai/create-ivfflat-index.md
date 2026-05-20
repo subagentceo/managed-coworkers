@@ -17,13 +17,13 @@ This page describes how to use stored embeddings to generate indexes and query e
 Before you can start creating indexes, you must complete the following prerequisites.
 
 -   [Embedding vectors are added to a table](/alloydb/docs/ai/store-embeddings) in your AlloyDB database.
-    
+
 -   The `vector` extension version `0.5.0` or later that is based on `pgvector`, extended by Google for AlloyDB is installed.
-    
+
     ```
     CREATE EXTENSION IF NOT EXISTS vector;
     ```
-    
+
 
 ## Create an `IVFFlat` index
 
@@ -40,23 +40,23 @@ CREATE INDEX INDEX_NAME ON TABLE
 Replace the following:
 
 -   `INDEX_NAME`: the name of the index you want to create—for example, `my-ivf-index`.
-    
+
 -   `TABLE`: the table to add the index to.
-    
+
 -   `EMBEDDING_COLUMN`: a column that stores `vector` data.
-    
+
 -   `DISTANCE_FUNCTION`: the distance function to use with this index. Choose one of the following:
-    
+
     -   **L2 distance:** `vector_l2_ops`
-        
+
     -   **Inner product:** `vector_ip_ops`
-        
+
     -   **Cosine distance:** `vector_cosine_ops`
-        
+
 -   `LIST_COUNT`: the number of lists to use with this index. For more information about how to decide this value, see [Tune an IVFFlat index](/alloydb/docs/ai/tune-indexes).
-    
+
     To create this index on an embedding column that uses the `real[]` data type instead of `vector`, cast the column into the `vector` data type:
-    
+
 
 ```
 CREATE INDEX INDEX_NAME ON TABLE
@@ -91,25 +91,25 @@ To find the nearest semantic neighbors for an embedding vector, you can run the 
 Replace the following:
 
 -   `TABLE`: the table containing the embedding to compare the text to.
-    
+
 -   `INDEX_NAME`: the name of the index you want to use—for example, `my-scann-index`.
-    
+
 -   `EMBEDDING_COLUMN`: the column containing the stored embeddings.
-    
+
 -   `DISTANCE_FUNCTION_QUERY`: the distance function to use with this query. Choose one of the following based on the distance function used while creating the index:
-    
+
     -   **L2 distance:** `<->`
-        
+
     -   **Inner product:** `<#>`
-        
+
     -   **Cosine distance:** `<=>`
-        
+
 -   `EMBEDDING`: the embedding vector you want to find the nearest stored semantic neighbors of.
-    
+
 -   `ROW_COUNT`: the number of rows to return.
-    
+
     Specify `1` if you want only the single best match.
-    
+
 
 For more information about other query examples, see [Querying](https://github.com/pgvector/pgvector?tab=readme-ov-file#querying).
 

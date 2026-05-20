@@ -1,26 +1,21 @@
 {
   "vendor": "agentskills",
   "sampled": 5,
-  "mean": 97.8,
-  "p10": 96.4,
-  "p50": 98,
+  "mean": 97,
+  "p10": 93.2,
+  "p50": 99,
   "p90": 99,
   "axis_means": {
     "A": 0,
-    "B": 0,
-    "C": 1.4,
+    "B": 0.2,
+    "C": 2,
     "D": 0,
     "E": 0.8
   },
   "worst_files": [
     {
-      "path": "vendor/agentskills/agentskills.io/client-implementation/adding-skills-support.md",
-      "score": 96,
-      "dominant_axis": "C"
-    },
-    {
-      "path": "vendor/agentskills/agentskills.io/skill-creation/evaluating-skills.md",
-      "score": 97,
+      "path": "vendor/agentskills/agentskills.io/skill-creation/using-scripts.md",
+      "score": 90,
       "dominant_axis": "C"
     },
     {
@@ -29,14 +24,19 @@
       "dominant_axis": "C"
     },
     {
-      "path": "vendor/agentskills/agentskills.io/skill-creation/quickstart.md",
+      "path": "vendor/agentskills/agentskills.io/skill-creation/optimizing-descriptions.md",
       "score": 99,
       "dominant_axis": "E"
     },
     {
-      "path": "vendor/agentskills/agentskills.io/specification.md",
+      "path": "vendor/agentskills/agentskills.io/skill-creation/best-practices.md",
       "score": 99,
-      "dominant_axis": "C"
+      "dominant_axis": "E"
+    },
+    {
+      "path": "vendor/agentskills/urls.md",
+      "score": 99,
+      "dominant_axis": "B"
     }
   ]
 }

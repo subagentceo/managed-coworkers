@@ -1,4 +1,4 @@
-# What 81,000 people  
+# What 81,000 people
 want from AI
 
 Last December, tens of thousands of Claude users around the world had a conversation with our [AI interviewer](https://www.anthropic.com/research/anthropic-interviewer) to share how they use AI, what they dream it could make possible, and what they fear it might do.
@@ -7,8 +7,8 @@ Each dot represents 4 respondents
 
 Jump to story
 
-For the first time, AI has enabled us to collect rich, open‑ended interviews at extraordinary scale.  
-  
+For the first time, AI has enabled us to collect rich, open‑ended interviews at extraordinary scale.
+
 We heard from people across 159 countries in 70 languages. We believe this is the largest and most multilingual qualitative study ever conducted.
 
 AI is already helping people, and inspiring hope…
@@ -269,11 +269,10 @@ Overall, 11% of people saw AI’s productivity benefits as ultimately a way to f
 
 “Personal transformation”—using AI to help one grow or improve their wellbeing as a person—also appeared frequently (14%). Within this category, the desires were diverse, ranging from cognitive partnership and collaboration (24%), to support with mental health (21%) or physical health (8%), and even romantic connection with AI (5%).
 
-The nine clusters may look disparate, but they are underpinned by recognizably human desires. Roughly a third of visions are about making room for life—more time, money, mental bandwidth—by using AI to alleviate current burdens. Another quarter revolves around using AI to help people do better, more fulfilling work (not escaping work, but getting more out of it). About a fifth are about becoming someone better—learning, healing, growing. A smaller share want to make something (“creative expression”) or fix the world (“societal transformation”).  
-  
+The nine clusters may look disparate, but they are underpinned by recognizably human desires. Roughly a third of visions are about making room for life—more time, money, mental bandwidth—by using AI to alleviate current burdens. Another quarter revolves around using AI to help people do better, more fulfilling work (not escaping work, but getting more out of it). About a fifth are about becoming someone better—learning, healing, growing. A smaller share want to make something (“creative expression”) or fix the world (“societal transformation”).
+
 Those that wanted societal transformation from AI often cited a vision for healthcare—people wanted AI to detect cancer earlier, accelerate drug discovery, or enable broad access. Often these desires stemmed from personal experience of losing family members, living with chronic illness, or watching loved ones receive wrong or delayed diagnoses. Transformation in the form of education came next. Respondents in low and middle income countries were quick to cite the possibility that AI might break the association between educational quality and wealth. They pointed to teacher shortages in their countries, or the prohibitive cost of private tutors. Others hoped that AI would, for example, free people from drudgery, help repair broken institutions, or address global crises.
 
-  
 
 ## Are people getting what they want?
 
@@ -435,7 +434,7 @@ But another kind of productivity story emerged in the technical accessibility re
 
 > “I owned a butcher shop for more than 20 years. With AI, I ventured into this \[entrepreneurship\] experience, and it's amazing what I've managed to achieve. Before this, I had only touched a PC two or three times in my life… At first it was the economic aspect that motivated me… Today, my motivation is to see it work and to see that it's helping \[people\]. I'm increasingly motivated and focused on being the best version of myself, and I see no limits.”Entrepreneur, Chile
 
-  
+
 The cognitive partnership (17%), learning (10%), and emotional support (6%) responses often mentioned the same core underlying AI affordances: patience, availability, and the absence of judgment:
 
 > “It has been like having a faculty colleague who knows a lot, is never bored or tired, and is available 24/7.”Academic, United States
@@ -763,7 +762,7 @@ Learning33% mention this as a benefit
 expect ithave seen it
 
 > “I've probably learned more in half a year than I could have in a university degree.”
-> 
+>
 > Entrepreneur, Germany
 
 Cognitive atrophy17% mention this as a harm
@@ -773,7 +772,7 @@ Cognitive atrophy17% mention this as a harm
 have seen itexpect it
 
 > “I don't think as much as I used to. I struggle to put the ideas I do have into words.
-> 
+>
 > Heavy AI user, United States
 
 In these paired bar charts, each bar shows the share of respondents who were excited about the benefit on the left, vs. worried about the harm on the right—split into those who've experienced it firsthand (darker) and those who anticipate it (lighter). Firsthand experience can also include firsthand observation, but does not include e.g. news reports.
@@ -789,7 +788,7 @@ Better decision-making22% mention this as a benefit
 expect ithave seen it
 
 > “My son had several confusing diagnoses pointing toward \[an autoimmune condition\], but here we managed to understand it was \[a different condition\] in a severe stage.
-> 
+>
 > Brazil
 
 Unreliability37% mention this as a harm
@@ -799,7 +798,7 @@ Unreliability37% mention this as a harm
 have seen itexpect it
 
 > “I got caught in what I now recognize as a large, slow hallucination — answers that were internally consistent, confident, and wrong in subtle but compounding ways.
-> 
+>
 > Researcher, United States
 
 22% of people expressed excitement about AI as an aid in decision-making, while 37% lamented that AI impedes good decisions because of its unreliability (e.g. hallucinations). This is the only tension in which the negative overshadowed the positive. Both sides were deeply rooted in experience—88% of those talking about the decision-making benefits and 79% of those talking about the harms had witnessed it directly. Many people have both leaned on AI for judgment and been burned by it. This is mentioned by people in high-stakes professions—law, finance, government, and healthcare—at nearly twice the average rate. Nearly half of all lawyers, in particular, mention coming up against AI unreliability firsthand, yet they also report the highest rates of realized decision-making benefits.
@@ -811,7 +810,7 @@ Emotional support16% mention this as a benefit
 expect ithave seen it
 
 > “3am, my wife is sleeping, my psychologist is unavailable. Until the medication kicks in, the AI helps me surf that wave. It doesn't replace human contact, but it helps me buy some time.
-> 
+>
 > White collar worker, Argentina
 
 Emotional dependence12% mention this as a harm
@@ -821,7 +820,7 @@ Emotional dependence12% mention this as a harm
 saw itexpect it
 
 > “I'd started telling Claude about things I couldn't even tell my partner. It felt like I was having an emotional affair.
-> 
+>
 > Grad student, United States
 
 Only 22% of people raised either the positives of emotional support or the negatives of emotional dependence on AI. But it’s also the most entangled tension we found, with the strongest co-occurrence of light and shade in the same person (triple the baseline co-occurrence rate). People not currently working are twice as likely to raise it, and twice as likely to describe some experience of dependence. Healthcare professionals are overrepresented on both sides too, perhaps reflecting the fact that they talk about using Claude for emotional support at twice the rate of other professionals.
@@ -833,7 +832,7 @@ Time-saving50% mention this as a benefit
 expect ithave seen it
 
 > “I can go home earlier. I can have time for myself and my family.
-> 
+>
 > Engineer, Japan
 
 Illusory productivity18% mention this as a harm
@@ -843,7 +842,7 @@ Illusory productivity18% mention this as a harm
 have seen itexpect it
 
 > “The ratio of my work time to rest time hasn't changed at all. You just have to run faster and faster to stay in place.
-> 
+>
 > Freelance software engineer, France
 
 Time-saving was the most commonly cited benefit—half of all respondents raised it—but 19% were wary of actually losing time due to AI, e.g. due to the verification burden, or simply getting busier as expectations increase at work. Those who are self-employed—e.g. freelancers and small business owners—are the most likely to mention both sides at once. Without an institutional layer to buffer the new pace, they both get the gains and feel the squeeze.
@@ -855,7 +854,7 @@ Economic empowerment28% mention this as a benefit
 expect ithave seen it
 
 > “I've never touched the backend of software in my life. But Claude helped me launch an app.
-> 
+>
 > Healthcare worker, United States
 
 Economic displacement18% mention this as a harm
@@ -865,7 +864,7 @@ Economic displacement18% mention this as a harm
 have seen itexpect it
 
 > “Yes, at my old job, they replaced me as a writer with an AI.
-> 
+>
 > Writer, United States
 
 The economic mobility tension—between those yearning for economic empowerment from AI and those fearing displacement from it—is the most speculative, with the highest rate of hypothetical hopes _or_ fears. It’s also the one where the co-occurrence of upside and downside is weakest (with a correlation score of +0.16 vs an average of +0.25). Usually the people most engaged with the upside of a tension tend to be similarly engaged with its downside; here, the groups diverge.
@@ -1118,11 +1117,11 @@ Browse quotes
 
 ### Authorship and acknowledgments
 
-We thank the 80,508 Claude users who gave us their time and candor. Saffron Huang led the project, designed and ran the analysis, and wrote the blog post. Shan Carter led data visualization, prototyped the interactive article, and helped with analysis. Jake Eaton led editorial development, and Sarah Pollack led communications strategy. Dexter Callender III implemented the production article, and Nikki Makagiansar, Maria Gonzalez, and Kelsey Nanan contributed to design. Sylvie Carr advised on editorial. Miles McCain and Kunal Handa helped with analysis. Jerry Hong contributed to design. Grace Yun, AJ Alt, and Thomas Millar implemented Anthropic Interviewer within [Claude.ai](http://Claude.ai). Chelsea Larsson, Jane Leibrock, and Matt Gallivan contributed to survey and experience design. Theodore Sumers contributed to the data processing and clustering infrastructure. Jack Clark, Michael Stern and Deep Ganguli provided critical feedback, direction and organizational support. All authors provided detailed feedback throughout.  
-  
+We thank the 80,508 Claude users who gave us their time and candor. Saffron Huang led the project, designed and ran the analysis, and wrote the blog post. Shan Carter led data visualization, prototyped the interactive article, and helped with analysis. Jake Eaton led editorial development, and Sarah Pollack led communications strategy. Dexter Callender III implemented the production article, and Nikki Makagiansar, Maria Gonzalez, and Kelsey Nanan contributed to design. Sylvie Carr advised on editorial. Miles McCain and Kunal Handa helped with analysis. Jerry Hong contributed to design. Grace Yun, AJ Alt, and Thomas Millar implemented Anthropic Interviewer within [Claude.ai](http://Claude.ai). Chelsea Larsson, Jane Leibrock, and Matt Gallivan contributed to survey and experience design. Theodore Sumers contributed to the data processing and clustering infrastructure. Jack Clark, Michael Stern and Deep Ganguli provided critical feedback, direction and organizational support. All authors provided detailed feedback throughout.
+
 Additionally, we thank David Saunders, Mengyi Xu, Katie Kennedy, Bianca Lindner, Meredith Callan, Tim Belonax, Jen Martinez, Peter McCrory, and Miriam Chaum for their discussion, feedback, and support.
 
-#### If you’d like to cite this post you can use the following Bibtex key:  
+#### If you’d like to cite this post you can use the following Bibtex key:
 
 ```
 @online{huang2026interviewer,
@@ -1144,7 +1143,7 @@ Available [here.](https://cdn.sanity.io/files/4zrzovbb/website/99156863ed4a81256
 
 1.  The largest qualitative studies we found in our research were the USC Shoah Foundation Visual History Archive and the World Bank "Voices of the Poor Project," both of which included ~60,000 participants.
 
-####   
+####
 Corrections
 
 Mar 19, 2026. "Globally, 67% of people view AI positively" changed to "Globally, 67% of interviewees expressed net positive sentiment toward AI" to more precisely describe the study's methodology.

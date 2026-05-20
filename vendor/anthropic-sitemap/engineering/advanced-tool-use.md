@@ -486,8 +486,8 @@ Copy
 Add system prompt guidance so Claude knows what's available:
 
 ```
-You have access to tools for Slack messaging, Google Drive file management, 
-Jira ticket tracking, and GitHub repository operations. Use the tool search 
+You have access to tools for Slack messaging, Google Drive file management,
+Jira ticket tracking, and GitHub repository operations. Use the tool search
 to find specific capabilities.
 ```
 
