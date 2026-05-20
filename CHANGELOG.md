@@ -4,6 +4,18 @@ All notable changes to this project are tracked here. This file is maintained
 automatically by [release-please](https://github.com/googleapis/release-please)
 from [Conventional Commits](https://www.conventionalcommits.org/) on `main`.
 
+## [0.4.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.3.0...knowledge-engineering-v0.4.0) (2026-05-20)
+
+
+### Features
+
+* **md-quality:** all-vendor baseline snapshot for drift tracking (OMDQ12) ([#97](https://github.com/subagentceo/managed-coworkers/issues/97)) ([b970084](https://github.com/subagentceo/managed-coworkers/commit/b970084f07a055c76ad9c1a7a3cd921c5a30dc7a))
+
+
+### Bug Fixes
+
+* **md-quality:** apply fix-vendor.ts to bottom-3 vendors (OMDQ13) ([#99](https://github.com/subagentceo/managed-coworkers/issues/99)) ([ec87fa5](https://github.com/subagentceo/managed-coworkers/commit/ec87fa58176fdb01c78ea3d7b7381cba51dbeb5a))
+
 ## [0.3.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.2.0...knowledge-engineering-v0.3.0) (2026-05-20)
 
 
