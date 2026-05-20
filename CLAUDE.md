@@ -94,6 +94,14 @@ Closes #N
 Refs O1
 ```
 
+## 1-ticket-1-PR discipline
+
+The chassis's managed-coworkers (under `packages/knowledge-work-plugins/`) follow a strict 1-ticket-1-PR rule. Every PR closes exactly one ticket; ticket-system priority is Atlassian → GitHub Issues fallback.
+
+**Atlassian workspace:** [`managedsubagents.atlassian.net`](https://managedsubagents.atlassian.net/) (OAuth-only via the official Atlassian Remote MCP Server at `https://mcp.atlassian.com/v1/mcp/authv2`, declared in `.mcp.json` as `atlassian`). Tickets use the format `jira-<PROJECT>-<n>` (where `<PROJECT>` is the Jira project key); the chassis's `isTicketRef()` validator in `src/domain/coworkers/CoworkerSession.ts` accepts that and the `gh-<owner>/<repo>#<n>` fallback.
+
+When the Atlassian MCP isn't surfaced in a remote-execution session (it's OAuth-gated to the operator's account), the GitHub-issues fallback applies — see issue #113 / PR #114 as the worked example.
+
 ## See also
 
 - `RUNBOOK.md` — using Claude Opus 4.7 (1M context) as the web orchestrator
