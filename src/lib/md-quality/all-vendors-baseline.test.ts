@@ -17,14 +17,11 @@
  * the live vendor set exactly (no new or removed vendors without an
  * intentional rebaseline).
  *
- * NOTE on path-dependence: `sample.ts` hashes absolute file paths to
- * choose its sample, so the golden is location-specific. The golden
- * is computed from the canonical operator checkout at
- * `/Users/alexzh/subagentmcp/subagentceo/managed-coworkers/`. Running
- * this test from a different worktree path will produce a different
- * sample and the drift check will fire. This matches the existing
- * `grade-vendor.test.ts` golden contract — path-invariance is a
- * separate concern tracked outside MD12.
+ * Path-independence: `sample.ts` was fixed (OBATCH-FIX) to hash
+ * vendor-relative paths instead of absolute paths, so the same
+ * (vendor, seed) pair selects the same files on any machine. The
+ * golden is now CI-stable and no longer tied to the operator checkout
+ * path.
  *
  * To rebaseline after an intentional change (new vendor added, axis
  * scoring deliberately retuned):

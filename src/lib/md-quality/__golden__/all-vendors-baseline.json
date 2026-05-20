@@ -1,181 +1,211 @@
 [
     {
-        "vendor": "openfeature",
+        "vendor": "iterable",
         "sampled": 10,
-        "mean": 89.8,
-        "p10": 86.8,
-        "p50": 89,
-        "p90": 92.7,
+        "mean": 89.9,
+        "p10": 88.6,
+        "p50": 91,
+        "p90": 91,
         "axis_means": {
             "A": 0,
-            "B": 2,
-            "C": 5.6,
-            "D": 1.4,
-            "E": 1.2
+            "B": 8.8,
+            "C": 0,
+            "D": 0.3,
+            "E": 1
+        }
+    },
+    {
+        "vendor": "openfeature",
+        "sampled": 10,
+        "mean": 91.1,
+        "p10": 87,
+        "p50": 90.5,
+        "p90": 98.1,
+        "axis_means": {
+            "A": 0,
+            "B": 0.8,
+            "C": 5.5,
+            "D": 1.3,
+            "E": 1.3
+        }
+    },
+    {
+        "vendor": "stripe",
+        "sampled": 10,
+        "mean": 91.1,
+        "p10": 83.9,
+        "p50": 95,
+        "p90": 98.1,
+        "axis_means": {
+            "A": 0.2,
+            "B": 5,
+            "C": 1.6,
+            "D": 0.1,
+            "E": 2
         }
     },
     {
         "vendor": "osv-scanner",
         "sampled": 10,
-        "mean": 89.9,
+        "mean": 91.8,
         "p10": 85.8,
-        "p50": 88.5,
-        "p90": 94.5,
+        "p50": 92.5,
+        "p90": 99,
         "axis_means": {
             "A": 0,
-            "B": 1,
-            "C": 5.4,
-            "D": 2.8,
-            "E": 0.9
+            "B": 0.9,
+            "C": 4.1,
+            "D": 2.5,
+            "E": 0.7
         }
     },
     {
-        "vendor": "iterable",
+        "vendor": "alloydb-omni",
         "sampled": 10,
-        "mean": 90.7,
-        "p10": 88.6,
+        "mean": 93,
+        "p10": 89.9,
         "p50": 91,
-        "p90": 91.7,
+        "p90": 99,
         "axis_means": {
             "A": 0,
-            "B": 8.1,
-            "C": 0,
-            "D": 0.2,
+            "B": 0.2,
+            "C": 5.8,
+            "D": 0,
             "E": 1
         }
     },
     {
         "vendor": "anthropics",
         "sampled": 10,
-        "mean": 91.6,
-        "p10": 90.2,
-        "p50": 91,
-        "p90": 94.6,
+        "mean": 93.2,
+        "p10": 91,
+        "p50": 92,
+        "p90": 97.2,
         "axis_means": {
             "A": 0,
-            "B": 6.6,
-            "C": 1,
+            "B": 5.6,
+            "C": 0.4,
             "D": 0,
             "E": 0.8
-        }
-    },
-    {
-        "vendor": "stripe",
-        "sampled": 10,
-        "mean": 91.7,
-        "p10": 84.7,
-        "p50": 93,
-        "p90": 98,
-        "axis_means": {
-            "A": 0,
-            "B": 5.8,
-            "C": 0.5,
-            "D": 0.1,
-            "E": 1.9
         }
     },
     {
         "vendor": "cloudflare",
         "sampled": 10,
-        "mean": 93.3,
+        "mean": 93.7,
         "p10": 89,
-        "p50": 94,
-        "p90": 97,
+        "p50": 95,
+        "p90": 97.3,
         "axis_means": {
             "A": 0,
-            "B": 1,
-            "C": 3.7,
+            "B": 0.9,
+            "C": 3.6,
             "D": 0,
-            "E": 2
+            "E": 1.8
         }
     },
     {
         "vendor": "sentry",
         "sampled": 10,
-        "mean": 93.4,
-        "p10": 91.7,
-        "p50": 93,
+        "mean": 93.9,
+        "p10": 92.7,
+        "p50": 94,
         "p90": 94.5,
         "axis_means": {
             "A": 0,
-            "B": 5.6,
+            "B": 5.2,
             "C": 0,
-            "D": 0.4,
-            "E": 0.6
-        }
-    },
-    {
-        "vendor": "claude-sitemap",
-        "sampled": 10,
-        "mean": 93.6,
-        "p10": 86.9,
-        "p50": 91,
-        "p90": 100,
-        "axis_means": {
-            "A": 0,
-            "B": 5.6,
-            "C": 0,
-            "D": 0,
-            "E": 0.8
-        }
-    },
-    {
-        "vendor": "wellarchitected-github",
-        "sampled": 10,
-        "mean": 94.7,
-        "p10": 90,
-        "p50": 95.5,
-        "p90": 99,
-        "axis_means": {
-            "A": 0,
-            "B": 0.2,
-            "C": 1,
-            "D": 2.4,
-            "E": 1.7
+            "D": 0.2,
+            "E": 0.7
         }
     },
     {
         "vendor": "anthropic-sitemap",
         "sampled": 10,
-        "mean": 95.3,
-        "p10": 92,
-        "p50": 96,
+        "mean": 94.2,
+        "p10": 90.8,
+        "p50": 94,
         "p90": 97,
         "axis_means": {
             "A": 0,
-            "B": 1.6,
-            "C": 0,
-            "D": 1.9,
-            "E": 1.2
+            "B": 2.3,
+            "C": 0.3,
+            "D": 1.7,
+            "E": 1.5
         }
     },
     {
         "vendor": "workos",
         "sampled": 10,
-        "mean": 95.4,
+        "mean": 94.4,
         "p10": 90,
         "p50": 95.5,
-        "p90": 99.1,
+        "p90": 98.1,
         "axis_means": {
             "A": 0,
-            "B": 3.6,
-            "C": 0.4,
+            "B": 4.8,
+            "C": 0.2,
             "D": 0,
             "E": 0.6
         }
     },
     {
-        "vendor": "alloydb-omni",
+        "vendor": "sift",
         "sampled": 10,
-        "mean": 95.9,
-        "p10": 90.5,
+        "mean": 95.2,
+        "p10": 91,
         "p50": 97.5,
+        "p90": 98.1,
+        "axis_means": {
+            "A": 0,
+            "B": 1.6,
+            "C": 0,
+            "D": 1.5,
+            "E": 1.7
+        }
+    },
+    {
+        "vendor": "wellarchitected-github",
+        "sampled": 10,
+        "mean": 95.5,
+        "p10": 92.8,
+        "p50": 95.5,
         "p90": 99,
         "axis_means": {
             "A": 0,
             "B": 0,
-            "C": 3,
-            "D": 0.1,
+            "C": 0,
+            "D": 2.4,
+            "E": 2.1
+        }
+    },
+    {
+        "vendor": "arkose-labs",
+        "sampled": 10,
+        "mean": 95.8,
+        "p10": 92.4,
+        "p50": 97,
+        "p90": 99,
+        "axis_means": {
+            "A": 0,
+            "B": 0.4,
+            "C": 2.6,
+            "D": 0.3,
+            "E": 0.9
+        }
+    },
+    {
+        "vendor": "claude-sitemap",
+        "sampled": 10,
+        "mean": 95.8,
+        "p10": 90.3,
+        "p50": 99,
+        "p90": 99,
+        "axis_means": {
+            "A": 0,
+            "B": 2.4,
+            "C": 0.8,
+            "D": 0,
             "E": 1
         }
     },
@@ -195,36 +225,6 @@
         }
     },
     {
-        "vendor": "sift",
-        "sampled": 10,
-        "mean": 96.5,
-        "p10": 90.8,
-        "p50": 98,
-        "p90": 99.1,
-        "axis_means": {
-            "A": 0,
-            "B": 1.1,
-            "C": 0,
-            "D": 0.8,
-            "E": 1.6
-        }
-    },
-    {
-        "vendor": "intercom",
-        "sampled": 10,
-        "mean": 96.8,
-        "p10": 91.9,
-        "p50": 98.5,
-        "p90": 99,
-        "axis_means": {
-            "A": 0,
-            "B": 1.6,
-            "C": 0.5,
-            "D": 0,
-            "E": 1.1
-        }
-    },
-    {
         "vendor": "brave-search",
         "sampled": 4,
         "mean": 97,
@@ -240,33 +240,33 @@
         }
     },
     {
-        "vendor": "redis",
-        "sampled": 10,
-        "mean": 97,
-        "p10": 96.4,
-        "p50": 99,
-        "p90": 99,
-        "axis_means": {
-            "A": 0,
-            "B": 1.2,
-            "C": 0,
-            "D": 0,
-            "E": 1.8
-        }
-    },
-    {
         "vendor": "modelcontextprotocol",
         "sampled": 10,
         "mean": 97.4,
         "p10": 93.7,
         "p50": 99,
+        "p90": 99.1,
+        "axis_means": {
+            "A": 0,
+            "B": 0.8,
+            "C": 0.8,
+            "D": 0.1,
+            "E": 0.9
+        }
+    },
+    {
+        "vendor": "neon",
+        "sampled": 10,
+        "mean": 97.4,
+        "p10": 94.5,
+        "p50": 99,
         "p90": 99,
         "axis_means": {
             "A": 0,
-            "B": 0.9,
-            "C": 0.7,
+            "B": 1,
+            "C": 0.5,
             "D": 0,
-            "E": 1
+            "E": 1.1
         }
     },
     {
@@ -285,33 +285,63 @@
         }
     },
     {
-        "vendor": "turbopuffer",
+        "vendor": "nimble",
         "sampled": 10,
-        "mean": 97.7,
-        "p10": 95.6,
-        "p50": 98,
+        "mean": 97.5,
+        "p10": 94,
+        "p50": 97.5,
         "p90": 100,
         "axis_means": {
             "A": 0,
-            "B": 0,
-            "C": 1.4,
+            "B": 0.8,
+            "C": 1.1,
             "D": 0,
-            "E": 0.9
+            "E": 0.6
         }
     },
     {
-        "vendor": "elevenlabs",
+        "vendor": "intercom",
         "sampled": 10,
-        "mean": 97.8,
-        "p10": 96.4,
-        "p50": 99,
+        "mean": 97.6,
+        "p10": 94.7,
+        "p50": 98,
+        "p90": 99.1,
+        "axis_means": {
+            "A": 0,
+            "B": 1,
+            "C": 0.3,
+            "D": 0,
+            "E": 1.1
+        }
+    },
+    {
+        "vendor": "turbopuffer",
+        "sampled": 10,
+        "mean": 97.7,
+        "p10": 95.9,
+        "p50": 98,
         "p90": 99,
         "axis_means": {
-            "A": 0.2,
-            "B": 1,
+            "A": 0,
+            "B": 0,
+            "C": 1.5,
+            "D": 0,
+            "E": 0.8
+        }
+    },
+    {
+        "vendor": "twilio",
+        "sampled": 10,
+        "mean": 97.7,
+        "p10": 95,
+        "p50": 98.5,
+        "p90": 99,
+        "axis_means": {
+            "A": 0,
+            "B": 1.2,
             "C": 0,
             "D": 0,
-            "E": 1
+            "E": 1.1
         }
     },
     {
@@ -332,91 +362,76 @@
     {
         "vendor": "aws",
         "sampled": 10,
-        "mean": 98.1,
-        "p10": 97.9,
+        "mean": 98.2,
+        "p10": 98,
         "p50": 98,
         "p90": 99,
         "axis_means": {
             "A": 0,
             "B": 0,
             "C": 0,
-            "D": 0.1,
+            "D": 0,
             "E": 1.8
         }
     },
     {
-        "vendor": "arkose-labs",
+        "vendor": "elevenlabs",
         "sampled": 10,
-        "mean": 98.2,
-        "p10": 96.9,
-        "p50": 99,
-        "p90": 99.1,
-        "axis_means": {
-            "A": 0,
-            "B": 0,
-            "C": 0.9,
-            "D": 0,
-            "E": 0.9
-        }
-    },
-    {
-        "vendor": "twilio",
-        "sampled": 10,
-        "mean": 98.2,
-        "p10": 97.5,
+        "mean": 98.3,
+        "p10": 96.7,
         "p50": 99,
         "p90": 99,
         "axis_means": {
             "A": 0,
-            "B": 0.1,
-            "C": 0.2,
-            "D": 0.3,
-            "E": 1.2
-        }
-    },
-    {
-        "vendor": "cloudflare-managed-agents-template",
-        "sampled": 10,
-        "mean": 98.4,
-        "p10": 97.3,
-        "p50": 99,
-        "p90": 100,
-        "axis_means": {
-            "A": 0,
-            "B": 0.8,
-            "C": 0.3,
-            "D": 0.1,
-            "E": 0.4
-        }
-    },
-    {
-        "vendor": "nimble",
-        "sampled": 10,
-        "mean": 98.4,
-        "p10": 95.8,
-        "p50": 99,
-        "p90": 100,
-        "axis_means": {
-            "A": 0,
-            "B": 0.5,
+            "B": 0.2,
             "C": 0.5,
             "D": 0,
-            "E": 0.6
+            "E": 1
         }
     },
     {
-        "vendor": "neon",
+        "vendor": "spotify-confidence",
         "sampled": 10,
-        "mean": 98.8,
-        "p10": 97.9,
+        "mean": 98.3,
+        "p10": 96,
         "p50": 99,
         "p90": 99.1,
         "axis_means": {
+            "A": 0.2,
+            "B": 0,
+            "C": 0.6,
+            "D": 0,
+            "E": 0.9
+        }
+    },
+    {
+        "vendor": "redis",
+        "sampled": 10,
+        "mean": 98.7,
+        "p10": 98,
+        "p50": 99,
+        "p90": 99,
+        "axis_means": {
             "A": 0,
             "B": 0,
-            "C": 0.1,
-            "D": 0.2,
-            "E": 0.9
+            "C": 0,
+            "D": 0,
+            "E": 1.3
+        }
+    },
+    {
+        "vendor": "docs-github",
+        "sampled": 10,
+        "mean": 98.9,
+        "p10": 98.9,
+        "p50": 99,
+        "p90": 99,
+        "axis_means": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "E": 1.1
         }
     },
     {
@@ -435,60 +450,45 @@
         }
     },
     {
-        "vendor": "docs-github",
+        "vendor": "parallel-web",
         "sampled": 10,
-        "mean": 99,
-        "p10": 99,
-        "p50": 99,
-        "p90": 99,
+        "mean": 99.3,
+        "p10": 98.8,
+        "p50": 99.5,
+        "p90": 100,
         "axis_means": {
             "A": 0,
             "B": 0,
-            "C": 0,
+            "C": 0.2,
             "D": 0,
-            "E": 1
+            "E": 0.5
         }
     },
     {
-        "vendor": "spotify-confidence",
+        "vendor": "cloudflare-managed-agents-template",
         "sampled": 10,
-        "mean": 99,
-        "p10": 98.7,
+        "mean": 99.4,
+        "p10": 99,
         "p50": 99,
         "p90": 100,
         "axis_means": {
             "A": 0,
-            "B": 0.1,
+            "B": 0,
             "C": 0.3,
-            "D": 0,
-            "E": 0.6
-        }
-    },
-    {
-        "vendor": "opentelemetry",
-        "sampled": 10,
-        "mean": 99.7,
-        "p10": 99,
-        "p50": 100,
-        "p90": 100,
-        "axis_means": {
-            "A": 0,
-            "B": 0,
-            "C": 0,
             "D": 0,
             "E": 0.3
         }
     },
     {
-        "vendor": "parallel-web",
+        "vendor": "opentelemetry",
         "sampled": 10,
-        "mean": 99.7,
-        "p10": 99,
+        "mean": 99.6,
+        "p10": 98.9,
         "p50": 100,
         "p90": 100,
         "axis_means": {
             "A": 0,
-            "B": 0,
+            "B": 0.1,
             "C": 0,
             "D": 0,
             "E": 0.3

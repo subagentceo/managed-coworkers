@@ -48,8 +48,8 @@ function* walk(dir: string): Generator<string> {
   }
 }
 
-function sortKey(path: string, seed: number): string {
-  return createHash("sha1").update(`${seed}::${path}`).digest("hex");
+function sortKey(relativePath: string, seed: number): string {
+  return createHash("sha1").update(`${seed}::${relativePath}`).digest("hex");
 }
 
 export function sampleMarkdownFiles(opts: SampleOptions): string[] {
@@ -63,9 +63,12 @@ export function sampleMarkdownFiles(opts: SampleOptions): string[] {
   if (opts.sample <= 0 || all.length <= opts.sample) {
     return all.sort();
   }
-  // Stable-hash sort + take first N for deterministic sampling.
+  const rootPrefix = opts.root.endsWith("/") ? opts.root : opts.root + "/";
+  // Hash relative paths (not absolute) so sample selection is stable across
+  // different checkout locations (local vs CI). Same (vendor-relative path,
+  // seed) → same sort key regardless of where the repo lives on disk.
   return all
-    .map((p) => ({ p, k: sortKey(p, opts.seed) }))
+    .map((p) => ({ p, k: sortKey(p.slice(rootPrefix.length), opts.seed) }))
     .sort((a, b) => a.k.localeCompare(b.k))
     .slice(0, opts.sample)
     .map((x) => x.p);
