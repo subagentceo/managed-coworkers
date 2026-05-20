@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
+  "name": "managed-coworkers (chassis-wide)",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "moby": true
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "remoteEnv": {
+    "ANTHROPIC_API_KEY": ""
+  },
+  "containerEnv": {
+    "ANTHROPIC_API_KEY": ""
+  },
+
+  "forwardPorts": [5433, 6380, 8787],
+  "portsAttributes": {
+    "5433": { "label": "AlloyDB (mc-alloydb)", "onAutoForward": "silent" },
+    "6380": { "label": "Redis (mc-redis)",     "onAutoForward": "silent" },
+    "8787": { "label": "Wrangler dev",         "onAutoForward": "notify" }
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib"
+      }
+    }
+  }
+}
