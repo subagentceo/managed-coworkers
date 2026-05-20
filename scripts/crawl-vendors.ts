@@ -176,13 +176,22 @@ function writeIfChanged(path: string, body: string): "wrote" | "unchanged" {
 
 function loadConfig(vendor: string): CrawlConfig {
   const path = resolve(VENDOR_ROOT, vendor, "crawl.json");
-  // TODO(vendor-refresh-loop): Some vendor/ subdirs are study clones (e.g.
-  // vendor/git/, vendor/commonmark/) without a crawl.json. They're listed
-  // in the parent CLAUDE.md as "Non-org study dirs (sync drift expected)".
-  // Listing them via listVendorConfigs() already excludes them, but a
-  // direct --vendor flag bypasses that filter and crashes here. Surface a
-  // clearer error or skip silently.
-  if (!existsSync(path)) throw new Error(`crawl.json not found for vendor=${vendor} at ${path}`);
+  if (!existsSync(path)) {
+    const vendorDir = resolve(VENDOR_ROOT, vendor);
+    if (existsSync(vendorDir)) {
+      // Study clones (e.g. vendor/git/) live under vendor/ as read-only
+      // upstream snapshots, not as refreshable mirrors. listVendorConfigs()
+      // filters them out, but a direct --vendor flag bypasses that filter.
+      throw new Error(
+        `vendor/${vendor} is a study clone with no crawl.json — not refreshable. ` +
+          `Run \`npm run crawl:vendors\` (no --vendor) to crawl every refreshable vendor.`,
+      );
+    }
+    throw new Error(
+      `no such vendor: vendor/${vendor}/ does not exist. ` +
+        `Run \`npm run crawl:vendors\` to list refreshable vendors.`,
+    );
+  }
   return JSON.parse(readFileSync(path, "utf8")) as CrawlConfig;
 }
 
