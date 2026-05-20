@@ -1,0 +1,22 @@
+{
+  "$schema": "../../src/domain/portfolio/Site.ts",
+  "comment": "Example site-portfolio file. Operator points userConfig.site_portfolio_path at a real one. Schema mirrors src/domain/portfolio/Site.ts (PR per OPMP4).",
+  "sites": [
+    {
+      "id": "zone-example-1",
+      "hostname": "example1.com",
+      "niche": "ai-tools",
+      "target_keywords": ["claude code", "agent sdk", "managed agents"],
+      "owner": "alex",
+      "search_console_property": "sc-domain:example1.com"
+    },
+    {
+      "id": "zone-example-2",
+      "hostname": "example2.com",
+      "niche": "developer-docs",
+      "target_keywords": ["typescript", "cloudflare workers"],
+      "owner": "alex",
+      "search_console_property": "sc-domain:example2.com"
+    }
+  ]
+}
