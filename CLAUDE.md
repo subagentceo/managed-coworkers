@@ -29,6 +29,8 @@ If you (Claude) are starting a session in this repo, do this first:
 | Citation extracts | `seeds/citations/*.md` (15+ extracts of cited vendor docs) |
 | Skills | `.claude/skills/{heartbeat,routines,refresh-vendors,schedule-bridge}/SKILL.md` (SDK-discoverable directory form per `agent-sdk/claude-code-features.md`) |
 | Plugin manifest | `.claude/plugins.json` (3 marketplaces) |
+| Managed coworkers | `packages/knowledge-work-plugins/{product-management,data-engineering}/` (one knowledge-work-plugin per vertical; see "Managed coworkers" section below) |
+| Per-coworker infra | `infra/terraform/coworkers/<vertical>/` (TF v5) + `infra/cloudflare/coworkers/<vertical>/wrangler.jsonc` (parallel TypeScript-side declaration) |
 
 ## Run commands
 
@@ -47,6 +49,41 @@ If you (Claude) are starting a session in this repo, do this first:
 The repo's hard rule: `ANTHROPIC_API_KEY` is **never** set. Anywhere. The OAuth gate at `src/oauth/token.ts` fails closed when it's present. The Cloudflare Worker's env-sanitizer rejects it before passing env into the Sandbox.
 
 If you see code that wants `ANTHROPIC_API_KEY`, it's a bug or a leak. Fix it; don't accommodate it.
+
+## Managed coworkers
+
+Project-local **knowledge-work-plugins** (forked from `anthropics/knowledge-work-plugins`) materialized as Cloudflare Workers. Each vertical is one folder under `packages/knowledge-work-plugins/<name>/` with the standard plugin shape:
+
+```
+.claude-plugin/plugin.json   # manifest + userConfig connector enum
+.mcp.json                    # unconditional MCPs (knowledge-bridge + cloudflare-codemode + ...)
+README.md                    # operator-facing how-to
+coworker-context.md          # chassis-specific grounding (OAuth, vendor mirrors, outcome IDs)
+skills/<name>/SKILL.md       # skill definitions (some stubs, some working bodies)
+```
+
+Current verticals:
+
+| Vertical | Status | Skills | Outcome prefix |
+|---|---|---|---|
+| `product-management` | scaffold (PR #111) + 5 forked skills + 3 SEO stubs | write-spec, roadmap-update, metrics-review, synthesize-research, competitive-brief, site-portfolio-pulse, seo-audit, content-gap-brief | `OPMP*` |
+| `data-engineering` | scaffold (PR #112) + 1 working skill body (PR #123) | model-data-domain, declare-enums (working), trace-data-flow, alloydb-schema, redis-queue-design, visualize-architecture | `ODEP*` |
+
+**Per-coworker infra** lives in two parallel trees the operator picks between at deploy time (drift-detection across both):
+
+- `infra/terraform/coworkers/<vertical>/` — Cloudflare provider v5 root module (KV `SESSION_INDEX`, D1 `OUTCOMES_LOG`, Secrets Store stubs)
+- `infra/cloudflare/coworkers/<vertical>/wrangler.jsonc` — same resource set in wrangler form; pairs with `Dockerfile` + `src/worker.ts`
+
+**OAuth-only at three layers** for every coworker: project gate (`src/oauth/token.ts`), Worker gate (`sanitizeEnvForSandbox()`), container gate (Dockerfile `HEALTHCHECK`). Never `ANTHROPIC_API_KEY`.
+
+## Connector enum
+
+Upstream knowledge-work-plugins load ~16 MCP servers unconditionally (40-80KB context bloat per session). This chassis's fork uses a connector-enum:
+
+- Each plugin's `.claude-plugin/plugin.json` declares `userConfig` categories (`analytics`, `search_console`, `chat`, `project_tracker`, `feedback`, etc.) as multi-select string lists.
+- Only the unconditional MCPs ship in the plugin's `.mcp.json`.
+- Optional connectors layer in via Docker Compose profiles (per-category) — the operator picks at devcontainer-setup time which MCP services start; only those run.
+- Picks are codified as typed string-unions via the `declare-enums` skill (PR #123) under `src/domain/connectors/` so downstream code is not stringly-typed.
 
 ## `third_party/` is gitignored (OHYG1)
 
@@ -108,6 +145,8 @@ When the Atlassian MCP isn't surfaced in a remote-execution session (it's OAuth-
 - `CONTRIBUTING.md` — forking-founder onboarding
 - `DEVELOPER.md` — developer setup + workflows
 - `README.md` — surface overview
+- `packages/knowledge-work-plugins/*/coworker-context.md` — per-vertical chassis grounding (OAuth-only, vendor mirrors, outcome IDs, ticket-ref formats)
+- `seeds/citations/cloudflare-managed-agents.md` — architectural citation (brain/hands decoupling)
 - `docs/architecture.md` — runtime topology
 - `docs/governance.md` — branch ruleset + auto-merge state machine
 - `docs/decisions/` — ADRs. Load-bearing recent ones:
