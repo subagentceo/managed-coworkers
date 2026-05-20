@@ -12,9 +12,10 @@
  *   - npm-registry     -> dist/mcp/npm-registry/server.js
  *   - knowledge-bridge -> dist/mcp/bridge-server.js
  *
- * Planning: Planner (src/agent/planning.ts) emits TodoWrite (headless) or
- * TaskCreate/TaskUpdate (interactive). The TodoTracker (src/agent/todo-tracker.ts)
- * is a thin display layer for either surface.
+ * Planning: Planner (src/agent/planning.ts) emits TaskCreate/TaskUpdate
+ * in both headless and interactive surfaces (per Agent SDK 0.3.142 /
+ * Claude Code v2.1.142). The TodoTracker (src/agent/todo-tracker.ts)
+ * is a thin display layer over those Task events.
  */
 import { query, SYSTEM_PROMPT_DYNAMIC_BOUNDARY } from "@anthropic-ai/claude-agent-sdk";
 import { readFile } from "node:fs/promises";

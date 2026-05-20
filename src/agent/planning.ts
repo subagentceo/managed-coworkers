@@ -1,10 +1,15 @@
 // src/agent/planning.ts
 //
-// Mode-aware task planner for the orchestrator.
+// Task planner for the orchestrator.
 //
-// Two surfaces, per code.claude.com/docs/en/tools-reference.md:
-//   - Headless / Agent SDK runs       -> TodoWrite
-//   - Interactive Claude Code session -> TaskCreate / TaskGet / TaskList / TaskUpdate
+// Per code.claude.com/docs/en/agent-sdk/migrate-task-tools.md, as of
+// TypeScript Agent SDK 0.3.142 / Claude Code v2.1.142, sessions use the
+// structured Task tools (TaskCreate / TaskUpdate / TaskGet / TaskList)
+// in BOTH headless and interactive surfaces. TodoWrite is the legacy
+// surface and is being phased out. The planner now emits Task* events
+// in both modes; the `mode` field is retained on PlannerOptions for
+// downstream consumers (e.g. loop/schedule dispatch policy) but no
+// longer changes tool emission.
 //
 // Loop and schedule are first-class step kinds. The planner does NOT execute
 // them itself; it emits plan steps that the runtime maps to:
@@ -88,32 +93,22 @@ export class Planner {
   private plan: Plan = [];
   constructor(private opts: PlannerOptions) {}
 
-  /** Replace the entire plan and emit a single TodoWrite (headless only). */
+  /** Replace the entire plan and emit one TaskCreate per step. */
   async setPlan(plan: Plan): Promise<void> {
     this.plan = Plan.parse(plan);
     enforceSinglyInProgress(this.plan);
-    if (this.opts.mode === "headless") {
-      await this.opts.emit("TodoWrite", { todos: this.toTodoWriteShape() });
-    } else {
-      // interactive: create each task individually
-      for (const step of this.plan) {
-        await this.opts.emit("TaskCreate", this.toTaskCreateShape(step));
-      }
+    for (const step of this.plan) {
+      await this.opts.emit("TaskCreate", this.toTaskCreateShape(step));
     }
   }
 
-  /** Transition a single step's status. */
+  /** Transition a single step's status via TaskUpdate. */
   async setStatus(id: string, status: TodoStatus): Promise<void> {
     const step = this.plan.find((s) => s.id === id);
     if (!step) throw new Error(`[planner] unknown step id: ${id}`);
     step.status = status;
     enforceSinglyInProgress(this.plan);
-
-    if (this.opts.mode === "headless") {
-      await this.opts.emit("TodoWrite", { todos: this.toTodoWriteShape() });
-    } else {
-      await this.opts.emit("TaskUpdate", { id, status });
-    }
+    await this.opts.emit("TaskUpdate", { id, status });
   }
 
   /**
@@ -168,14 +163,6 @@ export class Planner {
   }
 
   // ---------- shape adapters ----------
-  private toTodoWriteShape() {
-    return this.plan.map((s) => ({
-      content: s.content,
-      activeForm: s.activeForm,
-      status: s.status,
-    }));
-  }
-
   private toTaskCreateShape(step: PlanStep) {
     return {
       id: step.id,

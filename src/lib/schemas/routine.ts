@@ -74,7 +74,6 @@ export const AllowedToolSchema = z.enum([
   "WebFetch",
   "WebSearch",
   "NotebookEdit",
-  "TodoWrite",
   "Task",
   "TaskCreate",
   "TaskGet",

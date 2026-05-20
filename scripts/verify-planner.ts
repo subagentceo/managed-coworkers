@@ -2,7 +2,9 @@
 //
 // Smoke test for the planner. Exits non-zero if:
 //   - ANTHROPIC_API_KEY is set (OAuth-only)
-//   - The agent does not emit TodoWrite (headless) or TaskCreate (interactive)
+//   - The agent does not emit TaskCreate / TaskUpdate in either mode
+//     (per code.claude.com/docs/en/agent-sdk/migrate-task-tools.md —
+//      both headless and interactive now use the structured Task tools)
 //   - The planner allows >1 in_progress steps
 //   - Loop / schedule steps do not produce SlashCommand emissions
 
@@ -77,16 +79,17 @@ async function runMode(mode: "headless" | "interactive"): Promise<Emitted[]> {
 const headless = await runMode("headless");
 const interactive = await runMode("interactive");
 
-// Headless must use TodoWrite
-if (!headless.some((e) => e.tool === "TodoWrite")) {
-  fail("headless mode did not emit TodoWrite");
-}
-// Interactive must use TaskCreate / TaskUpdate
-if (!interactive.some((e) => e.tool === "TaskCreate")) {
-  fail("interactive mode did not emit TaskCreate");
-}
-if (!interactive.some((e) => e.tool === "TaskUpdate")) {
-  fail("interactive mode did not emit TaskUpdate");
+// Both modes must use TaskCreate / TaskUpdate (no more TodoWrite anywhere).
+for (const [mode, list] of [["headless", headless], ["interactive", interactive]] as const) {
+  if (!list.some((e) => e.tool === "TaskCreate")) {
+    fail(`${mode} mode did not emit TaskCreate`);
+  }
+  if (!list.some((e) => e.tool === "TaskUpdate")) {
+    fail(`${mode} mode did not emit TaskUpdate`);
+  }
+  if (list.some((e) => e.tool === "TodoWrite")) {
+    fail(`${mode} mode emitted TodoWrite — the planner should be Task-only`);
+  }
 }
 // Both modes must dispatch loop + schedule via SlashCommand
 for (const [mode, list] of [["headless", headless], ["interactive", interactive]] as const) {
@@ -96,4 +99,4 @@ for (const [mode, list] of [["headless", headless], ["interactive", interactive]
   if (!cmds.some((c) => c.startsWith("/schedule"))) fail(`${mode}: no /schedule emitted`);
 }
 
-console.log("[verify:planner] OK — headless TodoWrite, interactive Task*, /loop and /schedule first-class.");
+console.log("[verify:planner] OK — both modes emit Task*, /loop and /schedule first-class, no legacy TodoWrite.");
