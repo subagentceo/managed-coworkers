@@ -21,6 +21,7 @@ Build secure, isolated code execution environments
 - [Analyze data with AI](https://developers.cloudflare.com/sandbox/tutorials/analyze-data-with-ai/index.md): Upload CSV files, generate analysis code with Claude, and return visualizations.
 - [Automated testing pipeline](https://developers.cloudflare.com/sandbox/tutorials/automated-testing-pipeline/index.md): Build a testing pipeline that clones Git repositories, installs dependencies, runs tests, and reports results.
 - [Run Claude Code on a Sandbox](https://developers.cloudflare.com/sandbox/tutorials/claude-code/index.md): Use Claude Code to implement a task in your GitHub repository.
+- [Set up Claude Managed Agents](https://developers.cloudflare.com/sandbox/tutorials/claude-managed-agents/index.md): Run Claude Managed Agents on self-managed Cloudflare environments.
 - [Build a code review bot](https://developers.cloudflare.com/sandbox/tutorials/code-review-bot/index.md): Clone repositories, analyze code with Claude, and post review comments to GitHub PRs.
 - [Build an AI coding agent with OpenAI Agents SDK](https://developers.cloudflare.com/sandbox/tutorials/openai-agents/index.md): Use the OpenAI Agents SDK with Cloudflare Sandbox to build a Python agent that writes, tests, and delivers code in an isolated environment.
 - [Data persistence with R2](https://developers.cloudflare.com/sandbox/tutorials/persistent-storage/index.md): Mount R2 buckets as local filesystem paths to persist data across sandbox lifecycles.

@@ -40,6 +40,7 @@ Store, version, and share filesystem artifacts across Workers, APIs, and git-com
 
 - [ArtifactFS](https://developers.cloudflare.com/artifacts/guides/artifact-fs/index.md): Mount large repos without waiting for full clones.
 - [Authentication](https://developers.cloudflare.com/artifacts/guides/authentication/index.md): Choose auth for bindings, API calls, and Git.
+- [Event subscriptions](https://developers.cloudflare.com/artifacts/guides/event-subscriptions/index.md): Subscribe to Artifacts events for repo lifecycle changes.
 - [Import repositories](https://developers.cloudflare.com/artifacts/guides/import-repositories/index.md): Import existing Git repos into Artifacts.
 
 ## observability

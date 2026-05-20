@@ -21,7 +21,6 @@ Create and manage email addresses and route to your preferred inbox
 ## Email Workers
 
 - [Email Workers](https://developers.cloudflare.com/email-routing/email-workers/index.md): Process incoming emails programmatically with Cloudflare Workers to build custom filtering, forwarding, and notification logic.
-- [Demos](https://developers.cloudflare.com/email-routing/email-workers/demos/index.md): Explore demo applications that show how to use Email Workers within your architecture.
 - [Edit Email Workers](https://developers.cloudflare.com/email-routing/email-workers/edit-email-workers/index.md): Add, rename, delete, or modify Email Workers and manage their associated email routes.
 - [Enable Email Workers](https://developers.cloudflare.com/email-routing/email-workers/enable-email-workers/index.md): Set up your first Email Worker to process incoming emails with custom logic on Cloudflare Workers.
 - [Local Development](https://developers.cloudflare.com/email-routing/email-workers/local-development/index.md): Test Email Workers locally using Wrangler dev or the Cloudflare Vite plugin to simulate receiving, replying, and sending emails.
