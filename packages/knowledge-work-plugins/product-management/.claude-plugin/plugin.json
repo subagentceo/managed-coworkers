@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "product-management",
+  "displayName": "Product Management (managed-coworker)",
+  "version": "0.1.0",
+  "description": "Project-local managed-coworker for product work across a fleet of Cloudflare-hosted sites. OAuth-only harness, operator-picked connectors via enum, no ANTHROPIC_API_KEY. Forked from anthropics/knowledge-work-plugins/product-management with SEO-native skills added for agentic-traffic work.",
+  "author": {
+    "name": "managed-coworkers"
+  },
+  "keywords": [
+    "product-management",
+    "knowledge-work",
+    "managed-coworker",
+    "seo",
+    "cloudflare",
+    "agentic-traffic"
+  ],
+  "homepage": "https://github.com/subagentceo/managed-coworkers",
+  "repository": "https://github.com/subagentceo/managed-coworkers",
+  "userConfig": {
+    "analytics": {
+      "type": "string",
+      "title": "Analytics connector(s)",
+      "description": "Which analytics MCP server(s) to enable. Operator picks at install/devcontainer-rebuild time; only selected servers start via Docker Compose profiles.",
+      "multiple": true
+    },
+    "search_console": {
+      "type": "string",
+      "title": "Search-console connector",
+      "description": "Search-console MCP server (Google Search Console). OAuth refresh-token lives in Cloudflare Secrets Store, never in env.",
+      "multiple": true
+    },
+    "chat": {
+      "type": "string",
+      "title": "Chat connector",
+      "description": "Team chat MCP server (Slack / Discord / Telegram). Notification surface for digests.",
+      "multiple": true
+    },
+    "project_tracker": {
+      "type": "string",
+      "title": "Project tracker connector",
+      "description": "Project tracker MCP server (Linear / Asana / GitHub Projects). Where roadmap items land.",
+      "multiple": true
+    },
+    "feedback": {
+      "type": "string",
+      "title": "User-feedback connector",
+      "description": "User-feedback MCP server (Intercom / Cannylinks / GitHub Issues). Source for synthesize-research.",
+      "multiple": true
+    },
+    "site_portfolio_path": {
+      "type": "file",
+      "title": "Site portfolio JSON",
+      "description": "Path to the operator's site-portfolio.json — the list of (zone-id, hostname, niche, target-keyword) tuples for site-portfolio-pulse / seo-audit / content-gap-brief. Defaults to packages/knowledge-work-plugins/product-management/site-portfolio.example.json."
+    }
+  }
+}
