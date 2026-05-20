@@ -1,0 +1,66 @@
+# .github/workflows/verify.yml
+#
+# Token-free CI gate. Runs the existing `npm run verify` chain
+# (typecheck + citation-guard + lib tests) on every PR. Replaces the
+# Claude Code Review job during the period the subscription quota is
+# paused — see `.github/workflows/claude-code-review.yml.disabled`
+# (and `.github/workflows/claude.yml.disabled`).
+#
+# To re-enable Claude-side review:
+#   git mv .github/workflows/claude-code-review.yml.disabled \
+#          .github/workflows/claude-code-review.yml
+#   git mv .github/workflows/claude.yml.disabled \
+#          .github/workflows/claude.yml
+#
+# This workflow stays even after Claude review is re-enabled: typecheck
+# + citations + lib tests are cheaper than a Claude review and catch a
+# different class of bug.
+
+name: verify
+
+on:
+  pull_request:
+    # ready_for_review fires the verify run when a draft is promoted so
+    # required-status-check gates on main never block indefinitely.
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: typecheck + citations + lib tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The citation-guard reads test files under src/ and scripts/;
+          # no submodules involved (third_party/ is gitignored).
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Typecheck
+        run: npm run verify:typecheck
+
+      - name: Citation guard
+        run: npm run verify:citations
+
+      - name: Lib tests
+        run: npm run verify:libs
