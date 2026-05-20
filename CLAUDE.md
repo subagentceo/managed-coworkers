@@ -67,7 +67,7 @@ Current verticals:
 | Vertical | Status | Skills | Outcome prefix |
 |---|---|---|---|
 | `product-management` | scaffold (PR #111) + 5 forked skills + 3 working SEO skills (PR #132) | write-spec, roadmap-update, metrics-review, synthesize-research, competitive-brief, **site-portfolio-pulse (working)**, **seo-audit (working)**, **content-gap-brief (working)** | `OPMP*` |
-| `data-engineering` | scaffold (PR #112) + 2 working skill bodies (PR #123, #131) | **declare-enums (working)**, **model-data-domain (working)**, trace-data-flow, alloydb-schema, redis-queue-design, visualize-architecture | `ODEP*` |
+| `data-engineering` | scaffold (PR #112) + 6 working skill bodies (PRs #123, #131, #133) | **declare-enums (working)**, **model-data-domain (working)**, **trace-data-flow (working)**, **alloydb-schema (working)**, **redis-queue-design (working)**, **visualize-architecture (working)** | `ODEP*` |
 
 **Per-coworker infra** lives in two parallel trees the operator picks between at deploy time (drift-detection across both):
 

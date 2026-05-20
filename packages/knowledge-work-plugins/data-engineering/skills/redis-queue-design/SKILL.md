@@ -1,27 +1,91 @@
 ---
 name: redis-queue-design
-description: Design a Redis-backed task queue with idempotency keys, retry semantics, and dead-letter handling. Use when adding asynchronous work that crosses Worker invocations (e.g. site-portfolio-pulse digest jobs, embedding backfill, scheduled crawls). Picks between Streams / Lists / Sorted Sets based on the access pattern. Produces a key-namespace doc + a TypeScript producer/consumer pair.
-argument-hint: "<queue-name> <access-pattern: fifo|priority|pubsub|delayed>"
+description: Design a Redis queue or stream for the chassis data plane. Generates a typed key-namespace constant, TypeScript entry schema, and Redis command reference. Use when a new feature needs an in-flight buffer between a Worker and AlloyDB.
+argument-hint: "<queue-name> [--structure=stream|list|sorted-set]"
 chassis-grounding: ../../coworker-context.md
 ---
 
-# Redis Queue Design — stub
+# Redis Queue Design
 
-This is a stub. Implementation lands in a follow-up commit (ODEP6). When written, this skill will:
+Data-engineering skill. Backed by `scripts/lib/redis-queue-design.ts` (pure functions, 13 unit tests) + CLI at `scripts/redis-queue-design.ts`.
 
-1. Take a queue name + access pattern.
-2. Pick the appropriate Redis primitive:
-   - `fifo` → Lists with BLPOP/BRPUSH
-   - `priority` → Sorted Sets (score = priority)
-   - `pubsub` → Streams with consumer groups (the chassis's preferred async backbone)
-   - `delayed` → Sorted Sets (score = unix timestamp)
-3. Document the key namespace under `docs/data/redis-keys.md` (new file if not present):
-   - Format: `coworker:<vertical>:<queue>:<id>`
-   - TTL conventions
-   - Idempotency key strategy
-4. Write the TypeScript producer + consumer under `src/lib/queues/<queue-name>.ts` using the chassis's existing Redis client.
-5. Wire a smoke test for round-trip enqueue→dequeue→ack.
+Given a queue spec (JSON), emits: a typed TypeScript entry schema + key constant, and a Redis command reference table.
 
-Cites: `vendor/redis/` for command semantics + Streams consumer-group docs.
+## Workflow
 
-See `../../coworker-context.md` for chassis grounding.
+1. **Draft the queue spec.** The operator names the queue and lists the fields in each message:
+
+   ```json
+   {
+     "name": "CoworkerSessionEvent",
+     "keyPattern": "coworker:sessions:new",
+     "structure": "stream",
+     "outcomeId": "ODEP7",
+     "maxLen": 10000,
+     "fields": [
+       { "name": "id",         "type": "string",  "description": "session UUID" },
+       { "name": "coworker",   "type": "string"   },
+       { "name": "outcome_id", "type": "string"   },
+       { "name": "started_at", "type": "iso8601"  },
+       { "name": "payload",    "type": "json",    "optional": true }
+     ]
+   }
+   ```
+
+   Supported structures: `stream | list | sorted-set | hash | string`.
+   Supported field types: `string | number | boolean | iso8601 | json`.
+
+2. **Generate the schema:**
+
+   ```bash
+   tsx scripts/redis-queue-design.ts --spec=queue.json
+   ```
+
+3. **Write the output file** to `src/domain/queues/<Name>.ts`.
+
+4. **Wire the producer** in the relevant `infra/cloudflare/coworkers/*/src/worker.ts`.
+
+5. **Verify end-to-end** using the `trace-data-flow` skill.
+
+## Key naming convention
+
+```
+<vertical>:<entity>:<state>
+coworker:sessions:new
+coworker:sessions:processing
+sites:audits:pending
+```
+
+## Output (stream example)
+
+```ts
+export const COWORKERSESSIONEVENT_KEY = "coworker:sessions:new" as const;
+
+export interface CoworkerSessionEvent {
+  id: string;        // session UUID
+  coworker: string;
+  outcome_id: string;
+  started_at: string;
+  payload?: unknown;
+}
+```
+
+| Operation | Command |
+|---|---|
+| Write | `XADD` |
+| Read | `XREAD / XREADGROUP` |
+| Trim | `XTRIM MAXLEN ~ 10000` |
+
+## Connectors
+
+| Connector | Required | Purpose |
+|---|---|---|
+| redis | Optional | Confirm key doesn't already exist |
+
+## See also
+
+- `../../coworker-context.md` — chassis grounding
+- `scripts/lib/redis-queue-design.ts` — pure-function implementation
+- `scripts/lib/redis-queue-design.test.ts` — 13 unit tests
+- `skills/trace-data-flow/SKILL.md` — verify the queue is wired end-to-end
+- `skills/alloydb-schema/SKILL.md` — persistence layer after the queue drains
