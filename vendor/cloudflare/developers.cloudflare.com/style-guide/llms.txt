@@ -29,7 +29,6 @@ Style guide to follow for contributing to Cloudflare docs.
 - [Details](https://developers.cloudflare.com/style-guide/components/details/index.md): Create collapsible content sections.
 - [Directory listing](https://developers.cloudflare.com/style-guide/components/directory-listing/index.md): Auto-generate listings of child pages.
 - [Example](https://developers.cloudflare.com/style-guide/components/example/index.md): Highlight example content in a styled block.
-- [External resources](https://developers.cloudflare.com/style-guide/components/external-resources/index.md): Display links to external learning resources.
 - [Feature](https://developers.cloudflare.com/style-guide/components/feature/index.md): Display a feature card on overview pages.
 - [Feature table](https://developers.cloudflare.com/style-guide/components/feature-table/index.md): Display feature availability by plan in a table.
 - [File tree](https://developers.cloudflare.com/style-guide/components/file-tree/index.md): Display a file and directory tree structure.
@@ -66,7 +65,6 @@ Style guide to follow for contributing to Cloudflare docs.
 - [WranglerConfig](https://developers.cloudflare.com/style-guide/components/wrangler-config/index.md): Display Wrangler config in TOML and JSON tabs.
 - [WranglerNamespace](https://developers.cloudflare.com/style-guide/components/wrangler-namespace/index.md): Display Wrangler command namespace documentation.
 - [YouTube](https://developers.cloudflare.com/style-guide/components/youtube/index.md): Embed a YouTube video by ID.
-- [YouTube Videos](https://developers.cloudflare.com/style-guide/components/youtube-videos/index.md): Embed multiple YouTube videos in a grid.
 
 ## Product docs content strategy
 
