@@ -126,6 +126,16 @@ const EXCEPTIONS: Record<string, VendorException> = {
     reason:
       "Docusaurus category index pages render as link-card grids without an H1. Real content pages start with H1 cleanly per OVS10.",
   },
+  "alloydb-omni": {
+    skipHeadline: true,
+    reason:
+      "cloud.google.com/alloydb pages start with a translation-language badge (![](…translated.svg)) or a breadcrumb nav list before the H1. Same upstream rendering pattern as the `gcp` exception — vendor-canonical Google Docs infrastructure.",
+  },
+  redis: {
+    skipHeadline: true,
+    reason:
+      "redis.io command pages start with `\\# CMD \\`\\`\\`json metadata {...}\\`\\`\\`` — the heading is backslash-escaped and followed by inline JSON metadata on the same line. Vendor-canonical format from the redis.io MDX renderer; the H1 content is present but escaped.",
+  },
 };
 
 const FORBIDDEN_SIGNATURES: { needle: string; reason: string }[] = [

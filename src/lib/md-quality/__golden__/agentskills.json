@@ -1,14 +1,14 @@
 {
   "vendor": "agentskills",
   "sampled": 5,
-  "mean": 97,
-  "p10": 93.2,
+  "mean": 96.8,
+  "p10": 92.8,
   "p50": 99,
   "p90": 99,
   "axis_means": {
     "A": 0,
-    "B": 0.2,
-    "C": 2,
+    "B": 0,
+    "C": 2.4,
     "D": 0,
     "E": 0.8
   },
@@ -19,24 +19,24 @@
       "dominant_axis": "C"
     },
     {
-      "path": "vendor/agentskills/agentskills.io/home.md",
-      "score": 98,
+      "path": "vendor/agentskills/agentskills.io/skill-creation/evaluating-skills.md",
+      "score": 97,
       "dominant_axis": "C"
     },
     {
-      "path": "vendor/agentskills/agentskills.io/skill-creation/optimizing-descriptions.md",
+      "path": "vendor/agentskills/agentskills.io/skill-creation/quickstart.md",
       "score": 99,
       "dominant_axis": "E"
+    },
+    {
+      "path": "vendor/agentskills/agentskills.io/specification.md",
+      "score": 99,
+      "dominant_axis": "C"
     },
     {
       "path": "vendor/agentskills/agentskills.io/skill-creation/best-practices.md",
       "score": 99,
       "dominant_axis": "E"
-    },
-    {
-      "path": "vendor/agentskills/urls.md",
-      "score": 99,
-      "dominant_axis": "B"
     }
   ]
 }
