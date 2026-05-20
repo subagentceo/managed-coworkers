@@ -1,22 +1,56 @@
 ---
 name: declare-enums
-description: Codify an enum-of-options pattern (e.g. a userConfig connector category, a workflow state machine, a tier tag) as a typed string-union under src/domain/models/. Use when the chassis adds a new dimension where the value space is closed and the type system should enforce membership. Mirrors the chassis's existing pattern (no `enum` keyword; `as const` tuple + `(typeof T)[number]`).
-argument-hint: "<enum-name> <option1,option2,...>"
+description: Codify an enum-of-options pattern (e.g. a userConfig connector category, a workflow state machine, a tier tag) as a typed string-union under src/domain/<domain>/. Use when the chassis adds a new dimension where the value space is closed and the type system should enforce membership. Mirrors the chassis's existing pattern (no `enum` keyword for new connector-style enums; `as const` tuple + `(typeof T)[number]`).
+argument-hint: "<domain> <TypeName> <opt1,opt2,...> [outcome-id] [description]"
 chassis-grounding: ../../coworker-context.md
 ---
 
-# Declare Enums — stub
+# Declare Enums
 
-This is a stub. Implementation lands in a follow-up commit (ODEP3). When written, this skill will:
+First working data-engineering skill. Backed by `scripts/declare-enum.ts` (CLI) + `scripts/lib/declare-enum.ts` (pure function, unit-tested).
 
-1. Parse the enum name + comma-separated option list.
-2. Inspect `src/domain/models/` and `packages/knowledge-work-plugins/*/.claude-plugin/plugin.json` userConfig sections for existing enums that may overlap.
-3. Emit (or extend) `src/domain/models/<enum-domain>.ts` with:
-   ```ts
-   export const FOO = ['bar', 'baz'] as const;
-   export type Foo = (typeof FOO)[number];
+## Workflow
+
+1. **Pick a domain directory.** New enums land under `src/domain/<domain>/`. Look at existing siblings (e.g. `src/domain/coworkers/CoworkerSession.ts` from ODEP2) to confirm the new enum fits.
+
+2. **Pick a PascalCase type name** that's singular (the script pluralizes for the `as const` constant name automatically: `AnalyticsConnector` → `ANALYTICS_CONNECTORS`).
+
+3. **Provide options** as comma-separated kebab- or snake-case literals: `cf-analytics-engine,ga4`.
+
+4. **Invoke**:
+
+   ```bash
+   tsx scripts/declare-enum.ts connectors AnalyticsConnector cf-analytics-engine,ga4 ODEP3 "Connector picks for the analytics userConfig category."
    ```
-4. If the enum corresponds to a userConfig category, add a JSDoc cross-reference to the plugin.json field.
-5. Propose downstream callers that should validate against the new type (greps for stringly-typed references).
 
-See `../../coworker-context.md` for the enum-of-options discipline.
+   Writes `src/domain/connectors/AnalyticsConnector.ts`. Refuses to overwrite — safety-first; remove the file manually to regenerate.
+
+5. **Wire downstream callers.** Grep for the now-typed value: `git grep '"cf-analytics-engine"'` should turn up the userConfig + any places that need to validate. Replace stringly-typed parameters with the new type.
+
+## Pattern reference
+
+The chassis prefers `enum` keyword for stable domain enums (see `src/domain/enums.ts`) and `as const` tuples for operator-mutable connector picks. This skill emits the latter; the operator can refactor to a typed `enum` later if the value set stabilizes.
+
+Example output:
+
+```ts
+/**
+ * Connector picks for the analytics userConfig category.
+ *
+ * Refs: ODEP3.
+ */
+export const ANALYTICS_CONNECTORS = [
+  "cf-analytics-engine",
+  "ga4",
+] as const;
+
+export type AnalyticsConnector = (typeof ANALYTICS_CONNECTORS)[number];
+```
+
+## See also
+
+- `../../coworker-context.md` — enum-of-options discipline + chassis grounding
+- `scripts/lib/declare-enum.ts` — pure-function implementation
+- `scripts/lib/declare-enum.test.ts` — 14 unit tests
+- `scripts/declare-enum.ts` — CLI wrapper
+- `src/domain/coworkers/CoworkerSession.ts` — example of the broader pattern in production
