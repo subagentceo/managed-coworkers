@@ -1,6 +1,6 @@
 # React Native Mobile SDK (v2.12.1 and Below)
 
-# Introduction
+## Introduction
 
 The React Native ArkoseLabs SDK lets you integrate Arkose Labs' bot mitigation and fraud prevention solution into your React Native apps using native function calls for Android and iOS. This guarantees seamless integration with Arkose's full interactive challenges for detection and enforcement, without the extended wait times for separate mobile solutions.
 
@@ -255,16 +255,16 @@ This step is **important** for syncing the Arkose dependencies in the app-level 
 In the `settings.gradle` file, add the following configuration **above** `rootProject.name = 'YourProject'`:
 
 ```
-dependencyResolutionManagement {  
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)  
-    repositories {  
-        google()  
-        mavenCentral()  
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
         maven {
           url uri("$rootDir/arkoseLib")
-        }  
-    }  
-}  
+        }
+    }
+}
 ```
 
 ### Step 5: Add Arkose SDK Dependencies
@@ -273,7 +273,7 @@ In the **app-level** `build.gradle` file, add the following lines to the `depend
 
 ```
 // Arkose SDK
-implementation 'com.arkoselabs:android-sdk:x.x.x'  
+implementation 'com.arkoselabs:android-sdk:x.x.x'
 ```
 
 ### Step 6: Steps for Gradle Versions Below 8.5 (Optional)
@@ -332,7 +332,7 @@ After starting the server, press a in the terminal to run the app on Android. If
 * Sync Gradle files.
 * Clean, build and run the app directly from Android Studio.
 
-# Code Snippets
+## Code Snippets
 
 ## Initialize SDK
 

@@ -1,6 +1,6 @@
 # Cloudflare CDN Setup - Client Side
 
-# Overview
+## Overview
 
 The purpose of the Cloudflare CDN Worker client side implementation is to inject the Arkose client side scripts into the HTML on a page such as Login or Registration. There are 2 versions available on the Github page, one for a Button trigger and the other for a Form Submission trigger. Both versions will store a Cookie containing the Arkose Token which can then be verified using a second worker.
 

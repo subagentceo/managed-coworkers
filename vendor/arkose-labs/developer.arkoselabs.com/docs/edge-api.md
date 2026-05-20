@@ -1,6 +1,6 @@
 # Edge API
 
-# About the Arkose Edge Product
+## About the Arkose Edge Product
 
 **Arkose Edge** delivers powerful server-side protection through a streamlined API solution that seamlessly integrates into customer infrastructure with a lightweight call at any endpoint, collecting essential data signals to deliver intelligent risk assessments and actionable allow/deny recommendations based on comprehensive consortium intelligence.
 

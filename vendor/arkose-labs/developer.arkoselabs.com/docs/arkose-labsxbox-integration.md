@@ -1,12 +1,12 @@
 # Connected Devices Integration
 
-# Overview
+## Overview
 
 Many connected devices, such as gaming consoles and smart TVs, provide limited web browsing capabilities via WebView. Arkose Bot Manager works well on many of those devices. However, due to their variability and the large number of different devices, we cannot provide a list of those confirmed to be compatible with Arkose Bot Manager. Please check with your CSM (Customer Success Manager) if you have questions or specific requirements.
 
 The rest of this page shows how to integrate Xbox controller functionality into Arkose Protect. Integration with other devices is similar.
 
-# Integration Instructions for Xbox Controller
+## Integration Instructions for Xbox Controller
 
 The Enforcement Challenge (EC) must be embedded in a web browser, such as the UWP WebView if the app is built on that platform .
 
@@ -28,6 +28,6 @@ const arkoseEnforcement = new ArkoseEnforcement({
 
 The `arkoseEnforcement.enableDirectionalInput` function allows directional instructions from the Xbox controller to be used to interact with the EC.
 
-# Further Help
+## Further Help
 
 If you need more help with Xbox controller functionality, contact your CSM.

@@ -69,9 +69,9 @@ Define a global JavaScript function as shown in the below HTML example. The code
 ```html
 <html>
 <head>
-  {/* 
+  {/*
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and 
+    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and
     replace <YOUR CALLBACK> with a name that refers to your defined global callback function.
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js" data-callback="setupDetect"></script>
   */}
@@ -80,13 +80,13 @@ Define a global JavaScript function as shown in the below HTML example. The code
   <meta charset="UTF-8">
 </head>
 <body>
-{/* 
+{/*
   The trigger element can exist anywhere in your page and can be added to the DOM at any time.
 */}
 <button id="arkose-trigger">
   trigger element
 </button>
-{/* 
+{/*
   To configure the detection, place a script tag just before the closing <body> tag and define the
   callback as a global function.
 */}

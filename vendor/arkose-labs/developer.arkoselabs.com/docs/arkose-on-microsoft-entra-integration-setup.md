@@ -1,6 +1,6 @@
 # Arkose on Microsoft Entra - Integration Setup
 
-# Overview
+## Overview
 
 Microsoft Entra partners with Arkose Labs to deliver comprehensive protection against malicious online activities, securing account registration process. This integrated approach ensures that Arkose Labs filters out fraudulent and automated traffic before it can interact with your applications, while Microsoft Entra handles the secure authentication of legitimate users. When suspicious activity is detected, users encounter Arkose Labs' challenge mechanisms that effectively thwart both automated bots and coordinated human attack networks. These security measures are designed to preserve user experience by only activating during suspicious circumstances, ensuring minimal disruption to genuine authentication workflows.
 

@@ -59,3 +59,14 @@ npx tsx scripts/grade-vendors-all.ts --json | python3 -m json.tool > src/lib/md-
 # Human table (this doc, sans the prose header above):
 npx tsx scripts/grade-vendors-all.ts --markdown
 ```
+
+## MD13 deltas (post-fix)
+
+Bottom-3 vendors from the MD12 baseline, re-fixed via `scripts/fix-vendor.ts --limit=200` (axes B/C/D/E only — axis A is rejected by the fixer). Pre/post values from `npx tsx scripts/grade-vendor.ts <name> --sample=10 --seed=1 --json`.
+
+- arkose-labs: 90.1 → 95.9 (+5.8)
+- iterable: 89.4 → 89.4 (+0.0)
+- osv-scanner: 90.9 → 91.4 (+0.5)
+
+Note: pre-fix means here differ from the MD12 baseline numbers above (88.6 / 90.4 / 90.5) because MD12 used the all-vendor sweep's sample budget; the deltas above use a tight, repeatable `--sample=10 --seed=1` per task spec. The new `all-vendors-baseline.json` golden reflects the post-fix state under the all-vendor sweep.
+

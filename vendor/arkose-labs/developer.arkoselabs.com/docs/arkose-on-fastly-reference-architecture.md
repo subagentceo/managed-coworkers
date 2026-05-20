@@ -1,6 +1,6 @@
 # Arkose on Fastly - Reference Architecture
 
-# Overview
+## Overview
 
 Fastly is a content delivery network that operates proxy servers around the world to accelerate web traffic and provide other value-added services. Fastly can also integrate with 3rd party services such as Arkose Labs.
 
@@ -14,7 +14,7 @@ This document describes the workflow and implementation with Fastly. The logic t
 
   * Process the response from the Arkose Labs API and decide whether to block the request (solved=false) or forward it to the origin web server (solved=true)
 
-# Workflow
+## Workflow
 
 ## Exchange workflow without Fastly
 
@@ -36,7 +36,7 @@ In this model, the Arkose Labs customer must make two changes to integrate with 
 
 <Image border={false} src="https://files.readme.io/521ec1f-Arkose-with-CDN.png" title="Arkose-with-CDN.png" />
 
-# Exchange workflow with Fastly
+## Exchange workflow with Fastly
 
 Steps 1 to 4 of the exchange workflow with the CDN layer is the same as previously described. The main change is step 5 with regards to handling failed and successful verification. The workflow diagrams below show the altered behavior in the case of a failed and successful verifications:
 
@@ -56,7 +56,7 @@ Steps 1 to 4 of the exchange workflow with the CDN layer is the same as previous
 
 <Image border={false} src="https://files.readme.io/9680886-Arkose-Fastly-Succeed-v3.png" title="Arkose-Fastly-Succeed-v3.png" />
 
-# Integrations steps
+## Integrations steps
 
 This integration consists of two parts:
 
@@ -109,7 +109,7 @@ The following code is an example of a basic login page that invokes the Arkose L
   callback as a global function.
 -->
 <script>
- 
+
   /*
     This global function will be invoked when the API is ready. Ensure the name is the same name
     that is defined on the attribute `data-callback` in the script tag that loads the api for your
@@ -138,7 +138,7 @@ The following code is an example of a basic login page that invokes the Arkose L
 </html>
 ```
 
-# Server-Side Setup (Fastly)
+## Server-Side Setup (Fastly)
 
 ## Overview
 
@@ -240,7 +240,7 @@ To start the integration, go to the Fastly portal, select the configuration that
 The **vcl\_init subroutine** is executed first. It contains the Arkose Labs verify API backend definition.
 
 ```text
-# Start of init.vcl for Arkose Labs-0.1 
+# Start of init.vcl for Arkose Labs-0.1
 backend Arkose_Labs {
     .between_bytes_timeout = 1s;
     .connect_timeout = 1s;
@@ -266,7 +266,7 @@ backend Arkose_Labs {
 The **vcl\_recv subroutine** is executed by the Fastly proxy server at the request stage or as a result of a restart. The snippet between lines 10 and 15 defines the requests in scope and their associated private key. Please update the conditions in line 10 and the private key in line 11 to reflect your use case. If you have one private key for each use case, you must duplicate this snippet for each use case and update the conditions and the private key accordingly.
 
 ```text
-# Start of recv.vcl for Arkose Labs-0.1 
+# Start of recv.vcl for Arkose Labs-0.1
 # General conditions to execute the snippet
 declare local var.url STRING;
 declare local var.host STRING;
@@ -301,14 +301,14 @@ if (req.restarts == 0 && req.method != "FASTLYPURGE") {
             set req.http.Arkose-Session-Token = req.http.arkosesessiontoken;
             return(pass);
         }
-        
+
     }
 }
 
 if (req.restarts == 1) {
     if (req.http.Arkose-Result == "token_invalid") {
         error 901 "Arkose Token Invalid";
-    } 
+    }
     if (req.http.Arkose-Result == "denied_access") {
         error 902 "Access Denied";
     }
@@ -331,9 +331,9 @@ if (req.restarts == 1) {
 The **vcl\_fetch subroutine** is executed just after the headers of a syntactically correct backend response have been received. It watches for unexpected HTTP response code when communicating with the Arkose Labs backend.
 
 ```text
-# Start of fetch.vcl for Arkose Labs-0.1 
+# Start of fetch.vcl for Arkose Labs-0.1
 # Look for error conditions communicating with the Arkose Labs verify API
-if (req.backend == Arkose_Labs){ 
+if (req.backend == Arkose_Labs){
   if (http_status_matches(beresp.status, "500,502,503,504")) {
     set req.http.Arkose-Result = "service_unavailable";
     restart;
@@ -353,7 +353,7 @@ if (req.backend == Arkose_Labs){
 The **vcl\_error** subroutine handles the logic for when the Arkose Labs verification check does not pass, or when the Arkose Labs token is not passed in the original request. It also ensures the correct sets of cross-origin resource sharing (CORS) headers are served back to the client to ensure cross-domain request compliance.
 
 ```text
-# Start of error.vcl for Arkose Labs-0.1 
+# Start of error.vcl for Arkose Labs-0.1
 # CORS handling - OPTIONS call
 if (req.method == "OPTIONS") {
   set obj.http.Access-Control-Allow-Origin = "*";
@@ -367,7 +367,7 @@ if (req.method == "OPTIONS") {
         set obj.http.Access-Control-Allow-Origin = "*";
         set obj.http.Access-Control-Allow-Headers = "arkosesessiontoken";
         set obj.http.Content-Type = "application/json";
-        
+
         # The arksosesessiontoken header was missing from the client request
         if (obj.status == 900 ) {
             synthetic "Missing Arkose Session Token";
@@ -380,8 +380,8 @@ if (req.method == "OPTIONS") {
         if (obj.status == 902 ) {
             synthetic "Access denied returned";
         }
-        return(deliver);       
-    } 
+        return(deliver);
+    }
 }
 # End of error.vcl for Arkose Labs-0.1
 ```
@@ -389,7 +389,7 @@ if (req.method == "OPTIONS") {
 The **vcl\_deliver subroutine** is executed by the proxy at the response stage before the first byte is served to the client. The custom code below contains logic to check if the Arkose Labs verification step has occurred or not, and updates the origin based on whether a successful verification check has occurred.
 
 ```text
-# Start of deliver.vcl for Arkose Labs-0.1 
+# Start of deliver.vcl for Arkose Labs-0.1
 # This VCL evaluates the response from the Arkose Labs verify API
 if (req.backend == Arkose_Labs && req.restarts == 0) {
     if (std.strstr(resp.http.Arkose-Verify, "solved=true")) {

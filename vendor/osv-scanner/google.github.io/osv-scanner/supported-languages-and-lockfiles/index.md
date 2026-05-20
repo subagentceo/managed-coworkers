@@ -72,7 +72,7 @@ Compatible Lockfile(s)
 
 C/C++
 
-`conan.lock`  
+`conan.lock`
 [C/C++ commit scanning](#cc-scanning)
 
 Dart
@@ -89,27 +89,27 @@ Go
 
 Haskell
 
-`cabal.project.freeze`  
+`cabal.project.freeze`
 `stack.yaml.lock`
 
 Java
 
-`buildscript-gradle.lockfile`  
-`gradle.lockfile`  
-`gradle/verification-metadata.xml`  
+`buildscript-gradle.lockfile`
+`gradle.lockfile`
+`gradle/verification-metadata.xml`
 `pom.xml`[\*](#transitive-dependency-scanning)
 
 Javascript
 
-`bun.lock`  
-`package-lock.json`  
-`pnpm-lock.yaml`  
+`bun.lock`
+`package-lock.json`
+`pnpm-lock.yaml`
 `yarn.lock`
 
 .NET
 
-`deps.json`  
-`packages.config`  
+`deps.json`
+`packages.config`
 `packages.lock.json`
 
 PHP
@@ -118,11 +118,11 @@ PHP
 
 Python
 
-`Pipfile.lock`  
-`poetry.lock`  
-`requirements.txt`[\*](https://github.com/google/osv-scanner/issues/34)  
-`pdm.lock`  
-`pylock.toml`  
+`Pipfile.lock`
+`poetry.lock`
+`requirements.txt`[\*](https://github.com/google/osv-scanner/issues/34)
+`pdm.lock`
+`pylock.toml`
 `uv.lock`
 
 R
@@ -131,7 +131,7 @@ R
 
 Ruby
 
-`Gemfile.lock`  
+`Gemfile.lock`
 `gems.locked`
 
 Rust

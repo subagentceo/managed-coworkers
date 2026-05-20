@@ -166,12 +166,12 @@ Results may be viewed by clicking on the details of the failed release action fr
 The GitHub Actions have the following optional inputs:
 
 -   `scan-args`: This value is passed to `osv-scanner` CLI after being split by each line. See the [usage](/osv-scanner/usage/) page for the available options. The `--format` and `--output` flags are already set by the reusable workflow and should not be overridden here. Default:
-    
+
     ```
       --recursive # Recursively scan subdirectories
       ./ # Start the scan from the root of the repository
     ```
-    
+
 -   `results-file-name`: This is the name of the final SARIF file uploaded to GitHub. Default: `results.sarif`
 -   `download-artifact`: Optional artifact to download for scanning. Can be used if you need to do some preprocessing to prepare the lockfiles for scanning. If the file names in the artifact are not standard lockfile names, make sure to add custom scan-args to specify the lockfile type and path (see [specify lockfiles](/osv-scanner/usage/#specify-lockfiles)).
 -   `upload-sarif`: Whether to upload the results to Security > Code Scanning. Defaults to `true`.

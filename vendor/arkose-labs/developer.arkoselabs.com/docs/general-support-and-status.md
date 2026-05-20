@@ -1,13 +1,13 @@
 # General Support and Bug Bounty
 
-# Introduction
+## Introduction
 
 This page tells you:
 
 * How and where to get Support for Arkose Bot Manager.
 * How to use our Bug Bounty program.
 
-# Support
+## Support
 
 To get support, go to the Arkose Labs website support page:
 
@@ -15,7 +15,7 @@ To get support, go to the Arkose Labs website support page:
 
 Or you can contact your provided support email or customer success manager.
 
-# Bug Bounty Program
+## Bug Bounty Program
 
 [HackerOne](https://hackerone.com) manages Arkose Labs' bug bounty program.
 

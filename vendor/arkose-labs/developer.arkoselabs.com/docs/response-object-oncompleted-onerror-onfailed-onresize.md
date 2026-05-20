@@ -54,11 +54,11 @@ onSuppress: function(response) {
 onCompleted: function(response) {
   // sendToBackendServer(response.token);
 },
-  
+
 onError: function(response) {
   // sendScriptLoadingErrorToBackendServer(response.error);
 },
-  
+
 onWarning: function(response) {
   // sendScriptLoadingWarningToBackendServer(response.warning);
 }

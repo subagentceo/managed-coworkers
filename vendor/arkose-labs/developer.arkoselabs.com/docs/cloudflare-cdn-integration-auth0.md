@@ -1,6 +1,6 @@
 # Cloudflare CDN Integration - Auth0
 
-# Prerequisites
+## Prerequisites
 
 ## Auth0 Setup
 
@@ -44,7 +44,7 @@ Whilst Universal Login Classic does have a HTML editor where you can add the cli
 
 5. Now that the base configuration is set up, the Cloudflare setup can be added.
 
-# Cloudflare Setup
+## Cloudflare Setup
 
 The worker logic needs to handle 2 flows:
 

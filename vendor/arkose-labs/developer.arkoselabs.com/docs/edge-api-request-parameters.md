@@ -1,6 +1,6 @@
 # Edge API Request Parameters
 
-# Overview
+## Overview
 
 This document outlines how to make POST requests to the Arkose Labs **Edge API**, including endpoint structure, required headers, and request body format.
 
