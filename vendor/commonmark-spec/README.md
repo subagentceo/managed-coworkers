@@ -11,7 +11,7 @@ https://github.com/commonmark/commonmark-spec.
 | `test/spec_tests.py` | Upstream reference Python harness that extracts examples from `spec.txt`. |
 | `test/normalize.py` | HTML normalization helper used by `spec_tests.py`. |
 | `LICENSE` | CC-BY-SA 4.0 (upstream). |
-| `crawl.json` | Chassis metadata declaring the pin and source URL. |
+| `STUDY.json` | Chassis metadata declaring the pin and source URL. (Was `crawl.json` — renamed in OGHW7 so `scripts/crawl-vendors.ts`'s `listVendorConfigs()` filters this directory out as a study clone, matching its actual not-refreshable status.) |
 
 ## How the chassis uses it
 
@@ -23,4 +23,4 @@ When CommonMark cuts a new spec version:
 
 1. `cd /Users/alexzh/subagentmcp/subagentceo/commonmark/commonmark-spec && git pull`
 2. `cp spec.txt LICENSE test/{spec_tests,normalize}.py` into this directory.
-3. Bump `version` in `crawl.json` and re-run `npm run smoke:replay` + the `md-quality` golden tests; rebaseline `docs/grades/<date>-baseline.md` if scores drift.
+3. Bump `version` in `STUDY.json` and re-run `npm run smoke:replay` + the `md-quality` golden tests; rebaseline `docs/grades/<date>-baseline.md` if scores drift.
