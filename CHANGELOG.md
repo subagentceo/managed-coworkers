@@ -4,6 +4,13 @@ All notable changes to this project are tracked here. This file is maintained
 automatically by [release-please](https://github.com/googleapis/release-please)
 from [Conventional Commits](https://www.conventionalcommits.org/) on `main`.
 
+## [0.5.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.4.1...knowledge-engineering-v0.5.0) (2026-05-20)
+
+
+### Features
+
+* **mcp:** add vendor_pages_search semantic-search lane (OEMBED-LOOP3) ([#105](https://github.com/subagentceo/managed-coworkers/issues/105)) ([3824bee](https://github.com/subagentceo/managed-coworkers/commit/3824bee24c146eb93a7321083e64a59dc7ec73ce))
+
 ## [0.4.1](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.4.0...knowledge-engineering-v0.4.1) (2026-05-20)
 
 
