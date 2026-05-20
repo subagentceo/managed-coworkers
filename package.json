@@ -23,7 +23,8 @@
     "verify:typecheck": "tsc --noEmit",
     "verify:citations": "tsx scripts/lib/citation-guard.ts",
     "verify:libs": "tsx scripts/lib/run-tests.ts",
-    "verify": "npm run verify:typecheck && npm run verify:citations && npm run verify:libs"
+    "verify": "npm run verify:typecheck && npm run verify:citations && npm run verify:libs",
+    "rc": "claude remote-control --capacity 32 --spawn worktree"
   },
   "author": "SubAgent CEO",
   "license": "MIT",
