@@ -38,3 +38,9 @@ cassettes/scratch/
 # the md_quality_top_offenders MCP tool reads it. Build-product, not
 # checked in.
 vendor/.mdq-index.json
+
+# OEMBED-LOOP5: var/ holds the local fastembed-backfilled SQLite database
+# (./var/vendor-pages.db) produced by `npm run backfill:vendor-pages`. The DB
+# is a derived artifact — vendor/**/*.md is the source of truth, var/ is a
+# build product. Never checked in.
+var/
