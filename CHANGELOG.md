@@ -4,6 +4,13 @@ All notable changes to this project are tracked here. This file is maintained
 automatically by [release-please](https://github.com/googleapis/release-please)
 from [Conventional Commits](https://www.conventionalcommits.org/) on `main`.
 
+## [0.3.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.2.0...knowledge-engineering-v0.3.0) (2026-05-20)
+
+
+### Features
+
+* **seeds:** add 10 Anthropic Skilljar course transcripts (OSKILL1) ([#94](https://github.com/subagentceo/managed-coworkers/issues/94)) ([a3411a9](https://github.com/subagentceo/managed-coworkers/commit/a3411a9d1d9f620e280cb30e41afc88f5c5cb828))
+
 ## [0.2.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.1.1...knowledge-engineering-v0.2.0) (2026-05-19)
 
 
