@@ -51,6 +51,8 @@ jobs:
             echo "::group::Rebase PR #$n"
             if gh pr update-branch "$n"; then
               branch=$(gh pr view "$n" --json headRefName -q .headRefName)
+              gh workflow run verify.yml --ref "$branch" \
+                || echo "::warning::verify dispatch failed for #$n on $branch"
               gh workflow run osv-scanner.yml --ref "$branch" \
                 || echo "::warning::osv dispatch failed for #$n on $branch"
             else
