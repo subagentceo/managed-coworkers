@@ -1,0 +1,100 @@
+// infra/cloudflare/coworkers/product-management/wrangler.jsonc
+//
+// Per-coworker Worker config for the product-management managed-coworker.
+// TypeScript-side parallel of the Terraform module at
+//   infra/terraform/coworkers/product-management/main.tf
+// (PR #116, OPMP3). Both define the same Cloudflare resources; at deploy
+// time the operator picks one as the source of truth and the other
+// stays as drift-detection.
+//
+// OAuth-only invariant: the Sandbox container receives
+// CLAUDE_CODE_OAUTH_TOKEN from Secrets Store. ANTHROPIC_API_KEY is
+// NEVER bound here. The env-sanitizer in src/worker.ts (cloned from
+// infra/cloudflare/src/worker.ts) rejects any forwarded env containing
+// that key as a defense-in-depth layer.
+//
+// Not deployed in this PR. `wrangler deploy --dry-run` validates;
+// `wrangler deploy` is gated on operator-side secret sync.
+//
+// Refs: OPMP3b.
+{
+  "$schema": "../../../node_modules/wrangler/config-schema.json",
+  "name": "coworker-product-management",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Sandbox container — Claude Code runs INSIDE here, not in the
+  // Worker isolate. The Worker shells out via sandbox.exec per the
+  // chassis pattern documented in seeds/citations/cloudflare-managed-agents.md.
+  "containers": [
+    {
+      "class_name": "Sandbox",
+      "image": "./Dockerfile",
+      "max_instances": 25
+    }
+  ],
+
+  "durable_objects": {
+    "bindings": [
+      { "name": "Sandbox", "class_name": "Sandbox" },
+      { "name": "SessionDO", "class_name": "SessionDO" }
+    ]
+  },
+
+  "migrations": [
+    { "new_sqlite_classes": ["Sandbox", "SessionDO"], "tag": "v1" }
+  ],
+
+  // KV: session index (hot mirror of coworker_sessions). Pairs with the
+  // cloudflare_workers_kv_namespace.session_index resource in the
+  // Terraform sibling (PR #116). The id placeholder is replaced at
+  // deploy time by the bootstrap workflow (same pattern as the
+  // chassis-wide wrangler.jsonc Secrets Store store_id).
+  "kv_namespaces": [
+    {
+      "binding": "SESSION_INDEX",
+      "id": "BOOTSTRAP_PLACEHOLDER"
+    }
+  ],
+
+  // D1: outcomes log (durable mirror of coworker_sessions). Pairs with
+  // cloudflare_d1_database.outcomes_log in the Terraform sibling.
+  "d1_databases": [
+    {
+      "binding": "OUTCOMES_LOG",
+      "database_name": "product-management-dev-outcomes-log",
+      "database_id": "BOOTSTRAP_PLACEHOLDER"
+    }
+  ],
+
+  // Secrets Store bindings — secret material is never in this file or
+  // in Worker code. Populate via `wrangler secret put` once the store
+  // is bootstrapped (same idempotent pattern as the chassis-wide
+  // Worker; see infra/cloudflare/wrangler.jsonc and OBATCH-FIX docs).
+  //
+  // OAuth-only invariant: CLAUDE_CODE_OAUTH_TOKEN is the ONLY auth
+  // surface for talking to Claude. NO ANTHROPIC_API_KEY binding.
+  "secrets_store_secrets": [
+    {
+      "binding": "CLAUDE_CODE_OAUTH_TOKEN",
+      "store_id": "BOOTSTRAP_PLACEHOLDER",
+      "secret_name": "CLAUDE_CODE_OAUTH_TOKEN"
+    },
+    {
+      "binding": "CLOUDFLARE_API_TOKEN",
+      "store_id": "BOOTSTRAP_PLACEHOLDER",
+      "secret_name": "CLOUDFLARE_API_TOKEN"
+    },
+    {
+      "binding": "GSC_OAUTH_REFRESH",
+      "store_id": "BOOTSTRAP_PLACEHOLDER",
+      "secret_name": "GSC_OAUTH_REFRESH"
+    }
+  ],
+
+  "vars": {
+    "COWORKER_NAME": "product-management",
+    "ENVIRONMENT": "dev"
+  }
+}
