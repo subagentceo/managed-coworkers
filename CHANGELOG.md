@@ -4,6 +4,20 @@ All notable changes to this project are tracked here. This file is maintained
 automatically by [release-please](https://github.com/googleapis/release-please)
 from [Conventional Commits](https://www.conventionalcommits.org/) on `main`.
 
+## [0.4.1](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.4.0...knowledge-engineering-v0.4.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* **md-quality:** round-2 fix-vendor on alloydb-omni, sentry, anthropic-sitemap (OMDQ14) ([#100](https://github.com/subagentceo/managed-coworkers/issues/100)) ([66547be](https://github.com/subagentceo/managed-coworkers/commit/66547be25987600370de39d5722ff10961120c52))
+* **md-quality:** round-2 fix-vendor on alloydb-omni, sentry, anthropic-sitemap (OMDQ14) ([#102](https://github.com/subagentceo/managed-coworkers/issues/102)) ([2fcac4b](https://github.com/subagentceo/managed-coworkers/commit/2fcac4b27fb08a6b1f5ec9f376665a4e9d829f60))
+
+
+### Documentation
+
+* **adr:** pivot embedding strategy from Voyage API to fastembed-local (OEMBED1) ([#104](https://github.com/subagentceo/managed-coworkers/issues/104)) ([994161e](https://github.com/subagentceo/managed-coworkers/commit/994161e1e956f600fa29a6ef436cef69c08432b6))
+* **md-quality:** score ceiling + limit of conservative auto-fix (OMDQ15) ([#103](https://github.com/subagentceo/managed-coworkers/issues/103)) ([10d7f6d](https://github.com/subagentceo/managed-coworkers/commit/10d7f6d8af8c5d73906f247a9ad4b9839e46751d))
+
 ## [0.4.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.3.0...knowledge-engineering-v0.4.0) (2026-05-20)
 
 
