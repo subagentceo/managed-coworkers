@@ -9,29 +9,29 @@ Claude 3 Haiku can now be fine-tuned in Amazon Bedrock with custom training data
 [](#)
 
 -   Category
-    
+
     [Product announcements](https://claude.com/blog/category/announcements)
-    
+
 -   Product
-    
+
     Claude Platform
-    
+
 -   Date
-    
+
     July 10, 2024
-    
+
 -   Reading time
-    
+
     5
-    
+
     min
-    
+
 -   Share
-    
+
     [Copy link](#)
-    
+
     https://claude.com/blog/fine-tune-claude-3-haiku
-    
+
 
 ![Graph showing fine-tuning with Claude 3 Haiku](https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/68e95d9554e6002385ccd593_aaf4aaf19584a566ab3687e64cd31da018b17b44-2880x1620.png)
 
@@ -67,7 +67,7 @@ We fine-tuned Haiku to moderate online comments on internet forums1, including i
 
 [Thomson Reuters](https://www.claude.com/customers/thomson-reuters), a global content and technology company, has seen positive results with Claude 3 Haiku. The company, which serves professionals in legal, tax, accounting, compliance, government, and media, anticipates even faster and more relevant AI results by fine-tuning Claude with their industry expertise.
 
-“We are excited to fine-tune Anthropic’s Claude 3 Haiku model in Amazon Bedrock to further enhance our Claude-powered solutions. Thomson Reuters aims to provide accurate, fast, and consistent user experiences. By optimizing Claude around our industry expertise and specific requirements, we anticipate measurable improvements that deliver high-quality results at even faster speeds. **We’ve already seen positive results with Claude 3 Haiku, and fine-tuning will enable us to tailor AI assistance more precisely**,” said Joel Hron, Head of AI and Labs, Thomson Reuters.  
+“We are excited to fine-tune Anthropic’s Claude 3 Haiku model in Amazon Bedrock to further enhance our Claude-powered solutions. Thomson Reuters aims to provide accurate, fast, and consistent user experiences. By optimizing Claude around our industry expertise and specific requirements, we anticipate measurable improvements that deliver high-quality results at even faster speeds. **We’ve already seen positive results with Claude 3 Haiku, and fine-tuning will enable us to tailor AI assistance more precisely**,” said Joel Hron, Head of AI and Labs, Thomson Reuters.
 
 ## How to get started
 

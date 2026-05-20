@@ -8,7 +8,7 @@ Send feedback
 
 # Best practices for securing agent interactions with Model Context Protocol Stay organized with collections Save and categorize content based on your preferences.
 
-Model Context Protocol (MCP) standardizes how generative AI agents connect to AlloyDB for PostgreSQL. Due to the inherent risks of autonomous agents, mitigating vulnerabilities like prompt injection requires a shared responsibility model, combining platform controls with secure application design.  
+Model Context Protocol (MCP) standardizes how generative AI agents connect to AlloyDB for PostgreSQL. Due to the inherent risks of autonomous agents, mitigating vulnerabilities like prompt injection requires a shared responsibility model, combining platform controls with secure application design.
 To design and deploy AI applications that use Google Cloud Model Context Protocol (MCP) tools, follow the best practices in this guide.
 
 ## Before you begin
@@ -31,67 +31,67 @@ Run your agent with a minimally-scoped service account. This is the first and mo
 
 For the strongest defense, combine IAM roles with the granular access controls offered by the database itself. This ensures that even if an attacker compromises the agent's IAM token, the scope of damage is limited by the database engine's internal permissions—for example, preventing a `DROP TABLE` command.
 
-  
+
 **Product**
 
-  
+
 **Granular Control Mechanism**
 
-  
+
 **Focus**
 
-  
+
 **Cloud SQL and AlloyDB**
 
-  
+
 Database-level roles like CREATE ROLE in PostgreSQL and MySQL.
 
-  
+
 Manage permissions in a specific database instance and schemas.
 
-  
+
 **BigQuery**
 
-  
+
 Column-Level Access Control (using policy tags)
 
-  
+
 Restrict agent access to sensitive columns—for example, PII— even in an authorized table.
 
-  
+
 **Spanner**
 
-  
+
 Fine-Grained Access Control (Database roles with `GRANT/REVOKE`)
 
-  
+
 Enforce precise read/write/update permissions on tables and columns.
 
-  
+
 **Firestore**
 
-  
+
 IAM roles and IAM conditions
 
-  
+
 Configure per-database access permissions using IAM roles and IAM conditions.
 
-  
+
 **Bigtable**
 
-  
+
 IAM roles
 
-  
+
 Bigtable offers granular control through IAM roles at the project, instance, and table levels.
 
-  
+
 **Oracle Database@Google Cloud**
 
-  
+
 IAM roles
 
-  
+
 Oracle Database@Google Cloud offers granular control through IAM roles at the project and resource levels.
 
 ## Secure agent design
@@ -151,7 +151,7 @@ Model Armor lets you enforce a minimum safety threshold for sensitive data opera
 
 The following is a conceptual example for configuration:
 
-  # Example: Apply a DeidentifyTemplate to filter PII
+  ## Example: Apply a DeidentifyTemplate to filter PII
 gcloud ai endpoints update ENDPOINT\_ID \\
     --region=REGION \\
     --model-armor-config-file=model\_armor\_config.json
@@ -221,11 +221,11 @@ Make sure that [Data Access audit logs](/logging/docs/audit#data-access) are ena
 [Configure alerts in Cloud Logging](/logging/docs/alerting/log-based-alerts) to detect anomalous or high-risk actions. The Logs Explorer query identifies service accounts performing _data write_ operations in Firestore, for example, which is a common target for exfiltration or destructive attacks:
 
 resource.type="firestore\_database"
-# Filter for data write operations
+## Filter for data write operations
 AND protoPayload.methodName="google.firestore.v1.Firestore.Commit"
-# Ensure the caller is an agent service account (modify regex as needed)
+## Ensure the caller is an agent service account (modify regex as needed)
 AND protoPayload.authenticationInfo.principalEmail=~".\*@.\*.gserviceaccount.com"
-# Exclude expected system calls to reduce noise
+## Exclude expected system calls to reduce noise
 AND NOT protoPayload.authenticationInfo.principalEmail=~"system-managed-service-account"
 
 ### Use agent-specific logging

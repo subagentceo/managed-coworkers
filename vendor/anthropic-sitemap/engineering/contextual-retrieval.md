@@ -76,14 +76,14 @@ It is worth noting that other approaches to using context to improve retrieval h
 Of course, it would be far too much work to manually annotate the thousands or even millions of chunks in a knowledge base. To implement Contextual Retrieval, we turn to Claude. We’ve written a prompt that instructs the model to provide concise, chunk-specific context that explains the chunk using the context of the overall document. We used the following Claude 3 Haiku prompt to generate context for each chunk:
 
 ```
-<document> 
-{{WHOLE_DOCUMENT}} 
-</document> 
-Here is the chunk we want to situate within the whole document 
-<chunk> 
-{{CHUNK_CONTENT}} 
-</chunk> 
-Please give a short succinct context to situate this chunk within the overall document for the purposes of improving search retrieval of the chunk. Answer only with the succinct context and nothing else. 
+<document>
+{{WHOLE_DOCUMENT}}
+</document>
+Here is the chunk we want to situate within the whole document
+<chunk>
+{{CHUNK_CONTENT}}
+</chunk>
+Please give a short succinct context to situate this chunk within the overall document for the purposes of improving search retrieval of the chunk. Answer only with the succinct context and nothing else.
 ```
 
 Copy
@@ -94,7 +94,7 @@ Here’s what the preprocessing flow looks like in practice:
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2496e7c6fedd7ffaa043895c23a4089638b0c21b-3840x2160.png&w=3840&q=75)
 
-_Contextual Retrieval is a preprocessing technique that improves retrieval accuracy._  
+_Contextual Retrieval is a preprocessing technique that improves retrieval accuracy._
 
 If you’re interested in using Contextual Retrieval, you can get started with [our cookbook](https://platform.claude.com/cookbook/capabilities-contextual-embeddings-guide).
 

@@ -83,7 +83,7 @@ Chat Store mempertahankan histori dan konteks percakapan untuk aplikasi berbasis
 
 Model bahasa besar bersifat stateless secara default, yang berarti bahwa model tersebut tidak mempertahankan input sebelumnya kecuali jika input tersebut diberikan secara eksplisit setiap kali. Dengan menggunakan penyimpanan percakapan, Anda dapat mempertahankan konteks percakapan, sehingga model dapat menghasilkan respons yang lebih relevan dan koheren dari waktu ke waktu.
 
-Modul memori di LlamaIndex memungkinkan penyimpanan dan pengambilan konteks percakapan yang efisien, sehingga memungkinkan interaksi yang lebih dipersonalisasi dan kontekstual dalam aplikasi chat. Anda dapat mengintegrasikan modul memori di LlamaIndex dengan [ChatStore](https://docs.llamaindex.ai/en/stable/module_guides/storing/chat_stores/) dan [ChatMemoryBuffer.](https://docs.llamaindex.ai/en/stable/api_reference/memory/chat_memory_buffer/)  
+Modul memori di LlamaIndex memungkinkan penyimpanan dan pengambilan konteks percakapan yang efisien, sehingga memungkinkan interaksi yang lebih dipersonalisasi dan kontekstual dalam aplikasi chat. Anda dapat mengintegrasikan modul memori di LlamaIndex dengan [ChatStore](https://docs.llamaindex.ai/en/stable/module_guides/storing/chat_stores/) dan [ChatMemoryBuffer.](https://docs.llamaindex.ai/en/stable/api_reference/memory/chat_memory_buffer/)
 Untuk mengetahui informasi selengkapnya, lihat [Penyimpanan Chat LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/storing/chat_stores/).
 
 ### Menyimpan histori chat

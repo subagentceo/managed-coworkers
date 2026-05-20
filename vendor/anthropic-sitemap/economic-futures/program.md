@@ -8,7 +8,7 @@ A multidisciplinary program funding research grants, policy development, and dat
 
 Measuring and responding to these changes presents challenging questions that no one entity–including AI labs–can answer. However, we believe that we can help generate the rigorous research and analysis society needs to understand the economic impacts of AI systems and to craft sound policy responses. That’s why we’re launching the Anthropic Economic Futures program, a multidisciplinary effort that builds upon our [existing economic research](https://www.anthropic.com/economic-index) efforts and consists of three interconnected pillars:
 
-#### 1\. Catalyzing Independent Research and Analysis  
+#### 1\. Catalyzing Independent Research and Analysis
 
 Through research grants, API credits, and strategic partnerships, we aim to support and accelerate investigations into AI’s impact on labor, productivity, and the economy.
 
@@ -22,9 +22,8 @@ We’ll scale the Anthropic Economic Index by creating one of the first longitud
 
 These pillars work together: better data enables better research, which in turn informs better policy. Our aim is to build a robust ecosystem for understanding and navigating AI's economic transformation.
 
-  
 
-# How to participate
+## How to participate
 
 The Anthropic Economic Futures Program will invest in economic research and policy proposals to help define the challenges and opportunities of the AI-enabled economy and identify ways to prepare for this shift.
 
@@ -52,14 +51,13 @@ We encourage economists with strong quantitative research backgrounds to apply. 
 
 Applications will be accepted on a rolling basis. Initial awards will be made in mid-August.
 
-  
 
 [Apply](https://forms.gle/jsyseT2mXtD578gM9)
 
 ## Economic Futures Symposia
 
-Anthropic, in collaboration with the McCourt School of Public Policy at  
-Georgetown University, and the Data Science Institute at The London School of  
+Anthropic, in collaboration with the McCourt School of Public Policy at
+Georgetown University, and the Data Science Institute at The London School of
 Economics and Political Science (LSE), will host symposia that will bring together policymakers, researchers, and industry to examine AI’s impact on the economy and potential policy responses. We are seeking evidence-based proposals that provide actionable recommendations. Top proposals will be invited to present at and participate in the symposia. [Apply here.](https://forms.gle/KLJ6FzBcpwUNxFVX7)
 
 #### What we’re looking for:
@@ -87,7 +85,6 @@ We encourage researchers, policy practitioners, and economists focused on applie
     -   McCourt School of Public Policy, Georgetown University, Washington, D.C. - September 2025
     -   Data Science Institute at The London School of Economics and Political Science (LSE), London - November 2025
 
-  
 
 [Apply](https://forms.gle/KLJ6FzBcpwUNxFVX7)
 
@@ -95,7 +92,7 @@ We encourage researchers, policy practitioners, and economists focused on applie
 
 We are eager to partner with independent research institutions to grow the AI economic research and policy ecosystem. We will provide partners with resources to support research into AI’s economic use and application. If you are an independent research institution interested in partnering with us on our Economic Futures work, please email a brief description of your organization and the specific research efforts you propose to support to [economicfutures@anthropic.com](mailto:economicfutures@anthropic.com).
 
-# Research questions
+## Research questions
 
 We are interested in generating research and policy responses to the topics below. If you have a compelling research or policy proposal that is not included in the list below, we still encourage you to apply.
 
@@ -121,7 +118,6 @@ Where is AI enabling entirely new forms of economic value? What industries and j
 
 How is AI lowering barriers to entrepreneurship and creative work? What evidence do we see of individuals using AI to compete with larger organizations? How can we quantify the economic value of democratized access to advanced capabilities?
 
-  
 
 ## Developing policy responses
 

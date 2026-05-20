@@ -71,35 +71,35 @@ CREATE EXTENSION alloydb_ai_nl cascade;
 Make sure that you have the latest version of the `alloydb_ai_nl` extension. If you already installed the extension, check if there is a new extension version available, and upgrade the extension if you aren't using the latest version. For more information about the `alloydb_ai_nl` extension, see the [AlloyDB AI natural language overview](/alloydb/docs/ai/natural-language-overview).
 
 1.  Determine if you need to upgrade the extension. If the `default_version` is later than the `installed_version`, upgrade the extension.
-    
+
     ```
     SELECT * FROM pg_available_extensions where name = 'alloydb_ai_nl';
     ```
-    
+
 2.  Upgrade the extension.
-    
+
     ```
     ALTER EXTENSION alloydb_ai_nl UPDATE;
     ```
-    
+
 
 ### Create a natural language configuration and register a schema
 
 AlloyDB AI natural language uses `nl_config` to associate applications to certain schemas, query templates, and model endpoints. `nl_config` is a configuration that associates an application to schema, templates, and other contexts. A large application can also use different configurations for different parts of the application, as long as you specify the right configuration when a question is sent from that part of the application. You can register an entire schema, or you can register specific schema objects, like tables, views, and columns.
 
 1.  To create a natural language configuration, use the following example:
-    
+
     ```
     SELECT
       alloydb_ai_nl.g_create_configuration(
         'my_app_config'        -- configuration_id
       );
     ```
-    
+
     `gemini-2.0-flash:generateContent` is the model endpoint.
-    
+
 2.  Register a schema for a specified configuration using the following example:
-    
+
     ```
     SELECT
       alloydb_ai_nl.g_manage_configuration(
@@ -108,7 +108,7 @@ AlloyDB AI natural language uses `nl_config` to associate applications to certai
         schema_names_in => '{my_schema}'
       );
     ```
-    
+
 
 ## Add context
 
@@ -126,7 +126,7 @@ General context items include application-specific rules, business logic stateme
 To add general context for application-specific rules and application or domain-specific terminology, follow these steps:
 
 1.  To add a general context item for the specified configuration, run the following query:
-    
+
     ```
     SELECT
       alloydb_ai_nl.g_manage_configuration(
@@ -135,22 +135,22 @@ To add general context for application-specific rules and application or domain-
         general_context_in => '{"If the user asks for a good seat, assume that means a window or aisle seat."}'
       );
     ```
-    
+
     The preceding statement helps AlloyDB AI natural language provide higher quality responses to users' natural language questions.
-    
+
 2.  To view the general contexts for the specified configuration, run the following query:
-    
+
     ```
     SELECT alloydb_ai_nl.list_general_context(nl_config TEXT);
     ```
-    
+
 
 ### Generate and review schema context
 
 Schema context describes schema objects including tables, views, materialized views, and columns. This context is stored as the `COMMENT` of each schema object.
 
 1.  To generate contexts for schema objects, call the following APIs. For best results, make sure that the database tables contain representative data.
-    
+
     ```
     -- For all schema objects (tables, views, materialized views and columns)
     -- within the scope of a provided nl_config.
@@ -159,34 +159,34 @@ Schema context describes schema objects including tables, views, materialized vi
         'my_app_config' -- nl_config
       );
     ```
-    
+
 2.  Review the generated schema contexts by running the following query:
-    
+
     ```
     SELECT schema_object, object_context
     FROM alloydb_ai_nl.generated_schema_context_view;
     ```
-    
+
     The generated schema contexts are stored in the preceding view.
-    
+
 3.  Optional: Update the generated schema contexts.
-    
+
     ```
     SELECT
       alloydb_ai_nl.update_generated_relation_context(
         'my_schema.my_table',
         'This table contains archival records, if you need latest records use records_new table.'
       );
-    
+
     SELECT
       alloydb_ai_nl.update_generated_column_context(
         'my_schema.my_table.column1',
         'The seat_class column takes single letters like "E" for economy, "P" for premium economy, "B" for business and "F" for First.'
       );
     ```
-    
+
 4.  Apply the context. When you apply the context, the context takes effect immediately and is deleted from the view `generated_schema_context_view`.
-    
+
     ```
     -- For all schema objects (tables, views, materialized views and columns)
     -- within the scope of nl_config.
@@ -195,35 +195,35 @@ Schema context describes schema objects including tables, views, materialized vi
         'my_app_config' --nl_config
       );
     ```
-    
+
 5.  Optional: Verify the generated context. The following API lets you check the schema contexts, which are used when you generate SQL statements.
-    
+
     ```
     -- For table, view or materialized view.
     SELECT
       alloydb_ai_nl.get_relation_context(
         'my_schema.my_table'
       );
-    
+
     -- For column.
     SELECT
       alloydb_ai_nl.get_column_context(
         'my_schema.my_table.column1'
       );
     ```
-    
+
 6.  Apply the generated schema context.
-    
+
     ```
     SELECT alloydb_ai_nl.apply_generated_schema_context(
       'nla_demo_cfg',
       TRUE);
     ```
-    
+
     Passing `TRUE` overwrites existing context for objects registered to 'nla\_demo\_cfg'.
-    
+
 7.  Optional: Manually set the schema context.
-    
+
     ```
     -- For table, view or materialized view.
     SELECT
@@ -231,7 +231,7 @@ Schema context describes schema objects including tables, views, materialized vi
         'my_schema.my_table',
         'One-to-many mapping from product to categories'
       );
-    
+
     -- For column.
     SELECT
       alloydb_ai_nl.set_column_context(
@@ -239,7 +239,7 @@ Schema context describes schema objects including tables, views, materialized vi
         'This column provides additional tagged info for the product in  Json format, e.g., additional color or size information of the product - tags: { "color": "red", "size": "XL"}'
       );
     ```
-    
+
 
 ## Create query templates
 
@@ -511,32 +511,32 @@ Template auto generation is based on the most frequently used queries in the que
 To autogenerate, review, and apply templates, follow these steps:
 
 1.  Request AlloyDB to generate templates based on your query history:
-    
+
     ```
     SELECT
       alloydb_ai_nl.generate_templates(
         'my_app_config',
     );
     ```
-    
+
     Use the provided view, `alloydb_ai_nl.generated_templates_view`, to review the `generated_templates`.
-    
+
     The following output shows the number of generated templates:
-    
+
     ```
     -[ RECORD 1 ]------+--
     generate_templates | 1
     ```
-    
+
 2.  Review the generated templates using the `generated_templates_view` view.
-    
+
     ```
     SELECT *
     FROM alloydb_ai_nl.generated_templates_view;
     ```
-    
+
     The following is an example of the returned output:
-    
+
     ```
     -[ RECORD 1 ]----------------------------------------------------------------
     id          | 1
@@ -554,11 +554,11 @@ To autogenerate, review, and apply templates, follow these steps:
     explanation |
     weight      | 1
     ```
-    
+
     The `manifest` in the returned output is a general template or a broad description of the question type or the operation that can be performed. The `pintent` is a parameterized version of the `intent`, and it generalizes `intent` by replacing the specific value (`1997`) with a placeholder (`$1`).
-    
+
 3.  To update a generated template, run the following example statement:
-    
+
     ```
     SELECT alloydb_ai_nl.update_generated_template(
       id => 1,
@@ -566,18 +566,18 @@ To autogenerate, review, and apply templates, follow these steps:
       nl => 'How many clients are born in 1997?',
       intent => 'How many clients are born in 1997?',
       pintent => 'How many clients are born in $1?'
-    
+
     );
     ```
-    
+
 4.  Apply the templates. The templates that you apply are immediately added to the template store, and they are deleted from the review view.
-    
+
     ```
     -- For all templates generated under the nl config.
     SELECT
       alloydb_ai_nl.apply_generated_templates('my_app_config');
     ```
-    
+
 
 ## Configure security for natural language
 
@@ -594,7 +594,7 @@ A _value index_ is an index on top of values in the columns that are part of the
 To define concept types and a value index, follow these steps using the provided examples. The examples associate a column to a concept type, create and refresh a value index, and use a synonym set to perform a value search.
 
 1.  To associate a column with a concept type, run the following query:
-    
+
     ```
     SELECT
       alloydb_ai_nl.associate_concept_type(
@@ -603,27 +603,27 @@ To define concept types and a value index, follow these steps using the provided
         nl_config_id_in => 'my_app_config'
       );
     ```
-    
+
 2.  To create a value index based on all the columns that are part of a natural language config and are associated with a concept type, run the following statement:
-    
+
     ```
     SELECT
       alloydb_ai_nl.create_value_index(
         nl_config_id_in => 'my_app_config'
       );
     ```
-    
+
 3.  When you associate concept types to new columns, refresh the value index to reflect the changes.
-    
+
     ```
     SELECT
       alloydb_ai_nl.refresh_value_index(
         nl_config_id_in => 'my_app_config'
       );
     ```
-    
+
 4.  To enable AlloyDB AI natural language to match synonyms of a value, run the following example statement:
-    
+
     ```
     SELECT
       alloydb_ai_nl.insert_synonym_set(
@@ -635,11 +635,11 @@ To define concept types and a value index, follow these steps using the provided
         ]
       );
     ```
-    
+
     Although the data in your tables might use a specific value—for example, if `United States` is used to identify a country—you can define a synonym set that contains all the synonyms for `United States`. If any of the synonyms appear in the natural language question, AlloyDB AI natural language matches the synonyms with the values in your tables.
-    
+
 5.  Perform a value search to find the correct database values, given an array of value phrases.
-    
+
     ```
     SELECT
       alloydb_ai_nl.get_concept_and_value(
@@ -647,11 +647,11 @@ To define concept types and a value index, follow these steps using the provided
         nl_config_id_in  => 'my_app_config'
       );
     ```
-    
+
     For example, if a user asks a question like "What is the population of the United States?" that uses the following `get_sql` query, AlloyDB AI natural language uses the `get_concept_and_value` function with the value phrase `United States` to perform a _fuzzy search_ against the value indexes. A _fuzzy search_ is a search technique that finds matches even when the search query doesn't exactly match corresponding data.
-    
+
     Natural language finds a result—the value `USA`— that is close to the search query, and it uses that result to generate the SQL query.
-    
+
     ```
     SELECT
       alloydb_ai_nl.get_sql(
@@ -660,47 +660,45 @@ To define concept types and a value index, follow these steps using the provided
         additional_info => json_build_object('enrich_nl_question', TRUE)
       ) ->> 'sql';
     ```
-    
+
     Built-in concept types defined by AlloyDB AI natural language are listed in the following table.
-    
-     
-    
+
+
     **Concept name**
-    
+
     **Description**
-    
+
     `generic_entity_name`
-    
-    A single string type column can be used for a generic entity name. For example:  
-    
+
+    A single string type column can be used for a generic entity name. For example:
+
       SELECT alloydb\_ai\_nl.associate\_concept\_type('public.item.item\_name', 'generic\_entity\_name')
-      
-    
+
+
     `country_name`, `city_name`, `region_name`
-    
+
     Names of countries, cities, and regions. The usage is exactly the same as the `generic_entity_name` concept type.
-    
+
     `full_person_name`
-    
-    Name of the person, consisting of the first, last, and middle names. Up to three string type columns can be used for a full person name. Any of the columns can be skipped when associating name columns to the `full_person_name`. For example:  
-    
+
+    Name of the person, consisting of the first, last, and middle names. Up to three string type columns can be used for a full person name. Any of the columns can be skipped when associating name columns to the `full_person_name`. For example:
+
       SELECT alloydb\_ai\_nl.associate\_concept\_type('public.person.last\_name,public.person.first\_name,public.person.middle\_name','full\_person\_name')
-      
-    
+
+
     `ssn`
-    
-    A single string column containing a social security number. For example:  
-    
+
+    A single string column containing a social security number. For example:
+
       SELECT alloydb\_ai\_nl.associate\_concept\_type('public.person.ssn','ssn')
-     
-    
+
+
     `date`
-    
-    A date or timestamp. For example:  
-    
+
+    A date or timestamp. For example:
+
      SELECT alloydb\_ai\_nl.associate\_concept\_type('public.person.date\_col','date')
-     
-    
+
 
 ### Autogenerate concept type associations
 
@@ -709,28 +707,28 @@ To automatically associate columns with concept types, use the automated concept
 To autogenerate concept type associations, follow these steps:
 
 1.  To generate associations, call the following APIs.
-    
+
     ```
     -- To cover all relations within the scope of a provided nl_config.
     SELECT alloydb_ai_nl.generate_concept_type_associations(
       nl_config => 'my_app_config'
     );
-    
+
     -- To cover a specific relation.
     SELECT alloydb_ai_nl.generate_concept_type_associations(
       nl_config => 'my_app_config',
       relation_name => 'my_app_table'
     );
     ```
-    
+
 2.  Review the generated associations by running the following query.
-    
+
     ```
     SELECT * FROM alloydb_ai_nl.generated_value_index_columns_view;
     ```
-    
+
 3.  Optional: Update the generated associations.
-    
+
     ```
     -- NULL means keeping the original value.
     SELECT alloydb_ai_nl.update_generated_concept_type_associations(
@@ -740,35 +738,35 @@ To autogenerate concept type associations, follow these steps:
       additional_info => NULL
     );
     ```
-    
+
 4.  Optional: Remove a generated association.
-    
+
     ```
     SELECT alloydb_ai_nl.drop_generated_concept_type_association(id => 1);
     ```
-    
+
 5.  Apply the generated associations.
-    
+
     ```
     -- To apply all associations under a nl config.
     SELECT alloydb_ai_nl.apply_generated_concept_type_associations(
       nl_config => 'my_app_config'
     );
-    
+
     -- To apply a specific association by id.
     SELECT alloydb_ai_nl.apply_generated_concept_type_association(
       id => 1
     );
     ```
-    
+
 6.  Refresh the value index to reflect the changes.
-    
+
     ```
     SELECT alloydb_ai_nl.refresh_value_index(
       nl_config_id_in => 'my_app_config'
     );
     ```
-    
+
 
 ## Generate SQL statements from natural language inputs
 
@@ -777,7 +775,7 @@ You can use AlloyDB AI natural language to generate SQL statements from natural 
 **Note:** To get SQL statements with the level of accuracy that you want, you must iterate the system configuration and tune context, query templates and value index.
 
 1.  To use natural language to get results from your database using the `alloydb_ai_nl.get_sql` function, use the following example:
-    
+
     ```
     SELECT
       alloydb_ai_nl.get_sql(
@@ -785,9 +783,9 @@ You can use AlloyDB AI natural language to generate SQL statements from natural 
         'What is the sum that client number 4''s account has following transaction 851?' -- nl question
       );
     ```
-    
+
     The following JSON output is returned:
-    
+
     ```
     {
       "sql": "SELECT T3.balance FROM public.client AS T1 INNER JOIN public.account AS T2 ON T1.district_id = T2.district_id INNER JOIN public.trans AS T3 ON T2.account_id = T3.account_id WHERE T1.client_id = 4 AND T3.trans_id = 851",
@@ -797,9 +795,9 @@ You can use AlloyDB AI natural language to generate SQL statements from natural 
       "nl_question": "What is the sum that client number 4's account has following transaction 851?"
     }
     ```
-    
+
 2.  Optional: To extract the generated SQL query as a text string, add `->>'sql'`:
-    
+
     ```
     SELECT
       alloydb_ai_nl.get_sql(
@@ -807,9 +805,9 @@ You can use AlloyDB AI natural language to generate SQL statements from natural 
         'What is the sum that client number 4''s account has following transaction 851?' -- nl question
       ) ->> 'sql';
     ```
-    
+
     The `->>` operator is used to extract a JSON value as text. The `alloydb_ai_nl.get_sql` function returns a JSON object, which is the part of the statement that retrieves the value associated with the key `sql`. This value is the generated SQL query.
-    
+
 
 ## Generate result summaries from natural language inputs
 

@@ -56,7 +56,6 @@ This is our commitment—ensuring that educators in every community, not just th
 
 For more on Anthropic's education initiatives, [see here](https://claude.com/solutions/education).
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/anthropic-teach-for-all)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/anthropic-teach-for-all)
 

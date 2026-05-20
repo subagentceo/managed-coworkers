@@ -44,41 +44,41 @@ Antes de generar y gestionar las inserciones vectoriales de tablas grandes, haz 
 -   [Verifica que la extensión `google_ml_integration` esté instalada.](https://docs.cloud.google.com/alloydb/docs/ai/configure-vertex-ai?hl=es#verify-installed-extension)
 -   [Verifica que la marca google\_ml\_integration.enable\_model\_support esté definida como `on`.](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=es)
 -   Comprueba que la extensión `google_ml_integration` sea la versión 1.5.2 o una posterior y que la marca [`google_ml_integration.enable_faster_embedding_generation`](https://docs.cloud.google.com/alloydb/docs/reference/database-flags?hl=es) esté definida como `on`.
-    
+
     Para comprobar la versión de tu extensión con el siguiente comando:
-    
+
     ```
     SELECT extversion FROM pg_extension WHERE extname = 'google_ml_integration';
     ```
-    
+
     Si necesitas actualizar la extensión, usa el comando `ALTER EXTENSION google_ml_integration UPDATE;`.
-    
+
     **Nota:** Si no tienes los permisos necesarios, ponte en contacto con el administrador de tu base de datos para realizar la actualización. También puedes esperar a que la nueva versión se implemente automáticamente en tu clúster.
-    
+
 -   Antes de generar incrustaciones a partir de una base de datos de AlloyDB, debes configurar AlloyDB para que funcione con Vertex AI. Para obtener más información, consulta [Integrar tu base de datos con Vertex AI](https://docs.cloud.google.com/alloydb/docs/ai/configure-vertex-ai?hl=es).
-    
+
 -   Para gestionar y monitorizar la generación de inserciones automáticas, los usuarios tienen acceso `Select` a las tablas `google_ml.embed_gen_progress` y `google_ml.embed_gen_settings` de forma predeterminada.
-    
+
     Para permitir que un usuario gestione la generación de inserciones automáticas, concédele los permisos `INSERT`, `UPDATE` y `DELETE` en las tablas `google_ml.embed_gen_progress` y `google_ml.embed_gen_settings`:
-    
+
     ```
     GRANT INSERT, UPDATE, DELETE ON google_ml.embed_gen_progress TO 'USER_NAME';
     ```
-    
+
     Haz los cambios siguientes:
-    
+
     -   USER\_NAME: el nombre del usuario al que se le conceden los permisos.
 -   Verifica que `AUTOCOMMIT` esté configurado como `ON` en el cliente de PostgreSQL que utilices.
-    
+
 -   Confirma que el modelo de incrustaciones que usas tiene suficiente cuota para las incrustaciones de vectores automáticas. Si la cuota es insuficiente, la operación de inserción automática puede ser lenta o fallar. Por ejemplo, estos son los límites de los modelos de inserciones de Vertex AI:
-    
+
     -   [Límites de inserciones de texto:](https://docs.cloud.google.com/vertex-ai/docs/quotas?hl=es#text-embedding-limits) cada solicitud puede tener hasta 250 textos de entrada, lo que genera una inserción por texto de entrada, y 20.000 tokens por solicitud. Solo se usan los primeros 2048 tokens de cada texto de entrada para calcular las inserciones.
     -   [Solicitudes por minuto:](https://docs.cloud.google.com/vertex-ai/docs/quotas?hl=es#view-the-requests-per-minute-rpm-quotas-by-region-and-by-model) la cuota pertinente es `Regional online prediction requests per base model per minute per region per base_model`.
     -   En el modelo `text-embedding-005`, la dimensión `base_model` de la consola Google Cloud es `textembedding-gecko`.
     -   En el modelo `gemini-embedding-001`, la dimensión `base_model` es `gemini-embedding`.
-        
+
     -   [Límite de tokens del modelo de inserción de Gemini:](https://docs.cloud.google.com/vertex-ai/docs/quotas?hl=es#embed-content-input-tokens-per-minute-per-base-model) A diferencia de otros modelos de inserción, que estaban limitados principalmente por las cuotas de RPM, la serie de modelos de inserción de Gemini está limitada a 5.000.000 de tokens por minuto y por proyecto. La cuota correspondiente es `Embed content input tokens per minute per region per base_model`.
-        
+
 
 ## Inicializar embeddings de una tabla
 
@@ -122,7 +122,7 @@ CALL ai.initialize_embeddings(
 Si quieres usar un modelo personalizado o externo que admita el procesamiento por lotes, define las funciones de transformación por lotes y especifícalas como `model_batch_in_transform_fn` y `model_batch_out_transform_fn` al crear un modelo. También puedes especificar un `batch_size` en la `initialize_embeddings`. En los modelos que admiten el procesamiento por lotes, te recomendamos que uses un `batch_size` superior a 1 para mejorar el rendimiento.
 
 1.  Define las funciones de entrada, salida y transformación por lotes de tu modelo personalizado.
-    
+
     ```
     -- Scalar input transform functions
     CREATE OR REPLACE FUNCTION acme_text_input_transform(model_id TEXT, input TEXT) RETURNS JSON;
@@ -132,9 +132,9 @@ Si quieres usar un modelo personalizado o externo que admita el procesamiento po
     CREATE OR REPLACE FUNCTION acme_text_batch_input_transform(model_id TEXT, input TEXT[]) RETURNS JSON;
     CREATE OR REPLACE FUNCTION acme_text_batch_output_transform(model_id TEXT, model_output JSON) RETURNS real[][];
     ```
-    
+
 2.  Para crear el modelo, especifica las funciones de transformación por lotes.
-    
+
     ```
     CALL
       ai.create_model(
@@ -148,9 +148,9 @@ Si quieres usar un modelo personalizado o externo que admita el procesamiento po
         model_batch_out_transform_fn => 'acme_text_batch_output_transform'
       );
     ```
-    
+
 3.  Genera incrustaciones de vectores con tu modelo personalizado.
-    
+
     ```
     CALL
       ai.initialize_embeddings(
@@ -161,7 +161,7 @@ Si quieres usar un modelo personalizado o externo que admita el procesamiento po
         batch_size => 10
     );
     ```
-    
+
 
 También puedes usar la función de inserción automática con modelos personalizados que no admitan de forma nativa el procesamiento por lotes. Para ello, debes definir las funciones de transformación por lotes `model_batch_in_transform_fn` y `model_batch_out_transform_fn`. En el caso de un modelo sin procesamiento por lotes, define estas funciones para procesar una sola entrada a la vez desde la matriz de entrada. Cuando llames a `ai.initialize_embeddings` para este modelo, asigna el valor `1` a `batch_size`.
 
@@ -172,7 +172,7 @@ Cuando actualiza una inserción, se vuelve a generar en función del último val
 Para que tengas control sobre la coherencia y el rendimiento, AlloyDB admite varios modos de actualización incremental de las inserciones. Puedes seleccionar un modo con el argumento de enumeración `incremental_refresh_mode` en `ai.initialize_embeddings()`. A continuación se muestra una lista con los posibles modos:
 
 -   `transactional`: las inserciones se actualizan como parte de la transacción que actualiza la columna de contenido. Este proceso, que suele usar un mecanismo similar a un activador de base de datos para generar automáticamente las inserciones cuando se actualiza la columna de contenido, puede introducir una sobrecarga y ralentizar las operaciones de actualización. La sobrecarga introducida es una contrapartida para mantener la semántica transaccional y asegurarse de que las inserciones estén sincronizadas con el contenido. Este modo se basa en las funciones de transformación escalar de tu modelo, por lo que debes definir `model_in_transform_fn` y `model_out_transform_fn` al crear el modelo. Para usar el modo `transactional`, debes tener el [rol](https://docs.cloud.google.com/alloydb/docs/reference/iam-roles-permissions?hl=es) de propietario en la tabla.
-    
+
     ```
     CALL
       ai.initialize_embeddings(
@@ -184,9 +184,9 @@ Para que tengas control sobre la coherencia y el rendimiento, AlloyDB admite var
         incremental_refresh_mode => 'transactional'
     );
     ```
-    
+
 -   `none`: este es el modo predeterminado. En este modo, AlloyDB no actualiza las inserciones automáticamente. No se hace un seguimiento de los cambios incrementales, por lo que, al llamar a la función `ai.refresh_embeddings()`, se regeneran las inserciones de toda la tabla. Este modo ofrece un control total.
-    
+
 
 ## Actualizar todos los embeddings de una tabla
 

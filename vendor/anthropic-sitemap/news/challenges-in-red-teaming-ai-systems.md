@@ -91,8 +91,8 @@ When we began our [red teaming research](https://www.anthropic.com/news/red-team
 
 ### Community red teaming for general risks and system limitations
 
-As red teaming AI models has become more common, efforts such as [DEF CON’s AI Village](https://aivillage.org/generative%20red%20team/generative-red-team/) have engaged a broader cross-section of society in the testing of publicly deployed systems. In 2023, the [Generative Red Teaming (GRT) Challenge](https://www.humane-intelligence.org/grt) hosted thousands of participants from a broad range of ages and disciplines, including many individuals with nontechnical backgrounds, and invited them to red team models provided by Anthropic and other labs. We were impressed by the enthusiasm and creativity red teamers brought to the challenge, and hope that the GRT challenge and events like it can inspire a more diverse group of people to get involved in AI safety efforts.  
-  
+As red teaming AI models has become more common, efforts such as [DEF CON’s AI Village](https://aivillage.org/generative%20red%20team/generative-red-team/) have engaged a broader cross-section of society in the testing of publicly deployed systems. In 2023, the [Generative Red Teaming (GRT) Challenge](https://www.humane-intelligence.org/grt) hosted thousands of participants from a broad range of ages and disciplines, including many individuals with nontechnical backgrounds, and invited them to red team models provided by Anthropic and other labs. We were impressed by the enthusiasm and creativity red teamers brought to the challenge, and hope that the GRT challenge and events like it can inspire a more diverse group of people to get involved in AI safety efforts.
+
 Having explored these diverse red teaming methods, each with their own strengths and challenges, we now discuss how they can contribute to our goal of establishing more standardized red teaming practices in the AI industry.
 
 ![Community Red Teaming Benefits and Challenges](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd491922d0c702664245b88540ebf8eee1cd8b9f1-2200x1492.png&w=3840&q=75)
@@ -119,8 +119,6 @@ To support further adoption and standardization of red teaming, we encourage pol
 
 Red teaming is a valuable technique for identifying and mitigating risks in AI systems. The various red teaming methods covered in this post highlight a handful of techniques available for different use cases and threat models. We look forward to collaborating with other actors to iterate on these techniques and work towards common standards for safety testing. By investing in red teaming, we can work towards building AI systems that are safe and beneficial to society. It is one of several tools in a larger effort to ensure AI is developed thoughtfully and with robust safeguards in place.
 
-  
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/challenges-in-red-teaming-ai-systems)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/challenges-in-red-teaming-ai-systems)
 

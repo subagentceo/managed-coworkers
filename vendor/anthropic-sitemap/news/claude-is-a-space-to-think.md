@@ -56,7 +56,6 @@ Our experience of using the internet has made it easy to assume that advertising
 
 We think Claude should work the same way.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/claude-is-a-space-to-think)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/claude-is-a-space-to-think)
 

@@ -40,7 +40,6 @@ These initiatives reflect our commitment to co-creating the future of AI in educ
 
 Access the courses and learn more at [anthropic.com/learn](https://www.anthropic.com/learn).
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/anthropic-higher-education-initiatives)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/anthropic-higher-education-initiatives)
 

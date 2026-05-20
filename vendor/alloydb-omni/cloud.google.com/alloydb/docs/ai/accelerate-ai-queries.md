@@ -69,7 +69,7 @@ ORDER BY r.name;
 `EXPLAIN` 문을 사용하여 쿼리를 분석하면 쿼리 계획에 `AI Function Apply` 노드가 표시됩니다.
 
                                        ```
-                                       QUERY PLAN                                       
+                                       QUERY PLAN
 ----------------------------------------------------------------------------------------
  GroupAggregate
    Group Key: name
@@ -99,7 +99,7 @@ LIMIT 50;
 `EXPLAIN` 문을 사용하여 쿼리를 분석하면 쿼리 계획에 `AI Function Apply` 노드가 표시됩니다.
 
                                        ```
-                                       QUERY PLAN                                       
+                                       QUERY PLAN
 ----------------------------------------------------------------------------------------
  Limit
   ->  Sort

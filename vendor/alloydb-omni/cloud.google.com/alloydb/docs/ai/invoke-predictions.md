@@ -29,18 +29,18 @@ To let AlloyDB invoke predictions, do the following:
 -   Before you can invoke predictions from an AlloyDB database, you must configure AlloyDB to work with Agent Platform. For more information, see [Integrate your database with Agent Platform](/alloydb/docs/ai/configure-vertex-ai).
 -   You must have an active Agent Platform model with an active endpoint that you have Identity and Access Management (IAM) permission to access. AlloyDB doesn't support private endpoints for getting online predictions.
 -   Grant permissions for database users to execute the prediction function to invoke predictions:
-    
+
     ```
     \c DB_NAME;
     GRANT EXECUTE ON FUNCTION ml_predict_row TO USER_NAME;
     ```
-    
+
     Replace the following:
-    
+
     -   DB\_NAME: the name of the database on which the permissions should be granted
-        
+
     -   USER\_NAME: the name of the user for whom the permissions should be granted
-        
+
 
 ## Invoke online predictions
 
@@ -59,13 +59,13 @@ SELECT ml_predict_row('projects/PROJECT_ID/locations/REGION_ID/publishers/google
 Replace the following:
 
 -   `PROJECT_ID`: the ID of your Google Cloud project
-    
+
 -   `REGION_ID`: the ID of the Google Cloud region that the model is located in—for example, `us-central1` for gemini-pro
-    
+
 -   `MODEL_ID`: the ID of the ML model to use—for example, gemini-pro
-    
+
 -   `CONTENTS`: the inputs to the prediction call, in JSON format
-    
+
 
 If the ML model is stored in the same project and region as your AlloyDB cluster, then you can abbreviate this function's first argument:
 
@@ -88,13 +88,13 @@ SELECT ml_predict_row('projects/PROJECT_ID/locations/REGION_ID/endpoints/ENDPOIN
 Replace the following:
 
 -   `PROJECT_ID`: the ID of the Google Cloud project that the model is located in
-    
+
 -   `REGION_ID`: the ID of the Google Cloud region the model is located in—for example, `us-central1`
-    
+
 -   `ENDPOINT_ID`: the ID of the model endpoint
-    
+
 -   `CONTENTS`: the inputs to the prediction call, in JSON format
-    
+
 
 If the endpoint is located in the same project and region as your AlloyDB cluster, then you can abbreviate this function's first argument:
 
@@ -120,9 +120,9 @@ The response is a JSON object. For more information about the format of the obje
 The following example modifies the previous example in the following ways:
 
 -   The example uses the contents of the current database's `messages.message` column as input.
-    
+
 -   The example demonstrates the use of [the `json_build_object()` function](https://www.postgresql.org/docs/current/functions-json.html) as an aid to formatting the function parameters.
-    
+
 
 ```
 

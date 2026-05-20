@@ -17,31 +17,31 @@ The [ScaNN index](https://github.com/google-research/google-research/blob/master
 Before you can start creating indexes, you must complete the following prerequisites.
 
 -   [Embedding vectors are added to a table](/alloydb/docs/ai/store-embeddings) in your AlloyDB database.
-    
+
     If you try to generate a ScaNN index on an empty or partitioned table, then you might encounter some issues. For more information about the errors generated, see [Troubleshoot ScaNN index errors](/alloydb/docs/troubleshoot/troubleshoot-scann-indexes). To create an index on an empty or small table, see [Deferred index creation for empty or nearly empty tables](/alloydb/docs/ai/create-scann-index#deferred-index-creation-for-empty-or-nearly-empty-tables).
-    
+
 -   [`vector`](/alloydb/docs/reference/extensions#pgvector) and [`alloydb_scann`](/alloydb/docs/reference/extensions#alloydb_scann) extensions are installed:
-    
+
     ```
     CREATE EXTENSION IF NOT EXISTS alloydb_scann CASCADE;
     ```
-    
+
     Installing the `alloydb_scann` extension automatically checks to see if the `vector` extension is installed and installs it if it isn't. You don't need to manually install `vector` separately.
-    
+
 -   If you want to create a four-level ScaNN index, you must first enable the [Preview](https://cloud.google.com/products#product-launch-stages) feature for your AlloyDB instance. To enable the Preview feature, choose one of the following two methods:
-    
+
     -   Enable the [`scann.enable_preview_features`](/alloydb/docs/reference/alloydb-flags#scann.enable_preview_features) database flag.
-        
+
         For more information on configuring database flags, see [Configure database flags](/alloydb/docs/instance-configure-database-flags).
-        
+
     -   Set [`scann.max_allowed_num_levels`](/alloydb/docs/reference/alloydb-flags#scann.max_allowed_num_levels) database flag to `3` at the session or instance-level. To set the flag at the session level, run the following command:
-        
+
         ```
         SET scann.max_allowed_num_levels = 3;
         ```
-        
+
         To set the flag at the instance level, run [`gcloud alloydb alloydb instances update`](/sdk/gcloud/reference/alloydb/instances/update) using the `--database-flags` field.
-        
+
 
 ## Create an automatically-tuned index
 
@@ -64,19 +64,19 @@ CREATE INDEX INDEX_NAME ON TABLE
 Replace the following:
 
 -   `INDEX_NAME`: name of the index that you want to create. For example, `my_scann_index`. Index names are shared across your database. Verify that each index name is unique to each table in your database.
-    
+
 -   `TABLE`: table to add the index to.
-    
+
 -   `EMBEDDING_COLUMN`: column that stores `vector` data.
-    
+
 -   `DISTANCE_FUNCTION`: distance function to use with this index. Choose one of the following:
-    
+
     -   L2 distance: `l2`
-        
+
     -   Dot product: `dot_product`
-        
+
     -   Cosine distance: `cosine`
-        
+
 
 This command creates a ScaNN index that is optimized for search performance and performs [automatic index maintenance](/alloydb/docs/ai/maintain-vector-indexes#maintain-index-automatically). If you want to change either of these settings, run the following command:
 
@@ -91,34 +91,34 @@ WITH (MODE='AUTO',
 Replace the following:
 
 -   `INDEX_NAME`: name of the index that you want to create. For example, `my_scann_index`. Index names are shared across your database. Verify that each index name is unique to each table in your database.
-    
+
 -   `TABLE`: table to add the index to.
-    
+
 -   `EMBEDDING_COLUMN`: column that stores `vector` data.
-    
+
 -   `DISTANCE_FUNCTION`: distance function to use with this index. Choose one of the following:
-    
+
     -   L2 distance: `l2`
-        
+
     -   Dot product: `dot_product`
-        
+
     -   Cosine distance: `cosine`
-        
+
 -   (Optional) `OPTIMIZATION`: set to one of the following:
-    
+
     -   (Default) `SEARCH_OPTIMIZED`: optimize both vector search recall and vector search latency at the cost of longer index build times.
-        
+
     -   `BALANCED`: balance index build time and search performance.
-        
-    
+
+
     If `OPTIMIZATION` is set, `MODE='AUTO'` must also be included.
-    
+
 -   (Optional) `AUTO_MAINTENANCE`: controls whether automatic maintenance of the index is enabled or disabled. For more information on automatic maintenance, see [Maintain vector indexes](/alloydb/docs/ai/maintain-vector-indexes#maintain-index-automatically).
-    
+
     -   (Default) `ON`: AlloyDB performs automatic maintenance on the index.
-        
+
     -   `OFF`: AlloyDB doesn't perform automatic maintenance on the index.
-        
+
 
 ## Create a manually-tuned index
 
@@ -210,25 +210,25 @@ WITH (mode\='MANUAL',
 To convert a manually-tuned index to an automatically-tuned index, complete the following steps:
 
 1.  Reset all query parameters defined for your manually-tuned index.
-    
+
     ```
     ALTER INDEX INDEX_NAME RESET (PARAMETER_NAME);
     ```
-    
+
     Replace the following variables:
-    
+
     -   `INDEX_NAME`: name of the index that you want to convert. For example, `my_scann_index`. Index names are shared across your database. Verify that each index name is unique to each table in your database.
-        
+
     -   `PARAMETER_NAME`: comma-separated list containing the names of the query parameters you want to reset. For example, `num_leaves, quantization`.
-        
+
         Note that you must reset all other query parameters before resetting `num_leaves`.
-        
+
 2.  Reindex your manually-tuned index to convert it to an automatically-tuned index.
-    
+
     ```
     REINDEX INDEX CONCURRENTLY INDEX_NAME;
     ```
-    
+
 
 ## Create a ScaNN index for `real[]` data types
 
@@ -242,21 +242,21 @@ USING scann (CAST(EMBEDDING_COLUMN AS vector(DIMENSIONS)) DISTANCE_FUNCTION)
 Replace the following:
 
 -   `INDEX_NAME`: name of the index that you want to create. For example, `my_scann_index`. Index names are shared across your database. Verify that each index name is unique to each table in your database.
-    
+
 -   `TABLE`: table to add the index to.
-    
+
 -   `DIMENSIONS`: the number of dimensions that the model supports.
-    
+
 -   `EMBEDDING_COLUMN`: column that stores `vector` data.
-    
+
 -   `DISTANCE_FUNCTION`: distance function to use with this index. Choose one of the following:
-    
+
     -   L2 distance: `l2`
-        
+
     -   Dot product: `dot_product`
-        
+
     -   Cosine distance: `cosine`
-        
+
 
 ## View indexing progress
 
@@ -289,7 +289,7 @@ However, if you are planning to insert large number of rows into the table in a 
 To enable deferred index creation, follow these steps:
 
 1.  Enable the `scann.enable_index_maintenance` flag (enabled by default) and the [`scann.enable_preview_features`](/alloydb/docs/reference/alloydb-flags#scann.enable_preview_features) flag. The `scann.enable_preview_features` flag also enables other preview features.
-    
+
     ```
     gcloud alloydb instances update INSTANCE_ID \
        --database-flags scann.enable_index_maintenance=on \
@@ -298,15 +298,15 @@ To enable deferred index creation, follow these steps:
        --cluster=CLUSTER_ID \
        --project=PROJECT_ID
     ```
-    
+
     Replace the following:
-    
+
     -   `INSTANCE_ID`: The ID of the instance.
     -   `REGION_ID`: The region where the instance is placed—for example, `us-central1`.
     -   `CLUSTER_ID`: The ID of the cluster where the instance is placed.
     -   `PROJECT_ID`: The ID of the project where the cluster is placed.
 2.  Create a ScaNN index. If you create an index in manual mode, make sure that the `auto_maintenance` parameter is set to `on`. For more information, see [Create a manually-tuned index](/alloydb/docs/ai/create-scann-index#create-scann-index-manual).
-    
+
 
 ### Limitations
 
@@ -318,9 +318,9 @@ To enable deferred index creation, follow these steps:
 AlloyDB uses validations to prevent the creation of a ScaNN index on an empty table or a table with very few rows for the following reasons:
 
 -   ScaNN index trains on insufficient data. This can result in poor recall for vector similarity searches.
-    
+
 -   Write performance to the database might degrade.
-    
+
 
 We recommend that you [defer index creation](#deferred-index-creation-for-empty-tables-insufficient-rows) in suboptimal performance.
 
@@ -329,19 +329,19 @@ However, in some development or testing scenarios, you might need to create an i
 To force index creation, complete the following steps:
 
 1.  Set the `scann.allow_blocked_operations creation` session-level parameter to `true` on the database:
-    
+
     ```
     SET scann.allow_blocked_operations = true;
     ```
-    
+
 2.  If the user you're using to run these queries doesn't have `SUPERUSER` privileges, assign them:
-    
+
     ```
     CREATE USER USERNAME WITH SUPERUSER PASSWORD PASSWORD;
     ```
-    
+
     Replace the following variables:
-    
+
     -   `USERNAME`: name of the user you want to grant `SUPERUSER` privileges to.
     -   `PASSWORD`: user's password.
 
@@ -377,23 +377,23 @@ LIMIT ROW_COUNT
 Replace the following variables:
 
 -   `TABLE`: table containing the embedding to compare the text to.
-    
+
 -   `EMBEDDING_COLUMN`: column containing the stored embeddings.
-    
+
 -   `DISTANCE_FUNCTION_QUERY`: distance function to use with this query. Choose the query equivalent for the distance function when you created the index:
-    
+
     -   L2 distance: `<->`
-        
+
     -   Inner product: `<#>`
-        
+
     -   Cosine distance: `<=>`
-        
+
 -   `MODEL_ID`: ID of the registered embedding model you want to use.
-    
+
 -   `CONTENT`: the text string you want to translate into an embedding and search for.
-    
+
 -   `ROW_COUNT`: number of rows to return. For example, specify `1` if you want the single, best match.
-    
+
 
 ## What's next
 

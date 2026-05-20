@@ -15,19 +15,19 @@ To ensure that your vector indexes adapt to changes that might impact the accura
 Before you manage index maintenance, install or update the `vector` and `alloydb_scann` extensions:
 
 -   If the `vector` and `alloydb_scann` extensions are not installed, install them.
-    
+
     ```
     CREATE EXTENSION IF NOT EXISTS vector;
     CREATE EXTENSION IF NOT EXISTS alloydb_scann;
     ```
-    
+
 -   If the `vector` and `alloydb_scann` extensions are already installed, update them.
-    
+
     ```
     ALTER EXTENSION vector UPDATE;
     ALTER EXTENSION alloydb_scann UPDATE;
     ```
-    
+
 
 ## Maintain indexes automatically
 
@@ -52,30 +52,30 @@ WITH (mode='INDEX_MODE', num_leaves=NUM_PARTITIONS, auto_maintenance=on);
 Replace the following variables:
 
 -   `INDEX_NAME`: name of the index you want to create. For example, `my_scann_index`. Index names are shared across your database. Ensure that each index name is unique to each table in your database.
-    
+
 -   `TABLE_NAME`: table that you want to add the index to.
-    
+
 -   `EMBEDDING_COLUMN_NAME`: column that stores the `vector` data you want to index.
-    
+
 -   `DISTANCE_FUNCTION_NAME`: distance function to use with this index. Choose one of the following:
-    
+
     -   **L2 distance:** `l2`
-        
+
     -   **Dot product:** `dot_product`
-        
+
     -   **Cosine distance:** `cosine`
-        
+
 -   `INDEX_MODE`: mode to create the ScaNN index in. The available values are as follows:
-    
+
     -   `AUTO`: AlloyDB automatically manages and tunes the index's structure. The default `auto_maintenance` value, when `mode` is set to `AUTO`, is `on`.
-        
+
     -   `MANUAL`: Manually manage and tune your ScaNN index. The default `auto_maintenance` value, when `mode` is set to `MANUAL`, is `off`.
-        
-    
+
+
     For more information on which index mode to use, see [Create a ScaNN index](/alloydb/docs/ai/create-scann-index).
-    
+
 -   `NUM_PARTITIONS`: number of partitions to apply to this index. Set this to any value between `3` and `1048576`. For more information about how to decide this value, see [Tune a `ScaNN` index](/alloydb/docs/ai/tune-indexes).
-    
+
 
 ### Configure automatic maintenance for existing indexes
 
@@ -88,9 +88,9 @@ ALTER INDEX INDEX_NAME SET (auto_maintenance = AUTOMATIC_MAINTENANCE);
 Replace the following variables:
 
 -   `INDEX_NAME`: name of the index you want to alter. For example, `my_scann_index`.
-    
+
 -   `AUTOMATIC_MAINTENANCE`: enable or disable automatic maintenance. To enable, set the value to `on`. To disable, set the value to `off`.
-    
+
 
 ### Increase automatic maintenance throughput
 

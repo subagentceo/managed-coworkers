@@ -100,8 +100,8 @@ Our team will review submissions on a rolling basis and follow up with selected 
 
 Our experience has shown that refining an evaluation typically requires several iterations. You will have the opportunity to interact directly with our domain experts from the Frontier Red Team, Finetuning, Trust & Safety, and other relevant teams. Our teams can provide guidance to help shape your evaluations for maximum impact.
 
-We hope this initiative serves as a catalyst for progress towards a future where comprehensive AI evaluation is an industry standard. We invite you to join us in this important work and help shape the path forward.  
-  
+We hope this initiative serves as a catalyst for progress towards a future where comprehensive AI evaluation is an industry standard. We invite you to join us in this important work and help shape the path forward.
+
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/a-new-initiative-for-developing-third-party-model-evaluations)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/a-new-initiative-for-developing-third-party-model-evaluations)
 

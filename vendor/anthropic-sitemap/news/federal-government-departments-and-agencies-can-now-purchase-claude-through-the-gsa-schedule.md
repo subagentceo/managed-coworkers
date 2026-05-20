@@ -20,7 +20,7 @@ Anthropic has recently announced partnerships with [national laboratories](https
 
 **Get started**
 
-Organizations interested in transforming their operations with Claude can [contact our public sector team](mailto:pubsec@anthropic.com) to learn more and get started.  
+Organizations interested in transforming their operations with Claude can [contact our public sector team](mailto:pubsec@anthropic.com) to learn more and get started.
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/federal-government-departments-and-agencies-can-now-purchase-claude-through-the-gsa-schedule)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/federal-government-departments-and-agencies-can-now-purchase-claude-through-the-gsa-schedule)
 

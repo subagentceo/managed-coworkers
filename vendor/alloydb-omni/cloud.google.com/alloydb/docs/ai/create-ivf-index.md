@@ -17,13 +17,13 @@
 インデックスの作成を開始する前に、以下の前提条件を整える必要があります。
 
 -   AlloyDB データベースの[テーブルにエンベディング ベクトルが追加されている](https://docs.cloud.google.com/alloydb/docs/ai/store-embeddings?hl=ja)。
-    
+
 -   Google が AlloyDB 用に拡張した `pgvector` に基づく `vector` 拡張機能のバージョン `0.5.0` 以降がインストールされている。
-    
+
     ```
     CREATE EXTENSION IF NOT EXISTS vector;
     ```
-    
+
 
 ## `IVF` インデックスを作成する
 
@@ -40,30 +40,30 @@ CREATE INDEX INDEX_NAME ON TABLE
 次のように置き換えます。
 
 -   `INDEX_NAME`: 作成するインデックスの名前（例: `my-ivf-index`）。インデックス名はデータベース全体で共有されます。各インデックス名はデータベース内の各テーブルで一意となるようにしてください。
-    
+
 -   `TABLE`: インデックスを追加するテーブル。
-    
+
 -   `EMBEDDING_COLUMN`: `vector` データを格納する列。
-    
+
 -   `DISTANCE_FUNCTION`: このインデックスで使用する距離関数。次のいずれかを選択します。
-    
+
     -   **L2 距離:** `vector_l2_ops`
-        
+
     -   **内積:** `vector_ip_ops`
-        
+
     -   **コサイン距離:** `vector_cosine_ops`
-        
+
 -   `LIST_COUNT`: このインデックスで使用するリストの数。この値を決定する方法の詳細については、[IVF インデックスをチューニングする](https://docs.cloud.google.com/alloydb/docs/ai/tune-indexes?hl=ja)をご覧ください。
-    
+
 -   `QUANTIZER`: 使用する量子化方式のタイプ。
-    
+
     次のいずれかに設定します。
-    
+
     -   `SQ8`: 推奨。クエリ レスポンスが速くなりますが、一部の回帰損失が発生します。これは本番環境のシナリオには影響しません。
     -   `FLAT`: クエリ レスポンスが遅くなり、メモリ使用量が増加しますが、無視できる程度の再現率の低下にとどまります。
-    
+
     このインデックスを、`vector` ではなく `real[]` データ型を使用するエンベディング列に作成するには、列を `vector` データ型にキャストします。
-    
+
 
 ```
 CREATE INDEX INDEX_NAME ON TABLE
@@ -98,25 +98,25 @@ SELECT * FROM pg_stat_progress_create_index;
 次のように置き換えます。
 
 -   `TABLE`: テキストを比較するエンベディングを含むテーブル。
-    
+
 -   `INDEX_NAME`: 使用するインデックスの名前。例: `my-scann-index`
-    
+
 -   `EMBEDDING_COLUMN`: 保存されたエンベディングを含む列。
-    
+
 -   `DISTANCE_FUNCTION_QUERY`: このクエリで使用する距離関数。インデックスの作成時に使用した距離関数に基づいて、次のいずれかを選択します。
-    
+
     -   **L2 距離:** `<->`
-        
+
     -   **内積:** `<#>`
-        
+
     -   **コサイン距離:** `<=>`
-        
+
 -   `EMBEDDING`: 保存されているセマンティック ネイバーの中で最も近いものを見つけるエンベディング ベクトル。
-    
+
 -   `ROW_COUNT`: 返される行数。
-    
+
     最も適合するものが 1 つだけ必要な場合は、`1` を指定します。
-    
+
 
 他のクエリの例については、[クエリ](https://github.com/pgvector/pgvector?tab=readme-ov-file#querying)をご覧ください。
 

@@ -17,11 +17,11 @@ The `embedding()` function in the `public` schema can be used with any Gemini En
 Imagine a database running on AlloyDB with the following characteristics:
 
 -   The database contains a table, `items`. Each row in this table describes an item that your business sells.
-    
+
 -   The `items` table contains a column, `complaints`. This `TEXT` column stores buyer complaints logged about each item.
-    
+
 -   The database integrates with the Model Garden, giving it access to the `gemini-embedding-001` English models.
-    
+
 
 Even though this database stores complaints about items, these complaints are stored as plain text, making them difficult to query. For example, to see which items have the most complaints from customers who received the wrong color of merchandise, then you can perform ordinary SQL queries on the table, that look for various keyword matches. However, this approach only matches rows that contain those exact keywords.
 
@@ -32,13 +32,13 @@ SQL queries using LLM-powered embeddings can help return semantically similar re
 **Note:** When monitoring your usage and quotas in the Google Cloud console, remember that the model names might differ from the ones used in the documentation.
 
 -   For the `text-embedding-005` model, the `base_model` dimension in the Google Cloud console is `textembedding-gecko`.
-    
+
     The relevant quota is `Regional online prediction requests per base model per minute per region per base_model`.
-    
+
 -   For the `gemini-embedding-001` model, the `base_model` dimension is `gemini-embedding`.
-    
+
     The relevant quotas are `Embed content input tokens per minute per region per base_model` and `Regional online prediction requests per base model per minute per region per base_model`.
-    
+
 
 For basic embedding generation, select one of the following schemas.
 
@@ -52,34 +52,34 @@ To let AlloyDB generate embeddings, do the following:
 
 -   [Connect to your database using `psql`](/alloydb/docs/connect-psql) or AlloyDB for PostgreSQL Studio as the `postgres` user.
 -   [Verify that the `google_ml_integration` extension is installed](/alloydb/docs/ai/configure-vertex-ai#verify-installed-extension).
-    
+
     To check your extension version with the following command:
-    
+
     ```
     SELECT extversion FROM pg_extension WHERE extname = 'google_ml_integration';
     ```
-    
+
     If you need to update the extension, use the `ALTER EXTENSION google_ml_integration UPDATE;` command.
-    
+
     **Note:** If you don't have the necessary permissions, contact your database administrator to perform the update. Alternatively, you can wait for the new version to be automatically rolled out to your cluster.
-    
+
 -   Before you can generate embeddings from an AlloyDB database, you must configure AlloyDB to work with Agent Platform. For more information, see [Integrate your database with Agent Platform](/alloydb/docs/ai/configure-vertex-ai).
-    
+
 -   Grant permissions to database users to generate embeddings.
-    
+
     To generate embeddings, grant the `EXECUTE` permission on the `google_ml.embedding` function to the user:
-    
+
     ```
     \c 'DB_NAME';
     GRANT EXECUTE ON FUNCTION google_ml.embedding TO 'USER_NAME';
     ```
-    
+
     Replace the following:
-    
+
     -   DB\_NAME: the name of the database on which the permissions are granted.
-        
+
     -   USER\_NAME: the name of the user for whom the permissions are granted.
-        
+
 
 ## Generate embeddings
 
@@ -121,9 +121,9 @@ To generate embeddings for a registered `gemini-embedding-001` model endpoint, r
 If your AlloyDB cluster and the Gemini Enterprise Agent Platform endpoint are in different projects, follow these steps:
 
 1.  Run the following `CALL` statement.
-    
+
     **Note:** If your `google_ml_integration` extension is version 1.5.3 or later, then you don't need to use `model_in_transform_fn` and `model_out_transform_fn` for `gemini-embedding-001`.
-    
+
        ```
        CALL
          google_ml.create_model(
@@ -136,16 +136,16 @@ If your AlloyDB cluster and the Gemini Enterprise Agent Platform endpoint are in
            model_out_transform_fn => 'google_ml.vertexai_text_embedding_output_transform'
          );
     ```
-    
+
 2.  To generate embeddings for a registered `gemini-embedding-001` model endpoint, run the following statement:
-    
+
       ```
       SELECT
         google_ml.embedding(
           model_id => 'gemini-embedding-001',
           content => 'AlloyDB is a managed, cloud-hosted SQL database service');
     ```
-    
+
 
 ### OpenAI embedding model
 

@@ -37,7 +37,7 @@ Whereas the vast majority of uses of Claude are work-related (as we analyze in d
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdcfe3a58b728e541ee83bde18664bdbe1ab66a8f-1923x1080.png&w=3840&q=75)
 
-_Figure 1: Overall distribution of affective conversation types in Claude.ai Free and Pro._  
+_Figure 1: Overall distribution of affective conversation types in Claude.ai Free and Pro._
 
 Our findings align with [research](https://www.media.mit.edu/posts/openai-mit-research-collaboration-affective-use-and-emotional-wellbeing-in-ChatGPT/) from the MIT Media Lab and OpenAI, which similarly identified low rates of affective engagement with ChatGPT. While these conversations occur frequently enough to merit careful consideration in our design and policy decisions, they remain a relatively small fraction of overall usage.
 
@@ -51,7 +51,7 @@ People turn to Claude for both everyday concerns and deeper philosophical questi
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4846a1648d5bdda2bc9b89e518db29dcd8dc8a8b-1920x1920.png&w=3840&q=75)
 
-_Figure 2. Representative user-initiated topics and concerns across each overall conversation type, as identified by Clio via automated privacy-preserving summarization._  
+_Figure 2. Representative user-initiated topics and concerns across each overall conversation type, as identified by Clio via automated privacy-preserving summarization._
 
 We find that counseling conversations reveal people use Claude for two distinct purposes. Some use Claude to develop mental health skills and as a practical tool to create clinical documentation, draft assessment materials, and handle administrative tasks. Others work through personal challenges relating to anxiety, chronic symptoms, and workplace stress. This dual pattern suggests Claude serves as a resource for mental health professionals as well as those navigating their own struggles.
 
@@ -67,7 +67,6 @@ Our recent [Values in the Wild study](https://www.anthropic.com/research/values-
 
 **Pushback occurs infrequently in supportive contexts:** Less than 10% of companionship, counseling, interpersonal advice, or coaching conversations involve resistance. This approach carries both benefits and risks. On one hand, the low resistance allows people to discuss sensitive topics without fear of judgment or being shut down, potentially reducing stigma around mental health conversations. On the other hand, this could contribute to concerns about AI providing ["endless empathy,"](https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html#link-a10c569) where people might become accustomed to unconditional support that human relationships rarely provide.
 
-  
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F675d20464742d38fcc3823f7a56e641e0c5b03b6-1923x1081.png&w=3840&q=75)
 
@@ -85,11 +84,10 @@ A key concern about affective AI is whether interactions might spiral into negat
 
 We find that interactions involving coaching, counseling, companionship, and interpersonal advice typically end slightly more positively than they began.
 
-  
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0eb505977be9ec1bbf98438848040f9c914f6997-1923x1080.png&w=3840&q=75)
 
-_Figure 4. Changes in average human-expressed sentiment over the course of conversations with at least six human messages. We measure sentiment on a discrete scale of “very negative,” “negative,” “neutral,” “positive,” and “very positive”, which we map to a -1 (most negative) to +1 (most positive) linear scale. We compute the change by comparing the first three to the last three messages. Error bars: 95% CI (bootstrap, n = 1,000). For more information, see the Appendix._  
+_Figure 4. Changes in average human-expressed sentiment over the course of conversations with at least six human messages. We measure sentiment on a discrete scale of “very negative,” “negative,” “neutral,” “positive,” and “very positive”, which we map to a -1 (most negative) to +1 (most positive) linear scale. We compute the change by comparing the first three to the last three messages. Error bars: 95% CI (bootstrap, n = 1,000). For more information, see the Appendix._
 
 We cannot claim these shifts represent lasting emotional benefits—our analysis captures only expressed language in single conversations, not emotional states. But the absence of clear negative spirals is reassuring. These findings suggest Claude generally avoids reinforcing negative emotional patterns, though further research is needed to understand whether positive shifts persist beyond individual conversations. Importantly, we have not yet studied whether these positive interactions might lead to emotional dependency—a critical question given concerns about digital addiction.
 

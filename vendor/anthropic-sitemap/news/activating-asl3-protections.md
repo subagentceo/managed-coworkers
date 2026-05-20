@@ -69,9 +69,8 @@ Read the full [report](https://www.anthropic.com/activating-asl3-report).
 
 5For more information on our assessment of the effectiveness and sufficiency of these measures, see the [ASL-3 Deployment Safeguards Report](http://anthropic.com/asl3-deployment-safeguards).
 
-6Nation-state threats (other than those using non-novel attack chains) and sophisticated insider risk are out of the scope of the ASL-3 Standard.  
+6Nation-state threats (other than those using non-novel attack chains) and sophisticated insider risk are out of the scope of the ASL-3 Standard.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/activating-asl3-protections)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/activating-asl3-protections)
 

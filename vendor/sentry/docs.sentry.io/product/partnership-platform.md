@@ -6,7 +6,7 @@ url: https://docs.sentry.io/product/partnership-platform/
 
 # Partnership Platform
 
-# [Partnership Platform](https://docs.sentry.io/product/partnership-platform.md#partnership-platform)
+## [Partnership Platform](https://docs.sentry.io/product/partnership-platform.md#partnership-platform)
 
 Sentry offers powerful partnership capabilities that allow you to integrate error monitoring and performance insights directly into your platform. Whether you're a developer platform, hosting provider, or SaaS application, you can leverage Sentry's monitoring capabilities to enhance your customer experience.
 

@@ -44,11 +44,11 @@ If you're building Python applications using the LangChain framework and you wan
 
 -   [Enable the `google_ml_integration` extension](/alloydb/docs/reference/extensions#enable).
 -   Enable preview AI functions:
-    
+
     ```
     SET google_ml_integration.enable_preview_ai_functions = true;
     ```
-    
+
 
 ## Run a similarity search with text and vector input
 
@@ -67,11 +67,11 @@ CREATE INDEX INDEX_NAME ON TABLE USING GIN (to_tsvector('english', COLUMN_NAME))
 Replace the following:
 
 -   `INDEX_NAME`: the name of the index you want to create —for example, `my_gin_index`.
-    
+
 -   `TABLE`: the table to add the index to.
-    
+
 -   `COLUMN_NAME`: the column that stores the text data you want to search.
-    
+
 
 ### Create a ScaNN index
 
@@ -86,21 +86,21 @@ CREATE INDEX INDEX_NAME ON TABLE
 Replace the following:
 
 -   `INDEX_NAME`: the name of the index you want to create—for example, `my_scann_index`. The index names are shared across your database. Ensure that each index name is unique to each table in your database.
-    
+
 -   `TABLE`: the table to add the index to.
-    
+
 -   `EMBEDDING_COLUMN`: a column that stores `vector` data.
-    
+
 -   `DISTANCE_FUNCTION`: the distance function to use with this index. Choose one of the following:
-    
+
     -   **L2 distance:** `l2`
-        
+
     -   **Dot product:** `dot_product`
-        
+
     -   **Cosine distance:** `cosine`
-        
+
 -   `NUM_LEAVES_VALUE`: the number of partitions to apply to this index. Set to any value between 1 to 1048576. For more information about how to decide this value, see [Tune a `ScaNN` index](/alloydb/docs/ai/tune-indexes).
-    
+
 
 To learn more about different ScaNN index configurations, see [Choose a](/alloydb/docs/ai/create-scann-index) .
 
@@ -117,18 +117,18 @@ The `hybrid_search()` function dynamically constructs and executes a single SQL 
 Before you use the `hybrid_search` function, prepare your data and create the necessary indexes.
 
 1.  Create a table to store your documents.
-    
+
     ```
     CREATE TABLE documents (
       doc_id TEXT PRIMARY KEY,
       content TEXT,
       text_tsv tsvector GENERATED ALWAYS AS (to_tsvector('english', content)) STORED,
-      text_embedding vector(3072) GENERATED ALWAYS AS (embedding('gemini-embedding-001', content)) STORED 
+      text_embedding vector(3072) GENERATED ALWAYS AS (embedding('gemini-embedding-001', content)) STORED
     );
     ```
-    
+
 2.  Insert your data.
-    
+
     ```
     INSERT INTO documents (doc_id, content) VALUES
       ('doc1', 'AlloyDB is a fully managed, PostgreSQL-compatible database service.'),
@@ -142,27 +142,27 @@ Before you use the `hybrid_search` function, prepare your data and create the ne
       ('doc9', 'customers can create scann index'),
       ('doc10', 'to speed up their vector search workloads');
     ```
-    
+
 3.  Create indexes to accelerate search performance. For vector search, create a `scann` index. For full-text search, create a `GIN` index.
-    
+
     **Note:** You can also create a RUM index for a more performant full text search experience. For more information about creating RUM indexes, see [Create a RUM index](/alloydb/docs/ai/create-rum-index).
-    
+
     ```
     CREATE EXTENSION IF NOT EXISTS alloydb_scann;
     CREATE INDEX documents_text_embedding_idx
     ON documents USING scann (text_embedding cosine)
     WITH(num_leaves = 10, quantizer = 'SQ8');
-    
+
     CREATE INDEX documents_text_tsv_idx ON documents USING GIN (text_tsv);
     ```
-    
+
 
 #### Call the hybrid\_search function and review example output
 
 To learn about the parameters that the `hybrid_search` function accepts to help you control the search and fusion process, see [Hybrid search function parameters](/alloydb/docs/reference/ai/hybrid-search-function-parameters).
 
 1.  Call the `hybrid_search` function to combine vector and full-text search results. This step combines the search results achieved by running the query defined by the user's search input.
-    
+
     ```
     SELECT *
     FROM ai.hybrid_search(
@@ -191,15 +191,15 @@ To learn about the parameters that the `hybrid_search` function accepts to help 
       include_json_output => false
     );
     ```
-    
+
     `include_json_output` is an optional parameter. For more information, see [Hybrid search function parameters](/alloydb/docs/reference/ai/hybrid-search-function-parameters).
-    
+
     **Note:** If you created a RUM index for full text search, then change the value of the `ranking` parameter to `<=>`.
-    
+
 2.  Review the output.
-    
+
     When `include_json_output` is `false`, the output contains the document ID and the final score.
-    
+
       ```
       id  |        score
     ------+----------------------
@@ -210,17 +210,17 @@ To learn about the parameters that the `hybrid_search` function accepts to help 
      doc4 | 0.007692312692
     (5 rows)
     ```
-    
+
     When `include_json_output` is `true`, the output includes a `detail_json` column with a breakdown of the score calculation for each component.
-    
+
       ```
       id  |        score         |                                                                                                                                                detail_json
-    ------+----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+    ------+----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
      doc1 |  0.01639344262 | {"item_id": "doc1", "calculation": {"component_1": {"rank": 1, "weight": 0.5, "data_type": "vector", "component_score": 0.01639344262295081967, "execute_time_ms": 5}, "component_2": {"rank": 1, "weight": 0.5, "data_type": "text", "component_score": 0.01639344262295081967, "execute_time_ms": 4}}, "final_score": 0.01639344262295082}
      doc5 | 0.016129032258 | {"item_id": "doc5", "calculation": {"component_1": {"rank": 2, "weight": 0.5, "data_type": "vector", "component_score": 0.01612903225806451613, "execute_time_ms": 5}, "component_2": {"rank": 2, "weight": 0.5, "data_type": "text", "component_score": 0.01612903225806451613, "execute_time_ms": 4}}, "final_score": 0.016129032258064516}
      ...
     ```
-    
+
 
 #### Specify the data type of the final return type
 
@@ -336,17 +336,17 @@ The following example shows you how to combine full text search and hybrid searc
 Replace the following:
 
 -   `MODEL_ID`: the ID of the model to query.
-    
+
     If you're using the Model Garden, then specify `gemini-embedding-001` as the model ID. These are the cloud-based models that AlloyDB can use for text embeddings. For more information, see [Text embeddings](/gemini-enterprise-agent-platform/reference/models/text-embeddings-api).
-    
+
 -   `TABLE`: the table containing your data.
-    
+
 -   `TEXT`: the text to translate into a vector embedding.
-    
+
 -   `KEYWORD`: the keyword you want to search for.
-    
+
 -   `COLUMN_NAME`: a column that stores contains the text data you want to search.
-    
+
 
 Explanation of the Hybrid Search Query and related Common Table Expression (CTE):
 
@@ -372,3 +372,4 @@ Send feedback
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2026-05-15 UTC.
+```

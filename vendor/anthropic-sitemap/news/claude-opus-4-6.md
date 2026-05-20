@@ -50,146 +50,146 @@ We build Claude with Claude. Our engineers write code with Claude Code every day
 
 Opus 4.6 often thinks more deeply and more carefully revisits its reasoning before settling on an answer. This produces better results on harder problems, but can add cost and latency on simpler ones. If you’re finding that the model is overthinking on a given task, we recommend dialing effort down from its default setting (high) to medium. You can control this easily with the `/effort` [parameter](https://platform.claude.com/docs/en/build-with-claude/effort).
 
-Here are some of the things our Early Access partners told us about Claude Opus 4.6, including its propensity to work autonomously without hand-holding, its success where previous models failed, and its effect on how teams work:  
+Here are some of the things our Early Access partners told us about Claude Opus 4.6, including its propensity to work autonomously without hand-holding, its success where previous models failed, and its effect on how teams work:
 
 ![Notion logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/7cfef6cd8ce2515a6abd52560ac4189f89f9ad35-116x40.svg)
 
 > Claude Opus 4.6 is the strongest model Anthropic has shipped. It takes complicated requests and actually follows through, breaking them into concrete steps, executing, and producing polished work even when the task is ambitious. For Notion users, it feels less like a tool and more like a capable collaborator.
-> 
-> Sarah Sachs  
+>
+> Sarah Sachs
 > AI Lead, Notion
 
 ![GitHub logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/7522fc92399dcb4a68f11c7e147e711fcadbe75b-126x36.svg)
 
 > Early testing shows Claude Opus 4.6 delivering on the complex, multi-step coding work developers face every day—especially agentic workflows that demand planning and tool calling. This starts unlocking long-horizon tasks at the frontier.
-> 
-> Mario Rodriguez  
+>
+> Mario Rodriguez
 > Chief Product Officer, GitHub
 
 ![Replit logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/ff1601aa704506064c9ddee37079f17f9b0799cd-150x48.svg)
 
 > Claude Opus 4.6 is a huge leap for agentic planning. It breaks complex tasks into independent subtasks, runs tools and subagents in parallel, and identifies blockers with real precision.
-> 
-> Michele Catasta  
+>
+> Michele Catasta
 > President, Replit
 
 ![Asana logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/6d031c0893b24dd00e9f207c7635d6b91d809729-124x24.svg)
 
 > Claude Opus 4.6 is the best model we've tested yet. Its reasoning and planning capabilities have been exceptional at powering our AI Teammates. It's also a fantastic coding model – its ability to navigate a large codebase and identify the right changes to make is state of the art.
-> 
-> Amritansh Raghav  
+>
+> Amritansh Raghav
 > Interim CTO, Asana
 
 ![Cognition logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/da50e4c43d4b95fe1a2105c344050c6ba2397f3f-150x48.svg)
 
 > Claude Opus 4.6 reasons through complex problems at a level we haven't seen before. It considers edge cases that other models miss and consistently lands on more elegant, well-considered solutions. We're particularly impressed with Opus 4.6 in Devin Review, where it's increased our bug catching rates.
-> 
-> Scott Wu  
+>
+> Scott Wu
 > CEO, Cognition
 
 ![Windsurf logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/7415f908eca858ec4c3453c5d8151e46a0fb1e6d-150x48.svg)
 
 > Claude Opus 4.6 feels noticeably better than Opus 4.5 in Windsurf, especially on tasks that require careful exploration like debugging and understanding unfamiliar codebases. We’ve noticed Opus 4.6 thinks longer, which pays off when deeper reasoning is needed.
-> 
-> Jeff Wang  
+>
+> Jeff Wang
 > CEO, Windsurf
 
 ![Thomson Reuters logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/ff031ea5953adc10e50782ff6c8124ad6ce28ba6-213x31.svg)
 
 > Claude Opus 4.6 represents a meaningful leap in long-context performance. In our testing, we saw it handle much larger bodies of information with a level of consistency that strengthens how we design and deploy complex research workflows. Progress in this area gives us more powerful building blocks to deliver truly expert-grade systems professionals can trust.
-> 
-> Joel Hron  
+>
+> Joel Hron
 > Chief Technology Officer, Thomson Reuters
 
 ![NBIM logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/5d27d5fd738921411bb1e39bc27c396c6c075b4b-157x38.svg)
 
 > Across 40 cybersecurity investigations, Claude Opus 4.6 produced the best results 38 of 40 times in a blind ranking against Claude 4.5 models. Each model ran end to end on the same agentic harness with up to 9 subagents and 100+ tool calls.
-> 
-> Stian Kirkeberg  
+>
+> Stian Kirkeberg
 > Head of AI & ML, NBIM
 
 ![Cursor logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/d74b2a5f8dc7d22b0febb8c69feabff0999da79d-151x36.svg)
 
 > Claude Opus 4.6 is the new frontier on long-running tasks from our internal benchmarks and testing. It's also been highly effective at reviewing code.
-> 
-> Michael Truell  
+>
+> Michael Truell
 > Co-founder & CEO, Cursor
 
 ![Harvey logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/501ebc6538c68e98ae6cfab79a5747009700f4a1-100x30.svg)
 
 > Claude Opus 4.6 achieved the highest BigLaw Bench score of any Claude model at 90.2%. With 40% perfect scores and 84% above 0.8, it’s remarkably capable for legal reasoning.
-> 
-> Niko Grupen  
+>
+> Niko Grupen
 > Head of AI Research, Harvey
 
 ![Rakuten logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/652c487024ae6e67508571e7e5f64b7d482bdadd-150x48.svg)
 
 > Claude Opus 4.6 autonomously closed 13 issues and assigned 12 issues to the right team members in a single day, managing a ~50-person organization across 6 repositories. It handled both product and organizational decisions while synthesizing context across multiple domains, and it knew when to escalate to a human.
-> 
-> Yusuke Kaji  
+>
+> Yusuke Kaji
 > General Manager, AI, Rakuten
 
 ![Lovable logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/96f4d2262959c4c1ecdc9dc2d93b9087115d789f-140x26.svg)
 
 > Claude Opus 4.6 is an uplift in design quality. It works beautifully with our design systems and it’s more autonomous, which is core to Lovable’s values. People should be creating things that matter, not micromanaging AI.
-> 
-> Fabian Hedin  
+>
+> Fabian Hedin
 > Co-founder, Lovable
 
 ![Box logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/49b99af78924f43f878d39a25d574da293c68596-60x32.svg)
 
 > Claude Opus 4.6 excels in high-reasoning tasks like multi-source analysis across legal, financial, and technical content. Box’s eval showed a 10% lift in performance, reaching 68% vs. a 58% baseline, and near-perfect scores in technical domains.
-> 
-> Yashodha Bhavnani  
+>
+> Yashodha Bhavnani
 > Head of AI, Box
 
 ![Figma logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/eba077a5df68d0e74010602595c597520c850a0d-80x30.svg)
 
 > Claude Opus 4.6 generates complex, interactive apps and prototypes in Figma Make with an impressive creative range. The model translates detailed designs and multi-layered tasks into code on the first try, making it a powerful starting point for teams to explore and build ideas.
-> 
-> Loredana Crisan  
+>
+> Loredana Crisan
 > Chief Design Officer, Figma
 
 ![Shopify logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/02dced142fb26d4a3441cad79f997a1fd6c9a8b0-150x48.svg)
 
 > Claude Opus 4.6 is the best Anthropic model we’ve tested. It understands intent with minimal prompting and went above and beyond, exploring and creating details I didn’t even know I wanted until I saw them. It felt like I was working with the model, not waiting on it.
-> 
-> Paulo Arruda  
+>
+> Paulo Arruda
 > Staff Engineer, Shopify
 
 ![Bolt.new logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/ade72922c1b58726e1b7c17f0e500054e3d74aa0-92x37.svg)
 
 > Both hands-on testing and evals show Claude Opus 4.6 is a meaningful improvement for design systems and large codebases, use cases that drive enormous enterprise value. It also one-shotted a fully functional physics engine, handling a large multi-scope task in a single pass.
-> 
-> Eric Simons  
+>
+> Eric Simons
 > CEO, Bolt.new
 
 ![Ramp logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/1919e4705bd67f47c2f5bfe4950d0d2969dfaf4d-118x32.svg)
 
 > Claude Opus 4.6 is the biggest leap I’ve seen in months. I’m more comfortable giving it a sequence of tasks across the stack and letting it run. It’s smart enough to use subagents for the individual pieces.
-> 
-> Jerry Tsui  
+>
+> Jerry Tsui
 > Staff Software Engineer, Ramp
 
 ![SentinelOne logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/6e6ecfcd7c8ed79ef1c46cc27c4ecc4ab1ca7490-219x42.svg)
 
 > Claude Opus 4.6 handled a multi-million-line codebase migration like a senior engineer. It planned up front, adapted its strategy as it learned, and finished in half the time.
-> 
-> Gregor Stewart  
+>
+> Gregor Stewart
 > Chief AI Officer, SentinelOne
 
 ![Vercel logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/23bd0e83f41047df414b1635b513d8f9e1c3c628-150x48.svg)
 
 > We only ship models in v0 when developers will genuinely feel the difference. Claude Opus 4.6 passed that bar with ease. Its frontier-level reasoning, especially with edge cases, helps v0 to deliver on our number-one aim: to let anyone elevate their ideas from prototype to production.
-> 
-> Zeb Hermann  
+>
+> Zeb Hermann
 > General Manager, v0, Vercel
 
 ![Shortcut.ai logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/d7be9db28564ebd6a8e5241d3d4e34a031775e96-63x64.svg)
 
 > The performance jump with Claude Opus 4.6 feels almost unbelievable. Real-world tasks that were challenging for Opus \[4.5\] suddenly became easy. This feels like a watershed moment for spreadsheet agents on Shortcut.
-> 
-> Nico Christie  
+>
+> Nico Christie
 > Co-founder & CTO, Shortcut.ai
 
 01 / 20

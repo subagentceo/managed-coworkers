@@ -24,7 +24,6 @@ Researchers attached to a research institution interested in the AI for Science 
 
 We look forward to seeing how researchers use our API to push the boundaries of scientific discovery and create positive impact in the world.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/ai-for-science-program)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/ai-for-science-program)
 

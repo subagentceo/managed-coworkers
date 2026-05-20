@@ -18,7 +18,6 @@ Anthropic’s unique compute strategy focuses on a diversified approach that eff
 
 Anthropic will continue to invest in additional compute capacity to ensure our models and capabilities remain at the frontier.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services)
 

@@ -42,68 +42,68 @@ For information about other MCP servers and information about security and gover
 
 -   Sign in to your Google Cloud account. If you're new to Google Cloud, [create an account](https://console.cloud.google.com/freetrial) to evaluate how our products perform in real-world scenarios. New customers also get $300 in free credits to run, test, and deploy workloads.
 -   In the Google Cloud console, on the project selector page, select or create a Google Cloud project.
-    
+
     **Roles required to select or create a project**
-    
+
     -   **Select a project**: Selecting a project doesn't require a specific IAM role—you can select any project that you've been granted a role on.
     -   **Create a project**: To create a project, you need the Project Creator role (`roles/resourcemanager.projectCreator`), which contains the `resourcemanager.projects.create` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     **Note**: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.
-    
+
     [Go to project selector](https://console.cloud.google.com/projectselector2/home/dashboard)
-    
+
 -   If you're using an existing project for this guide, [verify that you have the permissions required to complete this guide](#required-roles). If you created a new project, then you already have the required permissions.
-    
+
 -   Enable the AlloyDB, Database Insights APIs.
-    
+
     **Roles required to enable APIs**
-    
+
     To enable APIs, you need the Service Usage Admin IAM role (`roles/serviceusage.serviceUsageAdmin`), which contains the `serviceusage.services.enable` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     [Enable the APIs](https://console.cloud.google.com/apis/enableflow?apiid=alloydb.googleapis.com,dbinsights.googleapis.com)
-    
+
 -   [Install](/sdk/docs/install) the Google Cloud CLI.
-    
+
     **Note:** If you installed the gcloud CLI previously, make sure you have the latest version by running `gcloud components update`.
-    
+
 -   If you're using an external identity provider (IdP), you must first [sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
-    
+
 -   To [initialize](/sdk/docs/initializing) the gcloud CLI, run the following command:
-    
+
     gcloud init
-    
+
 
 -   In the Google Cloud console, on the project selector page, select or create a Google Cloud project.
-    
+
     **Roles required to select or create a project**
-    
+
     -   **Select a project**: Selecting a project doesn't require a specific IAM role—you can select any project that you've been granted a role on.
     -   **Create a project**: To create a project, you need the Project Creator role (`roles/resourcemanager.projectCreator`), which contains the `resourcemanager.projects.create` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     **Note**: If you don't plan to keep the resources that you create in this procedure, create a project instead of selecting an existing project. After you finish these steps, you can delete the project, removing all resources associated with the project.
-    
+
     [Go to project selector](https://console.cloud.google.com/projectselector2/home/dashboard)
-    
+
 -   If you're using an existing project for this guide, [verify that you have the permissions required to complete this guide](#required-roles). If you created a new project, then you already have the required permissions.
-    
+
 -   Enable the AlloyDB, Database Insights APIs.
-    
+
     **Roles required to enable APIs**
-    
+
     To enable APIs, you need the Service Usage Admin IAM role (`roles/serviceusage.serviceUsageAdmin`), which contains the `serviceusage.services.enable` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     [Enable the APIs](https://console.cloud.google.com/apis/enableflow?apiid=alloydb.googleapis.com,dbinsights.googleapis.com)
-    
+
 -   [Install](/sdk/docs/install) the Google Cloud CLI.
-    
+
     **Note:** If you installed the gcloud CLI previously, make sure you have the latest version by running `gcloud components update`.
-    
+
 -   If you're using an external identity provider (IdP), you must first [sign in to the gcloud CLI with your federated identity](/iam/docs/workforce-log-in-gcloud).
-    
+
 -   To [initialize](/sdk/docs/initializing) the gcloud CLI, run the following command:
-    
+
     gcloud init
-    
+
 
 ### Required roles
 
@@ -208,11 +208,11 @@ You can use the Database Insights MCP server to identify slow queries and unders
 **Workflow:** The workflow for monitoring query performance includes the following steps:
 
 -   **Data fetching**: The agent calls the `query_metrics` tool with a PromQL query configured to fetch `alloydb.googleapis.com/database/postgresql/insights/perquery/execution_time`.
-    
+
 -   **Analysis**: The agent processes the returned time-series data to identify the queries with the highest accumulated execution time.
-    
+
 -   **Reporting**: The agent lists the query hashes and their respective execution times, helping you identify potential bottlenecks.
-    
+
 
 ### System health check
 
@@ -225,11 +225,11 @@ You can monitor the resource utilization of your AlloyDB instances to ensure the
 **Workflow**: The workflow for a system health check includes the following steps:
 
 -   **Metric retrieval**: The agent uses the `system_metrics` tool to fetch `alloydb.googleapis.com/instance/cpu/average_utilization` and `alloydb.googleapis.com/instance/memory/min_available_memory` for the specified instance.
-    
+
 -   **Summarization**: The agent aggregates the data over the 24-hour period.
-    
+
 -   **Reporting**: The agent provides a summary of the CPU and memory trends, alerting you if utilization peaked near the limits.
-    
+
 
 ## Optional security and safety configurations
 
@@ -252,32 +252,32 @@ You must enable Model Armor APIs before you can use Model Armor.
 ### Console
 
 1.  Enable the Model Armor API.
-    
+
     **Roles required to enable APIs**
-    
+
     To enable APIs, you need the Service Usage Admin IAM role (`roles/serviceusage.serviceUsageAdmin`), which contains the `serviceusage.services.enable` permission. [Learn how to grant roles](/iam/docs/granting-changing-revoking-access).
-    
+
     [Enable the API](https://console.cloud.google.com/apis/enableflow?apiid=modelarmor.googleapis.com)
-    
+
 2.  Select the project where you want to activate Model Armor.
-    
+
 
 ### gcloud
 
 Before you begin, follow these steps using the Google Cloud CLI with the Model Armor API:
 
 1.  In the Google Cloud console, activate Cloud Shell.
-    
+
     [Activate Cloud Shell](https://console.cloud.google.com/?cloudshell=true)
-    
+
     At the bottom of the Google Cloud console, a [Cloud Shell](/shell/docs/how-cloud-shell-works) session starts and displays a command-line prompt. Cloud Shell is a shell environment with the Google Cloud CLI already installed and with values already set for your current project. It can take a few seconds for the session to initialize.
-    
+
 2.  Run the following command to set the API endpoint for the Model Armor service.
-    
+
     gcloud config set api\_endpoint\_overrides/modelarmor "https://modelarmor.LOCATION.rep.googleapis.com/"
-    
+
     Replace `LOCATION` with the region where you want to use Model Armor.
-    
+
 
 #### Configure protection for Google and Google Cloud remote MCP servers
 

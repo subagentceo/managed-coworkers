@@ -27,25 +27,25 @@ Make sure that a context set is already created and the context set file is uplo
 To test a QueryData, perform the following steps:
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign in to **Studio** using Identity and Access Management authentication.
-    
+
 5.  In the **Explorer pane**, click **View actions** next to the context set you're using.
-    
+
 6.  Click **Test context set**.
-    
+
 7.  In the query editor, click **Generate SQL** to open the **Help me code** panel.
-    
+
 8.  Enter a natural language question in the editor to generate a SQL query, and click **Generate**.
-    
+
 9.  Review the SQL query for accuracy.
-    
+
 
 ## Download and update a context set
 
@@ -70,21 +70,21 @@ After you are satisfied with the accuracy of your responses, you can use the `Qu
 To connect a data application to the QueryData agent, you need the context set's ID.
 
 1.  In the Google Cloud console, go to the AlloyDB page.
-    
+
     [Go to AlloyDB](https://console.cloud.google.com/alloydb)
-    
+
 2.  Select a cluster from the list.
-    
+
 3.  In the navigation menu, click **AlloyDB Studio**.
-    
+
 4.  Sign into **Studio** using Identity and Access Management authentication.
-    
+
 5.  In the **Explorer pane**, click **View actions** next to the context set you're using.
-    
+
 6.  Click **Edit context set**.
-    
+
 7.  Note the context ID in **Context set ID**. The context set ID format is similar to `projects/data-agents-project/locations/us-east1/contextSets/bdf_pg_all_templates`.
-    
+
 
 ## Connect QueryData to application
 

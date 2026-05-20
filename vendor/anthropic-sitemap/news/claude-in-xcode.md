@@ -31,7 +31,7 @@ To start using Claude in Xcode:
 
 Claude in Xcode works with all plans that include Claude Code—Pro and Max, plus premium seats for Team and Enterprise plans.
 
-  
+
 For more details, see the [Xcode 26 release notes](https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes) and [Apple's documentation on writing code with intelligence in Xcode](https://developer.apple.com/documentation/Xcode/writing-code-with-intelligence-in-xcode).
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/claude-in-xcode)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/claude-in-xcode)

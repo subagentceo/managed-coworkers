@@ -20,7 +20,7 @@ Claude Sonnet 4.5, released [two weeks ago](https://www.anthropic.com/news/claud
 
 Claude Haiku 4.5 is available everywhere today. If you’re a developer, simply use claude-haiku-4-5 via the Claude API. Pricing is now $1/$5 per million input and output tokens.
 
-##   
+##
 Benchmarks
 
 ![Comparison table of frontier models across popular benchmarks](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F029af67124b67bdf0b50691a8921b46252c023d2-1920x1625.png&w=3840&q=75)
@@ -30,57 +30,57 @@ Claude Haiku 4.5 is one of our most powerful models to date. See footnotes for m
 ![ logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/a638c23edfce0d313f951732a2379b89cd40d682-235x64.svg)
 
 > Claude Haiku 4.5 hit a sweet spot we didn't think was possible: **near-frontier coding quality with blazing speed and cost efficiency**. In Augment's agentic coding evaluation, it achieves 90% of Sonnet 4.5's performance, matching much larger models. We're excited to offer it to our users.
-> 
-> Guy Gur-Ari  
+>
+> Guy Gur-Ari
 > Co-Founder
 
 ![ logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/14c3ac690679578d7361cf67c93f11782531d602-150x48.svg)
 
 > **Claude Haiku 4.5 is a leap forward for agentic coding**, particularly for sub-agent orchestration and computer use tasks. The responsiveness makes AI-assisted development in Warp feel instantaneous.
-> 
-> Zach Lloyd  
+>
+> Zach Lloyd
 > Founder & CEO
 
 ![ logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/094b76abf3e64453c224e12ae388b8008b02660e-150x48.svg)
 
 > Historically models have sacrificed speed and cost for quality. Claude Haiku 4.5 is blurring the lines on this trade off: **it's a fast frontier model that keeps costs efficient** and signals where this class of models is headed.
-> 
-> Jeff Wang  
+>
+> Jeff Wang
 > CEO
 
 ![ logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/02dced142fb26d4a3441cad79f997a1fd6c9a8b0-150x48.svg)
 
 > **Claude Haiku 4.5 delivers intelligence without sacrificing speed**, enabling us to build AI applications that utilize both deep reasoning and real-time responsiveness.
-> 
-> Ben Lafferty  
+>
+> Ben Lafferty
 > Staff Engineer
 
 ![ logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/9235b38d087c4aea7debc0e62fc6f37d337ff237-356x68.svg)
 
 > Claude Haiku 4.5 is remarkably capable—**just six months ago, this level of performance would have been state-of-the-art** on our internal benchmarks. Now it runs up to 4-5 times faster than Sonnet 4.5 at a fraction of the cost, unlocking an entirely new set of use cases.
-> 
-> Andrew Filev  
+>
+> Andrew Filev
 > CEO
 
 ![ logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/023ced6d84b14452f308b629b8931b80d8120e28-150x48.svg)
 
 > Speed is the new frontier for AI agents operating in feedback loops. **Haiku 4.5 proves you can have both intelligence and rapid output**. It handles complex workflows reliably, self-corrects in real-time, and maintains momentum without latency overhead. For most development tasks, it's the ideal performance balance.
-> 
-> Brad Axen  
+>
+> Brad Axen
 > Tech Lead, AI
 
 ![Gamma logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/d1a7e2e3c3c9c90411efd32141c8dc02f83efef2-150x48.svg)
 
 > Claude Haiku 4.5 **outperformed our current models on instruction-following for slide text generation**, achieving 65% accuracy versus 44% from our premium tier model—that's a game-changer for our unit economics.
-> 
-> Jon Noronha  
+>
+> Jon Noronha
 > Co-Founder, Gamma
 
 ![ logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/7715b118c5eb0ff2a85f1f7914bce8c634ecacbd-150x48.svg)
 
 > Our early testing shows that Claude Haiku 4.5 brings efficient code generation to GitHub Copilot **with comparable quality to Sonnet 4 but at faster speed**. Already we're seeing it as an excellent choice for Copilot users who value speed and responsiveness in their AI-powered development workflows.
-> 
-> Matthew Isabel  
+>
+> Matthew Isabel
 > Distinguished Product Manager
 
 01 / 08

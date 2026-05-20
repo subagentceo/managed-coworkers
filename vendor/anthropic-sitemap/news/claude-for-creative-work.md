@@ -43,8 +43,8 @@ Anthropic has made a donation to support the Blender project as they continue to
 
 ## **Working with students and educators**
 
-We’re also working with art and design programs to support curricula that involve creative computation. The first three such programs are Art and Computation at Rhode Island School of Design, Fundamentals of AI for Creatives at Ringling College of Art and Design, and the MA/MFA Computational Arts program at Goldsmiths, University of London. Students and faculty will get access to Claude and the new connectors, and their feedback will help us understand what creative practitioners need from these tools. We look forward to learning from them, and to expanding the program to more institutions in the future.  
-  
+We’re also working with art and design programs to support curricula that involve creative computation. The first three such programs are Art and Computation at Rhode Island School of Design, Fundamentals of AI for Creatives at Ringling College of Art and Design, and the MA/MFA Computational Arts program at Goldsmiths, University of London. Students and faculty will get access to Claude and the new connectors, and their feedback will help us understand what creative practitioners need from these tools. We look forward to learning from them, and to expanding the program to more institutions in the future.
+
 _Updated May 1, 2026: Blender has elected to receive Anthropic's contribution as a one-time donation rather than through the Blender Development Fund; the post has been revised to reflect this. Accordingly, we've also edited the wording used to describe the collaborations listed._
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/claude-for-creative-work)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/claude-for-creative-work)

@@ -34,7 +34,6 @@ Earlier this year, we proposed a [framework](https://www.anthropic.com/news/the-
 
 As AI systems grow more powerful, the public deserves visibility into how they're being developed and what safeguards are in place. We look forward to working with Congress and the administration to develop a national transparency framework that ensures safety while preserving America’s AI leadership.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/compliance-framework-SB53)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/compliance-framework-SB53)
 

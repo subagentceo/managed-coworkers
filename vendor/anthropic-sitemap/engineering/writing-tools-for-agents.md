@@ -92,7 +92,7 @@ As well as top-level accuracy, we recommend collecting other metrics like the to
 
 Held-out test set performance of our internal Asana tools
 
-**Analyzing results**  
+**Analyzing results**
 Agents are your helpful partners in spotting issues and providing feedback on everything from contradictory tool descriptions to inefficient tool implementations and confusing tool schemas. However, keep in mind that what agents omit in their feedback and responses can often be more important than what they include. LLMs don’t always [say what they mean](https://www.anthropic.com/research/tracing-thoughts-language-model).
 
 Observe where your agents get stumped or confused. Read through your evaluation agents’ reasoning and feedback (or CoT) to identify rough edges. Review the raw transcripts (including tool calls and tool responses) to catch any behavior not explicitly described in the agent’s CoT. Read between the lines; remember that your evaluation agents don’t necessarily know the correct answers and strategies.
@@ -229,7 +229,6 @@ Written by Ken Aizawa with valuable contributions from colleagues across Researc
 ### Looking to learn more?
 
 Explore courses
-
 
 
 ](https://anthropic.skilljar.com/)

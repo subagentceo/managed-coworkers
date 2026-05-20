@@ -23,7 +23,6 @@ Of course, company-level action isn't enough. Keeping electricity affordable als
 
 Done right, AI infrastructure can be a catalyst for the broader energy investment the country needs. These commitments are the beginning of our efforts to address data centers’ impact on energy costs. We have more to do, and we’ll continue to share updates as this work develops.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/covering-electricity-price-increases)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/covering-electricity-price-increases)
 

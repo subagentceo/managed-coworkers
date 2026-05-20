@@ -36,55 +36,54 @@ Antes de usar el lenguaje natural en los operadores de SQL, haz lo siguiente:
 1.  [Configura el acceso de los usuarios a los modelos de Vertex AI](https://docs.cloud.google.com/alloydb/docs/ai/configure-vertex-ai?hl=es).
 2.  Comprueba que tienes instalada la versión más reciente de `google_ml_integration`.
     1.  Para comprobar la versión instalada, ejecuta el siguiente comando:
-        
+
                 SELECT extversion FROM pg\_extension WHERE extname \= 'google\_ml\_integration';
-                extversion 
+                extversion
                 \------------
                 1.5.2
                 (1 row)
-              
+
     2.  Si la extensión no está instalada o la versión instalada es anterior a la 1.5.2, actualízala.
-        
+
                 CREATE EXTENSION IF NOT EXISTS google\_ml\_integration;
                 ALTER EXTENSION google\_ml\_integration UPDATE;
-              
-        
+
+
         Si tienes problemas al ejecutar los comandos anteriores o si la extensión no se actualiza a la versión 1.5.2 después de ejecutar los comandos anteriores, ponte en contacto con el [Google Cloud equipo de Asistencia](https://cloud.google.com/support?hl=es).
-        
+
 3.  Para usar la función del motor de consultas de AlloyDB AI, define la marca `google_ml_integration.enable_ai_query_engine` en `true`.
-    
+
     ### SQL
-    
-    1.  Habilita el motor de consultas de IA para la sesión actual.  
-        
+
+    1.  Habilita el motor de consultas de IA para la sesión actual.
+
                       SET google\_ml\_integration.enable\_ai\_query\_engine \= true;
-                      
-    2.  Habilita funciones para una base de datos específica en todas las sesiones.  
-        
+
+    2.  Habilita funciones para una base de datos específica en todas las sesiones.
+
                       ALTER DATABASE DATABASE\_NAME SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-                      
-    3.  Habilita el motor de consultas de IA para un usuario específico en todas las sesiones y bases de datos.  
-        
+
+    3.  Habilita el motor de consultas de IA para un usuario específico en todas las sesiones y bases de datos.
+
                       ALTER ROLE postgres SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-                    
-    
+
+
     ### Consola
-    
+
     Para modificar el valor de la marca `google_ml_integration.enable_ai_query_engine`, sigue los pasos que se indican en [Configurar las marcas de base de datos de una instancia](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=es#console).
-    
+
     ### gcloud
-    
+
     Para usar la CLI de gcloud, puedes [instalar e inicializar](https://docs.cloud.google.com/sdk/docs/install?hl=es) Google Cloud CLI o usar [Cloud Shell](https://docs.cloud.google.com/shell/docs/using-cloud-shell?hl=es).
-    
+
     Puedes modificar el valor de la marca `google_ml_integration.enable_ai_query_engine`. Para obtener más información, consulta [Configurar las marcas de la base de datos de una instancia](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=es#console).
-    
+
                  gcloud alloydb instances update INSTANCE\_ID \\
                    --database-flags google\_ml\_integration.enable\_ai\_query\_engine=on \\
                    --region=REGION\_ID \\
                    --cluster=CLUSTER\_ID \\
                    --project=PROJECT\_ID
-                
-    
+
 
 ### Usar un modelo de Gemini que esté disponible en tu zona
 
@@ -222,16 +221,17 @@ LIMIT 20;
 ## Siguientes pasos
 
 -   [Registra un endpoint de modelo con la gestión de endpoints de modelos](https://docs.cloud.google.com/alloydb/docs/ai/register-model-endpoint?hl=es).
-    
+
 -   [Clasifica y puntúa los resultados de búsqueda para RAG.](https://docs.cloud.google.com/alloydb/docs/ai/rank-rerank-search-results-rag?hl=es)
-    
+
 -   [Filtrar semánticamente las consultas de SQL y clasificar los resultados.](https://codelabs.developers.google.com/alloydb-ai-operators?hl=es)
-    
+
 -   [Realizar previsiones de series temporales](https://docs.cloud.google.com/alloydb/docs/ai/perform-time-series-forecasting?hl=es)
-    
+
 
 Enviar comentarios
 
 A menos que se indique lo contrario, el contenido de esta página está sujeto a la [licencia Reconocimiento 4.0 de Creative Commons](https://creativecommons.org/licenses/by/4.0/) y las muestras de código están sujetas a la [licencia Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). Para obtener más información, consulta las [políticas del sitio web de Google Developers](https://developers.google.com/site-policies?hl=es). Java es una marca registrada de Oracle o sus afiliados.
 
 Última actualización: 2026-01-15 (UTC).
+```

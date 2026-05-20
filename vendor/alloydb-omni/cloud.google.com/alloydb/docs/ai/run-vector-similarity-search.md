@@ -31,23 +31,23 @@ To find the nearest semantic neighbors for an embedding vector, you can run the 
 Replace the following:
 
 -   `TABLE`: the table containing the embedding to compare the text to.
-    
+
 -   `EMBEDDING_COLUMN`: the column containing the stored embeddings.
-    
+
 -   `DISTANCE_FUNCTION_QUERY`: the distance function to use with this query. Choose one of the following based on the distance function used while creating the index:
-    
+
     -   **L2 distance:** `<->`
-        
+
     -   **Inner product:** `<#>`
-        
+
     -   **Cosine distance:** `<=>`
-        
+
 -   `EMBEDDING`: the embedding vector you want to find the nearest stored semantic neighbors of.
-    
+
 -   `ROW_COUNT`: the number of rows to return.
-    
+
     Specify `1` if you want only the single best match.
-    
+
 
 For more information about other query examples, see [Querying](https://github.com/pgvector/pgvector?tab=readme-ov-file#querying).
 
@@ -69,24 +69,24 @@ Because `embedding()` returns a `real` array, you must explicitly cast the `embe
 Replace the following:
 
 -   `MODEL_ID`: the ID of the model to query.
-    
+
     If you're using the Model Garden, then specify `text-embedding-005` as the model ID. These are the cloud-based models that AlloyDB can use for text embeddings. For more information, see [Text embeddings](/gemini-enterprise-agent-platform/reference/models/text-embeddings-api).
-    
+
 -   Optional: `VERSION_TAG`: the version tag of the model to query. Prepend the tag with `@`.
-    
+
     If you are using one of the `text-embedding-005` English models with Gemini Enterprise Agent Platform, then specify one of the version tags—for example, `text-embedding-005`, listed in [Model versions](/gemini-enterprise-agent-platform/reference/models/text-embeddings-api#model_versions).
-    
+
     Google strongly recommends that you always specify the version tag. If you don't specify the version tag, then AlloyDB uses the latest model version, which might lead to unexpected results.
-    
+
 
 -   `TABLE`: the table to query.
-    
+
 -   `EMBEDDING_COLUMN`: the column containing the stored embeddings.
-    
+
 -   `TEXT`: the text to translate into a vector embedding.
-    
+
 -   `ROW_COUNT`: the number of rows to return.
-    
+
 
 To accelerate your filtered KNN search, you can use the AlloyDB columnar engine. For more information, see [Accelerate your filtered vector search](/alloydb/docs/ai/perform-vector-search#accelerate-filtered-vector-search) ([Preview](https://cloud.google.com/products#product-launch-stages)) and [Configure the columnar engine](/alloydb/docs/columnar-engine/configure).
 

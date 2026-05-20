@@ -34,7 +34,6 @@ On `bn-fit-modify`, a Terminal-Bench task requiring Bayesian network fitting, so
 
 We also tested whether this pattern holds on evals outside Terminal-Bench by running a crossover experiment on SWE-bench. We varied the total available RAM up to 5x the baseline across 227 problems with 10 samples each. The same effect held, though the magnitude was smaller: Scores again increased monotonically with RAM, but were only 1.54 percentage points higher at 5x than 1x. SWE-bench tasks are less resource-intensive, so a smaller effect is expected, but it shows resource allocation isn't neutral there either.
 
-  
 
 ![](/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F36ce2ba5ce208fb8531d1a840a9cd35ff4959a02-1920x1080.png&w=3840&q=75)
 
@@ -64,7 +63,7 @@ Until resource methodology is standardized, our data suggests that leaderboard d
 
 A few-point lead might signal a real capability gap—or it might just be a bigger VM.
 
-###   
+###
 **Acknowledgements**
 
 Written by Gian Segato. Special thanks to Nicholas Carlini, Jeremy Hadfield, Mike Merrill, and Alex Shaw for their contributions. This work reflects the collective efforts of several teams working on evaluations for coding agents. Interested candidates who would like to contribute are welcome to apply at [anthropic.com/careers](http://anthropic.com/careers).

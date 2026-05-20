@@ -22,13 +22,13 @@ Pour en savoir plus sur l'assistance vectorielle et son fonctionnement, consulte
 
 -   Vérifiez que votre instance utilise la bonne version de maintenance. L'assistance vectorielle nécessite une version de maintenance minimale de `POSTGRES_17.20260128.03_06`. Pour en savoir plus sur la maintenance en libre-service, consultez [Maintenance en libre-service pour les performances](https://docs.cloud.google.com/alloydb/docs/self-service-maintenance?hl=fr).
 -   Activez l'extension d'assistance vectorielle à l'aide de la commande suivante dans la base de données que vous souhaitez utiliser :
-    
+
     ```
     CREATE EXTENSION vector_assist CASCADE;
     ```
-    
+
     Cela génère le schéma `vector_assist`, qui est utilisé par l'assistance vectorielle.
-    
+
 
 ## Utiliser l'assistance vectorielle pour déployer une charge de travail vectorielle
 

@@ -41,25 +41,25 @@ Make sure that you have the latest version of the `google_ml_integration.enable_
 To enable the `google_ml_integration.enable_preview_ai_functions` flag in AlloyDB, you use the `SET` command. This flag controls access to preview AI functions like `ai.analyze_sentiment`.
 
 1.  Make sure that your `google_ml_integration extension` is version 1.5.7 or higher. You can check the version by running the following:
-    
+
     ```
     SELECT extversion FROM pg_extension WHERE extname = 'google_ml_integration';
     ```
-    
+
     If you need to upgrade to a version that includes these preview functions, call the following:
-    
+
     ```
     CALL google_ml.upgrade_to_preview_version();
     ```
-    
+
 2.  Enable the flag for the current session or for the entire database. To enable the flag for your current session, execute the following:
-    
+
     ```
     SET google_ml_integration.enable_preview_ai_functions = 'on';
     ```
-    
+
     This change doesn't require a database restart. The default value of this flag is `off`.
-    
+
 
 ### Create an example table
 
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS reviews (
     review_content TEXT
 );
 
-INSERT INTO reviews (id, review_content) VALUES 
+INSERT INTO reviews (id, review_content) VALUES
 (1, 'This movie is very good'),
 (2, 'The actors play the parts well'),
 (3, 'I like the music in this film'),
@@ -137,10 +137,10 @@ The following example analyzes the sentiment of customer reviews from a table na
 WITH sentiment_results AS (
 SELECT
   ARRAY_AGG(id ORDER BY id) as ids,
-  ai.analyze_sentiment( 
+  ai.analyze_sentiment(
     prompts => array_agg( 'Please analyze the sentiment of this review  : ' || review_content
       ORDER BY id),
-    batch_size => 15) as sentiments 
+    batch_size => 15) as sentiments
 FROM reviews
 ),
 correlated_results AS (
@@ -148,7 +148,7 @@ correlated_results AS (
     FROM sentiment_results,
     generate_series(1, array_length(ids, 1)) AS i
 )
-SELECT reviews.id, correlated_results.sentiment as sentiment 
+SELECT reviews.id, correlated_results.sentiment as sentiment
 FROM reviews
 JOIN correlated_results ON reviews.id = correlated_results.id
 ORDER BY reviews.id DESC;
@@ -249,3 +249,4 @@ Send feedback
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2026-05-15 UTC.
+```

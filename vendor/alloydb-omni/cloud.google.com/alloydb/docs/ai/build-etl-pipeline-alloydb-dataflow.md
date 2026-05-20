@@ -26,18 +26,18 @@ Before you create the Dataflow pipeline using the Colab, complete these prerequi
 
 -   [Configure your environment](/dataflow/docs/quickstarts/create-pipeline-python#before-you-begin) to create a Dataflow pipeline.
 -   Enable the AlloyDB and other required APIs:
-    
+
     ```
     gcloud services enable alloydb.googleapis.com cloudresourcemanager.googleapis.com \
     servicenetworking.googleapis.com
     ```
-    
+
 -   [Create an AlloyDB cluster and primary instance](/alloydb/docs/quickstart/create-and-connect).
-    
+
 -   [Install the AlloyDB vector extension in your database](/alloydb/docs/instance-configure-extensions#enable).
-    
+
 -   [Grant the AlloyDB Admin (roles/alloydb.admin) role](/alloydb/docs/user-grant-access#procedure) to the Dataflow user account.
-    
+
 
 ## Set up your AlloyDB instance and pipeline components
 

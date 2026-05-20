@@ -8,7 +8,6 @@ The first AI-planned drive
 
 on another planet.
 
-  
 
 Exploring new planets means that you’re always operating in the past. It takes about twenty minutes for a signal to reach a Mars rover from Earth; by the time a new instruction arrives, the rover will already have acted on the previous one.
 

@@ -14,7 +14,6 @@ Consistent with Anthropic's commitment to trust and safety, Alexa+ is able to ta
 
 Alexa+ accesses Claude through Amazon Bedrock. It will start rolling out in the U.S. in the next few weeks, becoming more widely available in the coming months.
 
-  
 
 [](https://twitter.com/intent/tweet?text=https://www.anthropic.com/news/claude-and-alexa-plus)[](https://www.linkedin.com/shareArticle?mini=true&url=https://www.anthropic.com/news/claude-and-alexa-plus)
 

@@ -75,7 +75,7 @@ This update clarifies the distinction between AlloyDB Omni deployment environmen
 
 Change
 
-The naming conventions for AlloyDB Omni deployment options are updated to more accurately reflect their respective installation and orchestration methods.  
+The naming conventions for AlloyDB Omni deployment options are updated to more accurately reflect their respective installation and orchestration methods.
 The following table summarizes the primary name changes:
 
 **Original name**
@@ -102,7 +102,7 @@ This update clarifies the distinction between AlloyDB Omni deployment environmen
 
 Change
 
-The naming conventions for AlloyDB Omni deployment options are updated to more accurately reflect their respective installation and orchestration methods.  
+The naming conventions for AlloyDB Omni deployment options are updated to more accurately reflect their respective installation and orchestration methods.
 The following table summarizes the primary name changes:
 
 **Original name**
@@ -129,7 +129,7 @@ This update clarifies the distinction between AlloyDB Omni deployment environmen
 
 Change
 
-The naming conventions for AlloyDB Omni deployment options are updated to more accurately reflect their respective installation and orchestration methods.  
+The naming conventions for AlloyDB Omni deployment options are updated to more accurately reflect their respective installation and orchestration methods.
 The following table summarizes the primary name changes:
 
 **Original name**
@@ -224,29 +224,29 @@ AlloyDB Omni version 18.1.0 is available in [Preview](https://cloud.google.com/p
 Version 18.1.0 includes the following features and changes:
 
 -   AlloyDB Omni supports PostgreSQL version [18.1](https://www.postgresql.org/docs/release/18.1/) in [Preview](https://cloud.google.com/products#product-launch-stages).
-    
+
 -   To automate the process of vacuuming and collectively update the table statistics, AlloyDB Omni supports adaptive autovacuum. For more information, see [Configure adaptive autovacuum](/alloydb/omni/linux/18.1.0/docs/adaptive-autovacuum).
-    
+
 -   AlloyDB AI lets you query remote ML models using the `google_ml_integration` extension to work with online predictions and text embeddings generated from ML models. For more information, see [Install AlloyDB Omni with AlloyDB AI](/alloydb/omni/linux/18.1.0/docs/install-with-alloydb-ai).
-    
+
 -   Connect your AlloyDB Omni instance to agents that support the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro), which help you with development workflows. For more information, see [Use AlloyDB Omni with MCP, Gemini CLI, and other agents](/alloydb/omni/linux/18.1.0/docs/connect-ide-using-mcp-toolbox).
-    
+
 -   Build LLM-powered applications using LlamaIndex. For more information, see [Build LLM-powered applications using LlamaIndex](/alloydb/omni/linux/18.1.0/docs/ai/build-llm-apps-using-llamaindex).
-    
+
 -   Generate vector embeddings using an LLM hosted by Vertex AI that translates a text string into an embedding, which is the model's representation of the given text's semantic meaning as a numeric vector. For more information, see [Generate embeddings](/alloydb/omni/linux/18.1.0/docs/ai/work-with-embeddings).
-    
+
 -   Set up, configure, and generate SQL statements using AlloyDB AI natural language, which lets you create user-facing generative AI applications using natural language to query databases. For more information, see [Generate SQL queries from natural language](/alloydb/omni/linux/18.1.0/docs/ai/generate-sql-queries-natural-language).
-    
+
 -   Protect your data by configuring AlloyDB Omni to work with Barman or pgBackRest, which are open-source database backup servers. For more information, see [Set up Barman for AlloyDB Omni](/alloydb/omni/linux/18.1.0/docs/install-configure-barman) and [Set up pgBackRest for AlloyDB Omni on Linux](/alloydb/omni/linux/18.1.0/docs/set-up-pgbackrest).
-    
+
 -   Parameterized secure views provide application data security and row access control using SQL views. This helps ensure that application users can view only the data that they're supposed to access. For more information, see [Parameterized secure views overview](/alloydb/omni/linux/18.1.0/docs/parameterized-secure-views-overview).
-    
+
 -   Set up a high availability configuration for AlloyDB Omni. This only covers creating a new AlloyDB Omni instance in a high availability configuration. For more information, see [Create a high availability setup](/alloydb/omni/linux/18.1.0/docs/high-availability/setup). Then, [Test your high availability setup](/alloydb/omni/linux/18.1.0/docs/high-availability/test).
-    
+
 -   Use the AlloyDB Omni monitor to manage AlloyDB Omni user roles, monitor the activity of your AlloyDB Omni server, and update or remove your AlloyDB Omni installation. For more information, see [Manage and monitor AlloyDB Omni](/alloydb/omni/linux/18.1.0/docs/manage).
-    
+
 -   AlloyDB Omni only supports the `io_method` of worker and sync mode, with worker as default.
-    
+
 
 ## March 05, 2026
 
@@ -321,25 +321,25 @@ Announcement
 The [AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/deploy-kubernetes) version 1.6.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)) and includes the following features and bug fixes:
 
 -   New metrics for [Backup](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/custom-resource-metrics-kubernetes-operator#backup-metrics) and [BackupPlan](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/custom-resource-metrics-kubernetes-operator#backupplan-metrics) custom resources to provide better visibility into your backup operations. You can now monitor key metrics such as backup status, duration, and size for `Backup` resources, and the status and schedule of `BackupPlan` resources. The [Backup](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/kubernetes-crds-1.6.0/backup) API is extended to include more detailed status information, such as `startTime`, `endTime`, `wal`, `lsn`, and `size`.
-    
+
 -   The default AlloyDB Omni database images for PostgreSQL 16.9.0+ and 17.5.0+ are now based on UBI 9, while the PostgreSQL 15 track remains on its Debian base. The AlloyDB Omni Kubernetes operator provides a seamless upgrade path between them by introducing two distinct base image tracks for database clusters: Debian-based and UBI-based. You can now specify the base operating system of the database image by using the new `databaseImageOSType` field in the DBCluster custom resource. For more information, see [DBCluster Spec schema](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/kubernetes-crds-1.6.0/dbcluster#spec_schema).
-    
+
 -   Ultra-fast cache and columnar engine enhancements:
-    
+
     -   You can now use `emptyDir` volumes for [ephemeral disk caching](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/configure-disk-cache), providing temporary fast storage tied to the pod's lifecycle without persisting data if the pod is rescheduled.
     -   You can now [configure a dedicated device](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/columnar-engine/configure#configure-storage-cache) for the columnar engine storage cache.
 -   You can configure the operator to [use a custom certificate issuer of your choice for TLS certificates](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/manage-certificates-kubernetes-operator). This feature lets you chain all certificates, including those for control plane components, back to your own trusted root CA, providing control over your TLS connections and allowing for integration with your existing public key infrastructure.
-    
+
 -   You can now view [controller-runtime metrics](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/omni-metrics#controller-runtime-metrics) to monitor key components of the operator, including the workqueue, reconciliations, and webhooks, to identify potential bottlenecks and to make sure the operator runs efficiently.
-    
+
 -   To monitor query performance in detail, you can now view new query insights metrics at a higher granularity such as `alloydb_omni_database_postgresql_insights_perquery_execution_time_us_total` and `alloydb_omni_database_postgresql_insights_pertag_execution_time_us_total`. These metrics provide insights into execution time, I/O time, and lock time, both aggregated and per query/per tag, helping you to identify and optimize expensive queries. For more information, see the [Omni Metrics reference](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/omni-metrics).
-    
+
 -   Active Directory group-based authorization is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)), enabling granular permission management based on your Active Directory groups. For more information, see [Integrate Active Directory group support with AlloyDB Omni](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/integrate-ad-group-support-kubernetes-operator).
-    
+
 -   You can [investigate an issue with a crash-looping database pod](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/access-crash-looping-database-pod) by pausing the operator and patching a pod's `StatefulSet` to temporarily stop the crash loop.
-    
+
 -   For smooth major version upgrade, we recommend to perform a [minor version upgrade](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/upgrade-kubernetes-database-minor-version) to the latest refresh before proceeding with a [major version upgrade](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/upgrade-kubernetes-database-major-version). The supported upgrade paths are from version 15.13.0 to 16.9.0, from 16.9.0 to 17.5.0, and from 15.13.0 to 17.5.0.
-    
+
 
 Change
 
@@ -437,60 +437,60 @@ Announcement
 The [AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/containers/current/docs/deploy-kubernetes) version 1.5.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)) and includes the following features and bug fixes:
 
 -   You can install the operator using the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) for Kubernetes and OpenShift environments. See "Install the AlloyDB Omni operator" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/containers/15.12.0/docs/deploy-kubernetes#olm) and [16.8.0](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/deploy-kubernetes#olm) for details.
-    
+
 -   Low downtime, minor version upgrades for a database cluster in a high availability setup are available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see "Perform a minor database version upgrade for AlloyDB Omni on Kubernetes" in the documentation for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/containers/15.12.0/docs/upgrade-kubernetes-database-minor-version) and [16.8.0](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/upgrade-kubernetes-database-minor-version).
-    
+
 -   [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) authentication integration on your Kubernetes-based AlloyDB Omni database cluster is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). For more information, see [Integrate Active Directory with AlloyDB Omni on Kubernetes](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/integrate-active-directory-kubernetes-operator).
-    
+
 -   Active Directory group-based authorization on your Kubernetes-based AlloyDB Omni database cluster is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Integrate Active Directory group support on Kubernetes](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/integrate-ad-group-support-kubernetes-operator).
-    
+
 -   You can configure backups to be taken directly from a standby Kubernetes cluster in a high availability (HA) setup to offload backup operations from your primary instance. See "Backup and restore in Kubernetes" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/containers/15.12.0/docs/backup-kubernetes) and [16.8.0](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/backup-kubernetes) for details.
-    
+
 -   The operator fully automatically replicates replication slots for cross-data-center replication to work with primary database clusters that have high availability (HA) enabled. You still need to make sure you have reliable and low latency network connectivity between the primary and secondary data centers, which is crucial for cross-data-center replication to function effectively. For more information, see "Work with cross-data-center replication" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/containers/15.12.0/docs/cross-data-center-replication/work-with-cross-data-center-replication) and [16.8.0](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/cross-data-center-replication/work-with-cross-data-center-replication).
-    
+
 -   AlloyDB Omni Kubernetes images are now built on Red Hat's Universal Base Image (UBI) 9. For more information, see "Install AlloyDB Omni on Kubernetes" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/containers/15.12.0/docs/deploy-kubernetes#base-image) and [16.8.0](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/deploy-kubernetes#base-image).
-    
+
 -   AlloyDB AI requires AlloyDB Omni version 15.5.5 or later.
-    
+
 
 Announcement
 
 The [AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/deploy-kubernetes) version 1.5.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)) and includes the following features and bug fixes:
 
 -   You can install the operator using the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) for Kubernetes and OpenShift environments. See "Install the AlloyDB Omni operator" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/kubernetes/15.12.0/docs/deploy-kubernetes#olm) and [16.8.0](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/deploy-kubernetes#olm) for details.
-    
+
 -   Low downtime, minor version upgrades for a database cluster in a high availability setup are available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see "Perform a minor database version upgrade for AlloyDB Omni on Kubernetes" in the documentation for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/kubernetes/15.12.0/docs/upgrade-kubernetes-database-minor-version) and [16.8.0](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/upgrade-kubernetes-database-minor-version).
-    
+
 -   [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) authentication integration on your Kubernetes-based AlloyDB Omni database cluster is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). For more information, see [Integrate Active Directory with AlloyDB Omni on Kubernetes](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/integrate-active-directory-kubernetes-operator).
-    
+
 -   Active Directory group-based authorization on your Kubernetes-based AlloyDB Omni database cluster is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Integrate Active Directory group support on Kubernetes](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/integrate-ad-group-support-kubernetes-operator).
-    
+
 -   You can configure backups to be taken directly from a standby Kubernetes cluster in a high availability (HA) setup to offload backup operations from your primary instance. See "Backup and restore in Kubernetes" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/kubernetes/15.12.0/docs/backup-kubernetes) and [16.8.0](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/backup-kubernetes) for details.
-    
+
 -   The operator fully automatically replicates replication slots for cross-data-center replication to work with primary database clusters that have high availability (HA) enabled. You still need to make sure you have reliable and low latency network connectivity between the primary and secondary data centers, which is crucial for cross-data-center replication to function effectively. For more information, see "Work with cross-data-center replication" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/kubernetes/15.12.0/docs/cross-data-center-replication/work-with-cross-data-center-replication) and [16.8.0](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/cross-data-center-replication/work-with-cross-data-center-replication).
-    
+
 -   AlloyDB Omni Kubernetes images are now built on Red Hat's Universal Base Image (UBI) 9. For more information, see "Install AlloyDB Omni on Kubernetes" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/kubernetes/15.12.0/docs/deploy-kubernetes#base-image) and [16.8.0](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/deploy-kubernetes#base-image).
-    
+
 -   AlloyDB AI requires AlloyDB Omni version 15.5.5 or later.
-    
+
 
 Issue
 
 When upgrading your AlloyDB Omni database clusters, be aware of specific upgrade paths and prerequisites depending on your current `controlPlaneAgentsVersion` and environment:
 
 -   If your database cluster's `controlPlaneAgentsVersion` is `1.0.0`, you must first upgrade to `1.1.1` before you upgrade to `1.5.0` or higher. You can directly upgrade database clusters with `controlPlaneAgentsVersion` `1.1.0` or later to `1.5.0`.
-    
+
 -   If you use an OpenShift database cluster that runs `controlPlaneAgentsVersion` `1.4.1` or earlier, you must run prerequisite steps before updating to `1.5.0`. For more information, see "Update OpenShift database clusters from version `1.4.1` or earlier" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/containers/15.12.0/docs/upgrade-kubernetes-operator-version#update-openshift) and [16.8.0](https://cloud.google.com/alloydb/omni/containers/16.8.0/docs/upgrade-kubernetes-operator-version#update-openshift).
-    
+
 
 Issue
 
 When upgrading your AlloyDB Omni database clusters, be aware of specific upgrade paths and prerequisites depending on your current `controlPlaneAgentsVersion` and environment:
 
 -   If your database cluster's `controlPlaneAgentsVersion` is `1.0.0`, you must first upgrade to `1.1.1` before you upgrade to `1.5.0` or higher. You can directly upgrade database clusters with `controlPlaneAgentsVersion` `1.1.0` or later to `1.5.0`.
-    
+
 -   If you use an OpenShift database cluster that runs `controlPlaneAgentsVersion` `1.4.1` or earlier, you must run prerequisite steps before updating to `1.5.0`. For more information, see "Update OpenShift database clusters from version `1.4.1` or earlier" for AlloyDB Omni [15.12.0](https://cloud.google.com/alloydb/omni/kubernetes/15.12.0/docs/upgrade-kubernetes-operator-version#update-openshift) and [16.8.0](https://cloud.google.com/alloydb/omni/kubernetes/16.8.0/docs/upgrade-kubernetes-operator-version#update-openshift).
-    
+
 
 ## May 27, 2025
 
@@ -535,48 +535,48 @@ Announcement
 The `alloydb_scann` extension is updated to include the following vector search improvements in ([Preview](https://cloud.google.com/products#product-launch-stages)):
 
 -   You can enable auto-maintenance for your ScaNN index and let incrementally manage the index such that when your dataset grows, AlloyDB splits large outlier partitions, and tries to provide better QPS and search results. For more information, see "Maintain indexes automatically" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/maintain-vector-indexes) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/ai/maintain-vector-indexes) and [16.3.0](https://cloud.google.com/alloydb/omni/containers/16.3.0/docs/ai/maintain-vector-indexes).
-    
+
 -   Adaptive filtering for ScaNN significantly improves the speed of filtered vector searches. Adaptive filtering automatically selects the most efficient filtering method at runtime. For more information, see "Filtered vector search" and "Adaptive filtering" in the documentation for [AlloyDB for PostgreSQL](https://cloud.google.com/alloydb/docs/ai/filtered-vector-search-overview) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/ai/filtered-vector-search-overview#inline-filtering) and [16.3.0](https://cloud..google.com/alloydb/omni/containers/16.3.0/docs/ai/filtered-vector-search-overview#inline-filtering).
-    
+
 -   You can enable index auto maintenance and adaptive inline filtering together using the `scann.enable_preview_features` Grand Unified Configuration (GUC) parameters. For more information, see "AlloyDB flags" for [AlloyDB for PostgreSQL](https://cloud.google.com/alloydb/docs/reference/alloydb-flags) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/reference/alloydb-flags) and [16.3.0](https://cloud.google.com/alloydb/omni/containers/16.3.0/docs/reference/alloydb-flags).
-    
+
 
 Announcement
 
 The `alloydb_scann` extension is updated to include the following vector search improvements. These features are generally available ([GA](https://cloud.google.com/products#product-launch-stages)):
 
 -   Inline filtering enables the execution of vector search and filter evaluation through the combined use of vector and secondary indexes. For more information, see "Inline filtering" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/filtered-vector-search-overview#inline-filtering) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/ai/filtered-vector-search-overview#inline-filtering) and [16.3.0](https://cloud..google.com/alloydb/omni/containers/16.3.0/docs/ai/filtered-vector-search-overview#inline-filtering).
-    
+
 -   You can let AlloyDB automatically create multiple parallel workers during index creation when the dataset grows, leading to faster build times. For more information, see "Build indexes in parallel" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/store-index-query-vectors) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/ai/store-index-query-vectors?resource=scann) and [16.3.0](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/ai/store-index-query-vectors?resource=scann).
-    
+
 -   A distribution histogram is available in the `pg_stat_ann_indexes` view, which helps you understand the distribution of vectors between partitions of your ScaNN index. For more information, including recommendations about tuning the `distributionpercentile` metric, see "Tuning metrics" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/reference/vector-index-metrics#tuning-metrics), and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/reference/vector-index-metrics) and [16.3.0](https://cloud.google.com/alloydb/omni/containers/16.3.0/docs/reference/vector-index-metrics).
-    
+
 -   You can use a query recall evaluator to find the recall for a vector query for a given configuration, and to tune your parameters to achieve the desired vector query recall results for different vector indexes. For more information, see "Measure vector query recall" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/measure-vector-query-recall), and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/containers/15.7.1/docs/ai/measure-vector-query-recall) and [16.3.0](https://cloud.google.com/alloydb/omni/containers/16.3.0/docs/ai/measure-vector-query-recall).
-    
+
 
 Announcement
 
 The `alloydb_scann` extension is updated to include the following vector search improvements in ([Preview](https://cloud.google.com/products#product-launch-stages)):
 
 -   You can enable auto-maintenance for your ScaNN index and let incrementally manage the index such that when your dataset grows, AlloyDB splits large outlier partitions, and tries to provide better QPS and search results. For more information, see "Maintain indexes automatically" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/maintain-vector-indexes) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/ai/maintain-vector-indexes) and [16.3.0](https://cloud.google.com/alloydb/omni/kubernetes/16.3.0/docs/ai/maintain-vector-indexes).
-    
+
 -   Adaptive filtering for ScaNN significantly improves the speed of filtered vector searches. Adaptive filtering automatically selects the most efficient filtering method at runtime. For more information, see "Filtered vector search" and "Adaptive filtering" in the documentation for [AlloyDB for PostgreSQL](https://cloud.google.com/alloydb/docs/ai/filtered-vector-search-overview) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/ai/filtered-vector-search-overview#inline-filtering) and [16.3.0](https://cloud..google.com/alloydb/omni/kubernetes/16.3.0/docs/ai/filtered-vector-search-overview#inline-filtering).
-    
+
 -   You can enable index auto maintenance and adaptive inline filtering together using the `scann.enable_preview_features` Grand Unified Configuration (GUC) parameters. For more information, see "AlloyDB flags" for [AlloyDB for PostgreSQL](https://cloud.google.com/alloydb/docs/reference/alloydb-flags) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/reference/alloydb-flags) and [16.3.0](https://cloud.google.com/alloydb/omni/kubernetes/16.3.0/docs/reference/alloydb-flags).
-    
+
 
 Announcement
 
 The `alloydb_scann` extension is updated to include the following vector search improvements. These features are generally available ([GA](https://cloud.google.com/products#product-launch-stages)):
 
 -   Inline filtering enables the execution of vector search and filter evaluation through the combined use of vector and secondary indexes. For more information, see "Inline filtering" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/filtered-vector-search-overview#inline-filtering) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/ai/filtered-vector-search-overview#inline-filtering) and [16.3.0](https://cloud..google.com/alloydb/omni/kubernetes/16.3.0/docs/ai/filtered-vector-search-overview#inline-filtering).
-    
+
 -   You can let AlloyDB automatically create multiple parallel workers during index creation when the dataset grows, leading to faster build times. For more information, see "Build indexes in parallel" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/store-index-query-vectors) and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/ai/store-index-query-vectors?resource=scann) and [16.3.0](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/ai/store-index-query-vectors?resource=scann).
-    
+
 -   A distribution histogram is available in the `pg_stat_ann_indexes` view, which helps you understand the distribution of vectors between partitions of your ScaNN index. For more information, including recommendations about tuning the `distributionpercentile` metric, see "Tuning metrics" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/reference/vector-index-metrics#tuning-metrics), and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/reference/vector-index-metrics) and [16.3.0](https://cloud.google.com/alloydb/omni/kubernetes/16.3.0/docs/reference/vector-index-metrics).
-    
+
 -   You can use a query recall evaluator to find the recall for a vector query for a given configuration, and to tune your parameters to achieve the desired vector query recall results for different vector indexes. For more information, see "Measure vector query recall" in the documentation for [AlloyDB PostgreSQL](https://cloud.google.com/alloydb/docs/ai/measure-vector-query-recall), and AlloyDB Omni [15.7.1](https://cloud.google.com/alloydb/omni/kubernetes/15.7.1/docs/ai/measure-vector-query-recall) and [16.3.0](https://cloud.google.com/alloydb/omni/kubernetes/16.3.0/docs/ai/measure-vector-query-recall).
-    
+
 
 ## April 08, 2025
 
@@ -713,38 +713,38 @@ Announcement
 The [AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/containers/current/docs/deploy-kubernetes) version 1.3.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Version 1.3.0 includes the following new features and changes:
 
 -   The Kubernetes operator 1.3.0 supports [connection pooling](https://cloud.google.com/alloydb/omni/containers/current/docs/use-connection-pooler-kubernetes) ([Preview](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages)).
-    
+
 -   You can [put the database in maintenance mode](https://cloud.google.com/alloydb/omni/containers/current/docs/kubernetes-maintenance-mode) to make a maintenance update or repair a pod.
-    
+
 -   You can [create replication slots and users](https://cloud.google.com/alloydb/omni/containers/current/docs/create-replication-slots) for logical replication via the Operator API from your database instance to subscribed applications.
-    
+
 -   This release of the Kubernetes operator adds support for [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) so that you can use Prometheus or a Prometheus-compatible scraper to consume and display custom resource metrics like DBCluster Backup, and DBInstance. For more information, see [Monitor AlloyDB Omni Kubernetes operator custom resources](https://cloud.google.com/alloydb/omni/containers/current/docs/monitor-kubernetes-operator-custom-resources).
-    
+
 -   When you create a new database cluster, this version of the Kubernetes operator creates read-only (RO) and read-write (RW) load balancers concurrently, which reduces the time that it takes for the database cluster to be ready for connections and queries.
-    
+
 -   Configurable log rotation has a default retention time of seven days, and each archived file is individually compressed using Gzip. For more information, see [Configure AlloyDB Omni log rotation](https://cloud.google.com/alloydb/omni/containers/current/docs/configure-log-rotation).
-    
+
 -   Various bug fixes and performance improvements.
-    
+
 
 Announcement
 
 The [AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/deploy-kubernetes) version 1.3.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Version 1.3.0 includes the following new features and changes:
 
 -   The Kubernetes operator 1.3.0 supports [connection pooling](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/use-connection-pooler-kubernetes) ([Preview](https://cloud.google.com/products?e=48754805&hl=en#product-launch-stages)).
-    
+
 -   You can [put the database in maintenance mode](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/kubernetes-maintenance-mode) to make a maintenance update or repair a pod.
-    
+
 -   You can [create replication slots and users](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/create-replication-slots) for logical replication via the Operator API from your database instance to subscribed applications.
-    
+
 -   This release of the Kubernetes operator adds support for [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) so that you can use Prometheus or a Prometheus-compatible scraper to consume and display custom resource metrics like DBCluster Backup, and DBInstance. For more information, see [Monitor AlloyDB Omni Kubernetes operator custom resources](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/monitor-kubernetes-operator-custom-resources).
-    
+
 -   When you create a new database cluster, this version of the Kubernetes operator creates read-only (RO) and read-write (RW) load balancers concurrently, which reduces the time that it takes for the database cluster to be ready for connections and queries.
-    
+
 -   Configurable log rotation has a default retention time of seven days, and each archived file is individually compressed using Gzip. For more information, see [Configure AlloyDB Omni log rotation](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/configure-log-rotation).
-    
+
 -   Various bug fixes and performance improvements.
-    
+
 
 ## November 21, 2024
 
@@ -763,52 +763,52 @@ Announcement
 [AlloyDB Omni](https://cloud.google.com/alloydb/omni/docs) version 15.7.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Version 15.7.0 includes the following features and changes:
 
 -   AlloyDB Omni supports PostgreSQL version [15.7](https://www.postgresql.org/docs/release/15.7/).
-    
+
 -   The `alloydb_scann` extension—previously named `postgres_scann`—is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). For more information about storing vector embeddings, creating indexes, and tuning indexes to achieve faster query performance and better recall, see [Work with vectors](https://cloud.google.com/alloydb/omni/containers/current/docs/ai/store-embeddings).
-    
+
 -   Support for Red Hat Enterprise Linux (RHEL) 8 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
-    
+
 -   The AlloyDB Omni [columnar engine](https://cloud.google.com/alloydb/omni/containers/current/docs/columnar-engine/overview) is available in [Preview](https://cloud.google.com/products#product-launch-stages) on ARM.
-    
+
 -   [Disk cache](https://cloud.google.com/alloydb/omni/containers/current/docs/configure-disk-cache) and [columnar storage cache](https://cloud.google.com/alloydb/omni/containers/current/docs/columnar-engine/configure) are available to improve AlloyDB Omni performance by accelerating data access for AlloyDB Omni in a container and on a Kubernetes cluster.
-    
+
 -   Security fixes for [CVE-2023-50387](https://security-tracker.debian.org/tracker/CVE-2023-50387) and [CVE-2024-7348](https://security-tracker.debian.org/tracker/CVE-2024-7348) have been implemented.
-    
+
 -   The [AlloyDB Omni Reference](https://cloud.google.com/alloydb/omni/containers/current/docs/choose-compatible-versions) documentation is available. This includes [metrics](https://cloud.google.com/alloydb/omni/containers/current/docs/reference/omni-metrics), [database flags](https://cloud.google.com/alloydb/omni/containers/current/docs/reference/database-flags), [model endpoint management reference](https://cloud.google.com/alloydb/omni/containers/current/docs/reference/model-endpoint-reference), and [extensions](https://cloud.google.com/alloydb/omni/containers/current/docs/reference/extensions) documentation for AlloyDB Omni 15.7.0.
-    
+
 -   AlloyDB Omni supports the [`pg_ivm`](https://cloud.google.com/alloydb/omni/containers/current/docs/reference/extensions#pg_ivm) extension, which provides incremental view maintenance for materialized views.
-    
+
 -   Various bug fixes and performance improvements.
-    
+
 
 The [AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/containers/current/docs/deploy-kubernetes) version 1.2.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Version 1.2.0 includes the following new features:
 
 -   The `healthcheckPeriodSeconds` parameter lets you specify the number of seconds to wait between health checks. For more information, see [Adjust automatic failover trigger settings](https://cloud.google.com/alloydb/omni/containers/current/docs/kubernetes-ha#adjust-failover-trigger-settings).
-    
+
 -   The following metrics help you monitor the performance of your database container. Each of these metrics is of type `gauge`. For more information, see [Database container-level metrics](https://cloud.google.com/alloydb/omni/containers/current/docs/reference/omni-metrics).
-    
+
     -   `alloydb_omni_memory_limit_byte` shows the memory limit of a database container.
-        
+
     -   `alloydb_omni_instance_postgresql_replication_state` shows the state of each replica that's connected to the AlloyDB Omni primary node.
-        
+
     -   `alloydb_omni_memory_used_byte` shows the memory used by the database container in bytes.
-        
+
 -   An issue that caused a brief interruption to all database clusters when the following is true is fixed:
-    
+
     -   You're [upgrading the AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/containers/current/docs/migrate-to-latest-version-kubernetes) version 1.1.1 to a newer version.
-        
+
     -   You're using the AlloyDB Omni database version 15.5.5 or later.
-        
+
     -   AlloyDB AI is not [enabled](https://cloud.google.com/alloydb/omni/containers/current/docs/install-with-alloydb-ai?resource=kubernetes#enable-alloydb-ai).
-        
+
 -   High availability is supported on a secondary database cluster after it's promoted. For more information, see [Promote a secondary database cluster](https://cloud.google.com/alloydb/omni/containers/current/docs/cross-data-center-replication/work-with-cross-data-center-replication#promote-secondary-cluster) and [Manage high availability in Kubernetes](https://cloud.google.com/alloydb/omni/containers/current/docs/kubernetes-ha).
-    
+
 -   You can enable or disable model endpoint management through Kubernetes manifests. For more information, see Install [AlloyDB Omni with AlloyDB AI](https://cloud.google.com/alloydb/omni/containers/current/docs/install-with-alloydb-ai?resource=kubernetes).
-    
+
 -   You can configure when logs rotate using thresholds that are based on the size of the log files, the time since the log file last rotated, or both. For more information, see [Configure AlloyDB Omni log rotation](https://cloud.google.com/alloydb/omni/containers/current/docs/configure-log-rotation).
-    
+
 -   You can create a snapshot of the memory heap of AlloyDB Omni Kubernetes operator to help you analyze and debug its memory performance. For more information, see [Analyze AlloyDB Omni Kubernetes operator memory heap usage](https://cloud.google.com/alloydb/omni/containers/current/docs/analyze-memory-heap-usage).
-    
+
 
 Breaking
 
@@ -851,52 +851,52 @@ Announcement
 [AlloyDB Omni](https://cloud.google.com/alloydb/omni/docs) version 15.7.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Version 15.7.0 includes the following features and changes:
 
 -   AlloyDB Omni supports PostgreSQL version [15.7](https://www.postgresql.org/docs/release/15.7/).
-    
+
 -   The `alloydb_scann` extension—previously named `postgres_scann`—is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). For more information about storing vector embeddings, creating indexes, and tuning indexes to achieve faster query performance and better recall, see [Work with vectors](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/ai/store-embeddings).
-    
+
 -   Support for Red Hat Enterprise Linux (RHEL) 8 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
-    
+
 -   The AlloyDB Omni [columnar engine](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/columnar-engine/overview) is available in [Preview](https://cloud.google.com/products#product-launch-stages) on ARM.
-    
+
 -   [Disk cache](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/configure-disk-cache) and [columnar storage cache](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/columnar-engine/configure) are available to improve AlloyDB Omni performance by accelerating data access for AlloyDB Omni in a container and on a Kubernetes cluster.
-    
+
 -   Security fixes for [CVE-2023-50387](https://security-tracker.debian.org/tracker/CVE-2023-50387) and [CVE-2024-7348](https://security-tracker.debian.org/tracker/CVE-2024-7348) have been implemented.
-    
+
 -   The [AlloyDB Omni Reference](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/choose-compatible-versions) documentation is available. This includes [metrics](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/omni-metrics), [database flags](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/database-flags), [model endpoint management reference](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/model-endpoint-reference), and [extensions](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/extensions) documentation for AlloyDB Omni 15.7.0.
-    
+
 -   AlloyDB Omni supports the [`pg_ivm`](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/extensions#pg_ivm) extension, which provides incremental view maintenance for materialized views.
-    
+
 -   Various bug fixes and performance improvements.
-    
+
 
 The [AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/deploy-kubernetes) version 1.2.0 is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Version 1.2.0 includes the following new features:
 
 -   The `healthcheckPeriodSeconds` parameter lets you specify the number of seconds to wait between health checks. For more information, see [Adjust automatic failover trigger settings](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/kubernetes-ha#adjust-failover-trigger-settings).
-    
+
 -   The following metrics help you monitor the performance of your database container. Each of these metrics is of type `gauge`. For more information, see [Database container-level metrics](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/reference/omni-metrics).
-    
+
     -   `alloydb_omni_memory_limit_byte` shows the memory limit of a database container.
-        
+
     -   `alloydb_omni_instance_postgresql_replication_state` shows the state of each replica that's connected to the AlloyDB Omni primary node.
-        
+
     -   `alloydb_omni_memory_used_byte` shows the memory used by the database container in bytes.
-        
+
 -   An issue that caused a brief interruption to all database clusters when the following is true is fixed:
-    
+
     -   You're [upgrading the AlloyDB Omni Kubernetes operator](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/migrate-to-latest-version-kubernetes) version 1.1.1 to a newer version.
-        
+
     -   You're using the AlloyDB Omni database version 15.5.5 or later.
-        
+
     -   AlloyDB AI is not [enabled](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/install-with-alloydb-ai?resource=kubernetes#enable-alloydb-ai).
-        
+
 -   High availability is supported on a secondary database cluster after it's promoted. For more information, see [Promote a secondary database cluster](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/cross-data-center-replication/work-with-cross-data-center-replication#promote-secondary-cluster) and [Manage high availability in Kubernetes](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/kubernetes-ha).
-    
+
 -   You can enable or disable model endpoint management through Kubernetes manifests. For more information, see Install [AlloyDB Omni with AlloyDB AI](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/install-with-alloydb-ai?resource=kubernetes).
-    
+
 -   You can configure when logs rotate using thresholds that are based on the size of the log files, the time since the log file last rotated, or both. For more information, see [Configure AlloyDB Omni log rotation](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/configure-log-rotation).
-    
+
 -   You can create a snapshot of the memory heap of AlloyDB Omni Kubernetes operator to help you analyze and debug its memory performance. For more information, see [Analyze AlloyDB Omni Kubernetes operator memory heap usage](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/analyze-memory-heap-usage).
-    
+
 
 ## October 09, 2024
 
@@ -1025,7 +1025,7 @@ Feature
 [AlloyDB Omni](https://cloud.google.com/alloydb/docs/omni) version 15.5.5 is now generally available ([GA](https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages)). This version includes the following features and changes:
 
 -   The [AlloyDB Omni Kubernetes Operator](https://cloud.google.com/alloydb/omni/containers/current/docs/deploy-kubernetes) version 1.1.0 is generally available ([GA](https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages)) and it includes the following new features:
-    
+
     -   [Cross-data center replication](https://cloud.google.com/alloydb/omni/containers/current/docs/cross-data-center-replication/about-cross-data-center-replication) to support automated setup of disaster recovery.
     -   [Support for the Red Hat OpenShift container platform](https://cloud.google.com/alloydb/omni/containers/current/docs/deploy-kubernetes#rhel-openshift) version 4.14 and later in [Preview](https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages).
     -   [Variable number of nodes](https://cloud.google.com/alloydb/omni/containers/current/docs/kubernetes-read-pool) per read pool instance.
@@ -1034,16 +1034,16 @@ Feature
     -   A dedicated backup server for streamlined backup operations.
     -   When you create a database cluster, the admin password secret is [no longer deleted](https://cloud.google.com/alloydb/omni/containers/current/docs/deploy-kubernetes#create) after you specify it.
 -   The `postgres_ann` extension is renamed to `alloydb_scann`. Before you upgrade AlloyDB Omni, you must drop any indexes created using the older `postgres_ann` version, then upgrade AlloyDB Omni, and then create the indexes again using the `alloydb_scann` extension.
-    
+
 -   Various bug fixes.
-    
+
 
 Feature
 
 [AlloyDB Omni](https://cloud.google.com/alloydb/docs/omni) version 15.5.5 is now generally available ([GA](https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages)). This version includes the following features and changes:
 
 -   The [AlloyDB Omni Kubernetes Operator](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/deploy-kubernetes) version 1.1.0 is generally available ([GA](https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages)) and it includes the following new features:
-    
+
     -   [Cross-data center replication](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/cross-data-center-replication/about-cross-data-center-replication) to support automated setup of disaster recovery.
     -   [Support for the Red Hat OpenShift container platform](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/deploy-kubernetes#rhel-openshift) version 4.14 and later in [Preview](https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages).
     -   [Variable number of nodes](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/kubernetes-read-pool) per read pool instance.
@@ -1052,9 +1052,9 @@ Feature
     -   A dedicated backup server for streamlined backup operations.
     -   When you create a database cluster, the admin password secret is [no longer deleted](https://cloud.google.com/alloydb/omni/kubernetes/current/docs/deploy-kubernetes#create) after you specify it.
 -   The `postgres_ann` extension is renamed to `alloydb_scann`. Before you upgrade AlloyDB Omni, you must drop any indexes created using the older `postgres_ann` version, then upgrade AlloyDB Omni, and then create the indexes again using the `alloydb_scann` extension.
-    
+
 -   Various bug fixes.
-    
+
 
 ## June 25, 2024
 

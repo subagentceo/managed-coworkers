@@ -48,22 +48,22 @@ Over the coming weeks, we'll make it easier to build integrations with Claude De
 ![Canva logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/66e0000e396aea64ea31ed3fea7b2b20ac329312-150x48.svg)
 
 > We’ve loved collaborating with Anthropic over the past couple of years and share a deep focus on making complex things simple. At Canva, our mission has always been to empower the world to design, and that means bringing Canva to wherever ideas begin. We’re excited to build on our collaboration with Claude, making it seamless for people to bring ideas and drafts from Claude Design into Canva, where they instantly become fully editable and collaborative designs ready to refine, share, and publish.
-> 
-> Melanie Perkins  
+>
+> Melanie Perkins
 > Co-Founder and CEO, Canva
 
 ![Brilliant logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/ee86aca1b1cceae67a2d309028a347329a44c2b6-138x33.svg)
 
 > Brilliant's intricate interactivity and animations are historically painful to prototype, but Claude Design's ability to turn static designs into interactive prototypes has been a step change for us. Our most complex pages, which took 20+ prompts to recreate in other tools, only required 2 prompts in Claude Design. Including design intent in Claude Code handoffs has made the jump from prototype to production seamless.
-> 
-> Olivia Xu  
+>
+> Olivia Xu
 > Senior Product Designer, Brilliant
 
 ![Datadog logo](https://www-cdn.anthropic.com/images/4zrzovbb/website/5d98f2428e66e7aa3c9f773818ef6231fa4602b4-146x36.svg)
 
 > Claude Design has made prototyping dramatically faster for our team, enabling live design during conversations. We've gone from a rough idea to a working prototype before anyone leaves the room, and the output stays true to our brand and design guidelines. What used to take a week of back-and-forth between briefs, mockups, and review rounds now happens in a single conversation.
-> 
-> Aneesh Kethini  
+>
+> Aneesh Kethini
 > Product Manager, Datadog
 
 01 / 03

@@ -15,27 +15,27 @@ Auf dieser Seite wird beschrieben, wie Sie Vorhersagen aufrufen oder Einbettunge
 ## Hinweis
 
 -   [Prüfen Sie, ob die Erweiterung `google_ml_integration` installiert ist.](https://docs.cloud.google.com/alloydb/docs/ai/configure-vertex-ai?hl=de#verify-installed-extension)
-    
+
 -   [Prüfen, ob das Flag `google_ml_integration.enable_model_support` auf `on` gesetzt ist](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=de)
-    
+
 
 ### Erweiterung einrichten
 
 1.  [Stellen Sie mit dem Nutzer `postgres` eine Verbindung zu Ihrer Datenbank über `psql`](https://docs.cloud.google.com/alloydb/docs/connect-psql?hl=de) oder AlloyDB for PostgreSQL Studio her.
-    
+
 2.  Optional: [Zugriff auf die Funktionen für die Interaktion mit AlloyDB for PostgreSQL AI-Funktionen (](https://docs.google.com/forms/d/e/1FAIpQLSfJ9vHIJ79nI7JWBDELPFL75pDQa4XVZQ2fxShfYddW0RwmLw/viewform?hl=de)[Vorabversion](https://cloud.google.com/products?hl=de#product-launch-stages)) anfordern, einschließlich Unterstützung für multimodale Modelle, Ranking-Modelle und Operatorfunktionen.
-    
+
 3.  Optional: Gewähren Sie einem PostgreSQL-Nutzer, der kein Super Admin ist, die Berechtigung zum Verwalten von Modellmetadaten:
-    
+
       ```
       GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA google_ml TO NON_SUPER_USER;
     ```
-    
+
     Ersetzen Sie die folgende Variable:
-    
+
     -   `NON_SUPER_USER`: Der PostgreSQL-Nutzername, der kein Superuser ist.
 4.  Die ausgehende IP muss aktiviert sein, damit auf Modelle zugegriffen werden kann, die außerhalb Ihrer VPC gehostet werden, z. B. Modelle von Drittanbietern. Weitere Informationen finden Sie unter [Ausgehende Verbindung hinzufügen](https://docs.cloud.google.com/alloydb/docs/connect-public-ip?hl=de#add-outbound-connectivity).
-    
+
 
 ### Authentifizierung einrichten
 
@@ -48,53 +48,53 @@ Wenn Sie die Modellendpunkte der Agent Platform verwenden möchten, müssen Sie 
 1.  [Nutzerzugriff auf Agent Platform-Modelle konfigurieren](https://docs.cloud.google.com/alloydb/docs/ai/configure-vertex-ai?hl=de)
 2.  Prüfen Sie, ob die aktuelle Version von `google_ml_integration` installiert ist.
     1.  Führen Sie den folgenden Befehl aus, um die installierte Version zu prüfen:
-        
+
         SELECT extversion FROM pg\_extension WHERE extname \= 'google\_ml\_integration';
-        extversion 
+        extversion
         \------------
         1.5.2
         (1 row)
-        
+
     2.  Wenn die Erweiterung nicht installiert ist oder die installierte Version älter als 1.5.2 ist, aktualisieren Sie die Erweiterung.
-        
+
         CREATE EXTENSION IF NOT EXISTS google\_ml\_integration;
         ALTER EXTENSION google\_ml\_integration UPDATE;
-        
+
         Wenn beim Ausführen der vorherigen Befehle Probleme auftreten oder die Erweiterung nach dem Ausführen der vorherigen Befehle nicht auf Version 1.5.2 aktualisiert wird, wenden Sie sich an den [Google Cloud -Support](https://cloud.google.com/support?hl=de).
-        
+
 3.  Wenn Sie die Funktionen der AlloyDB AI-Abfrage-Engine verwenden möchten, setzen Sie das Flag `google_ml_integration.enable_ai_query_engine` auf `on`.
-    
+
     ### SQL
-    
-    1.  Aktivieren Sie die KI-Abfrage-Engine für die aktuelle Sitzung.  
-        
+
+    1.  Aktivieren Sie die KI-Abfrage-Engine für die aktuelle Sitzung.
+
         SET google\_ml\_integration.enable\_ai\_query\_engine \= on;
-        
-    2.  Funktionen für eine bestimmte Datenbank sitzungsübergreifend aktivieren  
-        
+
+    2.  Funktionen für eine bestimmte Datenbank sitzungsübergreifend aktivieren
+
         ALTER DATABASE DATABASE\_NAME SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    3.  Aktivieren Sie die KI-Abfrage-Engine für einen bestimmten Nutzer über Sitzungen und Datenbanken hinweg.  
-        
+
+    3.  Aktivieren Sie die KI-Abfrage-Engine für einen bestimmten Nutzer über Sitzungen und Datenbanken hinweg.
+
         ALTER ROLE postgres SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    
+
+
     ### Console
-    
+
     Wenn Sie den Wert des Flags `google_ml_integration.enable_ai_query_engine` ändern möchten, folgen Sie der Anleitung unter [Datenbank-Flags einer Instanz konfigurieren](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=de#console).
-    
+
     ### gcloud
-    
+
     Wenn Sie die gcloud CLI verwenden möchten, können Sie die Google Cloud CLI [installieren und initialisieren](https://docs.cloud.google.com/sdk/docs/install?hl=de) oder [Cloud Shell](https://docs.cloud.google.com/shell/docs/using-cloud-shell?hl=de) verwenden.
-    
+
     Sie können den Wert des Flags `google_ml_integration.enable_ai_query_engine` ändern. Weitere Informationen finden Sie unter [Datenbank-Flags einer Instanz konfigurieren](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=de#console).
-    
+
     gcloud alloydb instances update INSTANCE\_ID \\
       --database-flags google\_ml\_integration.enable\_ai\_query\_engine=on \\
       --region=REGION\_ID \\
       --cluster=CLUSTER\_ID \\
       --project=PROJECT\_ID
-    
+
 
 #### Authentifizierung mit Secret Manager einrichten
 
@@ -105,24 +105,24 @@ Dieser Schritt ist optional, wenn Ihr Modellendpunkt die Authentifizierung nicht
 So erstellen und verwenden Sie einen API-Schlüssel oder ein Inhabertoken:
 
 1.  Erstellen Sie das Secret in Secret Manager. Weitere Informationen finden Sie unter [Secret erstellen und auf die Secret-Version zugreifen](https://docs.cloud.google.com/secret-manager/docs/create-secret-quickstart?hl=de#create_a_secret_and_access_a_secret_version).
-    
+
     Der Secret-Pfad wird in der SQL-Funktion [`google_ml.create_sm_secret()`](https://docs.cloud.google.com/alloydb/docs/reference/model-endpoint?hl=de#google_mlcreate_sm_secret) verwendet.
-    
+
 2.  Gewähren Sie dem AlloyDB-Cluster Berechtigungen für den Zugriff auf das Secret.
-    
+
       ```
       gcloud secrets add-iam-policy-binding 'SECRET_NAME' \
           --member="serviceAccount:SERVICE_ACCOUNT_ID" \
           --role="roles/secretmanager.secretAccessor"
     ```
-    
+
     Ersetzen Sie Folgendes:
-    
+
     -   `SECRET_NAME`: Der Secret-Name im Secret Manager.
     -   `SERVICE_ACCOUNT_ID`: Die ID des IAM-basierten Dienstkontos im Format `serviceAccount:service-PROJECT_ID@gcp-sa-alloydb.iam.gserviceaccount.com`, z. B. `service-212340152456@gcp-sa-alloydb.iam.gserviceaccount.com`.
-        
+
         Sie können diese Rolle dem Dienstkonto auch auf Projektebene zuweisen. Weitere Informationen finden Sie unter [IAM-Richtlinienbindung hinzufügen](https://docs.cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding?hl=de).
-        
+
 
 #### Authentifizierung mit Headern einrichten
 
@@ -162,15 +162,15 @@ Zusätzlich zu Gemini- oder anderen Agent Platform-Modellen, die standardmäßig
 Führen Sie die folgenden Schritte aus, um ein im Model Garden gehostetes Modell an einem Agent Platform-Endpunkt bereitzustellen:
 
 1.  Rufen Sie in der Google Cloud Console die Seite **Model Garden** auf:
-    
+
     [Zu Model Garden](https://console.cloud.google.com/vertex-ai/publishers/google/model-garden?hl=de)
-    
+
 2.  Suchen Sie das Modell und wählen Sie **Bereitstellen** aus.
-    
+
 3.  Wählen Sie in den Bereitstellungseinstellungen unter **Endpunktzugriff** die Option **Öffentlich (gemeinsamer Endpunkt)** aus, damit der Endpunkt öffentlich zugänglich und für AlloyDB for PostgreSQL erreichbar ist.
-    
+
 4.  Nachdem die Bereitstellung abgeschlossen ist, rufen Sie die Detailseite des Endpunkts auf und kopieren Sie die URL für Modellanfragen aus dem Bereich **Beispielanfrage**.
-    
+
 
 ## Texteinbettungsmodelle
 
@@ -231,13 +231,13 @@ In den folgenden Schritten wird gezeigt, wie Sie Agent Platform-Modelle mit inte
 Achten Sie darauf, dass sich sowohl der AlloyDB-Cluster als auch das Agent Platform-Modell, das Sie abfragen, in derselben Region befinden.
 
 1.  [Stellen Sie mit `psql` eine Verbindung zu Ihrer Datenbank her.](https://docs.cloud.google.com/alloydb/docs/connect-psql?hl=de)
-    
+
 2.  [`google_ml_integration`\-Erweiterung einrichten](#set-up-extension)
-    
+
 3.  Rufen Sie die Funktion zum Erstellen des Modells auf, um den Modellendpunkt hinzuzufügen:
-    
+
     ### gemini-embedding-001
-    
+
       ```
       CALL
         google_ml.create_model(
@@ -248,9 +248,9 @@ Achten Sie darauf, dass sich sowohl der AlloyDB-Cluster als auch das Agent Platf
           model_type => 'text_embedding',
           model_auth_type => 'alloydb_service_agent_iam');
     ```
-    
+
     ### text-multilingual-embedding-002
-    
+
       ```
       CALL
         google_ml.create_model(
@@ -263,7 +263,7 @@ Achten Sie darauf, dass sich sowohl der AlloyDB-Cluster als auch das Agent Platf
           model_in_transform_fn => 'google_ml.vertexai_text_embedding_input_transform',
           model_out_transform_fn => 'google_ml.vertexai_text_embedding_output_transform');
     ```
-    
+
 
 Wenn das Modell in einem anderen Projekt und einer anderen Region als Ihr AlloyDB-Cluster gespeichert ist, legen Sie die Anfrage-URL auf `projects/PROJECT_ID/locations/REGION_ID/publishers/google/models/MODEL_ID` fest, wobei `REGION_ID` die Region ist, in der Ihr Modell gehostet wird, und `MODEL_ID` der qualifizierte Modellname.
 
@@ -279,22 +279,22 @@ Im folgenden Beispiel wird der OpenAI-Modellendpunkt `text-embedding-ada-002` hi
 2.  [`google_ml_integration`\-Erweiterung einrichten](#set-up-extension)
 3.  [Fügen Sie den OpenAI-API-Schlüssel zur Authentifizierung als Secret in Secret Manager hinzu.](#setup-secret-manager)
 4.  Rufen Sie das im Secret Manager gespeicherte Secret auf:
-    
+
     ```
     CALL
     google_ml.create_sm_secret(
       secret_id => 'SECRET_ID',
       secret_path => 'projects/PROJECT_ID/secrets/SECRET_MANAGER_SECRET_ID/versions/VERSION_NUMBER');
     ```
-    
+
     Ersetzen Sie Folgendes:
-    
+
     -   `SECRET_ID`: Die Secret-ID, die Sie festgelegt haben und die später bei der Registrierung eines Modellendpunkts verwendet wird, z. B. `key1`.
     -   `SECRET_MANAGER_SECRET_ID`: Die Secret-ID, die beim Erstellen des Secrets im Secret Manager festgelegt wurde.
     -   `PROJECT_ID`: Die ID Ihres Projekts in Google Cloud .
     -   `VERSION_NUMBER`: Die Versionsnummer der Secret-ID.
 5.  Rufen Sie die Funktion zum Erstellen von Modellen auf, um den Modellendpunkt `text-embedding-ada-002` zu registrieren:
-    
+
     ```
     CALL
       google_ml.create_model(
@@ -305,9 +305,9 @@ Im folgenden Beispiel wird der OpenAI-Modellendpunkt `text-embedding-ada-002` hi
         model_auth_type => 'secret_manager',
         model_auth_id => 'SECRET_ID');
     ```
-    
+
     Ersetzen Sie Folgendes:
-    
+
     -   `MODEL_ID`: Eine eindeutige ID für den Modellendpunkt, die Sie definieren. Auf diese Modell-ID wird für Metadaten verwiesen, die der Modellendpunkt zum Generieren von Einbettungen oder zum Aufrufen von Vorhersagen benötigt.
     -   `SECRET_ID`: Die Secret-ID, die Sie zuvor im `google_ml.create_sm_secret()`\-Verfahren verwendet haben.
 
@@ -322,33 +322,33 @@ Im folgenden Beispiel wird der benutzerdefinierte Modellendpunkt `custom-embeddi
 So registrieren Sie vom Kunden gehostete Modellendpunkte für Texteinbettungen:
 
 1.  [Stellen Sie mit `psql` eine Verbindung zu Ihrer Datenbank her.](https://docs.cloud.google.com/alloydb/docs/connect-psql?hl=de)
-    
+
 2.  [`google_ml_integration`\-Erweiterung einrichten](#set-up-extension)
-    
+
 3.  [Optional: Fügen Sie den API-Schlüssel zur Authentifizierung als Secret in Secret Manager hinzu](#setup-secret-manager)
-    
+
 4.  Rufen Sie das im Secret Manager gespeicherte Secret auf:
-    
+
     ```
     CALL
       google_ml.create_sm_secret(
         secret_id => 'SECRET_ID',
         secret_path => 'projects/PROJECT_ID/secrets/SECRET_MANAGER_SECRET_ID/versions/VERSION_NUMBER');
     ```
-    
+
     Ersetzen Sie Folgendes:
-    
+
     -   `SECRET_ID`: Die Secret-ID, die Sie festgelegt haben und die später bei der Registrierung eines Modellendpunkts verwendet wird, z. B. `key1`.
     -   `SECRET_MANAGER_SECRET_ID`: Die Secret-ID, die beim Erstellen des Secrets im Secret Manager festgelegt wurde.
     -   `PROJECT_ID`: Die ID Ihres Projekts in Google Cloud .
     -   `VERSION_NUMBER`: Die Versionsnummer der Secret-ID.
-    
+
     **Hinweis** :Secret Manager generiert standardmäßig den Header `Authorization: Bearer SECRET_VALUE_FROM_SECRET_MANAGER` für die Authentifizierung. Wenn dieses Format mit dem Format des Inhabertokens zur Autorisierung Ihres Modellendpunkts übereinstimmt, müssen Sie keine Autorisierungsheader mit der Header-Generierungsfunktion generieren.
-    
+
 5.  Erstellen Sie die Transformationsfunktionen für Ein- und Ausgabe basierend auf der folgenden Signatur für die Vorhersagefunktion für Modellendpunkte für Texteinbettungen. Weitere Informationen zum Erstellen von Transformationsfunktionen finden Sie unter [Beispiel für Transformationsfunktionen](https://docs.cloud.google.com/alloydb/docs/reference/model-endpoint?hl=de#transform-func-example).
-    
+
     Im Folgenden finden Sie Beispiel-Transformationsfunktionen, die speziell für den Modellendpunkt `custom-embedding-model` für Texteinbettungen gelten:
-    
+
     ```
     -- Input Transform Function corresponding to the custom model endpoint
     CREATE OR REPLACE FUNCTION cymbal_text_input_transform(model_id VARCHAR(100), input_text TEXT)
@@ -376,9 +376,9 @@ So registrieren Sie vom Kunden gehostete Modellendpunkte für Texteinbettungen:
     END;
     $$;
     ```
-    
+
 6.  Rufen Sie die Funktion zum Erstellen von Modellen auf, um den benutzerdefinierten Endpunkt für das Einbettungsmodell zu registrieren:
-    
+
     ```
     CALL
       google_ml.create_model(
@@ -392,9 +392,9 @@ So registrieren Sie vom Kunden gehostete Modellendpunkte für Texteinbettungen:
         model_in_transform_fn => 'cymbal_text_input_transform',
         model_out_transform_fn => 'cymbal_text_output_transform');
     ```
-    
+
     Ersetzen Sie Folgendes:
-    
+
     -   `MODEL_ID`: Erforderlich. Eine eindeutige ID für den Modellendpunkt, den Sie definieren, z. B. `custom-embedding-model`. Auf diese Modell-ID wird für Metadaten verwiesen, die der Modellendpunkt zum Generieren von Einbettungen oder zum Aufrufen von Vorhersagen benötigt.
     -   `REQUEST_URL`: Erforderlich. Der modellspezifische Endpunkt beim Hinzufügen von benutzerdefinierten Texteinbettungen und allgemeinen Modellendpunkten, z. B. `https://cymbal.com/models/text/embeddings/v1`. Achten Sie darauf, dass der Modellendpunkt über eine interne IP-Adresse erreichbar ist. Die Verwaltung von Modellendpunkten unterstützt keine öffentlichen IP-Adressen.
     -   `MODEL_QUALIFIED_NAME`: Erforderlich, wenn für Ihren Modellendpunkt ein qualifizierter Name verwendet wird. Der vollständig qualifizierte Name, falls der Modellendpunkt mehrere Versionen hat.
@@ -415,53 +415,53 @@ Informationen zum Zugriff auf diesen Release finden Sie auf der Seite [Zugriffsa
 1.  [Nutzerzugriff auf Agent Platform-Modelle konfigurieren](https://docs.cloud.google.com/alloydb/docs/ai/configure-vertex-ai?hl=de)
 2.  Prüfen Sie, ob die aktuelle Version von `google_ml_integration` installiert ist.
     1.  Führen Sie den folgenden Befehl aus, um die installierte Version zu prüfen:
-        
+
         SELECT extversion FROM pg\_extension WHERE extname \= 'google\_ml\_integration';
-        extversion 
+        extversion
         \------------
         1.5.2
         (1 row)
-        
+
     2.  Wenn die Erweiterung nicht installiert ist oder die installierte Version älter als 1.5.2 ist, aktualisieren Sie die Erweiterung.
-        
+
         CREATE EXTENSION IF NOT EXISTS google\_ml\_integration;
         ALTER EXTENSION google\_ml\_integration UPDATE;
-        
+
         Wenn beim Ausführen der vorherigen Befehle Probleme auftreten oder die Erweiterung nach dem Ausführen der vorherigen Befehle nicht auf Version 1.5.2 aktualisiert wird, wenden Sie sich an den [Google Cloud -Support](https://cloud.google.com/support?hl=de).
-        
+
 3.  Wenn Sie die Funktionen der AlloyDB AI-Abfrage-Engine verwenden möchten, setzen Sie das Flag `google_ml_integration.enable_ai_query_engine` auf `on`.
-    
+
     ### SQL
-    
-    1.  Aktivieren Sie die KI-Abfrage-Engine für die aktuelle Sitzung.  
-        
+
+    1.  Aktivieren Sie die KI-Abfrage-Engine für die aktuelle Sitzung.
+
         SET google\_ml\_integration.enable\_ai\_query\_engine \= on;
-        
-    2.  Funktionen für eine bestimmte Datenbank sitzungsübergreifend aktivieren  
-        
+
+    2.  Funktionen für eine bestimmte Datenbank sitzungsübergreifend aktivieren
+
         ALTER DATABASE DATABASE\_NAME SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    3.  Aktivieren Sie die KI-Abfrage-Engine für einen bestimmten Nutzer über Sitzungen und Datenbanken hinweg.  
-        
+
+    3.  Aktivieren Sie die KI-Abfrage-Engine für einen bestimmten Nutzer über Sitzungen und Datenbanken hinweg.
+
         ALTER ROLE postgres SET google\_ml\_integration.enable\_ai\_query\_engine \= 'on';
-        
-    
+
+
     ### Console
-    
+
     Wenn Sie den Wert des Flags `google_ml_integration.enable_ai_query_engine` ändern möchten, folgen Sie der Anleitung unter [Datenbank-Flags einer Instanz konfigurieren](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=de#console).
-    
+
     ### gcloud
-    
+
     Wenn Sie die gcloud CLI verwenden möchten, können Sie die Google Cloud CLI [installieren und initialisieren](https://docs.cloud.google.com/sdk/docs/install?hl=de) oder [Cloud Shell](https://docs.cloud.google.com/shell/docs/using-cloud-shell?hl=de) verwenden.
-    
+
     Sie können den Wert des Flags `google_ml_integration.enable_ai_query_engine` ändern. Weitere Informationen finden Sie unter [Datenbank-Flags einer Instanz konfigurieren](https://docs.cloud.google.com/alloydb/docs/instance-configure-database-flags?hl=de#console).
-    
+
     gcloud alloydb instances update INSTANCE\_ID \\
       --database-flags google\_ml\_integration.enable\_ai\_query\_engine=on \\
       --region=REGION\_ID \\
       --cluster=CLUSTER\_ID \\
       --project=PROJECT\_ID
-    
+
 
 ### Modell aufrufen, um multimodale Einbettungen zu generieren
 
@@ -472,7 +472,7 @@ Im folgenden Beispiel wird der qualifizierte Modellname `multimodalembedding@001
 1.  Stellen Sie mit `psql` eine Verbindung zu Ihrer Datenbank her.
 2.  [`google_ml_integration`\-Erweiterung einrichten](#set-up-extension)
 3.  Multimodale Bildeinbettungen generieren:
-    
+
     ```
     SELECT
       ai.image_embedding(
@@ -480,7 +480,7 @@ Im folgenden Beispiel wird der qualifizierte Modellname `multimodalembedding@001
         image => 'IMAGE_PATH_OR_TEXT',
         mimetype => 'MIMETYPE');
     ```
-    
+
 
 Ersetzen Sie Folgendes:
 
@@ -667,7 +667,7 @@ Im folgenden Beispiel wird der Modellendpunkt `gemini-1.5-pro:generateContent` a
 1.  Stellen Sie mit `psql` eine Verbindung zu Ihrer Datenbank her.
 2.  [`google_ml_integration`\-Erweiterung einrichten](#set-up-extension)
 3.  Rufen Sie Vorhersagen mit der vorregistrierten Modell-ID auf:
-    
+
     ```
     SELECT
         json_array_elements(
@@ -686,7 +686,7 @@ Im folgenden Beispiel wird der Modellendpunkt `gemini-1.5-pro:generateContent` a
         ]
         }'))-> 'candidates' -> 0 -> 'content' -> 'parts' -> 0 -> 'text';
     ```
-    
+
 
 ### Allgemeines Modell bei Hugging Face
 
@@ -696,22 +696,22 @@ Im folgenden Beispiel wird der benutzerdefinierte Klassifizierungsmodellendpunkt
 2.  [`google_ml_integration`\-Erweiterung einrichten](#set-up-extension)
 3.  [Fügen Sie den OpenAI-API-Schlüssel zur Authentifizierung als Secret in Secret Manager hinzu.](#setup-secret-manager) Wenn Sie bereits ein Secret für ein anderes OpenAI-Modell erstellt haben, können Sie dasselbe Secret wiederverwenden.
 4.  Rufen Sie das im Secret Manager gespeicherte Secret auf:
-    
+
     ```
     CALL
       google_ml.create_sm_secret(
         secret_id => 'SECRET_ID',
         secret_path => 'projects/PROJECT_ID/secrets/SECRET_MANAGER_SECRET_ID/versions/VERSION_NUMBER');
     ```
-    
+
     Ersetzen Sie Folgendes:
-    
+
     -   `SECRET_ID`: Die von Ihnen festgelegte Secret-ID, die später bei der Registrierung eines Modellendpunkts verwendet wird.
     -   `SECRET_MANAGER_SECRET_ID`: Die Secret-ID, die beim Erstellen des Secrets im Secret Manager festgelegt wurde.
     -   `PROJECT_ID`: Die ID Ihres Projekts in Google Cloud .
     -   `VERSION_NUMBER`: Die Versionsnummer der Secret-ID.
 5.  Rufen Sie die Funktion zum Erstellen von Modellen auf, um den Modellendpunkt `facebook/bart-large-mnli` zu registrieren:
-    
+
     ```
     CALL
       google_ml.create_model(
@@ -722,9 +722,9 @@ Im folgenden Beispiel wird der benutzerdefinierte Klassifizierungsmodellendpunkt
         model_auth_type => 'secret_manager',
         model_auth_id => 'SECRET_ID');
     ```
-    
+
     Ersetzen Sie Folgendes:
-    
+
     -   `MODEL_ID`: Eine eindeutige ID für den von Ihnen definierten Modellendpunkt, z. B. `custom-classification-model`. Auf diese Modell-ID wird für Metadaten verwiesen, die der Modellendpunkt zum Generieren von Einbettungen oder zum Aufrufen von Vorhersagen benötigt.
     -   `REQUEST_URL`: Der modellspezifische Endpunkt beim Hinzufügen benutzerdefinierter Texteinbettungen und allgemeiner Modellendpunkte, z. B. `https://api-inference.huggingface.co/models/facebook/bart-large-mnli`.
     -   `MODEL_QUALIFIED_NAME`: Der voll qualifizierte Name der Modellendpunktversion, z. B. `facebook/bart-large-mnli`.
@@ -736,27 +736,27 @@ Im folgenden Beispiel wird der Modellendpunkt `claude-3-opus-20240229` hinzugef�
 
 1.  Stellen Sie mit `psql` eine Verbindung zu Ihrer Datenbank her.
 2.  [Erstellen und aktivieren Sie die Erweiterung `google_ml_integration`.](https://docs.cloud.google.com/alloydb/docs/ai/register-model-endpoint?hl=de)
-    
+
     ### Secret Manager
-    
+
     1.  [Fügen Sie das Inhabertoken als Secret zur Authentifizierung in Secret Manager hinzu](https://docs.cloud.google.com/alloydb/docs/ai/register-model-endpoint?hl=de).
     2.  Rufen Sie das im Secret Manager gespeicherte Secret auf:
-        
+
         ```
         CALL
           google_ml.create_sm_secret(
             secret_id => 'SECRET_ID',
             secret_path => 'projects/PROJECT_ID/secrets/SECRET_MANAGER_SECRET_ID/versions/VERSION_NUMBER');
         ```
-        
+
         Ersetzen Sie Folgendes:
-        
+
         -   `SECRET_ID`: Die von Ihnen festgelegte Secret-ID, die später bei der Registrierung eines Modellendpunkts verwendet wird.
         -   `SECRET_MANAGER_SECRET_ID`: Die Secret-ID, die beim Erstellen des Secrets im Secret Manager festgelegt wurde.
         -   `PROJECT_ID`: Die ID Ihres Projekts in Google Cloud .
         -   `VERSION_NUMBER`: Die Versionsnummer der Secret-ID.
     3.  Rufen Sie die Funktion zum Erstellen von Modellen auf, um den Modellendpunkt `claude-3-opus-20240229` zu registrieren.
-        
+
         ```
         CALL
           google_ml.create_model(
@@ -767,16 +767,16 @@ Im folgenden Beispiel wird der Modellendpunkt `claude-3-opus-20240229` hinzugef�
             model_auth_id => 'SECRET_ID',
             generate_headers_fn => 'google_ml.anthropic_claude_header_gen_fn');
         ```
-        
+
         Ersetzen Sie Folgendes:
-        
+
         -   `MODEL_ID`: Eine eindeutige ID für den von Ihnen definierten Modellendpunkt, z. B. `anthropic-opus`. Auf diese Modell-ID wird für Metadaten verwiesen, die der Modellendpunkt zum Generieren von Einbettungen oder zum Aufrufen von Vorhersagen benötigt.
         -   `REQUEST_URL`: Der modellspezifische Endpunkt beim Hinzufügen benutzerdefinierter Texteinbettungen und allgemeiner Modellendpunkte, z. B. `https://api.anthropic.com/v1/messages`.
-    
+
     ### Auth-Header
-    
+
     1.  Verwenden Sie die Standardfunktion `google_ml.anthropic_claude_header_gen_fn` zum Erzeugen von Headern oder erstellen Sie eine Funktion zum Erzeugen von Headern.
-        
+
           ```
           CREATE OR REPLACE FUNCTION anthropic_sample_header_gen_fn(model_id VARCHAR(100), request_body JSON)
           RETURNS JSON
@@ -788,13 +788,13 @@ Im folgenden Beispiel wird der Modellendpunkt `claude-3-opus-20240229` hinzugef�
           END;
           $$;
         ```
-        
+
         Ersetzen Sie Folgendes:
-        
+
         -   `ANTHROPIC_API_KEY`: Der Anthropic-API-Schlüssel.
         -   `ANTHROPIC_VERSION` (optional): Die spezifische Modellversion, die Sie verwenden möchten, z. B. `2023-06-01`.
     2.  Rufen Sie die Funktion zum Erstellen von Modellen auf, um den Modellendpunkt `claude-3-opus-20240229` zu registrieren.
-        
+
         ```
         CALL
           google_ml.create_model(
@@ -803,12 +803,12 @@ Im folgenden Beispiel wird der Modellendpunkt `claude-3-opus-20240229` hinzugef�
             model_request_url => 'REQUEST_URL',
             generate_headers_fn => 'google_ml.anthropic_claude_header_gen_fn');
         ```
-        
+
         Ersetzen Sie Folgendes:
-        
+
         -   `MODEL_ID`: Eine eindeutige ID für den von Ihnen definierten Modellendpunkt, z. B. `anthropic-opus`. Auf diese Modell-ID wird für Metadaten verwiesen, die der Modellendpunkt zum Generieren von Einbettungen oder zum Aufrufen von Vorhersagen benötigt.
         -   `REQUEST_URL`: Der modellspezifische Endpunkt beim Hinzufügen benutzerdefinierter Texteinbettungen und allgemeiner Modellendpunkte, z. B. `https://api.anthropic.com/v1/messages`.
-    
+
 
 Weitere Informationen finden Sie unter [Vorhersagen für allgemeine Modellendpunkte aufrufen](https://docs.cloud.google.com/alloydb/docs/ai/invoke-predictions?hl=de).
 
@@ -823,9 +823,9 @@ Ein häufiger Anwendungsfall für aufgabenspezifische Modelle ist die [Erstellun
 Führen Sie die folgenden Schritte aus, um dieses Modell bereitzustellen und zu registrieren:
 
 1.  Stellen Sie das TimesFM-Modell aus dem Model Garden an einem Agent Platform-Endpunkt bereit, um eine öffentlich zugängliche Modellanfrage-URL zu erhalten. Weitere Informationen finden Sie unter [Model Garden-Modelle auf einem Agent Platform-Endpunkt bereitstellen](https://docs.cloud.google.com/alloydb/docs/ai/register-model-endpoint?hl=de#deploy-model-model-garden).
-    
+
 2.  Verwenden Sie die Funktion `google_ml.create_model`, um das bereitgestellte TimesFM-Modell in AlloyDB for PostgreSQL zu registrieren. Für Zeitreihenprognosen muss `model_type` `ts_forecasting` sein:
-    
+
 
 ```
 CALL

@@ -41,7 +41,7 @@ Ative os seguintes serviços para seu projeto:
 
 ### Preparar um cluster, uma instância e um banco de dados do AlloyDB para PostgreSQL
 
-Verifique se você tem acesso a um cluster e uma instância do AlloyDB ou [crie um](https://docs.cloud.google.com/alloydb/docs/cluster-create?hl=pt-br).  
+Verifique se você tem acesso a um cluster e uma instância do AlloyDB ou [crie um](https://docs.cloud.google.com/alloydb/docs/cluster-create?hl=pt-br).
 Este tutorial exige que você tenha um banco de dados na sua instância do AlloyDB. Para mais informações, consulte [Criar um banco de dados](https://docs.cloud.google.com/alloydb/docs/database-create?hl=pt-br).
 
 ### Papéis e permissões necessárias
@@ -90,35 +90,35 @@ Para mais informações sobre como instalar a extensão de enriquecimento de con
 Para instalar a extensão de enriquecimento de contexto do banco de dados, siga estas etapas:
 
 1.  Instale a extensão da CLI do Gemini para enriquecimento de contexto do banco de dados:
-    
+
     ```
     gemini extensions install https://github.com/GoogleCloudPlatform/db-context-enrichment
     ```
-    
+
     **Observação**: a extensão exige uma chave de API Gemini na instalação para autenticar com a API Gemini e ativar a geração de contexto. Para mais informações sobre como encontrar sua chave de API, consulte [Como usar chaves da API Gemini](https://ai.google.dev/gemini-api/docs/api-key?hl=pt-br).
-    
+
 2.  (Opcional) Atualize a extensão de enriquecimento de contexto do banco de dados.
-    
+
     Para verificar a versão instalada da extensão, execute o seguinte comando:
-    
+
     ```
     gemini extensions list
     ```
-    
+
     Verifique se a versão é `0.5.0` ou mais recente. Para atualizar a extensão de enriquecimento de contexto do banco de dados, execute o seguinte comando:
-    
+
       ```
       gemini extensions update mcp-db-context-enrichment
     ```
-    
+
     Para atualizar a extensão de enriquecimento de contexto do banco de dados ou substituir o `GEMINI_API_KEY`, execute o seguinte comando:
-    
+
     ```
     gemini extensions config mcp-db-context-enrichment GEMINI_API_KEY
     ```
-    
+
     Substitua GEMINI\_API\_KEY pela sua chave de API Gemini.
-    
+
 
 ### Configurar a conexão de banco de dados
 
@@ -146,25 +146,25 @@ O arquivo de configuração especifica a origem do banco de dados e as ferrament
 **Observação**: se essa conexão não for estabelecida, a extensão vai retornar mensagens de erro, como "Erro ao descobrir ferramentas da mcp\_toolbox", e a geração de contexto não vai funcionar.
 
 1.  Inicie a CLI do Gemini:
-    
+
     ```
     gemini
     ```
-    
+
 2.  Verifique se as habilidades estão ativas digitando o seguinte na CLI do Gemini:
-    
+
     ```
     /skills
     ```
-    
+
 3.  Digite um comando, por exemplo, `help me set up the database connection`. A habilidade orienta você na criação do arquivo de configuração no diretório de trabalho atual como `autoctx/tools.yaml`.
-    
+
 4.  Execute o seguinte comando na CLI do Gemini para aplicar a configuração `tools.yaml` ao servidor MCP da caixa de ferramentas.
-    
+
     ```
     /mcp reload
     ```
-    
+
 
 Para mais informações sobre como configurar manualmente o arquivo de configuração do banco de dados, consulte [Configuração da MCP Toolbox](https://mcp-toolbox.dev/documentation/configuration/).
 
@@ -178,21 +178,21 @@ O comando de inicialização configura seu espaço de trabalho local, incluindo 
 
 1.  Crie um novo diretório para servir como espaço de trabalho para o fluxo de otimização iterativa e navegue até ele.
 2.  Inicie a CLI do Gemini no novo diretório:
-    
+
     ```
     gemini
     ```
-    
+
 3.  Execute o comando de inicialização:
-    
+
     ```
     /autoctx:init
     ```
-    
+
     O agente orienta você na criação do arquivo `tools.yaml` se nenhuma conexão de banco de dados tiver sido configurada. Ele também inicializa o arquivo `state.md` local e um diretório `experiments`.
-    
+
     Depois da inicialização, seu espaço de trabalho vai ficar assim:
-    
+
     ```
     my-workspace/
     └── autoctx/
@@ -200,7 +200,7 @@ O comando de inicialização configura seu espaço de trabalho local, incluindo 
         ├── state.md            # Local file to track the experiment progress
         └── experiments/        # Dedicated directory for future experiment-specific files
     ```
-    
+
 
 ### Preparar e expandir conjuntos de dados
 
@@ -222,37 +222,37 @@ A extensão da CLI do Gemini inclui um comando que cria e dimensiona uma pequena
 
 1.  Navegue até a pasta do espaço de trabalho.
 2.  Inicie a CLI do Gemini no novo diretório:
-    
+
     ```
     gemini
     ```
-    
+
 3.  Execute o comando `/autoctx:generate-dataset` na CLI do Gemini:
-    
+
     ```
     /autoctx:generate-dataset
     ```
-    
+
 4.  Quando o agente pedir, forneça uma semente, que é um exemplo inicial ou um pequeno conjunto de exemplos que orienta a geração de um conjunto de dados maior. Uma semente pode ser uma das seguintes opções:
-    
+
     -   Um pequeno arquivo de conjunto de dados padrão-ouro
     -   Pares de ouro específicos de linguagem natural para SQL (NL2SQL)
-    
+
     Por exemplo, você pode fornecer o seguinte par de ouro NL2SQL como uma semente:
-    
+
     ```
     Question: "What are the names of all airports in California?"
     SQL: "SELECT name FROM airports WHERE state = 'CA';"
     ```
-    
+
 5.  O agente pede permissão para verificar a sintaxe e a validade da execução usando a ferramenta `execute_sql`. Esta etapa é opcional.
-    
+
 6.  O agente pergunta se é necessário expandir o conjunto de dados com variações dos dados iniciais (aplicando filtros, sinônimos etc. diferentes). Esta etapa é opcional.
-    
+
     O agente usa a ferramenta `execute_sql` para executar as consultas SQL recém-geradas no banco de dados e verificar a sintaxe e a validade da execução antes de apresentá-las a você.
-    
+
 7.  Aceite, edite ou rejeite as sugestões de forma seletiva. Os pares aprovados são salvos automaticamente no local e estão prontos para avaliação.
-    
+
     ```
     my-workspace/
     └── autoctx/
@@ -261,7 +261,7 @@ A extensão da CLI do Gemini inclui um comando que cria e dimensiona uma pequena
         ├── golden.json  # Generated dataset
         └── experiments/
     ```
-    
+
 
 ### Criar conjunto de contexto inicial
 
@@ -273,25 +273,25 @@ A extensão da CLI do Gemini inclui um comando pré-criado para gerar um conjunt
 
 1.  Navegue até a pasta do espaço de trabalho.
 2.  Inicie a CLI do Gemini no novo diretório:
-    
+
     ```
     gemini
     ```
-    
+
 3.  Execute o comando `/autoctx:bootstrap` na CLI do Gemini:
-    
+
     ```
     /autoctx:bootstrap
     ```
-    
+
     Em geral, você pode esperar o seguinte do agente:
-    
+
     -   O agente pede que você especifique um nome para o experimento. Um experimento é uma pasta de espaço de trabalho dedicada que encapsula o ciclo de vida completo de uma configuração de contexto de banco de dados, rastreando o estado de referência, os resultados do teste de avaliação e as melhorias iterativas subsequentes de ascensão de gradiente. Esse nome é usado para organizar todos os arquivos gerados na pasta do experimento no seu espaço de trabalho. Escolha um nome descritivo e fácil de lembrar.
-        
+
     -   O agente busca e lista esquemas do seu banco de dados de destino e pede que você forneça outros recursos ou arquivos, se quiser. Se o esquema for complexo, o agente também vai pedir que você selecione esquemas ou tabelas específicos para o conjunto de contexto inicial. Se você não especificar nenhuma, o comando vai presumir que todas as tabelas estão disponíveis nos esquemas de banco de dados atuais.
-        
+
 4.  Revise e refine o conjunto de contextos gerado. Depois de refinado, o agente produz um arquivo de contexto JSON diretamente no disco local, na pasta do seu espaço de trabalho:
-    
+
     ```
     my-workspace/
     └── autoctx/
@@ -301,9 +301,9 @@ A extensão da CLI do Gemini inclui um comando pré-criado para gerar um conjunt
             └── my-experiment/
                 └── bootstrap_context.json  # The generated initial context set file
     ```
-    
+
 5.  Siga as instruções para [fazer upload do contexto do AlloyDB Studio](https://docs.cloud.google.com/alloydb/docs/ai/manage-data-agents?hl=pt-br#edit-context-set).
-    
+
 
 ### Avaliar a eficácia do contexto
 
@@ -314,25 +314,25 @@ Para medir a eficácia do contexto atual em relação ao conjunto de dados de ou
 1.  Faça upload do contexto do AlloyDB Studio para os conjuntos de contexto de destino para avaliação. Esta etapa é opcional se o contexto a ser avaliado não for enviado.
 2.  Navegue até a pasta do espaço de trabalho.
 3.  Inicie a CLI do Gemini na pasta:
-    
+
     ```
     gemini
     ```
-    
+
 4.  Execute o comando `/autoctx:evaluate` na CLI do Gemini:
-    
+
     ```
     /autoctx:evaluate
     ```
-    
+
 5.  Forneça os caminhos para seu conjunto de dados de referência, o ID do conjunto de contexto para geração de configuração de avaliação e execução de avaliação e um diretório de saída designado.
-    
+
     **Observação**: para mais informações sobre como encontrar o ID do conjunto de contexto, consulte [Encontrar o ID do contexto do agente](https://docs.cloud.google.com/alloydb/docs/ai/inspect-data-agent?hl=pt-br#find-context-set-id).
-    
+
     Depois de concluído, o agente gera os resultados da avaliação como arquivos na pasta do experimento e resume o resultado.
-    
+
     Se quiser, você pode inspecionar manualmente a avaliação no relatório detalhado, que é armazenado como arquivos CSV na pasta do experimento.
-    
+
     ```
     my-workspace/
     └── autoctx/
@@ -352,7 +352,7 @@ Para medir a eficácia do contexto atual em relação ao conjunto de dados de ou
                             ├── scores.csv
                             └── summary.csv
     ```
-    
+
 
 ### Realizar análise de lacunas e otimização de contexto
 
@@ -360,23 +360,23 @@ Como uma etapa fundamental na otimização do conjunto de contexto, a extensão 
 
 1.  Navegue até a pasta do espaço de trabalho.
 2.  Inicie a CLI do Gemini na pasta:
-    
+
     ```
     gemini
     ```
-    
+
 3.  Execute o comando `/autoctx:hillclimb` na CLI do Gemini:
-    
+
     ```
     /autoctx:hillclimb
     ```
-    
+
     O agente identifica automaticamente os resultados de avaliação e o contexto de base mais adequados para a otimização por escalada e pede confirmação se houver várias opções.
-    
+
     Se nenhum resultado de avaliação estiver disponível, o agente vai pedir que você faça uma execução com o conjunto de dados e o contexto definidos.
-    
+
     Quando estiver tudo pronto, o agente vai ler os resultados da avaliação e o contexto definido, depois vai gerar um relatório de análise de lacunas.
-    
+
     ```
     my-workspace/
     └── autoctx/
@@ -391,11 +391,11 @@ Como uma etapa fundamental na otimização do conjunto de contexto, a extensão 
                 └── hillclimb/
                     └── gap_analysis_v1.md
     ```
-    
+
     O agente formula correções propondo novos modelos e aspectos prescritivos, testando opcionalmente o SQL no banco de dados usando `execute_sql`.
-    
+
     Quando estiver tudo pronto, um novo arquivo JSON de contexto aprimorado será gerado localmente, deixando o arquivo JSON de contexto de base intacto.
-    
+
     ```
     my-workspace/
     └── autoctx/
@@ -411,9 +411,9 @@ Como uma etapa fundamental na otimização do conjunto de contexto, a extensão 
                     ├── gap_analysis_v1.md
                     └── improved_context_v1.md
     ```
-    
+
 4.  Siga as instruções para [fazer upload do contexto para o conjunto de contexto de destino do AlloyDB Studio](https://docs.cloud.google.com/alloydb/docs/ai/manage-data-agents?hl=pt-br#edit-context-set), pronto para a próxima rodada de iteração, começando com a avaliação.
-    
+
 
 ### Limitações
 
@@ -434,17 +434,17 @@ Para mais informações sobre o arquivo de conjunto de contexto e o modelo de co
 Para adicionar um modelo de consulta ao conjunto de contexto, siga estas etapas:
 
 1.  Execute o comando `/generate_targeted_templates` na CLI do Gemini:
-    
+
     ```
     /generate_targeted_templates
     ```
-    
+
 2.  Insira a consulta em linguagem natural para adicionar ao modelo de consulta.
-    
+
 3.  Insira a consulta SQL correspondente ao modelo de consulta.
-    
+
 4.  Revise o modelo de consulta gerado. É possível salvar o modelo de consulta como um arquivo de conjunto de contexto ou anexá-lo a um arquivo de conjunto de contexto existente.
-    
+
 
 O arquivo de conjunto de contexto, por exemplo, `my-cluster-psc-primary_postgres_context_set_20251104111122.json`, é salvo no diretório em que você executou os comandos.
 
@@ -457,17 +457,17 @@ Para mais informações sobre o arquivo e as facetas do conjunto de contexto, co
 Para adicionar uma faceta ao arquivo de conjunto de contexto, siga estas etapas:
 
 1.  Execute o comando `/generate_targeted_facets` na CLI do Gemini:
-    
+
     ```
     /generate_targeted_facets
     ```
-    
+
 2.  Insira a intenção de linguagem natural para adicionar ao atributo.
-    
+
 3.  Insira o snippet SQL correspondente ao aspecto.
-    
+
 4.  Revise a faceta gerada. É possível salvar o atributo em um arquivo de conjunto de contexto ou anexá-lo a um arquivo de conjunto de contexto existente.
-    
+
 
 O arquivo de conjunto de contexto, por exemplo, `my-cluster-psc-primary_postgres_context_set_20251104111122.json`, é salvo no diretório em que você executou os comandos.
 
@@ -480,17 +480,17 @@ Para mais informações sobre o índice de valor, consulte [Visão geral dos con
 Para gerar um índice de valor, siga estas etapas:
 
 1.  Execute o comando `/generate_targeted_value_searches`:
-    
+
     ```
     /generate_targeted_value_searches
     ```
-    
+
 2.  Insira `postgresql` para selecionar o AlloyDB como mecanismo de banco de dados.
-    
+
 3.  Insira a versão do PostgreSQL a ser usada. Selecione `default` para escolher o PostgreSQL 16.
-    
+
 4.  Insira a configuração de pesquisa de valor da seguinte forma:
-    
+
     ```
     Table name: TABLE_NAME
     Column name: COLUMN_NAME
@@ -498,24 +498,24 @@ Para gerar um índice de valor, siga estas etapas:
     Match function: MATCH_FUNCTION
     Description: DESCRIPTION
     ```
-    
+
     Substitua:
-    
+
     -   `TABLE_NAME`: a tabela em que a coluna associada ao tipo de conceito existe.
     -   `COLUMN_NAME`: o nome da coluna associada ao tipo de conceito.
     -   `CONCEPT_TYPE`: o tipo de conceito a ser definido, por exemplo, `City name`.
     -   `MATCH_FUNCTION`: a função de correspondência a ser usada para a pesquisa de valores. Você pode usar uma das seguintes funções:
-        
+
         -   `EXACT_STRING_MATCH`: para correspondência exata de dois valores de string. Ideal para IDs, códigos e chaves primárias exclusivos.
         -   `TRIGRAM_STRING_MATCH`: para correspondência aproximada que calcula a distância trigram normalizada. Ideal para pesquisas de usuários e correção de nomes. Para usar `TRIGRAM_STRING_MATCH`, ative a extensão [`pg_trgm`](https://www.postgresql.org/docs/current/pgtrgm.html).
-        
+
         -   `SEMANTIC_SIMILARITY_MATCH`: para pesquisa semântica em valores de string. Ideal para pesquisas entre idiomas e de sinônimos. Para uma lista de modelos compatíveis, consulte [Modelos do Google compatíveis](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings?hl=pt-br#google-models). Para usar o `SEMANTIC_SIMILARITY_MATCH`, ative a extensão `vector` e `google_ml_integration`.
     -   `DESCRIPTION`: (opcional) a descrição da consulta de pesquisa de valor.
-        
+
 5.  Adicione outras pesquisas de valor conforme necessário. Se você pular a adição de outros índices de valor, a geração de SQL baseada em modelo vai para a próxima etapa.
-    
+
 6.  Revise as pesquisas de valor geradas. Você pode salvar o conjunto de contexto como um arquivo de conjunto de contexto ou adicionar ao final a um arquivo de conjunto de contexto existente.
-    
+
 
 O arquivo de conjunto de contexto, por exemplo, `my-cluster-psc-primary_postgres_context_set_20251104111122.json`, é salvo no diretório em que você executou os comandos.
 
