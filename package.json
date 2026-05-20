@@ -1,6 +1,6 @@
 {
   "name": "managed-coworkers",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Multi-agent research chassis with vendor doc mirror + MCP knowledge bridge.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
