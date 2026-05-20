@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "data-engineering",
+  "displayName": "Data Engineering (managed-coworker)",
+  "version": "0.1.0",
+  "description": "Project-local managed-coworker that authors terse data models + enums as the chassis grows. Sits across AlloyDB (persistence) + Redis (task queues) + Cloudflare (visualization + Workers Analytics Engine). OAuth-only, connector-enum like its sibling product-management. One-ticket-one-PR discipline enforced via Atlassian integration.",
+  "author": {
+    "name": "managed-coworkers"
+  },
+  "keywords": [
+    "data-engineering",
+    "knowledge-work",
+    "managed-coworker",
+    "alloydb",
+    "redis",
+    "cloudflare",
+    "data-modeling",
+    "enums",
+    "atlassian"
+  ],
+  "homepage": "https://github.com/subagentceo/managed-coworkers",
+  "repository": "https://github.com/subagentceo/managed-coworkers",
+  "userConfig": {
+    "datastores": {
+      "type": "string",
+      "title": "Datastore connector(s)",
+      "description": "Which datastore MCP server(s) to enable. Defaults to the chassis's existing alloydb + redis from root .mcp.json. Operator may add additional stores (e.g. turbopuffer for vectors, neon for branched Postgres).",
+      "multiple": true
+    },
+    "ticketing": {
+      "type": "string",
+      "title": "Project-management connector",
+      "description": "Ticketing MCP server for the 1-ticket-1-PR discipline (Atlassian / GitHub Projects / Linear). Operator-authorized.",
+      "multiple": true
+    },
+    "viz": {
+      "type": "string",
+      "title": "Visualization surface",
+      "description": "Visualization MCP server(s) for rendering the data architecture diagram. Defaults to cloudflare-codemode for Workers-rendered HTML/SVG; chrome-devtools for snapshot validation.",
+      "multiple": true
+    },
+    "domain_models_path": {
+      "type": "directory",
+      "title": "Domain models output directory",
+      "description": "Where this coworker writes terse data-model + enum TypeScript files (one file per domain). Defaults to src/domain/models/."
+    }
+  }
+}
