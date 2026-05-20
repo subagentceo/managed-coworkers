@@ -60,10 +60,10 @@ android:layout_height="match_parent"
         <!-- Setup the Arkose API -->
        <!--
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace <company> with your company's personalized Client API URL name, and replace <YOUR_PUBLIC_KEY> with the public key supplied to you by Arkose Labs, and 
+    replace <company> with your company's personalized Client API URL name, and replace <YOUR_PUBLIC_KEY> with the public key supplied to you by Arkose Labs, and
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupEnforcement" ></script>
      -->
-         
+
         <script data-callback="setupEnforcement"
                 src="https://<company>-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" ></script>
 
@@ -129,11 +129,11 @@ android:layout_height="match_parent"
         <!-- Setup the Arkose API -->
        <!--
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace <company> with your company's personalized Client API URL name, and replace <YOUR_PUBLIC_KEY> with the public key supplied to you by Arkose Labs, and 
+    replace <company> with your company's personalized Client API URL name, and replace <YOUR_PUBLIC_KEY> with the public key supplied to you by Arkose Labs, and
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupDetect" ></script>
   -->
 
-         
+
         <script data-callback="setupDetect"
                 src="https://<company>-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" ></script>
 
@@ -225,22 +225,22 @@ private WebView wv1;
         public void onSuppress() {
             Log.i("onSuppress");
         }
-      
+
         @JavascriptInterface
         public void onShow() {
             Log.i("onShow");
         }
-      
+
       	@JavascriptInterface
         public void onError(String response) {
             Log.i("onError: ", response);
         }
-      
+
         @JavascriptInterface
         public void onFailed(String response) {
             Log.i("onFailed: ", response);
         }
-      
+
       	@JavascriptInterface
         public void onResize(String response) {
             Log.i("onResize: ", response);
@@ -293,12 +293,12 @@ private WebView wv1;
         public void onSuppress() {
             Log.i("onSuppress");
         }
-      
+
         @JavascriptInterface
         public void onShow() {
             Log.i("onShow");
         }
-      
+
       	@JavascriptInterface
         public void onError(String response) {
             Log.i("onError: ", response);
@@ -314,7 +314,7 @@ private WebView wv1;
                 }
             });
         }
-        
+
         @JavascriptInterface
         public void setInvisible() {
             runOnUiThread(new Runnable() {
@@ -362,7 +362,7 @@ private WebView wv1;
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
                 // Load the local HTML file that hosts the Arkose Labs API.
                 String url = Uri.parse("file:///android_asset/ArkoseLabsAPI.html").toString();
                 webView.loadUrl(url);

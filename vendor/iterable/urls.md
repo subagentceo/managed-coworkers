@@ -1,6 +1,6 @@
 ---
 vendor: iterable
-llms_txt: 
+llms_txt:
 last_crawled: 2026-05-15T04:37:57.127Z
 count: 60
 transform: html-extract

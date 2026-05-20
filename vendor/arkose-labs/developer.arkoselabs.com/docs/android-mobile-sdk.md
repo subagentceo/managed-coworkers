@@ -1,6 +1,6 @@
 # Android Mobile SDK
 
-# Introduction
+## Introduction
 
 Arkose Labs' mobile SDKs let you wrap our solution with Android native function calls. This guarantees seamless integration of your mobile apps with Arkose's full interactive challenges on detection and enforcement and does so without the extended wait times for separate mobile solutions.
 
@@ -217,39 +217,39 @@ import com.arkoselabs.sdk.ArkoseManager;
            .addOnCompletedListener(arkoseChallengeResponse -> {
                // invoked On Enforcement Challenge completed
             })
-            
+
            .addOnFailureListener(arkoseChallengeResponse -> {
                // invoked on Enforcement Challenge failed
            })
-           
+
            .addOnErrorListener(arkoseChallengeResponse -> {
                 // invoked on getting error while loading EC
            })
-           
+
            .addOnWarningListener(arkoseChallengeResponse -> {
-                // invoked when an issue occurs which needs to be shared with 
+                // invoked when an issue occurs which needs to be shared with
                    the app as a warning
            })
 
            .addOnResizeListener(arkoseChallengeResponse -> {
                 // Provides the width and height of the visible EC from an SDK call
-                // While you cannot set the width and height values yourself, 
-                // you can make use of their new values from the resizing 
+                // While you cannot set the width and height values yourself,
+                // you can make use of their new values from the resizing
                 // as you'd like, such as putting them in a log entry.
            })
-           
+
            .addOnReadyListener(() -> {
                  //Do Something on ready callback received
            })
-           
+
            .addOnShowListener(() -> {
                  //Do Something on show callback received
            })
-           
+
            .addOnShownListener(() -> {
                  //Deprecated since Arkose SDK v2.13.0
            })
-           
+
            .addOnShownListener(new ArkoseChallenge.OnShownListener() {
                @Override
                public void onShown(ArkoseChallengeResponse response) {
@@ -261,11 +261,11 @@ import com.arkoselabs.sdk.ArkoseManager;
                 //Deprecated since Arkose SDK v2.13.0
                }
            })
-           
-           .addOnHideListener(() -> { 
+
+           .addOnHideListener(() -> {
                 //Deprecated since Arkose SDK v2.13.0
            })
-           
+
            .addOnHideListener(new ArkoseChallenge.OnHideListener() {
                @Override
                public void onHide() {
@@ -277,9 +277,9 @@ import com.arkoselabs.sdk.ArkoseManager;
                  //Do Something on hide callback received
                }
             })
-           
+
            .addOnResetListener(() -> {
-                 //Do Something on reset callback received 
+                 //Do Something on reset callback received
            })
 
            .addOnViewFramePosition(arkoseChallengeResponse -> {
@@ -288,7 +288,7 @@ import com.arkoselabs.sdk.ArkoseManager;
                  // arkoseECResponse.getWindow().getAttributes().gravity = Gravity.BOTTOM;
                  // arkoseECResponse.getWindow().getAttributes().width = ViewGroup.LayoutParams.MATCH_PARENT;
              })
-           
+
            .addOnSuppressListener(() -> {
                  //Deprecated since Arkose SDK v2.13.0
            })
@@ -314,28 +314,28 @@ import com.arkoselabs.sdk.ArkoseManager;
                    // invoked On Detection completed
                }
             })
-            
+
            .addOnErrorListener(new OnErrorListener<ArkoseECResponse>() {
                @Override
                public void onError(ArkoseECResponse arkoseECResponse) {
                 // invoked on getting error while loading detection
                }
            })
-           
+
            .addOnWarningListener(new OnErrorListener<ArkoseECResponse>() {
                @Override
                public void onWarning(ArkoseECResponse arkoseECResponse) {
                 // invoked on getting warning while loading detection
                }
            })
-           
+
            .addOnReadyListener(new OnReadyListener() {
                @Override
                public void onReady() {
                  //Do Something on ready callback received
                }
            })
-           
+
            .addOnShowListener(new OnShowListener() {
                @Override
                public void onShow() {
@@ -348,7 +348,7 @@ import com.arkoselabs.sdk.ArkoseManager;
                  //Do Something on hide callback received
                }
            })
-                   
+
            .addOnSuppressListener(new OnSuppressListener() {
                @Override
                public void onSuppress() {
@@ -386,7 +386,7 @@ import com.arkoselabs.sdk.ArkoseManager;
 
    /**
      * Removes the challenge fragment from the UI.
-     * Create a function like below and 
+     * Create a function like below and
      * invoke it from the terminal callbacks to remove the fragment from the container
      * e.g. addOnCompletedListener, addOnFailureListener, addOnHideListener, addOnErrorListener, addOnWarningListener
      */
@@ -418,11 +418,11 @@ import com.arkoselabs.sdk.ArkoseManager;
                      .language("<YOUR_PREFERED_LANGUAGE>") // Can Set Language here. (optional)
                      .setStyleTheme("<YOUR_PREFERED_STYLE_THEME>")// Can set EC style theme (optional)
                      .build();
-             /* 
+             /*
              * Call updateConfig() to apply the new configuration.
              * This will reset the session and apply any changes.
              */
-             ArkoseManager.updateConfig(arkoseConfig, arkoseChallenge); 
+             ArkoseManager.updateConfig(arkoseConfig, arkoseChallenge);
      ```
 
 #### Implement Preloading of Challenges to `onReady` with On-Demand Presentation
@@ -498,7 +498,7 @@ btLogin.setOnClickListener(v -> {
 
 /**
   * Removes the challenge fragment from the UI.
-  * Create a function like below and 
+  * Create a function like below and
   * invoke it from the terminal callbacks to remove the fragment from the container
   * e.g. addOnCompletedListener, addOnFailureListener, addOnHideListener, addOnErrorListener, addOnWarningListener
   */

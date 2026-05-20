@@ -10,7 +10,7 @@ This page shows details about how to set up and use the Arkose Bot Manager in th
 >
 > Previous uses of `iframe-auth` in URLs have been changed to use `iframe`.
 
-# How to Use the iframe
+## How to Use the iframe
 
 The code below shows a full example of how to load the hosted Arkose Bot Manager iframe in lightbox mode.
 
@@ -45,7 +45,7 @@ This example shows an event listener added to a button that will open load the h
       }
     </style>
     <script>
-      document.addEventListener('DOMContentLoaded', function(event) { 
+      document.addEventListener('DOMContentLoaded', function(event) {
         document.getElementById('openButton').addEventListener('click', () => {
             openArkoseIframe();
           })
@@ -121,7 +121,7 @@ This example shows an event listener added to a button that will open load the h
         window.addEventListener("message", function (event) {
             try {
               var json_parsed_event = JSON.parse(event.data)
-  
+
               switch (json_parsed_event.eventId) {
                   case "challenge-loaded":
                       document.getElementById("arkoseFrame").style.height = json_parsed_event.payload.frameHeight;
@@ -186,7 +186,7 @@ The code below shows a full example of how to load the hosted Arkose Bot Manager
         window.addEventListener("message", function (event) {
             try {
               var json_parsed_event = JSON.parse(event.data)
-  
+
               switch (json_parsed_event.eventId) {
                   case "challenge-loaded":
                       document.getElementById("arkoseFrame").style.height = json_parsed_event.payload.frameHeight;
@@ -224,7 +224,7 @@ The code below shows a full example of how to load the hosted Arkose Bot Manager
 
 ***
 
-# Iframe Events Schema
+## Iframe Events Schema
 
 The message object comes through the `postMessage` as a string and needs to be JSON parsed beforehand. It has the following top-level structure:
 
@@ -773,7 +773,7 @@ The structure of the `payload` object varies depending on the `eventId` value.
 
 <br />
 
-# URL Reference
+## URL Reference
 
 This is a breakdown of the URL which needs to be loaded in the iframe:
 
@@ -787,7 +787,7 @@ This is a breakdown of the URL which needs to be loaded in the iframe:
   Please note that Arkose Labs can host the iframe for merchants.
 </Callout>
 
-# Hosting your Own iframe
+## Hosting your Own iframe
 
 Although Arkose Labs generally hosts customer iframes, customers may choose to host their own iframe.
 
@@ -1157,7 +1157,7 @@ Due to the nature of iframes, the out of the box accessibility of Arkose’s Cha
 <script>
   window.addEventListener('message', function(event) {
     var eventData = JSON.parse(event.data);
-    
+
     if (eventData.eventId === 'challenge-loaded') {
       var iframe = document.getElementById('arkoseFrame');
       if(iframe) iframe.focus();

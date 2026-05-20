@@ -1,6 +1,6 @@
 # Angular Setup Guide
 
-# Overview
+## Overview
 
 This page describes how to use the Arkose Bot Manager's JavaScript API with *single page applications (SPA)* built using Angular 6+.
 
@@ -122,7 +122,7 @@ export class ArkoseScriptService {
       currentScript.remove();
     }
     <!--
-    Remember to replace <company> with your company's personalized Client API URL name, 
+    Remember to replace <company> with your company's personalized Client API URL name,
     and replace <YOUR_PUBLIC_KEY> with the public key supplied to you by Arkose Labs.
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupEnforcement" ></script>
   -->

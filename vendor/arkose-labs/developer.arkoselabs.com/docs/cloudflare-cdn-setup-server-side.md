@@ -1,6 +1,6 @@
 # Cloudflare CDN Setup - Server Side
 
-# Overview
+## Overview
 
 The purpose of the Cloudflare CDN Worker server side implementation is to execute on each request (such as Login or Registration) and ensure the Arkose Token is valid before allowing that request to be fulfilled. The Token can be provided either in the request as either a header or stored as a Cookie depending on the client side configuration.
 

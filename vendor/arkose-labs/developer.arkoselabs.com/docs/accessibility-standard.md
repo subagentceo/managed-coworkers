@@ -2,7 +2,7 @@
 
 International Edition; based on VPAT® Version 2.5
 
-# Introduction
+## Introduction
 
 ## Product Information
 
@@ -125,7 +125,7 @@ The terms used in the Conformance Level information are defined as follows:
 * Does Not Support: The majority of product functionality does not meet the criterion.
 * Not Applicable: The criterion is not relevant to the product.
 
-# WCAG 2.x Report
+## WCAG 2.x Report
 
 Tables 1 and 2 in this WCAG 2.x report also document conformance with:
 
@@ -1738,7 +1738,7 @@ Notes: The stated conformance level refers to the **web** aspect, as the Enforce
   </tbody>
 </Table>
 
-# **Revised Section 508 Report**
+## **Revised Section 508 Report**
 
 Notes:
 
@@ -1917,7 +1917,7 @@ Notes:
 | 603.2 Information on Accessibility and Compatibility Features                                  | Not Applicable                        | Arkose Labs does not provide support services to end users.                                                                                                                                                                                                                                                                  |
 | 603.3 Accommodation of Communication Needs                                                     | Not Applicable                        | Arkose Labs does not provide support services to end users.                                                                                                                                                                                                                                                                  |
 
-# **EN 301 549 Report**
+## **EN 301 549 Report**
 
 Notes:
 
@@ -2147,6 +2147,6 @@ Notes:
 
 Notes: Not applicable.
 
-# **Legal Disclaimer**
+## **Legal Disclaimer**
 
 © 2024 Arkose Labs. The information contained in this conformance report represents the current view of Arkose Labs on the issues discussed as of the date of publication, as stated in the Product Information section of this report. Arkose Labs cannot guarantee that any information in this Conformance Report will remain accurate after the date of publication. Any modification or customization of the product may render some or all of this Conformance Report to become inapplicable. This Conformance Report is provided “as is” and for informational purposes only.

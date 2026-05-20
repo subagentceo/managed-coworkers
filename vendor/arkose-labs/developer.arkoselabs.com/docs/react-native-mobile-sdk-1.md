@@ -1,6 +1,6 @@
 # React Native Mobile SDK
 
-# Introduction
+## Introduction
 
 The React Native ArkoseLabs SDK lets you integrate Arkose Labs' bot mitigation and fraud prevention solution into your React Native apps using native function calls for Android and iOS. This guarantees seamless integration with Arkose's full interactive challenges for detection and enforcement, without the extended wait times for separate mobile solutions.
 
@@ -123,7 +123,7 @@ cd ..
 
 ```
 # To run Android
-npx react-native run-android 
+npx react-native run-android
 
 # To run iOS
 npx react-native run-ios
@@ -153,7 +153,7 @@ For ReactNative Cli :
 
 ```
 # To run Android
-npx expo run:android 
+npx expo run:android
 
 # To run iOS
 npx expo run:ios
@@ -310,7 +310,7 @@ Refer to [Callbacks](https://developer.arkoselabs.com/docs/callbacks) for callba
 
 <br />
 
-# Troubleshooting
+## Troubleshooting
 
 ## iOS: "Could not find key window" Error
 
@@ -324,7 +324,7 @@ Refer to [Callbacks](https://developer.arkoselabs.com/docs/callbacks) for callba
 
 <br />
 
-# **References**
+## **References**
 
 * [React Native Documentation](https://reactnative.dev/docs/set-up-your-environment)
   Official guide for setting up and developing React Native apps.

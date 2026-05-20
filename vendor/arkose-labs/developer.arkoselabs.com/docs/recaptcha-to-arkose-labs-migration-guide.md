@@ -12,13 +12,13 @@ Migration to Arkose Bot Manager requires three steps:
 
 If you only use reCAPTCHA v3, reCAPTCHA Enterprise, or use both reCAPTCHA v3 and v2 then you can migrate to Arkose Bot Manager.
 
-# Get a Private/Public Key Pair
+## Get a Private/Public Key Pair
 
 Arkose Labs authenticates your API requests using a private/public key pair that can be retrieved from the **Keys** page of the [Arkose Labs Command Center](https://developer.arkoselabs.com/docs/arkose-labs-command-center). As shown below, go to the left menubar's **Settings** entry, and then to the **Keys** sub-entry. If you do not have access to the Command Center or do not have your private and public keys, contact your Sales Rep or Sales Engineer.
 
 <Image border={false} src="https://files.readme.io/3839374-Screen_Shot_2022-02-20_at_5.23.57_PM.png" title="Screen Shot 2022-02-20 at 5.23.57 PM.png" />
 
-# Update Your Client-Side Code
+## Update Your Client-Side Code
 
 When using reCAPTCHA your client-side code will contain script tags, similar to those shown below, that set up the reCAPTCHA API:
 
@@ -37,19 +37,19 @@ When using reCAPTCHA your client-side code will contain script tags, similar to 
 The reCAPTCHA script tags should be replaced with script tags that load and configure the Arkose Labs API, like those shown in the example below:
 
 ```html
-<!-- Load the Arkose Labs Javascript API 
+<!-- Load the Arkose Labs Javascript API
 
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace <company> with your company's personalized Client API URL name, and replace <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs. 
+    replace <company> with your company's personalized Client API URL name, and replace <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs.
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupEnforcement"></script>
   -->
 
  <script src="//<company>-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupEnforcement"></script>
- 
- <script>   
+
+ <script>
     <!-- Configure the Arkose Labs API and configure the appropriate callback functions -->
     function setupEnforcement(myEnforcement) {
-      myEnforcement.setConfig({ 
+      myEnforcement.setConfig({
         selector: '#enforcement-trigger',
         onCompleted: (response) => {
           <!-- Pass response.token to the server-side code -->
@@ -62,7 +62,7 @@ The reCAPTCHA script tags should be replaced with script tags that load and conf
     <!-- Prevent normal form submission so that submission can be done based on the Arkose verification -->
     function preventSubmit(event) {
       event.preventDefault();
-    } 
+    }
     const form = document.getElementById('demo-form');
     form.addEventListener('submit', preventSubmit);
 
@@ -75,10 +75,10 @@ Both solutions attach their API to an element within the DOM and this also needs
 
 ```html
 <!-- Add attributes to the button that will trigger the reCAPTCHA API -->
-<button 
-    class="g-recaptcha" 
-    data-sitekey="your_site_key" 
-    data-callback='onSubmit' 
+<button
+    class="g-recaptcha"
+    data-sitekey="your_site_key"
+    data-callback='onSubmit'
     data-action='submit'
 >Submit</button>
 ```
@@ -92,7 +92,7 @@ The reCAPTCHA code should be replaced with a DOM element that contains the `id` 
 
 More information on the different API callbacks that are available and how to retrieve the response.token value can be found in the [Client-Side Instructions](https://developer.arkoselabs.com/docs/standard-setup).
 
-# Update Your Server-Side Code
+## Update Your Server-Side Code
 
 Once an Arkose Labs session has been successfully completed i.e. the `onCompleted:(response) => {}` function is called, the value of the `token` key within the `response` JSON object should be sent to your server for verification. Your server-side code should take the `token` and pass it to the Arkose Labs verify API:
 

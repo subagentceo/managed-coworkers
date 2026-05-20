@@ -4,7 +4,7 @@
 >
 > This page is about Arkose Labs' Webview direct integrations approach for iOS. **Note**: Rather than using this approach and having to write significant code yourself, we strongly urge you to use our  [iOS Mobile SDK](https://developer.arkoselabs.com/docs/ios-mobile-sdk). Arkose will continue to improve and add functionality to the iOS Mobile SDK that will **not** be added to the following Webview direct integration approach.
 
-# Overview
+## Overview
 
 There are two steps required to fully implement the Arkose Bot Manager:
 
@@ -34,7 +34,7 @@ This example sequence shows how the Arkose Labs API could be hosted within a `WK
 
 When running our enforcement component, you can see the results of installing the Enforcement Challenge on iOS in this 30 seconds screen capture recording of the example project. Note that you need to click the start arrow button at the left bottom of the image for it to begin playing. [Demo](https://vimeo.com/638037440/396d76bac9).
 
-# API Request Authentication
+## API Request Authentication
 
 Arkose Labs authenticates your API requests using a private/public key pair that can be retrieved from the **Key Settings** page of the [Arkose Labs Command Center](https://developer.arkoselabs.com/docs/arkose-labs-command-center). As shown below, go to the left menubar's **Settings** entry, and then to the **Keys** sub-entry. If you do not have access to the Command Center or do not have your private and public keys, contact your Sales Rep or Sales Engineer.
 
@@ -42,7 +42,7 @@ Arkose Labs authenticates your API requests using a private/public key pair that
 
 The private key is needed to authenticate when using the Verify API. This private key must not be published on a client facing website, and must only be used on your server-side implementation on the Arkose Labs Verify API.
 
-# Using WKWebView
+## Using WKWebView
 
 The Arkose Labs client-side API is written in JavaScript and interacts with the browser API to collect data used as part of traffic classification. When using iOS this is supported through the use of the `WKWebView` object. This allows web content to be rendered and used within your native application.
 
@@ -56,13 +56,13 @@ The example code below shows how to setup the `WKWebView` object.
 struct ALWebView: UIViewRepresentable {
 
   func makeUIView(context: Context) -> WKWebView {
-        
+
         // 1
         let preferences = WKWebpagePreferences()
-        preferences.allowsContentJavaScript = true 
+        preferences.allowsContentJavaScript = true
         let configuration = WKWebViewConfiguration()
         configuration.defaultWebpagePreferences = preferences
-        
+
         // 2
         let configuration = WKWebViewConfiguration()
         configuration.userContentController.add(context.coordinator, name: "AL_API")
@@ -72,14 +72,14 @@ struct ALWebView: UIViewRepresentable {
         let webView = WKWebView(frame: CGRect.zero, configuration: configuration)
         webView.allowsBackForwardNavigationGestures = false
         webView.scrollView.isScrollEnabled = false
-        
+
         // 4
         if let url = Bundle.main.url(forResource: "ArkoseLabsAPI", withExtension: "html", subdirectory: "") {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         } else {
             fatalError()
         }
-        
+
         // 5
         return webView
     }
@@ -88,12 +88,12 @@ struct ALWebView: UIViewRepresentable {
     func updateUIView(_ webView: WKWebView, context: Context) {
         //Empty
     }
-    
+
     // 7
     static func dismantleUIView(_ uiView: WKWebView, coordinator: Coordinator) {
         // Must remember to remove the message handler when the view is torn down or it will leak memory
         uiView.configuration.userContentController.removeScriptMessageHandler(forName: "AL_API")
-    }    
+    }
 }
 ```
 
@@ -132,7 +132,7 @@ class Coordinator : NSObject, WKScriptMessageHandler {
         init(_ parent: ALWebView) {
             self.parent = parent
         }
-        
+
         // 4
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             if message.name == "AL_API" {
@@ -141,7 +141,7 @@ class Coordinator : NSObject, WKScriptMessageHandler {
                 }
             }
         }
-        
+
         // 5
         func apiResponse(json: [String : Any?]) {
             for (key, value) in json {
@@ -192,7 +192,7 @@ class Coordinator : NSObject, WKScriptMessageHandler {
         init(_ parent: ALWebView) {
             self.parent = parent
         }
-        
+
         // 4
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             if message.name == "AL_API" {
@@ -201,7 +201,7 @@ class Coordinator : NSObject, WKScriptMessageHandler {
                 }
             }
         }
-        
+
         // 5
         func apiResponse(json: [String : Any?]) {
             for (key, value) in json {
@@ -235,7 +235,7 @@ class Coordinator : NSObject, WKScriptMessageHandler {
 
 5. This function loops through the keys inside the JSON message and reacts based on the message received. This is a simple way to react to the Arkose Labs API function callbacks in this example.
 
-# Web Page HTML
+## Web Page HTML
 
 Below is an example of an HTML file that uses the Arkose Labs API and also makes use of the JavaScript interface setup in the above steps. Use the appropriate code depending on whether you're running our detection or enforcement components
 
@@ -243,30 +243,30 @@ Below is an example of an HTML file that uses the Arkose Labs API and also makes
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
-        
-        <!-- Setup the Arkose API 
-        
+
+        <!-- Setup the Arkose API
+
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and 
+    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and
     replace <YOUR CALLBACK> with a name that refers to a global function.
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupDetect" ></script>
          -->
-        
+
         <script data-callback="setupEnforcement" src="https://<company>-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" ></script>
         <script type="text/javascript">
-                        
+
             // Setup the enforcement API
             function setupEnforcement(arkoseEnforcement) {
                 var arkose = arkoseEnforcement.setConfig({
                     selector: '#challenge',
-                    
+
                     // We are using 'inline' as we want the session to be created as soon as the page loads
                     mode: "inline",
-                    
+
                     // These are the functions that can be called when the enforcement API is triggered
                     onCompleted: function(response) {
                         window.webkit.messageHandlers.AL_API.postMessage({"onCompleted" : true});
-                        
+
                         // When a challenge has been completed, send the response from the challenge back to the native iOS code.
                         // The token from this data will then be used within the server-side verification API call to Arkose
                         window.webkit.messageHandlers.AL_API.postMessage({"sessionToken" : response.token});
@@ -298,14 +298,14 @@ Below is an example of an HTML file that uses the Arkose Labs API and also makes
                 });
             }
         </script>
-        
+
     </head>
-    
+
     <body>
         <!-- This is the element into which the challenge will be rendered if necessary -->
         <div id="challenge" style="width: 100%"></div>
     </body>
-        
+
 </html>
 
 ```
@@ -314,30 +314,30 @@ Below is an example of an HTML file that uses the Arkose Labs API and also makes
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
-        
+
         <!-- Setup the Arkose API -->
         <!--
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and 
+    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and
     replace <YOUR CALLBACK> with a name that refers to a global function.
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupDetect" ></script>
          -->
-         
+
         <script data-callback="setupDetect" src="https://<company>-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" ></script>
         <script type="text/javascript">
-                        
+
             // Setup the detect API
             function setupDetect(arkoseDetect) {
                 var arkose = arkoseDetect.setConfig({
                     selector: '#detect',
-                    
+
                     // We are using 'inline' as we want the session to be created as soon as the page loads
                     mode: "inline",
-                    
+
                     // These are the functions that can be called when the API is triggered
                     onCompleted: function(response) {
                         window.webkit.messageHandlers.AL_API.postMessage({"onCompleted" : true});
-                        
+
                         // When a session has been completed, send the response back to the native iOS code.
                         // The token from this data will then be used within the server-side verification API call to Arkose
                         window.webkit.messageHandlers.AL_API.postMessage({"sessionToken" : response.token});
@@ -357,19 +357,19 @@ Below is an example of an HTML file that uses the Arkose Labs API and also makes
                 });
             }
         </script>
-        
+
     </head>
-    
+
     <body>
         <!-- This is the element into which the Arkose Platform will load the scripts for detection -->
         <div id="detect" style="width: 100%"></div>
     </body>
-        
+
 </html>
 ```
 
 Within the JavaScript callback functions, a call is made to `window.webkit.messageHandlers.AL_API.postMessage()` and it’s this command that posts the data provided to the iOS app.
 
-# Server-Side Instructions
+## Server-Side Instructions
 
 When you have successfully set up your client-side set up you must go on to the [Server-Side Setup](https://developer.arkoselabs.com/docs/server-side-setup).

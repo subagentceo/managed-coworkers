@@ -341,7 +341,7 @@ Note that this response has no `risk_category` field.
   "custom"
     {
       "score": "0",
-      "telltales":[]      
+      "telltales":[]
     }
 }
 ```

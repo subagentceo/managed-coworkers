@@ -2,7 +2,7 @@
 
 Arkose Enforcement Challenge (EC) can be invoked in many languages. A list of the available languages is shown below.
 
-# Supported Languages
+## Supported Languages
 
 ## Default Language Detection
 

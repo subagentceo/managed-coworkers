@@ -1,6 +1,6 @@
 # iOS Mobile SDK
 
-# Introduction
+## Introduction
 
 Arkose Labs' mobile SDK lets you wrap our solution with iOS native function calls. This guarantees seamless integration of your mobile apps with Arkose's full interactive challenges on detection and enforcement and does so without the extended wait times for separate mobile solutions.
 
@@ -179,7 +179,7 @@ In Xcode, open your **Host application**.
 
 ***
 
-# Initialize the SDK
+## Initialize the SDK
 
 To integrate Arkose Bot Manager solution with the Enforcement Challenge, follow the steps outlined below:
 
@@ -234,7 +234,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 To run Arkose Bot Manager and display the Enforcement Challenge in a SwiftUI View, integrate `ArkoseChallengeView` into the content of your custom view.
 
 ```swift
-ArkoseChallengeView(isPresented: $isPresented, 
+ArkoseChallengeView(isPresented: $isPresented,
                     delegate: self)
 ```
 
@@ -257,20 +257,20 @@ See the [Appendix: UIKit View Controller](#appendix-uikit-view-controller) below
 
 ***
 
-# Receiving Notification
+## Receiving Notification
 
 To receive notifications about various events triggered by Enforcement Challenge, implement `ArkoseChallengeDelegate` protocol on the SwiftUI View or UIViewController class and pass the instance as the delegate parameter above. To simplify the implementation, `ArkoseChallengeDelegate` has a default implementation, so implement only the necessary methods for your desired functionality. The most commonly implemented protocol methods are `onCompleted`, `onError`, and `onFailed` to complete the necessary action from the application.
 
 ***
 
-# Build the Revised Project
+## Build the Revised Project
 
 1. Perform a **Clean**
 2. Perform a **Build**
 
 ***
 
-# Run and Test the Application
+## Run and Test the Application
 
 1. Run your modified iOS application
 2. When running Arkose Bot Manager:
@@ -281,7 +281,7 @@ To receive notifications about various events triggered by Enforcement Challenge
 
 ***
 
-# Update Configuration in SDK
+## Update Configuration in SDK
 
 To update configuration of the SDK any time before Enforcement Challenge is called, follow the steps outlined below:
 
@@ -308,7 +308,7 @@ See [Appendix: SwiftUI Content View](#appendix-swiftui-content-view) below for a
 To run Arkose Bot Manager and display Enforcement Challenge from a UIKit ViewController, invoke `ArkoseManager.showEnforcementChallenge` from an action method.
 
 ```swift
-ArkoseManager.update(with: 
+ArkoseManager.update(with:
   ArkoseConfig.Builder(
     withAPIKey: <YOUR_PUBLIC_KEY>)
     .with(language: "fr")	//optional
@@ -320,7 +320,7 @@ See the [Appendix: UIKit View Controller](#appendix-uikit-view-controller) below
 
 ***
 
-# Implement Preloading of Challenges to onReady with On-Demand Presentation
+## Implement Preloading of Challenges to onReady with On-Demand Presentation
 
 ## Overview
 
@@ -347,7 +347,7 @@ struct ArkoseView: View {
 
   @State private var isPresented = false
   @State private var runEnforcement = false
-  
+
   var body: some View {
     VStack {
         Button("Run Enforcement") {
@@ -370,7 +370,7 @@ struct ArkoseView: View {
 
 ***
 
-# Programmatic Dismissal of Enforcement Challenge
+## Programmatic Dismissal of Enforcement Challenge
 
 ## Overview
 
@@ -382,11 +382,11 @@ This is useful in scenarios such as:
 * Implementing timeout mechanisms
 * Responding to external events that require immediate challenge dismissal
 
-# Availability
+## Availability
 
 This API is available from API version 2.20.0 and above.
 
-# Configuration
+## Configuration
 
 ## UIKit Application
 
@@ -995,7 +995,7 @@ A Response Object is passed to this function.
 
 ***
 
-# For API Version 1.0
+## For API Version 1.0
 
 > ⚠️ Deprecation Notice
 >
@@ -1066,36 +1066,36 @@ You can change the following configuration parameters by specifying their values
 
 ***
 
-# Appendix: SwiftUI Content View
+## Appendix: SwiftUI Content View
 
 ```swift
 import SwiftUI
 import ArkoseLabsKit
 
 struct LoginView: View, ArkoseChallengeDelegate {
-    
+
     // MARK: - State Variables
-    
+
     @State private var isPresented = false
     @State private var shouldNavigateToNext = false
     @State private var isDismissingChallenge = false
     @State private var username: String = ""
     @State private var password: String = ""
-    
+
     // MARK: - ArkoseChallengeDelegate Methods
-    
+
     func onCompleted(response: [String: Any?]) {
         print("onComplete received: \(response)")
         isPresented = false
         // Handle successful challenge completion
     }
-    
+
     func onError(response: [String: Any?]) {
         print("onError received: \(response)")
         isPresented = false
         // Handle error during challenge
     }
-    
+
     func onFailed(response: [String: Any?]) {
         print("onFailed received: \(response)")
         let isRecoverable: Bool = (response["recoverable"] as? Bool) ?? false
@@ -1105,10 +1105,10 @@ struct LoginView: View, ArkoseChallengeDelegate {
         }
         // If recoverable, challenge will continue
     }
-    
+
     func onForceDismissCompleted() {
         isDismissingChallenge = false
-        
+
         // Now safe to trigger navigation
         // The shouldNavigateToNext binding will trigger the sheet presentation
         // after dismissal is complete
@@ -1116,9 +1116,9 @@ struct LoginView: View, ArkoseChallengeDelegate {
             // Navigation will be triggered by the sheet modifier
         }
     }
-    
+
     // MARK: - Body
-    
+
     var body: some View {
         ZStack {
             VStack {
@@ -1126,35 +1126,35 @@ struct LoginView: View, ArkoseChallengeDelegate {
                     .padding()
                     .font(.largeTitle)
                     .foregroundColor(Color.black)
-                
+
                 TextField("Username", text: $username)
                     .font(.title3)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
                     .padding()
-                
+
                 SecureField("Password", text: $password)
                     .font(.title3)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
                     .padding()
-                
+
                 Button("Login") {
                     self.isPresented = true
                 }
                 .padding()
-                
+
                 Button("Navigate") {
                     // ❌ Bad: Setting navigation state immediately
                     // isPresented = false
                     // shouldNavigateToNext = true // May cause conflicts
-                    
+
                     // ✅ Good: Wait for dismissal completion
                     if isDismissingChallenge {
                         // Already dismissing, wait for callback
                         return
                     }
-                    
+
                     isDismissingChallenge = true
                     shouldNavigateToNext = true
                     isPresented = false
@@ -1162,7 +1162,7 @@ struct LoginView: View, ArkoseChallengeDelegate {
                 }
                 .padding()
             }
-            
+
             ArkoseChallengeView(
                 isPresented: $isPresented,
                 delegate: self,
@@ -1212,48 +1212,48 @@ struct LoginView_Previews: PreviewProvider {
 
 ***
 
-# Appendix: UIKit View Controller
+## Appendix: UIKit View Controller
 
 ```swift
 import UIKit
 import ArkoseLabsKit
 
 class LoginViewController: UIViewController, ArkoseChallengeDelegate {
-    
+
     private var isDismissingChallenge = false
-    
+
     // MARK: - ArkoseChallengeDelegate Methods
-    
+
     func onCompleted(response: [String: Any?]) {
         print("onComplete received: \(response)")
         // Handle successful challenge completion
     }
-    
+
     func onError(response: [String: Any?]) {
         print("onError received: \(response)")
         // Handle error during challenge
     }
-    
+
     func onFailed(response: [String: Any?]) {
         print("onFailed received: \(response)")
         // Handle challenge failure
     }
-    
+
     func onForceDismissCompleted() {
         isDismissingChallenge = false
         // Now safe to present new screen or perform other actions
         presentNextViewController()
     }
-    
+
     // MARK: - Actions
-    
+
     @IBAction func login(_ sender: Any) {
         // Replace <YOUR_PUBLIC_KEY> with the actual API key assigned to your account
         ArkoseManager.update(with: ArkoseConfig.Builder(withAPIKey: "<YOUR_PUBLIC_KEY>")
             .with(language: "fr")
             .build()
         )
-        
+
         ArkoseManager.showEnforcementChallenge(
             parent: self,
             delegate: self,
@@ -1267,36 +1267,36 @@ class LoginViewController: UIViewController, ArkoseChallengeDelegate {
             )
         )
     }
-    
+
     @IBAction func navigateToNextScreen() {
         // ❌ Bad: Presenting immediately after calling dismissal
         // ArkoseManager.forceDismissEnforcementChallenge()
         // presentNextViewController() // May cause conflicts
-        
+
         // ✅ Good: Wait for dismissal completion
         if isDismissingChallenge {
             // Already dismissing, wait for callback
             return
         }
-        
+
         isDismissingChallenge = true
         ArkoseManager.forceDismissEnforcementChallenge()
         // presentNextViewController() will be called in onForceDismissCompleted()
     }
-    
+
     @IBAction func dismiss(_ sender: Any) {
         if isDismissingChallenge {
             // Already dismissing, wait for callback
             return
         }
-        
+
         isDismissingChallenge = true
         ArkoseManager.forceDismissEnforcementChallenge()
         // Dismissal completion will be notified via onForceDismissCompleted()
     }
-    
+
     // MARK: - Helper Methods
-    
+
     private func presentNextViewController() {
         let nextVC = NextViewController()
         present(nextVC, animated: true)

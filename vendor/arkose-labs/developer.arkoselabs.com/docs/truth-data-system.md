@@ -1,6 +1,6 @@
 # Truth Data System
 
-# Overview
+## Overview
 
 Arkose Bot Manager utilizes many data points, collected on both the client and server sides, to detect attacks. Nonetheless, there will be times when conflicting signals lead to ambiguity about whether a session is valid, or if it is an attack. As a customer, you can see how sessions turn out based on how the end-user interacted with your platform. Arkose’s Truth Data system lets you provide this feedback to Arkose via the Arkose Command Center. This feedback:
 

@@ -16,7 +16,7 @@ I’ve pasted our full Series A press release below.
 
 Justin
 
-#### **Iterable Raises $8M to Accelerate Growth Marketing and User Engagement Momentum**  
+#### **Iterable Raises $8M to Accelerate Growth Marketing and User Engagement Momentum**
 _CRV leads round following 10x revenue growth in 2015_
 
 **San Francisco, CA — January 21, 2016** — [Iterable](https://iterable.com/?utm_source=blog&utm_medium=bottombanner&utm_campaign=learn), the growth marketing and user engagement platform, today announced it has closed a Series A round of funding led by [CRV](https://www.crv.com) (Charles River Ventures) with participation from past investors. With this investment Iterable will further accelerate the very strong momentum achieved in 2015, having grown its customer base by over 800% and its recurring revenue by 1080%. In addition, Iterable achieved cash flow breakeven in the fourth quarter.

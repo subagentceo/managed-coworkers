@@ -1193,7 +1193,7 @@ This field contains risk score related to the session derived by triggered tellt
 
 <br />
 
-# Sample Verify API Responses
+## Sample Verify API Responses
 
 The following examples show different Verify API responses. They show the typical values in each field for each type of response.
 
@@ -1446,8 +1446,8 @@ The following examples show different Verify API responses. They show the typica
             "domain_max_consec_vowels": 2
         }
     },
-    
-   
+
+
 }
 ```
 
@@ -1469,7 +1469,7 @@ The following examples show different Verify API responses. They show the typica
         "suppressed": false,
         "punishable_actioned": false,
         "telltale_user": "example-telltale-e-app--2023-10-19-1718",
-        "telltale_origin": "example-telltale-e-app",       
+        "telltale_origin": "example-telltale-e-app",
         "failed_low_sec_validation": false,
         "lowsec_error": null,
         "lowsec_level_denied": null,
@@ -1485,7 +1485,7 @@ The following examples show different Verify API responses. They show the typica
             "example-telltale-e-app--2023-10-19-1718"
         ],
         "challenge_type": null,
-        "stateless_device_id": null                       
+        "stateless_device_id": null
     },
     "fingerprint": {
         "browser_characteristics": {
@@ -1506,7 +1506,7 @@ The following examples show different Verify API responses. They show the typica
             "platform": "MacIntel",
             "touch_support": false,
             "hardware_concurrency": 8,
-            "ja4_hash": null                               
+            "ja4_hash": null
         },
         "user_preferences": {
             "timezone_offset": 360
@@ -1526,8 +1526,8 @@ The following examples show different Verify API responses. They show the typica
         "latitude": "39.9587",
         "longitude": "-82.9987",
         "timezone": "America/New_York",
-        "asn": null,                                       
-        "network_info_rtt": null                           
+        "asn": null,
+        "network_info_rtt": null
     },
     "session_risk": {
         "risk_category": "BOT-STD",
@@ -1545,7 +1545,7 @@ The following examples show different Verify API responses. They show the typica
         }
     },
     "aggregations": {
-        "error": null,                                     
+        "error": null,
         "ip": {
             "short_term": {
                 "interval_minutes": 60,
@@ -1575,7 +1575,7 @@ The following examples show different Verify API responses. They show the typica
         "device_id_previous": "a325ssa5323b",
         "device_id_previous_version": "1.2"
     },
-    "proof_of_work": {                                    
+    "proof_of_work": {
         "challenged": false,
         "attempted": false,
         "passed": false,
@@ -1772,7 +1772,7 @@ The following examples show different Verify API responses. They show the typica
             "g-reputation-vpn"
         ],
         "challenge_type": null,
-        "stateless_device_id": null                        
+        "stateless_device_id": null
     },
     "fingerprint": {
         "browser_characteristics": {
@@ -1793,7 +1793,7 @@ The following examples show different Verify API responses. They show the typica
             "platform": "MacIntel",
             "touch_support": false,
             "hardware_concurrency": 8,
-            "ja4_hash": null                               
+            "ja4_hash": null
         },
         "user_preferences": {
             "timezone_offset": 360
@@ -1832,7 +1832,7 @@ The following examples show different Verify API responses. They show the typica
         }
     },
     "aggregations": {
-        "error": null,                                     
+        "error": null,
         "ip": {
             "short_term": {
                 "interval_minutes": 60,
@@ -1850,19 +1850,19 @@ The following examples show different Verify API responses. They show the typica
         "blob_decrypted": null,
         "blob_received": null
     },
-    "stateful_device_id": {                                
+    "stateful_device_id": {
         "stateful_device_id": "8dd4a9dc-81de-4c3d-a685-b8eb546b382b",
         "challenge_bypassed": false,
         "challenges_bypassed": 0,
         "change_reasons": null
     },
-    "stateless_device_id": {                               
+    "stateless_device_id": {
         "device_id": null,
         "device_id_version": null,
         "device_id_previous": null,
         "device_id_previous_version": null
     },
-    "proof_of_work": {                                    
+    "proof_of_work": {
         "challenged": false,
         "attempted": false,
         "passed": false,
@@ -1871,7 +1871,7 @@ The following examples show different Verify API responses. They show the typica
 }
 ```
 
-# Data Exchange
+## Data Exchange
 
 > 📘 Data Exchange Response Structure
 >
@@ -1879,7 +1879,7 @@ The following examples show different Verify API responses. They show the typica
 
 ***
 
-# Email Intelligence
+## Email Intelligence
 
 > 📘 Email Intelligence Response Structure
 >
@@ -1887,7 +1887,7 @@ The following examples show different Verify API responses. They show the typica
 
 ***
 
-# Device ID
+## Device ID
 
 > 📘 Device ID Response Structure
 >
@@ -1895,7 +1895,7 @@ The following examples show different Verify API responses. They show the typica
 
 ***
 
-# Proof of Work
+## Proof of Work
 
 > 📘 Proof of Work Response Structure
 >

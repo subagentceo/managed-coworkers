@@ -1,6 +1,6 @@
 # React Setup Guide
 
-# Overview
+## Overview
 
 This page describes how to use the Arkose Bot Manager JavaScript API with *single page applications (SPA)* built using React.
 

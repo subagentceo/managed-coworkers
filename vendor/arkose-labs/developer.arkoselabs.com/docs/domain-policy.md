@@ -9,7 +9,7 @@ Arkose Labs uses the following domains:
 | `<company>-verify.arkoselabs.com` | Server                                  |
 | `status.arkoselabs.com`           | Client/Server (if using failover logic) |
 
-# Content Security Policy (CSP)
+## Content Security Policy (CSP)
 
 The Arkose Labs client integration needs specific policies enabled in order work correctly.
 
@@ -28,7 +28,7 @@ When defining CSP resources we generally recommend using a wildcard domain. The 
 If you do not wish to use wildcards, you can simply specify the URL you load the Arkose script from.
 
 ```
-client-api.arkoselabs.com 
+client-api.arkoselabs.com
 or
 <company>-api.arkoselabs.com
 ```
@@ -36,7 +36,7 @@ or
 If you are using Vanity URLs, you’ll need to specify your vanity URL instead.
 
 ```
-your-url.com 
+your-url.com
 ```
 
 ## Main Policies
@@ -232,9 +232,9 @@ As an example. If `style-src-elem` is not defined, the browser will first look f
 ### Basic Example
 
 ```
- 'Content-Security-Policy': 
-          `connect-src 'self' *.arkoselabs.com; ` 
-          `frame-src 'self' *.arkoselabs.com;` 
+ 'Content-Security-Policy':
+          `connect-src 'self' *.arkoselabs.com; `
+          `frame-src 'self' *.arkoselabs.com;`
           `script-src 'self' *.arkoselabs.com;`
           `style-src 'self' 'nonce-aaabbcc';`
 ```
@@ -244,24 +244,24 @@ Script created with attribute `data-nonce="aabbcc"`.
 ### With sub-policies defined
 
 ```
-'Content-Security-Policy': 
-          `connect-src 'self' *.arkoselabs.com;` 
-          `frame-src 'self' *.arkoselabs.com;` 
-          `script-src 'self' *.arkoselabs.com;` 
-          `script-src-elem 'self' *.arkoselabs.com;` 
-          `style-src 'self' 'nonce-aaabbcc';` 
-          `style-src-elem 'self' 'nonce-aaabbcc';` 
+'Content-Security-Policy':
+          `connect-src 'self' *.arkoselabs.com;`
+          `frame-src 'self' *.arkoselabs.com;`
+          `script-src 'self' *.arkoselabs.com;`
+          `script-src-elem 'self' *.arkoselabs.com;`
+          `style-src 'self' 'nonce-aaabbcc';`
+          `style-src-elem 'self' 'nonce-aaabbcc';`
           `style-src-attr 'self' 'nonce-aaabbcc';`
 ```
 
 ### With default-src defined
 
 ```
-'Content-Security-Policy': 
+'Content-Security-Policy':
           `connect-src 'self' *.arkoselabs.com;`
-          `frame-src 'self' *.arkoselabs.com;` 
-          `script-src 'self' *.arkoselabs.com;` 
-          `default-src 'self' 'nonce-aaabbcc';` 
+          `frame-src 'self' *.arkoselabs.com;`
+          `script-src 'self' *.arkoselabs.com;`
+          `default-src 'self' 'nonce-aaabbcc';`
 ```
 
 In this example, `style-src` is omitted and `default-src` is included. This means that `default-src` needs to have the resources necessary for `style-src` to work (`'nonce-aaabbcc'`).
@@ -269,7 +269,7 @@ In this example, `style-src` is omitted and `default-src` is included. This mean
 ### With other CSP policies defined
 
 ```
-'Content-Security-Policy': 
+'Content-Security-Policy':
           `object-src 'self'`
 ```
 

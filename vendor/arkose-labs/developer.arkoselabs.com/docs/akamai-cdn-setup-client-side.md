@@ -1,10 +1,10 @@
 # Akamai CDN Setup - Client Side
 
-# Overview
+## Overview
 
 The purpose of the Akamai CDN client side implementation is to inject the Arkose client side scripts into the HTML on a page such as Login or Registration. Once an Arkose challenge is triggered and completed, a POST request is made which will trigger the Akamai EdgeWorker to proxy the Arkose Verify request; found here [Akamai CDN Setup - Server Side](https://developer.arkoselabs.com/docs/akamai-cdn-setup-server-side).
 
-# Setup
+## Setup
 
 **Prerequisite:** An Akamai Property needs to be setup. The details on how to do so can also be found in [Akamai CDN Setup - Server Side](https://developer.arkoselabs.com/docs/akamai-cdn-setup-server-side).
 
@@ -18,7 +18,7 @@ Once an Akamai Property is setup, the HTML for a Login or Registration page will
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akamai CDN Integration - Verify Proxy Example</title>
     <!-- Javascript to inject in the page header -->
-    <script 
+    <script
         src="https://client-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js"
         data-callback="setupEnforcement"
     ></script>
@@ -55,7 +55,7 @@ Once an Akamai Property is setup, the HTML for a Login or Registration page will
 
         // The following variables can be changed
         var arkoseCookieName = 'arkoseToken'; // The name of the cookie that the Arkose token will be stored in
-        var arkoseErrorCookieName = 'arkoseError'; // The name of the cookie that an Arkose error will be stored in 
+        var arkoseErrorCookieName = 'arkoseError'; // The name of the cookie that an Arkose error will be stored in
         var arkoseCookieLife = 5 * 60 * 1000;  // The length of time that the cookie should be active for, 5 mins is the default
         var buttonSelector = '#submitButton'; // The querySelector string used for selecting the required button to protect
 
@@ -128,8 +128,8 @@ Once an Akamai Property is setup, the HTML for a Login or Registration page will
         function handleError(error) {
             arkoseComplete = true;
             document.cookie = arkoseCookieName + '=;expires=' + new Date(Date.now() + arkoseCookieLife).toUTCString() + '; path=/;';
-            document.cookie = arkoseErrorCookieName + '=' + error + ';expires=' + new Date(Date.now() + arkoseCookieLife).toUTCString() + '; path=/;';                               
-        }  
+            document.cookie = arkoseErrorCookieName + '=' + error + ';expires=' + new Date(Date.now() + arkoseCookieLife).toUTCString() + '; path=/;';
+        }
 
         /**
         * The callback thats called after the Arkose Labs script has been loaded

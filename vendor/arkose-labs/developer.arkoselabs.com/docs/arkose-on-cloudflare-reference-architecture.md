@@ -1,6 +1,6 @@
 # Arkose on Cloudflare - Reference Architecture
 
-# Overview
+## Overview
 
 This document describes the workflow and implementation with Cloudflare. The logic to verify the Arkose Labs token when handling a call to a protected endpoint would normally be handled by the web servers of Arkose Labs’ customers. When customers use Cloudflare to accelerate their traffic, the logic can be offloaded to the CDN. This not only helps streamline the integration of new customers or new endpoints but also shifts malicious traffic to the CDN layer, saving the customer’s web server bandwidth for legitimate traffic. When Arkose Bot Manager is integrated with Cloudflare, the CDN layer will take care of the following steps:
 
@@ -57,13 +57,13 @@ The following code is an example of a basic login page that invokes the Arkose L
   callback as a global function.
 -->
 <script>
- 
+
  <!--
     This global function will be invoked when the API is ready. Ensure the name is the same name
     that is defined on the attribute `data-callback` in the script tag that loads the api for your
     public key.
  -->
-  
+
   function setupEnforcement(myEnforcement) {
     myEnforcement.setConfig({
       selector: '#submit-id',

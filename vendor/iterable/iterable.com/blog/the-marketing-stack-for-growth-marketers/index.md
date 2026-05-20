@@ -47,5 +47,5 @@ In the next few posts in this series, we will go into detail on what each piece 
 
 Please let us know if you have any feedback! We realize there will be many different opinions on this and we look forward to refining things as we go.
 
-_Update: There are now several additional posts in this series:  
+_Update: There are now several additional posts in this series:
 _[_The Marketing Stack Part II: User Acquisition and Engagement_](https://iterable.com/blog/marketing-stack-user-acquisition-and-engagement/)[_The Marketing Stack Part III: Optimization, Data, Automation and Collaboration_](https://iterable.com/blog//the-marketing-stack-part-iii-optimization-data-automation-and-collaboration/)_[Growth: User Acquisition vs. User Engagement](https://iterable.com/blog/growth-user-acquisition-vs-user-engagement/)_

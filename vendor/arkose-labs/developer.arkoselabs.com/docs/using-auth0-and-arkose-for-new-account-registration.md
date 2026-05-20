@@ -1,6 +1,6 @@
 # Using Auth0 and Arkose for New Account Registration
 
-# Overview
+## Overview
 
 This is an overview of how to integrate Arkose Labs Fraud Deterrence Platform directly via the **Auth0** development console. There are two basic points of integration:
 
@@ -29,7 +29,7 @@ The below snippet show both ways to invoke the challenge, on page load. It is al
 <head>
  <!--
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace <company> with your company's personalized Client API URL name, and replace <YOUR_PUBLIC_KEY> with the public key supplied to you by Arkose Labs, and 
+    replace <company> with your company's personalized Client API URL name, and replace <YOUR_PUBLIC_KEY> with the public key supplied to you by Arkose Labs, and
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR_PUBLIC_KEY>/api.js" data-callback="setupEnforcement"></script>
   -->
   <meta charset="utf-8">
@@ -66,7 +66,7 @@ The below snippet show both ways to invoke the challenge, on page load. It is al
     }
     var loginHint = config.extraParams.login_hint;
     var colors = config.colors || {};
-    
+
     function setupEnforcement(myEnforcement) {
       myEnforcement.setConfig({
         data: '',
@@ -74,13 +74,13 @@ The below snippet show both ways to invoke the challenge, on page load. It is al
         onReady: function(response) {
           myEnforcement.run();
         },
-        
+
        onCompleted: function(response) {
         config.internalOptions['arkoseToken'] = response.token;
-        
+
      // Available Lock configuration options: https://auth0.com/docs/libraries/lock/v11/configuration
     var lock = new Auth0Lock(config.clientID, config.auth0Domain, {
-     
+
       auth: {
         redirectUrl: config.callbackURL,
         responseType: (config.internalOptions || {}).response_type ||
@@ -105,14 +105,14 @@ The below snippet show both ways to invoke the challenge, on page load. It is al
       prefill: loginHint ? { email: loginHint, username: loginHint } : null,
       closable: false,
       defaultADUsernameFromEmailPrefix: false,
-     
+
   additionalSignUpFields: [{
     type: "hidden",
     name: "arkoseToken",
     value: response.token
   }]
     });
-         
+
     if(colors.page_background) {
       var css = '.auth0-lock.auth0-lock .auth0-lock-overlay { background: ' +
                   colors.page_background +
@@ -122,12 +122,12 @@ The below snippet show both ways to invoke the challenge, on page load. It is al
       document.body.appendChild(style);
     }
     lock.show();
-       }     
+       }
      });
   }
   </script>
 </body>
-</html>  
+</html>
 ```
 
 ### Passing the Token
@@ -175,7 +175,7 @@ exports.onExecutePreUserRegistration   = async (event, api) => {
     // Call the Arkose Verify API, passing in the private key and the session_token
     try {
       const response = await axios.post(
-        'https://verify-api.arkoselabs.com/api/v4/verify/', 
+        'https://verify-api.arkoselabs.com/api/v4/verify/',
         {
           private_key: event.secrets.PRIVATE_KEY,
           session_token: event.user.user_metadata.arkoseToken
@@ -188,7 +188,7 @@ exports.onExecutePreUserRegistration   = async (event, api) => {
       }
 
     } catch (error) {
-      // A 400 is returned from Arkose if the private key and token do not match, so 
+      // A 400 is returned from Arkose if the private key and token do not match, so
       // catch that and deny access
       if (error.response.status == 400) {
         api.access.deny("Arkose Access Denied!");

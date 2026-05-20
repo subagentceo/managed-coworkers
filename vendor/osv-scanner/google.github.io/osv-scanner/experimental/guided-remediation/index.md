@@ -644,7 +644,7 @@ The command will launch the Guided Remediation TUI and begin scanning your manif
 ![Screenshot of the initial interactive results screen, showing found vulnerabilities and the potential remediation approaches](/osv-scanner/images/guided-remediation-result.png)
 
 > The initial screen allows you to change the vulnerability selection criteria. Each correspond to a [vulnerability selection flag](#vulnerability-selection):
-> 
+>
 > -   Max dependency depth: `--max-depth`
 > -   Min CVSS score: `--min-severity`
 > -   Exclude dev only: `--ignore-dev`
@@ -707,9 +707,9 @@ The following flags may be used when running in non-interactive mode only:
 
 -   `--strategy=` [`in-place`](#in-place-lockfile-changes) OR [`relax`](#relock-and-relax-direct-dependencies) OR [`override`](#override-dependency-versions): Which remediation strategy to use.
 -   `--apply-top=<value>`: Specifies the maximum number of patches to apply. Patches are chosen in the same order as they would appear in the interactive mode.
-    
+
     For example, `--apply-top=1` will only apply one patch, and `--apply-top=2` would apply the two best compatible patches. This flag is particularly useful when scripting to test the outcome of specific patches. Setting `--apply-top=-1` will apply every possible patch (default behavior).
-    
+
 -   `--no-introduce`: Set to exclude patches that would introduce new vulnerabilities if applied.
 -   `--format=` `text` OR `json`. The [output format](#output-formats) to use for results.
 
@@ -718,13 +718,13 @@ The following flags may be used when running in non-interactive mode only:
 The following flags may be used to filter which vulnerabilities will be selected for remediation:
 
 -   `--max-depth=<value>`: The maximum dependency depth to consider vulnerabilities from.
-    
+
     For example, `--max-depth=1` will only consider vulnerabilities affecting direct dependencies, while `--max-depth=2` will consider up to the direct dependencies of your direct dependencies. Setting `--max-depth=-1` will consider all dependencies, regardless of depth.
-    
+
 -   `--min-severity=<value>`: The minimum CVSS score of vulnerabilities to consider.
-    
+
     For example, `--min-severity=7.5` will consider only vulnerabilities with CVSS a score of 7.5 and above. If the OSV record for the vulnerability does not have a CVSS score, it will **not** be excluded.
-    
+
 -   `--ignore-dev`: Whether to exclude vulnerabilities from dependencies that are only used in `devDependencies`.
 -   `--ignore-vulns=<comma-separated list of IDs>`: A list of OSV IDs to exclude from consideration.
 -   `--vulns=<comma-separated list of IDs>`: An explicit list of OSV IDs that should exclusively be considered, as long as the other criteria are satisfied.
@@ -736,20 +736,20 @@ A vulnerability is only considered if it satisfies all the conditions set by the
 The following flag may be used to limit the patches allowed for your dependencies:
 
 -   `--upgrade-config=<[package-name:]level>` Sets the maximum upgrade level allowed for a package. Can be repeated for multiple packages.
-    
+
     `level` is the SemVer component to allow updates to, can be one of `major`, `minor`, `patch`, or `none`. e.g. If a package was at version `1.2.3`
-    
+
     -   `major` allows for updates to any version `>=1.2.3`
     -   `minor` allows for updates `>=1.2.3, <2.0.0`
     -   `patch` allows for updates `>=1.2.3, <1.3.0`
     -   `none` disallows any updates
-    
+
     If `package-name:` is omitted, `level` is applied to all packages. The specific `package-name:level` will take precedence over the general `level` (e.g. specifying both `minor` `pkg:none` will use `none` as the allowed level for `pkg`).
-    
+
     Default behaviour is `--upgrade-config=major`.
-    
+
     Example usage:
-    
+
     -   `--upgrade-config=minor` - disallow any patches that would bump a major version of any package.
     -   `--upgrade-config=foo:minor` - disallow any patches that bumps package `foo` by a major version. Other packages may receive major version-updating patches.
     -   `--upgrade-config=none --upgrade-config=foo:patch` - only allow patches to package `foo`, and only allow changes to `foo`’s SemVer patch level.
@@ -763,7 +763,7 @@ If instead you’d like to use your ecosystem’s native registry API (e.g. `htt
 If your project uses mirrored or private registries, you will need to use `--data-source=native`
 
 > The subcommand caches the requests it makes in `[FILE].resolve.deps` (deps.dev), `package.json.resolve.npm` (native npm), or `pom.xml.resolve.maven` (native Maven).
-> 
+>
 > The native caches will store the addresses of private registries used, though not any authentication information.
 
 ### [](#maven-flags)Maven flags
@@ -782,9 +782,9 @@ For more information, see [Offline Mode](/osv-scanner/usage/offline-mode/).
 -   The subcommand does not use the `osv-scanner.toml` configuration. Use the `--ignore-vulns` flag instead.
 -   The subcommand does not group aliases of the same vulnerabilities together.
 -   Unique vulnerabilities are counted differently with `fix --strategy=relax` versus with `fix --strategy=in-place` and with `scan`. `scan` will count the same OSV ID affecting two different package versions separately, whereas `fix --strategy=relax` will count this as one vulnerability.
-    
+
     e.g. if `OSV-123-456` affects both `foo@1.0.0` and `foo@2.0.0` in your project, `scan` and `fix --strategy=in-place` will treat this as two distinct vulnerabilities, while `fix --strategy=relax` will treat this as only one.
-    
+
 
 ### [](#npm)npm
 

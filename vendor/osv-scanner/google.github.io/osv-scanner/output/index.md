@@ -373,63 +373,63 @@ Outputs the result in the [SARIF](https://sarifweb.azurewebsites.net/) v2.1.0 fo
 **Sample SARIF Help Text**
 
 > **Your dependency is vulnerable to [CVE-2022-24713](https://osv.dev/list?q=CVE-2022-24713)** (Also published as: [RUSTSEC-2022-0013](https://osv.dev/vulnerability/RUSTSEC-2022-0013), [GHSA-m5pq-gvj9-9vr8](https://osv.dev/vulnerability/GHSA-m5pq-gvj9-9vr8), ).
-> 
+>
 > ## [](#rustsec-2022-0013)[RUSTSEC-2022-0013](https://osv.dev/vulnerability/RUSTSEC-2022-0013)
-> 
+>
 > Details > Full advisory details...
-> 
+>
 > ## [](#ghsa-m5pq-gvj9-9vr8)[GHSA-m5pq-gvj9-9vr8](https://osv.dev/vulnerability/GHSA-m5pq-gvj9-9vr8)
-> 
+>
 > Details > Full advisory details...
-> 
+>
 > * * *
-> 
+>
 > ### [](#affected-packages)Affected Packages
-> 
+>
 > Source
-> 
+>
 > Package Name
-> 
+>
 > Package Version
-> 
+>
 > lockfile:/path/to/rust-project/Cargo.lock
-> 
+>
 > regex
-> 
+>
 > 1.5.1
-> 
+>
 > ## [](#remediation)Remediation
-> 
+>
 > To fix these vulnerabilities, update the vulnerabilities past the listed fixed versions below.
-> 
+>
 > ### [](#fixed-versions)Fixed Versions
-> 
+>
 > Vulnerability ID
-> 
+>
 > Package Name
-> 
+>
 > Fixed Version
-> 
+>
 > GHSA-m5pq-gvj9-9vr8
-> 
+>
 > regex
-> 
+>
 > 1.5.5
-> 
+>
 > RUSTSEC-2022-0013
-> 
+>
 > regex
-> 
+>
 > 1.5.5
-> 
+>
 > If you believe these vulnerabilities do not affect your code and wish to ignore them, add them to the ignore list in an `osv-scanner.toml` file located in the same directory as the lockfile containing the vulnerable dependency.
-> 
+>
 > See the format and more options in our documentation here: https://google.github.io/osv-scanner/configuration/
-> 
+>
 > Add or append these values to the following config files to ignore this vulnerability:
-> 
+>
 > `/path/to/rust-project/osv-scanner.toml`
-> 
+>
 > ```
 > [[IgnoredVulns]]
 > id = "CVE-2022-24713"

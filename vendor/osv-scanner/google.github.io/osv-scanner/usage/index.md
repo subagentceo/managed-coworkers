@@ -27,9 +27,9 @@ Table of contents
 OSV-Scanner operates in a two-step process:
 
 1.  **Package Extraction**: The tool first extracts information about the packages used in your project, container image, or other target.
-    
+
 2.  **Vulnerability Matching**: The extracted package information is then matched against known vulnerability databases to identify potential security issues.
-    
+
 
 ## [](#subcommands)Subcommands
 
@@ -72,9 +72,9 @@ Guided remediation (the `fix` command) can be risky when run on untrusted projec
 The `scan` subcommand is the primary way to initiate vulnerability scans. It has two subcommands of its own: `source` (default) and `image`.
 
 -   **`scan source`**: Scans source code directories for package dependencies and vulnerabilities. See the [Scanning Source documentation](/osv-scanner/usage/scan-source) for more details.
-    
+
 -   **`scan image`**: Scans container images for vulnerabilities. See the [Scanning Container Images documentation](/osv-scanner/usage/scan-image) for more details.
-    
+
 
 Both `scan source` and `scan image` share a common set of flags for configuring the scan and output.
 
@@ -171,11 +171,11 @@ Several other features are available through flags. See their respective documen
 OSV-Scanner can be integrated as a [pre-commit](https://pre-commit.com) hook in your project.
 
 1.  Add the `osv-scanner` hook to your `.pre-commit-config.yaml` file.
-    
+
 2.  Use the `args` key to pass command-line arguments as you would when running OSV-Scanner directly.
-    
+
 3.  Verify your configuration with:
-    
+
 
 ```
 pre-commit run --all-files --verbose osv-scanner

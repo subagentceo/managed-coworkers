@@ -4,7 +4,7 @@
 >
 > See [New Enforcement Challenge UI](https://developer.arkoselabs.com/docs/new-enforcement-challenge-ui) for details about our Enforce Challenge UI and what you need to do to prepare to use it.
 
-# Overview
+## Overview
 
 Fully implementing Arkose Bot Manager requires two steps:
 
@@ -16,7 +16,7 @@ This page describes the required steps to implement client-side integration of A
 
 <Image border={false} src="https://files.readme.io/448fc84-Standard_API_Flow.png" title="Standard API Flow.png" />
 
-# API Request Authentication
+## API Request Authentication
 
 Arkose Labs authenticates your API requests using a private/public key pair that can be retrieved from the **Key Settings** page of the [Arkose Labs Command Center](https://developer.arkoselabs.com/docs/arkose-labs-command-center). As shown below, go to the left menubar's **Settings** entry, and then to the **Keys** sub-entry. If you do not have access to the Command Center or do not have your private and public keys, contact your Sales Rep or Sales Engineer.
 
@@ -24,7 +24,7 @@ Arkose Labs authenticates your API requests using a private/public key pair that
 
 You use the private key to authenticate when using the Verify API. This private key must **not** be published on a client facing website, and must only be used on your Verify API's server-side implementation.
 
-# Client-Side Setup
+## Client-Side Setup
 
 <Callout icon="🚧" theme="warn">
   When the client-side code is loaded in the webpage, Arkose Labs will read and store the website URL, including query string parameters. As is best practice, do not pass sensitive information into `GET` request parameters. For passing sensitive information, make sure to use `POST` requests, as is defined in the [RFC 9110 document, HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.3.1-8).
@@ -89,7 +89,7 @@ The comments have suggestions for where to put the code and how to use this code
 <head>
   <!--
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and 
+    replace the <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and
     replace <YOUR CALLBACK> with a name that refers to a global function.
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js" data-callback="setupDetect"></script>
   -->
@@ -131,7 +131,7 @@ The comments have suggestions for where to put the code and how to use this code
 
 You configure Arkose Bot Manager by setting attribute values for the configuration object. This is done using the `setConfig` method on the Arkose object passed to the setup function. Please visit [Configuration Object](https://developer.arkoselabs.com/docs/configuration-object) for more details.
 
-# Multi Key Setup
+## Multi Key Setup
 
 You can also utilize Arkose Labs Client API with two different Public Keys on the same page. This allows a single page to load and trigger multiple Enforcement challenges. One example of this is that different buttons can trigger different challenges on the same page.
 
@@ -146,7 +146,7 @@ The following example provides a simple HTML/JS page that utilizes the Client AP
 </head>
 <body>
     <!--
-    Remember to replace <YOUR PUBLIC KEY 1> and <YOUR PUBLIC KEY 2> with the public key supplied 
+    Remember to replace <YOUR PUBLIC KEY 1> and <YOUR PUBLIC KEY 2> with the public key supplied
     to you by Arkose Labs.
     -->
 	<div>
@@ -166,10 +166,10 @@ The following example provides a simple HTML/JS page that utilizes the Client AP
           console.log('script already loaded');
           return;
         }
-        
+
         <!--
-    Remember to replace <company> with your company's personalized Client API URL name, 
-    and replace <YOUR PUBLIC KEY 1> and <YOUR PUBLIC KEY 2> with the public key supplied 
+    Remember to replace <company> with your company's personalized Client API URL name,
+    and replace <YOUR PUBLIC KEY 1> and <YOUR PUBLIC KEY 2> with the public key supplied
     to you by Arkose Labs.
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js" data-callback="setupEnforcement"></script>
   -->
@@ -179,7 +179,7 @@ The following example provides a simple HTML/JS page that utilizes the Client AP
         script.setAttribute("data-callback", callback);
         document.body.appendChild(script);
       }
-  
+
       window.loadEc1 = (enforcement) => {
         enforcement.setConfig({
           selector: '#ec1',
@@ -204,7 +204,7 @@ The following example provides a simple HTML/JS page that utilizes the Client AP
         });
       }
       <!--
-    Remember to replace <YOUR PUBLIC KEY 1> and <YOUR PUBLIC KEY 2> with the public key supplied 
+    Remember to replace <YOUR PUBLIC KEY 1> and <YOUR PUBLIC KEY 2> with the public key supplied
     to you by Arkose Labs.
     -->
       document.getElementById("load1").onclick = () => { loadJS("<YOUR PUBLIC KEY 1>", "loadEc1") }
@@ -217,7 +217,7 @@ The following example provides a simple HTML/JS page that utilizes the Client AP
 
 <br />
 
-# Post-Installation
+## Post-Installation
 
 Now that you've installed Arkose Bot Manager on a page, it will load the Arkose Bot Manager API script. When loaded, it creates a `myArkose` object that exposes public functions listed in the [Client API `myArkose-object`](https://developer.arkoselabs.com/docs/client-api#myarkose-object) and [Client API `myArkose-object`](https://developer.arkoselabs.com/docs/client-api#api-callbacks)sections of these docs. Use these functions to support your specific implementation requirements.
 
@@ -227,7 +227,7 @@ You must *ALWAYS*  call `setConfig` to set up the Client API and its callback fu
 >
 > Once client-side code is deployed on the webpage, Arkose Labs can view all `GET` request parameters. As is best practice, do not pass sensitive information into `GET` request parameters. For passing sensitive information,  use `POST` requests, as is defined in the [RFC 9110 HTTP Semantics document](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.3.1-8).
 
-# Inline Integration
+## Inline Integration
 
 This section is applicable for both our detection and enforcement components. However, the content about styling and positioning the Enforcement Challenge only applies to our enforcement component.
 
@@ -235,7 +235,7 @@ You can integrate the EC inline. This is primarily used for styling, positioning
 
 For full details, see the [Inline Integration Guide](https://support.arkoselabs.com/hc/en-us/articles/5807717356179-Inline-Integration-Guide) (Arkose Labs Support login needed).
 
-# Example Implementations
+## Example Implementations
 
 These code examples show possible implementations of our enforcement component This section is **not** applicable to our detection component.
 
@@ -255,7 +255,7 @@ In this example, form elements are locked out until the Arkose Labs API is ready
 <head>
   <!--
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace <company> with your company's personalized Client API URL name, and replace <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and 
+    replace <company> with your company's personalized Client API URL name, and replace <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js" data-callback="setupEnforcement"></script>
   -->
   <script type="text/javascript" data-callback="setupEnforcement" src="//<company>-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js"></script>
@@ -302,7 +302,7 @@ To make this sample complete, the **response.token** is output to an alert box. 
 <head>
   <!--
     Include the Arkose Labs API in the <head> of your page. In the example below, remember to
-    replace <company> with your company's personalized Client API URL name, and replace <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and 
+    replace <company> with your company's personalized Client API URL name, and replace <YOUR PUBLIC KEY> with the public key supplied to you by Arkose Labs, and
     e.g. <script src="//client-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js" data-callback="setupEnforcement"></script>
   -->
   <script type="text/javascript" data-callback="setupEnforcement" src="//<company>-api.arkoselabs.com/v2/<YOUR PUBLIC KEY>/api.js"></script>
