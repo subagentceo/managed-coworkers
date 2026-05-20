@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/mcp.json",
+  "mcpServers": {
+    "knowledge-bridge": {
+      "type": "stdio",
+      "command": "tsx",
+      "args": ["${CLAUDE_PROJECT_DIR}/src/mcp/bridge-server.ts"]
+    },
+    "cloudflare-codemode": {
+      "type": "http",
+      "url": "https://mcp.cloudflare.com/mcp"
+    }
+  }
+}
