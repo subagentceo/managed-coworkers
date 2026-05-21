@@ -1,0 +1,25 @@
+{
+  "name": "clay",
+  "homepage": "https://university.clay.com",
+  "llms_txt_candidates": [],
+  "sitemap_xml_sources": [
+    "https://university.clay.com/sitemap.xml"
+  ],
+  "transform": "html-extract",
+  "allow_prefixes": [
+    "https://university.clay.com/docs"
+  ],
+  "deny_prefixes": [
+    "https://university.clay.com/lessons",
+    "https://university.clay.com/claybooks",
+    "https://university.clay.com/courses",
+    "https://university.clay.com/use-case-templates",
+    "https://university.clay.com/cohorts",
+    "https://university.clay.com/certifications",
+    "https://university.clay.com/roles"
+  ],
+  "page_cap": 200,
+  "html_extract": {
+    "selector": "main, article, .w-richtext, .doc-content"
+  }
+}

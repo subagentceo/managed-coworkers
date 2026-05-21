@@ -1,0 +1,14 @@
+{
+  "name": "daytona-io",
+  "homepage": "https://www.daytona.io",
+  "llms_txt_candidates": [
+    "https://www.daytona.io/docs/llms.txt"
+  ],
+  "transform": "verbatim",
+  "allow_prefixes": [
+    "https://www.daytona.io/docs/"
+  ],
+  "deny_prefixes": [],
+  "page_cap": 200,
+  "llms_txt": "https://www.daytona.io/docs/llms.txt"
+}

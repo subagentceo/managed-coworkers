@@ -223,6 +223,11 @@ const LEGACY_ALLOW = new Set([
   "alloydb-omni",          // 2026-05-18 — AlloyDB Omni docs mirror added for the from-scratch mc-stack (OLOOP-1); chassis-internal, not in v2 catalog
   "redis",                 // 2026-05-18 — Redis 7 docs mirror added for the from-scratch mc-stack (OLOOP-1); chassis-internal, not in v2 catalog
   "commonmark-spec",       // 2026-05-18 — CommonMark v0.31.2 spec mirror used as fixtures for md-quality rubric (OMDQ0); chassis-internal, not in v2 catalog
+  "daytona-io",            // 2026-05-21 — Managed Agents sandbox provider per claude.com/blog/claude-managed-agents-updates; not in v2 catalog (OHYG2)
+  "modal",                 // 2026-05-21 — Managed Agents sandbox provider per claude.com/blog/claude-managed-agents-updates; not in v2 catalog (OHYG2)
+  "amplitude",             // 2026-05-21 — Design Agent built on Managed Agents + Cloudflare per claude.com/blog/claude-managed-agents-updates; not in v2 catalog (OHYG2)
+  "clay",                  // 2026-05-21 — Sculptor GTM-engineering agent built on Managed Agents + Daytona per claude.com/blog/claude-managed-agents-updates; not in v2 catalog (OHYG2)
+  "cloudflare-managed-agents-template", // 2026-05-21 — cloudflare/sandbox-mca template repo mirror; chassis-internal, not in v2 catalog
 ]);
 
 check("every vendor/<dir>/crawl.json maps to a catalog entity (modulo legacy allow-list)", () => {

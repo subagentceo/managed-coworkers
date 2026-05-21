@@ -136,6 +136,11 @@ const EXCEPTIONS: Record<string, VendorException> = {
     reason:
       "redis.io command pages start with `\\# CMD \\`\\`\\`json metadata {...}\\`\\`\\`` — the heading is backslash-escaped and followed by inline JSON metadata on the same line. Vendor-canonical format from the redis.io MDX renderer; the H1 content is present but escaped.",
   },
+  clay: {
+    skipHeadline: true,
+    reason:
+      "university.clay.com is a Webflow site whose <main> contains the sidebar nav as the first block of bulleted links before the doc body. The html-extract selector hits sibling content; the actual prose H1 is further down. Tightening the selector requires Webflow-specific class introspection — out of this PR's scope. Real content is captured.",
+  },
 };
 
 const FORBIDDEN_SIGNATURES: { needle: string; reason: string }[] = [

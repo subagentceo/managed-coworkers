@@ -1,0 +1,1202 @@
+{
+  "https://university.clay.com/docs": {
+    "sha256": "3c0e88052e3401721b05a6a3daf9161d6f66ec75511fbe1ba1695142f2a3800f",
+    "lastModified": "Wed, 20 May 2026 19:45:43 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/access-settings-for-connections": {
+    "sha256": "27f2a07e60f77bcfb9c8e9df276da6b5a6b74712ebce83ff1ba983721f18966a",
+    "lastModified": "Wed, 20 May 2026 20:00:09 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/actions-data-credits": {
+    "sha256": "9d3e8befa2e46157f2133da2be74313068cef91129d6d81ade0c10c8b52a242a",
+    "lastModified": "Wed, 20 May 2026 19:21:50 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/activecampaign-integration": {
+    "sha256": "76f91e3cbf20acc0bbf4abf5de1dbf04125c6c6faef57cd0d14ffcaf29fe274f",
+    "lastModified": "Wed, 20 May 2026 20:41:53 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/adbeat-integration": {
+    "sha256": "138ffc7d2a4422b808e7311fc22e80d02308b56d47a43c4576130f0a542f3b85",
+    "lastModified": "Thu, 21 May 2026 18:46:50 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/adyntel-integration": {
+    "sha256": "db92db53ca084855a40b1b6a0d7b6f23caef6bea6b616eb22bbfba84fc6fd952",
+    "lastModified": "Thu, 21 May 2026 00:55:13 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/ai-in-clay": {
+    "sha256": "40f1b96717eb8ced4544b61a483146599eccd6c98ca3a8eaaec4f3aa18490315",
+    "lastModified": "Wed, 20 May 2026 19:23:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/ai-metaprompter-guide": {
+    "sha256": "03d840c176cc757bff4f1900bcfc92278c0b85c0612d64d72701d53cd3c62eb9",
+    "lastModified": "Wed, 20 May 2026 23:37:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/ai-pricing": {
+    "sha256": "3195401faceda266460d472166ed5838415e285be2a140151fa3d1e98c3ce446",
+    "lastModified": "Wed, 20 May 2026 21:37:22 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/ai-tokens": {
+    "sha256": "28c396762afb768dcb599d27957c1d17010519ef4cc1671d01b12f41b53c6b7f",
+    "lastModified": "Wed, 20 May 2026 21:40:03 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/airtable-integration-overview": {
+    "sha256": "06969d600bdecb7a9106c627e5c4109013b834f9f6f7a9a41fabf565d12375cc",
+    "lastModified": "Thu, 21 May 2026 01:31:14 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/apify-integration-overview": {
+    "sha256": "b168d4bc3eac81c1ab7c9d4109189e0975fbcf0739e1dffa6ba1aae1ae12121a",
+    "lastModified": "Wed, 20 May 2026 20:42:32 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/apollo-io-integration-overview": {
+    "sha256": "d2cc2a4c9c0cc9eefea7282ee6fd54b00435f37919650012d7257daeffd36b57",
+    "lastModified": "Wed, 20 May 2026 19:40:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/attio-integration": {
+    "sha256": "9eaa1c593d9b24a3be0d07109a5d816a43454a74453bd468dc1095c8705d851a",
+    "lastModified": "Wed, 20 May 2026 21:24:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/audiences": {
+    "sha256": "b3dff36fbc8563686f110150bdc5a43ef2fbb07bb548a2445a95bce97d733009",
+    "lastModified": "Thu, 21 May 2026 17:34:24 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/auto-delete": {
+    "sha256": "aee0fc226f4cb17f597ad6c75f82918b457a2ce3ff1776bdd5f5a44b24df7fb3",
+    "lastModified": "Thu, 21 May 2026 04:37:50 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/autobound-integration": {
+    "sha256": "3983d19715f3dd9448b49861a816a908f4a3ce3e36ee81f620d66c474503676c",
+    "lastModified": "Thu, 21 May 2026 04:04:55 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/aviato-integration": {
+    "sha256": "fbcd8c3de2391719054104dad761938bbf9c417cd649ee0b83495fdf091b6fe4",
+    "lastModified": "Thu, 21 May 2026 04:04:55 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/beauhurst-integration": {
+    "sha256": "98d9370a043f143ed333e3593e7e5367d56516a89ec3057fe6f6839cd0ba6f04",
+    "lastModified": "Thu, 21 May 2026 18:46:50 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/bettercontact-integration": {
+    "sha256": "3d39779bb981e179e96de83294f7d50670482497cf66dede5f5c9b5b2cb4e9ee",
+    "lastModified": "Thu, 21 May 2026 03:10:20 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/bitly-integration": {
+    "sha256": "335b6dd2d9ed9ccf824bb0ece549c8dbdcc255c8e63b89f3be0dc62a1ad38244",
+    "lastModified": "Thu, 21 May 2026 02:58:27 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/brandfetch-integration-overview": {
+    "sha256": "dfe78a03784cd73e17c7f6d847a63aab2ed2d7680769b8124eb6517538832661",
+    "lastModified": "Thu, 21 May 2026 02:50:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/bright-data-integration-overview": {
+    "sha256": "03212fbcb9a93b8503b86cde94e8ba0be9458bb26509d144259431266a840cc1",
+    "lastModified": "Thu, 21 May 2026 01:33:45 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/building-a-data-waterfall": {
+    "sha256": "b7ed650676f24b451074f3bbcb451124d562e397b932cb796fab57e018441f6f",
+    "lastModified": "Wed, 20 May 2026 23:37:15 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/builtwith-integration-overview": {
+    "sha256": "425ec2b4d73a8e4712947f80d7eae74489f998bba34bcb6e9cbbcf93ae0895dd",
+    "lastModified": "Wed, 20 May 2026 20:03:39 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/bulk-enrichment": {
+    "sha256": "08ce6ebaa6a469b0e40395b5261863bc4fe7a685073607ae1fafe3fe757c4051",
+    "lastModified": "Wed, 20 May 2026 20:40:03 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/buyercaddy-integration": {
+    "sha256": "23e787bd4100fb0b3fc08d1ef3f91e73e49a6a47fee350971c883ac8bb447ae0",
+    "lastModified": "Thu, 21 May 2026 13:59:12 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/buying-email-accounts": {
+    "sha256": "f2bf168b13c48f15390b6a3a38549e8fd0d7c09ebfc87183ee043d898d65f7ce",
+    "lastModified": "Wed, 20 May 2026 21:39:07 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/bytemine-integration": {
+    "sha256": "d45cf16fa932f6ed3a89c4caebb6f39fc5fc9654f092dc7bec32852a5317c91b",
+    "lastModified": "Thu, 21 May 2026 00:40:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/capterra-integration-overview": {
+    "sha256": "6a412cf86f0ef800f562fc206353ad5ae64bac72463a021830725f913133b2b3",
+    "lastModified": "Thu, 21 May 2026 02:44:37 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/captions-integration-overview": {
+    "sha256": "1b9cf41523a37d65675f90b4ee99626629bfc510ecc613df5b050296a665e537",
+    "lastModified": "Thu, 21 May 2026 01:32:16 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/cb-insights": {
+    "sha256": "b3948f1e0cfb5e04ea7112f50769bf6c7bb038827b95b2616aba6708971ce80b",
+    "lastModified": "Wed, 20 May 2026 23:34:37 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/champify-integration": {
+    "sha256": "60c77ce598aaa163ff7ecfc256a37ae5fd8360173f97e2d5aabf8675119a79ba",
+    "lastModified": "Thu, 21 May 2026 00:40:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clay-ads": {
+    "sha256": "71579999856fae315f6956901e35846eac598fea423f614aaf16ac03dbc5d6c4",
+    "lastModified": "Thu, 21 May 2026 10:55:10 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clay-chrome-extensions": {
+    "sha256": "a4428380e3509f76956c0196bd5c6b9c51ebb4f7eaead4c7ab5e7c194b2a4e22",
+    "lastModified": "Wed, 20 May 2026 23:01:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clay-credit-conservation": {
+    "sha256": "575b27bcbb0cc69cb213e964e0c12a46bf446d0161adf58cf9b1fa12e65f836f",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clay-enrichments-integration-overview": {
+    "sha256": "c490b1ad29d384f875ed80de7df75a04b497e795f98db3703151c805fb0149cc",
+    "lastModified": "Wed, 20 May 2026 19:29:06 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clay-formatters-integration-overview": {
+    "sha256": "d2df8d9c0fb028ae4fc590ae68499d434eff0813ce5d79e00ccf9a918ceb0a80",
+    "lastModified": "Wed, 20 May 2026 21:54:54 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clay-to-zapier": {
+    "sha256": "86c10a84e72d89d8fc02372b177ed8a7ff29c4f713420628e2735bcc19b85143",
+    "lastModified": "Wed, 20 May 2026 20:02:49 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/claygent-builder": {
+    "sha256": "3705976e7064a5a073ed3b51c1c50cbf86055287da074d35fd3ddd2ec24ac29b",
+    "lastModified": "Wed, 20 May 2026 19:26:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clearbit-integration-overview": {
+    "sha256": "45827734581698d1f6bb68067c016bb226517c4b8face0eca8b9aa7fcfe33bf6",
+    "lastModified": "Thu, 21 May 2026 01:15:10 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clearoutphone-integration-overview": {
+    "sha256": "f11180d6615846830e4de1e47d4a7b58aa62ccb56b74807d9908f553a3dd3106",
+    "lastModified": "Wed, 20 May 2026 20:06:31 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/clip-to-clay-extension": {
+    "sha256": "982ed149aa7802574075142e9b7ab480018e01a9be7a127905ba83ba8e236f71",
+    "lastModified": "Wed, 20 May 2026 23:01:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/close-integration-overview": {
+    "sha256": "62dcc2b4739e9897d2ddb83cd2e238026a2244d684365fc60ea8672537b69db1",
+    "lastModified": "Thu, 21 May 2026 01:39:24 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/coda-integration-overview": {
+    "sha256": "c304a10d714e0248f2aaa84b1b421e42572bfb64d2b99df193a1be1f1062529c",
+    "lastModified": "Wed, 20 May 2026 23:05:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/column-group-templates": {
+    "sha256": "992bf691f5456b501f0ffeff705f6b368052ccd2dfaea4498ae85ff19713fb76",
+    "lastModified": "Thu, 21 May 2026 02:53:18 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/comparison-operators": {
+    "sha256": "5d54861da98171e4d29ee2f1187ac5ab4e38aa989034e6d1ff33a9e4c5e320a8",
+    "lastModified": "Thu, 21 May 2026 01:29:39 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/conditional-runs": {
+    "sha256": "6680588fd7318d676ed2feeb4e198d6f3e63c43a7604600e22145092318ed9bf",
+    "lastModified": "Wed, 20 May 2026 21:43:26 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/conditional-statements": {
+    "sha256": "4c5f3e75d8b99b34a4739e568ed8bc88cb9c3104b5b3542a3472eb01553e0286",
+    "lastModified": "Thu, 21 May 2026 01:14:58 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/contactlevel-integration": {
+    "sha256": "474b8c68b87bff71fbfce16552c19eb171acbb5e074685f65ed35136cd98930c",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/contactout-integration": {
+    "sha256": "d24ed0e307cb9851c1d5a725a55c2a8bee856c65a1070aa1fd98928081ade25c",
+    "lastModified": "Thu, 21 May 2026 01:34:56 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/creating-a-restricted-salesforce-user": {
+    "sha256": "1a76a1ce285a658ad62756942be4aa5294ceec0123d3fbedae74c4308bae8a56",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/credit-spend-limits-faq": {
+    "sha256": "f01dd5175e8c4cdb92ea6355393b769c243962c7181d05639fd6f3cd9b2e5c93",
+    "lastModified": "Thu, 21 May 2026 04:20:10 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/credit-usage": {
+    "sha256": "8301f3e15887f1a1088e577ea4a3a689f2be1a01ab8d7d9ca7eb68272ca1f33f",
+    "lastModified": "Wed, 20 May 2026 20:35:24 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/crossbeam-integration": {
+    "sha256": "424bb85c2d6ca55ac21c5a1175326e7342ce2b430b2df805ef86ca3e9da383b0",
+    "lastModified": "Thu, 21 May 2026 02:06:10 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/crunchbase-integration": {
+    "sha256": "181bd4b4b3777af907829dd7781c5cabf76ebf707c8c13be3bb0501661a874d6",
+    "lastModified": "Thu, 21 May 2026 00:52:45 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/csv-import-overview": {
+    "sha256": "686747dd5f1a6ac554865b9cb46bd60744e9f0f4fd2296e4f63bc85689767d9b",
+    "lastModified": "Wed, 20 May 2026 20:40:03 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/custom-signals": {
+    "sha256": "ac4b937d28437d75c34380afa04d6aa35fd904f44ec838bb296149dadab9e738",
+    "lastModified": "Wed, 20 May 2026 20:29:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/customer-io-integration-overview": {
+    "sha256": "7f8b741be4caeb84a44f2e7b5d7705c71b632e22dc3c69760613f05b2ed53898",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/dappradar-integration-overview": {
+    "sha256": "2ea9f2208833cb3d555de1d32ca8864c266246aa987c840f5f20497f3144a405",
+    "lastModified": "Thu, 21 May 2026 01:36:24 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/data-test-methodology-mobile-phone-region": {
+    "sha256": "ddcace8bc6b597f4e9d5cc3d83c361c29aa2116953423a337c9b4232d150ea88",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/data-test-methodology-personal-emails": {
+    "sha256": "c48ef09cb50adeaf41c2ad5cdb84300350c6e280c311d4e8189b135381c0d153",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/data-test-work-email-providers": {
+    "sha256": "3df8bb676a0f21b98adedaa39203ff1d1966a7d39f2195d0e95e3a20825a0fe9",
+    "lastModified": "Thu, 21 May 2026 03:52:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/databricks-integration": {
+    "sha256": "f9b200f0c0fc1e84bc114576b32f4ede583c6db56b5668d77318d8e8f4ee2470",
+    "lastModified": "Wed, 20 May 2026 21:34:15 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/datagma-integration-overview": {
+    "sha256": "d64c0bdecaec6d7419e4e24c728fc8f7e791e33c0d68c64f6333b5b48f77bde3",
+    "lastModified": "Thu, 21 May 2026 03:25:27 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/dealroom-integration-overview": {
+    "sha256": "850ef0c6746c6519f37b094ce5239321e11ed183ab565268e50725f04040fab0",
+    "lastModified": "Thu, 21 May 2026 01:59:35 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/debounce-integration-overview": {
+    "sha256": "12bee4d932b529bdb9521c1a18258379321a831ba203556e1ab082fc6b2f0b8e",
+    "lastModified": "Thu, 21 May 2026 01:29:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/delete-content-within-your-workspace": {
+    "sha256": "09c857a3de77e725bc6024d208740482146e70fb40205d35913a61a7472ae1db",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/direct-marketing-best-practices": {
+    "sha256": "ed18c578346eee5518bd6b78a1ac7757fbea89e33fb87539b8eecdc1b5bf70f5",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/dnc-compliance": {
+    "sha256": "dce8c3c598cb592455fc0c47c6cac2faad2996f267f3e6c3f3cd95d344fa45f6",
+    "lastModified": "Thu, 21 May 2026 05:58:33 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/dropcontact-integration-overview": {
+    "sha256": "af9a141fbf594d99ed99c38c6614492ecac492b19cffa50f347b8674a77d9e08",
+    "lastModified": "Thu, 21 May 2026 00:03:42 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/elevenlabs-integration": {
+    "sha256": "aa7ff5e168a069f1d9ab293c2e62a3633576c3f3b7c11ef2411c4758ce70c9c1",
+    "lastModified": "Thu, 21 May 2026 01:35:11 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/email-sequencer": {
+    "sha256": "ed4a8e9f97b40224d4aa948f6febf68f42db542b33cc999cea7ec73f4bc66a92",
+    "lastModified": "Wed, 20 May 2026 19:56:54 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/email-verification-statuses": {
+    "sha256": "21e615d0c4d4e5ec19a81c420388db35ecd7936f82a611579793419ebb192ff6",
+    "lastModified": "Thu, 21 May 2026 03:42:59 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/emailbison-integration": {
+    "sha256": "9afd7f2a631bea0538d822d58b2811f677bf0496a91b15ff923dc80202136333",
+    "lastModified": "Thu, 21 May 2026 07:51:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/enigma-integration": {
+    "sha256": "4ca45fabeef05924261b52302e20bb99533fe3e6c58eb3235ffc553485553fa1",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/enrichley-integration-overview": {
+    "sha256": "5a646ae08d579df8141b40fb7ef8583f3ec3bc63dbb78b57768a476e59fa2bf8",
+    "lastModified": "Thu, 21 May 2026 00:07:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/enrichment-recipes": {
+    "sha256": "134f12ca89ea57b7fcb42fa9c9a19332028097f52b933f719358a5b671124679",
+    "lastModified": "Thu, 21 May 2026 03:43:03 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/enrichments": {
+    "sha256": "71bdb1639b6264f635f61726c90603c06a1ddcac7a8858abcd283fe9cb6d3031",
+    "lastModified": "Wed, 20 May 2026 20:27:16 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/enrow-integration-overview": {
+    "sha256": "8ea30bb58bb66c7051c6cbc58bc09c6406bb14c19c002bf8e06ae638f2c330f9",
+    "lastModified": "Thu, 21 May 2026 01:35:25 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/exellius-integration": {
+    "sha256": "a5e1387ff8e8f53975e2ed802271e9d863e97e1fc8d46bb8ca64ae0da3506148",
+    "lastModified": "Thu, 21 May 2026 03:39:53 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/explorium-integration": {
+    "sha256": "1df30c782fa999c69cd7cf133c014353902f6a3c1857e3e9438fe3d2c689c527",
+    "lastModified": "Wed, 20 May 2026 20:59:54 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/find-ai-integration-overview": {
+    "sha256": "21b1843ae37a6158751985e8cb81bf64e514942f21f539791b839cfeaaa5fb3f",
+    "lastModified": "Wed, 20 May 2026 23:37:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/find-companies": {
+    "sha256": "e1a2bbe6c022f615867c2a1c380afc2f21ae82d67a2d073bf1606c80c13dfb1b",
+    "lastModified": "Wed, 20 May 2026 20:44:01 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/find-people-overview": {
+    "sha256": "2081fac26edfb4a939f28428900157267a2ddb990d78b41e656b8c8fa51c34be",
+    "lastModified": "Wed, 20 May 2026 21:33:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/find-your-icp-based-on-your-domain": {
+    "sha256": "87630ab5aa041168c3976fe1f64583e62e36a832b7f039f6096d01fd4b84e81c",
+    "lastModified": "Wed, 20 May 2026 23:48:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/finding-companies-and-people-in-clay": {
+    "sha256": "bac4396389f591e98d42058d9141bfe69e28707490b5c7a7af8c2f24479813eb",
+    "lastModified": "Thu, 21 May 2026 00:40:16 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/findymail-integration-overview": {
+    "sha256": "5317e73ebe8b0c52c6b080a7023c542754eeb423249601a8ce131894c679b18c",
+    "lastModified": "Wed, 20 May 2026 20:26:15 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/firmable-integration": {
+    "sha256": "6f1cebfd3c49b198bf7ae3364e6175c778feb11f39cc23fea8f1a272c04ae299",
+    "lastModified": "Thu, 21 May 2026 00:39:04 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/fivetran-integration-overview": {
+    "sha256": "8388e0894e8f2dbf8912f0f1de9eeed6c0b65dbf23b818dc8f2563376a9ccf35",
+    "lastModified": "Wed, 20 May 2026 20:47:01 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/forager-integration-overview": {
+    "sha256": "bc182fc07a9367e0dc095d5c70d8081caef0a0d526115fb81309b7c6d10adbbc",
+    "lastModified": "Thu, 21 May 2026 01:11:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/formula-generator": {
+    "sha256": "69d341218778c1ffac4af13f485c9fe8410bffc88fbb8236013d603345c9a3ff",
+    "lastModified": "Wed, 20 May 2026 21:26:33 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/fullenrich-integration-overview": {
+    "sha256": "519a3b31bc80058e3a8efc4a68d5a838b516fcbab760269bedf8260da2ce1fa0",
+    "lastModified": "Thu, 21 May 2026 00:40:08 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/functions": {
+    "sha256": "67b1f48cbe0534de01f5824d77c0439eea47bc39242cadbfcdeeaa78e17d69d8",
+    "lastModified": "Wed, 20 May 2026 23:48:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/github-integration-overview": {
+    "sha256": "45ad1a2a5c602a5dc752c5a31b605ca7911e447942b234b060835c75e616a8a9",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/glassdoor-integration-overview": {
+    "sha256": "41e0a1e1380e4814425af5cb8b9ddf72874e56f34d4988aa279db9309d5485b8",
+    "lastModified": "Thu, 21 May 2026 01:46:54 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/gong-integration-overview": {
+    "sha256": "ed14a9a92b25f8b84a4f3102996773c2d6f3872a27254d9795403aef17e5d288",
+    "lastModified": "Wed, 20 May 2026 22:11:32 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-bigquery-integration": {
+    "sha256": "c717bd7988857dd3957871adda258425887659a1b23bc56080aa18e7209dad66",
+    "lastModified": "Thu, 21 May 2026 18:46:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-docs-integration": {
+    "sha256": "80e8b293de4ed9c9fe0fb220b69fd124afb41e188cb35f3d4f388476ff95457a",
+    "lastModified": "Wed, 20 May 2026 23:48:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-news-integration-overview": {
+    "sha256": "1a3c1ede40a6c31d775550275f64c46e192743e988be5e9ac799ad2def4a0152",
+    "lastModified": "Thu, 21 May 2026 14:13:59 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-pagespeed-integration-overview": {
+    "sha256": "55d9fe46beea6458f7886360f73735d90eb5588fa8208748a2e1ebcd14ee8d78",
+    "lastModified": "Thu, 21 May 2026 01:36:10 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-sheets-integration-overview": {
+    "sha256": "b0e36af1579100f463756c51ba2e30cf37d7b4a456d8364d2bd09ae9038c8bbd",
+    "lastModified": "Wed, 20 May 2026 23:37:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-shopping-integration-overview": {
+    "sha256": "676e882b74741760755ee07887bef328edac6b93e6a0e37fdecc3a18d91d22bf",
+    "lastModified": "Thu, 21 May 2026 00:55:13 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-slides-integration": {
+    "sha256": "692914e7b8385dee7269b02920ca5fcce6a5b1b2d32a7965654f024e7c29fe0a",
+    "lastModified": "Wed, 20 May 2026 23:48:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/google-translate": {
+    "sha256": "c7048a8a6d75b57a0d75ce989c9bc64115c6c322aba3dd491b38e4c53381008d",
+    "lastModified": "Thu, 21 May 2026 02:01:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/groove-integration": {
+    "sha256": "39781ba30b415479ee56b2532ed693a9d8ad950e3de66905154f132b6806cee4",
+    "lastModified": "Wed, 20 May 2026 23:05:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/guide-find-clay-api-key": {
+    "sha256": "be04ab7ca0c15621da5f838d2672c42d427bd08db0397fb64567bcd168d9cb23",
+    "lastModified": "Wed, 20 May 2026 20:16:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/hacker-news-integration-overview": {
+    "sha256": "954feab4b5edf42544046ab0f3c9686ce3ca4006d61fe348b6b39ac6f9b1e73f",
+    "lastModified": "Thu, 21 May 2026 03:20:24 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/harmonic-ai-integration-overview": {
+    "sha256": "94152a693846f17e7ce6d995132c54262ad802a97bcec03958568f7489e7ddf2",
+    "lastModified": "Wed, 20 May 2026 22:22:41 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/heygen-integration": {
+    "sha256": "784dbf9277de97f8a362b24a04222e3f3365474763bbc5f47da7fbc7819250c3",
+    "lastModified": "Thu, 21 May 2026 08:40:46 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/heyreach-integration-overview": {
+    "sha256": "6a6ea382f516d828ac3d3e697595b326f9dc8d682a5ace6070321a772a7aab1f",
+    "lastModified": "Wed, 20 May 2026 23:48:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/hg-insights-integration-overview": {
+    "sha256": "a8b6861815a3d18551dc9346faa2480749e281864cc3219c4d83d30d54b889d1",
+    "lastModified": "Thu, 21 May 2026 01:14:19 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/hithorizons-integration-overview": {
+    "sha256": "2648182c6492d996defed2edce6baa08675f376276017475ea13703724516776",
+    "lastModified": "Thu, 21 May 2026 01:36:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/homepage-resource-tagging": {
+    "sha256": "b73dd6beb9349be600808b947c5499de180c4269eaad5c8099a3af370ad3f41b",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/http-api-integration-overview": {
+    "sha256": "ec81f30d905dcf0db468c35f43bab7ccb412dc6963e0bdaefbf70e13d0b721a9",
+    "lastModified": "Wed, 20 May 2026 19:27:25 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview": {
+    "sha256": "73f61da72076f0069685a65dcace67d2ee01436d20dacd9edc1e77ade85144d1",
+    "lastModified": "Thu, 21 May 2026 02:27:55 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/hubspot-integration-overview": {
+    "sha256": "873cf98978eb2c5aae1b046744a15410a9090681fd77c68d97cd52b155c3587f",
+    "lastModified": "Wed, 20 May 2026 19:29:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/hunter-integration-overview": {
+    "sha256": "4e5c33418a51a9e5694a057f73fd03604a32ab78817973987b687fc81346270d",
+    "lastModified": "Wed, 20 May 2026 19:25:21 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/icypeas-integration-overview": {
+    "sha256": "cb605d857b778a336113368cac06d5057f7ea81cbc8f7146671615e16040ee03",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/identity-matrix-integration": {
+    "sha256": "277cfc0855180b47f84c474d559722038873c1a7c22a8cb0336c6a685297310a",
+    "lastModified": "Thu, 21 May 2026 04:05:12 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/infinite-loops": {
+    "sha256": "e936f0a178192a94581c251496205c2b55d6c63c4ee5bbe971d016e377ff16b7",
+    "lastModified": "Thu, 21 May 2026 04:34:32 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/influencer-club-integration-overview": {
+    "sha256": "dd651df3fffcf12404d9b807bfd45169abf80ef45b3bdd61776e51be12a15076",
+    "lastModified": "Thu, 21 May 2026 01:33:28 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/instagram-integration": {
+    "sha256": "6663ba2971cd301e488ec93061e57b2eb9cfb4df0edaf95e258a3ec3db390c23",
+    "lastModified": "Thu, 21 May 2026 15:54:36 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/instantly-integration-overview": {
+    "sha256": "001984195a5f5ffbd52f348c5b04d010b1b57368cfdc81648ec70f138b7e3e74",
+    "lastModified": "Wed, 20 May 2026 22:03:09 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/intellizence-integration": {
+    "sha256": "cc56b276b4c7bcc2149178a25d92e99585961d9400fa0b8643447441238cd0ca",
+    "lastModified": "Thu, 21 May 2026 01:31:27 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/ironclad-integration": {
+    "sha256": "ece05399ab8891e5cca981804025b011c61bccf4e88354529386683ec8a724e4",
+    "lastModified": "Thu, 21 May 2026 06:30:44 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/job-change-signal-overview": {
+    "sha256": "7aec0337ac018dd768272c95897a3c6201b4e3bee498ef9f5b9b6125409cb1e9",
+    "lastModified": "Wed, 20 May 2026 21:24:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/keyboard-shortcuts": {
+    "sha256": "e2c574b392673c581692f15e69bd870a87f13f8a691be51995d0263e71b1960a",
+    "lastModified": "Wed, 20 May 2026 20:08:27 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/la-growth-machine-integration-overview": {
+    "sha256": "d4094cdd8d23c80ed958d2bb656e803e77ece5557edaa9140e2622a0a9ab6129",
+    "lastModified": "Thu, 21 May 2026 02:14:59 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/lavender-integration-overview": {
+    "sha256": "4f25043a70feeddc08e2d27ff79f01592a823b6a5a13c5fba397368c07c5c07b",
+    "lastModified": "Thu, 21 May 2026 01:33:13 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/lead-scoring-overview": {
+    "sha256": "79dfe6a0514279efbee35e7539126e7b8d0617139cee834367a9a18245589ae9",
+    "lastModified": "Thu, 21 May 2026 02:50:59 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/lead-to-account-matching-for-salesforce": {
+    "sha256": "08484773ba7de41621ce72e95b3190ec7397022e998e1be108ee4ca7c11c3d81",
+    "lastModified": "Wed, 20 May 2026 23:05:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/leadiq-integration-overview": {
+    "sha256": "6d9dffe0ea906ec547904f76f724d96a39cdc91eea01389b8b9a5239ec773700",
+    "lastModified": "Thu, 21 May 2026 00:40:16 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/leadmagic-integration-overview": {
+    "sha256": "ac4e7f4786993dc9779c7a217966bec106b65d0e493d321ff8e6a15ee50b8a4a",
+    "lastModified": "Wed, 20 May 2026 20:51:28 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/legacy-plans": {
+    "sha256": "5cbe72cd8062e298633cd73de0c42bd2f41e6e3dd02cdce5b942574d091e1c7e",
+    "lastModified": "Wed, 20 May 2026 19:47:43 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/lemlist-integration-overview": {
+    "sha256": "acc8f5467bb151810007a9f67c6758d3ebc29292943de8c71580696465806cee",
+    "lastModified": "Wed, 20 May 2026 23:05:39 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/limadata-integration": {
+    "sha256": "5e1e3d0a7f18304aa23b9f36ed665dcb7dcca747fc7c520b8223887c44470508",
+    "lastModified": "Thu, 21 May 2026 02:03:18 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/linear-integration-overview": {
+    "sha256": "c4a025e7ee2245645094decfce63afc1a4e7d34457bff96a7e7bae022bcfe726",
+    "lastModified": "Thu, 21 May 2026 01:34:21 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/listmint-integration": {
+    "sha256": "1de92ee98d1a64ab506d147862bbc60e352361cd676697424be94c9b30201e2e",
+    "lastModified": "Thu, 21 May 2026 10:20:11 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/livedata-integration": {
+    "sha256": "191cf5ec220a7a4758efcffcd0b61d68d581b160e2a2b554058b35707cfac978",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/lob-integration-overview": {
+    "sha256": "d2618b1a8865e28f151cd132cc924910eb0fd8c7d3a7d587ff4c7aff79028292",
+    "lastModified": "Thu, 21 May 2026 12:05:30 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/logical-operators": {
+    "sha256": "610c081d88cea78808887b878055604fcb8ef4b45ce81b1b76c81d2f24a30440",
+    "lastModified": "Wed, 20 May 2026 22:43:02 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/lookup-rows": {
+    "sha256": "aedea7e046714090f371a33a2ee56977c25027a8831b3bd78ab108a983f35adb",
+    "lastModified": "Wed, 20 May 2026 23:48:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/loom-integration": {
+    "sha256": "03fc5ff2210e87a31dad3d4630bcfa9c4d0cb966cbe3d47667f5ea9ac22b38fe",
+    "lastModified": "Thu, 21 May 2026 16:02:42 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/loxo-integration-overview": {
+    "sha256": "acaecd579716e74a53ff1350e2671146f192aedbbc21ca2eb1dd505188cd5f5d",
+    "lastModified": "Wed, 20 May 2026 21:06:59 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/lusha-integration": {
+    "sha256": "66f578ccc5f003e50d765d7e19851986140152276d28c1feb0b34d2bdbd88a97",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/madkudu-integration-overview": {
+    "sha256": "0a8db6856f71b578913f59f411eace674fa6d7aeb77c6fb3713c3c053ba9d5a1",
+    "lastModified": "Thu, 21 May 2026 03:14:41 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/manage-cell-data": {
+    "sha256": "0e0658cb20b062873fb798726e662fd7dad65a59f8fe65098bc7b6f7022b7cdd",
+    "lastModified": "Wed, 20 May 2026 23:48:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/managing-integration-accounts": {
+    "sha256": "c1ed33932b24aad913e82220505388fb2e3064e3eac7ef7f64a3cbd6cbdd63e6",
+    "lastModified": "Wed, 20 May 2026 19:29:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/mapbox-integration-overview": {
+    "sha256": "4abbdf100219b9abbfccfa7d5756a010bd5e24dc160fbb9368f4ecd9e31ab927",
+    "lastModified": "Wed, 20 May 2026 23:48:40 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/marketo-and-clay-connection": {
+    "sha256": "f28b5d531d9df8e3d963efb9207f37b1f457beb1be0a7e5e97b3b75b39e599ea",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/marketo-integration": {
+    "sha256": "e38c0694816674dbaa0e16eca14725858dd4699702c0327035321df4f5d6c74a",
+    "lastModified": "Thu, 21 May 2026 03:15:15 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/meer-integration": {
+    "sha256": "52b1099c91b609175cf454bd682dc8002bea88a4cbba0b0e9ec2058ec4b7f5fc",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/message-drafting-overview": {
+    "sha256": "c7850bcc1f13abb5dcecc409a313ec1d09aecae8ead306abc4052fc869f04441",
+    "lastModified": "Wed, 20 May 2026 23:05:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/microsoft-dynamics-365-crm-integration-overview": {
+    "sha256": "c90096dca1322f0248821963b0366dbc31196285640fb022746e0097cbdb40e5",
+    "lastModified": "Thu, 21 May 2026 04:39:37 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/microsoft-teams-integration": {
+    "sha256": "7bf00b676ead9c89ba3b2932faeb45928545ea1f15c97af60df067260a679b2e",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/minerva-integration": {
+    "sha256": "563bd6a27f485dfa3a471bfca05b7c282f83433d7322f109ba577e2da8409141",
+    "lastModified": "Wed, 20 May 2026 22:04:51 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/mixpanel-integration-overview": {
+    "sha256": "94d3ce102d32fcb40747475245cc4e8cfb276bcafa87d335ffd27a1f2aa04ed5",
+    "lastModified": "Wed, 20 May 2026 23:05:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/mixrank-integration-overview": {
+    "sha256": "445c0daae506b477a90697f565b3adf5c5b92063c3352bbef534fec0ece2625d",
+    "lastModified": "Thu, 21 May 2026 00:55:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/modash-integration-overview": {
+    "sha256": "aaa5d91b4024affc7abbd2a25df1deeae10f8eafd336eb2554feef2b78ffe280",
+    "lastModified": "Thu, 21 May 2026 15:54:36 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/monitor-for-news-fundraising": {
+    "sha256": "49492e0dc6894b49acb93287b821cfd2b7ff8a6b4d8cd0519c48aa9715dede0e",
+    "lastModified": "Thu, 21 May 2026 18:46:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/neverbounce-integration-overview": {
+    "sha256": "bbab36dd3fbedaba4f7f70c6461e15a6edb8a1647d78045f8ee1e41abb788b8a",
+    "lastModified": "Thu, 21 May 2026 01:32:37 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/new-hire-signal-overview": {
+    "sha256": "1da646ba4f126553605a1b19a31a778b63cd869fb4d40ffe44142689ede5145d",
+    "lastModified": "Thu, 21 May 2026 01:35:49 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/nimbler-integration-overview": {
+    "sha256": "2a5164f2e6b83d5698fd4375fbd70dcfc13d1f270968893af454ad853d92ea4f",
+    "lastModified": "Thu, 21 May 2026 01:13:04 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/notion-integration": {
+    "sha256": "62defaef7dd60aa4f2efdf35a5cab6c28f6e5ab1ef3143195519fef78c817fb7",
+    "lastModified": "Thu, 21 May 2026 02:18:44 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/oakie-ai-integration": {
+    "sha256": "dff755aaaabfe9cbef3f07d187849ba235e90bef58f222ea706b5fcebc4c9a8e",
+    "lastModified": "Thu, 21 May 2026 01:36:38 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/oauth-optional-scopes": {
+    "sha256": "1f04432c377f969c2353f22f8302174b36b77011ca075e4a1263d6a0fae358b0",
+    "lastModified": "Wed, 20 May 2026 23:05:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/ocean-io-integration-overview": {
+    "sha256": "7e470749c27a82f7a1c15358591b500dbb705dfde9efba01bdc40de886fa5575",
+    "lastModified": "Wed, 20 May 2026 21:11:07 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/octave-integration": {
+    "sha256": "98e72c4138ddf8ced13bc9734811e48acf24e767bbb3282c952faf0667a56558",
+    "lastModified": "Thu, 21 May 2026 04:27:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/openmart-integration": {
+    "sha256": "ddae42f1608dcc5abcfdd760b2e187413af87d6695ebb06921586d95c54e5e4f",
+    "lastModified": "Wed, 20 May 2026 20:58:31 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/outreach-integration-overview": {
+    "sha256": "cb8da4766a73f215d46eb94f0890ab69a003fdf97fb94ee0d791c87330eae769",
+    "lastModified": "Wed, 20 May 2026 20:30:13 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/owler-integration-overview": {
+    "sha256": "856d761c368a628acd235fb9f4a068ff52ea664fb1c09a98ceac7337a8d1df3d",
+    "lastModified": "Thu, 21 May 2026 03:01:13 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/people-data-labs-integration-overview": {
+    "sha256": "cc6eb7b05d7ffd8afc01d15dad3c073946ff6d0fa32c01ae9cb7e71eca3e8384",
+    "lastModified": "Wed, 20 May 2026 20:20:17 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/perplexity-integration-overview": {
+    "sha256": "1194a5d822da691c383b515fba7e26f7bdcc337aa76d7199d4170840dd9d57ed",
+    "lastModified": "Thu, 21 May 2026 06:35:05 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/phantombuster-integration-overview": {
+    "sha256": "ba43716dcaf36f6c2e5cfb773607bfc20c84334c8e5280e1d7d0c83ea112f261",
+    "lastModified": "Thu, 21 May 2026 01:37:29 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/pipedrive-integration-overview": {
+    "sha256": "8170e1b26a9e1c21a81dd9545eb12e2176c34fd38279b1cf7e0a48b2d47ef236",
+    "lastModified": "Wed, 20 May 2026 19:46:14 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/pitchbook-integration-overview": {
+    "sha256": "43f9e0b3779b4ec9c2aca5297df1f51a0228bcd28f87a99da88fa82d908024b1",
+    "lastModified": "Wed, 20 May 2026 19:38:57 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/plans-and-billing": {
+    "sha256": "4c648ec24219f6ddbc8eece4d0dcff8f96491e27e034942b9ebbf5c9948c6b0f",
+    "lastModified": "Wed, 20 May 2026 19:25:04 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/postgres-integration-overview": {
+    "sha256": "8600f07c3d8c92b302176de581872eab1f61d00b8fad3ca9db40d2f602b42371",
+    "lastModified": "Thu, 21 May 2026 02:17:56 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/predictleads-integration-overview": {
+    "sha256": "8db16911c3e9c6536eafd32c4fe94bf6c913226a3941c78ed3faa6155fade339",
+    "lastModified": "Wed, 20 May 2026 19:55:33 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/promotion-signal-overview": {
+    "sha256": "0d3698e62dcb9dd9a86d843322979102417b28b846713a464144e52be32df67c",
+    "lastModified": "Wed, 20 May 2026 23:14:43 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/prospeo-integration-overview": {
+    "sha256": "e2f4cac7b806d543d02058e3169662729545683b9c3c48e07b4d61d8899c58ac",
+    "lastModified": "Wed, 20 May 2026 21:03:36 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/pubrio-integration": {
+    "sha256": "b38755ccec3364193735f4fa1120bd66913e6454d28f1fea7595f8b1a505a5c5",
+    "lastModified": "Wed, 20 May 2026 20:46:08 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/rb2b-integration": {
+    "sha256": "d1c31caa8a802dc73fb8a78a2879a4ff1c02669151fc590c4a570fe9dd4662b4",
+    "lastModified": "Wed, 20 May 2026 20:41:54 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/reddit-integration": {
+    "sha256": "a855b6d781ec780bfa69777f8e72f19498119d97db6b38ffc69f04bf3cad1acc",
+    "lastModified": "Thu, 21 May 2026 00:55:35 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/referencing-dynamic-data-from-other-columns": {
+    "sha256": "eecd92b1f83f582f281a8dcd733f331943f686e18526e3b4b39d710945e5e3f8",
+    "lastModified": "Wed, 20 May 2026 20:10:00 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/referrals": {
+    "sha256": "82a24d7921da4a9f8e2716f6946afebc1943adfca28dffadf812b3305124180c",
+    "lastModified": "Wed, 20 May 2026 20:57:33 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/reply-io-integration-overview": {
+    "sha256": "476eca8020ed0e34f1fa03fe9c622b28b44a80b65fdab61cd064dff942c92cb7",
+    "lastModified": "Thu, 21 May 2026 03:52:33 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/reverse-contact-integration": {
+    "sha256": "bc7103eb7714db7a4ea3b6cd2a3677b0749e07376e017b88fe9d1070edf7e6b0",
+    "lastModified": "Thu, 21 May 2026 16:02:35 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/roles-and-permissions": {
+    "sha256": "0e5297e71eddc047af4bd46df519b15982d088759e2d225f655b1042c3a9ae29",
+    "lastModified": "Wed, 20 May 2026 22:52:52 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/round-robin-integration-overview": {
+    "sha256": "544b95b55f5408561b087c1194642df1549420f39777ce638c8a22fc26f90f9e",
+    "lastModified": "Thu, 21 May 2026 01:37:15 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/rox-integration": {
+    "sha256": "08de72e8ccc8dcf84d0ce0f41b37aa5275f4b3593add99d69f1b424dcd0135db",
+    "lastModified": "Wed, 20 May 2026 21:00:36 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/rss-feed-integration-overview": {
+    "sha256": "14257a5fa8e5c6188790265d8a94fe8b6f5fbda6499da04b17ba048cdc1538ac",
+    "lastModified": "Thu, 21 May 2026 02:18:06 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/run-progress": {
+    "sha256": "b7f2df66ae68b4e6881ccf9ff1f1c2746d64f15150d456426acad20510df2a67",
+    "lastModified": "Thu, 21 May 2026 18:46:53 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/salesforce-integration-faqs": {
+    "sha256": "4ac108268e1310238c64588dd51fe6e7c0db34550d29e0c6401e0d571ddcdc93",
+    "lastModified": "Wed, 20 May 2026 19:41:34 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/salesforce-integration-overview": {
+    "sha256": "e1277c3e8a439a12c800d5bc94518fdf61df6e88bb7a2e076d3cf5f407b182d2",
+    "lastModified": "Wed, 20 May 2026 19:29:06 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/salesforce-soql": {
+    "sha256": "b4a395f90015d0d54d3eb4aa7207526188a8befaea1bb84425405f01169555a5",
+    "lastModified": "Thu, 21 May 2026 08:01:12 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/salesforge-integration": {
+    "sha256": "56dbd3b968cf78291ff00d4089123991e564aa4f18d088012111b8d4b7a1118b",
+    "lastModified": "Thu, 21 May 2026 04:25:09 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/salesloft-integration-overview": {
+    "sha256": "bde0a877687ae6b33aded98355bd01a7b6b21a044a9f2000cfd4f2befb30da3b",
+    "lastModified": "Thu, 21 May 2026 11:32:19 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  },
+  "https://university.clay.com/docs/sandbox-mode": {
+    "sha256": "5dd4f81c4599695314b3140a6386e45132de9cd2e26e7fcafe763493ca3dcbce",
+    "lastModified": "Wed, 20 May 2026 22:55:46 GMT",
+    "fetchedAt": "2026-05-21T18:46:50.390Z",
+    "lastStatus": 200
+  }
+}

@@ -37,8 +37,8 @@ When an evaluation error occurs, the method returns the default value you provid
 
 The following example inspects evaluation details returned by `getBooleanDetails`:
 
-* [  JavaScript ](#tab-panel-6431)
-* [  TypeScript ](#tab-panel-6432)
+* [  JavaScript ](#tab-panel-6471)
+* [  TypeScript ](#tab-panel-6472)
 
 JavaScript
 

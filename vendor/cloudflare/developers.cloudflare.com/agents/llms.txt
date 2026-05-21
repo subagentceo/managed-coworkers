@@ -46,10 +46,11 @@ Build AI-powered agents to perform tasks, persist state, browse the web, and com
 - [Browse the web](https://developers.cloudflare.com/agents/api-reference/browse-the-web/index.md): Give Agents full Chrome DevTools Protocol access to inspect pages, scrape data, and capture screenshots with Browser Run.
 - [Callable methods](https://developers.cloudflare.com/agents/api-reference/callable-methods/index.md): Expose Agent methods to external clients over WebSocket RPC using the @callable() decorator.
 - [Chat agents](https://developers.cloudflare.com/agents/api-reference/chat-agents/index.md): Build AI chat interfaces with AIChatAgent and useAgentChat, including message persistence, streaming, and tool support.
+- [Chat SDK](https://developers.cloudflare.com/agents/api-reference/chat-sdk/index.md): Integrate Chat SDK with Agents, including durable state for subscriptions, locks, queues, and message history.
 - [Client SDK](https://developers.cloudflare.com/agents/api-reference/client-sdk/index.md): Connect to Cloudflare Agents from browsers or server runtimes using useAgent, AgentClient, and agentFetch.
 - [Codemode](https://developers.cloudflare.com/agents/api-reference/codemode/index.md): Let LLMs write and execute JavaScript to orchestrate multiple tool calls in a secure sandbox using Codemode.
 - [Configuration](https://developers.cloudflare.com/agents/api-reference/configuration/index.md): Configure Wrangler bindings, environment variables, and type generation for a project using the Agents SDK.
-- [Durable execution](https://developers.cloudflare.com/agents/api-reference/durable-execution/index.md): Run work that survives Durable Object eviction with runFiber(), keepAlive(), and crash recovery.
+- [Durable execution](https://developers.cloudflare.com/agents/api-reference/durable-execution/index.md): Run work that survives Durable Object eviction with runFiber(), startFiber(), keepAlive(), and crash recovery.
 - [Email](https://developers.cloudflare.com/agents/api-reference/email/index.md): Send and receive email from Cloudflare Agents using the Email Service binding and inbound routing rules.
 - [getCurrentAgent()](https://developers.cloudflare.com/agents/api-reference/get-current-agent/index.md): Access the current Agent context from external utility functions using getCurrentAgent() in the Agents SDK.
 - [HTTP and Server-Sent Events](https://developers.cloudflare.com/agents/api-reference/http-sse/index.md): Handle HTTP requests and stream responses with Server-Sent Events (SSE) from Cloudflare Agents.

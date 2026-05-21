@@ -1,0 +1,14 @@
+{
+  "name": "modal",
+  "homepage": "https://modal.com",
+  "llms_txt_candidates": [
+    "https://modal.com/llms.txt"
+  ],
+  "transform": "verbatim",
+  "allow_prefixes": [
+    "https://modal.com/docs/"
+  ],
+  "deny_prefixes": [],
+  "page_cap": 200,
+  "llms_txt": "https://modal.com/llms.txt"
+}

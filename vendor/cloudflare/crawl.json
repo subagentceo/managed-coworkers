@@ -6,7 +6,8 @@
   ],
   "llms_txt_sources": [
     "https://developers.cloudflare.com/llms.txt",
-    "https://developers.cloudflare.com/flagship/llms.txt"
+    "https://developers.cloudflare.com/flagship/llms.txt",
+    "https://developers.cloudflare.com/sandbox/llms.txt"
   ],
   "transform": "cloudflare-index-md",
   "allow_prefixes": [
