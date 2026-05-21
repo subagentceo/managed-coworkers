@@ -34,8 +34,8 @@ The client provider requires an API token to fetch flag values. This token is no
 
 The following example initializes the provider with a set of pre-fetched flags and evaluates them in a browser application.
 
-* [  JavaScript ](#tab-panel-6433)
-* [  TypeScript ](#tab-panel-6434)
+* [  JavaScript ](#tab-panel-6473)
+* [  TypeScript ](#tab-panel-6474)
 
 JavaScript
 

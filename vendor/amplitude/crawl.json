@@ -1,0 +1,15 @@
+{
+  "name": "amplitude",
+  "homepage": "https://amplitude.com",
+  "llms_txt_candidates": [
+    "https://amplitude.com/llms.txt"
+  ],
+  "transform": "verbatim",
+  "allow_prefixes": [
+    "https://amplitude.com/"
+  ],
+  "deny_prefixes": [],
+  "page_cap": 100,
+  "llms_txt": "https://amplitude.com/llms.txt",
+  "notes": "Amplitude's llms.txt is prose + code blocks (the wizard/agent primer), not the canonical link-list format the crawler parses. The two .md files under amplitude.com/ were manually fetched. See vendor/amplitude/urls.md for the refresh recipe."
+}

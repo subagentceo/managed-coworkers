@@ -15,7 +15,7 @@ RealtimeKit, SFU and TURN
 - [RealtimeKit](https://developers.cloudflare.com/realtime/realtimekit/index.md): Add live video and voice to web or mobile apps with RealtimeKit SDKs and APIs.
 - [AI](https://developers.cloudflare.com/realtime/realtimekit/ai/index.md): Add AI-powered transcription and summarization to RealtimeKit meetings.
 - [Summary](https://developers.cloudflare.com/realtime/realtimekit/ai/summary/index.md): Generate AI-powered meeting summaries from transcript data in RealtimeKit.
-- [Transcription](https://developers.cloudflare.com/realtime/realtimekit/ai/transcription/index.md): Enable real-time and post-meeting speech-to-text transcription in RealtimeKit.
+- [Transcription](https://developers.cloudflare.com/realtime/realtimekit/ai/transcription/index.md): Enable real-time and end-of-meeting speech-to-text transcription in RealtimeKit.
 - [Audio Only Calls](https://developers.cloudflare.com/realtime/realtimekit/audio-calls/index.md): Build audio-only experiences like voice rooms and support lines with RealtimeKit.
 - [Message Broadcast APIs](https://developers.cloudflare.com/realtime/realtimekit/broadcast-apis/index.md): Send custom broadcast messages to all participants in a RealtimeKit meeting.
 - [Storage and Broadcast](https://developers.cloudflare.com/realtime/realtimekit/collaborative-stores/index.md): Create real-time key-value stores and broadcast messages to participants in RealtimeKit.

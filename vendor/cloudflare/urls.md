@@ -1,8 +1,8 @@
 ---
 vendor: cloudflare
 llms_txt: https://developers.cloudflare.com/llms.txt
-last_crawled: 2026-05-20T14:21:37.779Z
-count: 118
+last_crawled: 2026-05-21T18:48:10.712Z
+count: 178
 transform: cloudflare-index-md
 ---
 
@@ -99,7 +99,67 @@ transform: cloudflare-index-md
 | https://developers.cloudflare.com/resource-tagging/llms.txt | `vendor/cloudflare/developers.cloudflare.com/resource-tagging/llms.txt` |
 | https://developers.cloudflare.com/rules/llms.txt | `vendor/cloudflare/developers.cloudflare.com/rules/llms.txt` |
 | https://developers.cloudflare.com/ruleset-engine/llms.txt | `vendor/cloudflare/developers.cloudflare.com/ruleset-engine/llms.txt` |
+| https://developers.cloudflare.com/sandbox/api/backups/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/backups/index.md` |
+| https://developers.cloudflare.com/sandbox/api/commands/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/commands/index.md` |
+| https://developers.cloudflare.com/sandbox/api/file-watching/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/file-watching/index.md` |
+| https://developers.cloudflare.com/sandbox/api/files/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/files/index.md` |
+| https://developers.cloudflare.com/sandbox/api/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/index.md` |
+| https://developers.cloudflare.com/sandbox/api/interpreter/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/interpreter/index.md` |
+| https://developers.cloudflare.com/sandbox/api/lifecycle/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/lifecycle/index.md` |
+| https://developers.cloudflare.com/sandbox/api/ports/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/ports/index.md` |
+| https://developers.cloudflare.com/sandbox/api/sessions/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/sessions/index.md` |
+| https://developers.cloudflare.com/sandbox/api/storage/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/storage/index.md` |
+| https://developers.cloudflare.com/sandbox/api/terminal/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/api/terminal/index.md` |
+| https://developers.cloudflare.com/sandbox/bridge/http-api/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/bridge/http-api/index.md` |
+| https://developers.cloudflare.com/sandbox/bridge/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/bridge/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/architecture/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/architecture/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/containers/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/containers/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/preview-urls/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/preview-urls/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/sandboxes/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/sandboxes/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/security/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/security/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/sessions/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/sessions/index.md` |
+| https://developers.cloudflare.com/sandbox/concepts/terminal/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/concepts/terminal/index.md` |
+| https://developers.cloudflare.com/sandbox/configuration/dockerfile/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/configuration/dockerfile/index.md` |
+| https://developers.cloudflare.com/sandbox/configuration/environment-variables/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/configuration/environment-variables/index.md` |
+| https://developers.cloudflare.com/sandbox/configuration/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/configuration/index.md` |
+| https://developers.cloudflare.com/sandbox/configuration/sandbox-options/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/configuration/sandbox-options/index.md` |
+| https://developers.cloudflare.com/sandbox/configuration/transport/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/configuration/transport/index.md` |
+| https://developers.cloudflare.com/sandbox/configuration/wrangler/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/configuration/wrangler/index.md` |
+| https://developers.cloudflare.com/sandbox/get-started/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/get-started/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/background-processes/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/background-processes/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/backup-restore/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/backup-restore/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/browser-terminals/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/browser-terminals/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/code-execution/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/code-execution/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/docker-in-docker/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/docker-in-docker/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/execute-commands/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/execute-commands/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/expose-services/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/expose-services/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/file-watching/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/file-watching/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/git-workflows/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/git-workflows/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/manage-files/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/manage-files/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/mount-buckets/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/mount-buckets/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/outbound-traffic/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/outbound-traffic/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/production-deployment/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/production-deployment/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/proxy-requests/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/proxy-requests/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/streaming-output/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/streaming-output/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/websocket-connections/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/websocket-connections/index.md` |
+| https://developers.cloudflare.com/sandbox/guides/workers-connections/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/guides/workers-connections/index.md` |
+| https://developers.cloudflare.com/sandbox/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/index.md` |
 | https://developers.cloudflare.com/sandbox/llms.txt | `vendor/cloudflare/developers.cloudflare.com/sandbox/llms.txt` |
+| https://developers.cloudflare.com/sandbox/platform/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/platform/index.md` |
+| https://developers.cloudflare.com/sandbox/platform/limits/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/platform/limits/index.md` |
+| https://developers.cloudflare.com/sandbox/platform/pricing/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/platform/pricing/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/ai-code-executor/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/ai-code-executor/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/analyze-data-with-ai/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/analyze-data-with-ai/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/automated-testing-pipeline/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/automated-testing-pipeline/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/claude-code/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/claude-code/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/claude-managed-agents/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/claude-managed-agents/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/code-review-bot/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/code-review-bot/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/openai-agents/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/openai-agents/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/persistent-storage/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/persistent-storage/index.md` |
+| https://developers.cloudflare.com/sandbox/tutorials/workers-ai-code-interpreter/index.md | `vendor/cloudflare/developers.cloudflare.com/sandbox/tutorials/workers-ai-code-interpreter/index.md` |
 | https://developers.cloudflare.com/secrets-store/llms.txt | `vendor/cloudflare/developers.cloudflare.com/secrets-store/llms.txt` |
 | https://developers.cloudflare.com/security-center/llms.txt | `vendor/cloudflare/developers.cloudflare.com/security-center/llms.txt` |
 | https://developers.cloudflare.com/security/llms.txt | `vendor/cloudflare/developers.cloudflare.com/security/llms.txt` |

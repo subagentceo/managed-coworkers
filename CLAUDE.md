@@ -4,7 +4,7 @@
 
 ## What this repo is
 
-A **multi-agent research chassis** that solo founders fork to ship a Claude-powered product. Orchestrator + sub-agents (`npm-research`, `verifier`, `crawl-curator`) over an MCP bridge with 16+ tools spanning 25 vendor doc surfaces.
+A **multi-agent research chassis** that solo founders fork to ship a Claude-powered product. Orchestrator + sub-agents (`npm-research`, `verifier`, `crawl-curator`) over an MCP bridge with 16+ tools spanning 37 vendor doc surfaces.
 
 **Auth is OAuth-only.** `ANTHROPIC_API_KEY` is rejected at every layer (`src/oauth/token.ts`, the Worker env-sanitizer, the Sandbox container env-sanitizer). The chassis fails closed when the key is present.
 
@@ -92,9 +92,10 @@ Upstream knowledge-work-plugins load ~16 MCP servers unconditionally (40-80KB co
 ## Tool surface
 
 - **16+ MCP tools** across 5 lanes: `engineering_*`, `blog_*`, `support_*`, `llms_*`, `vendor_*` plus `search_tools` (progressive disclosure)
-- **25 vendor doc mirrors** under `vendor/`:
+- **37 vendor doc mirrors** under `vendor/`:
   - **First-party Anthropic surfaces:** `anthropics/` (code.claude.com + platform.claude.com + claude.com/docs), `claude-sitemap/` (claude.com blog + connectors + customers + plugins + resources + solutions + code-with-claude + support.claude.com EN articles), `anthropic-sitemap/` (anthropic.com engineering + news + research + learn + product + features + economic-futures + claude)
   - **Ecosystem & subprocessors:** cloudflare, neon, stripe, twilio, workos, elevenlabs, aws, gcp, sentry, intercom, brave-search, sift, arkose-labs, modelcontextprotocol, openfeature, opentelemetry, parallel-web, turbopuffer, spotify-confidence, nimble, iterable, osv-scanner
+  - **Managed Agents sandbox providers (cited in [claude.com/blog/claude-managed-agents-updates](https://claude.com/blog/claude-managed-agents-updates), 2026-05-19):** daytona-io, modal, amplitude, clay; cloudflare/sandbox/ subtree refreshed
 - **2 MCP servers**: `src/mcp/bridge-server.ts` (the knowledge bridge) and `src/mcp/npm-registry/server.ts` (npm-research lane)
 
 ## Vendor GUIDANCE.md convention

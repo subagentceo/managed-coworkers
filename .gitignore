@@ -27,6 +27,13 @@ third_party/
 # global feedback memory. Never commit.
 .claude/settings.local.json
 
+# OHYG2: Claude Code session-local artifacts. Background-agent git worktrees
+# accumulate under .claude/worktrees/ and persist after their branches merge;
+# .claude/scheduled_tasks.lock is rewritten on every session start/stop and
+# would otherwise show as constantly modified.
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+
 # Pollyjs cassettes (OREPLAY0): scratch and tmp dirs are caller-local
 # and must never be committed. Real cassettes live under
 # cassettes/{legal,finance}/<cookbook>/ and ARE committed after the

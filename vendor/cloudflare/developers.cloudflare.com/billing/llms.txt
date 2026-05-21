@@ -31,7 +31,7 @@ Manage billing, plans, and subscriptions for your account
 
 ## payment-methods
 
-- [Backup payment method auto-retry](https://developers.cloudflare.com/billing/payment-methods/backup-payment-method-auto-retry/index.md): How Cloudflare retries failed payments using backup methods.
+- [Additional payment method auto-retry](https://developers.cloudflare.com/billing/payment-methods/additional-payment-method-auto-retry/index.md): How Cloudflare retries failed payments using additional payment methods on file.
 - [Instant Bank Payments via Link](https://developers.cloudflare.com/billing/payment-methods/instant-bank-payments-link/index.md): Understand Instant Bank Payments via Link for Cloudflare services.
 
 ## troubleshoot

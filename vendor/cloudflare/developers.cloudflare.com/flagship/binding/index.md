@@ -14,8 +14,8 @@ image: https://developers.cloudflare.com/dev-products-preview.png
 
 Workers access Flagship through a binding that you add to your Wrangler configuration file. The `binding` field sets the variable name you use in your Worker code.
 
-* [  wrangler.jsonc ](#tab-panel-6411)
-* [  wrangler.toml ](#tab-panel-6412)
+* [  wrangler.jsonc ](#tab-panel-6451)
+* [  wrangler.toml ](#tab-panel-6452)
 
 JSONC
 
@@ -57,8 +57,8 @@ Replace `<APP_ID>` with the app ID from your Flagship app. If you have not creat
 
 The binding provides type-safe methods for evaluating feature flags. If an evaluation fails or a flag is not found, the method returns the default value you provide.
 
-* [  JavaScript ](#tab-panel-6413)
-* [  TypeScript ](#tab-panel-6414)
+* [  JavaScript ](#tab-panel-6453)
+* [  TypeScript ](#tab-panel-6454)
 
 JavaScript
 

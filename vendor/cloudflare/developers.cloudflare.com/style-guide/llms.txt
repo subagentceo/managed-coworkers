@@ -118,7 +118,6 @@ Style guide to follow for contributing to Cloudflare docs.
 - [Banner](https://developers.cloudflare.com/style-guide/frontmatter/banner/index.md): How to display a banner at the top of the page and when to use it.
 - [Custom properties](https://developers.cloudflare.com/style-guide/frontmatter/custom-properties/index.md): Configure custom frontmatter properties.
 - [Sidebar](https://developers.cloudflare.com/style-guide/frontmatter/sidebar/index.md): Configuring how folders and pages appear in the sidebar.
-- [Tags](https://developers.cloudflare.com/style-guide/frontmatter/tags/index.md): Use validated tags in documentation frontmatter.
 
 ## API docs content strategy
 

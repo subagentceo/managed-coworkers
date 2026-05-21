@@ -1,0 +1,13 @@
+{
+  "https://amplitude.com/llms.txt": {
+    "sha256": "cb88478fb98d38c2d2e53165490ea308a11cb962589f0c122dc79a9f8c3c71c6",
+    "fetchedAt": "2026-05-21T18:46:00.000Z",
+    "lastStatus": 200,
+    "note": "Manually fetched via curl — amplitude llms.txt is prose-formatted, not link-list. See vendor/amplitude/crawl.json notes field."
+  },
+  "https://amplitude.com/llms-full.txt": {
+    "sha256": "8b3d48a9c4e3052c184291b9ba03290d62308ddfc6b4fb22d392f5940d9bbee3",
+    "fetchedAt": "2026-05-21T18:46:00.000Z",
+    "lastStatus": 200
+  }
+}
