@@ -1,0 +1,117 @@
+# prd.yaml
+#
+# Executable spec for the Dependency-Security-Remediation initiative.
+# Outcomes -> Rubrics -> Tests -> Evaluations. Each section is an array of
+# maps (stable, append-only) so any session can run `tests[].command`,
+# score against `rubrics[].criteria`, and iterate via `iteration_log`.
+#
+# Companion: docs/prd/product-requirements-doc.yaml (context + decisions),
+#            docs/prd/dependency-security-remediation.scratchpad.md (research).
+#
+schema_version: 1
+initiative: dependency-security-remediation
+outcome_id: OBATCH-FIX
+
+# Observable end-states. id is referenced by rubrics + tests.
+outcomes:
+  - O1:
+      statement: "OSV-Scanner gate is green on the branch and on main."
+      done_when: "osv-scanner -r --experimental-exclude=third_party ./ exits 0."
+  - O2:
+      statement: "All genuinely-fixable advisories are remediated by upgrade, not ignore."
+      done_when: "29 of 35 advisories cleared via npm overrides + PyPI pins; only the 6 tar-on-fastembed advisories use a documented, expiring ignore."
+  - O3:
+      statement: "No runtime regression in the embeddings or crawler lanes."
+      done_when: "fastembed and @crawlee/cheerio import without error; tar.x extraction path intact."
+  - O4:
+      statement: "Chassis verify chain stays green."
+      done_when: "npm run verify (typecheck + citations + 88 lib tests) exits 0."
+  - O5:
+      statement: "The single ignore is auditable and self-policing."
+      done_when: "osv-scanner.toml entries carry reason + ignoreUntil; expiry re-opens the question."
+
+# Pass criteria per outcome. Each criterion is independently checkable.
+rubrics:
+  - O1:
+      - "scan exit code == 0"
+      - "scan output contains 'No issues found'"
+      - "no advisory with CVSS >= 7 is unfiltered"
+  - O2:
+      - "package.json overrides present: protobufjs, tar, file-type, qs, ws, @anthropic-ai/sdk"
+      - "frontend + infra/cloudflare package.json each override ws ^8.20.1"
+      - "exactly 6 IgnoredVulns entries, all tar GHSA IDs, all with reason + ignoreUntil"
+      - "no IgnoredVulns entry for any non-tar advisory"
+  - O3:
+      - "import('fastembed') resolves (no 'default export' throw)"
+      - "import('@crawlee/cheerio') resolves"
+      - "npm ls shows fastembed -> tar@6.x, onnxruntime-node -> tar@7.x"
+  - O4:
+      - "tsc --noEmit exit 0"
+      - "citation-guard reports all citations resolve"
+      - "run-tests reports N of N passed"
+  - O5:
+      - "every IgnoredVulns has non-empty reason"
+      - "every IgnoredVulns has ignoreUntil <= created + 90d"
+
+# Reproducible commands. Run from repo root. expect = success signal.
+tests:
+  - T1:
+      for: O1
+      command: "osv-scanner -r --experimental-exclude=third_party ./; echo EXIT=$?"
+      expect: "EXIT=0 and 'No issues found'"
+  - T2:
+      for: O2
+      command: "node -e \"const o=require('./package.json').overrides; console.log(Object.keys(o).join(','))\""
+      expect: "protobufjs,tar,file-type,qs,ws,@anthropic-ai/sdk,fastembed"
+  - T3:
+      for: O2
+      command: "grep -c '\\[\\[IgnoredVulns\\]\\]' osv-scanner.toml"
+      expect: "6"
+  - T4:
+      for: O3
+      command: "node --input-type=module -e \"await import('fastembed'); await import('@crawlee/cheerio'); console.log('OK')\""
+      expect: "OK (no throw)"
+  - T5:
+      for: O3
+      command: "npm ls tar 2>/dev/null | grep -E 'tar@6|tar@7'"
+      expect: "both tar@6.2.x (fastembed) and tar@7.5.x (onnxruntime-node) present"
+  - T6:
+      for: O4
+      command: "npm run verify"
+      expect: "typecheck + citations pass; 'N of N test file(s) passed'"
+
+# How to keep it green over time. cadence + threshold + action.
+evaluations:
+  - E1:
+      name: "PR gate"
+      method: "CI runs osv-scanner-action on PR + push"
+      cadence: "every PR / push to main"
+      threshold: "exit 0"
+      on_fail: "re-run T1 locally; triage new advisory; prefer upgrade, fall back to documented scoped ignore"
+  - E2:
+      name: "scheduled drift scan"
+      method: "osv-scanner weekly cron (Mondays 06:00 UTC) on main"
+      cadence: "weekly"
+      threshold: "exit 0"
+      on_fail: "open OBATCH-FIX follow-up; apply T1->T6 loop"
+  - E3:
+      name: "ignore expiry review"
+      method: "ignoreUntil = 2026-08-22 on the 6 tar entries"
+      cadence: "on/at expiry"
+      threshold: "fastembed ships tar-7 support OR re-justify"
+      on_fail: "if fastembed updated: drop nested override + osv-scanner.toml entries, force tar 7; re-run T1,T4"
+  - E4:
+      name: "runtime smoke"
+      method: "T4 load-time import of embeddings + crawler parents"
+      cadence: "after any dependency change touching tar/protobufjs/file-type"
+      threshold: "no import throw"
+      on_fail: "revisit override scoping; a major-version transitive bump likely broke a parent"
+
+# Append-only execution record. newest last.
+iteration_log:
+  - 2026-05-24:
+      did: "npm overrides (protobufjs/tar/file-type/qs/ws/sdk) + ws overrides in 2 sub-projects + PyPI pins (bootstrap + 3 dcf-model)."
+      result: "29/35 advisories cleared by upgrade."
+  - 2026-05-24:
+      did: "Discovered tar 7 breaks fastembed import; applied Option B (nested fastembed>tar ^6.2.0 + 6-ID osv-scanner.toml ignore)."
+      result: "T1 exit 0 (6 filtered), T4 fastembed loads, T6 verify green."

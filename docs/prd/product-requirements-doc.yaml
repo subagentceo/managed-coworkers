@@ -1,0 +1,90 @@
+# product-requirements-doc.yaml
+#
+# Structured PRD for the Dependency-Security-Remediation initiative.
+# Authored + owned by Claude (operator delegates 100% of code + architecture).
+#
+# Format contract (read this first):
+#   - Every semantic section is an ARRAY OF SINGLE-KEY-VALUE MAPS
+#     (`- key: value`). This array-map shape is deliberate: it gives a stable,
+#     order-preserving, diff-friendly structure so multi-agent sessions emit
+#     and consume the same context the same way (output consistency + prompt
+#     cache friendliness). Append new items; do not reorder or rewrite existing
+#     ones (treat like an event log).
+#   - Companion files:
+#       docs/prd/prd.yaml ............ outcomes / rubrics / tests / evaluations
+#       docs/prd/dependency-security-remediation.scratchpad.md .. research log
+#
+schema_version: 1
+
+meta:
+  - initiative: dependency-security-remediation
+  - outcome_id: OBATCH-FIX
+  - owner: claude
+  - status: in-progress
+  - created: 2026-05-24
+  - repo: subagentceo/managed-coworkers
+  - branch: claude/batch-fix-todos-7NsFO
+  - pr: 133
+  - trigger: "OSV-Scanner (PR) red on #133 from newly-disclosed transitive CVEs"
+
+# Why this exists. Each item is one atomic context statement.
+context:
+  - problem: "35 OSV advisories (1 critical, 16 high, 17 medium, 1 unknown) across 17 packages in 2 ecosystems (npm + PyPI) went red on the PR gate."
+  - not_introduced_here: "Branch changed zero lockfiles vs origin/main; advisories are newly-disclosed post-#132 (merged green 2026-05-20)."
+  - chassis_wide: "Identical lockfiles on main; main goes red on its next push/Monday-cron scan."
+  - blast_surface: "All flagged npm packages are deeply transitive; PyPI ones live in financial-services example requirements.txt (sample code, not chassis runtime)."
+  - operator_directive: "Force-upgrade in #133; Claude owns the decision; use docs to ground it."
+
+# Hard rules the solution must not violate. Each item: {id: rule}.
+constraints:
+  - OAUTH_ONLY: "Never set ANTHROPIC_API_KEY; never add it to satisfy a build."
+  - COMMIT_OUTCOME_ID: "Every commit subject ends with a single (O<N>); extras go in a Refs footer."
+  - OSV_GATE: "osv-scanner -r --experimental-exclude=third_party ./ must exit 0."
+  - NO_RUNTIME_REGRESSION: "Embeddings (fastembed) + crawler (@crawlee) lanes must still import + run."
+  - CITATION_GUARD: "Every test file carries an @cite header to vendor/ | seeds/ | rubrics/."
+  - MINIMAL_SUPPLY_CHAIN: "Prefer no new install-time tooling (postinstall hooks) in a security-posture repo."
+
+# Architecture decisions (ADR-style). Append-only; newest last.
+decisions:
+  - ADR-1:
+      title: "Force-upgrade npm transitive CVEs via package.json overrides"
+      choice: "Add root overrides: protobufjs ^7.5.8, tar ^7.5.11, file-type ^21.3.2, qs ^6.15.2, ws ^8.20.1, @anthropic-ai/sdk ^0.95.0. Add ws ^8.20.1 override to frontend + infra/cloudflare (miniflare-pulled, dev)."
+      status: accepted
+      verified: "npm install clean; osv re-scan clears all 9 protobufjs + tar(non-fastembed) + file-type + qs + ws + sdk advisories."
+  - ADR-2:
+      title: "Pin financial-services example requirements to patched floors"
+      choice: "osv-scalibr resolves requirements.txt transitively to MINIMUM satisfying versions; pin fastapi/uvicorn/PyJWT + transitive floors starlette>=1.0.1, pydantic>=2.5.0, idna>=3.15, h11>=0.16.0 (bootstrap) and openpyxl/requests/idna (dcf-model x3)."
+      status: accepted
+      verified: "single-file scans exit 0; fastapi 0.136 allows starlette>=0.46 unbounded so 1.x compatible."
+  - ADR-3:
+      title: "fastembed/tar incompatibility — scoped override + ID-ignore (Option B)"
+      choice: "Keep global tar->7 (defense in depth) + nested override fastembed>tar ^6.2.0; add root osv-scanner.toml IgnoredVulns for the 6 tar GHSA IDs with reason + ignoreUntil 2026-08-22."
+      rejected_alternatives:
+        - patch_package: "Adds postinstall hook + node_modules patch to a security repo; runs fastembed on untested tar 7. Violates MINIMAL_SUPPLY_CHAIN."
+        - bare_revert: "Leaves OSV red; no path to green."
+      rationale: "fastembed@2.1.0 is latest, hard-pins tar ^6.2.0, only calls tar.x() on TRUSTED Qdrant-CDN archives; the 6 advisories are untrusted-archive/macOS-APFS races (inapplicable). No patched tar 6.x exists; tar 7 is ESM with no default export and breaks fastembed import. IDs are fixed-in-7 so the ignore cannot mask a future tar>=7 CVE. 34/35 advisories still force-upgraded."
+      status: accepted
+      verified: "fastembed imports OK; full osv scan filters 6, exits 0."
+
+# What is / is not in scope for OBATCH-FIX.
+scope:
+  in:
+    - npm_overrides: "root + frontend + infra/cloudflare"
+    - pypi_pins: "4 financial-services example requirements.txt"
+    - osv_config: "root osv-scanner.toml (fastembed tar exception)"
+    - prd_docs: "docs/prd/* (this initiative's durable spec)"
+  out:
+    - fastembed_upgrade: "blocked on upstream shipping tar-7 support (tracked by ignoreUntil)"
+    - patch_package_tooling: "explicitly rejected (ADR-3)"
+    - chassis_runtime_refactor: "no source changes to embeddings/crawler"
+
+# Cache-stable canonical facts. Append-only; never edit prior items.
+canonical_facts:
+  - osv_cli: "osv-scanner v2.3.8 (matches CI google/osv-scanner-action@v2.3.8)"
+  - osv_args: "-r --experimental-exclude=third_party ./"
+  - osv_toml_scope: "applies only to files in its own dir; root config -> root package-lock.json"
+  - ignoredvulns_semantics: "by-ID ignore also covers aliases; fixed-in-N IDs never match version>=N"
+  - fastembed_version: "2.1.0 (latest); pins tar ^6.2.0; uses only tar.x(); trusted Qdrant CDN"
+  - tar7_breakage: "tar 7 ESM has no default export; fastembed `import tar from 'tar'` throws"
+  - resolver_behavior: "osv-scalibr requirements.txt resolution picks MINIMUM satisfying versions"
+  - tar_advisory_ids: "GHSA-r6q2-hw4h-h46w, GHSA-34x7-hfp2-rc4v, GHSA-83g3-92jg-28cx, GHSA-8qq5-rm4j-mr97, GHSA-9ppj-qmqm-q256, GHSA-qffp-2rhf-9h96"
