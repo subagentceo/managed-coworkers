@@ -1,0 +1,47 @@
+# OSV-Scanner configuration (root). Applies to ./package-lock.json only
+# (osv-scanner.toml does NOT propagate to child directories — see
+# vendor/osv-scanner/google.github.io/osv-scanner/configuration/index.md).
+#
+# Single documented exception: fastembed@2.1.0 (latest) hard-pins tar ^6.2.0
+# and only calls tar.x() to extract TRUSTED model archives from the first-party
+# Qdrant CDN (https://storage.googleapis.com/qdrant-fastembed/<model>.tar.gz).
+# The tar advisories below are untrusted-archive / macOS-APFS Unicode-race
+# issues that do not apply to that usage. No patched tar 6.x exists (all fixes
+# are 7.5.x), and tar 7 is ESM-only with no default export, which breaks
+# fastembed's `import tar from "tar"`. The global package.json override forces
+# tar >=7.5.11 everywhere EXCEPT under fastembed (nested override), so this
+# ignore is scoped to fastembed's tar 6.x instance alone. These advisory IDs
+# are all fixed-in-7.x, so ignoring them cannot mask a future tar >=7 CVE.
+#
+# Revisit when fastembed ships a tar-7-compatible release; ignoreUntil forces it.
+# Outcome: OBATCH-FIX.
+
+[[IgnoredVulns]]
+id = "GHSA-r6q2-hw4h-h46w"
+ignoreUntil = 2026-08-22
+reason = "tar 6.x via fastembed@2.1.0 (latest, pins tar ^6.2.0); trusted Qdrant CDN extraction only; advisory is untrusted-archive/macOS-APFS race, inapplicable. No 6.x patch; tar 7 breaks fastembed import."
+
+[[IgnoredVulns]]
+id = "GHSA-34x7-hfp2-rc4v"
+ignoreUntil = 2026-08-22
+reason = "tar 6.x via fastembed@2.1.0 (latest, pins tar ^6.2.0); trusted Qdrant CDN extraction only. No 6.x patch; tar 7 breaks fastembed import."
+
+[[IgnoredVulns]]
+id = "GHSA-83g3-92jg-28cx"
+ignoreUntil = 2026-08-22
+reason = "tar 6.x via fastembed@2.1.0 (latest, pins tar ^6.2.0); trusted Qdrant CDN extraction only. No 6.x patch; tar 7 breaks fastembed import."
+
+[[IgnoredVulns]]
+id = "GHSA-8qq5-rm4j-mr97"
+ignoreUntil = 2026-08-22
+reason = "tar 6.x via fastembed@2.1.0 (latest, pins tar ^6.2.0); trusted Qdrant CDN extraction only. No 6.x patch; tar 7 breaks fastembed import."
+
+[[IgnoredVulns]]
+id = "GHSA-9ppj-qmqm-q256"
+ignoreUntil = 2026-08-22
+reason = "tar 6.x via fastembed@2.1.0 (latest, pins tar ^6.2.0); trusted Qdrant CDN extraction only. No 6.x patch; tar 7 breaks fastembed import."
+
+[[IgnoredVulns]]
+id = "GHSA-qffp-2rhf-9h96"
+ignoreUntil = 2026-08-22
+reason = "tar 6.x via fastembed@2.1.0 (latest, pins tar ^6.2.0); trusted Qdrant CDN extraction only. No 6.x patch; tar 7 breaks fastembed import."
