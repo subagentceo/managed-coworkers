@@ -1,0 +1,166 @@
+/**
+ * Pure functions for the alloydb-schema skill.
+ *
+ * Generates AlloyDB Omni / PostgreSQL migration files (up + down) and a
+ * matching TypeScript domain-model type from a declarative table spec.
+ * The CLI at scripts/alloydb-schema.ts writes the files; these functions
+ * are pure (no I/O) and fully unit-tested.
+ *
+ * Refs: ODEP6.
+ */
+
+// ---------------------------------------------------------------------------
+// Column spec
+// ---------------------------------------------------------------------------
+
+/** PostgreSQL column types used in this chassis. */
+export type ColumnType =
+  | "text"
+  | "text[]"
+  | "integer"
+  | "bigint"
+  | "boolean"
+  | "timestamp"
+  | "jsonb"
+  | "uuid";
+
+export interface ColumnSpec {
+  name: string;
+  type: ColumnType;
+  /** If true, the column is nullable (no NOT NULL constraint). Default: false. */
+  nullable?: boolean;
+  /** SQL default expression, e.g. "'unspecified'" or "ARRAY[]::TEXT[]". */
+  default?: string;
+  primaryKey?: boolean;
+}
+
+export interface MigrationSpec {
+  tableName: string;
+  columns: ColumnSpec[];
+  outcomeId: string;
+  /** Short description used in filename and file header, e.g. "coworker_sessions". */
+  description?: string;
+}
+
+// ---------------------------------------------------------------------------
+// Naming helpers
+// ---------------------------------------------------------------------------
+
+/** "coworker_sessions" → "CoworkerSessions" */
+export function snakeToPascal(snake: string): string {
+  return snake
+    .split("_")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join("");
+}
+
+/** Left-pad ordinal to 4 digits: 3 → "0003". */
+export function formatOrdinal(n: number): string {
+  return String(n).padStart(4, "0");
+}
+
+/**
+ * Infer the next migration ordinal from a list of existing filenames.
+ * Filenames are expected to start with "NNNN_".
+ */
+export function nextMigrationOrdinal(existingFilenames: readonly string[]): number {
+  let max = 0;
+  for (const f of existingFilenames) {
+    const m = f.match(/^(\d{4})_/);
+    if (m) max = Math.max(max, parseInt(m[1], 10));
+  }
+  return max + 1;
+}
+
+/**
+ * Returns `["NNNN_desc.sql", "NNNN_desc.down.sql"]` for a given ordinal + description.
+ * The description is lower-cased and spaces replaced with underscores.
+ */
+export function buildMigrationFilenames(ordinal: number, description: string): [string, string] {
+  const slug = description.toLowerCase().replace(/\s+/g, "_");
+  const ord = formatOrdinal(ordinal);
+  return [`${ord}_${slug}.sql`, `${ord}_${slug}.down.sql`];
+}
+
+// ---------------------------------------------------------------------------
+// SQL generation
+// ---------------------------------------------------------------------------
+
+function columnSqlLine(col: ColumnSpec, isLast: boolean): string {
+  const parts: string[] = [`  ${col.name.padEnd(28)} ${col.type}`];
+  if (col.primaryKey) parts.push("PRIMARY KEY");
+  if (!col.nullable && !col.primaryKey) parts.push("NOT NULL");
+  if (col.default !== undefined) parts.push(`DEFAULT ${col.default}`);
+  return parts.join(" ") + (isLast ? "" : ",");
+}
+
+export function buildMigrationUp(spec: MigrationSpec): string {
+  const header = [
+    `-- ${formatOrdinal(1)}_${(spec.description ?? spec.tableName).toLowerCase().replace(/\s+/g, "_")}.sql`,
+    `--`,
+    `-- Outcome: ${spec.outcomeId}.`,
+    `-- Idempotent (CREATE TABLE IF NOT EXISTS).`,
+    `-- @cite vendor/alloydb-omni/`,
+    `--`,
+    `-- Rollback: see companion .down.sql file.`,
+    ``,
+  ].join("\n");
+
+  const colLines = spec.columns.map((col, i) =>
+    columnSqlLine(col, i === spec.columns.length - 1),
+  );
+
+  const createStatement = [
+    `CREATE TABLE IF NOT EXISTS ${spec.tableName} (`,
+    ...colLines,
+    `);`,
+  ].join("\n");
+
+  return header + createStatement + "\n";
+}
+
+export function buildMigrationDown(tableName: string): string {
+  return `DROP TABLE IF EXISTS ${tableName};\n`;
+}
+
+// ---------------------------------------------------------------------------
+// TypeScript domain-model generation
+// ---------------------------------------------------------------------------
+
+const TS_TYPE_MAP: Record<ColumnType, string> = {
+  text: "string",
+  "text[]": "readonly string[]",
+  integer: "number",
+  bigint: "bigint",
+  boolean: "boolean",
+  timestamp: "Date",
+  jsonb: "unknown",
+  uuid: "string",
+};
+
+export function columnToTsField(col: ColumnSpec): string {
+  const tsType = TS_TYPE_MAP[col.type];
+  const nullable = col.nullable ? ` | null` : "";
+  const readonly = !col.nullable ? "readonly " : "";
+  return `  ${readonly}${col.name}: ${tsType}${nullable};`;
+}
+
+export function buildDomainModel(spec: MigrationSpec): string {
+  const typeName = snakeToPascal(spec.tableName);
+  const idType = `${typeName}Id`;
+
+  const fields = spec.columns.map(columnToTsField).join("\n");
+
+  return [
+    `// src/domain/models/${spec.tableName}.ts`,
+    `// Auto-generated by alloydb-schema skill (${spec.outcomeId}).`,
+    `// Update via: tsx scripts/alloydb-schema.ts alter-table ${spec.tableName}`,
+    ``,
+    `export type ${idType} = string & { __brand: "${idType}" };`,
+    ``,
+    `export interface ${typeName} {`,
+    fields,
+    `}`,
+    ``,
+  ].join("\n");
+}

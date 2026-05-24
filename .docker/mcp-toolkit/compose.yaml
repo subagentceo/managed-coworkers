@@ -1,0 +1,113 @@
+# MCP Toolkit — optional connector services
+#
+# Each service maps to a `userConfig` connector category in the plugin
+# manifests at packages/knowledge-work-plugins/*/. Activate profiles via:
+#
+#   docker compose -f .docker/mcp-toolkit/compose.yaml \
+#     --profile gsc --profile slack up -d
+#
+# Or let scripts/setup-coworker.ts generate the exact command:
+#
+#   tsx scripts/setup-coworker.ts product-management \
+#     --connectors=gsc,cf-analytics,slack
+#
+# OAuth credentials and API tokens come from Cloudflare Secrets Store,
+# never from environment variables. The Worker injects them at session
+# start. See infra/cloudflare/coworkers/*/src/worker.ts.
+#
+# Base data plane (AlloyDB + Redis) is in .docker/compose.yaml — NOT here.
+#
+# Refs: OPMP2.
+
+name: mc-mcp-toolkit
+
+services:
+  # ---------------------------------------------------------------------------
+  # cf-analytics — Cloudflare Analytics Engine MCP server
+  # Profile: cf-analytics
+  # ---------------------------------------------------------------------------
+  mcp-cf-analytics:
+    image: ghcr.io/cloudflare/mcp-server-cloudflare:latest
+    profiles: [cf-analytics]
+    container_name: mc-mcp-cf-analytics
+    restart: unless-stopped
+    environment:
+      # Operator: provide via `docker secret` or inject from Secrets Store.
+      CLOUDFLARE_API_TOKEN: ${CLOUDFLARE_API_TOKEN:-}
+      CLOUDFLARE_ACCOUNT_ID: ${CLOUDFLARE_ACCOUNT_ID:-}
+    networks: [mc_mcp]
+
+  # ---------------------------------------------------------------------------
+  # gsc — Google Search Console OAuth MCP server
+  # Profile: gsc
+  # ---------------------------------------------------------------------------
+  mcp-gsc:
+    # Operator: replace with your preferred GSC OAuth MCP image.
+    # The GSC_OAUTH_REFRESH_TOKEN comes from Cloudflare Secrets Store.
+    image: ghcr.io/google/gsc-mcp:latest
+    profiles: [gsc]
+    container_name: mc-mcp-gsc
+    restart: unless-stopped
+    environment:
+      GSC_OAUTH_REFRESH_TOKEN: ${GSC_OAUTH_REFRESH_TOKEN:-}
+    networks: [mc_mcp]
+
+  # ---------------------------------------------------------------------------
+  # slack — Slack MCP server
+  # Profile: slack
+  # ---------------------------------------------------------------------------
+  mcp-slack:
+    image: mcp/slack:latest
+    profiles: [slack]
+    container_name: mc-mcp-slack
+    restart: unless-stopped
+    environment:
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN:-}
+    networks: [mc_mcp]
+
+  # ---------------------------------------------------------------------------
+  # linear — Linear MCP server
+  # Profile: linear
+  # ---------------------------------------------------------------------------
+  mcp-linear:
+    image: mcp/linear:latest
+    profiles: [linear]
+    container_name: mc-mcp-linear
+    restart: unless-stopped
+    environment:
+      LINEAR_API_KEY: ${LINEAR_API_KEY:-}
+    networks: [mc_mcp]
+
+  # ---------------------------------------------------------------------------
+  # atlassian — Atlassian Remote MCP (Jira + Confluence)
+  # Profile: atlassian
+  # The official Atlassian Remote MCP at https://mcp.atlassian.com is OAuth-
+  # gated; this profile starts the local proxy when running in devcontainer.
+  # ---------------------------------------------------------------------------
+  mcp-atlassian:
+    image: ghcr.io/atlassian/mcp-server:latest
+    profiles: [atlassian]
+    container_name: mc-mcp-atlassian
+    restart: unless-stopped
+    environment:
+      ATLASSIAN_CLOUD_ID: ${ATLASSIAN_CLOUD_ID:-}
+      ATLASSIAN_OAUTH_TOKEN: ${ATLASSIAN_OAUTH_TOKEN:-}
+    networks: [mc_mcp]
+
+  # ---------------------------------------------------------------------------
+  # intercom — Intercom MCP server
+  # Profile: intercom
+  # ---------------------------------------------------------------------------
+  mcp-intercom:
+    image: mcp/intercom:latest
+    profiles: [intercom]
+    container_name: mc-mcp-intercom
+    restart: unless-stopped
+    environment:
+      INTERCOM_API_TOKEN: ${INTERCOM_API_TOKEN:-}
+    networks: [mc_mcp]
+
+networks:
+  mc_mcp:
+    name: mc_mcp
+    driver: bridge
