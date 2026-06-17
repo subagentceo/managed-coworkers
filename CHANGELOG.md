@@ -4,6 +4,46 @@ All notable changes to this project are tracked here. This file is maintained
 automatically by [release-please](https://github.com/googleapis/release-please)
 from [Conventional Commits](https://www.conventionalcommits.org/) on `main`.
 
+## [0.6.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.5.0...knowledge-engineering-v0.6.0) (2026-05-21)
+
+
+### Features
+
+* **coworkers:** product-management plugin scaffold + 5 forked skills + 6 authoring skills install (OPMP1) ([#111](https://github.com/subagentceo/managed-coworkers/issues/111)) ([03e156a](https://github.com/subagentceo/managed-coworkers/commit/03e156afd0a753e54e18fee9fb8ecacdd46b6c4d))
+* **coworkers:** scaffold data-engineering managed-coworker (ODEP1) ([#112](https://github.com/subagentceo/managed-coworkers/issues/112)) ([e6154c4](https://github.com/subagentceo/managed-coworkers/commit/e6154c466836db5fba2fda01db4be48aabc021c9))
+* **coworkers:** terraform v5 module for data-engineering (ODEP3) ([#118](https://github.com/subagentceo/managed-coworkers/issues/118)) ([410b47f](https://github.com/subagentceo/managed-coworkers/commit/410b47f3b272afe921a93cebbfdef81325fac666))
+* **coworkers:** terraform v5 module for product-management (OPMP3) ([#116](https://github.com/subagentceo/managed-coworkers/issues/116)) ([09c6d4c](https://github.com/subagentceo/managed-coworkers/commit/09c6d4c696b9ff9cd562099af92316ed14a09deb))
+* **coworkers:** wrangler.jsonc parallel for data-engineering (ODEP3b) ([#120](https://github.com/subagentceo/managed-coworkers/issues/120)) ([235e71d](https://github.com/subagentceo/managed-coworkers/commit/235e71d923b2d10e967827eb48c077edc15384c7))
+* **coworkers:** wrangler.jsonc parallel for product-management (OPMP3b) ([#119](https://github.com/subagentceo/managed-coworkers/issues/119)) ([287eb12](https://github.com/subagentceo/managed-coworkers/commit/287eb12dc86d6df23a12c6ba255e9f68419f07e2))
+* **data-eng:** first working skill body — declare-enums (ODEP3) ([#123](https://github.com/subagentceo/managed-coworkers/issues/123)) ([1175288](https://github.com/subagentceo/managed-coworkers/commit/1175288001003c7229fd9d820342ac95e4373f6e))
+* **data-engineering:** implement model-data-domain skill (ODEP4) ([#131](https://github.com/subagentceo/managed-coworkers/issues/131)) ([302fc81](https://github.com/subagentceo/managed-coworkers/commit/302fc814a461ae38e0091bafcdb0bd955f5a34b3))
+* **data-eng:** scaffold data plane + first domain model (ODEP2) ([#114](https://github.com/subagentceo/managed-coworkers/issues/114)) ([26819f8](https://github.com/subagentceo/managed-coworkers/commit/26819f8e62d36ac21e7d778e88353004a2a3b029)), closes [#113](https://github.com/subagentceo/managed-coworkers/issues/113) [#112](https://github.com/subagentceo/managed-coworkers/issues/112)
+* **data-eng:** second working skill body — model-data-domain (ODEP4) ([#127](https://github.com/subagentceo/managed-coworkers/issues/127)) ([eb081e3](https://github.com/subagentceo/managed-coworkers/commit/eb081e354725f295bdeba088fa844f70b32a8abc))
+* **devcontainer:** chassis-wide devcontainer scaffold (OPMP2) ([#129](https://github.com/subagentceo/managed-coworkers/issues/129)) ([c58ca4c](https://github.com/subagentceo/managed-coworkers/commit/c58ca4c2398608f88faef10c69eb452bacf4363c))
+* **embed:** local fastembed backfill into SQLite vendor_pages (OEMBED-LOOP5) ([#107](https://github.com/subagentceo/managed-coworkers/issues/107)) ([cf7b0a0](https://github.com/subagentceo/managed-coworkers/commit/cf7b0a0c93a514c143fd48e7947e89fdb90c8c9a))
+* **mcp:** wire atlassian remote MCP server at project scope (OPMP1) ([#115](https://github.com/subagentceo/managed-coworkers/issues/115)) ([3642cde](https://github.com/subagentceo/managed-coworkers/commit/3642cdebdef34039668154c4f2f5f8af19a5f8f5))
+* **portfolio:** Site domain entity + sites migration + example file (OPMP4) ([#128](https://github.com/subagentceo/managed-coworkers/issues/128)) ([d1162cc](https://github.com/subagentceo/managed-coworkers/commit/d1162ccff27688b1ed5c6cff317cc76799552831))
+
+
+### Bug Fixes
+
+* **crawler:** clearer loadConfig errors for study clones + typos (OBATCH-FIX) ([#108](https://github.com/subagentceo/managed-coworkers/issues/108)) ([dbdad0a](https://github.com/subagentceo/managed-coworkers/commit/dbdad0a7d8a1db253dc1a6f6eb269c86ce12d249))
+* **scripts:** add rc script for claude remote-control (OREMOTE) ([#126](https://github.com/subagentceo/managed-coworkers/issues/126)) ([4712b37](https://github.com/subagentceo/managed-coworkers/commit/4712b377c959defbca081809df8d1ec75281da35))
+* **vendor:** rename commonmark-spec/{crawl,STUDY}.json (OGHW7) ([#122](https://github.com/subagentceo/managed-coworkers/issues/122)) ([9311f35](https://github.com/subagentceo/managed-coworkers/commit/9311f35e3606504e34cbead9b6a0bc666111cb95))
+* **workflows:** SHA-pin cloudflare/wrangler-action@v4 (OGHW6) ([#121](https://github.com/subagentceo/managed-coworkers/issues/121)) ([0825956](https://github.com/subagentceo/managed-coworkers/commit/0825956fe70348285ba87c44ba8b1d2b16feedf3)), closes [#117](https://github.com/subagentceo/managed-coworkers/issues/117)
+
+
+### Documentation
+
+* **cite:** claude-managed-agents extract + study clone + cloudflare vendor refresh (OVR16) ([#109](https://github.com/subagentceo/managed-coworkers/issues/109)) ([0d568d8](https://github.com/subagentceo/managed-coworkers/commit/0d568d80b4a6186f751951756a3d4385e1b608d0))
+* **claude-md:** document managed-coworker pattern + connector enum (OPMP5) ([#124](https://github.com/subagentceo/managed-coworkers/issues/124)) ([7fd1468](https://github.com/subagentceo/managed-coworkers/commit/7fd1468a5438c3647535322f80e611a64f6aacf5))
+
+
+### Chores
+
+* **claude:** prune worktrees, add 4 MCA sandbox-provider vendor mirrors (OHYG2) ([#138](https://github.com/subagentceo/managed-coworkers/issues/138)) ([2c47d92](https://github.com/subagentceo/managed-coworkers/commit/2c47d9250c04f415c4467e056f5b42b0b9297301))
+* **skills:** install claude-api skill from anthropics/skills (OBATCH-FIX) ([#110](https://github.com/subagentceo/managed-coworkers/issues/110)) ([f970b71](https://github.com/subagentceo/managed-coworkers/commit/f970b710c7ef20b6352bb479c5fa1e7d4e6f0ae1))
+
 ## [0.5.0](https://github.com/subagentceo/managed-coworkers/compare/knowledge-engineering-v0.4.1...knowledge-engineering-v0.5.0) (2026-05-20)
 
 
